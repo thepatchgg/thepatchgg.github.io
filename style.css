@@ -197,3 +197,93 @@ img { display: block; max-width: 100%; }
   .newsletter-form { flex-direction: column; }
   .hero h1 { font-size: 30px; letter-spacing: -0.8px; }
 }
+
+
+/* ── GAME HUB PAGES ── */
+.game-hero {
+  max-width: 100%;
+  padding: 64px 20px 56px;
+  background: var(--bg);
+}
+.game-hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.game-eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.game-hero h1 {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+.game-hero p {
+  font-size: 18px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+.game-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.game-meta-item {
+  font-size: 13px;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 6px 14px;
+}
+.coming-soon-state {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 56px 48px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.coming-soon-icon { font-size: 48px; margin-bottom: 20px; }
+.coming-soon-heading {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text);
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+.coming-soon-body {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.coming-soon-schedule {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+.schedule-item { display: flex; flex-direction: column; gap: 4px; align-items: center; }
+.schedule-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+.schedule-value { font-size: 15px; font-weight: 700; color: var(--text); }
+.card-placeholder { cursor: default; opacity: 0.55; }
+.card-placeholder:hover { transform: none; border-color: var(--border); }
+@media (max-width: 640px) {
+  .game-hero h1 { font-size: 32px; }
+  .coming-soon-state { padding: 32px 20px; }
+  .coming-soon-schedule { gap: 16px; }
+}
