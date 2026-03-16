@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="site-logo">The <span>Patch</span></a>
@@ -20,11 +21,20 @@
       <a href="marvel-rivals.html">Marvel Rivals</a>
     </nav>
     <a href="index.html#newsletter" class="header-cta">Subscribe Free</a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
+
 <div style="max-width:680px; margin:64px auto; padding:0 20px 80px;">
-  <h1 style="font-size:clamp(30px,4vw,44px); font-weight:900; letter-spacing:-1px; margin-bottom:16px;">About <span style="color:var(--accent)">The Patch</span></h1>
-  <p style="font-size:18px; color:var(--text-muted); line-height:1.7; margin-bottom:32px;">The Patch is a game analysis publication focused on one thing: getting you accurate, opinionated patch coverage faster than anywhere else.</p>
+
+  <h1 style="font-size:clamp(30px,4vw,44px); font-weight:900; letter-spacing:-1px; margin-bottom:16px;">
+    About <span style="color:var(--accent)">The Patch</span>
+  </h1>
+
+  <p style="font-size:18px; color:var(--text-muted); line-height:1.7; margin-bottom:32px;">
+    The Patch is a game analysis publication focused on one thing: getting you accurate, opinionated patch coverage faster than anywhere else.
+  </p>
+
   <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:28px; margin-bottom:32px;">
     <h2 style="font-size:18px; font-weight:800; margin-bottom:12px;">What we cover</h2>
     <p style="color:var(--text-muted); line-height:1.7; margin-bottom:12px;">We cover five live-service games on predictable schedules:</p>
@@ -36,19 +46,33 @@
       <li><strong style="color:var(--mr);">Marvel Rivals</strong> — Every patch, biweekly</li>
     </ul>
   </div>
+
   <h2 style="font-size:20px; font-weight:800; margin-bottom:12px;">Why we exist</h2>
-  <p style="color:var(--text-muted); line-height:1.7; margin-bottom:16px;">Patch notes are long. Meta implications aren't obvious. And most sites either publish 12 hours after a patch drops or pad their analysis with filler to hit a word count. We don't do either.</p>
-  <p style="color:var(--text-muted); line-height:1.7; margin-bottom:32px;">Our goal is simple: by the time you're in champion select or loading into a match, we've already told you what changed, what it means, and what to play.</p>
+  <p style="color:var(--text-muted); line-height:1.7; margin-bottom:16px;">
+    Patch notes are long. Meta implications aren't obvious. And most sites either publish 12 hours after a patch drops or pad their analysis with filler to hit a word count. We don't do either.
+  </p>
+  <p style="color:var(--text-muted); line-height:1.7; margin-bottom:32px;">
+    Our goal is simple: by the time you're in champion select or loading into a match, we've already told you what changed, what it means, and what to play.
+  </p>
+
   <h2 style="font-size:20px; font-weight:800; margin-bottom:12px;">The Adopt Me! difference</h2>
-  <p style="color:var(--text-muted); line-height:1.7; margin-bottom:32px;">We're one of the only gaming publications that takes Roblox Adopt Me! as seriously as competitive titles — with dedicated trading value analysis, event guides, and a <strong style="color:var(--text);">"For Parents"</strong> section in every update.</p>
+  <p style="color:var(--text-muted); line-height:1.7; margin-bottom:32px;">
+    We're one of the only gaming publications that takes Roblox Adopt Me! as seriously as competitive titles — with dedicated trading value analysis, event guides, and a <strong style="color:var(--text);">"For Parents"</strong> section in every update. If your kid plays Adopt Me!, this is where you find out what changed, what it costs, and whether the new pet is worth trading for.
+  </p>
+
   <div style="background:var(--surface2); border:1px solid var(--border); border-radius:12px; padding:28px; text-align:center; margin-bottom:32px;">
     <h2 style="font-size:20px; font-weight:800; margin-bottom:10px;">Get every patch in your inbox</h2>
     <p style="color:var(--text-muted); margin-bottom:18px;">Free newsletter. One email per patch. No spam.</p>
-    <a href="index.html#newsletter" class="btn-primary" style="display:inline-block;">Subscribe Free &rarr;</a>
+    <a href="index.html#newsletter" class="btn-primary" style="display:inline-block;">Subscribe Free →</a>
   </div>
+
   <h2 style="font-size:20px; font-weight:800; margin-bottom:12px;">Contact</h2>
-  <p style="color:var(--text-muted); line-height:1.7;">For sponsorship inquiries, corrections, or feedback: <strong style="color:var(--text);">hello@thepatchgg.com</strong></p>
+  <p style="color:var(--text-muted); line-height:1.7;">
+    For sponsorship inquiries, corrections, or feedback: <strong style="color:var(--text);">hello@[YOURDOMAIN]</strong> (your ProtonMail address — update this after setup)
+  </p>
+
 </div>
+
 <footer class="site-footer">
   <div class="footer-inner">
     <div><div class="footer-brand">The Patch</div></div>
@@ -56,8 +80,15 @@
       <a href="index.html">Home</a>
       <a href="about.html" style="color:var(--accent)">About</a>
     </nav>
-    <div class="footer-legal">&copy; 2026 The Patch. Not affiliated with any game developer.</div>
+    <div class="footer-social">
+      <a href="#" title="Twitter / X">𝕏</a>
+      <a href="#" title="Discord">💬</a>
+      <a href="#" title="Reddit">🤖</a>
+    </div>
+    <div class="footer-legal">© 2026 The Patch. Not affiliated with any game developer. All game names are property of their respective owners.</div>
   </div>
 </footer>
+
+<script src="newsletter.js"></script>
 </body>
 </html>
