@@ -1,419 +1,1016 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adopt Me Pet Value Calculator 2026 — Free Trade Checker | The Patch</title>
-  <meta name="description" content="Free Adopt Me pet value calculator for 2026. Check if your trade is fair — add pets from both sides and see the value balance instantly. Covers Normal, FR, Neon and Mega Neon values.">
-  <link rel="stylesheet" href="style.css">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"What is the most valuable pet in Adopt Me 2026?","acceptedAnswer":{"@type":"Answer","text":"The Bat Dragon is the most valuable pet in Adopt Me as of 2026, edging out the Shadow Dragon. Both were limited to the Halloween 2019 event."}},
-    {"@type":"Question","name":"How do I know if a trade is fair in Adopt Me?","acceptedAnswer":{"@type":"Answer","text":"Use this free trade calculator — add the pets from both sides of the trade and it will show the total value of each side and whether the trade is within a fair range (within ~15%)."}},
-    {"@type":"Question","name":"What is an FR pet worth compared to a normal pet?","acceptedAnswer":{"@type":"Answer","text":"FR (Fly Ride) pets are generally worth 15-30% more than their Normal counterpart for Legendary pets, and 2-5x more for Common/Rare pets. Use the calculator to toggle between Normal and FR values."}},
-    {"@type":"Question","name":"How many pets do I need for a Neon?","acceptedAnswer":{"@type":"Answer","text":"You need 4 fully-grown pets of the same kind to make a Neon. All 4 must be adults. For a Mega Neon, you need 4 Neon pets (16 total regular pets)."}}
-  ]}
-  </script>
-  <style>
-    .calc-layout { max-width: 1280px; margin: 0 auto; padding: 32px 20px 80px; display: grid; grid-template-columns: 1fr 360px; gap: 24px; align-items: start; }
-    .calc-filters { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 20px; }
-    .search-input { flex: 1; min-width: 200px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; font-size: 14px; color: var(--text); outline: none; font-family: var(--font); }
-    .search-input:focus { border-color: var(--am); }
-    .search-input::placeholder { color: var(--text-muted); }
-    .filter-btn { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 7px 12px; font-size: 12px; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
-    .filter-btn:hover, .filter-btn.active { background: var(--am); color: #000; border-color: var(--am); }
-    .value-type-toggle { display: flex; background: var(--surface2); border-radius: 8px; padding: 3px; gap: 2px; }
-    .vt-btn { padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 700; color: var(--text-muted); cursor: pointer; border: none; background: none; transition: all 0.15s; }
-    .vt-btn.active { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
-    .pets-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
-    .pet-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: transform 0.15s, border-color 0.15s; }
-    .pet-card:hover { transform: translateY(-2px); border-color: #3a3a50; }
-    .pet-card.event-card { border-color: rgba(62,207,107,0.3); }
-    .pet-card-top { height: 3px; }
-    .pc-legendary { background: #ffaa00; }
-    .pc-ultra-rare { background: #9b5de5; }
-    .pc-rare { background: var(--fn); }
-    .pc-uncommon { background: var(--am); }
-    .pc-common { background: var(--text-muted); }
-    .pet-card-body { padding: 14px; }
-    .pet-card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
-    .pet-emoji { font-size: 28px; line-height: 1; }
-    .pet-info { flex: 1; min-width: 0; }
-    .pet-name { font-size: 14px; font-weight: 800; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .pet-source { font-size: 11px; color: var(--text-muted); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .rarity-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 2px 6px; border-radius: 4px; white-space: nowrap; }
-    .rt-legendary { background: rgba(255,170,0,0.15); color: #ffaa00; }
-    .rt-ultra-rare { background: rgba(155,93,229,0.15); color: #9b5de5; }
-    .rt-rare { background: rgba(47,163,224,0.15); color: var(--fn); }
-    .rt-uncommon { background: rgba(62,207,107,0.15); color: var(--am); }
-    .rt-common { background: rgba(200,200,200,0.1); color: #aaa; }
-    .pet-values { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 12px; }
-    .pv-item { background: var(--surface2); border-radius: 6px; padding: 6px 8px; text-align: center; }
-    .pv-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 2px; }
-    .pv-val { font-size: 15px; font-weight: 900; color: var(--text); }
-    .pv-item.highlighted { background: rgba(62,207,107,0.12); border: 1px solid rgba(62,207,107,0.2); }
-    .pv-item.highlighted .pv-val { color: var(--am); }
-    .demand-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 4px; margin-bottom: 10px; }
-    .demand-up { background: rgba(62,207,107,0.12); color: var(--am); }
-    .demand-down { background: rgba(232,64,87,0.12); color: var(--val); }
-    .demand-stable { background: rgba(200,200,200,0.08); color: var(--text-muted); }
-    .add-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-    .add-btn { padding: 7px 6px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer; border: 1px solid var(--border); background: var(--surface2); color: var(--text-muted); transition: all 0.15s; }
-    .add-btn:hover { background: var(--am); color: #000; border-color: var(--am); }
-    .add-btn.their { background: var(--surface2); }
-    .add-btn.their:hover { background: #9b5de5; color: #fff; border-color: #9b5de5; }
-    .event-badge { background: rgba(62,207,107,0.12); color: var(--am); font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-left: 6px; }
-    /* Trade checker */
-    .trade-checker { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; position: sticky; top: 80px; }
-    .tc-header { background: var(--surface2); padding: 14px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
-    .tc-title { font-size: 14px; font-weight: 800; color: var(--text); }
-    .tc-clear { font-size: 12px; color: var(--text-muted); cursor: pointer; background: none; border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; }
-    .tc-clear:hover { color: var(--val); border-color: var(--val); }
-    .tc-sides { display: grid; grid-template-columns: 1fr 1fr; }
-    .tc-side { padding: 14px; min-height: 160px; }
-    .tc-side:first-child { border-right: 1px solid var(--border); }
-    .tc-side-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 10px; }
-    .tc-side-label.my { color: var(--am); }
-    .tc-side-label.their { color: #9b5de5; }
-    .tc-pets-list { display: flex; flex-direction: column; gap: 6px; min-height: 60px; }
-    .tc-pet-item { display: flex; align-items: center; gap: 8px; background: var(--surface2); border-radius: 6px; padding: 6px 8px; font-size: 12px; }
-    .tc-pet-emoji { font-size: 16px; }
-    .tc-pet-name { flex: 1; font-weight: 600; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .tc-pet-val { font-weight: 700; color: var(--text-muted); flex-shrink: 0; }
-    .tc-remove { background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 14px; padding: 0 2px; line-height: 1; }
-    .tc-remove:hover { color: var(--val); }
-    .tc-empty { color: var(--text-muted); font-size: 12px; text-align: center; padding: 16px 8px; line-height: 1.5; }
-    .tc-totals { border-top: 1px solid var(--border); padding: 14px 16px; background: var(--surface2); }
-    .tc-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 13px; }
-    .tc-row-label { color: var(--text-muted); }
-    .tc-row-val { font-weight: 800; color: var(--text); }
-    .tc-row-val.my { color: var(--am); }
-    .tc-row-val.their { color: #9b5de5; }
-    .tc-balance-bar { height: 6px; background: var(--surface); border-radius: 3px; overflow: hidden; margin: 10px 0; position: relative; }
-    .tc-balance-fill { height: 100%; background: var(--am); border-radius: 3px; transition: width 0.3s ease, background 0.3s; }
-    .tc-verdict { text-align: center; padding: 10px; border-radius: 8px; font-size: 13px; font-weight: 700; margin-top: 4px; }
-    .verdict-fair { background: rgba(62,207,107,0.12); color: var(--am); border: 1px solid rgba(62,207,107,0.2); }
-    .verdict-low { background: rgba(232,64,87,0.12); color: var(--val); border: 1px solid rgba(232,64,87,0.2); }
-    .verdict-high { background: rgba(200,255,87,0.1); color: var(--accent); border: 1px solid rgba(200,255,87,0.2); }
-    .verdict-empty { background: var(--surface); color: var(--text-muted); border: 1px solid var(--border); }
-    .no-results { text-align: center; padding: 48px 20px; color: var(--text-muted); font-size: 15px; }
-    @media (max-width: 900px) { .calc-layout { grid-template-columns: 1fr; } .trade-checker { position: static; } }
-    @media (max-width: 640px) { .pets-grid { grid-template-columns: 1fr 1fr; } .pet-card-body { padding: 10px; } }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Me Pet Value Calculator 2026 | The Patch</title>
+    <meta name="description" content="Calculate fair Adopt Me! pet trades instantly. Compare values with neon, mega, and fly/ride multipliers. The Patch's premium trade calculator.">
+    <link rel="canonical" href="https://thepatchgg.github.io/pet-value-calculator.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0d0d0f;
+            --surface: #16161a;
+            --border: #2a2a35;
+            --am: #3ecf6b;
+            --accent: #c8ff57;
+            --text: #e8e8f0;
+            --text-muted: #8888a0;
+            --tier-s-plus: #ffd700;
+            --tier-s: #c0c0c0;
+            --tier-a: #ff9800;
+            --tier-b: #64b5f6;
+            --tier-c: #90a4ae;
+        }
+
+        html, body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            height: 100%;
+        }
+
+        /* ========== HEADER ========== */
+        header {
+            background-color: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--am);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.25rem;
+        }
+
+        nav a:hover {
+            color: var(--am);
+            border-bottom-color: var(--am);
+        }
+
+        nav a.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        /* ========== MAIN LAYOUT ========== */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .calculator {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== PANEL STYLING ========== */
+        .panel {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .search-input {
+            background-color: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            transition: border-color 0.2s;
+            width: 100%;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--am);
+            box-shadow: 0 0 0 3px rgba(62, 207, 107, 0.1);
+        }
+
+        .search-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .search-results {
+            display: none;
+            position: absolute;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            max-height: 200px;
+            overflow-y: auto;
+            width: calc(100% - 3rem);
+            z-index: 10;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .search-results.active {
+            display: block;
+        }
+
+        .search-result-item {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border);
+            transition: background-color 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+
+        .search-result-item:hover {
+            background-color: var(--border);
+        }
+
+        .search-result-item.selected {
+            background-color: var(--am);
+            color: var(--bg);
+        }
+
+        .result-name {
+            flex: 1;
+        }
+
+        .result-tier {
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            background-color: var(--border);
+            margin-left: 0.5rem;
+        }
+
+        .search-container {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .pets-list {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 1rem;
+            min-height: 300px;
+        }
+
+        .pet-card {
+            background-color: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .pet-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pet-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--text);
+        }
+
+        .pet-tier {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.6rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tier-s-plus { background-color: var(--tier-s-plus); color: #000; }
+        .tier-s { background-color: var(--tier-s); color: #000; }
+        .tier-a { background-color: var(--tier-a); color: #fff; }
+        .tier-b { background-color: var(--tier-b); color: #fff; }
+        .tier-c { background-color: var(--tier-c); color: #000; }
+
+        .pet-remove {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0;
+            transition: color 0.2s;
+        }
+
+        .pet-remove:hover {
+            color: #ff6b6b;
+        }
+
+        .toggles-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+
+        .toggle-group {
+            display: flex;
+            gap: 0.3rem;
+        }
+
+        .toggle-btn {
+            flex: 1;
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border);
+            background-color: var(--bg);
+            color: var(--text);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .toggle-btn.active {
+            background-color: var(--am);
+            color: #000;
+            border-color: var(--am);
+        }
+
+        .toggle-btn:hover:not(.active) {
+            border-color: var(--am);
+        }
+
+        .pet-value {
+            background-color: var(--border);
+            padding: 0.75rem;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-muted);
+        }
+
+        .panel-footer {
+            border-top: 1px solid var(--border);
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .total-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .total-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--am);
+        }
+
+        /* ========== CENTER COLUMN ========== */
+        .verdict-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+            min-width: 180px;
+        }
+
+        .balance-bar {
+            background-color: var(--border);
+            border-radius: 8px;
+            height: 40px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .balance-fill {
+            position: absolute;
+            height: 100%;
+            transition: width 0.3s ease, background-color 0.3s ease;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .balance-center {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--text-muted);
+        }
+
+        .verdict-box {
+            background-color: var(--border);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .verdict-verdict {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .verdict-percentage {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .verdict-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .clear-all-btn {
+            background-color: var(--border);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .clear-all-btn:hover {
+            background-color: #b71c1c;
+            border-color: #b71c1c;
+            color: #fff;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background-color: var(--surface);
+            border-top: 1px solid var(--border);
+            padding: 2rem 1rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .calculator {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .verdict-column {
+                order: 2;
+                margin-top: 1rem;
+                flex-direction: row;
+                min-width: auto;
+            }
+
+            .balance-bar {
+                flex: 1;
+            }
+
+            .verdict-box {
+                flex: 1;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+
+            .header-container {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .logo {
+                width: 100%;
+            }
+
+            .panel {
+                padding: 1rem;
+            }
+
+            .pets-list {
+                min-height: 200px;
+            }
+        }
+
+        /* ========== SCROLLBAR ========== */
+        .pets-list::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .pets-list::-webkit-scrollbar-track {
+            background: var(--bg);
+        }
+
+        .pets-list::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 3px;
+        }
+
+        .pets-list::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+
+        .search-results::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .search-results::-webkit-scrollbar-track {
+            background: var(--surface);
+        }
+
+        .search-results::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 3px;
+        }
+    </style>
 </head>
 <body>
-<header class="site-header">
-  <div class="header-inner">
-    <a href="/" class="site-logo">The <span>Patch</span> 🐾</a>
-    <nav class="main-nav">
-      <a href="/">Home</a>
-      <a href="articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
-      <a href="pet-value-calculator.html" class="active">Trade Calc</a>
-      <a href="neon-calculator.html">Neon Calc</a>
-      <a href="trading-forum.html">Trading Board</a>
-      <a href="adopt-me.html">All Guides</a>
-    </nav>
-    <a href="https://thepatchgg.substack.com" class="header-cta" target="_blank" rel="noopener">Subscribe Free</a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<div style="max-width:1280px;margin:0 auto;padding:32px 20px 8px;">
-  <div style="font-size:13px;color:var(--text-muted);margin-bottom:10px;">
-    <a href="/" style="color:var(--text-muted);">Home</a> <span style="opacity:.4;margin:0 4px;">/</span> Pet Value Calculator
-  </div>
-  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:8px;">
-    <div>
-      <h1 style="font-size:clamp(24px,2vw,36px);font-weight:900;letter-spacing:-0.8px;margin-bottom:8px;">Adopt Me Pet Value Calculator</h1>
-      <p style="font-size:15px;color:var(--text-muted);">Browse pet values · Add to Trade Checker · See if your trade is fair. Updated March 2026.</p>
-    </div>
-    <div style="display:flex;gap:8px;flex-shrink:0;">
-      <a href="neon-calculator.html" style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:8px 14px;font-size:13px;font-weight:600;color:var(--text-muted);text-decoration:none;">✨ Neon Calc</a>
-      <a href="trading-forum.html" style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:8px 14px;font-size:13px;font-weight:600;color:var(--text-muted);text-decoration:none;">💬 Trading Board</a>
-    </div>
-  </div>
-</div>
-
-<div style="max-width:1280px;margin:0 auto;padding:0 20px 16px;">
-  <div style="background:rgba(62,207,107,0.06);border:1px solid rgba(62,207,107,0.2);border-radius:8px;padding:10px 14px;font-size:13px;color:var(--text-muted);">
-    💡 <strong style="color:var(--text);">How to use:</strong> Browse pets below, click <strong style="color:var(--am);">+ My Side</strong> or <strong style="color:#9b5de5;">+ Their Side</strong> to build a trade, then check the <strong style="color:var(--text);">Trade Checker</strong> panel on the right. Values are community-consensus estimates, updated regularly.
-  </div>
-</div>
-
-<div class="calc-layout">
-  <div>
-    <div class="calc-filters">
-      <input type="text" class="search-input" id="searchInput" placeholder="🔍 Search pets..." oninput="filterPets()">
-      <div style="display:flex;gap:6px;flex-wrap:wrap;" id="rarityFilters">
-        <button class="filter-btn active" onclick="setRarity('all',this)">All</button>
-        <button class="filter-btn" onclick="setRarity('legendary',this)">⭐ Legendary</button>
-        <button class="filter-btn" onclick="setRarity('ultra-rare',this)">💜 Ultra Rare</button>
-        <button class="filter-btn" onclick="setRarity('rare',this)">💙 Rare</button>
-        <button class="filter-btn" onclick="setRarity('event',this)" style="border-color:rgba(62,207,107,0.3);color:var(--am);">🌟 Event</button>
-        <button class="filter-btn" onclick="setRarity('limited',this)">🔒 Limited</button>
-      </div>
-      <div class="value-type-toggle" id="valueToggle">
-        <button class="vt-btn active" onclick="setValueType('normal',this)">Normal</button>
-        <button class="vt-btn" onclick="setValueType('fr',this)">FR ✈️🎠</button>
-        <button class="vt-btn" onclick="setValueType('neon',this)">Neon ✨</button>
-        <button class="vt-btn" onclick="setValueType('mega',this)">Mega 💎</button>
-      </div>
-    </div>
-    <div style="font-size:12px;color:var(--text-muted);margin-bottom:16px;" id="resultsCount"></div>
-    <div class="pets-grid" id="petsGrid"></div>
-  </div>
-
-  <div>
-    <div class="trade-checker">
-      <div class="tc-header">
-        <div class="tc-title">⚖️ Trade Checker</div>
-        <button class="tc-clear" onclick="clearTrade()">Clear All</button>
-      </div>
-      <div class="tc-sides">
-        <div class="tc-side">
-          <div class="tc-side-label my">My Side</div>
-          <div class="tc-pets-list" id="mySide"></div>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">The Patch</a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="adopt-me.html">All Guides</a>
+                <a href="pet-value-calculator.html" class="active">Trade Calc</a>
+                <a href="neon-calculator.html">Neon Calc</a>
+                <a href="trading-forum.html">Trading Board</a>
+            </nav>
         </div>
-        <div class="tc-side">
-          <div class="tc-side-label their">Their Side</div>
-          <div class="tc-pets-list" id="theirSide"></div>
+    </header>
+
+    <div class="container">
+        <h1>Pet Value Calculator</h1>
+        <p class="subtitle">Calculate fair Adopt Me! trades with neon, mega, and fly/ride multipliers</p>
+
+        <div class="calculator">
+            <!-- YOU GIVE PANEL -->
+            <div class="panel">
+                <div class="panel-title">You Give</div>
+                <div class="search-container">
+                    <input
+                        type="text"
+                        class="search-input give-search"
+                        placeholder="Search pets... (arrow keys to navigate, Enter to add)"
+                        autocomplete="off"
+                    >
+                    <div class="search-results give-results"></div>
+                </div>
+                <div class="pets-list give-pets"></div>
+                <div class="panel-footer">
+                    <span class="total-label">Total Value</span>
+                    <span class="total-value give-total">0.0</span>
+                </div>
+            </div>
+
+            <!-- CENTER VERDICT COLUMN -->
+            <div class="verdict-column">
+                <div class="balance-bar">
+                    <div class="balance-center"></div>
+                    <div class="balance-fill"></div>
+                </div>
+                <div class="verdict-box">
+                    <div class="verdict-verdict" id="verdict">Add pets to both sides</div>
+                    <div class="verdict-percentage" id="percentage">0%</div>
+                    <div class="verdict-label" id="verdictLabel"></div>
+                </div>
+                <button class="clear-all-btn" onclick="clearAll()">Clear All</button>
+            </div>
+
+            <!-- YOU RECEIVE PANEL -->
+            <div class="panel">
+                <div class="panel-title">You Receive</div>
+                <div class="search-container">
+                    <input
+                        type="text"
+                        class="search-input receive-search"
+                        placeholder="Search pets... (arrow keys to navigate, Enter to add)"
+                        autocomplete="off"
+                    >
+                    <div class="search-results receive-results"></div>
+                </div>
+                <div class="pets-list receive-pets"></div>
+                <div class="panel-footer">
+                    <span class="total-label">Total Value</span>
+                    <span class="total-value receive-total">0.0</span>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="tc-totals">
-        <div class="tc-row"><span class="tc-row-label">My total value</span><span class="tc-row-val my" id="myTotal">0</span></div>
-        <div class="tc-row"><span class="tc-row-label">Their total value</span><span class="tc-row-val their" id="theirTotal">0</span></div>
-        <div class="tc-balance-bar"><div class="tc-balance-fill" id="balanceFill" style="width:50%;"></div></div>
-        <div class="tc-verdict verdict-empty" id="tradeVerdict">Add pets to both sides to check trade fairness.</div>
-      </div>
-      <div style="padding:12px 16px;border-top:1px solid var(--border);">
-        <div style="font-size:11px;color:var(--text-muted);line-height:1.5;">Trades within ±15% are generally considered fair. Values are community estimates — always use your own judgment.</div>
-      </div>
     </div>
 
-    <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;margin-top:16px;">
-      <div style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border);">Value Legend</div>
-      <div style="font-size:12px;color:var(--text-muted);line-height:1.9;">
-        <div style="display:flex;justify-content:space-between;"><span>Normal</span><span>Base pet value</span></div>
-        <div style="display:flex;justify-content:space-between;"><span>FR ✈️🎠</span><span>Fly + Ride potion applied</span></div>
-        <div style="display:flex;justify-content:space-between;"><span>Neon ✨</span><span>4× same pet fused</span></div>
-        <div style="display:flex;justify-content:space-between;"><span>Mega 💎</span><span>4× Neon pets fused</span></div>
-        <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);font-size:11px;opacity:.7;">Values are relative (community scale, not Robux). Bat Dragon Normal = 110.</div>
-      </div>
-    </div>
+    <footer>
+        <p>&copy; 2026 The Patch. Not affiliated with Roblox Corporation. Adopt Me! is property of Uplift Games.</p>
+    </footer>
 
-    <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;margin-top:12px;">
-      <div style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border);">Quick Links</div>
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        <a href="articles/adopt-me-pet-value-list-2026.html" style="font-size:13px;color:var(--text-muted);text-decoration:none;padding:8px;background:var(--surface2);border-radius:6px;">📊 Full Pet Value List →</a>
-        <a href="neon-calculator.html" style="font-size:13px;color:var(--text-muted);text-decoration:none;padding:8px;background:var(--surface2);border-radius:6px;">✨ Neon Calculator →</a>
-        <a href="articles/adopt-me-trading-guide-2026.html" style="font-size:13px;color:var(--text-muted);text-decoration:none;padding:8px;background:var(--surface2);border-radius:6px;">📘 Trading Guide →</a>
-        <a href="trading-forum.html" style="font-size:13px;color:var(--text-muted);text-decoration:none;padding:8px;background:var(--surface2);border-radius:6px;">💬 Trading Board →</a>
-      </div>
-    </div>
-  </div>
-</div>
+    <script>
+        /* PET VALUE DATABASE — Updated: March 2026
+         * Reference: elvebredd.com, adoptmetradingvalues.com
+         * Scale: Bat Dragon Normal = 110
+         * TO UPDATE: change val fields + update LAST_UPDATED constant
+         * FR ×2 | Neon ×4 | Mega Neon ×16 vs Normal */
 
-<div style="max-width:1280px;margin:0 auto;padding:0 20px 64px;">
-  <section style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:32px;">
-    <h2 style="font-size:20px;font-weight:800;margin-bottom:16px;">About These Values</h2>
-    <p style="font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:12px;">These values represent community consensus as of March 2026. They are <strong style="color:var(--text);">relative values</strong> (not Robux prices) — a pet with a value of 110 is roughly equivalent in trade to eleven pets with a value of 10 each.</p>
-    <p style="font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:12px;">Demand (↑/→/↓) reflects the current market trend: whether more players are seeking this pet right now. A pet on ↑ trend may trade above its listed value in competitive situations.</p>
-    <p style="font-size:14px;color:var(--text-muted);line-height:1.7;"><strong style="color:var(--text);">Note on Bat Dragon vs Shadow Dragon:</strong> The Bat Dragon is widely considered more valuable by the trading community, though the two are close enough that trading one for the other (with small adds) is generally considered fair.</p>
-  </section>
-</div>
+        const LAST_UPDATED = "March 2026";
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div><div class="footer-brand">The Patch 🐾</div></div>
-    <nav class="footer-links">
-      <a href="/">Home</a><a href="adopt-me.html">All Guides</a><a href="pet-value-calculator.html">Trade Calc</a><a href="neon-calculator.html">Neon Calc</a><a href="trading-forum.html">Trading Board</a>
-    </nav>
-    <div class="footer-legal">© 2026 The Patch. Not affiliated with Roblox Corporation. Adopt Me! is property of Uplift Games.</div>
-  </div>
-</footer>
+        const PETS = [
+            // S+ Tier
+            { name: "Bat Dragon", val: 110, tier: "S+" },
+            { name: "Shadow Dragon", val: 100, tier: "S+" },
+            { name: "Giraffe", val: 75, tier: "S+" },
+            { name: "Crow", val: 65, tier: "S+" },
+            { name: "Evil Unicorn", val: 55, tier: "S+" },
+            { name: "Parrot", val: 50, tier: "S+" },
+            { name: "Frost Dragon", val: 45, tier: "S+" },
+            // S Tier
+            { name: "Goldhorn", val: 40, tier: "S" },
+            { name: "Diamond Dragon", val: 35, tier: "S" },
+            { name: "Kirin", val: 25, tier: "S" },
+            { name: "Diamond Unicorn", val: 22, tier: "S" },
+            { name: "Albino Bat", val: 20, tier: "S" },
+            { name: "Mercat", val: 18, tier: "S" },
+            { name: "Robo Dog", val: 14, tier: "S" },
+            // A Tier
+            { name: "Evil Dragon", val: 14, tier: "A" },
+            { name: "Cobra", val: 12, tier: "A" },
+            { name: "Cerberus", val: 11, tier: "A" },
+            { name: "Red Dragon", val: 10, tier: "A" },
+            { name: "Swagdoggy", val: 10, tier: "A" },
+            { name: "Lanar Serpent", val: 9, tier: "A" },
+            { name: "Neon Dragon", val: 9, tier: "A" },
+            { name: "Lavy Dragon", val: 8, tier: "A" },
+            { name: "Monkey King", val: 8, tier: "A" },
+            { name: "Octopus", val: 7, tier: "A" },
+            { name: "Frost Fury", val: 7, tier: "A" },
+            { name: "Vampire Bat", val: 6, tier: "A" },
+            // B Tier
+            { name: "Golden Dragon", val: 6, tier: "B" },
+            { name: "Diamond Griffin", val: 5, tier: "B" },
+            { name: "Easter Dragon", val: 5, tier: "B" },
+            { name: "Tombstone Ghostify", val: 5, tier: "B" },
+            { name: "Neon Horse", val: 5, tier: "B" },
+            { name: "Bat Bat", val: 4, tier: "B" },
+            { name: "Pumpkin", val: 4, tier: "B" },
+            { name: "Turkey", val: 4, tier: "B" },
+            { name: "Yeti", val: 4, tier: "B" },
+            { name: "Dalmatian", val: 4, tier: "B" },
+            { name: "Bee", val: 4, tier: "B" },
+            { name: "Candycorn", val: 4, tier: "B" },
+            { name: "Peacock", val: 3, tier: "B" },
+            { name: "Shiba Inu", val: 3, tier: "B" },
+            { name: "Kangaroo", val: 3, tier: "B" },
+            { name: "Snow Puma", val: 3, tier: "B" },
+            { name: "Sabertooth", val: 3, tier: "B" },
+            { name: "Deinonychus", val: 3, tier: "B" },
+            { name: "Penguin", val: 3, tier: "B" },
+            { name: "Gumball Caterpillar", val: 3, tier: "B" },
+            { name: "Gummy Guana", val: 3, tier: "B" },
+            { name: "Lunar Ox", val: 3, tier: "B" },
+            { name: "Flamingo", val: 3, tier: "B" },
+            // C Tier
+            { name: "Axolotl", val: 2, tier: "C" },
+            { name: "Snow Leopard", val: 2, tier: "C" },
+            { name: "Glyptodon", val: 2, tier: "C" },
+            { name: "Emu", val: 2, tier: "C" },
+            { name: "Koala", val: 2, tier: "C" },
+            { name: "G ost Bunny", val: 2, tier: "C" },
+            { name: "Cow", val: 2, tier: "C" },
+            { name: "Rhino", val: 2, tier: "C" },
+            { name: "Narwhal", val: 2, tier: "C" },
+            { name: "Manta Ray", val: 2, tier: "C" },
+            { name: "Clownfish", val: 2, tier: "C" },
+            { name: "Cocoadile", val: 2, tier: "C" },
+            { name: "Red Panda", val: 2, tier: "C" },
+            { name: "Poodle", val: 2, tier: "C" },
+            { name: "Kitsune", val: 2, tier: "C" },
+            { name: "Brown Bear", val: 1, tier: "C" },
+            { name: "Polar Bear", val: 1, tier: "C" },
+            { name: "Panda", val: 1, tier: "C" },
+            { name: "Musk Ox", val: 1, tier: "C" },
+            { name: "Capybara", val: 1, tier: "C" },
+            { name: "Sloth", val: 1, tier: "C" },
+            { name: "Hedgehog", val: 1, tier: "C" },
+            { name: "Elephant", val: 1, tier: "C" },
+            { name: "Lion", val: 1, tier: "C" },
+            { name: "Dragon", val: 1, tier: "C" },
+            { name: "Unicorn", val: 1, tier: "C" },
+            { name: "Griffin", val: 1, tier: "C" },
+            { name: "Wolf", val: 1, tier: "C" },
+            { name: "Starfish", val: 1, tier: "C" },
+            { name: "Horse", val: 0, tier: "C" },
+            { name: "Dog", val: 0, tier: "C" },
+            { name: "Cat", val: 0, tier: "C" }
+        ];
 
-<script>
-const pets = [
-  {id:1,name:"Bat Dragon",emoji:"🦇",rarity:"legendary",availability:"limited",source:"Halloween 2019",values:{normal:110,fr:130,neon:450,mega:1600},demand:"up",current:false,note:"The most valuable pet in Adopt Me! Released Halloween 2019. Edges out Shadow Dragon for the #1 spot."},
-  {id:2,name:"Shadow Dragon",emoji:"🐉",rarity:"legendary",availability:"limited",source:"Halloween 2019",values:{normal:100,fr:120,neon:415,mega:1500},demand:"stable",current:false,note:"Neck-and-neck with Bat Dragon. Halloween 2019 exclusive. Trading one for the other (with small adds) is generally fair."},
-  {id:3,name:"Frost Dragon",emoji:"❄️",rarity:"legendary",availability:"limited",source:"Winter Holiday 2019",values:{normal:90,fr:108,neon:370,mega:1350},demand:"stable",current:false,note:"Winter Holiday 2019 exclusive. One of the original ultra-rare event pets."},
-  {id:4,name:"Evil Unicorn",emoji:"🦄",rarity:"legendary",availability:"limited",source:"Halloween 2019",values:{normal:68,fr:82,neon:280,mega:1050},demand:"down",current:false,note:"3rd Halloween 2019 legendary, slightly below Bat and Shadow Dragon."},
-  {id:5,name:"Blue Dog",emoji:"🐕",rarity:"common",availability:"limited",source:"Starter (Launch Era)",values:{normal:62,fr:75,neon:255,mega:980},demand:"stable",current:false,note:"Launch-era starter pet. Extremely rare due to limited original availability."},
-  {id:6,name:"Pink Cat",emoji:"🐱",rarity:"common",availability:"limited",source:"Starter (Launch Era)",values:{normal:60,fr:72,neon:248,mega:950},demand:"stable",current:false,note:"Launch-era pink cat starter. Rare counterpart to the Blue Dog."},
-  {id:7,name:"Giraffe",emoji:"🦒",rarity:"legendary",availability:"limited",source:"Farm Egg",values:{normal:55,fr:66,neon:224,mega:880},demand:"up",current:false,note:"Farm Egg legendary with consistently rising demand."},
-  {id:8,name:"Ninja Monkey",emoji:"🥷",rarity:"legendary",availability:"limited",source:"Star Rewards (250 days)",values:{normal:50,fr:60,neon:205,mega:810},demand:"down",current:false,note:"250-day Star Rewards pet. Not from eggs — supply is limited."},
-  {id:9,name:"Crow",emoji:"🐦",rarity:"legendary",availability:"limited",source:"Farm Egg",values:{normal:45,fr:54,neon:184,mega:730},demand:"stable",current:false,note:"Farm Egg legendary alongside Giraffe."},
-  {id:10,name:"Parrot",emoji:"🦜",rarity:"legendary",availability:"limited",source:"Jungle Egg",values:{normal:42,fr:50,neon:172,mega:680},demand:"stable",current:false,note:"Jungle Egg legendary. One of the harder egg legendaries to hatch."},
-  {id:11,name:"Dragon",emoji:"🐲",rarity:"legendary",availability:"always",source:"Cracked Egg / Pet Egg",values:{normal:38,fr:46,neon:156,mega:625},demand:"up",current:false,note:"Still obtainable from Cracked Eggs. Strong consistent demand."},
-  {id:12,name:"Unicorn",emoji:"🦄",rarity:"legendary",availability:"always",source:"Cracked Egg / Pet Egg",values:{normal:35,fr:42,neon:144,mega:576},demand:"up",current:false,note:"Still available from Cracked Eggs. A classic Adopt Me! pet."},
-  {id:13,name:"Dodo",emoji:"🦤",rarity:"legendary",availability:"limited",source:"Fossil Egg",values:{normal:32,fr:38,neon:130,mega:520},demand:"down",current:false,note:"Fossil Egg legendary. Gradually declining as attention moves to newer pets."},
-  {id:14,name:"T-Rex",emoji:"🦖",rarity:"legendary",availability:"limited",source:"Fossil Egg",values:{normal:30,fr:36,neon:122,mega:488},demand:"down",current:false,note:"Fossil Egg legendary. Strong value but showing slow decline."},
-  {id:15,name:"Monkey King",emoji:"👑",rarity:"legendary",availability:"limited",source:"Special Monkey Event",values:{normal:28,fr:34,neon:114,mega:456},demand:"stable",current:false,note:"Required combining 3 regular monkeys with special items during a limited event."},
-  {id:16,name:"Albino Monkey",emoji:"🐒",rarity:"legendary",availability:"limited",source:"Special Monkey Event",values:{normal:25,fr:30,neon:102,mega:408},demand:"stable",current:false,note:"Obtainable only during a special limited event."},
-  {id:17,name:"Turtle",emoji:"🐢",rarity:"legendary",availability:"limited",source:"Aussie Egg",values:{normal:22,fr:26,neon:90,mega:360},demand:"up",current:false,note:"Aussie Egg legendary. Steady upward trend."},
-  {id:18,name:"Kangaroo",emoji:"🦘",rarity:"legendary",availability:"limited",source:"Aussie Egg",values:{normal:20,fr:24,neon:82,mega:328},demand:"stable",current:false,note:"Aussie Egg legendary alongside Turtle."},
-  {id:19,name:"Golden Dragon",emoji:"✨",rarity:"legendary",availability:"always",source:"Golden Egg (Star Rewards)",values:{normal:18,fr:22,neon:74,mega:296},demand:"stable",current:false,note:"Obtainable from Golden Egg via Star Rewards."},
-  {id:20,name:"Diamond Dragon",emoji:"💎",rarity:"legendary",availability:"always",source:"Diamond Egg (Star Rewards)",values:{normal:16,fr:20,neon:66,mega:264},demand:"stable",current:false,note:"From Diamond Egg. Slightly rarer than Golden Dragon."},
-  {id:21,name:"Octopus",emoji:"🐙",rarity:"legendary",availability:"limited",source:"Ocean Egg",values:{normal:15,fr:18,neon:62,mega:248},demand:"up",current:false,note:"Ocean Egg legendary. Rising demand."},
-  {id:22,name:"Axolotl",emoji:"🦎",rarity:"legendary",availability:"limited",source:"Ocean Egg",values:{normal:14,fr:17,neon:58,mega:232},demand:"up",current:false,note:"Ocean Egg legendary. Very popular with younger players."},
-  {id:23,name:"Lunar Serpent",emoji:"🐍",rarity:"legendary",availability:"limited",source:"Chinese New Year 2026",values:{normal:12,fr:14,neon:50,mega:200},demand:"down",current:false,note:"CNY 2026 event pet. Post-event cooldown period — value should stabilize in mid-2026."},
-  {id:24,name:"Kitsune",emoji:"🦊",rarity:"legendary",availability:"limited",source:"Japan Egg",values:{normal:10,fr:12,neon:41,mega:164},demand:"stable",current:false,note:"Japan Egg legendary. Consistent mid-tier value."},
-  {id:25,name:"Cerberus",emoji:"🐕",rarity:"legendary",availability:"limited",source:"Halloween 2020",values:{normal:10,fr:12,neon:41,mega:164},demand:"stable",current:false,note:"Halloween 2020 event pet."},
-  {id:26,name:"Camel",emoji:"🐪",rarity:"legendary",availability:"limited",source:"Safari Egg",values:{normal:8,fr:10,neon:33,mega:132},demand:"stable",current:false,note:"Safari Egg legendary."},
-  {id:27,name:"Panther",emoji:"🐆",rarity:"legendary",availability:"limited",source:"Safari Egg",values:{normal:8,fr:10,neon:33,mega:132},demand:"down",current:false,note:"Safari Egg legendary. Gradual decline."},
-  {id:28,name:"Candicorn",emoji:"🍭",rarity:"legendary",availability:"event",source:"Sugarfest 2026 (Active!)",values:{normal:7,fr:9,neon:29,mega:116},demand:"up",current:true,note:"🌟 CURRENT EVENT — Available for 1,000 Robux until April 10. Expected to appreciate after event ends."},
-  {id:29,name:"Cocoadile",emoji:"🐊",rarity:"legendary",availability:"event",source:"Sugarfest 2026 (Active!)",values:{normal:4,fr:5,neon:17,mega:68},demand:"up",current:true,note:"🌟 CURRENT EVENT — Sugarfest 2026 legendary. Lower value than Candicorn."},
-  {id:30,name:"Gummy Guana",emoji:"🦎",rarity:"ultra-rare",availability:"event",source:"Sugarfest 2026 (Active!)",values:{normal:4,fr:5,neon:17,mega:68},demand:"up",current:true,note:"🌟 CURRENT EVENT — Sugarfest 2026 ultra rare."},
-  {id:31,name:"Gumball Caterpillar",emoji:"🐛",rarity:"rare",availability:"event",source:"Sugarfest 2026 (Active!)",values:{normal:3,fr:4,neon:13,mega:52},demand:"up",current:true,note:"🌟 CURRENT EVENT — Sugarfest 2026 rare pet."},
-  {id:32,name:"Frog",emoji:"🐸",rarity:"ultra-rare",availability:"limited",source:"Aussie Egg",values:{normal:5,fr:6,neon:21,mega:84},demand:"up",current:false,note:"Aussie Egg ultra rare. Often considered undervalued."},
-  {id:33,name:"Triceratops",emoji:"🦕",rarity:"ultra-rare",availability:"limited",source:"Fossil Egg",values:{normal:4,fr:5,neon:17,mega:68},demand:"stable",current:false,note:"Fossil Egg ultra rare."},
-  {id:34,name:"Stegosaurus",emoji:"🦖",rarity:"ultra-rare",availability:"limited",source:"Fossil Egg",values:{normal:4,fr:5,neon:17,mega:68},demand:"stable",current:false,note:"Fossil Egg ultra rare."},
-  {id:35,name:"Starfish",emoji:"⭐",rarity:"rare",availability:"limited",source:"Ocean Egg",values:{normal:3,fr:4,neon:13,mega:52},demand:"stable",current:false,note:"Ocean Egg rare pet."},
-  {id:36,name:"Bunny",emoji:"🐰",rarity:"rare",availability:"limited",source:"Spring Egg",values:{normal:3,fr:4,neon:13,mega:52},demand:"stable",current:false,note:"Spring Egg rare pet."},
-  {id:37,name:"Robin",emoji:"🐦",rarity:"uncommon",availability:"limited",source:"Farm Egg",values:{normal:2,fr:3,neon:9,mega:36},demand:"stable",current:false,note:"Farm Egg uncommon."},
-  {id:38,name:"Dog",emoji:"🐶",rarity:"common",availability:"always",source:"Starter Egg",values:{normal:1,fr:2,neon:5,mega:20},demand:"stable",current:false,note:"Default starter pet. Very low trade value."},
-  {id:39,name:"Cat",emoji:"🐱",rarity:"common",availability:"always",source:"Starter Egg",values:{normal:1,fr:2,neon:5,mega:20},demand:"stable",current:false,note:"Default starter pet. Very low trade value."},
-];
+        // State
+        let givePets = [];
+        let receivePets = [];
+        let giveSearchSelected = -1;
+        let receiveSearchSelected = -1;
 
-let currentRarity = 'all';
-let currentValueType = 'normal';
-let mySide = [];
-let theirSide = [];
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            setupSearchListeners();
+            updateCalculator();
+        });
 
-function setRarity(r, btn) {
-  currentRarity = r;
-  document.querySelectorAll('#rarityFilters .filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  filterPets();
-}
-function setValueType(t, btn) {
-  currentValueType = t;
-  document.querySelectorAll('#valueToggle .vt-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  filterPets();
-}
-function filterPets() {
-  const q = document.getElementById('searchInput').value.toLowerCase();
-  let filtered = pets.filter(p => {
-    const matchSearch = !q || p.name.toLowerCase().includes(q) || p.source.toLowerCase().includes(q);
-    let matchRarity = true;
-    if (currentRarity === 'legendary') matchRarity = p.rarity === 'legendary';
-    else if (currentRarity === 'ultra-rare') matchRarity = p.rarity === 'ultra-rare';
-    else if (currentRarity === 'rare') matchRarity = p.rarity === 'rare';
-    else if (currentRarity === 'event') matchRarity = p.availability === 'event';
-    else if (currentRarity === 'limited') matchRarity = p.availability === 'limited';
-    return matchSearch && matchRarity;
-  });
-  renderPets(filtered);
-  document.getElementById('resultsCount').textContent = `Showing ${filtered.length} of ${pets.length} pets`;
-}
-function renderPets(list) {
-  const grid = document.getElementById('petsGrid');
-  if (list.length === 0) { grid.innerHTML = '<div class="no-results">No pets found. Try a different search or filter.</div>'; return; }
-  grid.innerHTML = list.map(p => {
-    const val = p.values[currentValueType];
-    const demandLabel = p.demand === 'up' ? '↑ Rising' : p.demand === 'down' ? '↓ Falling' : '→ Stable';
-    const demandClass = p.demand === 'up' ? 'demand-up' : p.demand === 'down' ? 'demand-down' : 'demand-stable';
-    const isEvent = p.availability === 'event';
-    return `<div class="pet-card${isEvent ? ' event-card' : ''}">
-      <div class="pet-card-top pc-${p.rarity.replace(' ','-')}"></div>
-      <div class="pet-card-body">
-        <div class="pet-card-header">
-          <div class="pet-emoji">${p.emoji}</div>
-          <div class="pet-info">
-            <div class="pet-name">${p.name}${isEvent ? '<span class="event-badge">LIVE</span>' : ''}</div>
-            <div class="pet-source">${p.source}</div>
-          </div>
-          <div class="rarity-tag rt-${p.rarity.replace(' ','-')}">${p.rarity.replace('-',' ')}</div>
-        </div>
-        <div class="pet-values">
-          <div class="pv-item${currentValueType==='normal'?' highlighted':''}"><div class="pv-label">Normal</div><div class="pv-val">${p.values.normal}</div></div>
-          <div class="pv-item${currentValueType==='fr'?' highlighted':''}"><div class="pv-label">FR</div><div class="pv-val">${p.values.fr}</div></div>
-          <div class="pv-item${currentValueType==='neon'?' highlighted':''}"><div class="pv-label">Neon</div><div class="pv-val">${p.values.neon}</div></div>
-          <div class="pv-item${currentValueType==='mega'?' highlighted':''}"><div class="pv-label">Mega</div><div class="pv-val">${p.values.mega}</div></div>
-        </div>
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
-          <span class="demand-badge ${demandClass}">${demandLabel}</span>
-          <span style="font-size:11px;color:var(--text-muted);">${p.availability === 'always' ? '🔓 Always available' : p.availability === 'event' ? '🌟 Event' : '🔒 Limited'}</span>
-        </div>
-        <div class="add-btns">
-          <button class="add-btn" onclick="addToTrade(${p.id},'my')">+ My Side</button>
-          <button class="add-btn their" onclick="addToTrade(${p.id},'their')">+ Their Side</button>
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-}
-function addToTrade(id, side) {
-  const pet = pets.find(p => p.id === id);
-  if (!pet) return;
-  const entry = { pet, type: currentValueType };
-  if (side === 'my') mySide.push(entry);
-  else theirSide.push(entry);
-  updateTradeChecker();
-}
-function removeFromTrade(side, idx) {
-  if (side === 'my') mySide.splice(idx, 1);
-  else theirSide.splice(idx, 1);
-  updateTradeChecker();
-}
-function clearTrade() { mySide = []; theirSide = []; updateTradeChecker(); }
-function updateTradeChecker() {
-  const renderSide = (list, elId, sideKey) => {
-    const el = document.getElementById(elId);
-    if (list.length === 0) { el.innerHTML = '<div class="tc-empty">Click "+ '+( sideKey==='my'?'My':'Their')+' Side" on any pet card</div>'; return; }
-    el.innerHTML = list.map((e, i) => `<div class="tc-pet-item">
-      <span class="tc-pet-emoji">${e.pet.emoji}</span>
-      <span class="tc-pet-name">${e.pet.name}</span>
-      <span class="tc-pet-val">${e.pet.values[e.type]}</span>
-      <button class="tc-remove" onclick="removeFromTrade('${sideKey}',${i})">✕</button>
-    </div>`).join('');
-  };
-  renderSide(mySide, 'mySide', 'my');
-  renderSide(theirSide, 'theirSide', 'their');
-  const myTotal = mySide.reduce((s, e) => s + e.pet.values[e.type], 0);
-  const theirTotal = theirSide.reduce((s, e) => s + e.pet.values[e.type], 0);
-  document.getElementById('myTotal').textContent = myTotal;
-  document.getElementById('theirTotal').textContent = theirTotal;
-  const fill = document.getElementById('balanceFill');
-  const verdict = document.getElementById('tradeVerdict');
-  if (myTotal === 0 && theirTotal === 0) {
-    fill.style.width = '50%'; fill.style.background = 'var(--border)';
-    verdict.className = 'tc-verdict verdict-empty'; verdict.textContent = 'Add pets to both sides to check trade fairness.';
-    return;
-  }
-  const total = myTotal + theirTotal;
-  const myPct = total > 0 ? (myTotal / total) * 100 : 50;
-  fill.style.width = myPct + '%';
-  const ratio = theirTotal > 0 ? myTotal / theirTotal : 0;
-  if (theirTotal === 0 || myTotal === 0) {
-    fill.style.background = 'var(--text-muted)';
-    verdict.className = 'tc-verdict verdict-empty'; verdict.textContent = 'Add pets to both sides to compare.';
-  } else if (ratio >= 0.85 && ratio <= 1.15) {
-    fill.style.background = 'var(--am)';
-    verdict.className = 'tc-verdict verdict-fair'; verdict.textContent = '✓ Fair trade — values are within 15% of each other.';
-  } else if (ratio < 0.85) {
-    fill.style.background = 'var(--val)';
-    const pct = Math.round((1 - ratio) * 100);
-    verdict.className = 'tc-verdict verdict-low'; verdict.textContent = `⚠️ You're offering ~${pct}% less value. Consider adding more.`;
-  } else {
-    fill.style.background = 'var(--accent)';
-    const pct = Math.round((ratio - 1) * 100);
-    verdict.className = 'tc-verdict verdict-high'; verdict.textContent = `↑ You're offering ~${pct}% more value — you're overpaying.`;
-  }
-}
-function init() {
-  filterPets();
-  updateTradeChecker();
-  const toggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.main-nav');
-  toggle.addEventListener('click', () => {
-    const open = nav.style.display === 'flex';
-    nav.style.display = open ? 'none' : 'flex';
-    if (!open) { nav.style.flexDirection='column';nav.style.position='absolute';nav.style.top='60px';nav.style.left='0';nav.style.right='0';nav.style.background='#0d0d0f';nav.style.padding='12px 20px';nav.style.borderBottom='1px solid #2a2a35';nav.style.zIndex='99'; }
-  });
-}
-document.addEventListener('DOMContentLoaded', init);
-</script>
+        function setupSearchListeners() {
+            const giveSearch = document.querySelector('.give-search');
+            const receiveSearch = document.querySelector('.receive-search');
+
+            giveSearch.addEventListener('input', () => {
+                giveSearchSelected = -1;
+                filterPets('give');
+            });
+            giveSearch.addEventListener('keydown', (e) => handleSearchKeydown(e, 'give'));
+            giveSearch.addEventListener('focus', () => {
+                if (giveSearch.value.trim()) {
+                    document.querySelector('.give-results').classList.add('active');
+                }
+            });
+
+            receiveSearch.addEventListener('input', () => {
+                receiveSearchSelected = -1;
+                filterPets('receive');
+            });
+            receiveSearch.addEventListener('keydown', (e) => handleSearchKeydown(e, 'receive'));
+            receiveSearch.addEventListener('focus', () => {
+                if (receiveSearch.value.trim()) {
+                    document.querySelector('.receive-results').classList.add('active');
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.search-container')) {
+                    document.querySelectorAll('.search-results').forEach(r => r.classList.remove('active'));
+                }
+            });
+        }
+
+        function filterPets(side) {
+            const search = document.querySelector(`.${side}-search`).value.toLowerCase().trim();
+            const results = document.querySelector(`.${side}-results`);
+
+            if (!search) {
+                results.classList.remove('active');
+                return;
+            }
+
+            const filtered = PETS.filter(p => p.name.toLowerCase().includes(search));
+            const html = filtered
+                .slice(0, 8)
+                .map((pet, idx) => `
+                    <div class="search-result-item ${idx === (side === 'give' ? giveSearchSelected : receiveSearchSelected) ? 'selected' : ''}"
+                         onclick="addPet('${side}', '${pet.name}')">
+                        <span class="result-name">${pet.name}</span>
+                        <span class="result-tier tier-${pet.tier.toLowerCase()}">${pet.tier}</span>
+                    </div>
+                `)
+                .join('');
+
+            results.innerHTML = `<div style="padding: 0.5rem 1rem; color: var(--text-muted); font-size: 0.85rem;">${filtered.length} matching pets</div>` + html;
+            results.classList.add('active');
+        }
+
+        function handleSearchKeydown(e, side) {
+            const results = document.querySelector(`.${side}-results`);
+            const items = results.querySelectorAll('.search-result-item:not(:first-child)');
+            const isGive = side === 'give';
+            let selected = isGive ? giveSearchSelected : receiveSearchSelected;
+
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                selected = Math.min(selected + 1, items.length - 1);
+                if (isGive) giveSearchSelected = selected;
+                else receiveSearchSelected = selected;
+                updateSearchSelection(side);
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                selected = Math.max(selected - 1, -1);
+                if (isGive) giveSearchSelected = selected;
+                else receiveSearchSelected = selected;
+                updateSearchSelection(side);
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                if (selected >= 0 && items[selected]) {
+                    items[selected].click();
+                }
+            }
+        }
+
+        function updateSearchSelection(side) {
+            const results = document.querySelector(`.${side}-results`);
+            const items = results.querySelectorAll('.search-result-item');
+            items.forEach((item, idx) => {
+                const selected = side === 'give' ? giveSearchSelected : receiveSearchSelected;
+                item.classList.toggle('selected', idx === selected + 1);
+            });
+        }
+
+        function addPet(side, petName) {
+            const pet = PETS.find(p => p.name === petName);
+            if (!pet) return;
+
+            const petData = {
+                id: Math.random(),
+                name: pet.name,
+                baseValue: pet.val,
+                tier: pet.tier,
+                neon: 'Normal',
+                fr: 'None'
+            };
+
+            if (side === 'give') {
+                givePets.push(petData);
+                document.querySelector('.give-search').value = '';
+                giveSearchSelected = -1;
+                document.querySelector('.give-results').classList.remove('active');
+                document.querySelector('.give-search').focus();
+            } else {
+                receivePets.push(petData);
+                document.querySelector('.receive-search').value = '';
+                receiveSearchSelected = -1;
+                document.querySelector('.receive-results').classList.remove('active');
+                document.querySelector('.receive-search').focus();
+            }
+
+            renderPets();
+            updateCalculator();
+        }
+
+        function removePet(side, id) {
+            if (side === 'give') {
+                givePets = givePets.filter(p => p.id !== id);
+            } else {
+                receivePets = receivePets.filter(p => p.id !== id);
+            }
+            renderPets();
+            updateCalculator();
+        }
+
+        function updatePetMultiplier(side, id, type, value) {
+            const pets = side === 'give' ? givePets : receivePets;
+            const pet = pets.find(p => p.id === id);
+            if (pet) {
+                if (type === 'neon') pet.neon = value;
+                if (type === 'fr') pet.fr = value;
+            }
+            renderPets();
+            updateCalculator();
+        }
+
+        function getEffectiveValue(pet) {
+            let neonMult = 1;
+            if (pet.neon === 'Neon') neonMult = 4;
+            else if (pet.neon === 'Mega') neonMult = 16;
+
+            let frMult = 1;
+            if (pet.fr === 'F' || pet.fr === 'R') frMult = 1.5;
+            else if (pet.fr === 'FR') frMult = 2;
+
+            return pet.baseValue * neonMult * frMult;
+        }
+
+        function renderPets() {
+            const renderSide = (side, pets) => {
+                const container = document.querySelector(`.${side}-pets`);
+                if (pets.length === 0) {
+                    container.innerHTML = '<div class="empty-state">Search and add pets above →</div>';
+                    return;
+                }
+
+                container.innerHTML = pets.map(pet => `
+                    <div class="pet-card">
+                        <div class="pet-header">
+                            <div>
+                                <div class="pet-name">${pet.name}</div>
+                                <span class="pet-tier tier-${pet.tier.toLowerCase()}">${pet.tier}</span>
+                            </div>
+                            <button class="pet-remove" onclick="removePet('${side}', ${pet.id})">×</button>
+                        </div>
+                        <div class="toggles-group">
+                            <div class="toggle-group">
+                                ${['Normal', 'Neon', 'Mega'].map(opt => `
+                                    <button class="toggle-btn ${pet.neon === opt ? 'active' : ''}"
+                                            onclick="updatePetMultiplier('${side}', ${pet.id}, 'neon', '${opt}')">${opt}</button>
+                                `).join('')}
+                            </div>
+                            <div class="toggle-group">
+                                ${['None', 'F', 'R', 'FR'].map(opt => `
+                                    <button class="toggle-btn ${pet.fr === opt ? 'active' : ''}"
+                                            onclick="updatePetMultiplier('${side}', ${pet.id}, 'fr', '${opt}')">${opt}</button>
+                                `).join('')}
+                            </div>
+                        </div>
+                        <div class="pet-value">${getEffectiveValue(pet).toFixed(1)}</div>
+                    </div>
+                `).join('');
+            };
+
+            renderSide('give', givePets);
+            renderSide('receive', receivePets);
+        }
+
+        function getTotalValue(pets) {
+            return pets.reduce((sum, pet) => sum + getEffectiveValue(pet), 0);
+        }
+
+        function updateCalculator() {
+            const giveTotal = getTotalValue(givePets);
+            const receiveTotal = getTotalValue(receivePets);
+
+            document.querySelector('.give-total').textContent = giveTotal.toFixed(1);
+            document.querySelector('.receive-total').textContent = receiveTotal.toFixed(1);
+
+            const verdict = document.getElementById('verdict');
+            const percentage = document.getElementById('percentage');
+            const verdictLabel = document.getElementById('verdictLabel');
+            const balanceFill = document.querySelector('.balance-fill');
+            const verdictBox = document.querySelector('.verdict-box');
+
+            if (givePets.length === 0 || receivePets.length === 0) {
+                verdict.textContent = 'Add pets to both sides';
+                percentage.textContent = '0%';
+                verdictLabel.textContent = '';
+                balanceFill.style.width = '0';
+                verdictBox.style.borderColor = 'var(--border)';
+                verdictBox.style.backgroundColor = 'var(--border)';
+                return;
+            }
+
+            const diff = ((receiveTotal - giveTotal) / giveTotal) * 100;
+            percentage.textContent = Math.abs(diff).toFixed(1) + '%';
+
+            let verdictText = '';
+            let verdictColor = '';
+            let barColor = '';
+
+            if (diff < -30) {
+                verdictText = 'BIG LOSS 🔴';
+                verdictColor = '#b71c1c';
+                barColor = '#b71c1c';
+            } else if (diff < -15) {
+                verdictText = 'LOSING';
+                verdictColor = '#c62828';
+                barColor = '#c62828';
+            } else if (diff < -5) {
+                verdictText = 'SLIGHT LOSS';
+                verdictColor = '#e53935';
+                barColor = '#e53935';
+            } else if (diff < -2) {
+                verdictText = 'MINOR LOSS';
+                verdictColor = '#ff7043';
+                barColor = '#ff7043';
+            } else if (diff <= 2) {
+                verdictText = 'FAIR TRADE ⚖️';
+                verdictColor = '#ffd600';
+                barColor = '#ffd600';
+            } else if (diff <= 5) {
+                verdictText = 'SMALL WIN';
+                verdictColor = '#aed581';
+                barColor = '#aed581';
+            } else if (diff <= 15) {
+                verdictText = 'WINNING ✅';
+                verdictColor = '#66bb6a';
+                barColor = '#66bb6a';
+            } else if (diff <= 30) {
+                verdictText = 'GREAT WIN';
+                verdictColor = '#2e7d32';
+                barColor = '#2e7d32';
+            } else {
+                verdictText = 'HUGE WIN 🔥';
+                verdictColor = '#1b5e20';
+                barColor = '#1b5e20';
+            }
+
+            verdict.textContent = verdictText;
+            verdictLabel.textContent = diff > 0 ? 'You gain value' : 'You lose value';
+            verdictBox.style.borderColor = verdictColor;
+            verdictBox.style.backgroundColor = verdictColor + '15';
+
+            const barWidth = Math.min(Math.abs(diff / 50) * 100, 50);
+            balanceFill.style.width = barWidth + '%';
+            balanceFill.style.backgroundColor = barColor;
+
+            if (diff > 0) {
+                balanceFill.style.left = 'auto';
+                balanceFill.style.right = '50%';
+            } else {
+                balanceFill.style.left = '50%';
+                balanceFill.style.right = 'auto';
+            }
+        }
+
+        function clearAll() {
+            givePets = [];
+            receivePets = [];
+            document.querySelector('.give-search').value = '';
+            document.querySelector('.receive-search').value = '';
+            giveSearchSelected = -1;
+            receiveSearchSelected = -1;
+            renderPets();
+            updateCalculator();
+        }
+    </script>
 </body>
 </html>
