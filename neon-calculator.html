@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt Me Neon Calculator 2026 — How Many Pets for Neon & Mega Neon? | The Patch</title>
+  <meta name="description" content="Free Adopt Me Neon Calculator — instantly see how many pets you need to make a Neon or Mega Neon, what it costs, and whether it's cheaper to make one or buy one. Updated 2026.">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How many pets do you need to make a Neon in Adopt Me?","acceptedAnswer":{"@type":"Answer","text":"You need exactly 4 fully-grown (adult) pets of the same type to make a Neon pet in Adopt Me. All 4 pets must be the same species."}},
+    {"@type":"Question","name":"How many pets do you need to make a Mega Neon in Adopt Me?","acceptedAnswer":{"@type":"Answer","text":"You need 4 Neon pets to make a Mega Neon, which means 16 total regular pets. All 4 Neons must be the same species."}},
+    {"@type":"Question","name":"Is it better to make a Neon or buy one in Adopt Me?","acceptedAnswer":{"@type":"Answer","text":"It depends on the pet. For common pets you can hatch cheaply, making your own Neon is usually cheaper. For limited pets (like Bat Dragon), buying a Neon directly is almost always better since the component pets are very hard to acquire."}},
+    {"@type":"Question","name":"Do FR pets make a better Neon than normal pets?","acceptedAnswer":{"@type":"Answer","text":"Yes! Using 4 FR pets to make a Neon creates an FR Neon, which is worth significantly more than a Neon made from Normal pets. Always use FR pets when making Neons if possible."}}
+  ]}
+  </script>
+  <style>
+    .nc-layout { max-width: 960px; margin: 0 auto; padding: 32px 20px 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+    .nc-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    .nc-panel-header { background: var(--surface2); padding: 16px 20px; border-bottom: 1px solid var(--border); }
+    .nc-panel-title { font-size: 15px; font-weight: 800; color: var(--text); }
+    .nc-panel-body { padding: 20px; }
+    .nc-select { width: 100%; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; font-size: 14px; color: var(--text); outline: none; font-family: var(--font); margin-bottom: 16px; }
+    .nc-select:focus { border-color: var(--am); }
+    .nc-target-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+    .nc-target-btn { padding: 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface2); color: var(--text-muted); font-size: 14px; font-weight: 700; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .nc-target-btn.active { border-color: var(--am); background: rgba(62,207,107,0.1); color: var(--am); }
+    .nc-type-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; }
+    .nc-type-btn { padding: 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface2); color: var(--text-muted); font-size: 13px; font-weight: 600; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .nc-type-btn.active { border-color: var(--accent); background: rgba(200,255,87,0.08); color: var(--accent); }
+    .calc-btn { width: 100%; padding: 14px; background: var(--am); color: #000; border: none; border-radius: 8px; font-size: 15px; font-weight: 800; cursor: pointer; transition: opacity 0.15s; }
+    .calc-btn:hover { opacity: 0.88; }
+    .result-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-top: 0; }
+    .result-header { background: linear-gradient(135deg, rgba(62,207,107,0.1), rgba(62,207,107,0.04)); padding: 20px; border-bottom: 1px solid var(--border); text-align: center; }
+    .result-pet { font-size: 48px; margin-bottom: 8px; }
+    .result-title { font-size: 18px; font-weight: 900; color: var(--text); margin-bottom: 4px; }
+    .result-sub { font-size: 13px; color: var(--text-muted); }
+    .result-stats { padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+    .stat-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: var(--surface2); border-radius: 8px; }
+    .stat-label { font-size: 13px; color: var(--text-muted); }
+    .stat-value { font-size: 16px; font-weight: 900; color: var(--text); }
+    .stat-value.green { color: var(--am); }
+    .stat-value.yellow { color: var(--accent); }
+    .verdict-box { margin: 16px 20px 20px; padding: 14px; border-radius: 8px; font-size: 13px; line-height: 1.6; }
+    .verdict-box.buy { background: rgba(62,207,107,0.08); border: 1px solid rgba(62,207,107,0.2); color: var(--text-muted); }
+    .verdict-box.make { background: rgba(200,255,87,0.06); border: 1px solid rgba(200,255,87,0.15); color: var(--text-muted); }
+    .verdict-box strong { display: block; font-size: 14px; margin-bottom: 4px; }
+    .verdict-box.buy strong { color: var(--am); }
+    .verdict-box.make strong { color: var(--accent); }
+    .neon-visual { display: flex; justify-content: center; gap: 8px; padding: 16px 20px; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+    .pet-circle { width: 44px; height: 44px; border-radius: 50%; background: var(--surface2); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 20px; transition: all 0.3s; }
+    .pet-circle.filled { border-color: var(--am); background: rgba(62,207,107,0.1); box-shadow: 0 0 8px rgba(62,207,107,0.3); }
+    .neon-arrow { display: flex; align-items: center; color: var(--text-muted); font-size: 20px; }
+    .neon-result-circle { width: 56px; height: 56px; font-size: 28px; border-color: var(--am); background: rgba(62,207,107,0.12); box-shadow: 0 0 16px rgba(62,207,107,0.4); }
+    .mega-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: center; }
+    @media (max-width: 700px) { .nc-layout { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">The <span>Patch</span> 🐾</a>
+    <nav class="main-nav">
+      <a href="/">Home</a>
+      <a href="articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
+      <a href="pet-value-calculator.html">Trade Calc</a>
+      <a href="neon-calculator.html" class="active">Neon Calc</a>
+      <a href="trading-forum.html">Trading Board</a>
+      <a href="adopt-me.html">All Guides</a>
+    </nav>
+    <a href="https://thepatchgg.substack.com" class="header-cta" target="_blank" rel="noopener">Subscribe Free</a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div style="max-width:960px;margin:0 auto;padding:32px 20px 8px;">
+  <div style="font-size:13px;color:var(--text-muted);margin-bottom:10px;">
+    <a href="/" style="color:var(--text-muted);">Home</a> <span style="opacity:.4;margin:0 4px;">/</span> Neon Calculator
+  </div>
+  <h1 style="font-size:clamp(24px,3vw,36px);font-weight:900;letter-spacing:-0.8px;margin-bottom:8px;">Adopt Me! Neon Calculator</h1>
+  <p style="font-size:15px;color:var(--text-muted);margin-bottom:0;">Find out exactly how many pets you need to make a Neon or Mega Neon — and whether it's worth making one vs buying one.</p>
+</div>
+
+<div class="nc-layout">
+  <div>
+    <div class="nc-panel">
+      <div class="nc-panel-header"><div class="nc-panel-title">✨ Calculate Neon Requirements</div></div>
+      <div class="nc-panel-body">
+        <label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);display:block;margin-bottom:8px;">Select Pet</label>
+        <select class="nc-select" id="petSelect" onchange="calculate()">
+          <option value="">— Choose a pet —</option>
+          <optgroup label="S+ Tier (Extreme Value)">
+            <option value="bat-dragon">🦇 Bat Dragon (110)</option>
+            <option value="shadow-dragon">🐉 Shadow Dragon (100)</option>
+            <option value="frost-dragon">❄️ Frost Dragon (90)</option>
+          </optgroup>
+          <optgroup label="S Tier (Very High)">
+            <option value="evil-unicorn">🦄 Evil Unicorn (68)</option>
+            <option value="blue-dog">🐕 Blue Dog (62)</option>
+            <option value="pink-cat">🐱 Pink Cat (60)</option>
+            <option value="giraffe">🦒 Giraffe (55)</option>
+          </optgroup>
+          <optgroup label="A Tier (High)">
+            <option value="ninja-monkey">🥷 Ninja Monkey (50)</option>
+            <option value="crow">🐦 Crow (45)</option>
+            <option value="parrot">🦜 Parrot (42)</option>
+            <option value="dragon">🐲 Dragon (38)</option>
+            <option value="unicorn">🦄 Unicorn (35)</option>
+          </optgroup>
+          <optgroup label="B Tier (Mid)">
+            <option value="dodo">🦤 Dodo (32)</option>
+            <option value="t-rex">🦖 T-Rex (30)</option>
+            <option value="turtle">🐢 Turtle (22)</option>
+            <option value="kangaroo">🦘 Kangaroo (20)</option>
+            <option value="octopus">🐙 Octopus (15)</option>
+            <option value="axolotl">🦎 Axolotl (14)</option>
+          </optgroup>
+          <optgroup label="C Tier (Lower)">
+            <option value="lunar-serpent">🐍 Lunar Serpent (12)</option>
+            <option value="kitsune">🦊 Kitsune (10)</option>
+            <option value="candicorn">🍭 Candicorn (7) — Event</option>
+            <option value="dragon-always">🐲 Dragon from egg (38)</option>
+            <option value="dog">🐶 Dog (1)</option>
+            <option value="cat">🐱 Cat (1)</option>
+          </optgroup>
+        </select>
+
+        <label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);display:block;margin-bottom:8px;">Target</label>
+        <div class="nc-target-btns">
+          <button class="nc-target-btn active" id="neonBtn" onclick="setTarget('neon',this)">✨ Neon<br><span style="font-size:11px;font-weight:400;">4 pets required</span></button>
+          <button class="nc-target-btn" id="megaBtn" onclick="setTarget('mega',this)">💎 Mega Neon<br><span style="font-size:11px;font-weight:400;">16 pets required</span></button>
+        </div>
+
+        <label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);display:block;margin-bottom:8px;">Pet Type (what you have)</label>
+        <div class="nc-type-btns">
+          <button class="nc-type-btn active" onclick="setType('normal',this)">Normal 🐾</button>
+          <button class="nc-type-btn" onclick="setType('fr',this)">FR ✈️🎠</button>
+        </div>
+        <button class="calc-btn" onclick="calculate()">Calculate →</button>
+      </div>
+    </div>
+
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;margin-top:16px;">
+      <div style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border);">Quick Rules</div>
+      <div style="font-size:13px;color:var(--text-muted);line-height:1.8;">
+        <div>✅ Need <strong style="color:var(--text);">4 adults</strong> of the same pet for Neon</div>
+        <div>✅ Need <strong style="color:var(--text);">4 Neons</strong> of the same pet for Mega Neon</div>
+        <div>✅ FR pets → <strong style="color:var(--text);">FR Neon</strong> (worth more!)</div>
+        <div>✅ Normal pets → <strong style="color:var(--text);">Normal Neon</strong></div>
+        <div>⚠️ All 4 pets must be fully <strong style="color:var(--text);">grown to adult</strong></div>
+        <div>⚠️ Neon pets glow in <strong style="color:var(--text);">different colors</strong> from regular</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="resultArea">
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:40px 20px;text-align:center;color:var(--text-muted);">
+      <div style="font-size:48px;margin-bottom:16px;">✨</div>
+      <div style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px;">Select a pet to get started</div>
+      <div style="font-size:13px;">Choose a pet and target type on the left, then hit Calculate.</div>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:960px;margin:0 auto;padding:0 20px 64px;">
+  <section style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:32px;margin-bottom:24px;">
+    <h2 style="font-size:20px;font-weight:800;margin-bottom:20px;">Everything You Need to Know About Neon Pets</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
+      <div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--am);margin-bottom:8px;">What is a Neon pet?</h3>
+        <p style="font-size:13px;color:var(--text-muted);line-height:1.7;">A Neon pet is created by fusing 4 fully-grown adults of the same species. Neon pets glow brightly with neon colors and are worth significantly more than regular pets. FR Neons (made from 4 FR pets) are worth the most.</p>
+      </div>
+      <div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--accent);margin-bottom:8px;">What is a Mega Neon?</h3>
+        <p style="font-size:13px;color:var(--text-muted);line-height:1.7;">A Mega Neon is made by fusing 4 Neon pets of the same species. This requires 16 total regular pets. Mega Neons cycle through all neon colors in a rainbow effect and are extremely valuable.</p>
+      </div>
+      <div>
+        <h3 style="font-size:15px;font-weight:700;color:#9b5de5;margin-bottom:8px;">FR vs Normal Neon</h3>
+        <p style="font-size:13px;color:var(--text-muted);line-height:1.7;">Using FR pets to make a Neon creates an "FR Neon" which is worth more than a Normal Neon. The difference in value depends on the pet tier — for lower-rarity pets, FR Neons can be worth 3-5× more than Normal Neons.</p>
+      </div>
+    </div>
+  </section>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+    <a href="pet-value-calculator.html" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;text-decoration:none;">
+      <div style="font-size:24px;margin-bottom:8px;">🔢</div>
+      <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Pet Value Calculator</div>
+      <div style="font-size:12px;color:var(--am);">Check trade fairness →</div>
+    </a>
+    <a href="articles/adopt-me-pet-value-list-2026.html" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;text-decoration:none;">
+      <div style="font-size:24px;margin-bottom:8px;">📊</div>
+      <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Pet Value List</div>
+      <div style="font-size:12px;color:var(--am);">Full rankings →</div>
+    </a>
+    <a href="articles/adopt-me-trading-guide-2026.html" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;text-decoration:none;">
+      <div style="font-size:24px;margin-bottom:8px;">📘</div>
+      <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Trading Guide</div>
+      <div style="font-size:12px;color:var(--am);">Learn to trade →</div>
+    </a>
+    <a href="trading-forum.html" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;text-decoration:none;">
+      <div style="font-size:24px;margin-bottom:8px;">💬</div>
+      <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Trading Board</div>
+      <div style="font-size:12px;color:var(--am);">Find trades →</div>
+    </a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><div class="footer-brand">The Patch 🐾</div></div>
+    <nav class="footer-links">
+      <a href="/">Home</a><a href="pet-value-calculator.html">Trade Calc</a><a href="neon-calculator.html">Neon Calc</a><a href="trading-forum.html">Trading Board</a><a href="adopt-me.html">All Guides</a>
+    </nav>
+    <div class="footer-legal">© 2026 The Patch. Not affiliated with Roblox Corporation. Adopt Me! is property of Uplift Games.</div>
+  </div>
+</footer>
+<script>
+const petData = {
+  "bat-dragon": {name:"Bat Dragon",emoji:"🦇",rarity:"legendary",availability:"limited",normalVal:110,frVal:130,neonVal:450,megaVal:1600,buyNeonVal:470,buyMegaVal:1650,source:"Halloween 2019"},
+  "shadow-dragon": {name:"Shadow Dragon",emoji:"🐉",rarity:"legendary",availability:"limited",normalVal:100,frVal:120,neonVal:415,megaVal:1500,buyNeonVal:430,buyMegaVal:1520,source:"Halloween 2019"},
+  "frost-dragon": {name:"Frost Dragon",emoji:"❄️",rarity:"legendary",availability:"limited",normalVal:90,frVal:108,neonVal:370,megaVal:1350,buyNeonVal:385,buyMegaVal:1370,source:"Winter 2019"},
+  "evil-unicorn": {name:"Evil Unicorn",emoji:"🦄",rarity:"legendary",availability:"limited",normalVal:68,frVal:82,neonVal:280,megaVal:1050,buyNeonVal:290,buyMegaVal:1060,source:"Halloween 2019"},
+  "blue-dog": {name:"Blue Dog",emoji:"🐕",rarity:"common",availability:"limited",normalVal:62,frVal:75,neonVal:255,megaVal:980,buyNeonVal:265,buyMegaVal:990,source:"Starter"},
+  "pink-cat": {name:"Pink Cat",emoji:"🐱",rarity:"common",availability:"limited",normalVal:60,frVal:72,neonVal:248,megaVal:950,buyNeonVal:258,buyMegaVal:960,source:"Starter"},
+  "giraffe": {name:"Giraffe",emoji:"🦒",rarity:"legendary",availability:"limited",normalVal:55,frVal:66,neonVal:224,megaVal:880,buyNeonVal:232,buyMegaVal:895,source:"Farm Egg"},
+  "ninja-monkey": {name:"Ninja Monkey",emoji:"🥷",rarity:"legendary",availability:"limited",normalVal:50,frVal:60,neonVal:205,megaVal:810,buyNeonVal:212,buyMegaVal:820,source:"Star Rewards"},
+  "crow": {name:"Crow",emoji:"🐦",rarity:"legendary",availability:"limited",normalVal:45,frVal:54,neonVal:184,megaVal:730,buyNeonVal:190,buyMegaVal:740,source:"Farm Egg"},
+  "parrot": {name:"Parrot",emoji:"🦜",rarity:"legendary",availability:"limited",normalVal:42,frVal:50,neonVal:172,megaVal:680,buyNeonVal:178,buyMegaVal:690,source:"Jungle Egg"},
+  "dragon": {name:"Dragon",emoji:"🐲",rarity:"legendary",availability:"always",normalVal:38,frVal:46,neonVal:156,megaVal:625,buyNeonVal:162,buyMegaVal:632,source:"Cracked Egg"},
+  "unicorn": {name:"Unicorn",emoji:"🦄",rarity:"legendary",availability:"always",normalVal:35,frVal:42,neonVal:144,megaVal:576,buyNeonVal:149,buyMegaVal:582,source:"Cracked Egg"},
+  "dodo": {name:"Dodo",emoji:"🦤",rarity:"legendary",availability:"limited",normalVal:32,frVal:38,neonVal:130,megaVal:520,buyNeonVal:135,buyMegaVal:528,source:"Fossil Egg"},
+  "t-rex": {name:"T-Rex",emoji:"🦖",rarity:"legendary",availability:"limited",normalVal:30,frVal:36,neonVal:122,megaVal:488,buyNeonVal:126,buyMegaVal:494,source:"Fossil Egg"},
+  "turtle": {name:"Turtle",emoji:"🐢",rarity:"legendary",availability:"limited",normalVal:22,frVal:26,neonVal:90,megaVal:360,buyNeonVal:93,buyMegaVal:365,source:"Aussie Egg"},
+  "kangaroo": {name:"Kangaroo",emoji:"🦘",rarity:"legendary",availability:"limited",normalVal:20,frVal:24,neonVal:82,megaVal:328,buyNeonVal:85,buyMegaVal:332,source:"Aussie Egg"},
+  "octopus": {name:"Octopus",emoji:"🐙",rarity:"legendary",availability:"limited",normalVal:15,frVal:18,neonVal:62,megaVal:248,buyNeonVal:64,buyMegaVal:252,source:"Ocean Egg"},
+  "axolotl": {name:"Axolotl",emoji:"🦎",rarity:"legendary",availability:"limited",normalVal:14,frVal:17,neonVal:58,megaVal:232,buyNeonVal:60,buyMegaVal:235,source:"Ocean Egg"},
+  "lunar-serpent": {name:"Lunar Serpent",emoji:"🐍",rarity:"legendary",availability:"limited",normalVal:12,frVal:14,neonVal:50,megaVal:200,buyNeonVal:52,buyMegaVal:204,source:"CNY 2026"},
+  "kitsune": {name:"Kitsune",emoji:"🦊",rarity:"legendary",availability:"limited",normalVal:10,frVal:12,neonVal:41,megaVal:164,buyNeonVal:43,buyMegaVal:167,source:"Japan Egg"},
+  "candicorn": {name:"Candicorn 🌟",emoji:"🍭",rarity:"legendary",availability:"event",normalVal:7,frVal:9,neonVal:29,megaVal:116,buyNeonVal:31,buyMegaVal:120,source:"Sugarfest 2026"},
+  "dog": {name:"Dog",emoji:"🐶",rarity:"common",availability:"always",normalVal:1,frVal:2,neonVal:5,megaVal:20,buyNeonVal:6,buyMegaVal:22,source:"Starter Egg"},
+  "cat": {name:"Cat",emoji:"🐱",rarity:"common",availability:"always",normalVal:1,frVal:2,neonVal:5,megaVal:20,buyNeonVal:6,buyMegaVal:22,source:"Starter Egg"},
+};
+let target = 'neon', petType = 'normal';
+function setTarget(t, btn) { target = t; document.querySelectorAll('.nc-target-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); calculate(); }
+function setType(t, btn) { petType = t; document.querySelectorAll('.nc-type-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); calculate(); }
+function calculate() {
+  const key = document.getElementById('petSelect').value;
+  if (!key) return;
+  const p = petData[key];
+  const sourceVal = petType === 'fr' ? p.frVal : p.normalVal;
+  const petsNeeded = target === 'neon' ? 4 : 16;
+  const intermediateNeeded = target === 'mega' ? 4 : 0;
+  const makeCost = petsNeeded * sourceVal;
+  const buyVal = target === 'neon' ? p.buyNeonVal : p.buyMegaVal;
+  const diff = makeCost - buyVal;
+  const diffPct = Math.round(Math.abs(diff / buyVal) * 100);
+  const betterOption = diff <= 0 ? 'make' : 'buy';
+  const typeLabel = petType === 'fr' ? 'FR' : 'Normal';
+  const targetLabel = target === 'neon' ? 'Neon' : 'Mega Neon';
+  let visualHTML = '';
+  if (target === 'neon') {
+    const circles = Array(4).fill(0).map((_, i) => `<div class="pet-circle filled">${p.emoji}</div>`).join('');
+    visualHTML = `<div class="neon-visual">${circles}<div class="neon-arrow">→</div><div class="pet-circle neon-result-circle filled">✨</div></div>`;
+  } else {
+    const neonRow = Array(4).fill(0).map(() => `<div class="pet-circle filled" style="width:36px;height:36px;font-size:18px;">✨</div>`).join('');
+    visualHTML = `<div class="neon-visual"><div class="mega-row">${neonRow}</div><div class="neon-arrow" style="width:100%;justify-content:center;">⬇</div><div class="pet-circle neon-result-circle filled" style="width:60px;height:60px;font-size:32px;">💎</div></div>`;
+  }
+  document.getElementById('resultArea').innerHTML = `<div class="result-card">
+    <div class="result-header">
+      <div class="result-pet">${p.emoji}</div>
+      <div class="result-title">${typeLabel} ${p.name} → ${targetLabel}</div>
+      <div class="result-sub">${p.source}</div>
+    </div>
+    ${visualHTML}
+    <div class="result-stats">
+      <div class="stat-row"><span class="stat-label">Pets required</span><span class="stat-value green">${petsNeeded} ${typeLabel} ${p.name}${petsNeeded > 1 ? 's' : ''}</span></div>
+      ${target === 'mega' ? `<div class="stat-row"><span class="stat-label">Neon pets required</span><span class="stat-value yellow">4 Neon ${p.name}s</span></div>` : ''}
+      <div class="stat-row"><span class="stat-label">Cost to make (value)</span><span class="stat-value">${makeCost}</span></div>
+      <div class="stat-row"><span class="stat-label">Buy ${targetLabel} directly</span><span class="stat-value">${buyVal}</span></div>
+      <div class="stat-row"><span class="stat-label">Difference</span><span class="stat-value ${betterOption === 'make' ? 'green' : 'yellow'}">${betterOption === 'make' ? '−' : '+'}${Math.abs(diff)} (${diffPct}% ${betterOption === 'make' ? 'cheaper to make' : 'cheaper to buy'})</span></div>
+    </div>
+    <div class="verdict-box ${betterOption}">
+      <strong>${betterOption === 'make' ? '✅ Making it is slightly cheaper' : '💰 Buying is slightly cheaper'}</strong>
+      ${betterOption === 'make' ? `Making your own ${targetLabel} by fusing ${petsNeeded} ${typeLabel} ${p.name}s would cost approximately ${makeCost} in trade value, vs ${buyVal} to buy one directly. ${p.availability === 'always' ? 'Since this pet is always available from eggs, grinding is a viable option.' : 'Since this is a limited pet, sourcing ' + petsNeeded + ' of them can be challenging.'}` : `Buying a ${targetLabel} ${p.name} directly costs approximately ${buyVal} in trade value, vs ${makeCost} to make one from ${petsNeeded} ${typeLabel} pets. This is ${diffPct}% cheaper. Consider buying directly unless you already have the component pets.`}
+    </div>
+  </div>`;
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.style.display === 'flex';
+    nav.style.display = open ? 'none' : 'flex';
+    if (!open) { nav.style.flexDirection='column';nav.style.position='absolute';nav.style.top='60px';nav.style.left='0';nav.style.right='0';nav.style.background='#0d0d0f';nav.style.padding='12px 20px';nav.style.borderBottom='1px solid #2a2a35';nav.style.zIndex='99'; }
+  });
+});
+</script>
+</body>
+</html>
