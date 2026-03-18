@@ -2,149 +2,176 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adopt Me Pet Value Calculator 2026 | The Patch</title>
-<meta name="description" content="Calculate fair Adopt Me! pet trades instantly. Real pet images, neon/FR multipliers, point-based verdict. Values from Traderie March 2026.">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Adopt Me Trade Calculator 2026 | The Patch</title>
+<meta name="description" content="Calculate fair Adopt Me! pet trades instantly. Real images, Neon/FR multipliers, point-based verdict. Updated March 2026.">
 <link rel="canonical" href="https://thepatchgg.github.io/pet-value-calculator.html">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --bg:#0d1117;--surface:#161b22;--surface2:#21262d;--border:#30363d;
-  --text:#e6edf3;--muted:#8b949e;--accent:#58a6ff;
-  --green:#3fb950;--red:#f85149;--yellow:#d29922;
-  --L:#ffd700;--UR:#ff8c00;--R:#4caf50;--UC:#42a5f5;--C:#9e9e9e;
+  --bg:#0d0d0f;--surface:#16161a;--surface2:#1e1e24;--border:#2a2a35;
+  --text:#e8e8f0;--text-muted:#888898;--accent:#c8ff57;--accent-dim:rgba(200,255,87,.12);
+  --red:#f85149;--green:#3fb950;
+  --font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --radius:8px;--max-w:1120px;
 }
-body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
-header{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 20px;text-align:center}
-header h1{font-size:1.4rem;font-weight:700;color:var(--text)}
-header p{font-size:.78rem;color:var(--muted);margin-top:3px}
-.calc-wrap{display:grid;grid-template-columns:1fr 170px 1fr;gap:12px;padding:14px;max-width:1100px;margin:0 auto}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
 
-/* PANELS */
-.panel{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
-.panel-header{padding:10px 12px 8px;background:var(--surface2);border-bottom:1px solid var(--border);font-weight:700;font-size:.95rem;text-align:center}
-.panel-header.give{color:#f85149}
-.panel-header.receive{color:#3fb950}
-.search-row{padding:8px 10px 4px;display:flex;gap:6px}
-.search-row input{flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:6px;color:var(--text);padding:6px 10px;font-size:.82rem;outline:none}
-.search-row input:focus{border-color:var(--accent)}
-.search-row input::placeholder{color:var(--muted)}
-.filter-row{padding:0 10px 6px;display:flex;gap:4px;flex-wrap:wrap}
-.f-btn{padding:2px 7px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:.7rem;cursor:pointer;transition:all .15s}
-.f-btn:hover,.f-btn.active{border-color:var(--accent);color:var(--accent);background:rgba(88,166,255,.08)}
+/* HEADER */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(13,13,15,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 20px}
+.header-inner{max-width:var(--max-w);margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.site-logo{font-size:20px;font-weight:800;letter-spacing:-.5px;color:var(--accent);white-space:nowrap}
+.site-logo span{color:var(--text)}
+.main-nav{display:flex;gap:4px}
+.main-nav a{font-size:14px;font-weight:500;color:var(--text-muted);padding:6px 12px;border-radius:var(--radius);transition:color .15s,background .15s}
+.main-nav a:hover{color:var(--text);background:var(--surface2)}
+.main-nav a.active{color:var(--accent)}
+.header-cta{background:var(--accent);color:#0d0d0f;font-size:13px;font-weight:700;padding:7px 16px;border-radius:20px;white-space:nowrap;transition:opacity .15s}
+.header-cta:hover{opacity:.88}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px}
 
-/* TILE GRID */
-.tile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;padding:6px 10px;height:285px;overflow-y:auto;overflow-x:hidden}
-.tile-grid::-webkit-scrollbar{width:5px}
-.tile-grid::-webkit-scrollbar-track{background:var(--surface)}
-.tile-grid::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
-.pet-tile{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:6px 4px;display:flex;flex-direction:column;align-items:center;cursor:pointer;transition:all .15s;text-align:center;position:relative}
-.pet-tile:hover{border-color:var(--accent);background:#1c2128;transform:translateY(-1px)}
-.pet-tile img{width:64px;height:64px;object-fit:contain;border-radius:4px;background:var(--surface)}
-.pet-tile .t-name{font-size:.63rem;color:var(--text);margin-top:4px;line-height:1.2;font-weight:600;max-height:28px;overflow:hidden}
-.pet-tile .t-rarity{font-size:.58rem;font-weight:700;margin-top:2px;padding:1px 5px;border-radius:8px}
-.rL{background:rgba(255,215,0,.15);color:#ffd700}
-.rUR{background:rgba(255,140,0,.15);color:#ff8c00}
-.rR{background:rgba(76,175,80,.15);color:#4caf50}
-.rUC{background:rgba(66,165,245,.15);color:#42a5f5}
-.rC{background:rgba(158,158,158,.15);color:#9e9e9e}
+/* PAGE HERO */
+.page-hero{max-width:var(--max-w);margin:0 auto;padding:28px 20px 14px}
+.page-hero h1{font-size:1.7rem;font-weight:800;margin-bottom:4px}
+.page-hero p{color:var(--text-muted);font-size:.88rem}
 
-/* ADDED PETS */
-.added-section{border-top:1px solid var(--border);padding:8px 10px;flex:1;overflow-y:auto;min-height:120px;max-height:200px}
-.added-label{font-size:.7rem;color:var(--muted);margin-bottom:6px;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
-.added-pet{display:flex;align-items:center;gap:6px;padding:5px 6px;border-radius:7px;background:var(--surface2);margin-bottom:4px;border:1px solid var(--border)}
-.added-pet img{width:32px;height:32px;object-fit:contain;border-radius:4px}
-.added-pet-name{font-size:.7rem;font-weight:600;color:var(--text);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.added-pet-val{font-size:.68rem;color:var(--accent);font-weight:700;white-space:nowrap}
-.remove-btn{background:transparent;border:none;color:var(--muted);cursor:pointer;font-size:.85rem;padding:0 2px;line-height:1}
-.remove-btn:hover{color:var(--red)}
+/* CALC LAYOUT */
+.calc-wrap{max-width:var(--max-w);margin:0 auto;padding:0 20px 60px;display:grid;grid-template-columns:1fr 210px 1fr;gap:14px;align-items:start}
 
-/* TOGGLES */
-.pet-toggles{display:flex;gap:3px;flex-direction:column;align-items:flex-end}
-.toggle-row{display:flex;gap:2px}
-.tog{padding:1px 5px;border-radius:8px;border:1px solid var(--border);font-size:.6rem;background:transparent;color:var(--muted);cursor:pointer;transition:all .12s;white-space:nowrap}
-.tog.sel{border-color:var(--accent);background:rgba(88,166,255,.15);color:var(--accent)}
+/* TRADE PANEL */
+.trade-panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.panel-head{padding:12px 16px;font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.panel-head.give{color:#58a6ff}
+.panel-head.recv{color:#3fb950}
+.panel-count{color:var(--text-muted);font-size:.72rem;font-weight:400;margin-left:auto}
+.trade-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:10px}
 
-/* VERDICT PANEL */
-.verdict-panel{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 10px;text-align:center;gap:10px;min-height:300px}
-.verdict-label{font-size:1rem;font-weight:800;letter-spacing:.03em;padding:6px 14px;border-radius:20px;transition:all .3s}
+/* SLOTS */
+.slot{aspect-ratio:1;background:var(--surface2);border:1.5px dashed var(--border);border-radius:10px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;transition:border-color .15s,background .15s;overflow:hidden;min-height:88px}
+.slot.empty:hover{border-color:var(--accent);background:rgba(200,255,87,.04)}
+.slot-empty-icon{font-size:1.6rem;color:var(--text-muted);opacity:.35;line-height:1}
+.slot-empty-lbl{font-size:.58rem;color:var(--text-muted);opacity:.45;margin-top:2px}
+.slot.filled{border-style:solid;border-color:var(--border);cursor:default;padding:5px 4px;gap:3px;justify-content:flex-start}
+.slot-img{width:46px;height:46px;object-fit:contain;flex-shrink:0}
+.slot-name{font-size:.56rem;font-weight:600;color:var(--text);text-align:center;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.2}
+.slot-val{font-size:.62rem;color:var(--accent);font-weight:700;line-height:1}
+.slot-toggles{display:flex;flex-direction:column;gap:2px;width:100%}
+.tog-row{display:flex;gap:2px;justify-content:center}
+.tog{padding:1px 3px;border-radius:4px;border:1px solid var(--border);font-size:.5rem;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .1s;white-space:nowraw;line-height:1.4}
+.tog.sel{border-color:var(--accent);background:var(--accent-dim);color:var(--accent)}
+.slot-remove{position:absolute;top:3px;right:3px;background:rgba(248,81,73,.12);border:1px solid rgba(248,81,73,.3);color:var(--red);cursor:pointer;font-size:.6rem;border-radius:4px;padding:1px 4px;line-height:1;transition:opacity .15s;opacity:0}
+.slot.filled:hover .slot-remove{opacity:1}
+
+/* VERDICT */
+.verdict-panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 12px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
+.vbar{display:flex;gap:5px;justify-content:center}
+.vbar-item{padding:3px 9px;border-radius:12px;font-size:.62rem;font-weight:700;letter-spacing:.06em;transition:all .2s}
+.vbar-win{color:var(--green)}
+.vbar-fair{color:var(--text-muted)}
+.vbar-lose{color:var(--red)}
+.vbar-active{background:rgba(255,255,255,.1);color:var(--text)!important}
+.verdict-label{font-size:.92rem;font-weight:800;letter-spacing:.03em;padding:6px 14px;border-radius:20px;transition:all .3s}
 .verdict-pts{font-size:2.2rem;font-weight:900;line-height:1;transition:all .3s}
-.verdict-sub{font-size:.68rem;color:var(--muted)}
-.balance-wrap{width:100%;height:8px;background:var(--surface2);border-radius:4px;overflow:hidden;position:relative}
-.balance-fill{position:absolute;height:100%;background:var(--accent);border-radius:4px;transition:all .4s}
-.totals{display:flex;justify-content:space-between;width:100%;font-size:.7rem;color:var(--muted)}
-.clear-btn{background:var(--surface2);border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:6px 14px;font-size:.75rem;cursor:pointer;transition:all .15s;width:100%}
+.verdict-sub{font-size:.65rem;color:var(--text-muted)}
+.balance-wrap{width:100%;height:7px;background:var(--surface2);border-radius:4px;overflow:hidden;position:relative}
+.balance-fill{position:absolute;height:100%;background:var(--accent);border-radius:4px;transition:all .4s;width:0}
+.trade-totals{display:flex;justify-content:space-between;width:100%;font-size:.68rem;color:var(--text-muted)}
+.clear-btn{background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);border-radius:8px;padding:7px 14px;font-size:.76rem;cursor:pointer;transition:all .15s;width:100%}
 .clear-btn:hover{border-color:var(--red);color:var(--red)}
-.update-note{font-size:.58rem;color:var(--muted);margin-top:2px}
+.verdict-note{font-size:.55rem;color:var(--text-muted)}
 
 /* VERDICT COLORS */
 .vHUGEWIN{color:#1b5e20;background:rgba(27,94,32,.15)}
 .vBIGWIN{color:#2e7d32;background:rgba(46,125,50,.15)}
 .vWIN{color:#388e3c;background:rgba(56,142,60,.15)}
 .vSLIGHTWIN{color:#66bb6a;background:rgba(102,187,106,.15)}
-.vFAIR{color:var(--muted);background:var(--surface2)}
+.vFAIR{color:var(--text-muted);background:var(--surface2)}
 .vSLIGHTLOSS{color:#ef9a9a;background:rgba(239,154,154,.1)}
 .vLOSS{color:#e53935;background:rgba(229,57,53,.1)}
 .vBIGLOSS{color:#c62828;background:rgba(198,40,40,.1)}
 .vHUGELOSS{color:#b71c1c;background:rgba(183,28,28,.1)}
 
-@media(max-width:700px){
-  .calc-wrap{grid-template-columns:1fr;grid-template-rows:auto auto auto}
-  .verdict-panel{min-height:auto;padding:12px}
+/* PET PICKER MODAL */
+.picker-overlay{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:200;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.picker-overlay[hidden]{:display:none!important}
+.picker-modal{background:var(--surface);border:1px solid var(--border);border-radius:14px;width:min(540px,95vw);max-height:82vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.6)}
+.picker-top{display:flex;align-items:center;gap:10px;padding:14px 14px 10px;border-bottom:1px solid var(--border)}
+.picker-top h3{font-size:.9rem;font-weight:700;white-space:nowrap}
+.picker-search{flex:1;background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:7px 12px;font-size:.85rem;outline:none;min-width:0}
+.picker-search:focus{border-color:var(--accent)}
+.picker-close{background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);cursor:pointer;font-size:.82rem;border-radius:6px;padding:6px 11px;flex-shrink:0;transition:all .15s}
+.picker-close:hover{color:var(--text);border-color:var(--text-muted)}
+.picker-filters{display:flex;gap:6px;padding:10px 14px;flex-wrap:wrap;border-bottom:1px solid var(--border)}
+.f-btn{padding:4px 12px;border-radius:16px;border:1px solid var(--border);font-size:.73rem;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .12s}
+.f-btn.active{border-color:var(--accent);background:var(--accent-dim);color:var(--accent)}
+.picker-grid-wrap{overflow-y:auto;flex:1}
+.picker-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:12px14px}
+.pet-tile{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:8px 4px 6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;transition:all .12s}
+.pet-tile:hover{border-color:var(--accent);background:rgba(200,255,87,.06);transform:translateY(-1px)}
+.pet-tile img{width:52px;height:52px;object-fit:contain;border-radius:6px}
+.pt-name{font-size:.58rem;font-weight:600;text-align:center;color:var(--text);line-height:1.2;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pt-rar{font-size:.52rem;padding:1px 6px;border-radius:10px}
+.r\{color:#ffd700;background:rgba(255,215,0,.12)}
+.rUR{color:#b39ddb;background:rgba(179,157,219,.12)}
+.rR{color:#4dd0e1;background:rgba(77,208,225,.12)}
+.rUC{color:#81c784;background:rgba(129,199,132,.12)}
+.r\{color:#bdbdbd;background:rgba(189,189,189,.12)}
+
+@media(max-width:720px){
+  .calc-wrap{grid-template-columns:1fr;padding:0 12px 40px}
+  .picker-grid{grid-template-columns:repeat(4,1fr)}
+  .main-nav,.header-cta{display:none}
 }
 </style>
 </head>
-<body>
-<header>
-  <h1>🐾 Adopt Me Trade Calculator</h1>
-  <p>Values from Traderie.com &amp; community consensus · Updated March 2026 · All values shown Normal; use toggles per pet for Neon/FR</p>
-</header>
+<body>ass="page-hero">
+  <h1>&#128014; Adopt Me Trade Calculator</h1>
+  <p>Values from Traderie.com &amp; community consensus &middot; Updated March 2026 &middot; Set Neon &amp; FR per pet</p>
+</div>
 
 <div class="calc-wrap">
+
   <!-- GIVE PANEL -->
-  <div class="panel" id="give-panel">
-    <div class="panel-header give">⬆️ You Give</div>
-    <div class="search-row">
-      <input type="text" id="give-search" placeholder="Search pets…" autocomplete="off">
-    </div>
-    <div class="filter-row" id="give-filters">
-      <button class="f-btn active" data-r="all">All</button>
-      <button class="f-btn" data-r="L">Legendary</button>
-      <button class="f-btn" data-r="UR">Ultra-Rare</button>
-      <button class="f-btn" data-r="R">Rare</button>
-      <button class="f-btn" data-r="UC">Uncommon</button>
-      <button class="f-btn" data-r="C">Common</button>
-    </div>
-    <div class="tile-grid" id="give-grid"></div>
-    <div class="added-section">
-      <div class="added-label">Added to trade</div>
-      <div id="give-added"></div>
-    </div>
+  <div class="trade-panel">
+    <div class="panel-head give">&#11014;&#65039; You Give <span class="panel-count" id="give-count">0 pets</span></div>
+    <div class="trade-grid" id="give-grid"></div>
   </div>
 
-  <!-- VERDICT PANEL -->
-  <div class="verdict-panel" id="verdict">
+  <!-- VERDICT -->
+  <div class="verdict-panel">
+    <div class="vbar">
+      <span class="vbar-item vbar-win" id="vbar-win">WIN</span>
+      <span class="vbar-item vbar-fair vbar-active" id="vbar-fair">FAIR</span>
+      <span class="vbar-item vbar-lose" id="vbar-lose">LOSE</span>
+    </div>
     <div class="verdict-label vFAIR" id="v-label">FAIR TRADE</div>
-    <div class="verdict-pts" id="v-pts" style="color:var(--muted)">±0</div>
+    <div class="verdict-pts" id="v-pts" style="color:var(--text-muted)">&#177;0</div>
     <div class="verdict-sub">point difference</div>
-    <div class="totals">
-      <span id="v-give">Give: 0</span>
-      <span id="v-recv">Recv: 0</span>
-    </div>
-    <div class="balance-wrap">
-      <div class="balance-fill" id="v-bar" style="left:50%;right:50%;background:var(--muted)"></div>
-    </div>
-    <button class="clear-btn" onclick="clearAll()">🗑 Clear All</button>
-    <div class="update-note">Sources: traderie.com · elvebredd.com</div>
+    <div class="balance-wrap"><div class="balance-fill" id="v-bar"></div></div>
+    <div class="trade-totals"><span id="v-give">Give: 0</span><span id="v-recv">Recv: 0</span></div>
+    <button class="clear-btn" id="clear-btn">&#128465; Clear All</button>
+    <div class="verdict-note">traderie.com &middot; Mar 2026</div>
   </div>
 
   <!-- RECEIVE PANEL -->
-  <div class="panel" id="recv-panel">
-    <div class="panel-header receive">⬇️ You Receive</div>
-    <div class="search-row">
-      <input type="text" id="recv-search" placeholder="Search pets…" autocomplete="off">
+  <div class="trade-panel">
+    <div class="panel-head recv">&#11015;&#65039; You Receive <span class="panel-count" id="recv-count">0 pets</span></div>
+    <div class="trade-grid" id="recv-grid"></div>
+  </div>
+
+</div>
+
+<!-- PET PICKER MODAL -->
+<div class="picker-overlay" id="picker" hidden>
+  <div class="picker-modal">
+    <div class="picker-top">
+      <h3>Select a Pet</h3>
+      <input type="text" class="picker-search" id="picker-search" placeholder="Search pets..." autocomplete="off">
+      <button class="picker-close" id="picker-close">&#10005; Close</button>
     </div>
-    <div class="filter-row" id="recv-filters">
+    <div class="picker-filters" id="picker-filters">
       <button class="f-btn active" data-r="all">All</button>
       <button class="f-btn" data-r="L">Legendary</button>
       <button class="f-btn" data-r="UR">Ultra-Rare</button>
@@ -152,37 +179,27 @@ header p{font-size:.78rem;color:var(--muted);margin-top:3px}
       <button class="f-btn" data-r="UC">Uncommon</button>
       <button class="f-btn" data-r="C">Common</button>
     </div>
-    <div class="tile-grid" id="recv-grid"></div>
-    <div class="added-section">
-      <div class="added-label">Added to trade</div>
-      <div id="recv-added"></div>
+    <div class="picker-grid-wrap">
+      <div class="picker-grid" id="picker-grid"></div>
     </div>
   </div>
 </div>
 
 <script>
-// ============================================================
-// PET DATABASE
-// Values: Traderie.com March 2026 + Elvebredd community consensus
-// Scale: Shadow Dragon=120 (highest), Dog=0 (baseline)
-// Rarity: L=Legendary, UR=Ultra-Rare, R=Rare, UC=Uncommon, C=Common
-// img: "{folder}/{assetId}" → https://cdn.nookazon.com/64x64/adoptme/{img}.png
-// ============================================================
-const LAST_UPDATED = "March 2026";
-const IMG_BASE = "https://cdn.nookazon.com/64x64/adoptme/";
-
-const PETS = [
-  // ── RANK 1-3: GOD TIER ──
+var IMG_BASE = "https://cdn.nookazon.com/64x64/adoptme/";
+var SLOTS = 9;
+var PETS = [
+  // -- RANK 1-3: GOD TIER --
   {name:"Shadow Dragon",        val:120,  rarity:"L",  img:"pets/4115248712"},
   {name:"Bat Dragon",           val:110,  rarity:"L",  img:"pets/4184878149"},
   {name:"Giraffe",              val:80,   rarity:"L",  img:"items/3409443710"},
-  // ── RANK 4-8: S TIER ──
+  // -- RANK 4-8: S TIER --
   {name:"Owl",                  val:65,   rarity:"L",  img:"pets/4440866649"},
   {name:"Parrot",               val:55,   rarity:"L",  img:"pets/3743647944"},
   {name:"Evil Unicorn",         val:50,   rarity:"L",  img:"pets/4184878050"},
   {name:"Hedgehog",             val:42,   rarity:"UR", img:"pets/4849941238"},
   {name:"Dalmatian",            val:35,   rarity:"UR", img:"items/4849941000"},
-  // ── RANK 9-20: A TIER ──
+  // -- RANK 9-20: A TIER --
   {name:"Albino Monkey",        val:30,   rarity:"L",  img:"items/5067924142"},
   {name:"Sugar Axolotl",        val:28,   rarity:"L",  img:"pets/121496682360324"},
   {name:"Blue Dog",             val:25,   rarity:"UC", img:"items/3261465893"},
@@ -195,7 +212,7 @@ const PETS = [
   {name:"Giant Gold Scarab",    val:13,   rarity:"L",  img:"pets/8566683457"},
   {name:"Mechapup",             val:12,   rarity:"L",  img:"pets/9174893483"},
   {name:"Undead Jousting Horse",val:11,   rarity:"L",  img:"items/11192035130"},
-  // ── RANK 21-50: B TIER ──
+  // -- RANK 21-50: B TIER --
   {name:"Vampire Dragon",       val:10.5, rarity:"L",  img:"items/14782580581"},
   {name:"Frost Unicorn",        val:10,   rarity:"L",  img:"pets/12479991588"},
   {name:"Diamond King Penguin", val:9.5,  rarity:"L",  img:"pets/9490243442"},
@@ -208,16 +225,25 @@ const PETS = [
   {name:"Jellyfish",            val:6.5,  rarity:"L",  img:"pets/15848329383"},
   {name:"Chocolate Chip Bat Dragon",val:6.5,rarity:"L",img:"pets/15365667976"},
   {name:"Golden Hummingbird",   val:6,    rarity:"L",  img:"pets/75106733244906"},
-  {name:"HouQ������������������م��ذ����Ʌɥ���0�����������̼����������ȉ��(���������ɥ����]�������������م��ذ����Ʌɥ���0�����������̼��������������(��������9��ͥ������������������م��Ը԰��Ʌɥ���0�����������̼����������̉��(��������������
-��ܵ
-��܈������م��Ը԰��Ʌɥ���0�����������̼����������؉��(��������%ɥ͠�]�ѕȁM����������م��Ը԰��Ʌɥ���0�����������̼�������������(��������)��屰�!�Ʉ�����������م��԰����Ʌɥ���0�������艥ѕ�̼�������������܉��(��������M�Ʌ݉����M���э����	�ЁɅ�����م��ԱɅɥ���0���������̼����������؉��(��������!啹�������������������م��԰����Ʌɥ���0�������艥ѕ�̼������������(��������
-ɽ܈������������������م��԰����Ʌɥ���0�����������̼������������(��������	�����A��ѡ�Ȉ���������م��и԰��Ʌɥ���0�������艥ѕ�̼�������������(��������Aՙ��������������������م��и԰��Ʌɥ���0�������艥ѕ�̼���������܉��(�������������ȁ5�Ѡ�����������م��и԰��Ʌɥ���0�����������̼����������؉��(��������A����ɵ��ЁA���ե������م��и԰��Ʌɥ���0�����������̼15302316802"},
+  {name:"Hot Doggo",            val:6,    rarity:"L",  img:"pets/13672542902"},
+  {name:"African Wild Dog",     val:6,    rarity:"L",  img:"pets/13810870050"},
+  {name:"Nessie",               val:5.5,  rarity:"L",  img:"pets/11773429123"},
+  {name:"Golden Chow-Chow",     val:5.5,  rarity:"L",  img:"pets/10357473556"},
+  {name:"Irish Water Spaniel",  val:5.5,  rarity:"L",  img:"pets/9901393350"},
+  {name:"Jekyll Hydra",         val:5,    rarity:"L",  img:"items/78823655016197"},
+  {name:"Strawberry Shortcake Bat Dragon",val:5,rarity:"L",img:"pets/11506045996"},
+  {name:"Hyena",                val:5,    rarity:"L",  img:"items/3409444089"},
+  {name:"Crow",                 val:5,    rarity:"L",  img:"pets/4440866299"},
+  {name:"Black Panther",        val:4.5,  rarity:"L",  img:"items/3743730108"},
+  {name:"Puffin",               val:4.5,  rarity:"L",  img:"items/8077189117"},
+  {name:"Glacier Moth",         val:4.5,  rarity:"L",  img:"pets/11571113906"},
+  {name:"Peppermint Penguin",   val:4.5,  rarity:"L",  img:"pets/15302316802"},
   {name:"Meerkat",              val:4,    rarity:"L",  img:"items/3409443617"},
   {name:"Glormy Hound",         val:4,    rarity:"L",  img:"items/120475294381736"},
   {name:"Glormy Leo",           val:4,    rarity:"L",  img:"pets/123037843357105"},
   {name:"Flower Power Duckling",val:4,    rarity:"L",  img:"items/12917347184"},
   {name:"Field Mouse",          val:4,    rarity:"L",  img:"items/12935498875"},
-  // ── RANK 51-75: C TIER ──
+  // -- RANK 51-75: C TIER --
   {name:"Sheeeeep",             val:3.5,  rarity:"L",  img:"pets/12139402705"},
   {name:"Balloon Unicorn",      val:3.5,  rarity:"L",  img:"items/18117855573"},
   {name:"Phoenix",              val:3.5,  rarity:"L",  img:"pets/7126719832"},
@@ -243,7 +269,7 @@ const PETS = [
   {name:"Criosphinx",           val:2.5,  rarity:"L",  img:"items/15931348363"},
   {name:"Caterpillar",          val:2.5,  rarity:"R",  img:"pets/14639007389"},
   {name:"Golden Hamster",       val:2.5,  rarity:"L",  img:"pets/16548792521"},
-  // ── RANK 76-125: D TIER ──
+  // -- RANK 76-125: D TIER --
   {name:"Nautilus",             val:2,    rarity:"L",  img:"pets/16382424275"},
   {name:"Werewolf",             val:2,    rarity:"L",  img:"pets/15148532648"},
   {name:"Kraken",               val:2,    rarity:"L",  img:"pets/13979141409"},
@@ -308,7 +334,7 @@ const PETS = [
   {name:"Golden Unicorn",       val:1.5,  rarity:"L",  img:"pets/4797806957"},
   {name:"Diamond Griffin",      val:1.5,  rarity:"L",  img:"items/4797806482"},
   {name:"Karate Gorilla",       val:1.5,  rarity:"L",  img:"items/12778628897"},
-  // ── RANK 200-300: LOW TIER ──
+  // -- RANK 200-300: LOW TIER --
   {name:"Drake",                val:1,    rarity:"L",  img:"pets/4440867010"},
   {name:"Flaming Fox",          val:1,    rarity:"L",  img:"items/16088265753"},
   {name:"Fallow Deer",          val:1,    rarity:"L",  img:"pets/8938703243"},
@@ -329,7 +355,7 @@ const PETS = [
   {name:"Bee",                  val:1,    rarity:"UR", img:"pets/4281674713"},
   {name:"Red Panda",            val:0.5,  rarity:"UC", img:"pets/3181728128"},
   {name:"Sloth",                val:0.5,  rarity:"R",  img:"pets/3934251801"},
-  // ── COMMONS (baseline) ──
+  // -- COMMONS (baseline) --
   {name:"Horse",                val:0.2,  rarity:"UC", img:"pets/3181727813"},
   {name:"Dog",                  val:0,    rarity:"C",  img:"pets/3181727351"},
   {name:"Cat",                  val:0,    rarity:"C",  img:"pets/3200646599"},
@@ -339,228 +365,320 @@ const PETS = [
   {name:"Chick",                val:0,    rarity:"C",  img:"pets/4752655872"},
 ];
 
-// ============================================================
-// MULTIPLIERS
-// neonMult: Normal=1×, Neon=4×, MegaNeon=16×
-// frMult: None=1×, Fly=1.5×, Ride=1.5×, FR=2×
-// Applied on top of base value (val × neonMult × frMult)
-// ===========================================================================
-const NEON_OPTS = [{label:"Normal",mult:1},{label:"Neon",mult:4},{label:"MegaN",mult:16}];
-const FR_OPTS   = [{label:"None",mult:1},{label:"Fly",mult:1.5},{label:"Ride",mult:1.5},{label:"FR",mult:2}];
-
-// ============================================================
-// STATE
-// ============================================================
-let givePets = [], recvPets = [];
-let giveFilter = 'all', recvFilter = 'all';
-let giveSearch = '', recvSearch = '';
-
-function petImg(p){ return `${IMG_BASE}${p.img}.png`; }
-function petVal(entry){ return entry.pet.val * entry.neon.mult * entry.fr.mult; }
-
-// ============================================================
-// RENDER GRIDS
-// ============================================================
-function filteredPets(search, rFilter){
-  return PETS.filter(p=>{
-    const matchSearch = !search || p.name.toLowerCase().includes(search.toLowerCase());
-    const matchR = rFilter==='all' || p.rarity===rFilter;
-    return matchSearch && matchR;
-  });
-}
-
-function renderGrid(containerId, search, rFilter, side){
-  const container = document.getElementById(containerId);
-  const pets = filteredPets(search, rFilter);
-  container.innerHTML = '';
-  if(pets.length === 0){
-    container.innerHTML = '<div style="grid-column:1/-1;text-align:center;color:var(--muted);font-size:.75rem;padding:20px">No pets found</div>';
-    return;
-  }
-  pets.forEach(p=>{
-    const div = document.createElement('div');
-    div.className = 'pet-tile';
-    div.innerHTML = `
-      <img src="${petImg(p)}" alt="${p.name}" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2264%22 height=%2264%22><rect width=%2264%22 height=%2264%22 fill=%22%2321262d%22 rx=%228%22/><text x=%2232%22 y=%2240%22 font-size=%2228%22 text-anchor=%22middle%22>🐾</text></svg>'">
-      <div class="t-name">${p.name}</div>
-      <div class="t-rarity r${p.rarity}">${rarityLabel(p.rarity)}</div>
-    `;
-    div.onclick = () => addPet(side, p);
-    container.appendChild(div);
-  });
-}
-
-function rarityLabel(r){
-  return {L:'Legendary',UR:'Ultra-Rare',R:'Rare',UC:'Uncommon',C:'Common'}[r] || r;
-}
-
-// ============================================================
-// ADD / REMOVE PETS
-// ============================================================
-function addPet(side, pet){
-  const entry = {id: Date.now()+'_'+Math.random(), pet, neon: NEON_OPTS[0], fr: FR_OPTS[0]};
-  if(side==='give') givePets.push(entry);
-  else recvPets.push(entry);
-  renderAdded();
-  updateVerdict();
-}
-
-function removePet(side, id){
-  if(side==='give') givePets = givePets.filter(e=>e.id!==id);
-  else recvPets = recvPets.filter(e=>e.id!==id);
-  renderAdded();
-  updateVerdict();
-}
-
-function setNeon(side, id, idx){
-  const list = side==='give'?givePets:recvPets;
-  const e = list.find(x=>x.id===id);
-  if(e){ e.neon=NEON_OPTS[idx]; renderAdded(); updateVerdict(); }
-}
-
-function setFR(side, id, idx){
-  const list = side==='give'?givePets:recvPets;
-  const e = list.find(x=>x.id===id);
-  if(e){ e.fr=FR_OPTS[idx]; renderAdded(); updateVerdict(); }
-}
-
-function renderAdded(){
-  renderAddedList('give-added', givePets, 'give');
-  renderAddedList('recv-added', recvPets, 'recv');
-}
-
-function renderAddedList(containerId, list, side){
-  const container = document.getElementById(containerId);
-  if(list.length===0){
-    container.innerHTML = '<div style="color:var(--muted);font-size:.72rem;text-align:center;padding:10px">Click tiles above to add pets</div>';
-    return;
-  }
-  container.innerHTML = list.map(e=>{
-    const v = petVal(e);
-    const neonBtns = NEON_OPTS.map((o,i)=>`<button class="tog ${e.neon===o?'sel':''}" onclick="setNeon('${side}','${e.id}',${i})">${o.label}</button>`).join('');
-    const frBtns   = FR_OPTS.map((o,i)=>`<button class="tog ${e.fr===o?'sel':''}" onclick="setFR('${side}','${e.id}',${i})">${o.label}</button>`).join('');
-    return `<div class="added-pet">
-      <img src="${petImg(e.pet)}" alt="${e.pet.name}" width="32" height="32" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22><rect width=%2232%22 height=%2232%22 fill=%22%2321262d%22 rx=%224%22/><text x=%2216%22 y=%2222%22 font-size=%2216%22 text-anchor=%22middle%22>🐾</text></svg>'">
-      <div style="flex:1;min-width:0">
-        <div class="added-pet-name">${e.pet.name}</div>
-        <div class="pet-toggles">
-          <div class="toggle-row">${neonBtns}</div>
-          <div class="toggle-row">${frBtns}</div>
-        </div>
-      </div>
-      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:2px">
-        <div class="added-pet-val">${v%1===0?v:v.toFixed(1)} pts</div>
-        <button class="remove-btn" onclick="removePet('${side}','${e.id}')">✕</button>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-// ============================================================
-// VERDICT
-// ============================================================
-function totalVal(list){ return list.reduce((s,e)=>s+petVal(e),0); }
-
-const VERDICTS = [
-  {min:50, cls:'vHUGEWIN',   label:'🎉 HUGE WIN'},
-  {min:20, cls:'vBIGWIN',    label:'✅ BIG WIN'},
-  {min:8,  cls:'vWIN',       label:'👍 WIN'},
-  {min:3,  cls:'vSLIGHTWIN', label:'📈 SLIGHT WIN'},
-  {min:-3, cls:'vFAIR',      label:'⚨️ FAIR TRADE'},
-  {min:-8, cls:'vSLIGHTLOSS',label:'📉 SLIGHT LOSS'},
-  {min:-20,cls:'vLOSS',      label:'❌ LOSS'},
-  {min:-50,cls:'vBIGLOSS',   label:'💸 BIG LOSS'},
-  {min:-Infinity,cls:'vHUGELOSS',label:'🚨 HUGE LOSS'},
+var NEON_OPTS = [
+  {label:"Normal", mult:1},
+  {label:"Neon",   mult:4},
+  {label:"Mega",   mult:16}
 ];
+var FR_OPTS = [
+  {label:"None",  mult:1},
+  {label:"Fly",   mult:1.5},
+  {label:"Ride",  mult:1.5},
+  {label:"FR",    mult:2}
+];
+var VERDICTS = [
+  {min:50,  cls:"vHUGEWIN",   label:"HUGE WIN"},
+  {min:20,  cls:"vBIGWIN",    label:"BIG WIN"},
+  {min:8,   cls:"vWIN",       label:"WIN"},
+  {min:3,   cls:"vSLIGHTWIN", label:"SLIGHT WIN"},
+  {min:-3,  cls:"vFAIR",      label:"FAIR TRADE"},
+  {min:-8,  cls:"vSLIGHTLOSS",label:"SLIGHT LOSS"},
+  {min:-20, cls:"vLOSS",      label:"LOSS"},
+  {min:-50, cls:"vBIGLOSS",   label:"BIG LOSS"},
+  {min:-1e9,cls:"vHUGELOSS",  label:"HUGE LOSS"}
+];
+var RARITY_LABELS = {L:"Legendary",UR:"Ultra-Rare",R:"Rare",UC:"Uncommon",C:"Common"};
 
-function updateVerdict(){
-  const gTotal = totalVal(givePets);
-  const rTotal = totalVal(recvPets);
-  const diff = rTotal - gTotal; // positive = you win (receive more)
+// State
+var givePets = newArr(), recvPets = newArr();
+var activePicker = null; // {side, idx}
+var pickerFilter = "all", pickerSearch = "";
 
-  const v = VERDICTS.find(x=>diff>=x.min);
-  const lbl = document.getElementById('v-label');
-  const pts = document.getElementById('v-pts');
-  const bar = document.getElementById('v-bar');
-  const vGive = document.getElementById('v-give');
-  const vRecv = document.getElementById('v-recv');
+function newArr(){ var a=[]; for(var i=0;i<SLOTS;i++) a.push(null); return a; }
+function sideArr(side){ return side==="give" ? givePets : recvPets; }
+function effVal(e){ return e.pet.val * e.neon.mult * e.fr.mult; }
+function fmt(n){ return n%1===0 ? String(n) : n.toFixed(1); }
 
-  lbl.className = 'verdict-label ' + v.cls;
+// -- RENDER SLOTS --
+function renderSlots(side) {
+  var arr = sideArr(side);
+  var grid = document.getElementById(side+"-grid");
+  while(grid.firstChild) grid.removeChild(grid.firstChild);
+
+  for(var i=0; i<SLOTS; i++) {
+    (function(idx){
+      var entry = arr[idx];
+      var slot = document.createElement("div");
+
+      if(!entry) {
+        slot.className = "slot empty";
+        slot.setAttribute("data-side", side);
+        slot.setAttribute("data-idx", idx);
+
+        var icon = document.createElement("div");
+        icon.className = "slot-empty-icon";
+        icon.textContent = "+";
+        var lbl = document.createElement("div");
+        lbl.className = "slot-empty-lbl";
+        lbl.textContent = "add pet";
+        slot.appendChild(icon);
+        slot.appendChild(lbl);
+        slot.onclick = function(){ openPicker(side, idx); };
+      } else {
+        slot.className = "slot filled";
+
+        // Remove btn
+        var rm = document.createElement("button");
+        rm.className = "slot-remove";
+        rm.textContent = "X";
+        rm.onclick = function(e){ e.stopPropagation(); removePet(side, idx); };
+        slot.appendChild(rm);
+
+        // Image
+        var img = document.createElement("img");
+        img.className = "slot-img";
+        img.src = IMG_BASE + entry.pet.img + ".png";
+        img.alt = entry.pet.name;
+        img.loading = "lazy";
+        img.onerror = function(){ this.style.opacity="0.25"; };
+        slot.appendChild(img);
+
+        // Name
+        var nm = document.createElement("div");
+        nm.className = "slot-name";
+        nm.textContent = entry.pet.name;
+        slot.appendChild(nm);
+
+        // Value
+        var vEl = document.createElement("div");
+        vEl.className = "slot-val";
+        vEl.textContent = fmt(effVal(entry)) + " pts";
+        slot.appendChild(vEl);
+
+        // Toggles
+        var toggles = document.createElement("div");
+        toggles.className = "slot-toggles";
+
+        // Neon row
+        var nRow = document.createElement("div");
+        nRow.className = "tog-row";
+        for(var ni=0; ni<NEON_OPTS.length; ni++) {
+          (function(nIdx){
+            var b = document.createElement("button");
+            b.className = "tog" + (entry.neon===NEON_OPTS[nIdx] ? " sel" : "");
+            b.textContent = NEON_OPTS[nIdx].label;
+            b.onclick = function(e){ e.stopPropagation(); setNeon(side,idx,nIdx); };
+            nRow.appendChild(b);
+          })(ni);
+        }
+        toggles.appendChild(nRow);
+
+        // FR row
+        var fRow = document.createElement("div");
+        fRow.className = "tog-row";
+        for(var fi=0; fi<FR_OPTS.length; fi++) {
+          (function(fIdx){
+            var b = document.createElement("button");
+            b.className = "tog" + (entry.fr===FR_OPTS[fIdx] ? " sel" : "");
+            b.textContent = FR_OPTS[fIdx].label;
+            b.onclick = function(e){ e.stopPropagation(); setFR(side,idx,fIdx); };
+            fRow.appendChild(b);
+          })(fi);
+        }
+        toggles.appendChild(fRow);
+        slot.appendChild(toggles);
+      }
+
+      grid.appendChild(slot);
+    })(i);
+  }
+
+  var filled = arr.filter(function(x){ return x!==null; }).length;
+  document.getElementById(side+"-count").textContent = filled+(filled===1?" pet":" pets");
+}
+
+// -- PICKER --
+function openPicker(side, idx) {
+  activePicker = {side:side, idx:idx};
+  pickerSearch = "";
+  document.getElementById("picker-search").value = "";
+  document.getElementById("picker").removeAttribute("hidden");
+  document.getElementById("picker-search").focus();
+  renderPickerGrid();
+}
+
+function closePicker() {
+  document.getElementById("picker").setAttribute("hidden","");
+  activePicker = null;
+}
+
+function renderPickerGrid() {
+  var grid = document.getElementById("picker-grid");
+  while(grid.firstChild) grid.removeChild(grid.firstChild);
+
+  var q = pickerSearch.toLowerCase();
+  var pets = PETS.filter(function(p){
+    var matchR = pickerFilter==="all" || p.rarity===pickerFilter;
+    var matchQ = !q || p.name.toLowerCase().indexOf(q) >= 0;
+    return matchR && matchQ;
+  });
+
+  if(pets.length===0) {
+    var msg = document.createElement("div");
+    msg.style.cssText = "grid-column:1/-1;text-align:center;color:var(--text-muted);padding:24px;font-size:.8rem";
+    msg.textContent = "No pets found";
+    grid.appendChild(msg);
+    return;
+  }
+
+  pets.forEach(function(p) {
+    var tile = document.createElement("div");
+    tile.className = "pet-tile";
+    tile.onclick = function(){ selectPet(p); };
+
+    var img = document.createElement("img");
+    img.src = IMG_BASE + p.img + ".png";
+    img.alt = p.name;
+    img.loading = "lazy";
+    img.width = 52; img.height = 52;
+    img.onerror = function(){ this.style.opacity="0.2"; };
+    tile.appendChild(img);
+
+    var nm = document.createElement("div");
+    nm.className = "pt-name";
+    nm.textContent = p.name;
+    tile.appendChild(nm);
+
+    var rar = document.createElement("div");
+    rar.className = "pt-rar r"+p.rarity;
+    rar.textContent = RARITY_LABELS[p.rarity];
+    tile.appendChild(rar);
+
+    grid.appendChild(tile);
+  });
+}
+
+function selectPet(pet) {
+  if(!activePicker) return;
+  var side = activePicker.side, idx = activePicker.idx;
+  sideArr(side)[idx] = {pet:pet, neon:NEON_OPTS[0], fr:FR_OPTS[0]};
+  closePicker();
+  renderSlots(side);
+  updateVerdict();
+}
+
+// -- MODIFY --
+function removePet(side, idx) {
+  sideArr(side)[idx] = null;
+  renderSlots(side);
+  updateVerdict();
+}
+
+function setNeon(side, idx, ni) {
+  var e = sideArr(side)[idx];
+  if(e){ e.neon=NEON_OPTS[ni]; renderSlots(side); updateVerdict(); }
+}
+
+function setFR(side, idx, fi) {
+  var e = sideArr(side)[idx];
+  if(e){ e.fr=FR_OPTS[fi]; renderSlots(side); updateVerdict(); }
+}
+
+function clearAll() {
+  givePets=newArr(); recvPets=newArr();
+  renderSlots("give"); renderSlots("recv"); updateVerdict();
+}
+
+// -- VERDICT --
+function totalVal(arr) {
+  return arr.filter(Boolean).reduce(function(s,e){ return s+effVal(e); }, 0);
+}
+
+function updateVerdict() {
+  var gT = totalVal(givePets), rT = totalVal(recvPets);
+  var diff = rT - gT;
+  var v = VERDICTS[VERDICTS.length-1];
+  for(var i=0;i<VERDICTS.length;i++){ if(diff>=VERDICTS[i].min){ v=VERDICTS[i]; break; } }
+
+  var lbl = document.getElementById("v-label");
+  lbl.className = "verdict-label "+v.cls;
   lbl.textContent = v.label;
 
-  const sign = diff>0?'+':diff<0?'':' ';
-  pts.textContent = sign + (diff%1===0?diff.toFixed(0):diff.toFixed(1));
-  pts.className = 'verdict-pts';
-  if(diff>0) pts.style.color='var(--green)';
-  else if(diff<0) pts.style.color='var(--red)';
-  else pts.style.color='var(--muted)';
+  var pts = document.getElementById("v-pts");
+  var sign = diff>0?"+":diff<0?"":"±";
+  pts.textContent = sign + fmt(diff);
+  pts.style.color = diff>0?"var(--green)":diff<0?"var(--red)":"var(--text-muted)";
 
-  vGive.textContent = 'Give: '+(gTotal%1===0?gTotal:gTotal.toFixed(1));
-  vRecv.textContent = 'Recv: '+(rTotal%1===0?rTotal:rTotal.toFixed(1));
+  document.getElementById("v-give").textContent = "Give: "+fmt(gT);
+  document.getElementById("v-recv").textContent = "Recv: "+fmt(rT);
 
   // Balance bar
-  const total = gTotal + rTotal;
-  if(total===0){
-    bar.style.left='50%'; bar.style.right='50%'; bar.style.width='0';
-    bar.style.background='var(--muted)';
+  var bar = document.getElementById("v-bar");
+  var tot = gT+rT;
+  if(tot===0){
+    bar.style.left="50%"; bar.style.width="0"; bar.style.background="var(--text-muted)";
   } else {
-    const pct = Math.min(Math.max((rTotal/total)*100, 2), 98);
+    var pct = Math.min(Math.max(rT/tot*100,2),98);
     if(diff>0){
-      bar.style.left='50%'; bar.style.right=(100-pct)+'%'; bar.style.width='';
-      bar.style.background='var(--green)';
+      bar.style.left="50%"; bar.style.width=(pct-50)+"%"; bar.style.background="var(--green)";
     } else if(diff<0){
-      bar.style.left=pct+'%'; bar.style.right='50%'; bar.style.width='';
-      bar.style.background='var(--red)';
+      bar.style.left=pct+"%"; bar.style.width=(50-pct)+"%"; bar.style.background="var(--red)";
     } else {
-      bar.style.left='50%'; bar.style.right='50%';
-      bar.style.background='var(--muted)';
+      bar.style.left="50%"; bar.style.width="0"; bar.style.background="var(--text-muted)";
     }
   }
+
+  // Highlight verdict bar label
+  ["win","fair","lose"].forEach(function(k){
+    document.getElementById("vbar-"+k).classList.remove("vbar-active");
+  });
+  var hi = diff>3?"win": diff<-3?"lose":"fair";
+  document.getElementById("vbar-"+hi).classList.add("vbar-active");
 }
 
-function clearAll(){
-  givePets=[]; recvPets=[];
-  renderAdded(); updateVerdict();
-  document.getElementById('give-search').value='';
-  document.getElementById('recv-search').value='';
-  giveSearch=''; recvSearch='';
-  renderGrid('give-grid',giveSearch,giveFilter,'give');
-  renderGrid('recv-grid',recvSearch,recvFilter,'recv');
+// -- EVENTS --
+document.getElementById("picker-search").addEventListener("input", function(e){
+  pickerSearch = e.target.value;
+  renderPickerGrid();
+});
+
+document.getElementById("picker-filters").addEventListener("click", function(e){
+  var btn = e.target.closest ? e.target.closest(".f-btn") : (e.target.classList.contains("f-btn")?e.target:null);
+  if(!btn) return;
+  pickerFilter = btn.getAttribute("data-r");
+  var btns = document.querySelectorAll("#picker-filters .f-btn");
+  for(var i=0;i<btns.length;i++) btns[i].classList.remove("active");
+  btn.classLisById("vbar-"+k).classList.remove("vbar-active");
+  });
+  var hi = diff>3?"win": diff<-3?"lose":"fair";
+  document.getElementById("vbar-"+hi).classList.add("vbar-active");
 }
 
-// ============================================================
-// SEARCH & FILTERS
-// ============================================================
-document.getElementById('give-search').addEventListener('input',e=>{
-  giveSearch=e.target.value;
-  renderGrid('give-grid',giveSearch,giveFilter,'give');
-});
-document.getElementById('recv-search').addEventListener('input',e=>{
-  recvSearch=e.target.value;
-  renderGrid('recv-grid',recvSearch,recvFilter,'recv');
+// -- EVENTS --
+document.getElementById("picker-search").addEventListener("input", function(e){
+  pickerSearch = e.target.value;
+  renderPickerGrid();
 });
 
-document.getElementById('give-filters').addEventListener('click',e=>{
-  if(!e.target.classList.contains('f-btn')) return;
-  giveFilter = e.target.dataset.r;
-  document.querySelectorAll('#give-filters .f-btn').forEach(b=>b.classList.remove('active'));
-  e.target.classList.add('active');
-  renderGrid('give-grid',giveSearch,giveFilter,'give');
-});
-document.getElementById('recv-filters').addEventListener('click',e=>{
-  if(!e.target.classList.contains('f-btn')) return;
-  recvFilter = e.target.dataset.r;
-  document.querySelectorAll('#recv-filters .f-btn').forEach(b=>b.classList.remove('active'));
-  e.target.classList.add('active');
-  renderGrid('recv-grid',recvSearch,recvFilter,'recv');
+document.getElementById("picker-filters").addEventListener("click", function(e){
+  var btn = e.target.closest ? e.target.closest(".f-btn") : (e.target.classList.contains("f-btn")?e.target:null);
+  if(!btn) return;
+  pickerFilter = btn.getAttribute("data-r");
+  var btns = document.querySelectorAll("#picker-filters .f-btn");
+  for(var i=0;i<btns.length;i++) btns[i].classList.remove("active");
+  btn.classList.add("active");
+  renderPickerGrid();
 });
 
-// ============================================================
-// INIT
-// ============================================================
-renderGrid('give-grid',giveSearch,giveFilter,'give');
-renderGrid('recv-grid',recvSearch,recvFilter,'recv');
-renderAdded();
+document.getElementById("picker").addEventListener("click", function(e){
+  if(e.target===document.getElementById("picker")) closePicker();
+});
+document.getElementById("picker-close").addEventListener("click", closePicker);
+document.getElementById("clear-btn").addEventListener("click", clearAll);
+
+// -- INIT --
+renderSlots("give");
+renderSlots("recv");
 updateVerdict();
 </script>
 </body>
