@@ -59,7 +59,7 @@ a{color:inherit;text-decoration:none}
 .slot-val{font-size:.62rem;color:var(--accent);font-weight:700;line-height:1}
 .slot-toggles{display:flex;flex-direction:column;gap:2px;width:100%}
 .tog-row{display:flex;gap:2px;justify-content:center}
-.tog{padding:1px 3px;border-radius:4px;border:1px solid var(--border);font-size:.5rem;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .1s;white-space:nowraw;line-height:1.4}
+.tog{padding:1px 3px;border-radius:4px;border:1px solid var(--border);font-size:.5rem;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .1s;white-space:nowrap;line-height:1.4}
 .tog.sel{border-color:var(--accent);background:var(--accent-dim);color:var(--accent)}
 .slot-remove{position:absolute;top:3px;right:3px;background:rgba(248,81,73,.12);border:1px solid rgba(248,81,73,.3);color:var(--red);cursor:pointer;font-size:.6rem;border-radius:4px;padding:1px 4px;line-height:1;transition:opacity .15s;opacity:0}
 .slot.filled:hover .slot-remove{opacity:1}
@@ -95,7 +95,7 @@ a{color:inherit;text-decoration:none}
 
 /* PET PICKER MODAL */
 .picker-overlay{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:200;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
-.picker-overlay[hidden]{:display:none!important}
+.picker-overlay[hidden]{display:none!important}
 .picker-modal{background:var(--surface);border:1px solid var(--border);border-radius:14px;width:min(540px,95vw);max-height:82vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.6)}
 .picker-top{display:flex;align-items:center;gap:10px;padding:14px 14px 10px;border-bottom:1px solid var(--border)}
 .picker-top h3{font-size:.9rem;font-weight:700;white-space:nowrap}
@@ -107,17 +107,17 @@ a{color:inherit;text-decoration:none}
 .f-btn{padding:4px 12px;border-radius:16px;border:1px solid var(--border);font-size:.73rem;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .12s}
 .f-btn.active{border-color:var(--accent);background:var(--accent-dim);color:var(--accent)}
 .picker-grid-wrap{overflow-y:auto;flex:1}
-.picker-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:12px14px}
+.picker-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:12px 14px}
 .pet-tile{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:8px 4px 6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;transition:all .12s}
 .pet-tile:hover{border-color:var(--accent);background:rgba(200,255,87,.06);transform:translateY(-1px)}
 .pet-tile img{width:52px;height:52px;object-fit:contain;border-radius:6px}
 .pt-name{font-size:.58rem;font-weight:600;text-align:center;color:var(--text);line-height:1.2;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .pt-rar{font-size:.52rem;padding:1px 6px;border-radius:10px}
-.r\{color:#ffd700;background:rgba(255,215,0,.12)}
+.rL{color:#ffd700;background:rgba(255,215,0,.12)}
 .rUR{color:#b39ddb;background:rgba(179,157,219,.12)}
 .rR{color:#4dd0e1;background:rgba(77,208,225,.12)}
 .rUC{color:#81c784;background:rgba(129,199,132,.12)}
-.r\{color:#bdbdbd;background:rgba(189,189,189,.12)}
+.rC{color:#bdbdbd;background:rgba(189,189,189,.12)}
 
 @media(max-width:720px){
   .calc-wrap{grid-template-columns:1fr;padding:0 12px 40px}
@@ -126,7 +126,25 @@ a{color:inherit;text-decoration:none}
 }
 </style>
 </head>
-<body>ass="page-hero">
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">The <span>Patch</span> &#128062;</a>
+    <nav class="main-nav">
+      <a href="/">Home</a>
+      <a href="articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
+      <a href="pet-value-calculator.html" class="active">Trade Calc</a>
+      <a href="neon-calculator.html">Neon Calc</a>
+      <a href="trading-forum.html">Trading Board</a>
+      <a href="adopt-me.html">All Guides</a>
+    </nav>
+    <a href="https://thepatchgg.substack.com" class="header-cta" target="_blank" rel="noopener">Subscribe Free</a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="page-hero">
   <h1>&#128014; Adopt Me Trade Calculator</h1>
   <p>Values from Traderie.com &amp; community consensus &middot; Updated March 2026 &middot; Set Neon &amp; FR per pet</p>
 </div>
@@ -631,24 +649,6 @@ function updateVerdict() {
   // Highlight verdict bar label
   ["win","fair","lose"].forEach(function(k){
     document.getElementById("vbar-"+k).classList.remove("vbar-active");
-  });
-  var hi = diff>3?"win": diff<-3?"lose":"fair";
-  document.getElementById("vbar-"+hi).classList.add("vbar-active");
-}
-
-// -- EVENTS --
-document.getElementById("picker-search").addEventListener("input", function(e){
-  pickerSearch = e.target.value;
-  renderPickerGrid();
-});
-
-document.getElementById("picker-filters").addEventListener("click", function(e){
-  var btn = e.target.closest ? e.target.closest(".f-btn") : (e.target.classList.contains("f-btn")?e.target:null);
-  if(!btn) return;
-  pickerFilter = btn.getAttribute("data-r");
-  var btns = document.querySelectorAll("#picker-filters .f-btn");
-  for(var i=0;i<btns.length;i++) btns[i].classList.remove("active");
-  btn.classLisById("vbar-"+k).classList.remove("vbar-active");
   });
   var hi = diff>3?"win": diff<-3?"lose":"fair";
   document.getElementById("vbar-"+hi).classList.add("vbar-active");
