@@ -201,12 +201,11 @@ function buildCard(pet){
   div.rel = "noopener";
 
   const imgSlug = n.replace(/ /g,"_").replace(/[()]/g,"").replace(/__/g,"_").replace(/_$/,"");
-  const src = "https://adoptme.fandom.com/wiki/Special:FilePath/" + encodeURIComponent(imgSlug) + ".png";
 
   div.innerHTML =
     '<div class="pet-img-wrap">' +
-      '<img src="' + src + '" alt="' + n + '" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
-      '<div class="pet-fallback" style="font-size:28px;width:100%;height:100%;display:none;align-items:center;justify-content:center;">' + FALLBACK_EMOJI[r] + '</div>' +
+      '<img data-slug="' + imgSlug + '.png" alt="' + n + '" style="width:72px;height:72px;object-fit:contain;display:none">' +
+      '<div class="pet-fallback" style="font-size:28px;width:100%;height:100%;display:flex;align-items:center;justify-content:center;">' + FALLBACK_EMOJI[r] + '</div>' +
     '</div>' +
     '<div class="pet-name">' + n + '</div>' +
     '<span class="rb rb-' + r + '">' + label + '</span>' + (released ? '<p class="pet-meta"><span class="pm-rel">&#128197; ' + released + '</span><span class="pm-obt">&#x1F95A; ' + obtain + '</span></p>' : '') + ((r==='l'||r==='ur'||r==='r') ? '<span class="pm-val" onclick="event.preventDefault();event.stopPropagation();window.open(\'https://adoptmevalues.gg/values/pets/\'+valueSlug(n)+\'\',\'_blank\')" title="Check trade value">&#x1F4B0; Check value</span>' : '');
@@ -222,6 +221,31 @@ const sortEl = document.getElementById("sort");
 // Pre-build all cards
 const allCards = PETS.map(buildCard);
 allCards.forEach(c => grid.appendChild(c));
+
+// Load real pet images via Fandom MediaWiki API
+(async function loadImages(){
+  var imgs = Array.from(document.querySelectorAll('.pet-card img[data-slug]'));
+  var BATCH = 50, batches = [];
+  for(var i=0;i<imgs.length;i+=BATCH) batches.push(imgs.slice(i,i+BATCH));
+  await Promise.all(batches.map(async function(batch){
+    var titleStr = batch.map(function(img){ return 'File:'+img.getAttribute('data-slug'); }).join('|');
+    try {
+      var apiUrl = 'https://adoptme.fandom.com/api.php?action=query&titles='+encodeURIComponent(titleStr)+'&prop=imageinfo&iiprop=url&format=json&origin=*';
+      var resp = await fetch(apiUrl);
+      var data = await resp.json();
+      var normMap = {};
+      if(data.query.normalized) data.query.normalized.forEach(function(nm){ normMap[nm.from]=nm.to; });
+      var urlMap = {};
+      Object.values(data.query.pages).forEach(function(p){ if(p.imageinfo&&p.imageinfo[0]) urlMap[p.title]=p.imageinfo[0].url; });
+      batch.forEach(function(img){
+        var raw = 'File:'+img.getAttribute('data-slug');
+        var resolved = normMap[raw]||raw;
+        var url = urlMap[resolved];
+        if(url){ img.onload=function(){ this.style.display='block'; if(this.nextElementSibling) this.nextElementSibling.style.display='none'; }; img.src=url; }
+      });
+    } catch(e){}
+  }));
+})();
 
 // Update rarity pill counts
 const counts = {c:0,u:0,r:0,ur:0,l:0,all:718};
