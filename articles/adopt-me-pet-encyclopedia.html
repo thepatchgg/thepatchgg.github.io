@@ -222,11 +222,21 @@ const sortEl = document.getElementById("sort");
 const allCards = PETS.map(buildCard);
 allCards.forEach(c => grid.appendChild(c));
 
-// Load real pet images via Fandom MediaWiki API
+// Load real pet images — nookazon CDN for key pets, Fandom API for the rest
+var NKZN_BASE = 'https://cdn.nookazon.com/64x64/adoptme/';
+var NKZN = {"Albino Monkey":"items/5067924142","Balloon Unicorn":"items/18117855573","Black Chow-Chow":"pets/9938967130","Chick":"pets/4752655872","Dalmatian":"items/4849941000","Diamond Dragon":"items/4797806358","Diamond Unicorn":"items/4797806531","Dragon":"items/3181727433","Drake":"pets/4440867010","Evil Unicorn":"pets/4184878050","Glacier Kitsune":"pets/15570696642","Glacier Moth":"pets/11571113906","Golden Chow-Chow":"pets/10357473556","Golden Dragon":"items/4797806820","Golden Rat":"pets/4621220431","Golden Unicorn":"pets/4797806957","Horse":"pets/3181727813","Koala":"items/4708551284","Leviathan":"pets/13685038182","Lion":"items/3409443801","Nautilus":"pets/16382424275","Panda":"pets/4621220487","Parrot":"pets/3743647944","Penguin":"pets/3710822879","Shadow Dragon":"pets/4115248712","Skele-Rex":"pets/5862774166","Tan Chow-Chow":"pets/9938967851","Wild Boar":"items/3409443896"};
 (async function loadImages(){
   var imgs = Array.from(document.querySelectorAll('.pet-card img[data-slug]'));
+  var fandomQ = [];
+  imgs.forEach(function(img){
+    var name = img.getAttribute('data-slug').replace(/\.png$/,'').replace(/_/g,' ');
+    if(NKZN[name]){
+      img.onload=function(){ this.style.display='block'; if(this.nextElementSibling) this.nextElementSibling.style.display='none'; };
+      img.src = NKZN_BASE + NKZN[name] + '.png';
+    } else { fandomQ.push(img); }
+  });
   var BATCH = 50, batches = [];
-  for(var i=0;i<imgs.length;i+=BATCH) batches.push(imgs.slice(i,i+BATCH));
+  for(var i=0;i<fandomQ.length;i+=BATCH) batches.push(fandomQ.slice(i,i+BATCH));
   await Promise.all(batches.map(async function(batch){
     var titleStr = batch.map(function(img){ return 'File:'+img.getAttribute('data-slug'); }).join('|');
     try {
