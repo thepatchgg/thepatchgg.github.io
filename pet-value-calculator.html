@@ -426,7 +426,9 @@ function selectPet(pet) {
 
 // -- MODIFY --
 function removePet(side, idx) {
-  sideArr(side)[idx] = null;
+  var arr = sideArr(side);
+  arr.splice(idx, 1);
+  arr.push(null);
   renderSlots(side);
   updateVerdict();
 }
