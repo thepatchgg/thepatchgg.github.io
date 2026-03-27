@@ -69,7 +69,13 @@
     .form-input:focus, .form-textarea:focus, .form-select:focus { border-color:var(--am); }
     .form-textarea { min-height:80px;resize:vertical; }
     @media (max-width: 800px) { .forum-layout { grid-template-columns: 1fr; } }
-  </style>
+  
+    .tp-notes { padding: .4rem 1rem .6rem; color: #666; font-size: .85rem; }
+    .tp-availability { padding: .3rem 1rem; color: #3a7d44; font-size: .85rem; font-weight: 500; }
+    .tp-time { font-size: .75rem; color: #aaa; margin-left: .5rem; }
+    .tp-arrow { font-size: 1.2rem; color: #ccc; align-self: center; padding: 0 .5rem; display: flex; align-items: center; }
+    .loading-msg { text-align: center; color: #888; padding: 2rem 1rem; }
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -120,231 +126,7 @@
       <div style="font-size:12px;color:var(--text-muted);" id="postCount">Showing 8 posts</div>
     </div>
 
-    <div id="tradesList">
-      <div class="trade-post" data-type="featured wtt">
-        <div class="tp-header">
-          <div class="tp-avatar">🦋</div>
-          <div class="tp-user">
-            <div class="tp-username">StarTrader99 <span class="tp-badge badge-featured">⭐ Featured</span></div>
-            <div class="tp-meta">Posted 2 hours ago · 🐾 Veteran Trader</div>
-          </div>
-          <span class="tp-badge badge-wtt">🔄 WTT</span>
-        </div>
-        <div class="tp-trade-box">
-          <div class="tp-trade-row">
-            <div class="tp-side">
-              <div class="tp-side-label">Offering</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">🐢 FR Turtle</span>
-                <span class="tp-pet-chip">🐙 Normal Octopus</span>
-                <span class="tp-pet-chip">🦖 FR T-Rex</span>
-              </div>
-            </div>
-            <div class="tp-vs">⇄</div>
-            <div class="tp-side">
-              <div class="tp-side-label">Looking For</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">🦒 Normal Giraffe</span>
-                <span class="tp-pet-chip">+ adds</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tp-note">Estimated trade value: my side ≈ 70 | Giraffe ≈ 55. Willing to add more or adjust. DM me with offers!</div>
-        <div class="tp-footer">
-          <div class="tp-stats"><span>👀 142 views</span><span>💬 3 replies</span></div>
-          <button class="tp-contact" onclick="showContact('StarTrader99')">Contact →</button>
-        </div>
-      </div>
-
-      <div class="trade-post" data-type="lf">
-        <div class="tp-header">
-          <div class="tp-avatar">🌸</div>
-          <div class="tp-user">
-            <div class="tp-username">FluffyPetCollector</div>
-            <div class="tp-meta">Posted 5 hours ago · 🌱 New Trader</div>
-          </div>
-          <span class="tp-badge badge-lf">🔍 Looking For</span>
-        </div>
-        <div class="tp-trade-box">
-          <div class="tp-trade-row">
-            <div class="tp-side">
-              <div class="tp-side-label">I Have</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">🐲 FR Dragon</span>
-                <span class="tp-pet-chip">🦄 FR Unicorn</span>
-                <span class="tp-pet-chip">🐢 Normal Turtle</span>
-                <span class="tp-pet-chip">+ small adds</span>
-              </div>
-            </div>
-            <div class="tp-vs">⇄</div>
-            <div class="tp-side">
-              <div class="tp-side-label">I Want</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">🦜 FR Parrot</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tp-note">I know Parrot is a bit higher — I can add more. Please check the value list before responding so we can agree on fair adds.</div>
-        <div class="tp-footer">
-          <div class="tp-stats"><span>👀 89 views</span><span>💬 1 reply</span></div>
-          <button class="tp-contact" onclick="showContact('FluffyPetCollector')">Contact →</button>
-        </div>
-      </div>
-
-      <div class="trade-post" data-type="offering">
-        <div class="tp-header">
-          <div class="tp-avatar">⚡</div>
-          <div class="tp-user">
-            <div class="tp-username">NeonGrinder2026 <span class="tp-badge badge-offering">🎁 Offering</span></div>
-            <div class="tp-meta">Posted 8 hours ago · 🏆 Top Trader</div>
-          </div>
-        </div>
-        <div class="tp-trade-box">
-          <div class="tp-trade-row">
-            <div class="tp-side">
-              <div class="tp-side-label">Offering</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">🦇 Normal Bat Dragon</span>
-              </div>
-            </div>
-            <div class="tp-vs">⇄</div>
-            <div class="tp-side">
-              <div class="tp-side-label">Looking For</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">❄️ FR Frost Dragon</span>
-                <span class="tp-pet-chip">+ good adds</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tp-note">Bat Dragon Normal (≈110) trading for Frost FR (≈108) + adds. Looking for something around 120 total value their side. Open to discussion.</div>
-        <div class="tp-footer">
-          <div class="tp-stats"><span>👀 312 views</span><span>💬 7 replies</span></div>
-          <button class="tp-contact" onclick="showContact('NeonGrinder2026')">Contact →</button>
-        </div>
-      </div>
-
-      <div class="trade-post" data-type="wtt">
-        <div class="tp-header">
-          <div class="tp-avatar">🎪</div>
-          <div class="tp-user">
-            <div class="tp-username">SugarfestHunter</div>
-            <div class="tp-meta">Posted 12 hours ago · 🌱 New Trader</div>
-          </div>
-          <span class="tp-badge badge-wtt">🔄 WTT</span>
-        </div>
-        <div class="tp-trade-box">
-          <div class="tp-trade-row">
-            <div class="tp-side">
-              <div class="tp-side-label">Offering</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">🍭 FR Candicorn</span>
-                <span class="tp-pet-chip">🍭 FR Candicorn</span>
-                <span class="tp-pet-chip">🐊 Normal Cocoadile</span>
-              </div>
-            </div>
-            <div class="tp-vs">⇄</div>
-            <div class="tp-side">
-              <div class="tp-side-label">Looking For</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">🐙 FR Octopus</span>
-                <span class="tp-pet-chip">or similar</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tp-note">Stacking Sugarfest pets. 2× FR Candicorn (≈18) + Cocoadile (≈4) = ~22. FR Octopus is ~18, so I'm overpaying slightly. Fair trade offer!</div>
-        <div class="tp-footer">
-          <div class="tp-stats"><span>👀 67 views</span><span>💬 0 replies</span></div>
-          <button class="tp-contact" onclick="showContact('SugarfestHunter')">Contact →</button>
-        </div>
-      </div>
-
-      <div class="trade-post" data-type="lf">
-        <div class="tp-header">
-          <div class="tp-avatar">🌟</div>
-          <div class="tp-user">
-            <div class="tp-username">MegaNeonDreams</div>
-            <div class="tp-meta">Posted 1 day ago · 🐾 Veteran Trader</div>
-          </div>
-          <span class="tp-badge badge-lf">🔍 Looking For</span>
-        </div>
-        <div class="tp-trade-box">
-          <div class="tp-trade-row">
-            <div class="tp-side">
-              <div class="tp-side-label">I Have</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">✨ Neon Turtle</span>
-                <span class="tp-pet-chip">🐢 ×4 FR Turtles</span>
-              </div>
-            </div>
-            <div class="tp-vs">⇄</div>
-            <div class="tp-side">
-              <div class="tp-side-label">I Want</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">🦒 FR Giraffe</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tp-note">Neon Turtle (≈90) + 4× FR Turtle (≈104 total) vs FR Giraffe (≈66). I know I'm offering way more — looking for the fastest trade. Comment if interested!</div>
-        <div class="tp-footer">
-          <div class="tp-stats"><span>👀 201 views</span><span>💬 4 replies</span></div>
-          <button class="tp-contact" onclick="showContact('MegaNeonDreams')">Contact →</button>
-        </div>
-      </div>
-
-      <div class="trade-post" data-type="wtt">
-        <div class="tp-header">
-          <div class="tp-avatar">🦊</div>
-          <div class="tp-user">
-            <div class="tp-username">FoxTrader_AM</div>
-            <div class="tp-meta">Posted 1 day ago · 🌱 New Trader</div>
-          </div>
-          <span class="tp-badge badge-wtt">🔄 WTT</span>
-        </div>
-        <div class="tp-trade-box">
-          <div class="tp-trade-row">
-            <div class="tp-side">
-              <div class="tp-side-label">Offering</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">🐲 ×6 FR Dragons</span>
-                <span class="tp-pet-chip">🦄 ×4 FR Unicorns</span>
-              </div>
-            </div>
-            <div class="tp-vs">⇄</div>
-            <div class="tp-side">
-              <div class="tp-side-label">Looking For</div>
-              <div class="tp-pets">
-                <span class="tp-pet-chip">🦤 Normal Dodo</span>
-                <span class="tp-pet-chip">or 🦖 T-Rex</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tp-note">6 FR Dragons (≈276) + 4 FR Unicorns (≈168) = ~444 total value. Dodo Normal ≈ 32. Way overpaying but I just want a Dodo badly! 😅</div>
-        <div class="tp-footer">
-          <div class="tp-stats"><span>👀 45 views</span><span>💬 2 replies</span></div>
-          <button class="tp-contact" onclick="showContact('FoxTrader_AM')">Contact →</button>
-        </div>
-      </div>
-
-      <div class="trade-post" data-type="offering">
-        <div class="tp-header">
-          <div class="tp-avatar">🏆</div>
-          <div class="tp-user">
-            <div class="tp-username">ThePatchAdmin <span class="tp-badge badge-featured">📌 Pinned</span></div>
-            <div class="tp-meta">March 14, 2026 · The Patch Team</div>
-          </div>
-        </div>
-        <div class="tp-note" style="margin-bottom:0;">
-          <strong style="color:var(--text);display:block;margin-bottom:6px;">📋 Trading Board Rules</strong>
-          No scam attempts · Always use the in-game trade window · Don't share personal information · Verify pet values before posting using our <a href="pet-value-calculator.html" style="color:var(--am);">Trade Calculator</a> · Be respectful and patient · Suspicious accounts will be removed
-        </div>
-      </div>
-    </div>
+    <div id="tradesList"></div>
   </div>
 
   <div>
@@ -424,7 +206,15 @@
       <div class="form-group">
         <label class="form-label">Additional Notes (optional)</label>
         <textarea class="form-textarea" name="notes" placeholder="Any extra details about your trade offer..."></textarea>
-      </div>
+      
+        <div class="form-group">
+          <label class="form-label">When can you meet in-game?</label>
+          <input class="form-input" name="availability" type="text" placeholder="e.g. Weekdays after 5pm EST, weekends anytime">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Security check: What is <span id="captchaQ"></span>?</label>
+          <input class="form-input" id="captchaAnswer" type="number" placeholder="Enter the answer" min="1" max="20">
+        </div></div>
       <button type="submit" class="ptb-btn" style="width:100%;padding:14px;font-size:15px;">Submit Trade Post →</button>
     </form>
     <div id="tradeSuccess" style="display:none;text-align:center;padding:20px;">
@@ -445,63 +235,143 @@
   </div>
 </footer>
 <script>
-function filterTrades(type, btn) {
-  document.querySelectorAll('.ftab').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  const posts = document.querySelectorAll('.trade-post');
-  let count = 0;
-  posts.forEach(p => {
-    const dtype = p.dataset.type || '';
-    if (type === 'all' || dtype.includes(type)) { p.style.display = ''; count++; }
-    else p.style.display = 'none';
-  });
-  document.getElementById('postCount').textContent = 'Showing ' + count + ' posts';
+var GAS_URL = 'https://script.google.com/macros/s/AKfycbyTm-F_HCHt54vqhNUkxcWnLQKcz02JZhaCwhHk5am1WruH3cGDIDstGYZoe7rFLWl9/exec';
+var captchaA, captchaB;
+
+function genCaptcha() {
+  captchaA = Math.floor(Math.random() * 10) + 1;
+  captchaB = Math.floor(Math.random() * 10) + 1;
+  document.getElementById('captchaQ').textContent = captchaA + ' + ' + captchaB;
 }
-function showContact(username) {
-  var name = username || 'this trader';
-  alert('To contact ' + name + ':\n\n• Find them in Adopt Me! using Roblox username: ' + name + '\n• Walk up to their character and tap the Trade icon\n• Or send a Roblox friend request\n\n⚠️ Always use the official in-game trade window — never trade outside it!');
+
+function timeAgo(iso) {
+  var d = new Date(iso), now = new Date();
+  var diff = Math.floor((now - d) / 1000);
+  if (diff < 60) return 'just now';
+  if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+  if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+  return Math.floor(diff / 86400) + 'd ago';
+}
+
+function badgeClass(t) {
+  if (!t) return 'badge-wtt';
+  if (t.includes('WTT') || t.includes('Trade')) return 'badge-wtt';
+  if (t.includes('Looking')) return 'badge-lf';
+  return 'badge-offering';
+}
+
+function badgeLabel(t) {
+  if (!t) return 'WTT';
+  if (t.includes('WTT')) return '\u{1F504} WTT';
+  if (t.includes('Looking')) return '\u{1F50D} Looking For';
+  return '\u{1F381} Offering';
+}
+
+function petsHtml(text) {
+  if (!text) return '<span class="tp-pet-chip">\u2014</span>';
+  return text.split(',').map(function(p) {
+    return '<span class="tp-pet-chip">' + escHtml(p.trim()) + '</span>';
+  }).join('');
+}
+
+function escHtml(s) {
+  return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+function escAttr(s) {
+  return String(s || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/</g, '').replace(/>/g, '');
+}
+
+function renderPost(post) {
+  var initial = (post.username || '?').charAt(0).toUpperCase();
+  var avail = post.availability ? '<div class="tp-availability">\u23F0 ' + escHtml(post.availability) + '</div>' : '';
+  var notes = post.notes ? '<div class="tp-notes">\u{1F4DD} ' + escHtml(post.notes) + '</div>' : '';
+  var when = post.timestamp ? '<span class="tp-time">' + timeAgo(post.timestamp) + '</span>' : '';
+  return '<div class="trade-post">' +
+    '<div class="tp-header">' +
+      '<div class="tp-avatar">' + initial + '</div>' +
+      '<div class="tp-user"><div class="tp-username">' + escHtml(post.username || 'Anonymous') + '</div></div>' +
+      '<div class="tp-meta"><span class="tp-badge ' + badgeClass(post.trade_type) + '">' + badgeLabel(post.trade_type) + '</span>' + when + '</div>' +
+    '</div>' +
+    '<div class="tp-trade-box"><div class="tp-trade-row">' +
+      '<div class="tp-side"><div class="tp-side-label">Offering</div><div class="tp-pets">' + petsHtml(post.offering) + '</div></div>' +
+      '<div class="tp-arrow">&#8594;</div>' +
+      '<div class="tp-side"><div class="tp-side-label">Looking For</div><div class="tp-pets">' + petsHtml(post.looking_for) + '</div></div>' +
+    '</div></div>' +
+    avail + notes +
+    '<div class="tp-footer"><button class="tp-contact" onclick="showContact(\'' + escAttr(post.username) + '\')">\u{1F4AC} Contact Trader</button></div>' +
+  '</div>';
+}
+
+function loadPosts() {
+  var list = document.getElementById('tradesList');
+  if (!list) return;
+  list.innerHTML = '<p class="loading-msg">Loading trades\u2026</p>';
+  fetch(GAS_URL)
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var posts = data.posts || [];
+      var countEl = document.getElementById('postCount');
+      if (countEl) countEl.textContent = posts.length + ' active listing' + (posts.length !== 1 ? 's' : '');
+      list.innerHTML = posts.length
+        ? posts.map(renderPost).join('')
+        : '<p class="loading-msg">No trades posted yet \u2014 be the first!</p>';
+    })
+    .catch(function() {
+      list.innerHTML = '<p class="loading-msg" style="color:#c00">Couldn\u2019t load trades. Please refresh.</p>';
+    });
 }
 
 async function submitTrade(e) {
   e.preventDefault();
+  var ans = parseInt(document.getElementById('captchaAnswer').value, 10);
+  if (isNaN(ans) || ans !== captchaA + captchaB) {
+    alert('Security check failed \u2014 please check your math answer.');
+    genCaptcha();
+    document.getElementById('captchaAnswer').value = '';
+    return;
+  }
   var form = e.target;
-  var btn = form.querySelector("[type=submit]");
+  var btn = form.querySelector('[type=submit]');
   var orig = btn.textContent;
-  // ── Formspree setup ───────────────────────────────────────────────────
-  // 1. Sign up free at formspree.io
-  // 2. Create a form → copy the Form ID (8-char code after /f/)
-  // 3. Paste it below, replacing YOUR_FORM_ID
-  var FORM_ID = 'YOUR_FORM_ID';
-  // ─────────────────────────────────────────────────────────────────────
-  btn.textContent = 'Sending…';
+  btn.textContent = 'Posting\u2026';
   btn.disabled = true;
   try {
-    var resp = await fetch('https://formspree.io/f/' + FORM_ID, {
+    var resp = await fetch(GAS_URL, {
       method: 'POST',
-      body: new FormData(form),
-      headers: { Accept: 'application/json' }
+      body: JSON.stringify({
+        username: form.username.value.trim(),
+        trade_type: form.trade_type.value,
+        offering: form.offering.value.trim(),
+        looking_for: form.looking_for.value.trim(),
+        availability: form.availability.value.trim(),
+        notes: form.notes.value.trim()
+      }),
+      headers: { 'Content-Type': 'application/json' }
     });
-    if (resp.ok) {
-      form.style.display = 'none';
-      document.getElementById('tradeSuccess').style.display = 'block';
-    } else {
-      throw new Error(resp.status);
-    }
+    var result = await resp.json();
+    if (!result.ok) throw new Error(result.error || 'error');
+    form.reset();
+    genCaptcha();
+    document.getElementById('captchaAnswer').value = '';
+    var suc = document.getElementById('tradeSuccess');
+    if (suc) { suc.style.display = 'block'; setTimeout(function() { suc.style.display = 'none'; }, 4000); }
+    loadPosts();
   } catch(err) {
-    btn.textContent = orig;
-    btn.disabled = false;
-    alert('Submission failed — please try again. If the problem persists, the form may not be fully configured yet.');
+    alert('Submission failed \u2014 please try again.');
   }
+  btn.textContent = orig;
+  btn.disabled = false;
 }
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.main-nav');
-  toggle.addEventListener('click', () => {
-    const open = nav.style.display === 'flex';
-    nav.style.display = open ? 'none' : 'flex';
-    if (!open) { nav.style.flexDirection='column';nav.style.position='absolute';nav.style.top='60px';nav.style.left='0';nav.style.right='0';nav.style.background='#0d0d0f';nav.style.padding='12px 20px';nav.style.borderBottom='1px solid #2a2a35';nav.style.zIndex='99'; }
-  });
+
+function showContact(username) {
+  var name = username || 'this trader';
+  alert('To contact ' + name + ':\n\n\u2022 Find them in Adopt Me! using Roblox username: ' + name + '\n\u2022 Walk up to their character and tap the Trade icon\n\u2022 Or send a Roblox friend request\n\n\u26A0\uFE0F Always use the official in-game trade window \u2014 never trade outside it!');
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+  genCaptcha();
+  loadPosts();
 });
-</script>
+</script></script>
 </body>
 </html>
