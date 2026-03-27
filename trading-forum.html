@@ -153,7 +153,7 @@
         <div class="tp-note">Estimated trade value: my side ≈ 70 | Giraffe ≈ 55. Willing to add more or adjust. DM me with offers!</div>
         <div class="tp-footer">
           <div class="tp-stats"><span>👀 142 views</span><span>💬 3 replies</span></div>
-          <button class="tp-contact" onclick="showContact()">Contact →</button>
+          <button class="tp-contact" onclick="showContact('StarTrader99')">Contact →</button>
         </div>
       </div>
 
@@ -189,7 +189,7 @@
         <div class="tp-note">I know Parrot is a bit higher — I can add more. Please check the value list before responding so we can agree on fair adds.</div>
         <div class="tp-footer">
           <div class="tp-stats"><span>👀 89 views</span><span>💬 1 reply</span></div>
-          <button class="tp-contact" onclick="showContact()">Contact →</button>
+          <button class="tp-contact" onclick="showContact('FluffyPetCollector')">Contact →</button>
         </div>
       </div>
 
@@ -222,7 +222,7 @@
         <div class="tp-note">Bat Dragon Normal (≈110) trading for Frost FR (≈108) + adds. Looking for something around 120 total value their side. Open to discussion.</div>
         <div class="tp-footer">
           <div class="tp-stats"><span>👀 312 views</span><span>💬 7 replies</span></div>
-          <button class="tp-contact" onclick="showContact()">Contact →</button>
+          <button class="tp-contact" onclick="showContact('NeonGrinder2026')">Contact →</button>
         </div>
       </div>
 
@@ -258,7 +258,7 @@
         <div class="tp-note">Stacking Sugarfest pets. 2× FR Candicorn (≈18) + Cocoadile (≈4) = ~22. FR Octopus is ~18, so I'm overpaying slightly. Fair trade offer!</div>
         <div class="tp-footer">
           <div class="tp-stats"><span>👀 67 views</span><span>💬 0 replies</span></div>
-          <button class="tp-contact" onclick="showContact()">Contact →</button>
+          <button class="tp-contact" onclick="showContact('SugarfestHunter')">Contact →</button>
         </div>
       </div>
 
@@ -292,7 +292,7 @@
         <div class="tp-note">Neon Turtle (≈90) + 4× FR Turtle (≈104 total) vs FR Giraffe (≈66). I know I'm offering way more — looking for the fastest trade. Comment if interested!</div>
         <div class="tp-footer">
           <div class="tp-stats"><span>👀 201 views</span><span>💬 4 replies</span></div>
-          <button class="tp-contact" onclick="showContact()">Contact →</button>
+          <button class="tp-contact" onclick="showContact('MegaNeonDreams')">Contact →</button>
         </div>
       </div>
 
@@ -327,7 +327,7 @@
         <div class="tp-note">6 FR Dragons (≈276) + 4 FR Unicorns (≈168) = ~444 total value. Dodo Normal ≈ 32. Way overpaying but I just want a Dodo badly! 😅</div>
         <div class="tp-footer">
           <div class="tp-stats"><span>👀 45 views</span><span>💬 2 replies</span></div>
-          <button class="tp-contact" onclick="showContact()">Contact →</button>
+          <button class="tp-contact" onclick="showContact('FoxTrader_AM')">Contact →</button>
         </div>
       </div>
 
@@ -402,11 +402,11 @@
     <form id="tradeForm" onsubmit="submitTrade(event)">
       <div class="form-group">
         <label class="form-label">Your Username (Roblox name)</label>
-        <input type="text" class="form-input" placeholder="YourRobloxUsername" required>
+        <input type="text" class="form-input" name="username" placeholder="YourRobloxUsername" required>
       </div>
       <div class="form-group">
         <label class="form-label">Trade Type</label>
-        <select class="form-select" required>
+        <select class="form-select" name="trade_type" required>
           <option value="">— Select —</option>
           <option>🔄 WTT — Want to Trade (offering AND seeking)</option>
           <option>🔍 Looking For — I have pets, seeking specific pet</option>
@@ -415,15 +415,15 @@
       </div>
       <div class="form-group">
         <label class="form-label">Pets You're Offering</label>
-        <input type="text" class="form-input" placeholder="e.g. FR Turtle, Normal Octopus" required>
+        <input type="text" class="form-input" name="offering" placeholder="e.g. FR Turtle, Normal Octopus" required>
       </div>
       <div class="form-group">
         <label class="form-label">Pets You're Looking For</label>
-        <input type="text" class="form-input" placeholder="e.g. FR Parrot or similar value" required>
+        <input type="text" class="form-input" name="looking_for" placeholder="e.g. FR Parrot or similar value" required>
       </div>
       <div class="form-group">
         <label class="form-label">Additional Notes (optional)</label>
-        <textarea class="form-textarea" placeholder="Any extra details about your trade offer..."></textarea>
+        <textarea class="form-textarea" name="notes" placeholder="Any extra details about your trade offer..."></textarea>
       </div>
       <button type="submit" class="ptb-btn" style="width:100%;padding:14px;font-size:15px;">Submit Trade Post →</button>
     </form>
@@ -457,13 +457,41 @@ function filterTrades(type, btn) {
   });
   document.getElementById('postCount').textContent = 'Showing ' + count + ' posts';
 }
-function showContact() {
-  alert('In-game: Use the Trade tab or walk up to the player and tap the Trade icon.\n\nAlways use the official in-game trade window — never trade outside it!');
+function showContact(username) {
+  var name = username || 'this trader';
+  alert('To contact ' + name + ':\n\n• Find them in Adopt Me! using Roblox username: ' + name + '\n• Walk up to their character and tap the Trade icon\n• Or send a Roblox friend request\n\n⚠️ Always use the official in-game trade window — never trade outside it!');
 }
-function submitTrade(e) {
+
+async function submitTrade(e) {
   e.preventDefault();
-  document.getElementById('tradeForm').style.display = 'none';
-  document.getElementById('tradeSuccess').style.display = 'block';
+  var form = e.target;
+  var btn = form.querySelector("[type=submit]");
+  var orig = btn.textContent;
+  // ── Formspree setup ───────────────────────────────────────────────────
+  // 1. Sign up free at formspree.io
+  // 2. Create a form → copy the Form ID (8-char code after /f/)
+  // 3. Paste it below, replacing YOUR_FORM_ID
+  var FORM_ID = 'YOUR_FORM_ID';
+  // ─────────────────────────────────────────────────────────────────────
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  try {
+    var resp = await fetch('https://formspree.io/f/' + FORM_ID, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    });
+    if (resp.ok) {
+      form.style.display = 'none';
+      document.getElementById('tradeSuccess').style.display = 'block';
+    } else {
+      throw new Error(resp.status);
+    }
+  } catch(err) {
+    btn.textContent = orig;
+    btn.disabled = false;
+    alert('Submission failed — please try again. If the problem persists, the form may not be fully configured yet.');
+  }
 }
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');
