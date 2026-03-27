@@ -315,11 +315,12 @@ async function submitTrade(e) {
   var form = e.target;
   var btn = form.querySelector('[type=submit]');
   var orig = btn.textContent;
-  btn.textContent = 'Posting\u2026';
+  btn.textContent = 'Posting…';
   btn.disabled = true;
   try {
-    var resp = await fetch(GAS_URL, {
+    await fetch(GAS_URL, {
       method: 'POST',
+      mode: 'no-cors',
       body: JSON.stringify({
         username: form.username.value.trim(),
         trade_type: form.trade_type.value,
@@ -327,16 +328,14 @@ async function submitTrade(e) {
         looking_for: form.looking_for.value.trim(),
         availability: form.availability.value.trim(),
         notes: form.notes.value.trim()
-      }),
-      headers: { 'Content-Type': 'text/plain' }
+      })
     });
-    var result = await resp.json();
-    if (!result.ok) throw new Error(result.error || 'error');
-    form.reset();    var suc = document.getElementById('tradeSuccess');
+    form.reset();
+    var suc = document.getElementById('tradeSuccess');
     if (suc) { suc.style.display = 'block'; setTimeout(function() { suc.style.display = 'none'; }, 4000); }
-    loadPosts();
+    setTimeout(loadPosts, 1500);
   } catch(err) {
-    alert('Submission failed \u2014 please try again.');
+    alert('Submission failed — please check your connection and try again.');
   }
   btn.textContent = orig;
   btn.disabled = false;
