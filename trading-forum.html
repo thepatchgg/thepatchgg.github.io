@@ -210,10 +210,6 @@
         <div class="form-group">
           <label class="form-label">When can you meet in-game?</label>
           <input class="form-input" name="availability" type="text" placeholder="e.g. Weekdays after 5pm EST, weekends anytime">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Security check: What is <span id="captchaQ"></span>?</label>
-          <input class="form-input" id="captchaAnswer" type="number" placeholder="Enter the answer" min="1" max="20">
         </div></div>
       <button type="submit" class="ptb-btn" style="width:100%;padding:14px;font-size:15px;">Submit Trade Post →</button>
     </form>
@@ -236,13 +232,6 @@
 </footer>
 <script>
 var GAS_URL = 'https://script.google.com/macros/s/AKfycbyTm-F_HCHt54vqhNUkxcWnLQKcz02JZhaCwhHk5am1WruH3cGDIDstGYZoe7rFLWl9/exec';
-var captchaA, captchaB;
-
-function genCaptcha() {
-  captchaA = Math.floor(Math.random() * 10) + 1;
-  captchaB = Math.floor(Math.random() * 10) + 1;
-  document.getElementById('captchaQ').textContent = captchaA + ' + ' + captchaB;
-}
 
 function timeAgo(iso) {
   var d = new Date(iso), now = new Date();
@@ -323,13 +312,6 @@ function loadPosts() {
 
 async function submitTrade(e) {
   e.preventDefault();
-  var ans = parseInt(document.getElementById('captchaAnswer').value, 10);
-  if (isNaN(ans) || ans !== captchaA + captchaB) {
-    alert('Security check failed \u2014 please check your math answer.');
-    genCaptcha();
-    document.getElementById('captchaAnswer').value = '';
-    return;
-  }
   var form = e.target;
   var btn = form.querySelector('[type=submit]');
   var orig = btn.textContent;
@@ -346,14 +328,11 @@ async function submitTrade(e) {
         availability: form.availability.value.trim(),
         notes: form.notes.value.trim()
       }),
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'text/plain' }
     });
     var result = await resp.json();
     if (!result.ok) throw new Error(result.error || 'error');
-    form.reset();
-    genCaptcha();
-    document.getElementById('captchaAnswer').value = '';
-    var suc = document.getElementById('tradeSuccess');
+    form.reset();    var suc = document.getElementById('tradeSuccess');
     if (suc) { suc.style.display = 'block'; setTimeout(function() { suc.style.display = 'none'; }, 4000); }
     loadPosts();
   } catch(err) {
@@ -368,9 +347,7 @@ function showContact(username) {
   alert('To contact ' + name + ':\n\n\u2022 Find them in Adopt Me! using Roblox username: ' + name + '\n\u2022 Walk up to their character and tap the Trade icon\n\u2022 Or send a Roblox friend request\n\n\u26A0\uFE0F Always use the official in-game trade window \u2014 never trade outside it!');
 }
 
-window.addEventListener('DOMContentLoaded', function() {
-  genCaptcha();
-  loadPosts();
+window.addEventListener('DOMContentLoaded', function() {  loadPosts();
 });
 </script></script>
 </body>
