@@ -267,7 +267,7 @@ img{display:block;max-width:100%}
 <script>
 'use strict';
 const W='https://static.wikia.nocookie.net/adoptme/images/';
-const I=(p,s)=>W+p+'/revision/latest/scale-to-width-down/'+(s||70);
+const I=(p,s)=>'https://wsrv.nl/?url='+encodeURIComponent(W+p+'/revision/latest/scale-to-width-down/'+(s||70));
 const RC={Common:'c',Uncommon:'uc',Rare:'r','Ultra-Rare':'ur',Legendary:'l'};
 const RL={Common:'C',Uncommon:'UC',Rare:'R','Ultra-Rare':'UR',Legendary:'L'};
 const RO={Common:0,Uncommon:1,Rare:2,'Ultra-Rare':3,Legendary:4};
