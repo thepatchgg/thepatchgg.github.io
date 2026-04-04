@@ -93,7 +93,7 @@ footer a{color:#6b7aad}
     <label for="esel">Add Egg:</label>
     <select class="egg-sel" id="esel"></select>
     <button class="add-btn" onclick="addEgg()">Add Egg +</button>
-    <span class="hint">All 20 eggs shown below &mdash; remove any you don&apos;t need, or re-add them with this dropdown.</span>
+    <span class="hint">All 20 eggs shown below &mdash;remove any you don&apos;t need, or re-add them with this dropdown.</span>
   </div>
 </div>
 <div class="eggs-wrap" id="disp">
@@ -157,7 +157,7 @@ function petCard(p){
   const c=RC[rar]||'#9e9e9e';
   const bg=RBG[rar]||'#1e1e1e';
   return `<div class="pet-c" style="border-color:${c}33;background:${bg}">
-    <img src="${imgUrl(img)}" alt="${name}" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <img src="${imgUrl(img)}" alt="${name}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
     <div class="pet-fb" style="background:${c}22;color:${c}">${name[0]}</div>
     <div class="pet-name">${name}</div>
     <span class="pet-badge" style="background:${c}22;color:${c};border:1px solid ${c}44">${rar}</span>
@@ -193,7 +193,7 @@ function eggCard(e){
   return `<div class="egg-card" id="ec-${e.id}">
     <button class="x-btn" onclick="rem('${e.id}')" title="Remove">&times;</button>
     <div class="egg-head">
-      <img src="${imgUrl(e.img)}" alt="${e.name}" class="egg-img" referrerpolicy="no-referrer" crossorigin="anonymous" onerror="this.style.opacity='.2'">
+      <img src="${imgUrl(e.img)}" alt="${e.name}" class="egg-img" referrerpolicy="no-referrer" onerror="this.style.opacity='.2'">
       <div class="egg-info">
         <div class="egg-name">${e.name}</div>
         <div class="egg-meta">
