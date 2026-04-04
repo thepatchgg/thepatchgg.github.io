@@ -86,14 +86,14 @@ footer a{color:#6b7aad}
 </nav>
 <div class="hero">
   <h1>&#x1F95A; Adopt Me Egg Guide 2026</h1>
-  <p>Pick any egg from the dropdown to see its cost, rarity chances, and every hatchable pet &#x2014; with images. Add multiple eggs to compare side by side.</p>
+  <p>All 20 eggs are shown below &#x2014; each with cost, rarity chances, and every hatchable pet with images. Remove eggs you don&apos;t need or use the dropdown to re-add them.</p>
 </div>
 <div class="controls">
   <div class="add-bar">
     <label for="esel">Add Egg:</label>
     <select class="egg-sel" id="esel"></select>
     <button class="add-btn" onclick="addEgg()">Add Egg +</button>
-    <span class="hint">20 eggs covered &mdash; currently available and retired. Add multiple to compare.</span>
+    <span class="hint">All 20 eggs shown below &mdash; remove any you don&apos;t need, or re-add them with this dropdown.</span>
   </div>
 </div>
 <div class="eggs-wrap" id="disp">
@@ -109,7 +109,7 @@ footer a{color:#6b7aad}
 </footer>
 <script>
 const EGGS=[
-  {"id":"cracked","name":"Cracked Egg","cost":"350 Bucks","type":"bucks","status":"available","released":"Jun 2019","img":"e/ec/AM_Cracked_Egg.png","chances":{"Common":"45%","Uncommon":"33%","Rare":"14.5%","Ultra-Rare":"6%","Legendary":"1.5%"},"pets":[["Ant","5/56/Ant.png","Common"],["Mouse","5/5c/Mouse.png","Common"],["Buffalo","0/0a/Buffalo.png","Common"],["Cat","7/7e/Cat_Icon.png","Common"],["Dog","3/35/Dog.png","Common"],["Chicken","7/78/Chicken.png","Common"],["Camel","0/09/Camel.png","Uncommon"],["Donkey","9/95/Donkey.png","Uncommon"],["Poodle","7/7d/Poodle.png","Uncommon"],["Puma","6/63/Puma.png","Uncommon"],["Snow Cat","3/3e/Snow_Cat2.png","Uncommon"],["Chocolate Labrador","1/17/Chocolate_Labrador2.png","Uncommon"],["Fennec Fox","b/b2/Fennec_Fox.png","Uncommon"],["Orangutan","d/dd/Orangutan.png","Rare"],["Parakeet","7/7c/Parakeet.png","Rare"],["Zebra","3/37/Zebra.png","Rare"],["Blue Dog","8/8d/Blue_Dog.png","Rare"],["Lamb","e/e8/Lamb.png","Rare"],["Pig","c/c7/Pig.png","Rare"],["Dalmatian","6/6d/Dalmatian.png","Ultra-Rare"],["Horse","c/c6/Horse.png","Ultra-Rare"],["Corgi","1/12/Corgi.png","Ultra-Rare"],["Dragon","3/3c/Dragon_Pet.png","Legendary"],["Unicorn","1/1f/Unicorn_Pet.png","Legendary"]]},
+  {"id":"cracked","name":"Cracked Egg","cost":"350 Bucks","type":"bucks","status":"available","released":"Jun 2019","img":"e/ec/AM_Cracked_Egg.png","chances":{"Common":"45%","Uncommon":"33%","Rare":"14.5%","Ultra-Rare":"6%","Legendary":"1.5%"},"pets":[["Ant","5/56/Ant.png","Common"],["Mouse","5/5c/Mouse.png","Common"],["Buffalo","0/0a/Buffalo.png","Common"],["Cat","7/7e/Cat_Icon.png","Common"],["Dog","3/35/Dog.png","Common"],["Chicken","7/78/Chicken.png","Common"],["Camel","0/09/Camel.png","Uncommon"],["Donkey","9/95/Donkey.png","Uncommon"],["Poodle","7/7d/Poodle.png","Uncommon"],["Puma","6/63/Puma.png","Uncommon"],["Snow Cat","3/3e/Snow_Cat2.png","Uncommon"],["Chocolate Labrador","1/17/Chocolate_Labrador2.png","Uncopng","Uncommon"],["Orangutan","d/dd/Orangutan.png","Rare"],["Parakeet","7/7c/Parakeet.png","Rare"],["Zebra","3/37/Zebra.png","Rare"],["Blue Dog","8/8d/Blue_Dog.png","Rare"],["Lamb","e/e8/Lamb.png","Rare"],["Pig","c/c7/Pig.png","Rare"],["Dalmatian","6/6d/Dalmatian.png","Ultra-Rare"],["Horse","c/c6/Horse.png","Ultra-Rare"],["Corgi","1/12/Corgi.png","Ultra-Rare"],["Dragon","3/3c/Dragon_Pet.png","Legendary"],["Unicorn","1/1f/Unicorn_Pet.png","Legendary"]]},
   {"id":"pet","name":"Pet Egg","cost":"600 Bucks","type":"bucks","status":"available","released":"Jun 2019","img":"2/2b/Pet_Egg.png","chances":{"Common":"20%","Uncommon":"35%","Rare":"27%","Ultra-Rare":"15%","Legendary":"3%"},"pets":[["Dog","3/35/Dog.png","Common"],["Cat","7/7e/Cat_Icon.png","Common"],["Otter","a/a3/Otter_AM.png","Common"],["Chocolate Labrador","1/17/Chocolate_Labrador2.png","Uncommon"],["Fennec Fox","b/b2/Fennec_Fox.png","Uncommon"],["Puma","6/63/Puma.png","Uncommon"],["Snow Cat","3/3e/Snow_Cat2.png","Uncommon"],["Rabbit","9/94/Rabbit1.png","Uncommon"],["Drake","4/46/Drake.png","Uncommon"],["Turkey","5/5b/Turkey.png","Uncommon"],["Beaver","2/26/Beaver.png","Rare"],["Bunny","a/a9/Bunny2.png","Rare"],["Blue Dog","8/8d/Blue_Dog.png","Rare"],["Lamb","e/e8/Lamb.png","Rare"],["Pig","c/c7/Pig.png","Rare"],["Dalmatian","6/6d/Dalmatian.png","Ultra-Rare"],["Horse","c/c6/Horse.png","Ultra-Rare"],["Griffin","e/e7/Griffin.png","Ultra-Rare"],["Dragon","3/3c/Dragon_Pet.png","Legendary"],["Unicorn","1/1f/Unicorn_Pet.png","Legendary"]]},
   {"id":"royal","name":"Royal Egg","cost":"1,450 Bucks","type":"bucks","status":"available","released":"Jun 2019","img":"3/32/AM_Royal_Egg.png","chances":{"Common":"0%","Uncommon":"25%","Rare":"37%","Ultra-Rare":"30%","Legendary":"8%"},"pets":[["Bunny","a/a9/Bunny2.png","Uncommon"],["Rabbit","9/94/Rabbit1.png","Uncommon"],["Drake","4/46/Drake.png","Uncommon"],["Turkey","5/5b/Turkey.png","Uncommon"],["Otter","a/a3/Otter_AM.png","Uncommon"],["Beaver","2/26/Beaver.png","Rare"],["Lamb","e/e8/Lamb.png","Rare"],["Pig","c/c7/Pig.png","Rare"],["Blue Dog","8/8d/Blue_Dog.png","Rare"],["Dalmatian","6/6d/Dalmatian.png","Ultra-Rare"],["Horse","c/c6/Horse.png","Ultra-Rare"],["Griffin","e/e7/Griffin.png","Ultra-Rare"],["Crow","4/4d/Crow.png","Ultra-Rare"],["Dragon","3/3c/Dragon_Pet.png","Legendary"],["Unicorn","1/1f/Unicorn_Pet.png","Legendary"]]},
   {"id":"retired","name":"Retired Egg","cost":"600 Bucks (VIP)","type":"bucks","status":"available","released":"Jul 2022","img":"b/b5/Retired_Egg_inventory.png","chances":{"Common":"20%","Uncommon":"35%","Rare":"27%","Ultra-Rare":"15%","Legendary":"3%"},"pets":[["Buffalo","0/0a/Buffalo.png","Common"],["Cat","7/7e/Cat_Icon.png","Common"],["Dog","3/35/Dog.png","Common"],["Otter","a/a3/Otter_AM.png","Common"],["Chocolate Labrador","1/17/Chocolate_Labrador2.png","Uncommon"],["Fennec Fox","b/b2/Fennec_Fox.png","Uncommon"],["Puma","6/63/Puma.png","Uncommon"],["Snow Cat","3/3e/Snow_Cat2.png","Uncommon"],["Beaver","2/26/Beaver.png","Rare"],["Bunny","a/a9/Bunny2.png","Rare"],["Rabbit","9/94/Rabbit1.png","Rare"],["Snow Puma","d/de/SnowPuma.png","Rare"],["Red Panda","8/8b/Red_Panda.png","Ultra-Rare"],["Shiba Inu","0/03/ShibaInu_Pet.png","Ultra-Rare"],["Dragon","3/3c/Dragon_Pet.png","Legendary"],["Unicorn","1/1f/Unicorn_Pet.png","Legendary"]]},
@@ -233,9 +233,11 @@ function rem(id){
 }
 
 buildOpts();
-// Auto-show Endangered Egg (currently available) on load
-document.getElementById('esel').value='endangered';
-addEgg();
+// Auto-show ALL eggs on load
+EGGS.forEach(e => {
+  document.getElementById('esel').value = e.id;
+  addEgg();
+});
 </script>
 </body>
 </html>
