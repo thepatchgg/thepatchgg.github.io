@@ -210,7 +210,7 @@ function eggCard(e){
   </div>`;
 }
 
-function addEgg(){
+function addEgg(scroll=true){
   const sel=document.getElementById('esel');
   const id=sel.value;
   if(!id||added.has(id)){sel.value='';return;}
@@ -223,7 +223,7 @@ function addEgg(){
   w.innerHTML=eggCard(egg);
   document.getElementById('disp').appendChild(w);
   sel.value='';
-  w.scrollIntoView({behavior:'smooth',block:'start'});
+  if(scroll) w.scrollIntoView({behavior:'smooth',block:'start'});
 }
 
 function rem(id){
@@ -237,7 +237,7 @@ buildOpts();
 // Auto-show ALL eggs on load
 EGGS.forEach(e => {
   document.getElementById('esel').value = e.id;
-  addEgg();
+  addEgg(false);
 });
 </script>
 </body>
