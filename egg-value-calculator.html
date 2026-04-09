@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt Me Egg Value Calculator | The Patch</title>
+  <meta name="description" content="Compare Adopt Me eggs by benchmark hatch coverage, expected benchmark value, and the standout hatchables that already map to The Patch value system.">
+  <meta name="theme-color" content="#08111f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adopt Me Egg Value Calculator | The Patch">
+  <meta property="og:description" content="Compare Adopt Me eggs by benchmark hatch coverage, expected benchmark value, and the standout hatchables that already map to The Patch value system.">
+  <meta property="og:url" content="https://thepatchgg.github.io/egg-value-calculator.html">
+  <meta property="og:site_name" content="The Patch">
+  <meta property="og:image" content="https://thepatchgg.github.io/assets/pets/kangaroo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Adopt Me Egg Value Calculator | The Patch">
+  <meta name="twitter:description" content="Compare Adopt Me eggs by benchmark hatch coverage, expected benchmark value, and the standout hatchables that already map to The Patch value system.">
+  <meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/kangaroo.png">
+  <link rel="canonical" href="https://thepatchgg.github.io/egg-value-calculator.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KXQR564341');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>The Patch</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
+        <a href="/egg-value-calculator.html">Egg Calculator</a>
+        <a href="/pet-value-calculator.html">Trade Calculator</a>
+        <a href="/adopt-me.html">Guides</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Egg value beta</div>
+          <h1>See which eggs connect best to the benchmark market.</h1>
+          <p>
+            This tool does not pretend to know the full market value of every hatch in every egg yet. Instead, it shows
+            expected value and hit chance for the hatchables that already map to The Patch benchmark system, then tells you
+            exactly how much of each egg is covered by that benchmark lens.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="#egg-tool">Open the calculator</a>
+            <a class="button secondary" href="/articles/adopt-me-egg-guide.html">Open full egg guide</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <p class="helper">How to read it</p>
+          <ul class="signal-list">
+            <li><span>Expected value uses benchmark pets only</span><span class="tone tone-strong">Honest</span></li>
+            <li><span>Tier odds are split evenly across pets in that tier</span><span class="tone tone-strong">Assumption</span></li>
+            <li><span>Low coverage means do not overread the result</span><span class="tone tone-beta">Caution</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell compact-grid" id="egg-kpi-grid">
+        <article class="card">
+          <h3>Best benchmark EV</h3>
+          <p class="micro-copy" id="best-ev-kpi">Loading...</p>
+        </article>
+        <article class="card">
+          <h3>Best benchmark hit chance</h3>
+          <p class="micro-copy" id="best-hit-kpi">Loading...</p>
+        </article>
+        <article class="card">
+          <h3>Eggs with benchmark coverage</h3>
+          <p class="micro-copy" id="covered-eggs-kpi">Loading...</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="egg-tool">
+      <div class="shell planner-grid">
+        <section class="tool-card planner-panel">
+          <div>
+            <h2>Egg calculator</h2>
+            <p class="micro-copy">Pick an egg and hatch count to estimate benchmark-only EV and see which supported pets are driving it.</p>
+          </div>
+
+          <div class="toolbar">
+            <label>
+              <span>Select an egg</span>
+              <select id="egg-select"></select>
+            </label>
+            <label>
+              <span>Hatch plan</span>
+              <input id="hatch-count" type="number" min="1" value="10" inputmode="numeric">
+            </label>
+          </div>
+
+          <div class="status-card">
+            <strong id="egg-summary-headline">Loading egg data...</strong>
+            <span id="egg-summary-note">The benchmark egg view needs both the egg dataset and the shared pet values.</span>
+          </div>
+
+          <div class="card-grid" id="selected-egg-card"></div>
+        </section>
+
+        <section class="tool-card planner-panel">
+          <div>
+            <h2>Benchmark breakdown</h2>
+            <p class="micro-copy">These are the benchmark pets inside the selected egg, listed by their expected contribution per hatch.</p>
+          </div>
+
+          <div class="kpi-list">
+            <div class="kpi-row"><span>Benchmark hit chance</span><strong id="benchmark-hit">0%</strong></div>
+            <div class="kpi-row"><span>Expected value per hatch</span><strong id="expected-per-hatch">0</strong></div>
+            <div class="kpi-row"><span>Expected value for this plan</span><strong id="expected-plan">0</strong></div>
+          </div>
+
+          <article class="list-card">
+            <h3>Covered benchmark hatchables</h3>
+            <ul class="mini-list" id="egg-breakdown-list"></ul>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Compare eggs quickly</h2>
+            <p class="intro-copy">Sort by benchmark EV, filter live vs retired eggs, and see which eggs currently map best to the benchmark ladder.</p>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <label>
+            <span>Status</span>
+            <select id="status-filter">
+              <option value="all">All eggs</option>
+              <option value="available">Live only</option>
+              <option value="retired">Retired only</option>
+            </select>
+          </label>
+          <label>
+            <span>Currency</span>
+            <select id="currency-filter">
+              <option value="all">All currencies</option>
+              <option value="bucks">Bucks</option>
+              <option value="robux">Robux</option>
+              <option value="tickets">Tickets</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th>Egg</th>
+                <th>Status</th>
+                <th>Cost</th>
+                <th>Benchmark EV</th>
+                <th>Hit Chance</th>
+                <th>Coverage</th>
+              </tr>
+            </thead>
+            <tbody id="egg-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell card-grid">
+        <article class="card">
+          <h3>What EV means here</h3>
+          <p>This is not full hatch value. It only counts pets that already exist in The Patch benchmark value system, so it works best as a directional comparison instead of a final verdict.</p>
+        </article>
+        <article class="card">
+          <h3>Why some eggs look weak</h3>
+          <p>An egg can still be interesting even if the benchmark EV is low. It may just be full of pets that are not yet part of the shared benchmark ladder.</p>
+        </article>
+        <article class="card">
+          <h3>Best next step</h3>
+          <p>Use this tool to find high-signal eggs, then open the benchmark pet pages or the trade calculator if you want to compare the likely prize against other trade targets.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-copy">Expected values assume equal odds across pets inside the same rarity tier and only count benchmark pets currently covered by The Patch.</div>
+      <nav class="nav" aria-label="Footer">
+        <a href="/articles/adopt-me-egg-guide.html">Egg Guide</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Value List</a>
+        <a href="/pets/">Benchmark Library</a>
+        <a href="/methodology.html">Methodology</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/assets/js/adopt-values.js"></script>
+  <script src="/assets/js/adopt-eggs.js"></script>
+  <script>
+    const state = {
+      eggs: [],
+      selectedId: "",
+      hatchCount: 10,
+      status: "all",
+      currency: "all"
+    };
+
+    function formatPercent(decimal) {
+      return `${(decimal * 100).toFixed(decimal >= 0.1 ? 1 : 2).replace(/\.0$/, "")}%`;
+    }
+
+    function renderToplineStats() {
+      const covered = state.eggs.filter((egg) => egg.coveredBenchmarks > 0);
+      const bestEv = [...covered].sort((left, right) => right.expectedValue - left.expectedValue)[0];
+      const bestHit = [...covered].sort((left, right) => right.benchmarkChance - left.benchmarkChance)[0];
+
+      document.getElementById("best-ev-kpi").textContent = bestEv
+        ? `${bestEv.name} (${window.ThePatchValues.formatValue(bestEv.expectedValue)})`
+        : "No benchmark coverage yet";
+      document.getElementById("best-hit-kpi").textContent = bestHit
+        ? `${bestHit.name} (${formatPercent(bestHit.benchmarkChance)})`
+        : "No benchmark coverage yet";
+      document.getElementById("covered-eggs-kpi").textContent = `${covered.length} of ${state.eggs.length} eggs`;
+    }
+
+    function buildBreakdownItem(item) {
+      return `
+        <li>
+          <span><a class="pet-link" href="/pets/${item.slug}.html">${item.name}</a> (${formatPercent(item.chance)})</span>
+          <span class="value-tag">${window.ThePatchValues.formatValue(item.contribution)}</span>
+        </li>
+      `;
+    }
+
+    function renderSelectedEgg() {
+      const egg = state.eggs.find((entry) => entry.id === state.selectedId) || state.eggs[0];
+      if (!egg) {
+        return;
+      }
+
+      state.selectedId = egg.id;
+      document.getElementById("egg-select").value = egg.id;
+
+      const summaryHeadline = document.getElementById("egg-summary-headline");
+      const summaryNote = document.getElementById("egg-summary-note");
+      const selectedCard = document.getElementById("selected-egg-card");
+      const breakdown = document.getElementById("egg-breakdown-list");
+      const planValue = egg.expectedValue * state.hatchCount;
+
+      summaryHeadline.textContent = `${egg.name} benchmark view`;
+      summaryNote.textContent = egg.coveredBenchmarks
+        ? `${egg.coveredBenchmarks} benchmark hatchable${egg.coveredBenchmarks === 1 ? "" : "s"} are currently mapped in the shared value file.`
+        : "This egg currently has no pets in the active benchmark ladder, so its benchmark EV reads as zero for now.";
+
+      selectedCard.innerHTML = `
+        <article class="card benchmark-card">
+          <div class="toolbar">
+            <span class="tone ${egg.status === "available" ? "tone-strong" : "tone-beta"}">${egg.status === "available" ? "Live" : "Retired"}</span>
+            <span class="value-tag">${egg.cost}</span>
+          </div>
+          <div class="pet-row">
+            <img class="pet-avatar" src="${window.ThePatchEggs.eggImageUrl(egg.img)}" alt="${egg.name}">
+            <div class="pet-name">
+              <strong>${egg.name}</strong>
+              <small>${egg.released}${egg.retired ? ` - retired ${egg.retired}` : ""}</small>
+            </div>
+          </div>
+          <p>Benchmark coverage: ${formatPercent(egg.benchmarkChance)} of all hatch outcomes. Expected benchmark value: ${window.ThePatchValues.formatValue(egg.expectedValue)} per hatch.</p>
+          <div class="card-actions">
+            <span class="value-tag">Plan EV ${window.ThePatchValues.formatValue(planValue)}</span>
+            <a class="pill-link" href="/articles/adopt-me-egg-guide.html">Open full egg guide</a>
+          </div>
+        </article>
+      `;
+
+      document.getElementById("benchmark-hit").textContent = formatPercent(egg.benchmarkChance);
+      document.getElementById("expected-per-hatch").textContent = window.ThePatchValues.formatValue(egg.expectedValue);
+      document.getElementById("expected-plan").textContent = window.ThePatchValues.formatValue(planValue);
+
+      if (!egg.benchmarkPets.length) {
+        breakdown.innerHTML = `<li><span>No benchmark hatchables covered yet</span><span class="value-tag">0</span></li>`;
+        return;
+      }
+
+      breakdown.innerHTML = egg.benchmarkPets.map(buildBreakdownItem).join("");
+    }
+
+    function getFilteredEggs() {
+      return state.eggs
+        .filter((egg) => {
+          if (state.status !== "all" && egg.status !== state.status) {
+            return false;
+          }
+          if (state.currency !== "all" && egg.type !== state.currency) {
+            return false;
+          }
+          return true;
+        })
+        .sort((left, right) => right.expectedValue - left.expectedValue || right.benchmarkChance - left.benchmarkChance);
+    }
+
+    function renderEggTable() {
+      const body = document.getElementById("egg-table-body");
+      const eggs = getFilteredEggs();
+
+      body.innerHTML = eggs.map((egg) => `
+        <tr>
+          <td>
+            <div class="pet-row align-start">
+              <img class="pet-avatar" src="${window.ThePatchEggs.eggImageUrl(egg.img)}" alt="${egg.name}">
+              <div class="pet-name">
+                <strong>${egg.name}</strong>
+                <small>${egg.coveredBenchmarks} covered benchmark pet${egg.coveredBenchmarks === 1 ? "" : "s"}</small>
+              </div>
+            </div>
+          </td>
+          <td><span class="tone ${egg.status === "available" ? "tone-strong" : "tone-beta"}">${egg.status === "available" ? "Live" : "Retired"}</span></td>
+          <td>${egg.cost}</td>
+          <td><span class="value-tag">${window.ThePatchValues.formatValue(egg.expectedValue)}</span></td>
+          <td>${formatPercent(egg.benchmarkChance)}</td>
+          <td>
+            <div class="card-actions">
+              <span class="value-tag">${egg.coveredBenchmarks}</span>
+              <button class="ghost-button egg-pick" type="button" data-egg-id="${egg.id}">Inspect</button>
+            </div>
+          </td>
+        </tr>
+      `).join("");
+    }
+
+    async function bootEggTool() {
+      try {
+        const [valuesPayload, eggPayload] = await Promise.all([
+          window.ThePatchValues.loadAdoptValues(),
+          window.ThePatchEggs.loadEggs()
+        ]);
+
+        state.eggs = eggPayload.eggs.map((egg) => window.ThePatchEggs.summarizeEgg(egg, valuesPayload));
+        state.selectedId = state.eggs[0] ? state.eggs[0].id : "";
+
+        const select = document.getElementById("egg-select");
+        select.innerHTML = state.eggs
+          .map((egg) => `<option value="${egg.id}">${egg.name}</option>`)
+          .join("");
+
+        renderToplineStats();
+        renderSelectedEgg();
+        renderEggTable();
+
+        select.addEventListener("change", (event) => {
+          state.selectedId = event.target.value;
+          renderSelectedEgg();
+        });
+
+        document.getElementById("hatch-count").addEventListener("input", (event) => {
+          state.hatchCount = Math.max(1, Number(event.target.value || 1));
+          renderSelectedEgg();
+        });
+
+        document.getElementById("status-filter").addEventListener("change", (event) => {
+          state.status = event.target.value;
+          renderEggTable();
+        });
+
+        document.getElementById("currency-filter").addEventListener("change", (event) => {
+          state.currency = event.target.value;
+          renderEggTable();
+        });
+
+        document.getElementById("egg-table-body").addEventListener("click", (event) => {
+          const button = event.target.closest(".egg-pick");
+          if (!button) {
+            return;
+          }
+
+          state.selectedId = button.dataset.eggId;
+          renderSelectedEgg();
+          document.getElementById("egg-tool").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      } catch (error) {
+        const shell = document.querySelector(".planner-grid");
+        window.ThePatchValues.renderError(shell, "The egg calculator could not load its shared data. Please refresh and try again.");
+      }
+    }
+
+    bootEggTool();
+  </script>
+</body>
+</html>
