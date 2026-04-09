@@ -1,0 +1,5086 @@
+{
+  "updatedAt": "2026-04-09",
+  "entries": [
+    {
+      "slug": "2021-uplift-butterfly",
+      "name": "2021 Uplift Butterfly",
+      "rarity": "u",
+      "image": "/assets/pets/2021-uplift-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "2022-uplift-butterfly",
+      "name": "2022 Uplift Butterfly",
+      "rarity": "u",
+      "image": "/assets/pets/2022-uplift-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "2025-birthday-butterfly",
+      "name": "2025 Birthday Butterfly",
+      "rarity": "u",
+      "image": "/assets/pets/2025-birthday-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "2d-kitty",
+      "name": "2D Kitty",
+      "rarity": "l",
+      "image": "/assets/pets/2d-kitty.png",
+      "benchmark": false
+    },
+    {
+      "slug": "abyssinian-cat",
+      "name": "Abyssinian Cat",
+      "rarity": "r",
+      "image": "/assets/pets/abyssinian-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "african-wild-dog",
+      "name": "African Wild Dog",
+      "rarity": "ur",
+      "image": "/assets/pets/african-wild-dog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "albatross",
+      "name": "Albatross",
+      "rarity": "ur",
+      "image": "/assets/pets/albatross.png",
+      "benchmark": false
+    },
+    {
+      "slug": "albino-bat",
+      "name": "Albino Bat",
+      "rarity": "ur",
+      "image": "/assets/pets/albino-bat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "albino-gorilla",
+      "name": "Albino Gorilla",
+      "rarity": "l",
+      "image": "/assets/pets/albino-gorilla.png",
+      "benchmark": false
+    },
+    {
+      "slug": "albino-monkey",
+      "name": "Albino Monkey",
+      "rarity": "l",
+      "image": "/assets/pets/albino-monkey.png",
+      "benchmark": false
+    },
+    {
+      "slug": "alicorn",
+      "name": "Alicorn",
+      "rarity": "l",
+      "image": "/assets/pets/alicorn.png",
+      "benchmark": false
+    },
+    {
+      "slug": "alley-cat",
+      "name": "Alley Cat",
+      "rarity": "ur",
+      "image": "/assets/pets/alley-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "alpaca",
+      "name": "Alpaca",
+      "rarity": "ur",
+      "image": "/assets/pets/alpaca.png",
+      "benchmark": false
+    },
+    {
+      "slug": "amami-rabbit",
+      "name": "Amami Rabbit",
+      "rarity": "u",
+      "image": "/assets/pets/amami-rabbit.png",
+      "benchmark": false
+    },
+    {
+      "slug": "amber-butterfly",
+      "name": "Amber Butterfly",
+      "rarity": "r",
+      "image": "/assets/pets/amber-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ancient-dragon",
+      "name": "Ancient Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/ancient-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "angelfish",
+      "name": "Angelfish",
+      "rarity": "c",
+      "image": "/assets/pets/angelfish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "angler-fish",
+      "name": "Angler Fish",
+      "rarity": "u",
+      "image": "/assets/pets/angler-fish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "angus-bull",
+      "name": "Angus Bull",
+      "rarity": "l",
+      "image": "/assets/pets/angus-bull.png",
+      "benchmark": false
+    },
+    {
+      "slug": "angus-calf",
+      "name": "Angus Calf",
+      "rarity": "ur",
+      "image": "/assets/pets/angus-calf.png",
+      "benchmark": false
+    },
+    {
+      "slug": "angus-cow",
+      "name": "Angus Cow",
+      "rarity": "r",
+      "image": "/assets/pets/angus-cow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ankylosaurus",
+      "name": "Ankylosaurus",
+      "rarity": "r",
+      "image": "/assets/pets/ankylosaurus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ant",
+      "name": "Ant",
+      "rarity": "c",
+      "image": "/assets/pets/ant.png",
+      "benchmark": false
+    },
+    {
+      "slug": "apple-owl",
+      "name": "Apple Owl",
+      "rarity": "l",
+      "image": "/assets/pets/apple-owl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "arctic-dusk-dragon",
+      "name": "Arctic Dusk Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/arctic-dusk-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "arctic-fox",
+      "name": "Arctic Fox",
+      "rarity": "ur",
+      "image": "/assets/pets/arctic-fox.png",
+      "benchmark": false
+    },
+    {
+      "slug": "arctic-hare",
+      "name": "Arctic Hare",
+      "rarity": "u",
+      "image": "/assets/pets/arctic-hare.png",
+      "benchmark": false
+    },
+    {
+      "slug": "arctic-reindeer",
+      "name": "Arctic Reindeer",
+      "rarity": "l",
+      "image": "/assets/pets/arctic-reindeer.png",
+      "benchmark": true
+    },
+    {
+      "slug": "arctic-tern",
+      "name": "Arctic Tern",
+      "rarity": "u",
+      "image": "/assets/pets/arctic-tern.png",
+      "benchmark": false
+    },
+    {
+      "slug": "armadillo",
+      "name": "Armadillo",
+      "rarity": "c",
+      "image": "/assets/pets/armadillo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ash-zebra",
+      "name": "Ash Zebra",
+      "rarity": "c",
+      "image": "/assets/pets/ash-zebra.png",
+      "benchmark": false
+    },
+    {
+      "slug": "astronaut-gorilla-pet",
+      "name": "Astronaut Gorilla",
+      "rarity": "l",
+      "image": "/assets/pets/astronaut-gorilla-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "aurora-fox",
+      "name": "Aurora Fox",
+      "rarity": "l",
+      "image": "/assets/pets/aurora-fox.png",
+      "benchmark": false
+    },
+    {
+      "slug": "australian-kelpie",
+      "name": "Australian Kelpie",
+      "rarity": "r",
+      "image": "/assets/pets/australian-kelpie.png",
+      "benchmark": false
+    },
+    {
+      "slug": "axolotl",
+      "name": "Axolotl",
+      "rarity": "l",
+      "image": "/assets/pets/axolotl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "aye-aye",
+      "name": "Aye Aye",
+      "rarity": "c",
+      "image": "/assets/pets/aye-aye.png",
+      "benchmark": false
+    },
+    {
+      "slug": "badger",
+      "name": "Badger",
+      "rarity": "ur",
+      "image": "/assets/pets/badger.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bakeneko",
+      "name": "Bakeneko",
+      "rarity": "c",
+      "image": "/assets/pets/bakeneko.png",
+      "benchmark": false
+    },
+    {
+      "slug": "baku",
+      "name": "Baku",
+      "rarity": "l",
+      "image": "/assets/pets/baku.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bald-eagle",
+      "name": "Bald Eagle",
+      "rarity": "ur",
+      "image": "/assets/pets/bald-eagle.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bali-starling",
+      "name": "Bali Starling",
+      "rarity": "c",
+      "image": "/assets/pets/bali-starling.png",
+      "benchmark": false
+    },
+    {
+      "slug": "balloon-unicorn",
+      "name": "Balloon Unicorn",
+      "rarity": "l",
+      "image": "/assets/pets/balloon-unicorn.png",
+      "benchmark": false
+    },
+    {
+      "slug": "banded-palm-civet",
+      "name": "Banded Palm Civet",
+      "rarity": "u",
+      "image": "/assets/pets/banded-palm-civet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bandicoot",
+      "name": "Bandicoot",
+      "rarity": "c",
+      "image": "/assets/pets/bandicoot.png",
+      "benchmark": false
+    },
+    {
+      "slug": "basilisk",
+      "name": "Basilisk",
+      "rarity": "r",
+      "image": "/assets/pets/basilisk.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bat-dragon",
+      "name": "Bat Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/bat-dragon.png",
+      "benchmark": true
+    },
+    {
+      "slug": "bat",
+      "name": "Bat",
+      "rarity": "u",
+      "image": "/assets/pets/bat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bauble-buddies",
+      "name": "Bauble Buddies",
+      "rarity": "ur",
+      "image": "/assets/pets/bauble-buddies.png",
+      "benchmark": false
+    },
+    {
+      "slug": "beaver",
+      "name": "Beaver",
+      "rarity": "r",
+      "image": "/assets/pets/beaver.png",
+      "benchmark": false
+    },
+    {
+      "slug": "beluga-whale",
+      "name": "Beluga Whale",
+      "rarity": "c",
+      "image": "/assets/pets/beluga-whale.png",
+      "benchmark": false
+    },
+    {
+      "slug": "berry-cool-cube",
+      "name": "Berry Cool Cube",
+      "rarity": "l",
+      "image": "/assets/pets/berry-cool-cube.png",
+      "benchmark": false
+    },
+    {
+      "slug": "billy-goat",
+      "name": "Billy Goat",
+      "rarity": "l",
+      "image": "/assets/pets/billy-goat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "binturong",
+      "name": "Binturong",
+      "rarity": "ur",
+      "image": "/assets/pets/binturong.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bird-of-paradise",
+      "name": "Bird of Paradise",
+      "rarity": "r",
+      "image": "/assets/pets/bird-of-paradise.png",
+      "benchmark": false
+    },
+    {
+      "slug": "birthday-butterfly-2023",
+      "name": "Birthday Butterfly 2023",
+      "rarity": "u",
+      "image": "/assets/pets/birthday-butterfly-2023.png",
+      "benchmark": false
+    },
+    {
+      "slug": "birthday-butterfly-2024",
+      "name": "Birthday Butterfly 2024",
+      "rarity": "u",
+      "image": "/assets/pets/birthday-butterfly-2024.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-chested-pheasant",
+      "name": "Black-Chested Pheasant",
+      "rarity": "l",
+      "image": "/assets/pets/black-chested-pheasant.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-chow-chow",
+      "name": "Black Chow-Chow",
+      "rarity": "l",
+      "image": "/assets/pets/black-chow-chow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-footed-ferret",
+      "name": "Black-Footed Ferret",
+      "rarity": "ur",
+      "image": "/assets/pets/black-footed-ferret.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-kite",
+      "name": "Black Kite",
+      "rarity": "ur",
+      "image": "/assets/pets/black-kite.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-macaque",
+      "name": "Black Macaque",
+      "rarity": "ur",
+      "image": "/assets/pets/black-macaque.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-marlin",
+      "name": "Black Marlin",
+      "rarity": "u",
+      "image": "/assets/pets/black-marlin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-moon-bear",
+      "name": "Black Moon Bear",
+      "rarity": "r",
+      "image": "/assets/pets/black-moon-bear.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-panther",
+      "name": "Black Panther",
+      "rarity": "u",
+      "image": "/assets/pets/black-panther.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-rhino",
+      "name": "Black Rhino",
+      "rarity": "r",
+      "image": "/assets/pets/black-rhino.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-springer-spaniel",
+      "name": "Black Springer Spaniel",
+      "rarity": "ur",
+      "image": "/assets/pets/black-springer-spaniel.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-tiger",
+      "name": "Black Tiger",
+      "rarity": "u",
+      "image": "/assets/pets/black-tiger.png",
+      "benchmark": false
+    },
+    {
+      "slug": "black-widow",
+      "name": "Black Widow",
+      "rarity": "l",
+      "image": "/assets/pets/black-widow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "blazing-lion",
+      "name": "Blazing Lion",
+      "rarity": "l",
+      "image": "/assets/pets/blazing-lion.png",
+      "benchmark": true
+    },
+    {
+      "slug": "bloodhound",
+      "name": "Bloodhound",
+      "rarity": "r",
+      "image": "/assets/pets/bloodhound.png",
+      "benchmark": false
+    },
+    {
+      "slug": "blossom-snake",
+      "name": "Blossom Snake",
+      "rarity": "r",
+      "image": "/assets/pets/blossom-snake.png",
+      "benchmark": false
+    },
+    {
+      "slug": "blue-betta-fish",
+      "name": "Blue Betta Fish",
+      "rarity": "l",
+      "image": "/assets/pets/blue-betta-fish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "blue-butterfly",
+      "name": "Blue Butterfly",
+      "rarity": "c",
+      "image": "/assets/pets/blue-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "blue-dog",
+      "name": "Blue Dog",
+      "rarity": "u",
+      "image": "/assets/pets/blue-dog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "blue-jay-pet",
+      "name": "Blue Jay",
+      "rarity": "r",
+      "image": "/assets/pets/blue-jay-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "blue-ringed-octopus",
+      "name": "Blue Ringed Octopus",
+      "rarity": "ur",
+      "image": "/assets/pets/blue-ringed-octopus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "blue-whale",
+      "name": "Blue Whale",
+      "rarity": "l",
+      "image": "/assets/pets/blue-whale.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bluebottle-fly",
+      "name": "Bluebottle Fly",
+      "rarity": "c",
+      "image": "/assets/pets/bluebottle-fly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "border-collie",
+      "name": "Border Collie",
+      "rarity": "r",
+      "image": "/assets/pets/border-collie.png",
+      "benchmark": false
+    },
+    {
+      "slug": "borhyaena-gigantica",
+      "name": "Borhyaena Gigantica",
+      "rarity": "u",
+      "image": "/assets/pets/borhyaena-gigantica.png",
+      "benchmark": false
+    },
+    {
+      "slug": "brachiosaurus",
+      "name": "Brachiosaurus",
+      "rarity": "c",
+      "image": "/assets/pets/brachiosaurus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "brown-bear",
+      "name": "Brown Bear",
+      "rarity": "r",
+      "image": "/assets/pets/brown-bear.png",
+      "benchmark": false
+    },
+    {
+      "slug": "brown-chested-pheasant",
+      "name": "Brown-Chested Pheasant",
+      "rarity": "ur",
+      "image": "/assets/pets/brown-chested-pheasant.png",
+      "benchmark": false
+    },
+    {
+      "slug": "brown-springer-spaniel",
+      "name": "Brown Springer Spaniel",
+      "rarity": "ur",
+      "image": "/assets/pets/brown-springer-spaniel.png",
+      "benchmark": false
+    },
+    {
+      "slug": "buffalo",
+      "name": "Buffalo",
+      "rarity": "c",
+      "image": "/assets/pets/buffalo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bullfrog",
+      "name": "Bullfrog",
+      "rarity": "c",
+      "image": "/assets/pets/bullfrog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bunny-swirl",
+      "name": "Bunny Swirl",
+      "rarity": "ur",
+      "image": "/assets/pets/bunny-swirl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bunny",
+      "name": "Bunny",
+      "rarity": "r",
+      "image": "/assets/pets/bunny.png",
+      "benchmark": false
+    },
+    {
+      "slug": "burning-bunny",
+      "name": "Burning Bunny",
+      "rarity": "ur",
+      "image": "/assets/pets/burning-bunny.png",
+      "benchmark": false
+    },
+    {
+      "slug": "burtaur",
+      "name": "Burtaur",
+      "rarity": "c",
+      "image": "/assets/pets/burtaur.png",
+      "benchmark": false
+    },
+    {
+      "slug": "bush-elephant",
+      "name": "Bush Elephant",
+      "rarity": "l",
+      "image": "/assets/pets/bush-elephant.png",
+      "benchmark": false
+    },
+    {
+      "slug": "business-monkey-pet",
+      "name": "Business Monkey",
+      "rarity": "ur",
+      "image": "/assets/pets/business-monkey-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cabbit",
+      "name": "Cabbit",
+      "rarity": "ur",
+      "image": "/assets/pets/cabbit.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cactus-friend",
+      "name": "Cactus Friend",
+      "rarity": "l",
+      "image": "/assets/pets/cactus-friend.png",
+      "benchmark": false
+    },
+    {
+      "slug": "caelum-cervi",
+      "name": "Caelum Cervi",
+      "rarity": "l",
+      "image": "/assets/pets/caelum-cervi.png",
+      "benchmark": false
+    },
+    {
+      "slug": "california-condor",
+      "name": "California Condor",
+      "rarity": "c",
+      "image": "/assets/pets/california-condor.png",
+      "benchmark": false
+    },
+    {
+      "slug": "camel",
+      "name": "Camel",
+      "rarity": "u",
+      "image": "/assets/pets/camel.png",
+      "benchmark": false
+    },
+    {
+      "slug": "canadian-goose",
+      "name": "Canadian Goose",
+      "rarity": "u",
+      "image": "/assets/pets/canadian-goose.png",
+      "benchmark": false
+    },
+    {
+      "slug": "candicorn",
+      "name": "Candicorn",
+      "rarity": "l",
+      "image": "/assets/pets/candicorn.png",
+      "benchmark": false
+    },
+    {
+      "slug": "candy-cane-snail",
+      "name": "Candy Cane Snail",
+      "rarity": "ur",
+      "image": "/assets/pets/candy-cane-snail.png",
+      "benchmark": false
+    },
+    {
+      "slug": "candy-hare",
+      "name": "Candy Hare",
+      "rarity": "l",
+      "image": "/assets/pets/candy-hare.png",
+      "benchmark": false
+    },
+    {
+      "slug": "candyfloss-chick",
+      "name": "Candyfloss Chick",
+      "rarity": "l",
+      "image": "/assets/pets/candyfloss-chick.png",
+      "benchmark": false
+    },
+    {
+      "slug": "capricorn",
+      "name": "Capricorn",
+      "rarity": "l",
+      "image": "/assets/pets/capricorn.png",
+      "benchmark": false
+    },
+    {
+      "slug": "capuchin-monkey",
+      "name": "Capuchin Monkey",
+      "rarity": "r",
+      "image": "/assets/pets/capuchin-monkey.png",
+      "benchmark": false
+    },
+    {
+      "slug": "capybara",
+      "name": "Capybara",
+      "rarity": "u",
+      "image": "/assets/pets/capybara.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cassowary",
+      "name": "Cassowary",
+      "rarity": "r",
+      "image": "/assets/pets/cassowary.png",
+      "benchmark": false
+    },
+    {
+      "slug": "castle-hermit-crab",
+      "name": "Castle Hermit Crab",
+      "rarity": "r",
+      "image": "/assets/pets/castle-hermit-crab.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cat",
+      "name": "Cat",
+      "rarity": "c",
+      "image": "/assets/pets/cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "caterpillar",
+      "name": "Caterpillar",
+      "rarity": "ur",
+      "image": "/assets/pets/caterpillar.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cerberus",
+      "name": "Cerberus",
+      "rarity": "l",
+      "image": "/assets/pets/cerberus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chameleon",
+      "name": "Chameleon",
+      "rarity": "l",
+      "image": "/assets/pets/chameleon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chanekeh",
+      "name": "Chanekeh",
+      "rarity": "r",
+      "image": "/assets/pets/chanekeh.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cheetah",
+      "name": "Cheetah",
+      "rarity": "l",
+      "image": "/assets/pets/cheetah.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chef-gorilla-pet",
+      "name": "Chef Gorilla",
+      "rarity": "ur",
+      "image": "/assets/pets/chef-gorilla-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cherub-chipmunk",
+      "name": "Cherub Chipmunk",
+      "rarity": "r",
+      "image": "/assets/pets/cherub-chipmunk.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chick",
+      "name": "Chick",
+      "rarity": "c",
+      "image": "/assets/pets/chick.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chickatrice",
+      "name": "Chickatrice",
+      "rarity": "u",
+      "image": "/assets/pets/chickatrice.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chicken",
+      "name": "Chicken",
+      "rarity": "c",
+      "image": "/assets/pets/chicken.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chilling-spider",
+      "name": "Chilling Spider",
+      "rarity": "ur",
+      "image": "/assets/pets/chilling-spider.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chimera",
+      "name": "Chimera",
+      "rarity": "l",
+      "image": "/assets/pets/chimera.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chipmunk",
+      "name": "Chipmunk",
+      "rarity": "r",
+      "image": "/assets/pets/chipmunk.png",
+      "benchmark": false
+    },
+    {
+      "slug": "choco-penguin",
+      "name": "Choco Penguin",
+      "rarity": "ur",
+      "image": "/assets/pets/choco-penguin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chocolate-chip-bat-dragon",
+      "name": "Chocolate Chip Bat Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/chocolate-chip-bat-dragon.png",
+      "benchmark": true
+    },
+    {
+      "slug": "chocolate-chow-chow",
+      "name": "Chocolate Chow-Chow",
+      "rarity": "l",
+      "image": "/assets/pets/chocolate-chow-chow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chocolate-guinea-pig",
+      "name": "Chocolate Guinea Pig",
+      "rarity": "review",
+      "image": "/assets/pets/chocolate-guinea-pig.png",
+      "benchmark": false
+    },
+    {
+      "slug": "chocolate-labrador",
+      "name": "Chocolate Labrador",
+      "rarity": "u",
+      "image": "/assets/pets/chocolate-labrador.png",
+      "benchmark": false
+    },
+    {
+      "slug": "christmas-pudding-pup",
+      "name": "Christmas Pudding Pup",
+      "rarity": "ur",
+      "image": "/assets/pets/christmas-pudding-pup.png",
+      "benchmark": false
+    },
+    {
+      "slug": "christmas-spirit",
+      "name": "Christmas Spirit",
+      "rarity": "l",
+      "image": "/assets/pets/christmas-spirit.png",
+      "benchmark": false
+    },
+    {
+      "slug": "classic-teapot",
+      "name": "Classic Teapot",
+      "rarity": "c",
+      "image": "/assets/pets/classic-teapot.png",
+      "benchmark": false
+    },
+    {
+      "slug": "clementine-owl",
+      "name": "Clementine Owl",
+      "rarity": "ur",
+      "image": "/assets/pets/clementine-owl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "clover-cow",
+      "name": "Clover Cow",
+      "rarity": "r",
+      "image": "/assets/pets/clover-cow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "clownfish",
+      "name": "Clownfish",
+      "rarity": "ur",
+      "image": "/assets/pets/clownfish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cobra",
+      "name": "Cobra",
+      "rarity": "l",
+      "image": "/assets/pets/cobra.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cockroach",
+      "name": "Cockroach",
+      "rarity": "c",
+      "image": "/assets/pets/cockroach.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cocoadile",
+      "name": "Cocoadile",
+      "rarity": "u",
+      "image": "/assets/pets/cocoadile.png",
+      "benchmark": false
+    },
+    {
+      "slug": "coconut-friend",
+      "name": "Coconut Friend",
+      "rarity": "l",
+      "image": "/assets/pets/coconut-friend.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cold-cube",
+      "name": "Cold Cube",
+      "rarity": "ur",
+      "image": "/assets/pets/cold-cube.png",
+      "benchmark": false
+    },
+    {
+      "slug": "corgi",
+      "name": "Corgi",
+      "rarity": "ur",
+      "image": "/assets/pets/corgi.png",
+      "benchmark": false
+    },
+    {
+      "slug": "corn-doggo",
+      "name": "Corn Doggo",
+      "rarity": "l",
+      "image": "/assets/pets/corn-doggo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cow-calf",
+      "name": "Cow Calf",
+      "rarity": "r",
+      "image": "/assets/pets/cow-calf.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cow",
+      "name": "Cow",
+      "rarity": "r",
+      "image": "/assets/pets/cow.png",
+      "benchmark": true
+    },
+    {
+      "slug": "coyote",
+      "name": "Coyote",
+      "rarity": "c",
+      "image": "/assets/pets/coyote.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cozy-mistletroll",
+      "name": "Cozy Mistletroll",
+      "rarity": "ur",
+      "image": "/assets/pets/cozy-mistletroll.png",
+      "benchmark": false
+    },
+    {
+      "slug": "crab",
+      "name": "Crab",
+      "rarity": "u",
+      "image": "/assets/pets/crab.png",
+      "benchmark": false
+    },
+    {
+      "slug": "criosphinx",
+      "name": "Criosphinx",
+      "rarity": "l",
+      "image": "/assets/pets/criosphinx.png",
+      "benchmark": false
+    },
+    {
+      "slug": "crocodile",
+      "name": "Crocodile",
+      "rarity": "ur",
+      "image": "/assets/pets/crocodile.png",
+      "benchmark": false
+    },
+    {
+      "slug": "crow",
+      "name": "Crow",
+      "rarity": "l",
+      "image": "/assets/pets/crow.png",
+      "benchmark": true
+    },
+    {
+      "slug": "cryptid",
+      "name": "Cryptid",
+      "rarity": "l",
+      "image": "/assets/pets/cryptid.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cuddly-candle",
+      "name": "Cuddly Candle",
+      "rarity": "l",
+      "image": "/assets/pets/cuddly-candle.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cupid-dragon",
+      "name": "Cupid Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/cupid-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "cute-a-cabra",
+      "name": "Cute-A-Cabra",
+      "rarity": "u",
+      "image": "/assets/pets/cute-a-cabra.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dalmatian",
+      "name": "Dalmatian",
+      "rarity": "ur",
+      "image": "/assets/pets/dalmatian.png",
+      "benchmark": true
+    },
+    {
+      "slug": "dancing-dragon",
+      "name": "Dancing Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/dancing-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dango-penguins",
+      "name": "Dango Penguins",
+      "rarity": "l",
+      "image": "/assets/pets/dango-penguins.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dark-choco-bunny",
+      "name": "Dark Choco Bunny",
+      "rarity": "review",
+      "image": "/assets/pets/dark-choco-bunny.png",
+      "benchmark": false
+    },
+    {
+      "slug": "deathstalker-scorpion",
+      "name": "Deathstalker Scorpion",
+      "rarity": "ur",
+      "image": "/assets/pets/deathstalker-scorpion.png",
+      "benchmark": false
+    },
+    {
+      "slug": "deinonychus",
+      "name": "Deinonychus",
+      "rarity": "ur",
+      "image": "/assets/pets/deinonychus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "diamond-albatross",
+      "name": "Diamond Albatross",
+      "rarity": "l",
+      "image": "/assets/pets/diamond-albatross.png",
+      "benchmark": false
+    },
+    {
+      "slug": "diamond-amazon",
+      "name": "Diamond Amazon",
+      "rarity": "l",
+      "image": "/assets/pets/diamond-amazon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "diamond-butterfly",
+      "name": "Diamond Butterfly",
+      "rarity": "l",
+      "image": "/assets/pets/diamond-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "diamond-dragon",
+      "name": "Diamond Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/diamond-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "diamond-griffin",
+      "name": "Diamond Griffin",
+      "rarity": "l",
+      "image": "/assets/pets/diamond-griffin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "diamond-hamster",
+      "name": "Diamond Hamster",
+      "rarity": "l",
+      "image": "/assets/pets/diamond-hamster.png",
+      "benchmark": false
+    },
+    {
+      "slug": "diamond-hummingbird",
+      "name": "Diamond Hummingbird",
+      "rarity": "l",
+      "image": "/assets/pets/diamond-hummingbird.png",
+      "benchmark": false
+    },
+    {
+      "slug": "diamond-king-penguin",
+      "name": "Diamond King Penguin",
+      "rarity": "l",
+      "image": "/assets/pets/diamond-king-penguin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "diamond-ladybug",
+      "name": "Diamond Ladybug",
+      "rarity": "l",
+      "image": "/assets/pets/diamond-ladybug.png",
+      "benchmark": false
+    },
+    {
+      "slug": "diamond-mahi-mahi",
+      "name": "Diamond Mahi Mahi",
+      "rarity": "l",
+      "image": "/assets/pets/diamond-mahi-mahi.png",
+      "benchmark": false
+    },
+    {
+      "slug": "diamond-unicorn",
+      "name": "Diamond Unicorn",
+      "rarity": "l",
+      "image": "/assets/pets/diamond-unicorn.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dilophosaurus",
+      "name": "Dilophosaurus",
+      "rarity": "r",
+      "image": "/assets/pets/dilophosaurus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dimension-drifter",
+      "name": "Dimension Drifter",
+      "rarity": "l",
+      "image": "/assets/pets/dimension-drifter.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dimorphodon",
+      "name": "Dimorphodon",
+      "rarity": "l",
+      "image": "/assets/pets/dimorphodon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dingo",
+      "name": "Dingo",
+      "rarity": "u",
+      "image": "/assets/pets/dingo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dire-stag",
+      "name": "Dire Stag",
+      "rarity": "l",
+      "image": "/assets/pets/dire-stag.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dire-wolf",
+      "name": "Dire Wolf",
+      "rarity": "ur",
+      "image": "/assets/pets/dire-wolf.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dj-snooze",
+      "name": "DJ Snooze",
+      "rarity": "r",
+      "image": "/assets/pets/dj-snooze.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dodo",
+      "name": "Dodo",
+      "rarity": "l",
+      "image": "/assets/pets/dodo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dog",
+      "name": "Dog",
+      "rarity": "c",
+      "image": "/assets/pets/dog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dolphin",
+      "name": "Dolphin",
+      "rarity": "u",
+      "image": "/assets/pets/dolphin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "donkey",
+      "name": "Donkey",
+      "rarity": "u",
+      "image": "/assets/pets/donkey.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dotted-eggy",
+      "name": "Dotted Eggy",
+      "rarity": "r",
+      "image": "/assets/pets/dotted-eggy.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dracula-fish",
+      "name": "Dracula Fish",
+      "rarity": "u",
+      "image": "/assets/pets/dracula-fish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dracula-parrot",
+      "name": "Dracula Parrot",
+      "rarity": "l",
+      "image": "/assets/pets/dracula-parrot.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dragon",
+      "name": "Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/dragon.png",
+      "benchmark": true
+    },
+    {
+      "slug": "dragonfly",
+      "name": "Dragonfly",
+      "rarity": "l",
+      "image": "/assets/pets/dragonfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dragonfruit-fox-pet",
+      "name": "Dragonfruit Fox",
+      "rarity": "l",
+      "image": "/assets/pets/dragonfruit-fox-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "drake",
+      "name": "Drake",
+      "rarity": "u",
+      "image": "/assets/pets/drake.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dugong",
+      "name": "Dugong",
+      "rarity": "c",
+      "image": "/assets/pets/dugong.png",
+      "benchmark": false
+    },
+    {
+      "slug": "dylan",
+      "name": "Dylan",
+      "rarity": "u",
+      "image": "/assets/pets/dylan.png",
+      "benchmark": false
+    },
+    {
+      "slug": "easter-bunny",
+      "name": "Easter Bunny",
+      "rarity": "review",
+      "image": "/assets/pets/easter-bunny.png",
+      "benchmark": false
+    },
+    {
+      "slug": "eel",
+      "name": "Eel",
+      "rarity": "u",
+      "image": "/assets/pets/eel.png",
+      "benchmark": false
+    },
+    {
+      "slug": "eggnog-dog",
+      "name": "Eggnog Dog",
+      "rarity": "u",
+      "image": "/assets/pets/eggnog-dog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "eggnog-hare",
+      "name": "Eggnog Hare",
+      "rarity": "r",
+      "image": "/assets/pets/eggnog-hare.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ehecatl",
+      "name": "Ehecatl",
+      "rarity": "ur",
+      "image": "/assets/pets/ehecatl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "elasmosaurus",
+      "name": "Elasmosaurus",
+      "rarity": "ur",
+      "image": "/assets/pets/elasmosaurus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "elephant",
+      "name": "Elephant",
+      "rarity": "r",
+      "image": "/assets/pets/elephant.png",
+      "benchmark": false
+    },
+    {
+      "slug": "emberlight",
+      "name": "Emberlight",
+      "rarity": "l",
+      "image": "/assets/pets/emberlight.png",
+      "benchmark": false
+    },
+    {
+      "slug": "emperor-gorilla-pet",
+      "name": "Emperor Gorilla",
+      "rarity": "l",
+      "image": "/assets/pets/emperor-gorilla-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "emperor-shrimp",
+      "name": "Emperor Shrimp",
+      "rarity": "r",
+      "image": "/assets/pets/emperor-shrimp.png",
+      "benchmark": false
+    },
+    {
+      "slug": "emu",
+      "name": "Emu",
+      "rarity": "r",
+      "image": "/assets/pets/emu.png",
+      "benchmark": false
+    },
+    {
+      "slug": "english-sheepdog",
+      "name": "English Sheepdog",
+      "rarity": "r",
+      "image": "/assets/pets/english-sheepdog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ermine",
+      "name": "Ermine",
+      "rarity": "u",
+      "image": "/assets/pets/ermine.png",
+      "benchmark": false
+    },
+    {
+      "slug": "evil-basilisk",
+      "name": "Evil Basilisk",
+      "rarity": "ur",
+      "image": "/assets/pets/evil-basilisk.png",
+      "benchmark": false
+    },
+    {
+      "slug": "evil-chick",
+      "name": "Evil Chick",
+      "rarity": "l",
+      "image": "/assets/pets/evil-chick.png",
+      "benchmark": false
+    },
+    {
+      "slug": "evil-chickatrice",
+      "name": "Evil Chickatrice",
+      "rarity": "ur",
+      "image": "/assets/pets/evil-chickatrice.png",
+      "benchmark": false
+    },
+    {
+      "slug": "evil-rock",
+      "name": "Evil Rock",
+      "rarity": "r",
+      "image": "/assets/pets/evil-rock.png",
+      "benchmark": false
+    },
+    {
+      "slug": "evil-unicorn",
+      "name": "Evil Unicorn",
+      "rarity": "l",
+      "image": "/assets/pets/evil-unicorn.png",
+      "benchmark": true
+    },
+    {
+      "slug": "fairy-bat-dragon",
+      "name": "Fairy Bat Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/fairy-bat-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "fallow-deer",
+      "name": "Fallow Deer",
+      "rarity": "l",
+      "image": "/assets/pets/fallow-deer.png",
+      "benchmark": false
+    },
+    {
+      "slug": "fanghorn-tortoise",
+      "name": "Fanghorn Tortoise",
+      "rarity": "ur",
+      "image": "/assets/pets/fanghorn-tortoise.png",
+      "benchmark": false
+    },
+    {
+      "slug": "feesh",
+      "name": "Feesh",
+      "rarity": "r",
+      "image": "/assets/pets/feesh.png",
+      "benchmark": false
+    },
+    {
+      "slug": "fennec-fox",
+      "name": "Fennec Fox",
+      "rarity": "u",
+      "image": "/assets/pets/fennec-fox.png",
+      "benchmark": false
+    },
+    {
+      "slug": "field-mouse",
+      "name": "Field Mouse",
+      "rarity": "l",
+      "image": "/assets/pets/field-mouse.png",
+      "benchmark": false
+    },
+    {
+      "slug": "fire-foal",
+      "name": "Fire Foal",
+      "rarity": "ur",
+      "image": "/assets/pets/fire-foal.png",
+      "benchmark": false
+    },
+    {
+      "slug": "fire-mare",
+      "name": "Fire Mare",
+      "rarity": "l",
+      "image": "/assets/pets/fire-mare.png",
+      "benchmark": false
+    },
+    {
+      "slug": "fire-stallion",
+      "name": "Fire Stallion",
+      "rarity": "l",
+      "image": "/assets/pets/fire-stallion.png",
+      "benchmark": false
+    },
+    {
+      "slug": "firefighter-gibbon",
+      "name": "Firefighter Gibbon",
+      "rarity": "ur",
+      "image": "/assets/pets/firefighter-gibbon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "firefly",
+      "name": "Firefly",
+      "rarity": "l",
+      "image": "/assets/pets/firefly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "flaming-fox",
+      "name": "Flaming Fox",
+      "rarity": "ur",
+      "image": "/assets/pets/flaming-fox.png",
+      "benchmark": false
+    },
+    {
+      "slug": "flaming-zebra",
+      "name": "Flaming Zebra",
+      "rarity": "r",
+      "image": "/assets/pets/flaming-zebra.png",
+      "benchmark": false
+    },
+    {
+      "slug": "flamingo",
+      "name": "Flamingo",
+      "rarity": "ur",
+      "image": "/assets/pets/flamingo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "fleur-de-ice",
+      "name": "Fleur De Ice",
+      "rarity": "l",
+      "image": "/assets/pets/fleur-de-ice.png",
+      "benchmark": false
+    },
+    {
+      "slug": "floral-eggy",
+      "name": "Floral Eggy",
+      "rarity": "ur",
+      "image": "/assets/pets/floral-eggy.png",
+      "benchmark": false
+    },
+    {
+      "slug": "flower-power-duckling",
+      "name": "Flower Power Duckling",
+      "rarity": "ur",
+      "image": "/assets/pets/flower-power-duckling.png",
+      "benchmark": false
+    },
+    {
+      "slug": "flying-fish",
+      "name": "Flying Fish",
+      "rarity": "c",
+      "image": "/assets/pets/flying-fish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "fossa",
+      "name": "Fossa",
+      "rarity": "u",
+      "image": "/assets/pets/fossa.png",
+      "benchmark": false
+    },
+    {
+      "slug": "frankenfeline",
+      "name": "Frankenfeline",
+      "rarity": "c",
+      "image": "/assets/pets/frankenfeline.png",
+      "benchmark": false
+    },
+    {
+      "slug": "french-bulldog",
+      "name": "French Bulldog",
+      "rarity": "r",
+      "image": "/assets/pets/french-bulldog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "frog",
+      "name": "Frog",
+      "rarity": "ur",
+      "image": "/assets/pets/frog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "frogspawn",
+      "name": "Frogspawn",
+      "rarity": "u",
+      "image": "/assets/pets/frogspawn.png",
+      "benchmark": false
+    },
+    {
+      "slug": "frost-dragon",
+      "name": "Frost Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/frost-dragon.png",
+      "benchmark": true
+    },
+    {
+      "slug": "frost-fury-pet",
+      "name": "Frost Fury",
+      "rarity": "l",
+      "image": "/assets/pets/frost-fury-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "frost-phoenix",
+      "name": "Frost Phoenix",
+      "rarity": "l",
+      "image": "/assets/pets/frost-phoenix.png",
+      "benchmark": false
+    },
+    {
+      "slug": "frost-unicorn",
+      "name": "Frost Unicorn",
+      "rarity": "l",
+      "image": "/assets/pets/frost-unicorn.png",
+      "benchmark": false
+    },
+    {
+      "slug": "frostbite-bear",
+      "name": "Frostbite Bear",
+      "rarity": "l",
+      "image": "/assets/pets/frostbite-bear.png",
+      "benchmark": false
+    },
+    {
+      "slug": "frostbite-cub",
+      "name": "Frostbite Cub",
+      "rarity": "ur",
+      "image": "/assets/pets/frostbite-cub.png",
+      "benchmark": false
+    },
+    {
+      "slug": "frostclaw-pet",
+      "name": "Frostclaw",
+      "rarity": "l",
+      "image": "/assets/pets/frostclaw-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "frozen-penguin",
+      "name": "Frozen Penguin",
+      "rarity": "ur",
+      "image": "/assets/pets/frozen-penguin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "galapagos-sea-lion",
+      "name": "Galapagos Sea Lion",
+      "rarity": "c",
+      "image": "/assets/pets/galapagos-sea-lion.png",
+      "benchmark": false
+    },
+    {
+      "slug": "garden-snake-pet",
+      "name": "Garden Snake",
+      "rarity": "c",
+      "image": "/assets/pets/garden-snake-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gargoyle",
+      "name": "Gargoyle",
+      "rarity": "l",
+      "image": "/assets/pets/gargoyle.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gecko",
+      "name": "Gecko",
+      "rarity": "r",
+      "image": "/assets/pets/gecko.png",
+      "benchmark": false
+    },
+    {
+      "slug": "german-shepherd",
+      "name": "German Shepherd",
+      "rarity": "ur",
+      "image": "/assets/pets/german-shepherd.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ghost-bunny",
+      "name": "Ghost Bunny",
+      "rarity": "ur",
+      "image": "/assets/pets/ghost-bunny.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ghost-chick",
+      "name": "Ghost Chick",
+      "rarity": "ur",
+      "image": "/assets/pets/ghost-chick.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ghost-dog",
+      "name": "Ghost Dog",
+      "rarity": "r",
+      "image": "/assets/pets/ghost-dog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ghost-wolf",
+      "name": "Ghost Wolf",
+      "rarity": "r",
+      "image": "/assets/pets/ghost-wolf.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ghost",
+      "name": "Ghost",
+      "rarity": "c",
+      "image": "/assets/pets/ghost.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ghostly-cat",
+      "name": "Ghostly Cat",
+      "rarity": "ur",
+      "image": "/assets/pets/ghostly-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "giant-anteater",
+      "name": "Giant Anteater",
+      "rarity": "r",
+      "image": "/assets/pets/giant-anteater.png",
+      "benchmark": false
+    },
+    {
+      "slug": "giant-black-scarab",
+      "name": "Giant Black Scarab",
+      "rarity": "ur",
+      "image": "/assets/pets/giant-black-scarab.png",
+      "benchmark": false
+    },
+    {
+      "slug": "giant-blue-scarab",
+      "name": "Giant Blue Scarab",
+      "rarity": "ur",
+      "image": "/assets/pets/giant-blue-scarab.png",
+      "benchmark": false
+    },
+    {
+      "slug": "giant-gold-scarab",
+      "name": "Giant Gold Scarab",
+      "rarity": "l",
+      "image": "/assets/pets/giant-gold-scarab.png",
+      "benchmark": false
+    },
+    {
+      "slug": "giant-panda",
+      "name": "Giant Panda",
+      "rarity": "l",
+      "image": "/assets/pets/giant-panda.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gibbon",
+      "name": "Gibbon",
+      "rarity": "r",
+      "image": "/assets/pets/gibbon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gila-monster",
+      "name": "Gila Monster",
+      "rarity": "u",
+      "image": "/assets/pets/gila-monster.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gilded-snake",
+      "name": "Gilded Snake",
+      "rarity": "l",
+      "image": "/assets/pets/gilded-snake.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ginger-cat",
+      "name": "Ginger Cat",
+      "rarity": "ur",
+      "image": "/assets/pets/ginger-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gingerbread-hare",
+      "name": "Gingerbread Hare",
+      "rarity": "ur",
+      "image": "/assets/pets/gingerbread-hare.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gingerbread-mouse",
+      "name": "Gingerbread Mouse",
+      "rarity": "ur",
+      "image": "/assets/pets/gingerbread-mouse.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gingerbread-reindeer",
+      "name": "Gingerbread Reindeer",
+      "rarity": "ur",
+      "image": "/assets/pets/gingerbread-reindeer.png",
+      "benchmark": false
+    },
+    {
+      "slug": "giraffe",
+      "name": "Giraffe",
+      "rarity": "l",
+      "image": "/assets/pets/giraffe.png",
+      "benchmark": true
+    },
+    {
+      "slug": "glacier-kitsune",
+      "name": "Glacier Kitsune",
+      "rarity": "l",
+      "image": "/assets/pets/glacier-kitsune.png",
+      "benchmark": false
+    },
+    {
+      "slug": "glacier-moth",
+      "name": "Glacier Moth",
+      "rarity": "ur",
+      "image": "/assets/pets/glacier-moth.png",
+      "benchmark": false
+    },
+    {
+      "slug": "glormy-dolphin",
+      "name": "Glormy Dolphin",
+      "rarity": "l",
+      "image": "/assets/pets/glormy-dolphin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "glormy-hound",
+      "name": "Glormy Hound",
+      "rarity": "l",
+      "image": "/assets/pets/glormy-hound.png",
+      "benchmark": false
+    },
+    {
+      "slug": "glormy-leo",
+      "name": "Glormy Leo",
+      "rarity": "l",
+      "image": "/assets/pets/glormy-leo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "glyptodon",
+      "name": "Glyptodon",
+      "rarity": "u",
+      "image": "/assets/pets/glyptodon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "goat",
+      "name": "Goat",
+      "rarity": "ur",
+      "image": "/assets/pets/goat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gold-mahi-mahi",
+      "name": "Gold Mahi Mahi",
+      "rarity": "ur",
+      "image": "/assets/pets/gold-mahi-mahi.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-albatross",
+      "name": "Golden Albatross",
+      "rarity": "l",
+      "image": "/assets/pets/golden-albatross.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-chow-chow",
+      "name": "Golden Chow-Chow",
+      "rarity": "l",
+      "image": "/assets/pets/golden-chow-chow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-dragon",
+      "name": "Golden Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/golden-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-griffin",
+      "name": "Golden Griffin",
+      "rarity": "l",
+      "image": "/assets/pets/golden-griffin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-hamster",
+      "name": "Golden Hamster",
+      "rarity": "l",
+      "image": "/assets/pets/golden-hamster.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-hummingbird",
+      "name": "Golden Hummingbird",
+      "rarity": "l",
+      "image": "/assets/pets/golden-hummingbird.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-jaguar",
+      "name": "Golden Jaguar",
+      "rarity": "ur",
+      "image": "/assets/pets/golden-jaguar.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-king-penguin",
+      "name": "Golden King Penguin",
+      "rarity": "l",
+      "image": "/assets/pets/golden-king-penguin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-ladybug",
+      "name": "Golden Ladybug",
+      "rarity": "l",
+      "image": "/assets/pets/golden-ladybug.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-penguin",
+      "name": "Golden Penguin",
+      "rarity": "l",
+      "image": "/assets/pets/golden-penguin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-rat",
+      "name": "Golden Rat",
+      "rarity": "l",
+      "image": "/assets/pets/golden-rat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-tortoise-beetle",
+      "name": "Golden Tortoise Beetle",
+      "rarity": "l",
+      "image": "/assets/pets/golden-tortoise-beetle.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-unicorn",
+      "name": "Golden Unicorn",
+      "rarity": "l",
+      "image": "/assets/pets/golden-unicorn.png",
+      "benchmark": false
+    },
+    {
+      "slug": "golden-walrus",
+      "name": "Golden Walrus",
+      "rarity": "l",
+      "image": "/assets/pets/golden-walrus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "goldfish",
+      "name": "Goldfish",
+      "rarity": "r",
+      "image": "/assets/pets/goldfish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "goldhorn",
+      "name": "Goldhorn",
+      "rarity": "l",
+      "image": "/assets/pets/goldhorn.png",
+      "benchmark": false
+    },
+    {
+      "slug": "goose",
+      "name": "Goose",
+      "rarity": "r",
+      "image": "/assets/pets/goose.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gorilla",
+      "name": "Gorilla",
+      "rarity": "r",
+      "image": "/assets/pets/gorilla.png",
+      "benchmark": false
+    },
+    {
+      "slug": "grave-owl",
+      "name": "Grave Owl",
+      "rarity": "ur",
+      "image": "/assets/pets/grave-owl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "great-pyrenees",
+      "name": "Great Pyrenees",
+      "rarity": "r",
+      "image": "/assets/pets/great-pyrenees.png",
+      "benchmark": false
+    },
+    {
+      "slug": "green-amazon",
+      "name": "Green Amazon",
+      "rarity": "ur",
+      "image": "/assets/pets/green-amazon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "green-butterfly",
+      "name": "Green Butterfly",
+      "rarity": "l",
+      "image": "/assets/pets/green-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "green-chested-pheasant",
+      "name": "Green-Chested Pheasant",
+      "rarity": "l",
+      "image": "/assets/pets/green-chested-pheasant.png",
+      "benchmark": false
+    },
+    {
+      "slug": "griffin",
+      "name": "Griffin",
+      "rarity": "l",
+      "image": "/assets/pets/griffin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "grim-dragon",
+      "name": "Grim Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/grim-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "grinmoire",
+      "name": "Grinmoire",
+      "rarity": "ur",
+      "image": "/assets/pets/grinmoire.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ground-sloth",
+      "name": "Ground Sloth",
+      "rarity": "c",
+      "image": "/assets/pets/ground-sloth.png",
+      "benchmark": false
+    },
+    {
+      "slug": "groundhog",
+      "name": "Groundhog",
+      "rarity": "ur",
+      "image": "/assets/pets/groundhog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "guardian-lion",
+      "name": "Guardian Lion",
+      "rarity": "l",
+      "image": "/assets/pets/guardian-lion.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gumball-caterpillar",
+      "name": "Gumball Caterpillar",
+      "rarity": "ur",
+      "image": "/assets/pets/gumball-caterpillar.png",
+      "benchmark": false
+    },
+    {
+      "slug": "gummy-guana",
+      "name": "Gummy Guana",
+      "rarity": "r",
+      "image": "/assets/pets/gummy-guana.png",
+      "benchmark": false
+    },
+    {
+      "slug": "haetae",
+      "name": "Haetae",
+      "rarity": "l",
+      "image": "/assets/pets/haetae.png",
+      "benchmark": false
+    },
+    {
+      "slug": "halloween-black-mummy-cat",
+      "name": "Halloween Black Mummy Cat",
+      "rarity": "u",
+      "image": "/assets/pets/halloween-black-mummy-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "halloween-blue-scorpion",
+      "name": "Halloween Blue Scorpion",
+      "rarity": "u",
+      "image": "/assets/pets/halloween-blue-scorpion.png",
+      "benchmark": false
+    },
+    {
+      "slug": "halloween-evil-dachshund",
+      "name": "Halloween Evil Dachshund",
+      "rarity": "r",
+      "image": "/assets/pets/halloween-evil-dachshund.png",
+      "benchmark": false
+    },
+    {
+      "slug": "halloween-golden-mummy-cat",
+      "name": "Halloween Golden Mummy Cat",
+      "rarity": "l",
+      "image": "/assets/pets/halloween-golden-mummy-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "halloween-white-ghost-dragon",
+      "name": "Halloween White Ghost Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/halloween-white-ghost-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "halloween-white-mummy-cat",
+      "name": "Halloween White Mummy Cat",
+      "rarity": "r",
+      "image": "/assets/pets/halloween-white-mummy-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "halloween-white-skeleton-dog",
+      "name": "Halloween White Skeleton Dog",
+      "rarity": "ur",
+      "image": "/assets/pets/halloween-white-skeleton-dog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hammerhead-shark",
+      "name": "Hammerhead Shark",
+      "rarity": "u",
+      "image": "/assets/pets/hammerhead-shark.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hamster",
+      "name": "Hamster",
+      "rarity": "ur",
+      "image": "/assets/pets/hamster.png",
+      "benchmark": false
+    },
+    {
+      "slug": "happy-clam",
+      "name": "Happy Clam",
+      "rarity": "ur",
+      "image": "/assets/pets/happy-clam.png",
+      "benchmark": false
+    },
+    {
+      "slug": "happy-duckling",
+      "name": "Happy Duckling",
+      "rarity": "r",
+      "image": "/assets/pets/happy-duckling.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hare",
+      "name": "Hare",
+      "rarity": "r",
+      "image": "/assets/pets/hare.png",
+      "benchmark": false
+    },
+    {
+      "slug": "harp-seal",
+      "name": "Harp Seal",
+      "rarity": "u",
+      "image": "/assets/pets/harp-seal.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hawk",
+      "name": "Hawk",
+      "rarity": "l",
+      "image": "/assets/pets/hawk.png",
+      "benchmark": false
+    },
+    {
+      "slug": "headless-horse",
+      "name": "Headless Horse",
+      "rarity": "ur",
+      "image": "/assets/pets/headless-horse.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hedgehog",
+      "name": "Hedgehog",
+      "rarity": "ur",
+      "image": "/assets/pets/hedgehog.png",
+      "benchmark": true
+    },
+    {
+      "slug": "hermit-crab",
+      "name": "Hermit Crab",
+      "rarity": "u",
+      "image": "/assets/pets/hermit-crab.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hero-gibbon",
+      "name": "Hero Gibbon",
+      "rarity": "l",
+      "image": "/assets/pets/hero-gibbon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "highland-cow",
+      "name": "Highland Cow",
+      "rarity": "ur",
+      "image": "/assets/pets/highland-cow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hippo",
+      "name": "Hippo",
+      "rarity": "r",
+      "image": "/assets/pets/hippo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hippogriff",
+      "name": "Hippogriff",
+      "rarity": "l",
+      "image": "/assets/pets/hippogriff.png",
+      "benchmark": false
+    },
+    {
+      "slug": "honey-badger",
+      "name": "Honey Badger",
+      "rarity": "ur",
+      "image": "/assets/pets/honey-badger.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hopbop",
+      "name": "Hopbop",
+      "rarity": "c",
+      "image": "/assets/pets/hopbop.png",
+      "benchmark": false
+    },
+    {
+      "slug": "horse",
+      "name": "Horse",
+      "rarity": "ur",
+      "image": "/assets/pets/horse.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hot-doggo",
+      "name": "Hot Doggo",
+      "rarity": "l",
+      "image": "/assets/pets/hot-doggo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "humbug",
+      "name": "Humbug",
+      "rarity": "u",
+      "image": "/assets/pets/humbug.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hummingbird",
+      "name": "Hummingbird",
+      "rarity": "ur",
+      "image": "/assets/pets/hummingbird.png",
+      "benchmark": false
+    },
+    {
+      "slug": "husky",
+      "name": "Husky",
+      "rarity": "r",
+      "image": "/assets/pets/husky.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hydra",
+      "name": "Hydra",
+      "rarity": "ur",
+      "image": "/assets/pets/hydra.png",
+      "benchmark": false
+    },
+    {
+      "slug": "hyena",
+      "name": "Hyena",
+      "rarity": "r",
+      "image": "/assets/pets/hyena.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ibex",
+      "name": "Ibex",
+      "rarity": "r",
+      "image": "/assets/pets/ibex.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ibis",
+      "name": "Ibis",
+      "rarity": "r",
+      "image": "/assets/pets/ibis.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ice-cream-hermit-crab",
+      "name": "Ice Cream Hermit Crab",
+      "rarity": "ur",
+      "image": "/assets/pets/ice-cream-hermit-crab.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ice-cube",
+      "name": "Ice Cube",
+      "rarity": "r",
+      "image": "/assets/pets/ice-cube.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ice-golem",
+      "name": "Ice Golem",
+      "rarity": "l",
+      "image": "/assets/pets/ice-golem.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ice-moth-dragon",
+      "name": "Ice Moth Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/ice-moth-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ice-wolf",
+      "name": "Ice Wolf",
+      "rarity": "ur",
+      "image": "/assets/pets/ice-wolf.png",
+      "benchmark": false
+    },
+    {
+      "slug": "icy-porcupine",
+      "name": "Icy Porcupine",
+      "rarity": "ur",
+      "image": "/assets/pets/icy-porcupine.png",
+      "benchmark": false
+    },
+    {
+      "slug": "indian-flying-fox",
+      "name": "Indian Flying Fox",
+      "rarity": "ur",
+      "image": "/assets/pets/indian-flying-fox.png",
+      "benchmark": false
+    },
+    {
+      "slug": "indian-leopard",
+      "name": "Indian Leopard",
+      "rarity": "r",
+      "image": "/assets/pets/indian-leopard.png",
+      "benchmark": false
+    },
+    {
+      "slug": "influencer-gibbon",
+      "name": "Influencer Gibbon",
+      "rarity": "l",
+      "image": "/assets/pets/influencer-gibbon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "inmate-capuchin-monkey-pet",
+      "name": "Inmate Capuchin Monkey",
+      "rarity": "ur",
+      "image": "/assets/pets/inmate-capuchin-monkey-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "irish-elk",
+      "name": "Irish Elk",
+      "rarity": "r",
+      "image": "/assets/pets/irish-elk.png",
+      "benchmark": false
+    },
+    {
+      "slug": "irish-water-spaniel",
+      "name": "Irish Water Spaniel",
+      "rarity": "ur",
+      "image": "/assets/pets/irish-water-spaniel.png",
+      "benchmark": false
+    },
+    {
+      "slug": "island-tarsier",
+      "name": "Island Tarsier",
+      "rarity": "c",
+      "image": "/assets/pets/island-tarsier.png",
+      "benchmark": false
+    },
+    {
+      "slug": "japanese-snow-fairy",
+      "name": "Japanese Snow Fairy",
+      "rarity": "c",
+      "image": "/assets/pets/japanese-snow-fairy.png",
+      "benchmark": false
+    },
+    {
+      "slug": "jekyll-hydra",
+      "name": "Jekyll Hydra",
+      "rarity": "l",
+      "image": "/assets/pets/jekyll-hydra.png",
+      "benchmark": false
+    },
+    {
+      "slug": "jellyfish",
+      "name": "Jellyfish",
+      "rarity": "ur",
+      "image": "/assets/pets/jellyfish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "jiggly-jerboa",
+      "name": "Jiggly Jerboa",
+      "rarity": "c",
+      "image": "/assets/pets/jiggly-jerboa.png",
+      "benchmark": false
+    },
+    {
+      "slug": "jousting-horse",
+      "name": "Jousting Horse",
+      "rarity": "l",
+      "image": "/assets/pets/jousting-horse.png",
+      "benchmark": false
+    },
+    {
+      "slug": "jumping-spider",
+      "name": "Jumping Spider",
+      "rarity": "u",
+      "image": "/assets/pets/jumping-spider.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kage-crow",
+      "name": "Kage Crow",
+      "rarity": "ur",
+      "image": "/assets/pets/kage-crow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kaijunior",
+      "name": "Kaijunior",
+      "rarity": "review",
+      "image": "/assets/pets/kaijunior.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kakapo",
+      "name": "Kakapo",
+      "rarity": "u",
+      "image": "/assets/pets/kakapo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kangaroo",
+      "name": "Kangaroo",
+      "rarity": "l",
+      "image": "/assets/pets/kangaroo.png",
+      "benchmark": true
+    },
+    {
+      "slug": "kappakid",
+      "name": "Kappakid",
+      "rarity": "r",
+      "image": "/assets/pets/kappakid.png",
+      "benchmark": false
+    },
+    {
+      "slug": "karate-gorilla-pet",
+      "name": "Karate Gorilla",
+      "rarity": "ur",
+      "image": "/assets/pets/karate-gorilla-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kelp-captain",
+      "name": "Kelp Captain",
+      "rarity": "l",
+      "image": "/assets/pets/kelp-captain.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kelp-crewmate",
+      "name": "Kelp Crewmate",
+      "rarity": "u",
+      "image": "/assets/pets/kelp-crewmate.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kelp-hunter",
+      "name": "Kelp Hunter",
+      "rarity": "ur",
+      "image": "/assets/pets/kelp-hunter.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kelp-raider",
+      "name": "Kelp Raider",
+      "rarity": "r",
+      "image": "/assets/pets/kelp-raider.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kid-goat",
+      "name": "Kid Goat",
+      "rarity": "c",
+      "image": "/assets/pets/kid-goat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "king-bee",
+      "name": "King Bee",
+      "rarity": "l",
+      "image": "/assets/pets/king-bee.png",
+      "benchmark": false
+    },
+    {
+      "slug": "king-penguin",
+      "name": "King Penguin",
+      "rarity": "ur",
+      "image": "/assets/pets/king-penguin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kirin",
+      "name": "Kirin",
+      "rarity": "u",
+      "image": "/assets/pets/kirin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kitsune",
+      "name": "Kitsune",
+      "rarity": "l",
+      "image": "/assets/pets/kitsune.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kitty-bat",
+      "name": "Kitty Bat",
+      "rarity": "review",
+      "image": "/assets/pets/kitty-bat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kiwi",
+      "name": "Kiwi",
+      "rarity": "r",
+      "image": "/assets/pets/kiwi.png",
+      "benchmark": false
+    },
+    {
+      "slug": "koala",
+      "name": "Koala",
+      "rarity": "ur",
+      "image": "/assets/pets/koala.png",
+      "benchmark": false
+    },
+    {
+      "slug": "koi-carp",
+      "name": "Koi Carp",
+      "rarity": "r",
+      "image": "/assets/pets/koi-carp.png",
+      "benchmark": false
+    },
+    {
+      "slug": "komodo-dragon",
+      "name": "Komodo Dragon",
+      "rarity": "ur",
+      "image": "/assets/pets/komodo-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kookaburra",
+      "name": "Kookaburra",
+      "rarity": "ur",
+      "image": "/assets/pets/kookaburra.png",
+      "benchmark": false
+    },
+    {
+      "slug": "kraken",
+      "name": "Kraken",
+      "rarity": "l",
+      "image": "/assets/pets/kraken.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ladybug",
+      "name": "Ladybug",
+      "rarity": "ur",
+      "image": "/assets/pets/ladybug.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lamb",
+      "name": "Lamb",
+      "rarity": "ur",
+      "image": "/assets/pets/lamb.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lammergeier",
+      "name": "Lammergeier",
+      "rarity": "ur",
+      "image": "/assets/pets/lammergeier.png",
+      "benchmark": false
+    },
+    {
+      "slug": "latte-kitsune",
+      "name": "Latte Kitsune",
+      "rarity": "l",
+      "image": "/assets/pets/latte-kitsune.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lava-dragon",
+      "name": "Lava Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/lava-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lava-wolf",
+      "name": "Lava Wolf",
+      "rarity": "l",
+      "image": "/assets/pets/lava-wolf.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lavender-dragon",
+      "name": "Lavender Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/lavender-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "leopard-cat",
+      "name": "Leopard Cat",
+      "rarity": "r",
+      "image": "/assets/pets/leopard-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "leopard-shark",
+      "name": "Leopard Shark",
+      "rarity": "r",
+      "image": "/assets/pets/leopard-shark.png",
+      "benchmark": false
+    },
+    {
+      "slug": "leviathan",
+      "name": "Leviathan",
+      "rarity": "l",
+      "image": "/assets/pets/leviathan.png",
+      "benchmark": false
+    },
+    {
+      "slug": "liger",
+      "name": "Liger",
+      "rarity": "c",
+      "image": "/assets/pets/liger.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lion-cub",
+      "name": "Lion Cub",
+      "rarity": "ur",
+      "image": "/assets/pets/lion-cub.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lion",
+      "name": "Lion",
+      "rarity": "ur",
+      "image": "/assets/pets/lion.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lionfish",
+      "name": "Lionfish",
+      "rarity": "ur",
+      "image": "/assets/pets/lionfish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "llama",
+      "name": "Lloma",
+      "rarity": "ur",
+      "image": "/assets/pets/llama.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lobster",
+      "name": "Lobster",
+      "rarity": "u",
+      "image": "/assets/pets/lobster.png",
+      "benchmark": false
+    },
+    {
+      "slug": "longhorn-cow",
+      "name": "Longhorn Cow",
+      "rarity": "r",
+      "image": "/assets/pets/longhorn-cow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "love-bird",
+      "name": "Love Bird",
+      "rarity": "r",
+      "image": "/assets/pets/love-bird.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lunar-gold-tiger",
+      "name": "Lunar Gold Tiger",
+      "rarity": "l",
+      "image": "/assets/pets/lunar-gold-tiger.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lunar-moon-bear",
+      "name": "Lunar Moon Bear",
+      "rarity": "l",
+      "image": "/assets/pets/lunar-moon-bear.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lunar-ox",
+      "name": "Lunar Ox",
+      "rarity": "ur",
+      "image": "/assets/pets/lunar-ox.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lunar-tiger",
+      "name": "Lunar Tiger",
+      "rarity": "r",
+      "image": "/assets/pets/lunar-tiger.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lunar-white-tiger",
+      "name": "Lunar White Tiger",
+      "rarity": "ur",
+      "image": "/assets/pets/lunar-white-tiger.png",
+      "benchmark": false
+    },
+    {
+      "slug": "lynx",
+      "name": "Lynx",
+      "rarity": "r",
+      "image": "/assets/pets/lynx.png",
+      "benchmark": false
+    },
+    {
+      "slug": "magma-moose",
+      "name": "Magma Moose",
+      "rarity": "ur",
+      "image": "/assets/pets/magma-moose.png",
+      "benchmark": false
+    },
+    {
+      "slug": "magma-snail",
+      "name": "Magma Snail",
+      "rarity": "ur",
+      "image": "/assets/pets/magma-snail.png",
+      "benchmark": false
+    },
+    {
+      "slug": "magpie",
+      "name": "Magpie",
+      "rarity": "u",
+      "image": "/assets/pets/magpie.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mahi-mahi",
+      "name": "Mahi Mahi",
+      "rarity": "u",
+      "image": "/assets/pets/mahi-mahi.png",
+      "benchmark": false
+    },
+    {
+      "slug": "maine-coon",
+      "name": "Maine Coon",
+      "rarity": "ur",
+      "image": "/assets/pets/maine-coon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "majestic-pony",
+      "name": "Majestic Pony",
+      "rarity": "l",
+      "image": "/assets/pets/majestic-pony.png",
+      "benchmark": false
+    },
+    {
+      "slug": "malayan-tapir",
+      "name": "Malayan Tapir",
+      "rarity": "c",
+      "image": "/assets/pets/malayan-tapir.png",
+      "benchmark": false
+    },
+    {
+      "slug": "maleo-bird",
+      "name": "Maleo Bird",
+      "rarity": "c",
+      "image": "/assets/pets/maleo-bird.png",
+      "benchmark": false
+    },
+    {
+      "slug": "maneki-neko",
+      "name": "Maneki-Neko",
+      "rarity": "l",
+      "image": "/assets/pets/maneki-neko.png",
+      "benchmark": false
+    },
+    {
+      "slug": "manta-ray",
+      "name": "Manta Ray",
+      "rarity": "ur",
+      "image": "/assets/pets/manta-ray.png",
+      "benchmark": false
+    },
+    {
+      "slug": "many-mackerel",
+      "name": "Many Mackerel",
+      "rarity": "ur",
+      "image": "/assets/pets/many-mackerel.png",
+      "benchmark": false
+    },
+    {
+      "slug": "marabou-stork",
+      "name": "Marabou Stork",
+      "rarity": "r",
+      "image": "/assets/pets/marabou-stork.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mecha-meow",
+      "name": "Mecha Meow",
+      "rarity": "l",
+      "image": "/assets/pets/mecha-meow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mecha-r4bbit",
+      "name": "Mecha R4BBIT",
+      "rarity": "r",
+      "image": "/assets/pets/mecha-r4bbit.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mechapup",
+      "name": "Mechapup",
+      "rarity": "l",
+      "image": "/assets/pets/mechapup.png",
+      "benchmark": false
+    },
+    {
+      "slug": "meerkat",
+      "name": "Meerkat",
+      "rarity": "u",
+      "image": "/assets/pets/meerkat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "merhorse",
+      "name": "Merhorse",
+      "rarity": "r",
+      "image": "/assets/pets/merhorse.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mermicorn",
+      "name": "Mermicorn",
+      "rarity": "l",
+      "image": "/assets/pets/mermicorn.png",
+      "benchmark": false
+    },
+    {
+      "slug": "merry-mistletroll",
+      "name": "Merry Mistletroll",
+      "rarity": "ur",
+      "image": "/assets/pets/merry-mistletroll.png",
+      "benchmark": false
+    },
+    {
+      "slug": "metal-ox",
+      "name": "Metal Ox",
+      "rarity": "l",
+      "image": "/assets/pets/metal-ox.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mexican-wolf",
+      "name": "Mexican Wolf",
+      "rarity": "r",
+      "image": "/assets/pets/mexican-wolf.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mfr-sandwich",
+      "name": "MFR Sandwich",
+      "rarity": "review",
+      "image": "/assets/pets/mfr-sandwich.png",
+      "benchmark": false
+    },
+    {
+      "slug": "midnight-dragon",
+      "name": "Midnight Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/midnight-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "milk-choco-bunny",
+      "name": "Milk Choco Bunny",
+      "rarity": "review",
+      "image": "/assets/pets/milk-choco-bunny.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mini-pig",
+      "name": "Mini Pig",
+      "rarity": "ur",
+      "image": "/assets/pets/mini-pig.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mini-schnauzer",
+      "name": "Mini Schnauzer",
+      "rarity": "ur",
+      "image": "/assets/pets/mini-schnauzer.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mirai-moth",
+      "name": "Mirai Moth",
+      "rarity": "ur",
+      "image": "/assets/pets/mirai-moth.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mistletroll",
+      "name": "Mistletroll",
+      "rarity": "u",
+      "image": "/assets/pets/mistletroll.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mochi-meow",
+      "name": "Mochi Meow",
+      "rarity": "l",
+      "image": "/assets/pets/mochi-meow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mole-pet",
+      "name": "Mole Pet",
+      "rarity": "review",
+      "image": "/assets/pets/mole-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "momma-moose",
+      "name": "Momma Moose",
+      "rarity": "ur",
+      "image": "/assets/pets/momma-moose.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mongoose",
+      "name": "Mongoose",
+      "rarity": "c",
+      "image": "/assets/pets/mongoose.png",
+      "benchmark": false
+    },
+    {
+      "slug": "monkey-king-pet",
+      "name": "Monkey King",
+      "rarity": "l",
+      "image": "/assets/pets/monkey-king-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "monkey",
+      "name": "Monkey",
+      "rarity": "r",
+      "image": "/assets/pets/monkey.png",
+      "benchmark": false
+    },
+    {
+      "slug": "moon-rabbit",
+      "name": "Moon Rabbit",
+      "rarity": "r",
+      "image": "/assets/pets/moon-rabbit.png",
+      "benchmark": false
+    },
+    {
+      "slug": "moonbeam-butterfly",
+      "name": "Moonbeam Butterfly",
+      "rarity": "l",
+      "image": "/assets/pets/moonbeam-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "moonlight-moth",
+      "name": "Moonlight Moth",
+      "rarity": "r",
+      "image": "/assets/pets/moonlight-moth.png",
+      "benchmark": false
+    },
+    {
+      "slug": "moonpine",
+      "name": "Moonpine",
+      "rarity": "r",
+      "image": "/assets/pets/moonpine.png",
+      "benchmark": false
+    },
+    {
+      "slug": "moose-calf",
+      "name": "Moose Calf",
+      "rarity": "l",
+      "image": "/assets/pets/moose-calf.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mosquito",
+      "name": "Mosquito",
+      "rarity": "c",
+      "image": "/assets/pets/mosquito.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mouse",
+      "name": "Mouse",
+      "rarity": "c",
+      "image": "/assets/pets/mouse.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mr-whiskerpips",
+      "name": "Mr. Whiskerpips",
+      "rarity": "ur",
+      "image": "/assets/pets/mr-whiskerpips.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mrs-whiskerpips",
+      "name": "Mrs. Whiskerpips",
+      "rarity": "ur",
+      "image": "/assets/pets/mrs-whiskerpips.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mule",
+      "name": "Mule",
+      "rarity": "r",
+      "image": "/assets/pets/mule.png",
+      "benchmark": false
+    },
+    {
+      "slug": "munchkin-cat",
+      "name": "Munchkin Cat",
+      "rarity": "r",
+      "image": "/assets/pets/munchkin-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "mushroom-friend-pet",
+      "name": "Mushroom Friend",
+      "rarity": "l",
+      "image": "/assets/pets/mushroom-friend-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "musk-ox",
+      "name": "Musk Ox",
+      "rarity": "r",
+      "image": "/assets/pets/musk-ox.png",
+      "benchmark": false
+    },
+    {
+      "slug": "muskrat",
+      "name": "Muskrat",
+      "rarity": "u",
+      "image": "/assets/pets/muskrat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "naga-dragon",
+      "name": "Naga Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/naga-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "narwhal",
+      "name": "Narwhal",
+      "rarity": "r",
+      "image": "/assets/pets/narwhal.png",
+      "benchmark": false
+    },
+    {
+      "slug": "naughty-mistletroll",
+      "name": "Naughty Mistletroll",
+      "rarity": "l",
+      "image": "/assets/pets/naughty-mistletroll.png",
+      "benchmark": false
+    },
+    {
+      "slug": "nautilus",
+      "name": "Nautilus",
+      "rarity": "ur",
+      "image": "/assets/pets/nautilus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "nebula-snake",
+      "name": "Nebula Snake",
+      "rarity": "r",
+      "image": "/assets/pets/nebula-snake.png",
+      "benchmark": false
+    },
+    {
+      "slug": "nessie",
+      "name": "Nessie",
+      "rarity": "l",
+      "image": "/assets/pets/nessie.png",
+      "benchmark": false
+    },
+    {
+      "slug": "nightmare-owl",
+      "name": "Nightmare Owl",
+      "rarity": "ur",
+      "image": "/assets/pets/nightmare-owl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ninja-monkey-pet",
+      "name": "Ninja Monkey",
+      "rarity": "l",
+      "image": "/assets/pets/ninja-monkey-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "nutcracker-squirrel",
+      "name": "Nutcracker Squirrel",
+      "rarity": "r",
+      "image": "/assets/pets/nutcracker-squirrel.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ocelot",
+      "name": "Ocelot",
+      "rarity": "r",
+      "image": "/assets/pets/ocelot.png",
+      "benchmark": false
+    },
+    {
+      "slug": "octopus",
+      "name": "Octopus",
+      "rarity": "l",
+      "image": "/assets/pets/octopus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "officer-gibbon",
+      "name": "Officer Gibbon",
+      "rarity": "ur",
+      "image": "/assets/pets/officer-gibbon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "old-king-coal",
+      "name": "Old King Coal",
+      "rarity": "u",
+      "image": "/assets/pets/old-king-coal.png",
+      "benchmark": false
+    },
+    {
+      "slug": "onza",
+      "name": "Onza",
+      "rarity": "ur",
+      "image": "/assets/pets/onza.png",
+      "benchmark": false
+    },
+    {
+      "slug": "orange-betta-fish",
+      "name": "Orange Betta Fish",
+      "rarity": "r",
+      "image": "/assets/pets/orange-betta-fish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "orange-butterfly",
+      "name": "Orange Butterfly",
+      "rarity": "ur",
+      "image": "/assets/pets/orange-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "orangutan",
+      "name": "Orangutan",
+      "rarity": "r",
+      "image": "/assets/pets/orangutan.png",
+      "benchmark": false
+    },
+    {
+      "slug": "orca",
+      "name": "Orca",
+      "rarity": "ur",
+      "image": "/assets/pets/orca.png",
+      "benchmark": false
+    },
+    {
+      "slug": "orchid-butterfly",
+      "name": "Orchid Butterfly",
+      "rarity": "l",
+      "image": "/assets/pets/orchid-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ornate-horned-frog",
+      "name": "Ornate Horned Frog",
+      "rarity": "ur",
+      "image": "/assets/pets/ornate-horned-frog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "oryx",
+      "name": "Oryx",
+      "rarity": "r",
+      "image": "/assets/pets/oryx.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ostrich",
+      "name": "Ostrich",
+      "rarity": "r",
+      "image": "/assets/pets/ostrich.png",
+      "benchmark": false
+    },
+    {
+      "slug": "otter",
+      "name": "Otter",
+      "rarity": "c",
+      "image": "/assets/pets/otter.png",
+      "benchmark": false
+    },
+    {
+      "slug": "owl",
+      "name": "Owl",
+      "rarity": "l",
+      "image": "/assets/pets/owl.png",
+      "benchmark": true
+    },
+    {
+      "slug": "owlbear",
+      "name": "Owlbear",
+      "rarity": "l",
+      "image": "/assets/pets/owlbear.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ox",
+      "name": "Ox",
+      "rarity": "r",
+      "image": "/assets/pets/ox.png",
+      "benchmark": false
+    },
+    {
+      "slug": "panda",
+      "name": "Panda",
+      "rarity": "ur",
+      "image": "/assets/pets/panda.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pangolin",
+      "name": "Pangolin",
+      "rarity": "ur",
+      "image": "/assets/pets/pangolin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "papa-moose",
+      "name": "Papa Moose",
+      "rarity": "l",
+      "image": "/assets/pets/papa-moose.png",
+      "benchmark": false
+    },
+    {
+      "slug": "parakeet",
+      "name": "Parakeet",
+      "rarity": "r",
+      "image": "/assets/pets/parakeet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "parrot",
+      "name": "Parrot",
+      "rarity": "l",
+      "image": "/assets/pets/parrot.png",
+      "benchmark": true
+    },
+    {
+      "slug": "partridge",
+      "name": "Partridge",
+      "rarity": "ur",
+      "image": "/assets/pets/partridge.png",
+      "benchmark": false
+    },
+    {
+      "slug": "patchy-bear",
+      "name": "Patchy Bear",
+      "rarity": "u",
+      "image": "/assets/pets/patchy-bear.png",
+      "benchmark": false
+    },
+    {
+      "slug": "peach-owl",
+      "name": "Peach Owl",
+      "rarity": "l",
+      "image": "/assets/pets/peach-owl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "peacock",
+      "name": "Peacock",
+      "rarity": "l",
+      "image": "/assets/pets/peacock.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pelican",
+      "name": "Pelican",
+      "rarity": "ur",
+      "image": "/assets/pets/pelican.png",
+      "benchmark": false
+    },
+    {
+      "slug": "penguin",
+      "name": "Penguin",
+      "rarity": "ur",
+      "image": "/assets/pets/penguin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "peppermint-penguin",
+      "name": "Peppermint Penguin",
+      "rarity": "ur",
+      "image": "/assets/pets/peppermint-penguin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "peregrine-falcon",
+      "name": "Peregrine Falcon",
+      "rarity": "ur",
+      "image": "/assets/pets/peregrine-falcon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "persian-cat",
+      "name": "Persian Cat",
+      "rarity": "ur",
+      "image": "/assets/pets/persian-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pet-rock",
+      "name": "Pet Rock",
+      "rarity": "u",
+      "image": "/assets/pets/pet-rock.png",
+      "benchmark": false
+    },
+    {
+      "slug": "phantom-dragon",
+      "name": "Phantom Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/phantom-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "phoenix-pet",
+      "name": "Phoenix",
+      "rarity": "l",
+      "image": "/assets/pets/phoenix-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pig",
+      "name": "Pig",
+      "rarity": "r",
+      "image": "/assets/pets/pig.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pine-marten",
+      "name": "Pine Marten",
+      "rarity": "ur",
+      "image": "/assets/pets/pine-marten.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pineapple-owl",
+      "name": "Pineapple Owl",
+      "rarity": "l",
+      "image": "/assets/pets/pineapple-owl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pink-betta-fish",
+      "name": "Pink Betta Fish",
+      "rarity": "ur",
+      "image": "/assets/pets/pink-betta-fish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pink-cat",
+      "name": "Pink Cat",
+      "rarity": "u",
+      "image": "/assets/pets/pink-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "piranha",
+      "name": "Piranha",
+      "rarity": "c",
+      "image": "/assets/pets/piranha.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pirate-ghost-capuchin-monkey-pet",
+      "name": "Pirate Ghost Capuchin Monkey",
+      "rarity": "l",
+      "image": "/assets/pets/pirate-ghost-capuchin-monkey-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pirate-hermit-crab",
+      "name": "Pirate Hermit Crab",
+      "rarity": "l",
+      "image": "/assets/pets/pirate-hermit-crab.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pistachio",
+      "name": "Pistachio",
+      "rarity": "u",
+      "image": "/assets/pets/pistachio.png",
+      "benchmark": false
+    },
+    {
+      "slug": "platypus",
+      "name": "Platypus",
+      "rarity": "ur",
+      "image": "/assets/pets/platypus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "poison-dart-frog",
+      "name": "Poison Dart Frog",
+      "rarity": "r",
+      "image": "/assets/pets/poison-dart-frog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "polar-bear",
+      "name": "Polar Bear",
+      "rarity": "r",
+      "image": "/assets/pets/polar-bear.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pomeranian",
+      "name": "Pomeranian",
+      "rarity": "ur",
+      "image": "/assets/pets/pomeranian.png",
+      "benchmark": false
+    },
+    {
+      "slug": "poodle",
+      "name": "Poodle",
+      "rarity": "u",
+      "image": "/assets/pets/poodle.png",
+      "benchmark": false
+    },
+    {
+      "slug": "possum",
+      "name": "Possum",
+      "rarity": "u",
+      "image": "/assets/pets/possum.png",
+      "benchmark": false
+    },
+    {
+      "slug": "practice-dog",
+      "name": "Practice Dog",
+      "rarity": "c",
+      "image": "/assets/pets/practice-dog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "praying-mantis-pet",
+      "name": "Praying Mantis Pet",
+      "rarity": "review",
+      "image": "/assets/pets/praying-mantis-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "preppy-capuchin-monkey-pet",
+      "name": "Preppy Capuchin Monkey",
+      "rarity": "ur",
+      "image": "/assets/pets/preppy-capuchin-monkey-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pretty-pony",
+      "name": "Pretty Pony",
+      "rarity": "ur",
+      "image": "/assets/pets/pretty-pony.png",
+      "benchmark": false
+    },
+    {
+      "slug": "priceless-shrimp",
+      "name": "Priceless Shrimp",
+      "rarity": "l",
+      "image": "/assets/pets/priceless-shrimp.png",
+      "benchmark": false
+    },
+    {
+      "slug": "primal-kaijunior",
+      "name": "Primal Kaijunior",
+      "rarity": "l",
+      "image": "/assets/pets/primal-kaijunior.png",
+      "benchmark": false
+    },
+    {
+      "slug": "princess-capuchin-monkey-pet",
+      "name": "Princess Capuchin Monkey",
+      "rarity": "l",
+      "image": "/assets/pets/princess-capuchin-monkey-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "prism-snake",
+      "name": "Prism Snake",
+      "rarity": "r",
+      "image": "/assets/pets/prism-snake.png",
+      "benchmark": false
+    },
+    {
+      "slug": "prismatic-butterfly",
+      "name": "Prismatic Butterfly",
+      "rarity": "l",
+      "image": "/assets/pets/prismatic-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pterodactyl",
+      "name": "Pterodactyl",
+      "rarity": "r",
+      "image": "/assets/pets/pterodactyl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pudding-cat",
+      "name": "Pudding Cat",
+      "rarity": "r",
+      "image": "/assets/pets/pudding-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "puffer-fish",
+      "name": "Puffer Fish",
+      "rarity": "ur",
+      "image": "/assets/pets/puffer-fish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "puffin",
+      "name": "Puffin",
+      "rarity": "ur",
+      "image": "/assets/pets/puffin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "puma",
+      "name": "Puma",
+      "rarity": "u",
+      "image": "/assets/pets/puma.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pumpkin-friend",
+      "name": "Pumpkin Friend",
+      "rarity": "ur",
+      "image": "/assets/pets/pumpkin-friend.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pumpkin-pet",
+      "name": "Pumpkin Pet",
+      "rarity": "review",
+      "image": "/assets/pets/pumpkin-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "punk-pony",
+      "name": "Punk Pony",
+      "rarity": "r",
+      "image": "/assets/pets/punk-pony.png",
+      "benchmark": false
+    },
+    {
+      "slug": "pupcake",
+      "name": "Pupcake",
+      "rarity": "review",
+      "image": "/assets/pets/pupcake.png",
+      "benchmark": false
+    },
+    {
+      "slug": "puptune",
+      "name": "Puptune",
+      "rarity": "ur",
+      "image": "/assets/pets/puptune.png",
+      "benchmark": false
+    },
+    {
+      "slug": "purple-butterfly",
+      "name": "Purple Butterfly",
+      "rarity": "ur",
+      "image": "/assets/pets/purple-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "queen-bee",
+      "name": "Queen Bee",
+      "rarity": "l",
+      "image": "/assets/pets/queen-bee.png",
+      "benchmark": false
+    },
+    {
+      "slug": "quetzalcoatl",
+      "name": "Quetzalcoatl",
+      "rarity": "l",
+      "image": "/assets/pets/quetzalcoatl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "quokka",
+      "name": "Quokka",
+      "rarity": "u",
+      "image": "/assets/pets/quokka.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rabbit",
+      "name": "Rabbit",
+      "rarity": "r",
+      "image": "/assets/pets/rabbit.png",
+      "benchmark": false
+    },
+    {
+      "slug": "raccoon",
+      "name": "Raccoon",
+      "rarity": "u",
+      "image": "/assets/pets/raccoon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rainbow-dragon",
+      "name": "Rainbow Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/rainbow-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ram",
+      "name": "Ram",
+      "rarity": "ur",
+      "image": "/assets/pets/ram.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rat",
+      "name": "Rat",
+      "rarity": "r",
+      "image": "/assets/pets/rat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ratatoskr",
+      "name": "Ratatoskr",
+      "rarity": "c",
+      "image": "/assets/pets/ratatoskr.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rattlesnake",
+      "name": "Rattlesnake",
+      "rarity": "u",
+      "image": "/assets/pets/rattlesnake.png",
+      "benchmark": false
+    },
+    {
+      "slug": "red-cardinal",
+      "name": "Red Cardinal",
+      "rarity": "u",
+      "image": "/assets/pets/red-cardinal.png",
+      "benchmark": false
+    },
+    {
+      "slug": "red-crowned-crane",
+      "name": "Red Crowned Crane",
+      "rarity": "ur",
+      "image": "/assets/pets/red-crowned-crane.png",
+      "benchmark": false
+    },
+    {
+      "slug": "red-fox",
+      "name": "Red Fox",
+      "rarity": "r",
+      "image": "/assets/pets/red-fox.png",
+      "benchmark": false
+    },
+    {
+      "slug": "red-guinea-pig",
+      "name": "Red Guinea Pig",
+      "rarity": "review",
+      "image": "/assets/pets/red-guinea-pig.png",
+      "benchmark": false
+    },
+    {
+      "slug": "red-panda",
+      "name": "Red Panda",
+      "rarity": "ur",
+      "image": "/assets/pets/red-panda.png",
+      "benchmark": false
+    },
+    {
+      "slug": "red-sand-dollar",
+      "name": "Red Sand Dollar",
+      "rarity": "ur",
+      "image": "/assets/pets/red-sand-dollar.png",
+      "benchmark": false
+    },
+    {
+      "slug": "red-squirrel",
+      "name": "Red Squirrel",
+      "rarity": "ur",
+      "image": "/assets/pets/red-squirrel.png",
+      "benchmark": false
+    },
+    {
+      "slug": "reindeer",
+      "name": "Reindeer",
+      "rarity": "r",
+      "image": "/assets/pets/reindeer.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rhino-beetle",
+      "name": "Rhino Beetle",
+      "rarity": "u",
+      "image": "/assets/pets/rhino-beetle.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rhino",
+      "name": "Rhino",
+      "rarity": "r",
+      "image": "/assets/pets/rhino.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ribbon-seal",
+      "name": "Ribbon Seal",
+      "rarity": "ur",
+      "image": "/assets/pets/ribbon-seal.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rice-cake-rabbit",
+      "name": "Rice Cake Rabbit",
+      "rarity": "ur",
+      "image": "/assets/pets/rice-cake-rabbit.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ring-tailed-lemur",
+      "name": "Ring-tailed Lemur",
+      "rarity": "r",
+      "image": "/assets/pets/ring-tailed-lemur.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ringmaster-gibbon-pet",
+      "name": "Ringmaster Gibbon",
+      "rarity": "ur",
+      "image": "/assets/pets/ringmaster-gibbon-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "river",
+      "name": "River",
+      "rarity": "u",
+      "image": "/assets/pets/river.png",
+      "benchmark": false
+    },
+    {
+      "slug": "roadrunner",
+      "name": "Roadrunner",
+      "rarity": "ur",
+      "image": "/assets/pets/roadrunner.png",
+      "benchmark": false
+    },
+    {
+      "slug": "robin",
+      "name": "Robin",
+      "rarity": "c",
+      "image": "/assets/pets/robin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "robo-dog",
+      "name": "Robo Dog",
+      "rarity": "l",
+      "image": "/assets/pets/robo-dog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "robot",
+      "name": "Robot",
+      "rarity": "ur",
+      "image": "/assets/pets/robot.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rock-pigeon",
+      "name": "Rock Pigeon",
+      "rarity": "u",
+      "image": "/assets/pets/rock-pigeon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rock",
+      "name": "Rock",
+      "rarity": "u",
+      "image": "/assets/pets/rock.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rodeo-bull",
+      "name": "Rodeo Bull",
+      "rarity": "u",
+      "image": "/assets/pets/rodeo-bull.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rooster",
+      "name": "Rooster",
+      "rarity": "ur",
+      "image": "/assets/pets/rooster.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rose-dragon",
+      "name": "Rose Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/rose-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "rosy-maple-moth-pet",
+      "name": "Rosy Maple Moth",
+      "rarity": "l",
+      "image": "/assets/pets/rosy-maple-moth-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "royal-capuchin-monkey",
+      "name": "Royal Capuchin Monkey",
+      "rarity": "l",
+      "image": "/assets/pets/royal-capuchin-monkey.png",
+      "benchmark": false
+    },
+    {
+      "slug": "royal-corgi",
+      "name": "Royal Corgi",
+      "rarity": "ur",
+      "image": "/assets/pets/royal-corgi.png",
+      "benchmark": false
+    },
+    {
+      "slug": "royal-mistletroll",
+      "name": "Royal Mistletroll",
+      "rarity": "l",
+      "image": "/assets/pets/royal-mistletroll.png",
+      "benchmark": false
+    },
+    {
+      "slug": "royal-palace-spaniel",
+      "name": "Royal Palace Spaniel",
+      "rarity": "ur",
+      "image": "/assets/pets/royal-palace-spaniel.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sabertooth",
+      "name": "Sabertooth",
+      "rarity": "ur",
+      "image": "/assets/pets/sabertooth.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sado-mole",
+      "name": "Sado Mole",
+      "rarity": "c",
+      "image": "/assets/pets/sado-mole.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sakura-spirit",
+      "name": "Sakura Spirit",
+      "rarity": "l",
+      "image": "/assets/pets/sakura-spirit.png",
+      "benchmark": false
+    },
+    {
+      "slug": "salamander",
+      "name": "Salamander",
+      "rarity": "ur",
+      "image": "/assets/pets/salamander.png",
+      "benchmark": false
+    },
+    {
+      "slug": "samoyed",
+      "name": "Samoyed",
+      "rarity": "r",
+      "image": "/assets/pets/samoyed.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sandfish",
+      "name": "Sandfish",
+      "rarity": "c",
+      "image": "/assets/pets/sandfish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sasquatch",
+      "name": "Sasquatch",
+      "rarity": "r",
+      "image": "/assets/pets/sasquatch.png",
+      "benchmark": false
+    },
+    {
+      "slug": "scarebear",
+      "name": "Scarebear",
+      "rarity": "l",
+      "image": "/assets/pets/scarebear.png",
+      "benchmark": false
+    },
+    {
+      "slug": "scarecrow-cat",
+      "name": "Scarecrow Cat",
+      "rarity": "ur",
+      "image": "/assets/pets/scarecrow-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "scarecrow-crow",
+      "name": "Scarecrow Crow",
+      "rarity": "l",
+      "image": "/assets/pets/scarecrow-crow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "scarecrow-horse",
+      "name": "Scarecrow Horse",
+      "rarity": "r",
+      "image": "/assets/pets/scarecrow-horse.png",
+      "benchmark": false
+    },
+    {
+      "slug": "scarecrow",
+      "name": "Scarecrow",
+      "rarity": "u",
+      "image": "/assets/pets/scarecrow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "scarlet-butterfly",
+      "name": "Scarlet Butterfly",
+      "rarity": "ur",
+      "image": "/assets/pets/scarlet-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "scoob",
+      "name": "Scoob",
+      "rarity": "r",
+      "image": "/assets/pets/scoob.png",
+      "benchmark": false
+    },
+    {
+      "slug": "scorching-kaijunior",
+      "name": "Scorching Kaijunior",
+      "rarity": "l",
+      "image": "/assets/pets/scorching-kaijunior.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sea-angel",
+      "name": "Sea Angel",
+      "rarity": "r",
+      "image": "/assets/pets/sea-angel.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sea-skeleton-panda",
+      "name": "Sea Skeleton Panda",
+      "rarity": "u",
+      "image": "/assets/pets/sea-skeleton-panda.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sea-slug",
+      "name": "Sea Slug",
+      "rarity": "ur",
+      "image": "/assets/pets/sea-slug.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sea-turtle",
+      "name": "Sea Turtle",
+      "rarity": "l",
+      "image": "/assets/pets/sea-turtle.png",
+      "benchmark": false
+    },
+    {
+      "slug": "seabed-creeper",
+      "name": "Seabed Creeper",
+      "rarity": "ur",
+      "image": "/assets/pets/seabed-creeper.png",
+      "benchmark": false
+    },
+    {
+      "slug": "seafoam-butterfly",
+      "name": "Seafoam Butterfly",
+      "rarity": "ur",
+      "image": "/assets/pets/seafoam-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "seagull",
+      "name": "Seagull",
+      "rarity": "ur",
+      "image": "/assets/pets/seagull.png",
+      "benchmark": false
+    },
+    {
+      "slug": "seahorse",
+      "name": "Seahorse",
+      "rarity": "r",
+      "image": "/assets/pets/seahorse.png",
+      "benchmark": false
+    },
+    {
+      "slug": "shadow-dragon",
+      "name": "Shadow Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/shadow-dragon.png",
+      "benchmark": true
+    },
+    {
+      "slug": "shark-puppy",
+      "name": "Shark Puppy",
+      "rarity": "l",
+      "image": "/assets/pets/shark-puppy.png",
+      "benchmark": false
+    },
+    {
+      "slug": "shark",
+      "name": "Shark",
+      "rarity": "l",
+      "image": "/assets/pets/shark.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sheeeeep",
+      "name": "Sheeeeep",
+      "rarity": "ur",
+      "image": "/assets/pets/sheeeeep.png",
+      "benchmark": false
+    },
+    {
+      "slug": "shetland-pony-dark-brown",
+      "name": "Shetland Pony Dark Brown",
+      "rarity": "r",
+      "image": "/assets/pets/shetland-pony-dark-brown.png",
+      "benchmark": false
+    },
+    {
+      "slug": "shetland-pony-light-brown",
+      "name": "Shetland Pony Light Brown",
+      "rarity": "l",
+      "image": "/assets/pets/shetland-pony-light-brown.png",
+      "benchmark": false
+    },
+    {
+      "slug": "shetland-pony-white",
+      "name": "Shetland Pony White",
+      "rarity": "ur",
+      "image": "/assets/pets/shetland-pony-white.png",
+      "benchmark": false
+    },
+    {
+      "slug": "shiba-inu",
+      "name": "Shiba Inu",
+      "rarity": "ur",
+      "image": "/assets/pets/shiba-inu.png",
+      "benchmark": false
+    },
+    {
+      "slug": "shih-tzu",
+      "name": "Shih Tzu",
+      "rarity": "u",
+      "image": "/assets/pets/shih-tzu.png",
+      "benchmark": false
+    },
+    {
+      "slug": "shiver-wolf",
+      "name": "Shiver Wolf",
+      "rarity": "r",
+      "image": "/assets/pets/shiver-wolf.png",
+      "benchmark": false
+    },
+    {
+      "slug": "show-pony",
+      "name": "Show Pony",
+      "rarity": "c",
+      "image": "/assets/pets/show-pony.png",
+      "benchmark": false
+    },
+    {
+      "slug": "shrew",
+      "name": "Shrew",
+      "rarity": "r",
+      "image": "/assets/pets/shrew.png",
+      "benchmark": false
+    },
+    {
+      "slug": "siamese-cat",
+      "name": "Siamese Cat",
+      "rarity": "ur",
+      "image": "/assets/pets/siamese-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "silly-duck",
+      "name": "Silly Duck",
+      "rarity": "u",
+      "image": "/assets/pets/silly-duck.png",
+      "benchmark": false
+    },
+    {
+      "slug": "silverback-gorilla",
+      "name": "Silverback Gorilla",
+      "rarity": "l",
+      "image": "/assets/pets/silverback-gorilla.png",
+      "benchmark": false
+    },
+    {
+      "slug": "singularity-beetle",
+      "name": "Singularity Beetle",
+      "rarity": "r",
+      "image": "/assets/pets/singularity-beetle.png",
+      "benchmark": false
+    },
+    {
+      "slug": "singularity-pisces",
+      "name": "Singularity Pisces",
+      "rarity": "r",
+      "image": "/assets/pets/singularity-pisces.png",
+      "benchmark": false
+    },
+    {
+      "slug": "skele-rex",
+      "name": "Skele-Rex",
+      "rarity": "l",
+      "image": "/assets/pets/skele-rex.png",
+      "benchmark": false
+    },
+    {
+      "slug": "skelebat",
+      "name": "Skelebat",
+      "rarity": "ur",
+      "image": "/assets/pets/skelebat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "skunk-pet",
+      "name": "Skunk",
+      "rarity": "ur",
+      "image": "/assets/pets/skunk-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "slime",
+      "name": "Slime",
+      "rarity": "ur",
+      "image": "/assets/pets/slime.png",
+      "benchmark": false
+    },
+    {
+      "slug": "slimingo",
+      "name": "Slimingo",
+      "rarity": "l",
+      "image": "/assets/pets/slimingo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sloth",
+      "name": "Sloth",
+      "rarity": "ur",
+      "image": "/assets/pets/sloth.png",
+      "benchmark": false
+    },
+    {
+      "slug": "slug",
+      "name": "Slug",
+      "rarity": "u",
+      "image": "/assets/pets/slug.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sneak-weasel",
+      "name": "Sneak Weasel",
+      "rarity": "r",
+      "image": "/assets/pets/sneak-weasel.png",
+      "benchmark": false
+    },
+    {
+      "slug": "snorgle",
+      "name": "Snorgle",
+      "rarity": "u",
+      "image": "/assets/pets/snorgle.png",
+      "benchmark": false
+    },
+    {
+      "slug": "snow-cat",
+      "name": "Snow Cat",
+      "rarity": "u",
+      "image": "/assets/pets/snow-cat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "snow-leopard",
+      "name": "Snow Leopard",
+      "rarity": "u",
+      "image": "/assets/pets/snow-leopard.png",
+      "benchmark": false
+    },
+    {
+      "slug": "snow-monkey",
+      "name": "Snow Monkey",
+      "rarity": "ur",
+      "image": "/assets/pets/snow-monkey.png",
+      "benchmark": false
+    },
+    {
+      "slug": "snow-owl",
+      "name": "Snow Owl",
+      "rarity": "l",
+      "image": "/assets/pets/snow-owl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "snow-puma",
+      "name": "Snow Puma",
+      "rarity": "r",
+      "image": "/assets/pets/snow-puma.png",
+      "benchmark": false
+    },
+    {
+      "slug": "snowball-pet",
+      "name": "Snowball Pet",
+      "rarity": "ur",
+      "image": "/assets/pets/snowball-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "snowball-pug",
+      "name": "Snowball Pug",
+      "rarity": "ur",
+      "image": "/assets/pets/snowball-pug.png",
+      "benchmark": false
+    },
+    {
+      "slug": "snowman",
+      "name": "Snowman",
+      "rarity": "u",
+      "image": "/assets/pets/snowman.png",
+      "benchmark": false
+    },
+    {
+      "slug": "snowy-mammoth",
+      "name": "Snowy Mammoth",
+      "rarity": "ur",
+      "image": "/assets/pets/snowy-mammoth.png",
+      "benchmark": false
+    },
+    {
+      "slug": "space-whale",
+      "name": "Space Whale",
+      "rarity": "ur",
+      "image": "/assets/pets/space-whale.png",
+      "benchmark": false
+    },
+    {
+      "slug": "spider-crab",
+      "name": "Spider Crab",
+      "rarity": "ur",
+      "image": "/assets/pets/spider-crab.png",
+      "benchmark": false
+    },
+    {
+      "slug": "spinosaurus",
+      "name": "Spinosaurus",
+      "rarity": "l",
+      "image": "/assets/pets/spinosaurus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sprout-snail",
+      "name": "Sprout Snail",
+      "rarity": "ur",
+      "image": "/assets/pets/sprout-snail.png",
+      "benchmark": false
+    },
+    {
+      "slug": "squid",
+      "name": "Squid",
+      "rarity": "l",
+      "image": "/assets/pets/squid.png",
+      "benchmark": false
+    },
+    {
+      "slug": "st-bernard",
+      "name": "St Bernard",
+      "rarity": "ur",
+      "image": "/assets/pets/st-bernard.png",
+      "benchmark": false
+    },
+    {
+      "slug": "starfish",
+      "name": "Starfish",
+      "rarity": "ur",
+      "image": "/assets/pets/starfish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "starhopper",
+      "name": "Starhopper",
+      "rarity": "r",
+      "image": "/assets/pets/starhopper.png",
+      "benchmark": false
+    },
+    {
+      "slug": "starmite",
+      "name": "Starmite",
+      "rarity": "ur",
+      "image": "/assets/pets/starmite.png",
+      "benchmark": false
+    },
+    {
+      "slug": "stegosaurus",
+      "name": "Stegosaurus",
+      "rarity": "u",
+      "image": "/assets/pets/stegosaurus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "steppe-lion",
+      "name": "Steppe Lion",
+      "rarity": "r",
+      "image": "/assets/pets/steppe-lion.png",
+      "benchmark": false
+    },
+    {
+      "slug": "stingray",
+      "name": "Stingroy",
+      "rarity": "c",
+      "image": "/assets/pets/stingray.png",
+      "benchmark": false
+    },
+    {
+      "slug": "strawberry-penguin",
+      "name": "Strawberry Penguin",
+      "rarity": "l",
+      "image": "/assets/pets/strawberry-penguin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "strawberry-shortcake-bat-dragon",
+      "name": "Strawberry Shortcake Bat Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/strawberry-shortcake-bat-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "striped-eggy",
+      "name": "Striped Eggy",
+      "rarity": "l",
+      "image": "/assets/pets/striped-eggy.png",
+      "benchmark": false
+    },
+    {
+      "slug": "subzero-scorpion",
+      "name": "Subzero Scorpion",
+      "rarity": "r",
+      "image": "/assets/pets/subzero-scorpion.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sugar-axolotl",
+      "name": "Sugar Axolotl",
+      "rarity": "l",
+      "image": "/assets/pets/sugar-axolotl.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sugar-glider",
+      "name": "Sugar Glider",
+      "rarity": "l",
+      "image": "/assets/pets/sugar-glider.png",
+      "benchmark": false
+    },
+    {
+      "slug": "summer-walrus",
+      "name": "Summer Walrus",
+      "rarity": "r",
+      "image": "/assets/pets/summer-walrus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sunglider",
+      "name": "Sunglider",
+      "rarity": "l",
+      "image": "/assets/pets/sunglider.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sunrise-duckling",
+      "name": "Sunrise Duckling",
+      "rarity": "l",
+      "image": "/assets/pets/sunrise-duckling.png",
+      "benchmark": false
+    },
+    {
+      "slug": "super-saru",
+      "name": "Super Saru",
+      "rarity": "l",
+      "image": "/assets/pets/super-saru.png",
+      "benchmark": false
+    },
+    {
+      "slug": "swan",
+      "name": "Swan",
+      "rarity": "r",
+      "image": "/assets/pets/swan.png",
+      "benchmark": false
+    },
+    {
+      "slug": "sweetheart-rat",
+      "name": "Sweetheart Rat",
+      "rarity": "r",
+      "image": "/assets/pets/sweetheart-rat.png",
+      "benchmark": false
+    },
+    {
+      "slug": "swordfish",
+      "name": "Swordfish",
+      "rarity": "ur",
+      "image": "/assets/pets/swordfish.png",
+      "benchmark": false
+    },
+    {
+      "slug": "t-rex",
+      "name": "T-Rex",
+      "rarity": "l",
+      "image": "/assets/pets/t-rex.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tan-chow-chow",
+      "name": "Tan Chow-Chow",
+      "rarity": "ur",
+      "image": "/assets/pets/tan-chow-chow.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tanuki",
+      "name": "Tanuki",
+      "rarity": "u",
+      "image": "/assets/pets/tanuki.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tarantula",
+      "name": "Tarantula",
+      "rarity": "r",
+      "image": "/assets/pets/tarantula.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tarsier",
+      "name": "Tarsier",
+      "rarity": "r",
+      "image": "/assets/pets/tarsier.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tasmanian-devil",
+      "name": "Tasmanian Devil",
+      "rarity": "r",
+      "image": "/assets/pets/tasmanian-devil.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tasmanian-tiger",
+      "name": "Tasmanian Tiger",
+      "rarity": "c",
+      "image": "/assets/pets/tasmanian-tiger.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tawny-frogmouth",
+      "name": "Tawny Frogmouth",
+      "rarity": "u",
+      "image": "/assets/pets/tawny-frogmouth.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tegu",
+      "name": "Tegu",
+      "rarity": "c",
+      "image": "/assets/pets/tegu.png",
+      "benchmark": false
+    },
+    {
+      "slug": "temple-friend",
+      "name": "Temple Friend",
+      "rarity": "l",
+      "image": "/assets/pets/temple-friend.png",
+      "benchmark": false
+    },
+    {
+      "slug": "the-black-dog",
+      "name": "The Black Dog",
+      "rarity": "r",
+      "image": "/assets/pets/the-black-dog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "therapy-dog",
+      "name": "Therapy Dog",
+      "rarity": "u",
+      "image": "/assets/pets/therapy-dog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "thorny-devil",
+      "name": "Thorny Devil",
+      "rarity": "r",
+      "image": "/assets/pets/thorny-devil.png",
+      "benchmark": false
+    },
+    {
+      "slug": "ti-de-nadal",
+      "name": "Ti De Nadal",
+      "rarity": "review",
+      "image": "/assets/pets/ti-de-nadal.png",
+      "benchmark": false
+    },
+    {
+      "slug": "toasty-red-panda",
+      "name": "Toasty Red Panda",
+      "rarity": "ur",
+      "image": "/assets/pets/toasty-red-panda.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tortoiseshell-guinea-pig",
+      "name": "Tortoiseshell Guinea Pig",
+      "rarity": "review",
+      "image": "/assets/pets/tortoiseshell-guinea-pig.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tortuga-de-la-isla-pet",
+      "name": "Tortuga de la Isla",
+      "rarity": "ur",
+      "image": "/assets/pets/tortuga-de-la-isla-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "toucan",
+      "name": "Toucan",
+      "rarity": "ur",
+      "image": "/assets/pets/toucan.png",
+      "benchmark": false
+    },
+    {
+      "slug": "toxic-kaijunior",
+      "name": "Toxic Kaijunior",
+      "rarity": "ur",
+      "image": "/assets/pets/toxic-kaijunior.png",
+      "benchmark": false
+    },
+    {
+      "slug": "toy-monkey-pet",
+      "name": "Toy Monkey",
+      "rarity": "ur",
+      "image": "/assets/pets/toy-monkey-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "toy-poodle",
+      "name": "Toy Poodle",
+      "rarity": "r",
+      "image": "/assets/pets/toy-poodle.png",
+      "benchmark": false
+    },
+    {
+      "slug": "trapdoor-snail",
+      "name": "Trapdoor Snail",
+      "rarity": "ur",
+      "image": "/assets/pets/trapdoor-snail.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tree-frog",
+      "name": "Tree Frog",
+      "rarity": "u",
+      "image": "/assets/pets/tree-frog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tree-kangaroo",
+      "name": "Tree Kangaroo",
+      "rarity": "l",
+      "image": "/assets/pets/tree-kangaroo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tree-sasquatch",
+      "name": "Tree Sasquatch",
+      "rarity": "r",
+      "image": "/assets/pets/tree-sasquatch.png",
+      "benchmark": false
+    },
+    {
+      "slug": "tri-horned-treehopper",
+      "name": "Tri-horned Treehopper",
+      "rarity": "ur",
+      "image": "/assets/pets/tri-horned-treehopper.png",
+      "benchmark": false
+    },
+    {
+      "slug": "triceratops",
+      "name": "Triceratops",
+      "rarity": "u",
+      "image": "/assets/pets/triceratops.png",
+      "benchmark": false
+    },
+    {
+      "slug": "turkey",
+      "name": "Turkey",
+      "rarity": "ur",
+      "image": "/assets/pets/turkey.png",
+      "benchmark": false
+    },
+    {
+      "slug": "turtle-doves",
+      "name": "Turtle Doves",
+      "rarity": "r",
+      "image": "/assets/pets/turtle-doves.png",
+      "benchmark": false
+    },
+    {
+      "slug": "turtle",
+      "name": "Turtle",
+      "rarity": "l",
+      "image": "/assets/pets/turtle.png",
+      "benchmark": true
+    },
+    {
+      "slug": "undead-elk",
+      "name": "Undead Elk",
+      "rarity": "r",
+      "image": "/assets/pets/undead-elk.png",
+      "benchmark": false
+    },
+    {
+      "slug": "undead-jousting-horse",
+      "name": "Undead Jousting Horse",
+      "rarity": "l",
+      "image": "/assets/pets/undead-jousting-horse.png",
+      "benchmark": false
+    },
+    {
+      "slug": "unicorn",
+      "name": "Unicorn",
+      "rarity": "l",
+      "image": "/assets/pets/unicorn.png",
+      "benchmark": true
+    },
+    {
+      "slug": "urchin",
+      "name": "Urchin",
+      "rarity": "c",
+      "image": "/assets/pets/urchin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "vampire-dragon",
+      "name": "Vampire Dragon",
+      "rarity": "l",
+      "image": "/assets/pets/vampire-dragon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "vanilla-penguin",
+      "name": "Vanilla Penguin",
+      "rarity": "l",
+      "image": "/assets/pets/vanilla-penguin.png",
+      "benchmark": false
+    },
+    {
+      "slug": "velociraptor",
+      "name": "Velociraptor",
+      "rarity": "u",
+      "image": "/assets/pets/velociraptor.png",
+      "benchmark": false
+    },
+    {
+      "slug": "velocirooster",
+      "name": "Velocirooster",
+      "rarity": "l",
+      "image": "/assets/pets/velocirooster.png",
+      "benchmark": false
+    },
+    {
+      "slug": "vermilion-butterfly",
+      "name": "Vermillion Butterfly",
+      "rarity": "ur",
+      "image": "/assets/pets/vermilion-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "villain-gibbon",
+      "name": "Villain Gibbon",
+      "rarity": "l",
+      "image": "/assets/pets/villain-gibbon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "violet-butterfly",
+      "name": "Violet Butterfly",
+      "rarity": "l",
+      "image": "/assets/pets/violet-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "volcanic-rhino",
+      "name": "Volcanic Rhino",
+      "rarity": "l",
+      "image": "/assets/pets/volcanic-rhino.png",
+      "benchmark": false
+    },
+    {
+      "slug": "vulture",
+      "name": "Vulture",
+      "rarity": "ur",
+      "image": "/assets/pets/vulture.png",
+      "benchmark": false
+    },
+    {
+      "slug": "waffle-wyrm",
+      "name": "Waffle Wyrm",
+      "rarity": "ur",
+      "image": "/assets/pets/waffle-wyrm.png",
+      "benchmark": false
+    },
+    {
+      "slug": "walrus",
+      "name": "Walrus",
+      "rarity": "c",
+      "image": "/assets/pets/walrus.png",
+      "benchmark": false
+    },
+    {
+      "slug": "warthog",
+      "name": "Warthog",
+      "rarity": "u",
+      "image": "/assets/pets/warthog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "water-moon-bear",
+      "name": "Water Moon Bear",
+      "rarity": "ur",
+      "image": "/assets/pets/water-moon-bear.png",
+      "benchmark": false
+    },
+    {
+      "slug": "water-opossum",
+      "name": "Water Opossum",
+      "rarity": "r",
+      "image": "/assets/pets/water-opossum.png",
+      "benchmark": false
+    },
+    {
+      "slug": "water-rabbit",
+      "name": "Water Rabbit",
+      "rarity": "ur",
+      "image": "/assets/pets/water-rabbit.png",
+      "benchmark": false
+    },
+    {
+      "slug": "weevil-pet",
+      "name": "Weevil Pet",
+      "rarity": "review",
+      "image": "/assets/pets/weevil-pet.png",
+      "benchmark": false
+    },
+    {
+      "slug": "werewolf",
+      "name": "Werewolf",
+      "rarity": "l",
+      "image": "/assets/pets/werewolf.png",
+      "benchmark": false
+    },
+    {
+      "slug": "white-amazon",
+      "name": "White Amazon",
+      "rarity": "l",
+      "image": "/assets/pets/white-amazon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "white-choco-bunny",
+      "name": "White Choco Bunny",
+      "rarity": "review",
+      "image": "/assets/pets/white-choco-bunny.png",
+      "benchmark": false
+    },
+    {
+      "slug": "white-sand-dollar",
+      "name": "White Sand Dollar",
+      "rarity": "ur",
+      "image": "/assets/pets/white-sand-dollar.png",
+      "benchmark": false
+    },
+    {
+      "slug": "wild-boar",
+      "name": "Wild Boar",
+      "rarity": "u",
+      "image": "/assets/pets/wild-boar.png",
+      "benchmark": false
+    },
+    {
+      "slug": "wildfire-hawk",
+      "name": "Wildfire Hawk",
+      "rarity": "ur",
+      "image": "/assets/pets/wildfire-hawk.png",
+      "benchmark": false
+    },
+    {
+      "slug": "winged-horse",
+      "name": "Winged Horse",
+      "rarity": "l",
+      "image": "/assets/pets/winged-horse.png",
+      "benchmark": false
+    },
+    {
+      "slug": "winged-tiger",
+      "name": "Winged Tiger",
+      "rarity": "l",
+      "image": "/assets/pets/winged-tiger.png",
+      "benchmark": false
+    },
+    {
+      "slug": "winter-buck",
+      "name": "Winter Buck",
+      "rarity": "l",
+      "image": "/assets/pets/winter-buck.png",
+      "benchmark": false
+    },
+    {
+      "slug": "winter-doe",
+      "name": "Winter Doe",
+      "rarity": "ur",
+      "image": "/assets/pets/winter-doe.png",
+      "benchmark": false
+    },
+    {
+      "slug": "winter-fawn",
+      "name": "Winter Fawn",
+      "rarity": "r",
+      "image": "/assets/pets/winter-fawn.png",
+      "benchmark": false
+    },
+    {
+      "slug": "wolf",
+      "name": "Wolf",
+      "rarity": "u",
+      "image": "/assets/pets/wolf.png",
+      "benchmark": false
+    },
+    {
+      "slug": "wolpertinger",
+      "name": "Wolpertinger",
+      "rarity": "c",
+      "image": "/assets/pets/wolpertinger.png",
+      "benchmark": false
+    },
+    {
+      "slug": "wood-pigeon",
+      "name": "Wood Pigeon",
+      "rarity": "ur",
+      "image": "/assets/pets/wood-pigeon.png",
+      "benchmark": false
+    },
+    {
+      "slug": "woodpecker",
+      "name": "Woodpecker",
+      "rarity": "r",
+      "image": "/assets/pets/woodpecker.png",
+      "benchmark": false
+    },
+    {
+      "slug": "woolly-mammoth",
+      "name": "Woolly Mammoth",
+      "rarity": "r",
+      "image": "/assets/pets/woolly-mammoth.png",
+      "benchmark": false
+    },
+    {
+      "slug": "wooly-rhino",
+      "name": "Wooly Rhino",
+      "rarity": "ur",
+      "image": "/assets/pets/wooly-rhino.png",
+      "benchmark": false
+    },
+    {
+      "slug": "wren",
+      "name": "Wron",
+      "rarity": "r",
+      "image": "/assets/pets/wren.png",
+      "benchmark": false
+    },
+    {
+      "slug": "wyvern",
+      "name": "Wyvern",
+      "rarity": "ur",
+      "image": "/assets/pets/wyvern.png",
+      "benchmark": false
+    },
+    {
+      "slug": "yellow-butterfly",
+      "name": "Yellow Butterfly",
+      "rarity": "r",
+      "image": "/assets/pets/yellow-butterfly.png",
+      "benchmark": false
+    },
+    {
+      "slug": "yellow-lipped-sea-krait",
+      "name": "Yellow-lipped Sea Krait",
+      "rarity": "u",
+      "image": "/assets/pets/yellow-lipped-sea-krait.png",
+      "benchmark": false
+    },
+    {
+      "slug": "yeti",
+      "name": "Yeti",
+      "rarity": "ur",
+      "image": "/assets/pets/yeti.png",
+      "benchmark": false
+    },
+    {
+      "slug": "yule-log-dog",
+      "name": "Yule Log Dog",
+      "rarity": "l",
+      "image": "/assets/pets/yule-log-dog.png",
+      "benchmark": false
+    },
+    {
+      "slug": "zebra",
+      "name": "Zebra",
+      "rarity": "r",
+      "image": "/assets/pets/zebra.png",
+      "benchmark": false
+    },
+    {
+      "slug": "zeopod",
+      "name": "Zeopod",
+      "rarity": "r",
+      "image": "/assets/pets/zeopod.png",
+      "benchmark": false
+    },
+    {
+      "slug": "zodiac-minion-chick",
+      "name": "Zodiac Minion Chick",
+      "rarity": "l",
+      "image": "/assets/pets/zodiac-minion-chick.png",
+      "benchmark": false
+    },
+    {
+      "slug": "zombie-buffalo",
+      "name": "Zombie Buffalo",
+      "rarity": "ur",
+      "image": "/assets/pets/zombie-buffalo.png",
+      "benchmark": false
+    },
+    {
+      "slug": "zombie-chick",
+      "name": "Zombie Chick",
+      "rarity": "review",
+      "image": "/assets/pets/zombie-chick.png",
+      "benchmark": false
+    },
+    {
+      "slug": "zombie-wolf",
+      "name": "Zombie Wolf",
+      "rarity": "ur",
+      "image": "/assets/pets/zombie-wolf.png",
+      "benchmark": false
+    }
+  ],
+  "counts": {
+    "total": 725,
+    "verifiedRarity": 708,
+    "review": 17,
+    "benchmark": 18
+  }
+}
