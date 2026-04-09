@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt Me Market Movers | The Patch</title>
+  <meta name="description" content="Track rising, steady, and cooling benchmark Adopt Me pets with one shared market data source and a saved watchlist.">
+  <link rel="canonical" href="https://thepatchgg.github.io/market-movers.html">
+  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KXQR564341');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>The Patch</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
+        <a href="/pet-value-calculator.html">Trade Calculator</a>
+        <a href="/neon-calculator.html">Neon Calculator</a>
+        <a href="/adopt-me.html">Guides</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Market board beta</div>
+          <h1>See which benchmark pets are moving right now.</h1>
+          <p>
+            This page turns the shared value file into a faster market read. Instead of scanning the whole table, you can
+            focus on risers, stable anchors, and pets that look softer than their popularity suggests.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="/articles/adopt-me-pet-value-list-2026.html">Open full value list</a>
+            <a class="button secondary" href="/inventory-planner.html">Open inventory planner</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <p class="helper">Board logic</p>
+          <ul class="signal-list">
+            <li><span>Rising pets are sorted by current benchmark value</span><span class="tone tone-rising">Rising</span></li>
+            <li><span>Anchors favor high liquidity and steady demand</span><span class="tone tone-steady">Steady</span></li>
+            <li><span>Cooling pets still matter for value, but need more caution</span><span class="tone tone-falling">Falling</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell watch-grid">
+        <section class="tool-card stack">
+          <div>
+            <h2>Your watchlist</h2>
+            <p class="micro-copy">Save pets you want to revisit. This list stays in your browser and also appears on the homepage.</p>
+          </div>
+          <div class="card-grid" id="watchlist-grid"></div>
+        </section>
+        <section class="tool-card stack">
+          <div>
+            <h2>Quick trade use</h2>
+            <p class="micro-copy">Use this page to narrow your focus, then jump into the calculator for exact totals.</p>
+          </div>
+          <div class="kpi-list">
+            <div class="kpi-row"><span>Risers on board</span><strong id="rising-count">0</strong></div>
+            <div class="kpi-row"><span>Stable anchors</span><strong id="anchor-count">0</strong></div>
+            <div class="kpi-row"><span>Cooling signals</span><strong id="falling-count">0</strong></div>
+          </div>
+          <div class="stack-actions">
+            <a class="pill-link" href="/pet-value-calculator.html">Compare a trade</a>
+            <a class="pill-link" href="/methodology.html">Read methodology</a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Rising now</h2>
+            <p class="intro-copy">These benchmark pets have the strongest current upward signal in the shared file.</p>
+          </div>
+        </div>
+        <div class="card-grid" id="rising-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Stable anchors</h2>
+            <p class="intro-copy">These are the benchmark pets traders keep using because liquidity and trust stay strong.</p>
+          </div>
+        </div>
+        <div class="card-grid" id="anchor-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Cooling off</h2>
+            <p class="intro-copy">These pets still have value, but current signal strength suggests a little more caution before overpaying.</p>
+          </div>
+        </div>
+        <div class="card-grid" id="falling-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-copy">Market movers show signal strength, not exact week-over-week percentages. Use the calculator before committing to a trade.</div>
+      <nav class="nav" aria-label="Footer">
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>
+        <a href="/pet-value-calculator.html">Trade Calculator</a>
+        <a href="/inventory-planner.html">Inventory Planner</a>
+        <a href="/methodology.html">Methodology</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/assets/js/adopt-values.js"></script>
+  <script src="/assets/js/adopt-retention.js"></script>
+  <script>
+    const toneMap = {
+      Elite: "tone-elite",
+      "Very High": "tone-very-high",
+      High: "tone-high",
+      Medium: "tone-medium",
+      Low: "tone-low",
+      Rising: "tone-rising",
+      Steady: "tone-steady",
+      Falling: "tone-falling",
+      default: "tone-medium"
+    };
+
+    function renderSignalCards(target, pets, emptyMessage) {
+      if (!pets.length) {
+        target.innerHTML = `
+          <article class="card">
+            <h3>No pets in this bucket yet</h3>
+            <p>${emptyMessage}</p>
+          </article>
+        `;
+        return;
+      }
+
+      target.innerHTML = pets.map((pet) => `
+        <article class="card signal-card">
+          <div class="toolbar">
+            <span class="tone ${toneMap[pet.demand] || toneMap.default}">${pet.demand} demand</span>
+            <span class="tone ${toneMap[pet.trend] || toneMap.default}">${pet.trend}</span>
+          </div>
+          <div class="pet-row">
+            <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
+            <div class="pet-name">
+              <strong>${pet.name}</strong>
+              <small>${pet.segment} - ${pet.rarity}</small>
+            </div>
+          </div>
+          <p>${pet.notes}</p>
+          <ul class="mini-list">
+            <li><span>Default</span><span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span></li>
+            <li><span>No Potion</span><span class="value-tag">${window.ThePatchValues.formatValue(pet.values.noPotion)}</span></li>
+          </ul>
+          <div class="card-actions">
+            <a class="pill-link" href="/pet-value-calculator.html">Compare trade</a>
+            <button class="ghost-button watch-button ${window.ThePatchRetention.isWatched(pet.slug) ? "active" : ""}" type="button" data-slug="${pet.slug}">
+              ${window.ThePatchRetention.isWatched(pet.slug) ? "Watching" : "Watch"}
+            </button>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderWatchlist(payload) {
+      const target = document.getElementById("watchlist-grid");
+      const pets = window.ThePatchRetention.loadWatchlist()
+        .map((slug) => payload.petIndex[slug])
+        .filter(Boolean)
+        .sort((left, right) => right.values.default - left.values.default);
+
+      if (!pets.length) {
+        target.innerHTML = `
+          <article class="card">
+            <h3>No watchlist yet</h3>
+            <p>Use the watch buttons below or on the value list to build a smaller shortlist for return visits.</p>
+          </article>
+        `;
+        return;
+      }
+
+      target.innerHTML = pets.map((pet) => `
+        <article class="card">
+          <div class="pet-row">
+            <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
+            <div class="pet-name">
+              <strong>${pet.name}</strong>
+              <small>${pet.demand} demand - ${pet.trend}</small>
+            </div>
+          </div>
+          <div class="card-actions">
+            <span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span>
+            <button class="ghost-button watch-button active" type="button" data-slug="${pet.slug}">Watching</button>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function syncWatchButtons(slugs) {
+      document.querySelectorAll(".watch-button").forEach((button) => {
+        const active = slugs.includes(button.dataset.slug);
+        button.classList.toggle("active", active);
+        button.textContent = active ? "Watching" : "Watch";
+      });
+    }
+
+    async function bootMarketBoard() {
+      try {
+        const payload = await window.ThePatchValues.loadAdoptValues();
+        const rising = payload.pets.filter((pet) => pet.trend === "Rising").slice(0, 6);
+        const anchors = payload.pets
+          .filter((pet) => pet.trend === "Steady" && ["Elite", "Very High", "High"].includes(pet.demand))
+          .slice(0, 6);
+        const falling = payload.pets.filter((pet) => pet.trend === "Falling").slice(0, 6);
+
+        renderSignalCards(document.getElementById("rising-grid"), rising, "No rising benchmark pets were available in the shared file.");
+        renderSignalCards(document.getElementById("anchor-grid"), anchors, "No stable anchors were available in the shared file.");
+        renderSignalCards(document.getElementById("falling-grid"), falling, "No cooling benchmark pets were available in the shared file.");
+        renderWatchlist(payload);
+
+        document.getElementById("rising-count").textContent = String(rising.length);
+        document.getElementById("anchor-count").textContent = String(anchors.length);
+        document.getElementById("falling-count").textContent = String(falling.length);
+
+        document.body.addEventListener("click", (event) => {
+          const button = event.target.closest(".watch-button");
+          if (!button) {
+            return;
+          }
+
+          const slugs = window.ThePatchRetention.toggleWatchlist(button.dataset.slug);
+          syncWatchButtons(slugs);
+          renderWatchlist(payload);
+        });
+
+        window.addEventListener("thepatch:watchlist", (event) => {
+          syncWatchButtons(event.detail.slugs || []);
+          renderWatchlist(payload);
+        });
+      } catch (error) {
+        const shell = document.querySelector(".watch-grid");
+        window.ThePatchValues.renderError(shell, "The market board could not load the shared value data. Please refresh and try again.");
+      }
+    }
+
+    bootMarketBoard();
+  </script>
+</body>
+</html>

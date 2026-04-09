@@ -115,6 +115,16 @@
             <p>Clear notes on where the data comes from, why no-potion matters, and how often to expect revisions.</p>
             <a class="pill-link" href="/methodology.html">Read the notes</a>
           </article>
+          <article class="card">
+            <h3>Market movers</h3>
+            <p>Track which benchmark pets are rising, cooling off, or staying liquid enough to anchor harder trades.</p>
+            <a class="pill-link" href="/market-movers.html">Open market movers</a>
+          </article>
+          <article class="card">
+            <h3>Inventory planner</h3>
+            <p>Save your current pets, total their benchmark value, and see which upgrade targets are already within reach.</p>
+            <a class="pill-link" href="/inventory-planner.html">Plan your upgrades</a>
+          </article>
         </div>
       </div>
     </section>
@@ -168,6 +178,20 @@
     </section>
 
     <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Your saved watchlist</h2>
+            <p class="intro-copy">
+              Favorite benchmark pets to keep a shorter list of the values you care about most between visits.
+            </p>
+          </div>
+        </div>
+        <div class="card-grid" id="watchlist-cards"></div>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="shell hero-panel newsletter" id="beehiiv-embed-placeholder">
         <div>
           <p class="helper">Newsletter</p>
@@ -191,6 +215,7 @@
       <nav class="nav" aria-label="Footer">
         <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>
         <a href="/pet-value-calculator.html">Calculator</a>
+        <a href="/market-movers.html">Market Movers</a>
         <a href="/about.html">About</a>
         <a href="/methodology.html">Methodology</a>
         <a href="/corrections.html">Corrections</a>
@@ -199,6 +224,7 @@
   </footer>
 
   <script src="/assets/js/adopt-values.js"></script>
+  <script src="/assets/js/adopt-retention.js"></script>
   <script src="/newsletter.js"></script>
   <script>
     const toneMap = {
@@ -215,13 +241,14 @@
 
     async function bootHome() {
       const target = document.getElementById("signal-cards");
+      const watchlistTarget = document.getElementById("watchlist-cards");
 
       try {
         const payload = await window.ThePatchValues.loadAdoptValues();
         const featured = [
           payload.petIndex["bat-dragon"],
-          payload.petIndex["shadow-dragon"],
-          payload.petIndex["cow"]
+          payload.petIndex["giraffe"],
+          payload.petIndex["chocolate-chip-bat-dragon"]
         ];
 
         target.innerHTML = featured.map((pet) => `
@@ -240,11 +267,85 @@
               <li><span>No Potion</span><span class="value-tag">${window.ThePatchValues.formatValue(pet.values.noPotion)}</span></li>
               <li><span>Neon</span><span class="value-tag">${window.ThePatchValues.formatValue(pet.values.neon)}</span></li>
             </ul>
+            <div class="card-actions">
+              <a class="pill-link" href="/market-movers.html">See market board</a>
+              <button class="ghost-button watch-button ${window.ThePatchRetention.isWatched(pet.slug) ? "active" : ""}" type="button" data-slug="${pet.slug}">
+                ${window.ThePatchRetention.isWatched(pet.slug) ? "Watching" : "Watch this pet"}
+              </button>
+            </div>
           </article>
         `).join("");
+
+        renderWatchlist(payload, watchlistTarget);
+
+        target.addEventListener("click", (event) => {
+          const button = event.target.closest(".watch-button");
+          if (!button) {
+            return;
+          }
+
+          const slugs = window.ThePatchRetention.toggleWatchlist(button.dataset.slug);
+          updateWatchButtons(target, slugs);
+          renderWatchlist(payload, watchlistTarget);
+        });
+
+        window.addEventListener("thepatch:watchlist", () => renderWatchlist(payload, watchlistTarget));
       } catch (error) {
         window.ThePatchValues.renderError(target, "The shared value feed could not load. Please refresh and try again.");
       }
+    }
+
+    function updateWatchButtons(scope, slugs) {
+      scope.querySelectorAll(".watch-button").forEach((button) => {
+        const active = slugs.includes(button.dataset.slug);
+        button.classList.toggle("active", active);
+        button.textContent = active ? "Watching" : "Watch this pet";
+      });
+    }
+
+    function renderWatchlist(payload, target) {
+      const slugs = window.ThePatchRetention.loadWatchlist();
+
+      if (!slugs.length) {
+        target.innerHTML = `
+          <article class="card">
+            <h3>Nothing saved yet</h3>
+            <p>Use the watch buttons on the value list or the market board to keep a quick shortlist for return visits.</p>
+            <a class="pill-link" href="/articles/adopt-me-pet-value-list-2026.html">Open the value list</a>
+          </article>
+        `;
+        return;
+      }
+
+      const pets = slugs
+        .map((slug) => payload.petIndex[slug])
+        .filter(Boolean)
+        .sort((left, right) => right.values.default - left.values.default);
+
+      target.innerHTML = pets.map((pet) => `
+        <article class="card">
+          <div class="toolbar">
+            <span class="tone ${toneMap[pet.demand] || toneMap.default}">${pet.demand} demand</span>
+            <span class="tone ${toneMap[pet.trend] || toneMap.default}">${pet.trend}</span>
+          </div>
+          <div class="pet-row">
+            <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
+            <h3>${pet.name}</h3>
+          </div>
+          <p>${pet.notes}</p>
+          <div class="card-actions">
+            <span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span>
+            <button class="ghost-button watch-button active" type="button" data-slug="${pet.slug}">Watching</button>
+          </div>
+        </article>
+      `).join("");
+
+      target.querySelectorAll(".watch-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          window.ThePatchRetention.toggleWatchlist(button.dataset.slug);
+          renderWatchlist(payload, target);
+        });
+      });
     }
 
     bootHome();

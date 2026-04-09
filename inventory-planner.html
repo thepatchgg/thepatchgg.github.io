@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt Me Inventory Planner | The Patch</title>
+  <meta name="description" content="Save your benchmark Adopt Me pets, total your current trade value, and see which upgrade targets are already within reach.">
+  <link rel="canonical" href="https://thepatchgg.github.io/inventory-planner.html">
+  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KXQR564341');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>The Patch</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
+        <a href="/pet-value-calculator.html">Trade Calculator</a>
+        <a href="/neon-calculator.html">Neon Calculator</a>
+        <a href="/adopt-me.html">Guides</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Inventory planner beta</div>
+          <h1>Save your current pets and plan the next upgrade.</h1>
+          <p>
+            This planner gives you a persistent benchmark inventory using the same shared value file as the rest of the site.
+            Add the pets you own, save them locally in your browser, and see which benchmark targets are already realistic.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="/articles/adopt-me-pet-value-list-2026.html">Check live values</a>
+            <a class="button secondary" href="/market-movers.html">Open market movers</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <p class="helper">Why this matters</p>
+          <ul class="signal-list">
+            <li><span>Keep your benchmark inventory between visits</span><span class="tone tone-strong">Saved</span></li>
+            <li><span>Total your current trade power quickly</span><span class="tone tone-strong">Faster</span></li>
+            <li><span>See realistic upgrade targets instead of guessing</span><span class="tone tone-strong">Practical</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell planner-grid">
+        <section class="tool-card planner-panel">
+          <div>
+            <h2>Your benchmark inventory</h2>
+            <p class="micro-copy">Add the pets you actually own. You can mix trade versions, no-potion versions, and stacked duplicates.</p>
+          </div>
+
+          <div class="line-items" id="inventory-lines"></div>
+
+          <div class="stack-actions">
+            <button class="secondary" id="add-line" type="button">Add another pet</button>
+            <button class="primary" id="save-inventory" type="button">Save inventory</button>
+            <button class="ghost-button" id="clear-inventory" type="button">Clear saved inventory</button>
+          </div>
+
+          <div class="status-card" id="save-status">
+            <strong>Ready to save</strong>
+            <span>Build a shortlist of the pets you own, then save it for future visits.</span>
+          </div>
+        </section>
+
+        <section class="tool-card planner-panel">
+          <div>
+            <h2>Upgrade snapshot</h2>
+            <p class="micro-copy">These targets use the current benchmark values from the shared market file.</p>
+          </div>
+
+          <div class="kpi-list">
+            <div class="kpi-row"><span>Total inventory value</span><strong id="inventory-total">0</strong></div>
+            <div class="kpi-row"><span>Saved line items</span><strong id="inventory-count">0</strong></div>
+            <div class="kpi-row"><span>Best direct target</span><strong id="best-target">Add pets first</strong></div>
+          </div>
+
+          <div class="split-grid">
+            <article class="list-card">
+              <h3>Within reach now</h3>
+              <ul class="mini-list" id="reachable-list"></ul>
+            </article>
+            <article class="list-card">
+              <h3>Stretch targets</h3>
+              <ul class="mini-list" id="stretch-list"></ul>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-copy">Saved inventories stay in this browser only. Sign-in and cloud sync are not part of this beta yet.</div>
+      <nav class="nav" aria-label="Footer">
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>
+        <a href="/pet-value-calculator.html">Trade Calculator</a>
+        <a href="/market-movers.html">Market Movers</a>
+        <a href="/methodology.html">Methodology</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/assets/js/adopt-values.js"></script>
+  <script src="/assets/js/adopt-retention.js"></script>
+  <script>
+    const state = {
+      payload: null,
+      rows: []
+    };
+
+    function createOptionMarkup(pets) {
+      return [
+        '<option value="">Choose a pet</option>',
+        ...pets.map((pet) => `<option value="${pet.slug}">${pet.name}</option>`)
+      ].join("");
+    }
+
+    function buildVariantOptions(pet, selected) {
+      if (!pet) {
+        return '<option value="default">Default</option>';
+      }
+
+      return window.ThePatchValues.getVariantEntries(pet)
+        .map((entry) => `<option value="${entry.key}" ${entry.key === selected ? "selected" : ""}>${entry.label}</option>`)
+        .join("");
+    }
+
+    function createLine(line = {}) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "line-item with-action";
+
+      const petSelect = document.createElement("select");
+      const variantSelect = document.createElement("select");
+      const qtyInput = document.createElement("input");
+      const removeButton = document.createElement("button");
+
+      qtyInput.type = "number";
+      qtyInput.min = "1";
+      qtyInput.value = String(Math.max(1, Number(line.qty || 1)));
+      qtyInput.inputMode = "numeric";
+
+      petSelect.innerHTML = createOptionMarkup(state.payload.pets);
+      petSelect.value = line.slug || "";
+      variantSelect.innerHTML = buildVariantOptions(state.payload.petIndex[petSelect.value], line.variant || "default");
+      removeButton.type = "button";
+      removeButton.className = "ghost-button";
+      removeButton.textContent = "Remove";
+
+      petSelect.addEventListener("change", () => {
+        const pet = state.payload.petIndex[petSelect.value];
+        variantSelect.innerHTML = buildVariantOptions(pet, "default");
+        updateSnapshot();
+      });
+
+      variantSelect.addEventListener("change", updateSnapshot);
+      qtyInput.addEventListener("input", updateSnapshot);
+      removeButton.addEventListener("click", () => {
+        wrapper.remove();
+        state.rows = state.rows.filter((row) => row.wrapper !== wrapper);
+        updateSnapshot();
+      });
+
+      wrapper.append(petSelect, variantSelect, qtyInput, removeButton);
+      document.getElementById("inventory-lines").appendChild(wrapper);
+      state.rows.push({ wrapper, petSelect, variantSelect, qtyInput });
+    }
+
+    function getCurrentLines() {
+      return state.rows
+        .map((row) => ({
+          slug: row.petSelect.value,
+          variant: row.variantSelect.value,
+          qty: Math.max(1, Number(row.qtyInput.value || 1))
+        }))
+        .filter((line) => line.slug);
+    }
+
+    function renderPetList(target, pets, emptyMessage) {
+      if (!pets.length) {
+        target.innerHTML = `<li><span>${emptyMessage}</span><span class="value-tag">-</span></li>`;
+        return;
+      }
+
+      target.innerHTML = pets.map((pet) => `
+        <li>
+          <span>${pet.name}</span>
+          <span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span>
+        </li>
+      `).join("");
+    }
+
+    function updateSnapshot() {
+      const currentLines = getCurrentLines();
+      const total = currentLines.reduce((sum, line) => {
+        const pet = state.payload.petIndex[line.slug];
+        return sum + window.ThePatchValues.getVariantValue(pet, line.variant) * line.qty;
+      }, 0);
+
+      const reachable = [...state.payload.pets]
+        .filter((pet) => pet.values.default <= total)
+        .sort((left, right) => right.values.default - left.values.default)
+        .slice(0, 6);
+      const stretch = [...state.payload.pets]
+        .filter((pet) => pet.values.default > total && pet.values.default <= total * 1.35)
+        .sort((left, right) => left.values.default - right.values.default)
+        .slice(0, 6);
+
+      document.getElementById("inventory-total").textContent = window.ThePatchValues.formatValue(total);
+      document.getElementById("inventory-count").textContent = String(currentLines.length);
+      document.getElementById("best-target").textContent = reachable.length ? reachable[0].name : "Add pets first";
+
+      renderPetList(document.getElementById("reachable-list"), reachable, "No benchmark target fits yet");
+      renderPetList(document.getElementById("stretch-list"), stretch, "Add more value to unlock stretch picks");
+    }
+
+    function updateSaveStatus(type, title, body) {
+      const card = document.getElementById("save-status");
+      card.className = type === "success" ? "status-card success" : "status-card";
+      card.innerHTML = `<strong>${title}</strong><span>${body}</span>`;
+    }
+
+    function loadSavedInventory() {
+      const saved = window.ThePatchRetention.loadInventory();
+      if (saved.length) {
+        saved.forEach((line) => createLine(line));
+      } else {
+        createLine();
+        createLine();
+      }
+
+      updateSnapshot();
+    }
+
+    async function bootInventoryPlanner() {
+      try {
+        state.payload = await window.ThePatchValues.loadAdoptValues();
+        loadSavedInventory();
+
+        document.getElementById("add-line").addEventListener("click", () => createLine());
+        document.getElementById("save-inventory").addEventListener("click", () => {
+          const saved = window.ThePatchRetention.saveInventory(getCurrentLines());
+          updateSaveStatus("success", "Inventory saved", `Saved ${saved.length} line item${saved.length === 1 ? "" : "s"} in this browser.`);
+          updateSnapshot();
+        });
+
+        document.getElementById("clear-inventory").addEventListener("click", () => {
+          window.ThePatchRetention.clearInventory();
+          document.getElementById("inventory-lines").innerHTML = "";
+          state.rows = [];
+          createLine();
+          createLine();
+          updateSaveStatus("default", "Inventory cleared", "Your saved benchmark inventory was removed from this browser.");
+          updateSnapshot();
+        });
+      } catch (error) {
+        const shell = document.querySelector(".planner-grid");
+        window.ThePatchValues.renderError(shell, "The inventory planner could not load the shared value data. Please refresh and try again.");
+      }
+    }
+
+    bootInventoryPlanner();
+  </script>
+</body>
+</html>

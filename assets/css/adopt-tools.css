@@ -209,6 +209,19 @@ button.secondary {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.ghost-button {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.ghost-button.active {
+  background: rgba(56, 211, 159, 0.14);
+  border-color: rgba(56, 211, 159, 0.4);
+  color: #9df0cb;
+}
+
 .button:hover,
 button:hover {
   transform: translateY(-1px);
@@ -392,6 +405,10 @@ tr:last-child td {
   gap: 12px;
 }
 
+.pet-row.align-start {
+  align-items: flex-start;
+}
+
 .pet-avatar {
   width: 48px;
   height: 48px;
@@ -573,6 +590,91 @@ tr:last-child td {
   gap: 8px;
 }
 
+.card-actions,
+.pet-actions,
+.stack-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stack-actions {
+  margin-top: 8px;
+}
+
+.micro-copy {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.mini-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #a8deff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.section-note {
+  margin-top: 18px;
+}
+
+.planner-grid,
+.watch-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.95fr);
+}
+
+.planner-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.planner-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(140px, 0.95fr) 88px auto;
+  gap: 10px;
+  align-items: end;
+}
+
+.split-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.list-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.list-card h3 {
+  margin-top: 0;
+}
+
+.signal-card {
+  display: grid;
+  gap: 14px;
+}
+
+.signal-card .mini-list {
+  margin-top: 0;
+}
+
+.signal-card p,
+.empty-copy {
+  margin: 0;
+}
+
+.empty-copy {
+  color: var(--muted);
+}
+
 .empty-state {
   padding: 40px 24px;
   text-align: center;
@@ -621,6 +723,10 @@ input {
   gap: 10px;
 }
 
+.line-item.with-action {
+  grid-template-columns: minmax(0, 1.45fr) minmax(140px, 0.9fr) 88px auto;
+}
+
 .trade-total,
 .summary-total {
   margin-top: 16px;
@@ -639,6 +745,11 @@ input {
 
 .status-card {
   padding: 18px 20px;
+}
+
+.status-card.success {
+  background: rgba(56, 211, 159, 0.12);
+  border-color: rgba(56, 211, 159, 0.28);
 }
 
 .newsletter {
@@ -680,7 +791,10 @@ input {
   .build-grid,
   .hub-grid,
   .insight-grid,
-  .catalog-toolbar {
+  .catalog-toolbar,
+  .planner-grid,
+  .watch-grid,
+  .split-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -697,6 +811,11 @@ input {
   }
 
   .line-item {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-row,
+  .line-item.with-action {
     grid-template-columns: 1fr;
   }
 
