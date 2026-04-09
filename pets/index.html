@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benchmark Pet Library | The Patch</title>
+  <meta name="description" content="Browse The Patch benchmark Adopt Me pet pages, revisit recently viewed pets, and jump into the strongest comparison anchors on the site.">
+  <meta name="theme-color" content="#08111f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Benchmark Pet Library | The Patch">
+  <meta property="og:description" content="Browse The Patch benchmark Adopt Me pet pages, revisit recently viewed pets, and jump into the strongest comparison anchors on the site.">
+  <meta property="og:url" content="https://thepatchgg.github.io/pets/">
+  <meta property="og:site_name" content="The Patch">
+  <meta property="og:image" content="https://thepatchgg.github.io/assets/pets/bat-dragon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Benchmark Pet Library | The Patch">
+  <meta name="twitter:description" content="Browse The Patch benchmark Adopt Me pet pages, revisit recently viewed pets, and jump into the strongest comparison anchors on the site.">
+  <meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/bat-dragon.png">
+  <link rel="canonical" href="https://thepatchgg.github.io/pets/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://thepatchgg.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Benchmark pet library",
+          "item": "https://thepatchgg.github.io/pets/"
+        }
+      ]
+    }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KXQR564341');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>The Patch</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/pets/">Benchmark Library</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
+        <a href="/pet-value-calculator.html">Trade Calculator</a>
+        <a href="/market-movers.html">Market Movers</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="shell detail-hero">
+        <div class="detail-hero-copy">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Benchmark pet library</span>
+          </nav>
+          <div class="eyebrow">Benchmark library</div>
+          <h1>The fastest way to browse The Patch benchmark pets.</h1>
+          <p>
+            This directory brings the benchmark pet pages together in one place so players can move between high-signal
+            pet pages, revisit recent views, and jump from a benchmark anchor straight into calculators or movers.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="/articles/adopt-me-pet-value-list-2026.html">Open full value list</a>
+            <a class="button secondary" href="/pet-value-calculator.html">Compare a trade</a>
+          </div>
+        </div>
+        <aside class="hero-panel detail-hero-panel">
+          <p class="helper">Library rules</p>
+          <ul class="signal-list">
+            <li><span>18 benchmark pet pages</span><span class="tone tone-strong" id="library-count">Loading</span></li>
+            <li><span>Recent views saved in this browser</span><span class="tone tone-strong">Retention</span></li>
+            <li><span>Shared with values and market tools</span><span class="tone tone-strong">One source</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell recent-shell">
+        <div class="section-head">
+          <div>
+            <h2>Recently viewed pets</h2>
+            <p class="intro-copy">The last benchmark pages you opened are saved locally so it is easier to resume a trade session.</p>
+          </div>
+          <div class="section-actions">
+            <a class="pill-link" href="/market-movers.html">Open market movers</a>
+          </div>
+        </div>
+        <div class="compact-grid" id="recent-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell library-shell">
+        <div class="toolbar">
+          <label>
+            <span>Search benchmark pets</span>
+            <input id="library-search" type="search" placeholder="Bat Dragon, Owl, Turtle...">
+          </label>
+          <label>
+            <span>Filter trend</span>
+            <select id="library-trend">
+              <option value="all">All trends</option>
+              <option value="Rising">Rising</option>
+              <option value="Steady">Steady</option>
+              <option value="Falling">Falling</option>
+            </select>
+          </label>
+          <label>
+            <span>Filter demand</span>
+            <select id="library-demand">
+              <option value="all">All demand tiers</option>
+              <option value="Elite">Elite</option>
+              <option value="Very High">Very High</option>
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="status-card">
+          <strong id="library-headline">Loading benchmark library...</strong>
+          <span id="library-note">Each pet page shares value data, recent-view tracking, and benchmark comparisons.</span>
+        </div>
+
+        <div class="compact-grid" id="library-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-copy">Benchmark pet pages are designed to be comparison anchors, not exact promises for every server trade.</div>
+      <nav class="nav" aria-label="Footer">
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>
+        <a href="/pet-value-calculator.html">Calculator</a>
+        <a href="/inventory-planner.html">Inventory Planner</a>
+        <a href="/methodology.html">Methodology</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/assets/js/adopt-values.js"></script>
+  <script src="/assets/js/adopt-retention.js"></script>
+  <script>
+    const libraryState = {
+      payload: null,
+      search: "",
+      trend: "all",
+      demand: "all"
+    };
+
+    function buildCard(pet, recentMode) {
+      return `
+        <article class="card ${recentMode ? "recent-card" : "benchmark-card"}">
+          <div class="toolbar">
+            <span class="tone tone-${pet.trend.toLowerCase()}">${pet.trend}</span>
+            <span class="tone tone-${pet.demand.toLowerCase().replace(/ /g, "-")}">${pet.demand} demand</span>
+          </div>
+          <div class="pet-row">
+            <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
+            <div class="pet-name">
+              <strong><a class="pet-link" href="/pets/${pet.slug}.html">${pet.name}</a></strong>
+              <small>${pet.segment} - ${pet.rarity}</small>
+            </div>
+          </div>
+          <p>${pet.notes}</p>
+          <div class="card-actions">
+            <span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span>
+            <a class="pill-link" href="/pets/${pet.slug}.html">Open pet page</a>
+          </div>
+        </article>
+      `;
+    }
+
+    function getFilteredPets() {
+      return libraryState.payload.pets
+        .filter((pet) => {
+          if (libraryState.search && !pet.name.toLowerCase().includes(libraryState.search)) {
+            return false;
+          }
+          if (libraryState.trend !== "all" && pet.trend !== libraryState.trend) {
+            return false;
+          }
+          if (libraryState.demand !== "all" && pet.demand !== libraryState.demand) {
+            return false;
+          }
+          return true;
+        })
+        .sort((left, right) => right.values.default - left.values.default);
+    }
+
+    function renderRecentPets() {
+      const target = document.getElementById("recent-grid");
+      const recent = window.ThePatchRetention.loadRecentPets()
+        .map((entry) => libraryState.payload.petIndex[entry.slug])
+        .filter(Boolean);
+
+      if (!recent.length) {
+        target.innerHTML = `
+          <article class="card recent-card">
+            <h3>No recent benchmark views yet</h3>
+            <p>Open a few pet pages from the value list, explorer, or market movers and they will show up here for your next visit.</p>
+          </article>
+        `;
+        return;
+      }
+
+      target.innerHTML = recent.map((pet) => buildCard(pet, true)).join("");
+    }
+
+    function renderLibrary() {
+      const target = document.getElementById("library-grid");
+      const pets = getFilteredPets();
+
+      document.getElementById("library-headline").textContent = `${pets.length} benchmark pets match this filter`;
+      document.getElementById("library-count").textContent = String(libraryState.payload.pets.length);
+
+      if (!pets.length) {
+        target.innerHTML = `
+          <article class="card benchmark-card">
+            <h3>No benchmark pets matched</h3>
+            <p>Try a broader search or clear one of the filters to bring the benchmark set back into view.</p>
+          </article>
+        `;
+        return;
+      }
+
+      target.innerHTML = pets.map((pet) => buildCard(pet, false)).join("");
+    }
+
+    async function bootLibrary() {
+      try {
+        libraryState.payload = await window.ThePatchValues.loadAdoptValues();
+        renderRecentPets();
+        renderLibrary();
+
+        document.getElementById("library-search").addEventListener("input", (event) => {
+          libraryState.search = event.target.value.trim().toLowerCase();
+          renderLibrary();
+        });
+
+        document.getElementById("library-trend").addEventListener("change", (event) => {
+          libraryState.trend = event.target.value;
+          renderLibrary();
+        });
+
+        document.getElementById("library-demand").addEventListener("change", (event) => {
+          libraryState.demand = event.target.value;
+          renderLibrary();
+        });
+
+        window.addEventListener("thepatch:recentPets", renderRecentPets);
+      } catch (error) {
+        const shell = document.querySelector(".library-shell");
+        window.ThePatchValues.renderError(shell, "The benchmark library could not load its shared value data. Please refresh and try again.");
+      }
+    }
+
+    bootLibrary();
+  </script>
+</body>
+</html>

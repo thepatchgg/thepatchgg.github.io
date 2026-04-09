@@ -7,7 +7,13 @@
   function initPetPage() {
     const slug = window.THE_PATCH_PET_SLUG;
     const button = document.querySelector("[data-watch-pet]");
-    if (!slug || !button || !window.ThePatchRetention) {
+    if (!slug || !window.ThePatchRetention) {
+      return;
+    }
+
+    window.ThePatchRetention.pushRecentPet(slug);
+
+    if (!button) {
       return;
     }
 

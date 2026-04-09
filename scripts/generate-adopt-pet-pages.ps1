@@ -48,6 +48,24 @@ function Format-Value {
   return ("{0:0.0}" -f $Value).TrimEnd("0").TrimEnd(".")
 }
 
+function Join-Names {
+  param([string[]]$Names)
+
+  if (-not $Names -or $Names.Count -eq 0) {
+    return ""
+  }
+
+  if ($Names.Count -eq 1) {
+    return $Names[0]
+  }
+
+  if ($Names.Count -eq 2) {
+    return "{0} and {1}" -f $Names[0], $Names[1]
+  }
+
+  return "{0}, and {1}" -f ($Names[0..($Names.Count - 2)] -join ", "), $Names[-1]
+}
+
 if (-not (Test-Path -LiteralPath $petsDir)) {
   New-Item -ItemType Directory -Path $petsDir | Out-Null
 }
@@ -58,9 +76,13 @@ foreach ($pet in $values.pets) {
     continue
   }
 
-  $relatedCards = foreach ($relatedSlug in $profile.compareWith) {
+  $relatedPets = foreach ($relatedSlug in $profile.compareWith) {
     $related = $values.pets | Where-Object { $_.slug -eq $relatedSlug } | Select-Object -First 1
     if (-not $related) { continue }
+    $related
+  }
+
+  $relatedCards = foreach ($related in $relatedPets) {
 
     $relatedDemandTone = $toneClass[$related.demand]
     $relatedTrendTone = $toneClass[$related.trend]
@@ -83,6 +105,43 @@ foreach ($pet in $values.pets) {
 "@
   }
 
+  $relatedNames = @($relatedPets | ForEach-Object { $_.name })
+  $relatedLabel = Join-Names -Names $relatedNames
+  $defaultValueText = Format-Value ([double]$pet.values.default)
+  $noPotionValueText = Format-Value ([double]$pet.values.noPotion)
+  $noPotionDeltaText = Format-Value ([double][math]::Abs([double]$pet.values.noPotion - [double]$pet.values.default))
+  $benchmarkAnswer = "{0} currently carries {1} demand with {2} confidence in The Patch benchmark file. The current signal is {3}, so it works best as a {4} reference point rather than a guaranteed server price." -f $pet.name, $pet.demand.ToLowerInvariant(), $pet.confidence.ToLowerInvariant(), $pet.trend.ToLowerInvariant(), $pet.segment.ToLowerInvariant()
+  if ([double]$pet.values.noPotion -gt [double]$pet.values.default) {
+    $noPotionAnswer = "In the current benchmark file, no-potion {0} sits at {1} versus {2} for the default version, so collectors are paying about {3} more for the cleaner lane right now." -f $pet.name, $noPotionValueText, $defaultValueText, $noPotionDeltaText
+  } elseif ([double]$pet.values.noPotion -lt [double]$pet.values.default) {
+    $noPotionAnswer = "In the current benchmark file, no-potion {0} sits at {1} versus {2} for the default version, so the clean copy is slightly softer by about {3} in this lane right now." -f $pet.name, $noPotionValueText, $defaultValueText, $noPotionDeltaText
+  } else {
+    $noPotionAnswer = "In the current benchmark file, no-potion and default {0} are benchmarked the same, which is a reminder that not every pet gets a collector premium." -f $pet.name
+  }
+  $compareAnswer = "The best sanity checks right now are {0}. Those pages sit close to {1} in real trade conversations and help you spot whether a server is drifting too far from broader benchmark behavior." -f $relatedLabel, $pet.name
+  $faqItems = @(
+    [pscustomobject]@{
+      question = "Is $($pet.name) a strong benchmark pet right now?"
+      answer = $benchmarkAnswer
+    },
+    [pscustomobject]@{
+      question = "Why does no-potion $($pet.name) have a different value?"
+      answer = $noPotionAnswer
+    },
+    [pscustomobject]@{
+      question = "Which pets should I compare with $($pet.name)?"
+      answer = $compareAnswer
+    }
+  )
+  $faqMarkup = foreach ($item in $faqItems) {
+@"
+          <article class="faq-item">
+            <h3>$([System.Net.WebUtility]::HtmlEncode($item.question))</h3>
+            <p>$([System.Net.WebUtility]::HtmlEncode($item.answer))</p>
+          </article>
+"@
+  }
+
   $variantRows = foreach ($key in @("default", "noPotion", "neon", "neonNoPotion", "mega", "megaNoPotion")) {
     $value = $pet.values.$key
     if ($null -eq $value) { continue }
@@ -98,6 +157,48 @@ foreach ($pet in $values.pets) {
   $trendTone = $toneClass[$pet.trend]
   $confidenceTone = if ($pet.confidence -eq "High") { "tone-strong" } else { "tone-beta" }
   $h1 = "{0} value guide" -f $pet.name
+  $schema = @(
+    [pscustomobject]@{
+      '@context' = 'https://schema.org'
+      '@type' = 'BreadcrumbList'
+      itemListElement = @(
+        [pscustomobject]@{
+          '@type' = 'ListItem'
+          position = 1
+          name = 'Home'
+          item = 'https://thepatchgg.github.io/'
+        },
+        [pscustomobject]@{
+          '@type' = 'ListItem'
+          position = 2
+          name = 'Benchmark pet library'
+          item = 'https://thepatchgg.github.io/pets/'
+        },
+        [pscustomobject]@{
+          '@type' = 'ListItem'
+          position = 3
+          name = $pet.name
+          item = $canonical
+        }
+      )
+    },
+    [pscustomobject]@{
+      '@context' = 'https://schema.org'
+      '@type' = 'FAQPage'
+      mainEntity = @(
+        $faqItems | ForEach-Object {
+          [pscustomobject]@{
+            '@type' = 'Question'
+            name = $_.question
+            acceptedAnswer = [pscustomobject]@{
+              '@type' = 'Answer'
+              text = $_.answer
+            }
+          }
+        }
+      )
+    }
+  ) | ConvertTo-Json -Depth 8 -Compress
 
   $html = @"
 <!DOCTYPE html>
@@ -122,6 +223,7 @@ foreach ($pet in $values.pets) {
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/css/adopt-tools.css">
+  <script type="application/ld+json">$schema</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -151,12 +253,19 @@ foreach ($pet in $values.pets) {
     <section class="page-hero">
       <div class="shell detail-hero">
         <div class="detail-hero-copy">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="/pets/">Benchmark pet library</a>
+            <span aria-hidden="true">/</span>
+            <span>$([System.Net.WebUtility]::HtmlEncode($pet.name))</span>
+          </nav>
           <div class="eyebrow">Benchmark pet page</div>
           <h1>$([System.Net.WebUtility]::HtmlEncode($h1))</h1>
           <p>$([System.Net.WebUtility]::HtmlEncode($profile.summary))</p>
           <div class="cta-row">
             <a class="button primary" href="/pet-value-calculator.html">Compare a trade</a>
-            <a class="button secondary" href="/articles/adopt-me-pet-value-list-2026.html">Back to the value list</a>
+            <a class="button secondary" href="/pets/">Open benchmark library</a>
           </div>
         </div>
         <aside class="hero-panel detail-hero-panel">
@@ -223,6 +332,7 @@ $($variantRows -join "`r`n")
             <a class="pill-link" href="/neon-calculator.html">Check neon math</a>
             <a class="pill-link" href="/methodology.html">Read methodology</a>
             <a class="pill-link" href="/inventory-planner.html">Plan upgrades</a>
+            <a class="pill-link" href="/articles/adopt-me-pet-value-list-2026.html">Open full value list</a>
           </div>
         </aside>
       </div>
@@ -241,12 +351,31 @@ $($relatedCards -join "`r`n")
         </div>
       </div>
     </section>
+
+    <section class="section">
+      <div class="shell detail-faq">
+        <div class="section-head">
+          <div>
+            <h2>$([System.Net.WebUtility]::HtmlEncode($pet.name)) FAQ</h2>
+            <p class="intro-copy">These quick answers are generated from the shared benchmark file so the reasoning matches the live value system.</p>
+          </div>
+          <div class="section-actions">
+            <a class="pill-link" href="/pets/">Benchmark library</a>
+            <a class="pill-link" href="/market-movers.html">Market movers</a>
+          </div>
+        </div>
+        <div class="faq-stack">
+$($faqMarkup -join "`r`n")
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-copy">$([System.Net.WebUtility]::HtmlEncode($pet.name)) was last reviewed in the shared benchmark system on April 9, 2026.</div>
       <nav class="nav" aria-label="Footer">
+        <a href="/pets/">Benchmark Library</a>
         <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>
         <a href="/pet-value-calculator.html">Calculator</a>
         <a href="/market-movers.html">Market Movers</a>

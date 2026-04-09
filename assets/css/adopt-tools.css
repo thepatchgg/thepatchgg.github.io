@@ -733,6 +733,81 @@ tr:last-child td {
   margin-top: 0;
 }
 
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.crumbs a {
+  color: #a8deff;
+  text-decoration: none;
+}
+
+.crumbs a:hover,
+.crumbs a:focus-visible {
+  text-decoration: underline;
+}
+
+.crumbs span[aria-hidden="true"] {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.library-shell,
+.detail-faq,
+.recent-shell {
+  display: grid;
+  gap: 18px;
+}
+
+.compact-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.benchmark-card,
+.recent-card {
+  display: grid;
+  gap: 14px;
+}
+
+.benchmark-card p,
+.recent-card p {
+  margin: 0;
+}
+
+.faq-stack {
+  display: grid;
+  gap: 16px;
+}
+
+.faq-item {
+  padding: 20px 22px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.faq-item h3,
+.faq-item p {
+  margin: 0;
+}
+
+.faq-item p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .related-card {
   gap: 14px;
 }
@@ -846,6 +921,7 @@ input {
   .planner-grid,
   .watch-grid,
   .split-grid,
+  .compact-grid,
   .detail-hero,
   .detail-grid {
     grid-template-columns: 1fr;

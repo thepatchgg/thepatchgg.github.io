@@ -1,6 +1,7 @@
 (function () {
   const WATCHLIST_KEY = "thepatch.watchlist.v1";
   const INVENTORY_KEY = "thepatch.inventory.v1";
+  const RECENT_PETS_KEY = "thepatch.recentPets.v1";
 
   function readJson(key, fallback) {
     try {
@@ -94,14 +95,61 @@
     return saveInventory([]);
   }
 
+  function normalizeRecentPets(list) {
+    return (Array.isArray(list) ? list : [])
+      .map((entry) => {
+        if (!entry || typeof entry.slug !== "string" || !entry.slug.trim()) {
+          return null;
+        }
+
+        const timestamp = Number(entry.viewedAt || Date.now());
+        return {
+          slug: entry.slug,
+          viewedAt: Number.isFinite(timestamp) ? timestamp : Date.now()
+        };
+      })
+      .filter(Boolean)
+      .sort((left, right) => right.viewedAt - left.viewedAt)
+      .slice(0, 8);
+  }
+
+  function loadRecentPets() {
+    return normalizeRecentPets(readJson(RECENT_PETS_KEY, []));
+  }
+
+  function saveRecentPets(list) {
+    const normalized = normalizeRecentPets(list);
+    writeJson(RECENT_PETS_KEY, normalized);
+    dispatchChange("thepatch:recentPets", { items: normalized });
+    return normalized;
+  }
+
+  function pushRecentPet(slug) {
+    if (typeof slug !== "string" || !slug.trim()) {
+      return loadRecentPets();
+    }
+
+    const current = loadRecentPets().filter((entry) => entry.slug !== slug);
+    current.unshift({
+      slug,
+      viewedAt: Date.now()
+    });
+
+    return saveRecentPets(current);
+  }
+
   window.ThePatchRetention = {
     WATCHLIST_KEY,
     INVENTORY_KEY,
+    RECENT_PETS_KEY,
     clearInventory,
     isWatched,
     loadInventory,
+    loadRecentPets,
     loadWatchlist,
+    pushRecentPet,
     saveInventory,
+    saveRecentPets,
     saveWatchlist,
     toggleWatchlist
   };
