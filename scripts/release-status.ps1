@@ -17,7 +17,8 @@ Push-Location $repoRoot
 try {
   $branch = (& "C:\Program Files\Git\cmd\git.exe" rev-parse --abbrev-ref HEAD).Trim()
   $commit = (& "C:\Program Files\Git\cmd\git.exe" rev-parse --short HEAD).Trim()
-  $status = (& "C:\Program Files\Git\cmd\git.exe" status --short).Trim()
+  $statusLines = & "C:\Program Files\Git\cmd\git.exe" status --short
+  $status = if ($statusLines) { ($statusLines -join [Environment]::NewLine).Trim() } else { "" }
 } finally {
   Pop-Location
 }

@@ -43,6 +43,11 @@ That will create desktop and mobile screenshots for the highest-risk pages in:
 qa-screenshots/
 ```
 
+Note:
+
+- screenshot capture is a best-effort helper
+- if the local browser environment blocks headless screenshots, continue with the rest of the manual QA pass in a normal browser session
+
 ## 4. Manual visual review order
 
 Review these first:

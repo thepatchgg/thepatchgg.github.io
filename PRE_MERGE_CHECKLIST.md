@@ -22,7 +22,7 @@ This checklist is for release readiness only. It does not imply approval to merg
 
 - [ ] Preview server runs with `scripts/start-preview.ps1`
 - [ ] Preview server stops cleanly with `scripts/stop-preview.ps1`
-- [ ] Screenshot capture runs with `scripts/capture-release-screens.ps1`
+- [ ] Screenshot capture runs with `scripts/capture-release-screens.ps1` if the local browser environment supports it
 - [ ] `scripts/qa-release.ps1` passes
 
 ## Core pages to review first

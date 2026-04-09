@@ -30,21 +30,26 @@ function Invoke-Capture {
     [string]$Executable,
     [string]$Url,
     [string]$TargetPath,
-    [string]$Viewport,
-    [string]$UserDataDir
+    [string]$Viewport
   )
+
+  $runProfileDir = Join-Path ([System.IO.Path]::GetTempPath()) ("thepatch-headless-" + [guid]::NewGuid().ToString())
+  New-Item -ItemType Directory -Force -Path $runProfileDir | Out-Null
 
   & $Executable `
     --headless=new `
     --disable-gpu `
+    --disable-breakpad `
     --disable-crash-reporter `
     --no-first-run `
     --no-default-browser-check `
     --hide-scrollbars `
-    "--user-data-dir=$UserDataDir" `
+    "--user-data-dir=$runProfileDir" `
     "--window-size=$Viewport" `
     "--screenshot=$TargetPath" `
     $Url 2>$null | Out-Null
+
+  Remove-Item -LiteralPath $runProfileDir -Recurse -Force -ErrorAction SilentlyContinue
 }
 
 $browser = Resolve-Browser -PreferredPath $BrowserPath
@@ -63,11 +68,6 @@ try {
 $outputPath = Join-Path $repoRoot $OutputDir
 if (-not (Test-Path -LiteralPath $outputPath)) {
   New-Item -ItemType Directory -Path $outputPath | Out-Null
-}
-
-$userDataDir = Join-Path $repoRoot ".headless-browser"
-if (-not (Test-Path -LiteralPath $userDataDir)) {
-  New-Item -ItemType Directory -Path $userDataDir | Out-Null
 }
 
 $targets = @(
@@ -94,7 +94,12 @@ foreach ($target in $targets) {
     $screenshotPath = Join-Path $outputPath $fileName
     $url = "$baseUrl$($target.Path)"
 
-    Invoke-Capture -Executable $browser -Url $url -TargetPath $screenshotPath -Viewport $viewport.Size -UserDataDir $userDataDir
+    Invoke-Capture -Executable $browser -Url $url -TargetPath $screenshotPath -Viewport $viewport.Size
+
+    if (-not (Test-Path -LiteralPath $screenshotPath)) {
+      throw "Screenshot capture failed for $fileName. This environment may not support headless browser screenshots cleanly."
+    }
+
     Write-Output "Captured $fileName"
   }
 }
