@@ -35,6 +35,12 @@ $screenCount = if (Test-Path -LiteralPath $screensDir) {
 
 $manualTemplate = Join-Path $repoRoot "MANUAL_QA_REPORT_TEMPLATE.md"
 $manualTemplateExists = Test-Path -LiteralPath $manualTemplate
+$analyticsGuide = Join-Path $repoRoot "ANALYTICS_VERIFICATION.md"
+$analyticsGuideExists = Test-Path -LiteralPath $analyticsGuide
+$mergeRunbook = Join-Path $repoRoot "MERGE_DAY_RUNBOOK.md"
+$mergeRunbookExists = Test-Path -LiteralPath $mergeRunbook
+$postMergeGuide = Join-Path $repoRoot "POST_MERGE_SMOKE_TEST.md"
+$postMergeGuideExists = Test-Path -LiteralPath $postMergeGuide
 
 Write-Output "Branch: $branch"
 Write-Output "Commit: $commit"
@@ -48,6 +54,9 @@ Write-Output $releaseQa.output
 Write-Output ""
 Write-Output "Screenshot count: $screenCount"
 Write-Output "Manual QA template present: $manualTemplateExists"
+Write-Output "Analytics guide present: $analyticsGuideExists"
+Write-Output "Merge runbook present: $mergeRunbookExists"
+Write-Output "Post-merge smoke test present: $postMergeGuideExists"
 
 if (-not [string]::IsNullOrWhiteSpace($status)) {
   Write-Output ""

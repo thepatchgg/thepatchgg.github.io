@@ -121,6 +121,8 @@ Use GA realtime or debug tooling before merge.
 - [ ] Confirm the draft status should be removed only after QA signoff
 - [ ] Manual QA report filled in from `MANUAL_QA_REPORT_TEMPLATE.md`
 - [ ] Release snapshot reviewed from `scripts/release-status.ps1`
+- [ ] Analytics verified using `ANALYTICS_VERIFICATION.md`
+- [ ] Merge plan reviewed from `MERGE_DAY_RUNBOOK.md`
 
 ## Merge sequence
 

@@ -92,6 +92,9 @@ Before merge, verify these in GA realtime or debug tooling:
 - `RELEASE_NOTES_DRAFT.md`
 - `PR_BODY_DRAFT.md`
 - `MANUAL_QA_REPORT_TEMPLATE.md`
+- `ANALYTICS_VERIFICATION.md`
+- `MERGE_DAY_RUNBOOK.md`
+- `POST_MERGE_SMOKE_TEST.md`
 
 ## 8. Release snapshot
 

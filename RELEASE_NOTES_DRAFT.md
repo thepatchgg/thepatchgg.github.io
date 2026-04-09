@@ -51,3 +51,6 @@ Keep the PR in draft until the manual signoff checklist in `PRE_MERGE_CHECKLIST.
 - `MANUAL_QA_REPORT_TEMPLATE.md`
 - `QA_RUNBOOK.md`
 - `.github/workflows/site-qa.yml`
+- `ANALYTICS_VERIFICATION.md`
+- `MERGE_DAY_RUNBOOK.md`
+- `POST_MERGE_SMOKE_TEST.md`
