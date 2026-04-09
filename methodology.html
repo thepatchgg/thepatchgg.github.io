@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Patch Methodology</title>
+  <meta name="description" content="How The Patch reviews Adopt Me benchmark values, confidence, no-potion premiums, and catalog coverage.">
+  <link rel="canonical" href="https://thepatchgg.github.io/methodology.html">
+  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KXQR564341');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>The Patch</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
+        <a href="/methodology.html">Methodology</a>
+        <a href="/corrections.html">Corrections</a>
+        <a href="/changelog.html">Changelog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Methodology</div>
+          <h1>How The Patch builds its benchmark values.</h1>
+          <p>
+            The site does not invent a separate fantasy economy. It reviews public market references, normalizes them
+            into one internal benchmark list, and then uses that same data in every core tool that is already migrated.
+          </p>
+        </div>
+        <aside class="hero-panel">
+          <p class="helper">Current inputs</p>
+          <ul class="signal-list">
+            <li><span>Public value trackers reviewed manually</span><span class="tone tone-strong">Reference</span></li>
+            <li><span>Demand and trend shown beside raw value</span><span class="tone tone-strong">Context</span></li>
+            <li><span>Confidence used when a lane is less stable</span><span class="tone tone-beta">Caution</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell card-grid">
+        <article class="card">
+          <h3>1. Build one shared scale</h3>
+          <p>The homepage, value list, trade calculator, and Neon calculator should not each carry a different value system. Shared data is the starting rule.</p>
+        </article>
+        <article class="card">
+          <h3>2. Treat variants separately</h3>
+          <p>Default, no-potion, Neon, Neon no-potion, Mega, and Mega no-potion can behave differently. High tiers especially should not be forced into flat multipliers.</p>
+        </article>
+        <article class="card">
+          <h3>3. Publish confidence honestly</h3>
+          <p>Some pets are easier to benchmark than others. Stable old pets deserve stronger confidence than fast-moving release pets or thinly traded collector lanes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell hub-grid">
+        <article class="card">
+          <h3>What “benchmark” means</h3>
+          <p>A benchmark is a useful comparison point, not a guarantee. Real trades still depend on urgency, server liquidity, aesthetics, and whether a pet is easy to move again after the trade.</p>
+        </article>
+        <article class="card">
+          <h3>What is covered today</h3>
+          <p>The strongest coverage is on the benchmark pets already powering the core value tools. The wider catalog is being expanded in controlled passes instead of bulk-importing low-confidence values.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell hub-grid">
+        <article class="card">
+          <h3>Reference families reviewed</h3>
+          <p>Public market trackers and community benchmark sites are reviewed to understand current ordering, major demand shifts, and where no-potion or Neon pricing breaks naive assumptions.</p>
+        </article>
+        <article class="card">
+          <h3>When the site changes</h3>
+          <p>Core tools should be updated whenever a clear contradiction, stale claim, or major market shift is identified. Major user-visible changes are logged on the changelog page.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-copy">Methodology should get stricter over time, not looser.</div>
+      <nav class="nav" aria-label="Footer">
+        <a href="/corrections.html">Corrections</a>
+        <a href="/changelog.html">Changelog</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

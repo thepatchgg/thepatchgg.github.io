@@ -3,81 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adopt Me Trading Board 2026 — Post Trades, Find Offers | The Patch</title>
-  <meta name="description" content="The Adopt Me! community trading board. Browse active trade offers, post what you're looking for, and connect with other traders. Updated 2026.">
+  <title>Adopt Me Trading Board Beta | The Patch</title>
+  <meta name="description" content="The Patch trading board is being rebuilt as a moderated beta so players can browse sample listings and prepare for a safer community trading experience.">
   <link rel="canonical" href="https://thepatchgg.github.io/trading-forum.html">
-  <meta property="og:title" content="Adopt Me Trading Board 2026 — Post Trades &amp; Find Offers">
-  <meta property="og:description" content="Free Adopt Me trading board. Post your haves and wants, browse open trades, and find the best deals from the community.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://thepatchgg.github.io/trading-forum.html">
-  <meta property="og:site_name" content="The Patch">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Adopt Me Trading Board 2026 — Post Trades &amp; Find Offers">
-  <meta name="twitter:description" content="Free Adopt Me trading board. Post your haves and wants, browse open trades, and find the best deals from the community.">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .forum-layout { max-width: var(--max-w); margin: 0 auto; padding: 32px 20px 80px; display: grid; grid-template-columns: 1fr 300px; gap: 24px; align-items: start; }
-    .forum-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin-bottom: 20px; overflow-x: auto; }
-    .ftab { padding: 10px 16px; font-size: 13px; font-weight: 600; color: var(--text-muted); border-bottom: 2px solid transparent; cursor: pointer; white-space: nowrap; transition: all 0.15s; background: none; border-top: none; border-left: none; border-right: none; }
-    .ftab.active { color: var(--am); border-bottom-color: var(--am); }
-    .ftab:hover { color: var(--text); }
-    .trade-post { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 12px; transition: border-color 0.15s; }
-    .trade-post:hover { border-color: #3a3a50; }
-    .tp-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-    .tp-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--surface2); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; border: 1px solid var(--border); }
-    .tp-user { flex: 1; }
-    .tp-username { font-size: 14px; font-weight: 700; color: var(--text); }
-    .tp-meta { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
-    .tp-badge { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; }
-    .badge-wtt { background: rgba(62,207,107,0.12); color: var(--am); }
-    .badge-lf { background: rgba(47,163,224,0.12); color: var(--fn); }
-    .badge-offering { background: rgba(200,255,87,0.1); color: var(--accent); }
-    .badge-closed { background: rgba(200,200,200,0.08); color: var(--text-muted); }
-    .badge-featured { background: rgba(255,170,0,0.15); color: #ffaa00; }
-    .tp-trade-box { background: var(--surface2); border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; }
-    .tp-trade-row { display: flex; align-items: flex-start; gap: 10px; }
-    .tp-side { flex: 1; }
-    .tp-side-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 6px; }
-    .tp-pets { display: flex; flex-wrap: wrap; gap: 6px; }
-    .tp-pet-chip { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; font-size: 12px; font-weight: 600; color: var(--text); }
-    .tp-vs { font-size: 16px; color: var(--text-muted); display: flex; align-items: center; padding: 0 6px; align-self: center; }
-    .tp-note { font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-bottom: 10px; }
-    .tp-footer { display: flex; align-items: center; justify-content: space-between; }
-    .tp-stats { display: flex; gap: 12px; font-size: 12px; color: var(--text-muted); }
-    .tp-contact { background: var(--am); color: #000; font-size: 12px; font-weight: 700; padding: 6px 14px; border-radius: 6px; border: none; cursor: pointer; transition: opacity 0.15s; }
-    .tp-contact:hover { opacity: 0.85; }
-    .post-trade-box { background: linear-gradient(135deg, rgba(62,207,107,0.08), rgba(62,207,107,0.03)); border: 1px solid rgba(62,207,107,0.25); border-radius: 12px; padding: 24px; margin-bottom: 20px; text-align: center; }
-    .ptb-title { font-size: 17px; font-weight: 800; color: var(--text); margin-bottom: 8px; }
-    .ptb-sub { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.5; }
-    .ptb-btn { display: inline-block; background: var(--am); color: #000; font-weight: 800; font-size: 14px; padding: 12px 24px; border-radius: 8px; text-decoration: none; transition: opacity 0.15s; border: none; cursor: pointer; }
-    .ptb-btn:hover { opacity: 0.88; }
-    .rules-list { font-size: 13px; color: var(--text-muted); line-height: 1.9; }
-    .rules-list li { list-style: none; padding-left: 4px; }
-    .sidebar-stat { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
-    .sidebar-stat:last-child { border-bottom: none; }
-    .hot-trade { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
-    .hot-trade:last-child { border-bottom: none; }
-    .hot-trade-emoji { font-size: 18px; }
-    .modal-overlay { display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:1000;align-items:center;justify-content:center; }
-    .modal-overlay.open { display:flex; }
-    .modal { background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:28px;max-width:500px;width:90%;position:relative; }
-    .modal-close { position:absolute;top:12px;right:14px;background:none;border:none;color:var(--text-muted);font-size:20px;cursor:pointer; }
-    .modal-close:hover { color:var(--text); }
-    .form-group { margin-bottom:16px; }
-    .form-label { font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);display:block;margin-bottom:6px; }
-    .form-input, .form-textarea, .form-select { width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 14px;font-size:14px;color:var(--text);outline:none;font-family:var(--font); }
-    .form-input:focus, .form-textarea:focus, .form-select:focus { border-color:var(--am); }
-    .form-textarea { min-height:80px;resize:vertical; }
-    @media (max-width: 800px) { .forum-layout { grid-template-columns: 1fr; } }
-  
-    .tp-notes { padding: .4rem 1rem .6rem; color: #666; font-size: .85rem; }
-    .tp-availability { padding: .3rem 1rem; color: #3a7d44; font-size: .85rem; font-weight: 500; }
-    .tp-time { font-size: .75rem; color: #aaa; margin-left: .5rem; }
-    .tp-arrow { font-size: 1.2rem; color: #ccc; align-self: center; padding: 0 .5rem; display: flex; align-items: center; }
-    .loading-msg { text-align: center; color: #888; padding: 2rem 1rem; }
-</style>
-
-  <!-- Google tag (gtag.js) -->
+  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -87,277 +16,125 @@
   </script>
 </head>
 <body>
-<header class="site-header">
-  <div class="header-inner">
-    <a href="/" class="site-logo">The <span>Patch</span> 🐾</a>
-    <nav class="main-nav">
-      <a href="/">Home</a>
-      <a href="articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
-      <a href="/articles/adopt-me-pet-encyclopedia.html">Pet Dex</a>
-      <a href="/articles/adopt-me-egg-guide.html">Egg Guide</a>
-      <a href="pet-value-calculator.html">Trade Calc</a>
-      <a href="neon-calculator.html">Neon Calc</a>
-      <a href="trading-forum.html" class="active">Trading Board</a>
-      <a href="adopt-me.html">All Guides</a>
-    </nav>
-    <a href="https://thepatchgg.substack.com" class="header-cta" target="_blank" rel="noopener">Subscribe Free</a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<div style="max-width:var(--max-w);margin:0 auto;padding:32px 20px 8px;">
-  <div style="font-size:13px;color:var(--text-muted);margin-bottom:10px;">
-    <a href="/" style="color:var(--text-muted);">Home</a> <span style="opacity:.4;margin:0 4px;">/</span> Trading Board
-  </div>
-  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;">
-    <div>
-      <h1 style="font-size:clamp(22px,3vw,32px);font-weight:900;letter-spacing:-0.8px;margin-bottom:6px;">Adopt Me! Trading Board</h1>
-      <p style="font-size:14px;color:var(--text-muted);">Browse trade offers, post what you're looking for, and connect with other traders.</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>The Patch</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
+        <a href="/pet-value-calculator.html">Trade Calculator</a>
+        <a href="/neon-calculator.html">Neon Calculator</a>
+        <a href="/articles/adopt-me-pet-encyclopedia.html">Pet Explorer</a>
+        <a href="/trading-forum.html">Trading Board</a>
+      </nav>
     </div>
-    <button class="ptb-btn" onclick="document.getElementById('postModal').classList.add('open')">+ Post a Trade</button>
-  </div>
-</div>
+  </header>
 
-<div class="forum-layout">
-  <div>
-    <div class="post-trade-box">
-      <div class="ptb-title">🐾 Have pets to trade? Post your offer!</div>
-      <div class="ptb-sub">Tell the community what you're offering and what you're looking for. All posts are reviewed before going live — no scams, no spam.</div>
-      <button class="ptb-btn" onclick="document.getElementById('postModal').classList.add('open')">Post a Trade →</button>
+  <main>
+    <section class="page-hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Board beta</div>
+          <h1>The trading board is being rebuilt the honest way.</h1>
+          <p>
+            The old board looked live, but its submission flow and status handling were not strong enough to earn trust.
+            This version is intentionally labeled as a moderated beta while the posting workflow is rebuilt.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="/pet-value-calculator.html">Check trade value first</a>
+            <a class="button secondary" href="/corrections.html">Report a board issue</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <p class="helper">Beta rules</p>
+          <ul class="signal-list">
+            <li><span>No fake “active trader” counters</span><span class="tone tone-strong">Fixed</span></li>
+            <li><span>No silent `no-cors` submission black box</span><span class="tone tone-strong">Fixed</span></li>
+            <li><span>Listings shown here are sample moderated formats</span><span class="tone tone-beta">Beta</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell hub-grid">
+        <article class="card">
+          <h3>What is available now</h3>
+          <p>You can use the value list, trade calculator, and Neon calculator to price a deal before you ever message another trader.</p>
+        </article>
+        <article class="card">
+          <h3>What is coming back later</h3>
+          <p>Public posting, moderation queues, abuse reporting, and clear listing status will return after the board backend is rebuilt.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Example listing format</h2>
+            <p class="intro-copy">These sample cards show the standard we want the board to meet once live submissions reopen.</p>
+          </div>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="toolbar">
+              <span class="tone tone-strong">Sample listing</span>
+              <span class="tone tone-high">Want to Trade</span>
+            </div>
+            <h3>Bat Dragon for high-tier offers</h3>
+            <p>Offering: FR Bat Dragon. Looking for: Shadow Dragon plus adds, or equivalent high-tier bundle.</p>
+            <p class="micro-copy">Status should eventually show: posted time, moderation status, and whether the trader is still active.</p>
+          </article>
+          <article class="card">
+            <div class="toolbar">
+              <span class="tone tone-strong">Sample listing</span>
+              <span class="tone tone-steady">Looking For</span>
+            </div>
+            <h3>Searching for Cow or Turtle upgrades</h3>
+            <p>Offering: mix of mid-tier adds. Looking for: Cow, Turtle, or similar liquid pet with stable demand.</p>
+            <p class="micro-copy">Status should eventually show: trade lane, benchmark context, and a clear stale-listing timeout.</p>
+          </article>
+          <article class="card">
+            <div class="toolbar">
+              <span class="tone tone-strong">Sample listing</span>
+              <span class="tone tone-beta">Offer review</span>
+            </div>
+            <h3>Neon builder bundle</h3>
+            <p>Offering: four clean components and looking for a direct Neon comparison to save aging time.</p>
+            <p class="micro-copy">Status should eventually show: whether the listing is for parts, finished Neon, or Mega planning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell hub-grid">
+        <article class="card">
+          <h3>Safer workflow until the board returns</h3>
+          <p>Use the trade calculator to benchmark the deal, compare Neon math if aging is involved, then only move into direct player negotiation once the numbers make sense.</p>
+        </article>
+        <article class="card">
+          <h3>Why the board is paused</h3>
+          <p>The old version had unreliable submission confirmation and credibility issues. Pausing it publicly is better than pretending it is production-ready.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-copy">The trading board is in moderated beta while submission and abuse-reporting tools are rebuilt.</div>
+      <nav class="nav" aria-label="Footer">
+        <a href="/pet-value-calculator.html">Trade Calculator</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>
+        <a href="/corrections.html">Corrections</a>
+      </nav>
     </div>
-
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
-      <div class="forum-tabs" style="flex:1;min-width:0;margin-bottom:0;border-bottom:none;">
-        <button class="ftab active" onclick="filterTrades('all',this)">All Trades</button>
-        <button class="ftab" onclick="filterTrades('wtt',this)">🔄 WTT</button>
-        <button class="ftab" onclick="filterTrades('lf',this)">🔍 Looking For</button>
-        <button class="ftab" onclick="filterTrades('offering',this)">🎁 Offering</button>
-      </div>
-      <div style="font-size:12px;color:var(--text-muted);" id="postCount">Showing 8 posts</div>
-    </div>
-
-    <div id="tradesList"></div>
-  </div>
-
-  <div>
-    <div class="sidebar-widget" style="margin-bottom:16px;">
-      <h3>Board Activity</h3>
-      <div class="sidebar-stat"><span>Active Traders</span><span style="font-weight:800;color:var(--am);">47</span></div>
-      <div class="sidebar-stat"><span>Posts Today</span><span style="font-weight:800;color:var(--text);">23</span></div>
-      <div class="sidebar-stat"><span>Trades Completed</span><span style="font-weight:800;color:var(--text);">1,204</span></div>
-      <div class="sidebar-stat"><span>Most Wanted</span><span style="font-weight:800;color:#ffaa00;">🦇 Bat Dragon</span></div>
-    </div>
-
-    <div class="sidebar-widget" style="margin-bottom:16px;">
-      <h3>🔥 Most Active Trades</h3>
-      <div class="hot-trade">
-        <div class="hot-trade-emoji">🦇</div>
-        <div><div style="font-size:12px;font-weight:700;color:var(--text);">Bat Dragon offers</div><div style="font-size:11px;color:var(--text-muted);">12 active posts</div></div>
-      </div>
-      <div class="hot-trade">
-        <div class="hot-trade-emoji">🍭</div>
-        <div><div style="font-size:12px;font-weight:700;color:var(--text);">Candicorn (Sugarfest)</div><div style="font-size:11px;color:var(--text-muted);">8 active posts</div></div>
-      </div>
-      <div class="hot-trade">
-        <div class="hot-trade-emoji">🦒</div>
-        <div><div style="font-size:12px;font-weight:700;color:var(--text);">Giraffe trades</div><div style="font-size:11px;color:var(--text-muted);">6 active posts</div></div>
-      </div>
-      <div class="hot-trade">
-        <div class="hot-trade-emoji">🐢</div>
-        <div><div style="font-size:12px;font-weight:700;color:var(--text);">FR Turtle offers</div><div style="font-size:11px;color:var(--text-muted);">5 active posts</div></div>
-      </div>
-    </div>
-
-    <div class="sidebar-widget sub-cta-widget" style="margin-bottom:16px;">
-      <h3>The Patch Newsletter</h3>
-      <p>Get event alerts, value changes, and trading tips every update.</p>
-      <a href="https://thepatchgg.substack.com" class="btn-primary">Subscribe Free</a>
-    </div>
-
-    <div class="sidebar-widget">
-      <h3>Quick Tools</h3>
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        <a href="pet-value-calculator.html" style="font-size:13px;color:var(--text-muted);padding:8px;background:var(--surface2);border-radius:6px;display:block;text-decoration:none;">🔢 Trade Calculator → Check fair value</a>
-        <a href="neon-calculator.html" style="font-size:13px;color:var(--text-muted);padding:8px;background:var(--surface2);border-radius:6px;display:block;text-decoration:none;">✨ Neon Calculator → Neon cost</a>
-        <a href="articles/adopt-me-pet-value-list-2026.html" style="font-size:13px;color:var(--text-muted);padding:8px;background:var(--surface2);border-radius:6px;display:block;text-decoration:none;">📊 Full Value List → All pets</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Post Trade Modal -->
-<div class="modal-overlay" id="postModal">
-  <div class="modal">
-    <button class="modal-close" onclick="document.getElementById('postModal').classList.remove('open')">✕</button>
-    <div style="font-size:18px;font-weight:800;color:var(--text);margin-bottom:6px;">Post a Trade</div>
-    <div style="font-size:13px;color:var(--text-muted);margin-bottom:20px;">Fill in the details below. Posts are reviewed before going live (usually within a few hours).</div>
-    <form id="tradeForm" onsubmit="submitTrade(event)">
-      <div class="form-group">
-        <label class="form-label">Your Username (Roblox name)</label>
-        <input type="text" class="form-input" name="username" placeholder="YourRobloxUsername" required>
-      </div>
-      <div class="form-group">
-        <label class="form-label">Trade Type</label>
-        <select class="form-select" name="trade_type" required>
-          <option value="">— Select —</option>
-          <option>🔄 WTT — Want to Trade (offering AND seeking)</option>
-          <option>🔍 Looking For — I have pets, seeking specific pet</option>
-          <option>🎁 Offering — I have a pet, open to offers</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label class="form-label">Pets You're Offering</label>
-        <input type="text" class="form-input" name="offering" placeholder="e.g. FR Turtle, Normal Octopus" required>
-      </div>
-      <div class="form-group">
-        <label class="form-label">Pets You're Looking For</label>
-        <input type="text" class="form-input" name="looking_for" placeholder="e.g. FR Parrot or similar value" required>
-      </div>
-      <div class="form-group">
-        <label class="form-label">Additional Notes (optional)</label>
-        <textarea class="form-textarea" name="notes" placeholder="Any extra details about your trade offer..."></textarea>
-      
-        <div class="form-group">
-          <label class="form-label">When can you meet in-game?</label>
-          <input class="form-input" name="availability" type="text" placeholder="e.g. Weekdays after 5pm EST, weekends anytime">
-        </div></div>
-      <button type="submit" class="ptb-btn" style="width:100%;padding:14px;font-size:15px;">Submit Trade Post →</button>
-    </form>
-    <div id="tradeSuccess" style="display:none;text-align:center;padding:20px;">
-      <div style="font-size:40px;margin-bottom:12px;">✅</div>
-      <div style="font-size:17px;font-weight:800;color:var(--text);margin-bottom:8px;">Trade post submitted!</div>
-      <div style="font-size:13px;color:var(--text-muted);">It will be reviewed and posted within a few hours. Thank you for contributing to the community!</div>
-    </div>
-  </div>
-</div>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div><div class="footer-brand">The Patch 🐾</div></div>
-    <nav class="footer-links">
-      <a href="/">Home</a><a href="pet-value-calculator.html">Trade Calc</a><a href="neon-calculator.html">Neon Calc</a><a href="trading-forum.html">Trading Board</a><a href="adopt-me.html">All Guides</a>
-    </nav>
-    <div class="footer-legal">© 2026 The Patch. Not affiliated with Roblox Corporation. Adopt Me! is property of Uplift Games.</div>
-  </div>
-</footer>
-<script>
-var GAS_URL = 'https://script.google.com/macros/s/AKfycbyTm-F_HCHt54vqhNUkxcWnLQKcz02JZhaCwhHk5am1WruH3cGDIDstGYZoe7rFLWl9/exec';
-
-function timeAgo(iso) {
-  var d = new Date(iso), now = new Date();
-  var diff = Math.floor((now - d) / 1000);
-  if (diff < 60) return 'just now';
-  if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
-  if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
-  return Math.floor(diff / 86400) + 'd ago';
-}
-
-function badgeClass(t) {
-  if (!t) return 'badge-wtt';
-  if (t.includes('WTT') || t.includes('Trade')) return 'badge-wtt';
-  if (t.includes('Looking')) return 'badge-lf';
-  return 'badge-offering';
-}
-
-function badgeLabel(t) {
-  if (!t) return 'WTT';
-  if (t.includes('WTT')) return '\u{1F504} WTT';
-  if (t.includes('Looking')) return '\u{1F50D} Looking For';
-  return '\u{1F381} Offering';
-}
-
-function petsHtml(text) {
-  if (!text) return '<span class="tp-pet-chip">\u2014</span>';
-  return text.split(',').map(function(p) {
-    return '<span class="tp-pet-chip">' + escHtml(p.trim()) + '</span>';
-  }).join('');
-}
-
-function escHtml(s) {
-  return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-function escAttr(s) {
-  return String(s || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/</g, '').replace(/>/g, '');
-}
-
-function renderPost(post) {
-  var initial = (post.username || '?').charAt(0).toUpperCase();
-  var avail = post.availability ? '<div class="tp-availability">\u23F0 ' + escHtml(post.availability) + '</div>' : '';
-  var notes = post.notes ? '<div class="tp-notes">\u{1F4DD} ' + escHtml(post.notes) + '</div>' : '';
-  var when = post.timestamp ? '<span class="tp-time">' + timeAgo(post.timestamp) + '</span>' : '';
-  return '<div class="trade-post">' +
-    '<div class="tp-header">' +
-      '<div class="tp-avatar">' + initial + '</div>' +
-      '<div class="tp-user"><div class="tp-username">' + escHtml(post.username || 'Anonymous') + '</div></div>' +
-      '<div class="tp-meta"><span class="tp-badge ' + badgeClass(post.trade_type) + '">' + badgeLabel(post.trade_type) + '</span>' + when + '</div>' +
-    '</div>' +
-    '<div class="tp-trade-box"><div class="tp-trade-row">' +
-      '<div class="tp-side"><div class="tp-side-label">Offering</div><div class="tp-pets">' + petsHtml(post.offering) + '</div></div>' +
-      '<div class="tp-arrow">&#8594;</div>' +
-      '<div class="tp-side"><div class="tp-side-label">Looking For</div><div class="tp-pets">' + petsHtml(post.looking_for) + '</div></div>' +
-    '</div></div>' +
-    avail + notes +
-    '<div class="tp-footer"><button class="tp-contact" onclick="showContact(\'' + escAttr(post.username) + '\')">\u{1F4AC} Contact Trader</button></div>' +
-  '</div>';
-}
-
-function loadPosts() {
-  var list = document.getElementById('tradesList');
-  if (!list) return;
-  list.innerHTML = '<p class="loading-msg">Loading trades\u2026</p>';
-  fetch(GAS_URL)
-    .then(function(r) { return r.json(); })
-    .then(function(data) {
-      var posts = data.posts || [];
-      var countEl = document.getElementById('postCount');
-      if (countEl) countEl.textContent = posts.length + ' active listing' + (posts.length !== 1 ? 's' : '');
-      list.innerHTML = posts.length
-        ? posts.map(renderPost).join('')
-        : '<p class="loading-msg">No trades posted yet \u2014 be the first!</p>';
-    })
-    .catch(function() {
-      list.innerHTML = '<p class="loading-msg" style="color:#c00">Couldn\u2019t load trades. Please refresh.</p>';
-    });
-}
-
-async function submitTrade(e) {
-  e.preventDefault();
-  var form = e.target;
-  var btn = form.querySelector('[type=submit]');
-  var orig = btn.textContent;
-  btn.textContent = 'Posting…';
-  btn.disabled = true;
-  try {
-    await fetch(GAS_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      body: JSON.stringify({
-        username: form.username.value.trim(),
-        trade_type: form.trade_type.value,
-        offering: form.offering.value.trim(),
-        looking_for: form.looking_for.value.trim(),
-        availability: form.availability.value.trim(),
-        notes: form.notes.value.trim()
-      })
-    });
-    form.reset();
-    var suc = document.getElementById('tradeSuccess');
-    if (suc) { suc.style.display = 'block'; setTimeout(function() { suc.style.display = 'none'; }, 4000); }
-    setTimeout(loadPosts, 1500);
-  } catch(err) {
-    alert('Submission failed — please check your connection and try again.');
-  }
-  btn.textContent = orig;
-  btn.disabled = false;
-}
-
-function showContact(username) {
-  var name = username || 'this trader';
-  alert('To contact ' + name + ':\n\n\u2022 Find them in Adopt Me! using Roblox username: ' + name + '\n\u2022 Walk up to their character and tap the Trade icon\n\u2022 Or send a Roblox friend request\n\n\u26A0\uFE0F Always use the official in-game trade window \u2014 never trade outside it!');
-}
-
-window.addEventListener('DOMContentLoaded', function() {  loadPosts();
-});
-</script></script>
+  </footer>
 </body>
 </html>
