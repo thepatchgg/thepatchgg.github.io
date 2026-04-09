@@ -5,7 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adopt Me Neon Calculator | The Patch</title>
   <meta name="description" content="See whether it is smarter to make or buy an Adopt Me Neon or Mega Neon using the same shared value data that powers The Patch trade tools.">
+  <meta name="theme-color" content="#08111f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adopt Me Neon Calculator | The Patch">
+  <meta property="og:description" content="See whether it is smarter to make or buy an Adopt Me Neon or Mega Neon using the same shared value data that powers The Patch trade tools.">
+  <meta property="og:url" content="https://thepatchgg.github.io/neon-calculator.html">
+  <meta property="og:site_name" content="The Patch">
+  <meta property="og:image" content="https://thepatchgg.github.io/assets/pets/bat-dragon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Adopt Me Neon Calculator | The Patch">
+  <meta name="twitter:description" content="See whether it is smarter to make or buy an Adopt Me Neon or Mega Neon using the same shared value data that powers The Patch trade tools.">
+  <meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/bat-dragon.png">
   <link rel="canonical" href="https://thepatchgg.github.io/neon-calculator.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/css/adopt-tools.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
   <script>
@@ -209,7 +222,7 @@
       document.getElementById("result-avatar").src = `/assets/pets/${pet.slug}.png`;
       document.getElementById("result-avatar").alt = pet.name;
       document.getElementById("result-title").textContent = `${pet.name} ${state.target === "mega" ? "Mega" : "Neon"} plan`;
-      document.getElementById("result-subtitle").textContent = `${pet.demand} demand · ${pet.trend} trend`;
+      document.getElementById("result-subtitle").textContent = `${pet.demand} demand - ${pet.trend} trend`;
       document.getElementById("pets-required").textContent = needed;
       document.getElementById("component-cost").textContent = window.ThePatchValues.formatValue(componentCost);
       document.getElementById("target-value").textContent = window.ThePatchValues.formatValue(directValue);

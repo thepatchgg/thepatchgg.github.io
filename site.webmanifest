@@ -1,0 +1,9 @@
+{
+  "name": "The Patch",
+  "short_name": "The Patch",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08111f",
+  "theme_color": "#08111f",
+  "description": "Adopt Me values, calculators, market movers, and trading tools from The Patch."
+}
