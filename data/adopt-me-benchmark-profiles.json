@@ -1,0 +1,149 @@
+{
+  "updatedAt": "2026-04-09",
+  "profiles": {
+    "bat-dragon": {
+      "summary": "Bat Dragon is the clearest top-end benchmark in the current Patch system because demand, collector interest, and no-potion premiums all stay strong at the same time.",
+      "origin": "Older Halloween legend with a very mature trading market and one of the strongest collector lanes on the site.",
+      "liquidity": "Even when high-tier trades slow down, Bat Dragon still works as a trust anchor because experienced traders recognize the pricing lane immediately.",
+      "tradeTip": "If a server is pricing Shadow Dragon as clearly above Bat Dragon, slow down and compare against multiple references before overpaying.",
+      "watchReason": "Watch Bat Dragon when you want a quick read on the entire top tier. If this page shifts, the rest of the ladder usually feels it too.",
+      "compareWith": ["shadow-dragon", "giraffe", "frost-dragon"]
+    },
+    "shadow-dragon": {
+      "summary": "Shadow Dragon remains one of the strongest pets in the market, but the benchmark gap between Shadow and Bat matters because many casual lists still invert them.",
+      "origin": "Legacy Halloween legend with elite demand, strong no-potion interest, and constant relevance in top-tier trade rooms.",
+      "liquidity": "Shadow Dragon stays liquid because it is instantly recognizable and still sits near the top of nearly every serious trading ladder.",
+      "tradeTip": "Use Bat Dragon and Giraffe as the quickest sense-checks before treating Shadow as the top pet in a deal.",
+      "watchReason": "Watch Shadow Dragon when you want a cleaner read on elite pets that are powerful but not always at the absolute top of the board.",
+      "compareWith": ["bat-dragon", "giraffe", "owl"]
+    },
+    "giraffe": {
+      "summary": "Giraffe is a premium old-egg benchmark with very strong demand, making it one of the most useful pages for reading upper-tier momentum.",
+      "origin": "Old safari-era benchmark that benefits from age, status, and broad trader familiarity.",
+      "liquidity": "It usually moves well because traders see it as both collectible and practical for laddering into the very top pets.",
+      "tradeTip": "When Giraffe is rising, double-check Frost Dragon and Crow lanes too because mid-to-high tier upgrades often tighten behind it.",
+      "watchReason": "Watch Giraffe to track whether older prestige pets are heating up faster than the rest of the market.",
+      "compareWith": ["bat-dragon", "shadow-dragon", "frost-dragon"]
+    },
+    "frost-dragon": {
+      "summary": "Frost Dragon is one of the safest benchmark pets for real trading because it combines status, familiarity, and broad liquidity better than almost anything below the top three.",
+      "origin": "Holiday dragon benchmark that stays central to upgrades, partials, and mid-to-high tier ladder trades.",
+      "liquidity": "This is the kind of pet traders willingly hold because it is easier to move than many equally priced options.",
+      "tradeTip": "If you are unsure whether a mid-high trade is fair, price it back into Frost Dragon equivalents before deciding.",
+      "watchReason": "Watch Frost Dragon if you want a practical anchor for bigger trades instead of a purely collector-driven pet.",
+      "compareWith": ["giraffe", "owl", "parrot"]
+    },
+    "owl": {
+      "summary": "Owl keeps outperforming what pure rarity would suggest because player preference is unusually sticky, and that makes it a great test case for demand over logic.",
+      "origin": "Farm-era high-tier benchmark with a long history of strong aesthetic demand and stable trader attention.",
+      "liquidity": "Owl tends to stay easier to move than many pets around the same value because a broad player base actively wants one.",
+      "tradeTip": "Do not dismiss Owl overpays as random. This is one of the clearest examples of demand meaningfully changing fair market outcomes.",
+      "watchReason": "Watch Owl when you want to see whether aesthetic demand is overpowering raw rarity in current trades.",
+      "compareWith": ["parrot", "crow", "frost-dragon"]
+    },
+    "parrot": {
+      "summary": "Parrot is a clean high-tier benchmark because it stays liquid, trusted, and easier to price than many similarly expensive pets.",
+      "origin": "Older jungle-era benchmark that continues to show up in serious upgrade paths and balanced high-tier offers.",
+      "liquidity": "Parrot holds up well because many traders treat it as a known stepping stone instead of a niche collector piece.",
+      "tradeTip": "Use Parrot to sense-check large adds around Owl-tier deals because it often exposes whether a package is too top-heavy.",
+      "watchReason": "Watch Parrot when you want a stable read on liquid high-tier trades that are not purely collector-driven.",
+      "compareWith": ["owl", "crow", "frost-dragon"]
+    },
+    "crow": {
+      "summary": "Crow is one of the most useful upper-mid pages because it routinely trades better than basic rarity logic would predict.",
+      "origin": "Older farm-era legend with steady demand and a reputation for being easier to move than many neighboring pets.",
+      "liquidity": "Crow stays relevant because traders know exactly where it fits in upgrade chains toward Owl, Parrot, and Frost Dragon tiers.",
+      "tradeTip": "Crow often reveals whether an offer has enough real demand behind it, not just enough listed value on paper.",
+      "watchReason": "Watch Crow if you want a strong read on upper-mid liquidity and upgrade pressure.",
+      "compareWith": ["evil-unicorn", "owl", "parrot"]
+    },
+    "evil-unicorn": {
+      "summary": "Evil Unicorn is a classic upper-mid benchmark that stays liquid thanks to recognizable design, event status, and long-term trader familiarity.",
+      "origin": "Older Halloween legend that usually sits close enough to Crow to make comparisons valuable without pretending they move the same way.",
+      "liquidity": "It tends to remain dependable in real trades because both collectors and practical traders understand the lane.",
+      "tradeTip": "Compare Evil Unicorn against Crow instead of treating them as interchangeable. They are close, but demand still decides the finish line.",
+      "watchReason": "Watch Evil Unicorn to gauge how older seasonal legends are performing against more mainstream upper-mid pets.",
+      "compareWith": ["crow", "hedgehog", "arctic-reindeer"]
+    },
+    "hedgehog": {
+      "summary": "Hedgehog proves that cute-demand and scarcity can beat many stronger-on-paper pets, which is exactly why it deserves benchmark coverage.",
+      "origin": "Older seasonal ultra-rare with unusually strong collector appeal for its rarity lane.",
+      "liquidity": "It can be slightly swingier than the most stable legends, but demand remains strong enough that traders respect it.",
+      "tradeTip": "Do not down-rank Hedgehog just because it is an ultra-rare. Its demand profile matters more than the color of the rarity tag.",
+      "watchReason": "Watch Hedgehog when you want to track how collector-driven mid and upper-mid pets are moving.",
+      "compareWith": ["dalmatian", "evil-unicorn", "cow"]
+    },
+    "blazing-lion": {
+      "summary": "Blazing Lion is the most volatile benchmark in the current set, which makes it useful for spotting where newer premium pets can drift away from stable legacy anchors.",
+      "origin": "Newer premium legend with collector interest, but a wider spread of opinions than older benchmark pets.",
+      "liquidity": "It can move well when demand is hot, though it is not as universally trusted as older top-end pets.",
+      "tradeTip": "Treat Blazing Lion with more caution than an older benchmark at the same headline value, especially if the server is pricing it aggressively.",
+      "watchReason": "Watch Blazing Lion to monitor premium-pet heat and wider confidence swings in newer demand lanes.",
+      "compareWith": ["hedgehog", "dalmatian", "chocolate-chip-bat-dragon"]
+    },
+    "dalmatian": {
+      "summary": "Dalmatian is one of the best mid-tier benchmark pets because it combines old supply, strong preference, and clear trader familiarity.",
+      "origin": "Older holiday ultra-rare that consistently punches above what casual rarity-first lists expect.",
+      "liquidity": "Dalmatian usually trades cleanly because experienced players know it is not a disposable mid-tier add.",
+      "tradeTip": "When comparing holiday pets, use Dalmatian as the stable reference point before trusting newer or less liquid options.",
+      "watchReason": "Watch Dalmatian if you want a dependable mid-tier page that reflects both scarcity and demand quality.",
+      "compareWith": ["hedgehog", "arctic-reindeer", "cow"]
+    },
+    "arctic-reindeer": {
+      "summary": "Arctic Reindeer remains one of the most practical bridge pets in the market because it is familiar, trusted, and frequently used in upgrade math.",
+      "origin": "Older holiday legend that stays central to mid-tier and upper-mid ladder trades.",
+      "liquidity": "It moves steadily because traders use it as a genuine benchmark instead of a novelty hold.",
+      "tradeTip": "If you are building up toward Crow or Evil Unicorn territory, Arctic Reindeer is a great reference for whether your adds are actually strong enough.",
+      "watchReason": "Watch Arctic Reindeer when you want a realistic picture of upgrade pressure in the middle of the ladder.",
+      "compareWith": ["dalmatian", "turtle", "evil-unicorn"]
+    },
+    "cow": {
+      "summary": "Cow is the clearest proof that player preference can overpower rarity, which is why it belongs in any serious benchmark set.",
+      "origin": "Older farm pet with long-running aesthetic demand and one of the strongest preference premiums in the mid tiers.",
+      "liquidity": "Cow stays easy to move because both collectors and casual players recognize the appeal immediately.",
+      "tradeTip": "If you are treating Cow like a normal rare, you will probably misread fair offers. Demand is the real story here.",
+      "watchReason": "Watch Cow to track how preference-driven demand is affecting mid-tier fairness.",
+      "compareWith": ["turtle", "dalmatian", "hedgehog"]
+    },
+    "turtle": {
+      "summary": "Turtle is one of the most practical stepping-stone pets on the site because it shows up everywhere in real trading and stays easy to understand.",
+      "origin": "Older egg legend with broad trader familiarity and a long track record as a reliable mid-tier anchor.",
+      "liquidity": "Turtle keeps its benchmark role because it is common enough to compare against and strong enough to matter in real upgrades.",
+      "tradeTip": "Use Turtle to check whether a mid-tier bundle is truly adding up or just padded with weak extras.",
+      "watchReason": "Watch Turtle when you want the most useful everyday benchmark in the middle of the market.",
+      "compareWith": ["cow", "kangaroo", "arctic-reindeer"]
+    },
+    "chocolate-chip-bat-dragon": {
+      "summary": "Chocolate Chip Bat Dragon has strong design demand, but its newer supply profile makes it less stable than older benchmarks at similar headline values.",
+      "origin": "Newer event legend with broad popularity, flashy identity, and more volatility than the old classics.",
+      "liquidity": "It can move quickly in the right room, but confidence is lower because traders still disagree more on where it should settle.",
+      "tradeTip": "If a trade depends on Chocolate Chip Bat Dragon holding premium pricing, compare it against Turtle- and Cow-tier anchors before committing.",
+      "watchReason": "Watch this page to see how newer fan-favorite legends are settling after the initial hype cycle.",
+      "compareWith": ["blazing-lion", "turtle", "cow"]
+    },
+    "kangaroo": {
+      "summary": "Kangaroo is a useful benchmark because it shows how a recognizable older egg legend can stay relevant without matching Turtle-tier demand.",
+      "origin": "Older egg legend that still appears often in bundle math, add chains, and practical upgrade offers.",
+      "liquidity": "It is not as strong as the best mid-tier anchors, but it is still familiar enough to be useful in live trading.",
+      "tradeTip": "Use Kangaroo as a reality check when a bundle claims Turtle-level strength without actually carrying Turtle-level demand.",
+      "watchReason": "Watch Kangaroo if you want to track the lower edge of dependable mid-tier legends.",
+      "compareWith": ["turtle", "cow", "unicorn"]
+    },
+    "unicorn": {
+      "summary": "Unicorn remains a helpful entry benchmark because so many players know the pet, even if its actual value is far below the site myths that still circulate.",
+      "origin": "Permanent-pool legend with massive recognition but much softer real demand than nostalgic lists often imply.",
+      "liquidity": "It is easy to understand, but not especially strong as a hold because supply and demand both cap its ceiling.",
+      "tradeTip": "Do not let Unicorn nostalgia blur the numbers. It is a familiar pet, not a premium one.",
+      "watchReason": "Watch Unicorn to keep perspective on how low-tier legends really perform in the current market.",
+      "compareWith": ["dragon", "kangaroo", "cow"]
+    },
+    "dragon": {
+      "summary": "Dragon is a useful benchmark because it keeps the bottom of the legend ladder honest and prevents older low-demand pets from being overvalued by name alone.",
+      "origin": "Permanent-pool legend with broad recognition but weak market pull compared with almost every serious benchmark above it.",
+      "liquidity": "Dragon is easy to identify, yet not especially desirable in competitive trade rooms because there are too many stronger alternatives.",
+      "tradeTip": "If someone is pricing Dragon like a premium legend, compare it back to Unicorn and then to real mid-tier anchors before saying yes.",
+      "watchReason": "Watch Dragon when you want a reality check on low-demand legends and weak adds.",
+      "compareWith": ["unicorn", "kangaroo", "turtle"]
+    }
+  }
+}

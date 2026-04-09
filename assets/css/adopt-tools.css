@@ -671,6 +671,17 @@ tr:last-child td {
   margin: 0;
 }
 
+.pet-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pet-link:hover,
+.pet-link:focus-visible {
+  color: #a8deff;
+  text-decoration: underline;
+}
+
 .empty-copy {
   color: var(--muted);
 }
@@ -684,6 +695,46 @@ tr:last-child td {
 .archive-note {
   font-size: 0.85rem;
   color: #ffd1a1;
+}
+
+.detail-hero {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  align-items: start;
+}
+
+.detail-hero-copy,
+.detail-main,
+.detail-sidebar {
+  min-width: 0;
+}
+
+.detail-hero-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.detail-avatar {
+  width: 88px;
+  height: 88px;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  align-items: start;
+}
+
+.detail-card-grid,
+.detail-kpis,
+.variant-list {
+  margin-top: 0;
+}
+
+.related-card {
+  gap: 14px;
 }
 
 label {
@@ -794,7 +845,9 @@ input {
   .catalog-toolbar,
   .planner-grid,
   .watch-grid,
-  .split-grid {
+  .split-grid,
+  .detail-hero,
+  .detail-grid {
     grid-template-columns: 1fr;
   }
 }

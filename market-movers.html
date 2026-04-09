@@ -180,18 +180,19 @@
             <span class="tone ${toneMap[pet.trend] || toneMap.default}">${pet.trend}</span>
           </div>
           <div class="pet-row">
-            <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
-            <div class="pet-name">
-              <strong>${pet.name}</strong>
-              <small>${pet.segment} - ${pet.rarity}</small>
+              <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
+              <div class="pet-name">
+                <strong><a class="pet-link" href="/pets/${pet.slug}.html">${pet.name}</a></strong>
+                <small>${pet.segment} - ${pet.rarity}</small>
+              </div>
             </div>
-          </div>
           <p>${pet.notes}</p>
           <ul class="mini-list">
             <li><span>Default</span><span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span></li>
             <li><span>No Potion</span><span class="value-tag">${window.ThePatchValues.formatValue(pet.values.noPotion)}</span></li>
           </ul>
           <div class="card-actions">
+            <a class="pill-link" href="/pets/${pet.slug}.html">Open pet page</a>
             <a class="pill-link" href="/pet-value-calculator.html">Compare trade</a>
             <button class="ghost-button watch-button ${window.ThePatchRetention.isWatched(pet.slug) ? "active" : ""}" type="button" data-slug="${pet.slug}">
               ${window.ThePatchRetention.isWatched(pet.slug) ? "Watching" : "Watch"}
@@ -223,11 +224,12 @@
           <div class="pet-row">
             <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
             <div class="pet-name">
-              <strong>${pet.name}</strong>
+              <strong><a class="pet-link" href="/pets/${pet.slug}.html">${pet.name}</a></strong>
               <small>${pet.demand} demand - ${pet.trend}</small>
             </div>
           </div>
           <div class="card-actions">
+            <a class="pill-link" href="/pets/${pet.slug}.html">Open pet page</a>
             <span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span>
             <button class="ghost-button watch-button active" type="button" data-slug="${pet.slug}">Watching</button>
           </div>

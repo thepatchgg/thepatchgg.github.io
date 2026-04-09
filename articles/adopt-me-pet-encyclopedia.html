@@ -243,12 +243,13 @@
               <img src="${entry.image}" alt="${entry.name}">
             </div>
             <div>
-              <h3>${entry.name}</h3>
+              <h3>${entry.benchmark ? `<a class="pet-link" href="/pets/${entry.slug}.html">${entry.name}</a>` : entry.name}</h3>
             </div>
             <div class="catalog-meta">
               <span class="tone ${rarityTone[entry.rarity] || "tone-medium"}">${rarityLabels[entry.rarity] || "Unknown"}</span>
               ${entry.benchmark ? `<span class="value-tag">${window.ThePatchValues.formatValue(benchmarkValue)}</span>` : ""}
             </div>
+            ${entry.benchmark ? `<div class="card-actions"><a class="pill-link" href="/pets/${entry.slug}.html">Open pet page</a></div>` : ""}
           </article>
         `;
       }).join("");

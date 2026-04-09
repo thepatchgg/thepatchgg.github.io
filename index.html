@@ -273,7 +273,7 @@
             </div>
             <div class="pet-row">
               <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
-              <h3>${pet.name}</h3>
+              <h3><a class="pet-link" href="/pets/${pet.slug}.html">${pet.name}</a></h3>
             </div>
             <p>${pet.notes}</p>
             <ul class="mini-list">
@@ -282,6 +282,7 @@
               <li><span>Neon</span><span class="value-tag">${window.ThePatchValues.formatValue(pet.values.neon)}</span></li>
             </ul>
             <div class="card-actions">
+              <a class="pill-link" href="/pets/${pet.slug}.html">Open pet page</a>
               <a class="pill-link" href="/market-movers.html">See market board</a>
               <button class="ghost-button watch-button ${window.ThePatchRetention.isWatched(pet.slug) ? "active" : ""}" type="button" data-slug="${pet.slug}">
                 ${window.ThePatchRetention.isWatched(pet.slug) ? "Watching" : "Watch this pet"}
@@ -344,10 +345,11 @@
           </div>
           <div class="pet-row">
             <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
-            <h3>${pet.name}</h3>
+            <h3><a class="pet-link" href="/pets/${pet.slug}.html">${pet.name}</a></h3>
           </div>
           <p>${pet.notes}</p>
           <div class="card-actions">
+            <a class="pill-link" href="/pets/${pet.slug}.html">Open pet page</a>
             <span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span>
             <button class="ghost-button watch-button active" type="button" data-slug="${pet.slug}">Watching</button>
           </div>

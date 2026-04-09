@@ -242,9 +242,10 @@
             <div class="pet-row align-start">
               <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
               <div class="pet-name">
-                <strong>${pet.name}</strong>
+                <strong><a class="pet-link" href="/pets/${pet.slug}.html">${pet.name}</a></strong>
                 <small>${pet.segment} - ${pet.rarity}</small>
                 <div class="pet-actions">
+                  <a class="pill-link" href="/pets/${pet.slug}.html">Pet page</a>
                   <button class="ghost-button watch-button ${window.ThePatchRetention.isWatched(pet.slug) ? "active" : ""}" type="button" data-slug="${pet.slug}">
                     ${watchButtonLabel(pet.slug)}
                   </button>
