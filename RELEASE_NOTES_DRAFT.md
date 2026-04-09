@@ -44,3 +44,9 @@ This branch turns The Patch from a collection of inconsistent standalone pages i
 ## Recommended merge note
 
 Keep the PR in draft until the manual signoff checklist in `PRE_MERGE_CHECKLIST.md` is complete.
+
+## Companion files
+
+- `PR_BODY_DRAFT.md`
+- `MANUAL_QA_REPORT_TEMPLATE.md`
+- `QA_RUNBOOK.md`

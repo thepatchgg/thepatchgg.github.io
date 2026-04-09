@@ -118,6 +118,8 @@ Use GA realtime or debug tooling before merge.
 - [ ] Update PR title to reflect full scope
 - [ ] Update PR summary/body to reflect all phases actually included
 - [ ] Confirm the draft status should be removed only after QA signoff
+- [ ] Manual QA report filled in from `MANUAL_QA_REPORT_TEMPLATE.md`
+- [ ] Release snapshot reviewed from `scripts/release-status.ps1`
 
 ## Merge sequence
 

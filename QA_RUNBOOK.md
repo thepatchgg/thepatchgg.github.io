@@ -85,5 +85,15 @@ Before merge, verify these in GA realtime or debug tooling:
 
 - `PRE_MERGE_CHECKLIST.md`
 - `RELEASE_NOTES_DRAFT.md`
+- `PR_BODY_DRAFT.md`
+- `MANUAL_QA_REPORT_TEMPLATE.md`
+
+## 8. Release snapshot
+
+To print the current branch QA state:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\release-status.ps1
+```
 
 Keep the PR in draft until the checklist is manually signed off.
