@@ -1,0 +1,34 @@
+name: Site QA
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+      - "codex/**"
+  workflow_dispatch:
+
+jobs:
+  qa:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run site QA
+        shell: pwsh
+        run: |
+          powershell -ExecutionPolicy Bypass -File .\scripts\qa-site.ps1
+
+      - name: Run release QA
+        shell: pwsh
+        run: |
+          powershell -ExecutionPolicy Bypass -File .\scripts\qa-release.ps1

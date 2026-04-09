@@ -16,6 +16,7 @@ This checklist is for release readiness only. It does not imply approval to merg
 - [ ] Core calculators smoke-tested
 - [ ] Watchlist and saved inventory persistence verified
 - [ ] Analytics events confirmed in GA debug/realtime
+- [ ] GitHub Actions `Site QA` workflow passes on the PR
 - [ ] PR title and summary updated to match actual scope
 
 ## Local QA tools

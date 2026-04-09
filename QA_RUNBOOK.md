@@ -101,4 +101,12 @@ To print the current branch QA state:
 powershell -ExecutionPolicy Bypass -File .\scripts\release-status.ps1
 ```
 
+## 9. CI expectation
+
+The branch should also pass the GitHub Actions workflow:
+
+```text
+Site QA
+```
+
 Keep the PR in draft until the checklist is manually signed off.
