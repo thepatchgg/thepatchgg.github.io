@@ -1,537 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Adopt Me Trade Calculator 2026 | The Patch</title>
-<meta name="description" content="Calculate fair Adopt Me! pet trades instantly. Real images, Neon/FR multipliers, point-based verdict. Updated March 2026.">
-<meta property="og:title" content="Adopt Me Trade Calculator 2026 — Pet Value Checker">
-  <meta property="og:description" content="Calculate fair Adopt Me! pet trades instantly. Real images, Neon/FR multipliers, and up-to-date values for every pet.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://thepatchgg.github.io/pet-value-calculator.html">
-  <meta property="og:site_name" content="The Patch">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Adopt Me Trade Calculator 2026 — Pet Value Checker">
-  <meta name="twitter:description" content="Calculate fair Adopt Me! pet trades instantly. Real images, Neon/FR multipliers, and up-to-date values for every pet.">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"Adopt Me Trade Calculator","description":"Calculate fair Adopt Me pet trades with real-time values, Neon and FR multipliers.","url":"https://thepatchgg.github.io/pet-value-calculator.html","applicationCategory":"GameApplication","operatingSystem":"Web","publisher":{"@type":"Organization","name":"The Patch"}}
-  </script>
-  <link rel="canonical" href="https://thepatchgg.github.io/pet-value-calculator.html">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --bg:#0d0d0f;--surface:#16161a;--surface2:#1e1e24;--border:#2a2a35;
-  --text:#e8e8f0;--text-muted:#888898;--accent:#c8ff57;--accent-dim:rgba(200,255,87,.12);
-  --red:#f85149;--green:#3fb950;
-  --font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-  --radius:8px;--max-w:1120px;
-}
-body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-
-/* HEADER */
-.site-header{position:sticky;top:0;z-index:100;background:rgba(13,13,15,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 20px}
-.header-inner{max-width:var(--max-w);margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.site-logo{font-size:20px;font-weight:800;letter-spacing:-.5px;color:var(--accent);white-space:nowrap}
-.site-logo span{color:var(--text)}
-.main-nav{display:flex;gap:4px}
-.main-nav a{font-size:14px;font-weight:500;color:var(--text-muted);padding:6px 12px;border-radius:var(--radius);transition:color .15s,background .15s}
-.main-nav a:hover{color:var(--text);background:var(--surface2)}
-.main-nav a.active{color:var(--accent)}
-.header-cta{background:var(--accent);color:#0d0d0f;font-size:13px;font-weight:700;padding:7px 16px;border-radius:20px;white-space:nowrap;transition:opacity .15s}
-.header-cta:hover{opacity:.88}
-.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
-.nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px}
-
-/* PAGE HERO */
-.page-hero{max-width:var(--max-w);margin:0 auto;padding:28px 20px 14px}
-.page-hero h1{font-size:1.7rem;font-weight:800;margin-bottom:4px}
-.page-hero p{color:var(--text-muted);font-size:.88rem}
-
-/* CALC LAYOUT */
-.calc-wrap{max-width:var(--max-w);margin:0 auto;padding:0 20px 60px;display:grid;grid-template-columns:1fr 210px 1fr;gap:14px;align-items:start}
-
-/* TRADE PANEL */
-.trade-panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
-.panel-head{padding:12px 16px;font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
-.panel-head.give{color:#58a6ff}
-.panel-head.recv{color:#3fb950}
-.panel-count{color:var(--text-muted);font-size:.72rem;font-weight:400;margin-left:auto}
-.trade-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:10px}
-
-/* SLOTS */
-.slot{aspect-ratio:1;background:var(--surface2);border:1.5px dashed var(--border);border-radius:10px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;transition:border-color .15s,background .15s;overflow:hidden;min-height:88px}
-.slot.empty:hover{border-color:var(--accent);background:rgba(200,255,87,.04)}
-.slot-empty-icon{font-size:1.6rem;color:var(--text-muted);opacity:.35;line-height:1}
-.slot-empty-lbl{font-size:.58rem;color:var(--text-muted);opacity:.45;margin-top:2px}
-.slot.filled{border-style:solid;border-color:var(--border);cursor:default;padding:5px 4px;gap:3px;justify-content:flex-start}
-.slot-img{width:46px;height:46px;object-fit:contain;flex-shrink:0}
-.slot-name{font-size:.56rem;font-weight:600;color:var(--text);text-align:center;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.2}
-.slot-val{font-size:.62rem;color:var(--accent);font-weight:700;line-height:1}
-.slot-toggles{display:flex;flex-direction:column;gap:2px;width:100%}
-.tog-row{display:flex;gap:2px;justify-content:center}
-.tog{padding:1px 3px;border-radius:4px;border:1px solid var(--border);font-size:.5rem;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .1s;white-space:nowrap;line-height:1.4}
-.tog.sel{border-color:var(--accent);background:var(--accent-dim);color:var(--accent)}
-.slot-remove{position:absolute;top:3px;right:3px;background:rgba(248,81,73,.12);border:1px solid rgba(248,81,73,.3);color:var(--red);cursor:pointer;font-size:.6rem;border-radius:4px;padding:1px 4px;line-height:1;transition:opacity .15s;opacity:0}
-.slot.filled:hover .slot-remove{opacity:1}
-
-/* VERDICT */
-.verdict-panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 12px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
-.vbar{display:flex;gap:5px;justify-content:center}
-.vbar-item{padding:3px 9px;border-radius:12px;font-size:.62rem;font-weight:700;letter-spacing:.06em;transition:all .2s}
-.vbar-win{color:var(--green)}
-.vbar-fair{color:var(--text-muted)}
-.vbar-lose{color:var(--red)}
-.vbar-active{background:rgba(255,255,255,.1);color:var(--text)!important}
-.verdict-label{font-size:.92rem;font-weight:800;letter-spacing:.03em;padding:6px 14px;border-radius:20px;transition:all .3s}
-.verdict-pts{font-size:2.2rem;font-weight:900;line-height:1;transition:all .3s}
-.verdict-sub{font-size:.65rem;color:var(--text-muted)}
-.balance-wrap{width:100%;height:7px;background:var(--surface2);border-radius:4px;overflow:hidden;position:relative}
-.balance-fill{position:absolute;height:100%;background:var(--accent);border-radius:4px;transition:all .4s;width:0}
-.trade-totals{display:flex;justify-content:space-between;width:100%;font-size:.68rem;color:var(--text-muted)}
-.clear-btn{background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);border-radius:8px;padding:7px 14px;font-size:.76rem;cursor:pointer;transition:all .15s;width:100%}
-.clear-btn:hover{border-color:var(--red);color:var(--red)}
-.verdict-note{font-size:.55rem;color:var(--text-muted)}
-
-/* VERDICT COLORS */
-.vHUGEWIN{color:#1b5e20;background:rgba(27,94,32,.15)}
-.vBIGWIN{color:#2e7d32;background:rgba(46,125,50,.15)}
-.vWIN{color:#388e3c;background:rgba(56,142,60,.15)}
-.vSLIGHTWIN{color:#66bb6a;background:rgba(102,187,106,.15)}
-.vFAIR{color:var(--text-muted);background:var(--surface2)}
-.vSLIGHTLOSS{color:#ef9a9a;background:rgba(239,154,154,.1)}
-.vLOSS{color:#e53935;background:rgba(229,57,53,.1)}
-.vBIGLOSS{color:#c62828;background:rgba(198,40,40,.1)}
-.vHUGELOSS{color:#b71c1c;background:rgba(183,28,28,.1)}
-
-/* PET PICKER MODAL */
-.picker-overlay{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:200;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
-.picker-overlay[hidden]{display:none!important}
-.picker-modal{background:var(--surface);border:1px solid var(--border);border-radius:14px;width:min(540px,95vw);max-height:82vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.6)}
-.picker-top{display:flex;align-items:center;gap:10px;padding:14px 14px 10px;border-bottom:1px solid var(--border)}
-.picker-top h3{font-size:.9rem;font-weight:700;white-space:nowrap}
-.picker-search{flex:1;background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:7px 12px;font-size:.85rem;outline:none;min-width:0}
-.picker-search:focus{border-color:var(--accent)}
-.picker-close{background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);cursor:pointer;font-size:.82rem;border-radius:6px;padding:6px 11px;flex-shrink:0;transition:all .15s}
-.picker-close:hover{color:var(--text);border-color:var(--text-muted)}
-.picker-filters{display:flex;gap:6px;padding:10px 14px;flex-wrap:wrap;border-bottom:1px solid var(--border)}
-.f-btn{padding:4px 12px;border-radius:16px;border:1px solid var(--border);font-size:.73rem;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .12s}
-.f-btn.active{border-color:var(--accent);background:var(--accent-dim);color:var(--accent)}
-.picker-grid-wrap{overflow-y:auto;flex:1}
-.picker-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:12px 14px}
-.pet-tile{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:8px 4px 6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;transition:all .12s}
-.pet-tile:hover{border-color:var(--accent);background:rgba(200,255,87,.06);transform:translateY(-1px)}
-.pet-tile img{width:52px;height:52px;object-fit:contain;border-radius:6px}
-.pt-name{font-size:.58rem;font-weight:600;text-align:center;color:var(--text);line-height:1.2;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.pt-rar{font-size:.52rem;padding:1px 6px;border-radius:10px}
-.rL{color:#ffd700;background:rgba(255,215,0,.12)}
-.rUR{color:#b39ddb;background:rgba(179,157,219,.12)}
-.rR{color:#4dd0e1;background:rgba(77,208,225,.12)}
-.rUC{color:#81c784;background:rgba(129,199,132,.12)}
-.rC{color:#bdbdbd;background:rgba(189,189,189,.12)}
-
-@media(max-width:720px){
-  .calc-wrap{grid-template-columns:1fr;padding:0 12px 40px}
-  .picker-grid{grid-template-columns:repeat(4,1fr)}
-  .main-nav,.header-cta{display:none}
-}
-</style>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-KXQR564341');
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt Me Trade Calculator | The Patch</title>
+  <meta name="description" content="Compare both sides of an Adopt Me trade with a shared value source that respects no-potion premiums and real benchmark pets.">
+  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
 </head>
 <body>
-
-<header class="site-header">
-  <div class="header-inner">
-    <a href="/" class="site-logo">The <span>Patch</span> &#128062;</a>
-    <nav class="main-nav">
-      <a href="/">Home</a>
-      <a href="articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
-      <a href="/articles/adopt-me-pet-encyclopedia.html">Pet Dex</a>
-      <a href="/articles/adopt-me-egg-guide.html">Egg Guide</a>
-      <a href="pet-value-calculator.html" class="active">Trade Calc</a>
-      <a href="neon-calculator.html">Neon Calc</a>
-      <a href="trading-forum.html">Trading Board</a>
-      <a href="adopt-me.html">All Guides</a>
-    </nav>
-    <a href="https://thepatchgg.substack.com" class="header-cta" target="_blank" rel="noopener">Subscribe Free</a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<div class="page-hero">
-  <h1>&#128014; Adopt Me Trade Calculator</h1>
-  <p style="font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin:.3rem 0 .8rem">&#128197; Last updated: March 21, 2026</p>
-  <p>Values from Traderie.com &amp; community consensus &middot; Updated March 2026 &middot; Set Neon &amp; FR per pet</p>
-      <p style="text-align:center;margin:0 0 1.5rem;font-size:.95rem;color:var(--text-muted)">Looking up a pet? Browse the <a href="/articles/adopt-me-pet-encyclopedia.html" style="color:var(--accent);text-decoration:none;font-weight:600">Adopt Me Pet Encyclopedia →</a></p>
-</div>
-
-<div class="calc-wrap">
-
-  <!-- GIVE PANEL -->
-  <div class="trade-panel">
-    <div class="panel-head give">&#11014;&#65039; You Give <span class="panel-count" id="give-count">0 pets</span></div>
-    <div class="trade-grid" id="give-grid"></div>
-  </div>
-
-  <!-- VERDICT -->
-  <div class="verdict-panel">
-    <div class="vbar">
-      <span class="vbar-item vbar-win" id="vbar-win">WIN</span>
-      <span class="vbar-item vbar-fair vbar-active" id="vbar-fair">FAIR</span>
-      <span class="vbar-item vbar-lose" id="vbar-lose">LOSE</span>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>The Patch</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
+        <a href="/pet-value-calculator.html">Trade Calculator</a>
+        <a href="/neon-calculator.html">Neon Calculator</a>
+      </nav>
     </div>
-    <div class="verdict-label vFAIR" id="v-label">FAIR TRADE</div>
-    <div class="verdict-pts" id="v-pts" style="color:var(--text-muted)">&#177;0</div>
-    <div class="verdict-sub">point difference</div>
-    <div class="balance-wrap"><div class="balance-fill" id="v-bar"></div></div>
-    <div class="trade-totals"><span id="v-give">Give: 0</span><span id="v-recv">Recv: 0</span></div>
-    <button class="clear-btn" id="clear-btn">&#128465; Clear All</button>
-    <div class="verdict-note">traderie.com &middot; Mar 2026</div>
-  </div>
+  </header>
 
-  <!-- RECEIVE PANEL -->
-  <div class="trade-panel">
-    <div class="panel-head recv">&#11015;&#65039; You Receive <span class="panel-count" id="recv-count">0 pets</span></div>
-    <div class="trade-grid" id="recv-grid"></div>
-  </div>
+  <main>
+    <section class="page-hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Calculator beta</div>
+          <h1>Compare real benchmark trades, not fake multiplier math.</h1>
+          <p>
+            This calculator uses the same data file as the homepage and value list. It also treats no-potion high tiers
+            as separate variants, which fixes one of the biggest logic errors on the old version.
+          </p>
+        </div>
+        <aside class="hero-panel">
+          <p class="helper">How to use it</p>
+          <ul class="signal-list">
+            <li><span>Pick pets and variants on each side</span><span class="tone tone-strong">Step 1</span></li>
+            <li><span>Use quantity for duplicates or multiple adds</span><span class="tone tone-strong">Step 2</span></li>
+            <li><span>Read the fairness note, then use demand as the tiebreaker</span><span class="tone tone-strong">Step 3</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-</div>
+    <section class="section">
+      <div class="shell tool-card">
+        <div class="trade-grid">
+          <section class="trade-side">
+            <h2>You are offering</h2>
+            <div class="line-items" id="left-lines"></div>
+            <button class="secondary" id="add-left" type="button">Add another pet</button>
+            <div class="trade-total">
+              <span>Total</span>
+              <span id="left-total">0</span>
+            </div>
+          </section>
 
-<!-- PET PICKER MODAL -->
-<div class="picker-overlay" id="picker" hidden>
-  <div class="picker-modal">
-    <div class="picker-top">
-      <h3>Select a Pet</h3>
-      <input type="text" class="picker-search" id="picker-search" placeholder="Search pets..." autocomplete="off">
-      <button class="picker-close" id="picker-close">&#10005; Close</button>
+          <section class="trade-side">
+            <h2>You want</h2>
+            <div class="line-items" id="right-lines"></div>
+            <button class="secondary" id="add-right" type="button">Add another pet</button>
+            <div class="trade-total">
+              <span>Total</span>
+              <span id="right-total">0</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="summary-grid">
+          <article class="summary-card">
+            <h3>Fairness snapshot</h3>
+            <div class="summary-total">
+              <span>Verdict</span>
+              <span id="verdict">Waiting for selections</span>
+            </div>
+            <p class="helper" id="difference-note">
+              Add pets on both sides to see the value gap and a quick fairness read.
+            </p>
+          </article>
+          <article class="summary-card">
+            <h3>What changed from the old tool</h3>
+            <p>
+              Potion and neon upgrades are no longer guessed with flat multipliers. Each supported pet now has its own
+              variant-aware values so Bat Dragon and Shadow Dragon behave more like the real market.
+            </p>
+          </article>
+          <article class="summary-card">
+            <h3>Coverage note</h3>
+            <p>
+              This beta covers the benchmark pets most players use to anchor trades. The wider pet catalog will keep
+              expanding from the same shared source instead of being pasted into separate pages by hand.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-copy">The Patch benchmark tool is for guidance. Server-by-server demand can still swing a trade.</div>
+      <nav class="nav" aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>
+      </nav>
     </div>
-    <div class="picker-filters" id="picker-filters">
-      <button class="f-btn active" data-r="all">All</button>
-      <button class="f-btn" data-r="L">Legendary</button>
-      <button class="f-btn" data-r="UR">Ultra-Rare</button>
-      <button class="f-btn" data-r="R">Rare</button>
-      <button class="f-btn" data-r="UC">Uncommon</button>
-      <button class="f-btn" data-r="C">Common</button>
-    </div>
-    <div class="picker-grid-wrap">
-      <div class="picker-grid" id="picker-grid"></div>
-    </div>
-  </div>
-</div>
+  </footer>
 
-<script>
-var IMG_BASE = "https://cdn.nookazon.com/64x64/adoptme/";
-var SLOTS = 9;
-var PETS=[{"name":"Shadow Dragon","val":82.0,"rarity":"L","img":"pets/4115248712"},{"name":"Bat Dragon","val":120.0,"rarity":"L","img":"pets/4184878149"},{"name":"Giraffe","val":55.0,"rarity":"L","img":"items/3409443710"},{"name":"Owl","val":34.0,"rarity":"L","img":"pets/4440866649"},{"name":"Parrot","val":27.0,"rarity":"L","img":"pets/3743647944"},{"name":"Evil Unicorn","val":20.0,"rarity":"L","img":"pets/4184878050"},{"name":"Hedgehog","val":14.0,"rarity":"UR","img":"pets/4849941238"},{"name":"Dalmatian","val":12.0,"rarity":"UR","img":"items/4849941000"},{"name":"Albino Monkey","val":5.0,"rarity":"L","img":"items/5067924142"},{"name":"Sugar Axolotl","val":3.0,"rarity":"L","img":"pets/121496682360324"},{"name":"Blue Dog","val":0.5,"rarity":"UC","img":"items/3261465893"},{"name":"Turtle","val":6.0,"rarity":"UR","img":"pets/4708551322"},{"name":"Cow","val":7.0,"rarity":"L","img":"pets/4440866423"},{"name":"Elephant","val":3.0,"rarity":"L","img":"items/3409443514"},{"name":"Diamond Hamster","val":3.0,"rarity":"L","img":"items/16548793509"},{"name":"Kangaroo","val":3.0,"rarity":"L","img":"pets/4708551306"},{"name":"Lion","val":2.0,"rarity":"UR","img":"items/3409443801"},{"name":"Giant Gold Scarab","val":3.0,"rarity":"L","img":"pets/8566683457"},{"name":"Mechapup","val":3.0,"rarity":"L","img":"pets/9174893483"},{"name":"Undead Jousting Horse","val":3.0,"rarity":"L","img":"items/11192035130"},{"name":"Vampire Dragon","val":3.0,"rarity":"L","img":"items/14782580581"},{"name":"Frost Unicorn","val":3.0,"rarity":"L","img":"pets/12479991588"},{"name":"Diamond King Penguin","val":3.0,"rarity":"L","img":"pets/9490243442"},{"name":"Albino Gorilla","val":3.0,"rarity":"L","img":"pets/12403863809"},{"name":"Pink Cat","val":0.5,"rarity":"UC","img":"items/3261465850"},{"name":"Mini Pig","val":3.0,"rarity":"L","img":"items/17649307413"},{"name":"Candyfloss Chick","val":3.0,"rarity":"L","img":"pets/16659215347"},{"name":"Honey Badger","val":3.0,"rarity":"L","img":"items/108242367048842"},{"name":"Sugar Glider","val":2.0,"rarity":"UR","img":"pets/9281950769"},{"name":"Chocolate Chip Bat Dragon","val":3.0,"rarity":"L","img":"pets/15365667976"},{"name":"Jellyfish","val":3.0,"rarity":"L","img":"pets/15848329383"},{"name":"African Wild Dog","val":3.0,"rarity":"L","img":"pets/13810870050"},{"name":"Golden Hummingbird","val":3.0,"rarity":"L","img":"pets/75106733244906"},{"name":"Hot Doggo","val":3.0,"rarity":"L","img":"pets/13672542902"},{"name":"Golden Chow-Chow","val":3.0,"rarity":"L","img":"pets/10357473556"},{"name":"Irish Water Spaniel","val":3.0,"rarity":"L","img":"pets/9901393350"},{"name":"Nessie","val":3.0,"rarity":"L","img":"pets/11773429123"},{"name":"Crow","val":23.0,"rarity":"L","img":"pets/4440866299"},{"name":"Hyena","val":3.0,"rarity":"L","img":"items/3409444089"},{"name":"Jekyll Hydra","val":3.0,"rarity":"L","img":"items/78823655016197"},{"name":"Strawberry Shortcake Bat Dragon","val":3.0,"rarity":"L","img":"pets/11506045996"},{"name":"Black Panther","val":3.0,"rarity":"L","img":"items/3743730108"},{"name":"Glacier Moth","val":3.0,"rarity":"L","img":"pets/11571113906"},{"name":"Peppermint Penguin","val":3.0,"rarity":"L","img":"pets/15302316802"},{"name":"Puffin","val":3.0,"rarity":"L","img":"items/8077189117"},{"name":"Field Mouse","val":4.0,"rarity":"L","img":"items/12935498875"},{"name":"Flower Power Duckling","val":4.0,"rarity":"L","img":"items/12917347184"},{"name":"Glormy Hound","val":4.0,"rarity":"L","img":"items/120475294381736"},{"name":"Glormy Leo","val":4.0,"rarity":"L","img":"pets/123037843357105"},{"name":"Meerkat","val":4.0,"rarity":"L","img":"items/3409443617"},{"name":"Balloon Unicorn","val":18.0,"rarity":"L","img":"items/18117855573"},{"name":"Capricorn","val":3.5,"rarity":"L","img":"pets/9542440966"},{"name":"Chameleon","val":3.5,"rarity":"UR","img":"items/8596153183"},{"name":"Glacier Kitsune","val":3.5,"rarity":"L","img":"pets/15570696642"},{"name":"Griffin","val":3.5,"rarity":"L","img":"items/3181727727"},{"name":"Phoenix","val":3.5,"rarity":"L","img":"pets/7126719832"},{"name":"Sheeeeep","val":3.5,"rarity":"L","img":"pets/12139402705"},{"name":"Zombie Buffalo","val":3.5,"rarity":"L","img":"pets/4115249264"},{"name":"Caelum Cervi","val":3.0,"rarity":"L","img":"pets/13462536955"},{"name":"Firefly","val":3.0,"rarity":"L","img":"pets/12187391973"},{"name":"Frost Fury","val":3.0,"rarity":"UR","img":"items/6060998707"},{"name":"Golden Ladybug","val":3.0,"rarity":"L","img":"items/6404812772"},{"name":"Lava Dragon","val":3.0,"rarity":"L","img":"pets/10925517718"},{"name":"Lunar Moon Bear","val":3.0,"rarity":"L","img":"items/11758575657"},{"name":"Brown Bear","val":2.5,"rarity":"R","img":"pets/3743735223"},{"name":"Caterpillar","val":2.5,"rarity":"R","img":"pets/14639007389"},{"name":"Criosphinx","val":2.5,"rarity":"L","img":"items/15931348363"},{"name":"Cuddly Candle","val":2.5,"rarity":"L","img":"pets/13186021971"},{"name":"Goat","val":2.5,"rarity":"UR","img":"items/9800792849"},{"name":"Golden Hamster","val":2.5,"rarity":"L","img":"pets/16548792521"},{"name":"Mushroom Friend","val":2.5,"rarity":"L","img":"pets/17119623510"},{"name":"Pelican","val":2.5,"rarity":"R","img":"pets/13077769577"},{"name":"Shrew","val":2.5,"rarity":"UR","img":"pets/4883302468"},{"name":"Tan Chow-Chow","val":2.5,"rarity":"L","img":"pets/9938967851"},{"name":"Tortuga de la Isla","val":2.5,"rarity":"L","img":"items/13621428133"},{"name":"Blazing Lion","val":13.0,"rarity":"L","img":"pets/16088265989"},{"name":"Border Collie","val":2.0,"rarity":"UR","img":"pets/10357474032"},{"name":"Capybara","val":2.0,"rarity":"UC","img":"items/3743720235"},{"name":"Diamond Albatross","val":2.0,"rarity":"L","img":"pets/9602676771"},{"name":"Diamond Mahi Mahi","val":2.0,"rarity":"L","img":"pets/16441372760"},{"name":"Diamond Unicorn","val":2.0,"rarity":"L","img":"items/4797806531"},{"name":"Dimorphodon","val":2.0,"rarity":"L","img":"pets/5721843126"},{"name":"Emu","val":2.0,"rarity":"R","img":"items/4708551221"},{"name":"Gargoyle","val":2.0,"rarity":"L","img":"pets/6498256543"},{"name":"Giant Anteater","val":2.0,"rarity":"R","img":"pets/13979141397"},{"name":"Groundhog","val":2.0,"rarity":"L","img":"pets/16000498338"},{"name":"Haetae","val":2.0,"rarity":"L","img":"items/116467943923352"},{"name":"Headless Horse","val":2.0,"rarity":"L","img":"pets/126725051633301"},{"name":"Hummingbird","val":2.0,"rarity":"R","img":"pets/3409443665"},{"name":"Ice Golem","val":2.0,"rarity":"L","img":"pets/8070897995"},{"name":"Ice Wolf","val":2.0,"rarity":"L","img":"pets/11505509482"},{"name":"Kroken","val":2.0,"rarity":"L","img":"pets/13979141409"},{"name":"Lavender Dragon","val":2.0,"rarity":"L","img":"pets/8704877940"},{"name":"Llama","val":2.0,"rarity":"UR","img":"pets/4440867249"},{"name":"Mecha Meow","val":2.0,"rarity":"L","img":"pets/15292843858"},{"name":"Naga Dragon","val":2.0,"rarity":"L","img":"pets/12557346746"},{"name":"Nautilus","val":2.0,"rarity":"L","img":"pets/16382424275"},{"name":"Princess Capuchin Monkey","val":2.0,"rarity":"L","img":"pets/16898328507"},{"name":"Purple Butterfly","val":2.0,"rarity":"UR","img":"pets/10318105900"},{"name":"Rosy Maple Moth","val":2.0,"rarity":"L","img":"pets/17120184484"},{"name":"Royal Capuchin Monkey","val":2.0,"rarity":"L","img":"pets/16898328414"},{"name":"Royal Palace Spaniel","val":2.0,"rarity":"UR","img":"pets/9994480266"},{"name":"Scarebear","val":2.0,"rarity":"L","img":"pets/122648024705835"},{"name":"Skele-Rex","val":2.0,"rarity":"L","img":"pets/5862774166"},{"name":"Toucan","val":2.0,"rarity":"R","img":"pets/4800190034"},{"name":"Unicorn","val":2.0,"rarity":"L","img":"items/3181728194"},{"name":"Werewolf","val":2.0,"rarity":"L","img":"pets/15148532648"},{"name":"Alicorn","val":1.5,"rarity":"L","img":"pets/17255958862"},{"name":"Ancient Dragon","val":1.5,"rarity":"L","img":"items/9678195673"},{"name":"Arctic Fox","val":1.5,"rarity":"UR","img":"pets/4506925854"},{"name":"Arctic Reindeer","val":9.0,"rarity":"L","img":"pets/4506837037"},{"name":"Axolotl","val":1.5,"rarity":"UR","img":"pets/7215324578"},{"name":"Black Chow-Chow","val":1.5,"rarity":"L","img":"pets/9938967130"},{"name":"Chocolate Chow-Chow","val":1.5,"rarity":"L","img":"pets/9938967576"},{"name":"Diamond Butterfly","val":19.0,"rarity":"L","img":"items/10453528102"},{"name":"Diamond Dragon","val":1.5,"rarity":"L","img":"items/4797806358"},{"name":"Diamond Griffin","val":1.5,"rarity":"L","img":"items/4797806482"},{"name":"Diamond Ladybug","val":1.5,"rarity":"L","img":"pets/6404812861"},{"name":"Dodo","val":1.5,"rarity":"L","img":"items/5721843247"},{"name":"Flamingo","val":6.0,"rarity":"UR","img":"items/3409443986"},{"name":"Giant Blue Scarab","val":1.5,"rarity":"L","img":"pets/8566683782"},{"name":"Golden Rat","val":1.5,"rarity":"L","img":"pets/4621220431"},{"name":"Golden Unicorn","val":1.5,"rarity":"L","img":"pets/4797806957"},{"name":"Jousting Horse","val":1.5,"rarity":"L","img":"pets/11191341630"},{"name":"Karate Gorilla","val":1.5,"rarity":"L","img":"items/12778628897"},{"name":"Lava Wolf","val":1.5,"rarity":"L","img":"pets/11109286837"},{"name":"Leviathan","val":1.5,"rarity":"L","img":"pets/13685038182"},{"name":"Monkey King","val":6.0,"rarity":"L","img":"pets/5067924789"},{"name":"Octopus","val":1.5,"rarity":"L","img":"pets/6498256211"},{"name":"Polar Bear","val":1.5,"rarity":"R","img":"pets/4506925595"},{"name":"Reindeer","val":1.5,"rarity":"L","img":"pets/4506847061"},{"name":"Shark Puppy","val":1.5,"rarity":"UR","img":"pets/13665641282"},{"name":"Silly Duck","val":1.5,"rarity":"L","img":"pets/4440866911"},{"name":"Swan","val":1.5,"rarity":"R","img":"pets/4506925800"},{"name":"Tree Kangaroo","val":1.5,"rarity":"UR","img":"pets/12480100169"},{"name":"White Amazon","val":1.5,"rarity":"L","img":"pets/11109110190"},{"name":"Wild Boar","val":1.5,"rarity":"R","img":"items/3409443896"},{"name":"2D Kitty","val":1.0,"rarity":"L","img":""},{"name":"Albatross","val":1.0,"rarity":"UR","img":""},{"name":"Albino Bat","val":1.0,"rarity":"UR","img":""},{"name":"Alley Cat","val":1.0,"rarity":"UR","img":""},{"name":"Alpaca","val":1.0,"rarity":"UR","img":""},{"name":"Angus Bull","val":1.0,"rarity":"L","img":""},{"name":"Angus Calf","val":1.0,"rarity":"UR","img":""},{"name":"Apple Owl","val":1.0,"rarity":"L","img":""},{"name":"Arctic Dusk Dragon","val":1.0,"rarity":"L","img":""},{"name":"Astronaut Gorilla (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Aurora Fox","val":1.0,"rarity":"L","img":""},{"name":"Australian Kelpie","val":1.0,"rarity":"UR","img":"items/4736656915"},{"name":"Badger","val":1.0,"rarity":"UR","img":""},{"name":"Baku","val":1.0,"rarity":"L","img":""},{"name":"Bald Eagle","val":1.0,"rarity":"UR","img":""},{"name":"Bauble Buddies","val":1.0,"rarity":"UR","img":""},{"name":"Bee","val":1.0,"rarity":"UR","img":"pets/4281674713"},{"name":"Berry Cool Cube","val":1.0,"rarity":"L","img":""},{"name":"Billy Goat","val":1.0,"rarity":"UR","img":"pets/13894724323"},{"name":"Binturong","val":1.0,"rarity":"UR","img":""},{"name":"Black Kite","val":1.0,"rarity":"UR","img":""},{"name":"Black Macaque","val":1.0,"rarity":"UR","img":""},{"name":"Black Springer Spaniel","val":1.0,"rarity":"UR","img":""},{"name":"Black Widow","val":1.0,"rarity":"L","img":""},{"name":"Black-Chested Pheasant","val":1.0,"rarity":"L","img":""},{"name":"Black-Footed Ferret","val":1.0,"rarity":"UR","img":""},{"name":"Blue Betta Fish","val":1.0,"rarity":"L","img":""},{"name":"Blue Ringed Octopus","val":1.0,"rarity":"UR","img":""},{"name":"Blue Whale","val":1.0,"rarity":"L","img":""},{"name":"Brown Springer Spaniel","val":1.0,"rarity":"UR","img":""},{"name":"Brown-Chested Pheasant","val":1.0,"rarity":"UR","img":""},{"name":"Bunny Swirl","val":1.0,"rarity":"UR","img":""},{"name":"Burning Bunny","val":1.0,"rarity":"L","img":"pets/16088266364"},{"name":"Bush Elephant","val":1.0,"rarity":"L","img":""},{"name":"Business Monkey (Pet)","val":1.0,"rarity":"UR","img":""},{"name":"Cabbit","val":1.0,"rarity":"UR","img":""},{"name":"Cactus Friend","val":1.0,"rarity":"L","img":""},{"name":"Candicorn","val":1.0,"rarity":"L","img":""},{"name":"Candy Cane Snail","val":1.0,"rarity":"UR","img":""},{"name":"Candy Hare","val":1.0,"rarity":"L","img":""},{"name":"Cerberus","val":1.0,"rarity":"L","img":""},{"name":"Cheetah","val":1.0,"rarity":"L","img":""},{"name":"Chef Gorilla (Pet)","val":1.0,"rarity":"UR","img":""},{"name":"Chicken","val":1.0,"rarity":"C","img":"pets/4440867127"},{"name":"Chilling Spider","val":1.0,"rarity":"UR","img":""},{"name":"Chimera","val":1.0,"rarity":"L","img":""},{"name":"Choco Penguin","val":1.0,"rarity":"UR","img":""},{"name":"Christmas Pudding Pup","val":1.0,"rarity":"UR","img":""},{"name":"Christmas Spirit","val":1.0,"rarity":"L","img":""},{"name":"Clementine Owl","val":1.0,"rarity":"UR","img":""},{"name":"Clownfish","val":1.0,"rarity":"UR","img":""},{"name":"Cobra","val":1.0,"rarity":"L","img":""},{"name":"Coconut Friend","val":1.0,"rarity":"L","img":""},{"name":"Cold Cube","val":1.0,"rarity":"UR","img":""},{"name":"Corgi","val":1.0,"rarity":"UR","img":""},{"name":"Corn Doggo","val":1.0,"rarity":"L","img":""},{"name":"Cozy Mistletroll","val":1.0,"rarity":"UR","img":""},{"name":"Crocodile","val":1.0,"rarity":"UR","img":""},{"name":"Cryptid","val":1.0,"rarity":"L","img":""},{"name":"Cupid Dragon","val":1.0,"rarity":"L","img":""},{"name":"Dancing Dragon","val":1.0,"rarity":"L","img":""},{"name":"Dango Penguins","val":1.0,"rarity":"L","img":""},{"name":"Deathstalker Scorpion","val":1.0,"rarity":"UR","img":""},{"name":"Deinonychus","val":1.0,"rarity":"UR","img":""},{"name":"Diamond Amazon","val":1.0,"rarity":"L","img":""},{"name":"Diamond Hummingbird","val":1.0,"rarity":"L","img":""},{"name":"Dimension Drifter","val":1.0,"rarity":"L","img":""},{"name":"Dire Stag","val":1.0,"rarity":"L","img":""},{"name":"Dire Wolf","val":1.0,"rarity":"UR","img":""},{"name":"Donkey","val":1.0,"rarity":"R","img":"pets/9718162456"},{"name":"Dracula Parrot","val":1.0,"rarity":"L","img":""},{"name":"Dragon","val":1.0,"rarity":"L","img":"items/3181727433"},{"name":"Dragonfly","val":1.0,"rarity":"L","img":""},{"name":"Dragonfruit Fox (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Drake","val":1.0,"rarity":"L","img":"pets/4440867010"},{"name":"Ehecatl","val":1.0,"rarity":"UR","img":""},{"name":"Elasmosaurus","val":1.0,"rarity":"UR","img":""},{"name":"Emberlight","val":1.0,"rarity":"L","img":""},{"name":"Emperor Gorilla (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Evil Basilisk","val":1.0,"rarity":"UR","img":""},{"name":"Evil Chick","val":1.0,"rarity":"L","img":""},{"name":"Evil Chickatrice","val":1.0,"rarity":"UR","img":""},{"name":"Evil Rock","val":1.0,"rarity":"L","img":"pets/15096097714"},{"name":"Fairy Bat Dragon","val":1.0,"rarity":"L","img":""},{"name":"Fallow Deer","val":1.0,"rarity":"L","img":"pets/8938703243"},{"name":"Fanghorn Tortoise","val":1.0,"rarity":"UR","img":""},{"name":"Fire Foal","val":1.0,"rarity":"UR","img":""},{"name":"Fire Mare","val":1.0,"rarity":"L","img":""},{"name":"Fire Stallion","val":1.0,"rarity":"L","img":""},{"name":"Firefighter Gibbon","val":1.0,"rarity":"UR","img":""},{"name":"Flaming Fox","val":1.0,"rarity":"L","img":"items/16088265753"},{"name":"Fleur De Ice","val":1.0,"rarity":"L","img":""},{"name":"Floral Eggy","val":1.0,"rarity":"UR","img":""},{"name":"Frog","val":1.0,"rarity":"UR","img":""},{"name":"Frost Dragon","val":41.0,"rarity":"L","img":"items/4470748644"},{"name":"Frost Fury (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Frost Phoenix","val":1.0,"rarity":"L","img":""},{"name":"Frostbite Bear","val":1.0,"rarity":"L","img":""},{"name":"Frostbite Cub","val":1.0,"rarity":"UR","img":""},{"name":"Frostclaw (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Frozen Penguin","val":1.0,"rarity":"UR","img":""},{"name":"German Shepherd","val":1.0,"rarity":"UR","img":""},{"name":"Ghost Bunny","val":1.0,"rarity":"UR","img":""},{"name":"Ghost Chick","val":1.0,"rarity":"UR","img":""},{"name":"Ghostly Cat","val":1.0,"rarity":"UR","img":""},{"name":"Giant Black Scarab","val":1.0,"rarity":"UR","img":""},{"name":"Giant Panda","val":1.0,"rarity":"L","img":""},{"name":"Gilded Snake","val":1.0,"rarity":"L","img":""},{"name":"Ginger Cat","val":1.0,"rarity":"UR","img":""},{"name":"Gingerbread Hare","val":1.0,"rarity":"UR","img":""},{"name":"Gingerbread Mouse","val":1.0,"rarity":"UR","img":""},{"name":"Gingerbread Reindeer","val":1.0,"rarity":"UR","img":""},{"name":"Glormy Dolphin","val":1.0,"rarity":"L","img":""},{"name":"Gold Mahi Mahi","val":1.0,"rarity":"UR","img":""},{"name":"Golden Albatross","val":1.0,"rarity":"L","img":""},{"name":"Golden Dragon","val":1.0,"rarity":"L","img":"items/4797806820"},{"name":"Golden Griffin","val":1.0,"rarity":"L","img":""},{"name":"Golden Jaguar","val":1.0,"rarity":"UR","img":""},{"name":"Golden King Penguin","val":1.0,"rarity":"L","img":""},{"name":"Golden Penguin","val":1.0,"rarity":"L","img":""},{"name":"Golden Tortoise Beetle","val":1.0,"rarity":"L","img":""},{"name":"Golden Walrus","val":1.0,"rarity":"L","img":""},{"name":"Goldhorn","val":1.0,"rarity":"L","img":""},{"name":"Grave Owl","val":1.0,"rarity":"UR","img":""},{"name":"Green Amazon","val":1.0,"rarity":"UR","img":""},{"name":"Green Butterfly","val":1.0,"rarity":"UR","img":"pets/10318105392"},{"name":"Green-Chested Pheasant","val":1.0,"rarity":"L","img":""},{"name":"Grim Dragon","val":1.0,"rarity":"L","img":""},{"name":"Grinmoire","val":1.0,"rarity":"UR","img":""},{"name":"Guardian Lion","val":1.0,"rarity":"L","img":""},{"name":"Gumball Caterpillar","val":1.0,"rarity":"UR","img":""},{"name":"Halloween Golden Mummy Cat","val":1.0,"rarity":"L","img":""},{"name":"Halloween White Ghost Dragon","val":1.0,"rarity":"L","img":""},{"name":"Halloween White Skeleton Dog","val":1.0,"rarity":"UR","img":""},{"name":"Hamster","val":1.0,"rarity":"UR","img":""},{"name":"Happy Clam","val":1.0,"rarity":"UR","img":""},{"name":"Hawk","val":1.0,"rarity":"L","img":""},{"name":"Hero Gibbon","val":1.0,"rarity":"L","img":""},{"name":"Highland Cow","val":1.0,"rarity":"UR","img":""},{"name":"Hippogriff","val":1.0,"rarity":"L","img":""},{"name":"Hydra","val":1.0,"rarity":"UR","img":""},{"name":"Ice Cream Hermit Crab","val":1.0,"rarity":"UR","img":""},{"name":"Ice Moth Dragon","val":1.0,"rarity":"L","img":""},{"name":"Icy Porcupine","val":1.0,"rarity":"UR","img":""},{"name":"Indian Flying Fox","val":1.0,"rarity":"UR","img":""},{"name":"Influencer Gibbon","val":1.0,"rarity":"L","img":""},{"name":"Inmate Capuchin Monkey (Pet)","val":1.0,"rarity":"UR","img":""},{"name":"Kage Crow","val":1.0,"rarity":"UR","img":""},{"name":"Karate Gorilla (Pet)","val":1.0,"rarity":"UR","img":""},{"name":"Kelp Captain","val":1.0,"rarity":"L","img":""},{"name":"Kelp Hunter","val":1.0,"rarity":"UR","img":""},{"name":"King Bee","val":1.0,"rarity":"L","img":""},{"name":"King Penguin","val":1.0,"rarity":"UR","img":""},{"name":"Kitsune","val":1.0,"rarity":"L","img":""},{"name":"Kitty Bat","val":1.0,"rarity":"L","img":""},{"name":"Komodo Dragon","val":1.0,"rarity":"UR","img":""},{"name":"Kookaburra","val":1.0,"rarity":"UR","img":""},{"name":"Ladybug","val":1.0,"rarity":"UR","img":""},{"name":"Lamb","val":1.0,"rarity":"UR","img":""},{"name":"Lammergeier","val":1.0,"rarity":"UR","img":""},{"name":"Lion Cub","val":1.0,"rarity":"UR","img":""},{"name":"Lionfish","val":1.0,"rarity":"UR","img":""},{"name":"Lunar Gold Tiger","val":1.0,"rarity":"L","img":""},{"name":"Lunar Ox","val":1.0,"rarity":"UR","img":""},{"name":"Lunar White Tiger","val":1.0,"rarity":"UR","img":""},{"name":"Magma Moose","val":1.0,"rarity":"UR","img":""},{"name":"Magma Snail","val":1.0,"rarity":"UR","img":""},{"name":"Maine Coon","val":1.0,"rarity":"UR","img":""},{"name":"Majestic Pony","val":1.0,"rarity":"L","img":""},{"name":"Maneki-Neko","val":1.0,"rarity":"L","img":""},{"name":"Manta Ray","val":1.0,"rarity":"UR","img":""},{"name":"Many Mackerel","val":1.0,"rarity":"UR","img":""},{"name":"Mermicorn","val":1.0,"rarity":"L","img":""},{"name":"Merry Mistletroll","val":1.0,"rarity":"UR","img":""},{"name":"Metal Ox","val":1.0,"rarity":"L","img":""},{"name":"Midnight Dragon","val":1.0,"rarity":"L","img":""},{"name":"Mini Schnauzer","val":1.0,"rarity":"UR","img":""},{"name":"Mirai Moth","val":1.0,"rarity":"UR","img":""},{"name":"Mochi Meow","val":1.0,"rarity":"L","img":""},{"name":"Momma Moose","val":1.0,"rarity":"UR","img":""},{"name":"Monkey King (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Moonbeam Butterfly","val":1.0,"rarity":"L","img":""},{"name":"Moose Calf","val":1.0,"rarity":"L","img":""},{"name":"Mr. Whiskerpips","val":1.0,"rarity":"UR","img":""},{"name":"Mrs. Whiskerpips","val":1.0,"rarity":"UR","img":""},{"name":"Mushroom Friend (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Naughty Mistletroll","val":1.0,"rarity":"L","img":""},{"name":"Nightmare Owl","val":1.0,"rarity":"UR","img":""},{"name":"Ninja Monkey (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Officer Gibbon","val":1.0,"rarity":"UR","img":""},{"name":"Onza","val":1.0,"rarity":"UR","img":""},{"name":"Orange Butterfly","val":1.0,"rarity":"UR","img":""},{"name":"Orca","val":1.0,"rarity":"UR","img":""},{"name":"Orchid Butterfly","val":13.0,"rarity":"L","img":""},{"name":"Ornate Horned Frog","val":1.0,"rarity":"UR","img":""},{"name":"Owlbear","val":1.0,"rarity":"L","img":""},{"name":"Pangolin","val":1.0,"rarity":"UR","img":""},{"name":"Papa Moose","val":1.0,"rarity":"L","img":""},{"name":"Partridge","val":1.0,"rarity":"UR","img":""},{"name":"Peach Owl","val":1.0,"rarity":"L","img":""},{"name":"Peacock","val":1.0,"rarity":"L","img":""},{"name":"Peregrine Falcon","val":1.0,"rarity":"UR","img":""},{"name":"Persian Cat","val":1.0,"rarity":"UR","img":""},{"name":"Phantom Dragon","val":1.0,"rarity":"L","img":""},{"name":"Phoenix (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Pine Marten","val":1.0,"rarity":"UR","img":""},{"name":"Pineapple Owl","val":1.0,"rarity":"L","img":""},{"name":"Pink Betta Fish","val":1.0,"rarity":"UR","img":""},{"name":"Pirate Ghost Capuchin Monkey (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Pirate Hermit Crab","val":1.0,"rarity":"L","img":""},{"name":"Platypus","val":1.0,"rarity":"UR","img":""},{"name":"Pomeranian","val":1.0,"rarity":"UR","img":""},{"name":"Praying Mantis (Pet)","val":1.0,"rarity":"UR","img":""},{"name":"Preppy Capuchin Monkey (Pet)","val":1.0,"rarity":"UR","img":""},{"name":"Pretty Pony","val":1.0,"rarity":"UR","img":""},{"name":"Priceless Shrimp","val":1.0,"rarity":"L","img":""},{"name":"Primal Kaijunior","val":1.0,"rarity":"L","img":""},{"name":"Princess Capuchin Monkey (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Prismatic Butterfly","val":1.0,"rarity":"L","img":""},{"name":"Puffer Fish","val":1.0,"rarity":"UR","img":""},{"name":"Pumpkin Friend","val":1.0,"rarity":"UR","img":""},{"name":"Puptune","val":1.0,"rarity":"UR","img":""},{"name":"Queen Bee","val":1.0,"rarity":"L","img":""},{"name":"Quetzalcoatl","val":1.0,"rarity":"L","img":""},{"name":"Rainbow Dragon","val":1.0,"rarity":"L","img":""},{"name":"Ram","val":1.0,"rarity":"UR","img":""},{"name":"Red Crowned Crane","val":1.0,"rarity":"UR","img":""},{"name":"Red Sand Dollar","val":1.0,"rarity":"UR","img":""},{"name":"Red Squirrel","val":1.0,"rarity":"UR","img":""},{"name":"Ribbon Seal","val":1.0,"rarity":"UR","img":""},{"name":"Rice Cake Rabbit","val":1.0,"rarity":"UR","img":""},{"name":"Ringmaster Gibbon (Pet)","val":1.0,"rarity":"UR","img":""},{"name":"Roadrunner","val":1.0,"rarity":"UR","img":""},{"name":"Robo Dog","val":1.0,"rarity":"L","img":""},{"name":"Robot","val":1.0,"rarity":"UR","img":""},{"name":"Rooster","val":1.0,"rarity":"UR","img":""},{"name":"Rose Dragon","val":1.0,"rarity":"L","img":""},{"name":"Rosy Maple Moth (Pet)","val":1.0,"rarity":"L","img":""},{"name":"Royal Corgi","val":1.0,"rarity":"UR","img":""},{"name":"Royal Mistletroll","val":1.0,"rarity":"L","img":""},{"name":"Sabertooth","val":1.0,"rarity":"UR","img":""},{"name":"Sakura Spirit","val":1.0,"rarity":"L","img":""},{"name":"Salamander","val":1.0,"rarity":"UR","img":""},{"name":"Scarecrow Cat","val":1.0,"rarity":"UR","img":""},{"name":"Scarecrow Crow","val":1.0,"rarity":"L","img":""},{"name":"Scarlet Butterfly","val":1.0,"rarity":"UR","img":""},{"name":"Scorching Kaijunior","val":1.0,"rarity":"L","img":""},{"name":"Sea Slug","val":1.0,"rarity":"UR","img":""},{"name":"Sea Turtle","val":1.0,"rarity":"L","img":""},{"name":"Seabed Creeper","val":1.0,"rarity":"UR","img":""},{"name":"Seafoam Butterfly","val":1.0,"rarity":"UR","img":""},{"name":"Seagull","val":1.0,"rarity":"UR","img":""},{"name":"Shark","val":1.0,"rarity":"L","img":""},{"name":"Shetland Pony Light Brown","val":1.0,"rarity":"L","img":""},{"name":"Shetland Pony White","val":1.0,"rarity":"UR","img":""},{"name":"Shiba Inu","val":1.0,"rarity":"UR","img":""},{"name":"Siamese Cat","val":1.0,"rarity":"UR","img":""},{"name":"Silverback Gorilla","val":1.0,"rarity":"L","img":""},{"name":"Skelebat","val":1.0,"rarity":"UR","img":""},{"name":"Skunk (Pet)","val":1.0,"rarity":"UR","img":""},{"name":"Slime","val":1.0,"rarity":"UR","img":""},{"name":"Slimingo","val":1.0,"rarity":"L","img":""},{"name":"Snow Monkey","val":1.0,"rarity":"R","img":"pets/15555939727"},{"name":"Snow Owl","val":1.0,"rarity":"L","img":""},{"name":"Snowball Pet","val":1.0,"rarity":"UR","img":""},{"name":"Snowball Pug","val":1.0,"rarity":"UR","img":""},{"name":"Snowy Mammoth","val":1.0,"rarity":"UR","img":""},{"name":"Space Whale","val":1.0,"rarity":"UR","img":""},{"name":"Spider Crab","val":1.0,"rarity":"UR","img":""},{"name":"Spinosaurus","val":1.0,"rarity":"L","img":""},{"name":"Sprout Snail","val":1.0,"rarity":"UR","img":""},{"name":"Squid","val":1.0,"rarity":"L","img":""},{"name":"St Bernard","val":1.0,"rarity":"UR","img":""},{"name":"Starfish","val":1.0,"rarity":"UR","img":""},{"name":"Starmite","val":1.0,"rarity":"UR","img":""},{"name":"Strawberry Penguin","val":1.0,"rarity":"L","img":""},{"name":"Striped Eggy","val":1.0,"rarity":"L","img":""},{"name":"Sunglider","val":1.0,"rarity":"L","img":""},{"name":"Sunrise Duckling","val":1.0,"rarity":"L","img":""},{"name":"Super Saru","val":1.0,"rarity":"L","img":""},{"name":"Swordfish","val":1.0,"rarity":"UR","img":""},{"name":"T-Rex","val":1.0,"rarity":"L","img":""},{"name":"Temple Friend","val":1.0,"rarity":"L","img":""},{"name":"Tió De Nadal","val":1.0,"rarity":"L","img":""},{"name":"Toasty Red Panda","val":1.0,"rarity":"UR","img":""},{"name":"Tortuga de la Isla (Pet)","val":1.0,"rarity":"UR","img":""},{"name":"Toxic Kaijunior","val":1.0,"rarity":"UR","img":""},{"name":"Toy Monkey (Pet)","val":1.0,"rarity":"UR","img":""},{"name":"Trapdoor Snail","val":1.0,"rarity":"UR","img":""},{"name":"Tri-horned Treehopper","val":1.0,"rarity":"UR","img":""},{"name":"Turkey","val":1.0,"rarity":"UR","img":""},{"name":"Vanilla Penguin","val":1.0,"rarity":"L","img":""},{"name":"Velocirooster","val":1.0,"rarity":"L","img":""},{"name":"Vermillion Butterfly","val":1.0,"rarity":"UR","img":""},{"name":"Villain Gibbon","val":1.0,"rarity":"L","img":""},{"name":"Violet Butterfly","val":1.0,"rarity":"L","img":""},{"name":"Volcanic Rhino","val":1.0,"rarity":"L","img":""},{"name":"Vulture","val":1.0,"rarity":"UR","img":""},{"name":"Waffle Wyrm","val":1.0,"rarity":"UR","img":""},{"name":"Water Moon Bear","val":1.0,"rarity":"UR","img":""},{"name":"Water Rabbit","val":1.0,"rarity":"UR","img":""},{"name":"White Sand Dollar","val":1.0,"rarity":"UR","img":""},{"name":"Wildfire Hawk","val":1.0,"rarity":"UR","img":""},{"name":"Winged Horse","val":1.0,"rarity":"L","img":""},{"name":"Winged Tiger","val":1.0,"rarity":"L","img":""},{"name":"Winter Buck","val":1.0,"rarity":"L","img":""},{"name":"Winter Doe","val":1.0,"rarity":"UR","img":""},{"name":"Wood Pigeon","val":1.0,"rarity":"UR","img":""},{"name":"Wooly Rhino","val":1.0,"rarity":"UR","img":""},{"name":"Wyvern","val":1.0,"rarity":"UR","img":""},{"name":"Yeti","val":1.0,"rarity":"UR","img":""},{"name":"Yule Log Dog","val":1.0,"rarity":"L","img":""},{"name":"Zodiac Minion Chick","val":1.0,"rarity":"L","img":""},{"name":"Zombie Wolf","val":1.0,"rarity":"UR","img":""},{"name":"Abyssinian Cat","val":0.5,"rarity":"R","img":""},{"name":"Amber Butterfly","val":0.5,"rarity":"R","img":""},{"name":"Angus Cow","val":0.5,"rarity":"R","img":""},{"name":"Ankylosaurus","val":0.5,"rarity":"R","img":""},{"name":"Basilisk","val":0.5,"rarity":"R","img":""},{"name":"Bird of Paradise","val":0.5,"rarity":"R","img":""},{"name":"Black Moon Bear","val":0.5,"rarity":"R","img":""},{"name":"Black Rhino","val":0.5,"rarity":"R","img":""},{"name":"Bloodhound","val":0.5,"rarity":"R","img":""},{"name":"Blossom Snake","val":0.5,"rarity":"R","img":""},{"name":"Blue Jay (Pet)","val":0.5,"rarity":"R","img":""},{"name":"Bunny","val":0.5,"rarity":"R","img":""},{"name":"Capuchin Monkey","val":0.5,"rarity":"R","img":""},{"name":"Cassowary","val":0.5,"rarity":"R","img":""},{"name":"Castle Hermit Crab","val":0.5,"rarity":"R","img":""},{"name":"Chanekeh","val":0.5,"rarity":"R","img":""},{"name":"Cherub Chipmunk","val":0.5,"rarity":"R","img":""},{"name":"Chipmunk","val":0.5,"rarity":"R","img":""},{"name":"Clover Cow","val":0.5,"rarity":"R","img":""},{"name":"Cow Calf","val":0.5,"rarity":"R","img":""},{"name":"DJ Snooze","val":0.5,"rarity":"R","img":""},{"name":"Dilophosaurus","val":0.5,"rarity":"R","img":""},{"name":"Dotted Eggy","val":0.5,"rarity":"R","img":""},{"name":"Eggnog Hare","val":0.5,"rarity":"R","img":""},{"name":"Emperor Shrimp","val":0.5,"rarity":"R","img":""},{"name":"English Sheepdog","val":0.5,"rarity":"R","img":""},{"name":"Feesh","val":0.5,"rarity":"R","img":""},{"name":"Flaming Zebra","val":0.5,"rarity":"R","img":""},{"name":"French Bulldog","val":0.5,"rarity":"R","img":""},{"name":"Gesko","val":0.5,"rarity":"R","img":""},{"name":"Ghost Dog","val":0.5,"rarity":"R","img":""},{"name":"Ghost Wolf","val":0.5,"rarity":"R","img":""},{"name":"Gibbon","val":0.5,"rarity":"R","img":""},{"name":"Goldfish","val":0.5,"rarity":"R","img":""},{"name":"Goose","val":0.5,"rarity":"R","img":""},{"name":"Gorilla","val":0.5,"rarity":"R","img":""},{"name":"Great Pyrenees","val":0.5,"rarity":"R","img":""},{"name":"Gummy Guana","val":0.5,"rarity":"R","img":""},{"name":"Halloween Evil Dachshund","val":0.5,"rarity":"R","img":""},{"name":"Halloween White Mummy Cat","val":0.5,"rarity":"R","img":""},{"name":"Happy Duckling","val":0.5,"rarity":"R","img":""},{"name":"Hare","val":0.5,"rarity":"R","img":""},{"name":"Hippo","val":0.5,"rarity":"R","img":""},{"name":"Husky","val":0.5,"rarity":"R","img":""},{"name":"Ibex","val":0.5,"rarity":"R","img":""},{"name":"Ibis","val":0.5,"rarity":"R","img":""},{"name":"Ice Cube","val":0.5,"rarity":"R","img":""},{"name":"Indian Leopard","val":0.5,"rarity":"R","img":""},{"name":"Irish Elk","val":0.5,"rarity":"R","img":""},{"name":"Kappakid","val":0.5,"rarity":"R","img":""},{"name":"Kelp Raider","val":0.5,"rarity":"R","img":""},{"name":"Kiwi","val":0.5,"rarity":"R","img":""},{"name":"Koala","val":0.5,"rarity":"R","img":"items/4708551284"},{"name":"Koi Carp","val":0.5,"rarity":"R","img":""},{"name":"Leopard Cat","val":0.5,"rarity":"R","img":""},{"name":"Leopard Shark","val":0.5,"rarity":"R","img":""},{"name":"Longhorn Cow","val":0.5,"rarity":"R","img":""},{"name":"Love Bird","val":0.5,"rarity":"R","img":""},{"name":"Lunar Tiger","val":0.5,"rarity":"R","img":""},{"name":"Lynx","val":0.5,"rarity":"R","img":""},{"name":"Marabou Stork","val":0.5,"rarity":"R","img":""},{"name":"Mecha R4BBIT","val":0.5,"rarity":"R","img":""},{"name":"Mega Neons","val":0.5,"rarity":"R","img":""},{"name":"Merhorse","val":0.5,"rarity":"R","img":""},{"name":"Mexican Wolf","val":0.5,"rarity":"R","img":""},{"name":"Monkey","val":0.5,"rarity":"R","img":""},{"name":"Moon Rabbit","val":0.5,"rarity":"R","img":""},{"name":"Moonlight Moth","val":0.5,"rarity":"R","img":""},{"name":"Moonpine","val":0.5,"rarity":"R","img":""},{"name":"Mule","val":0.5,"rarity":"R","img":""},{"name":"Munchkin Cat","val":0.5,"rarity":"R","img":""},{"name":"Musk Ox","val":0.5,"rarity":"R","img":""},{"name":"Narwhal","val":0.5,"rarity":"R","img":"pets/6498256342"},{"name":"Nebula Snake","val":0.5,"rarity":"R","img":""},{"name":"Neon Pets","val":0.5,"rarity":"R","img":""},{"name":"Nutcracker Squirrel","val":0.5,"rarity":"R","img":""},{"name":"Ocelot","val":0.5,"rarity":"R","img":""},{"name":"Orange Betta Fish","val":0.5,"rarity":"R","img":""},{"name":"Orangutan","val":0.5,"rarity":"R","img":""},{"name":"Oryx","val":0.5,"rarity":"R","img":""},{"name":"Ostrich","val":0.5,"rarity":"R","img":""},{"name":"Ox","val":0.5,"rarity":"R","img":""},{"name":"Panda","val":0.5,"rarity":"R","img":"pets/4621220487"},{"name":"Parakeet","val":0.5,"rarity":"R","img":""},{"name":"Penguin","val":0.5,"rarity":"R","img":"pets/3710822879"},{"name":"Pets","val":0.5,"rarity":"R","img":""},{"name":"Pig","val":0.5,"rarity":"R","img":""},{"name":"Poison Dart Frog","val":0.5,"rarity":"R","img":""},{"name":"Prism Snake","val":0.5,"rarity":"R","img":""},{"name":"Pterodactyl","val":0.5,"rarity":"R","img":""},{"name":"Pudding Cat","val":0.5,"rarity":"R","img":""},{"name":"Pumpkin (Pet)","val":0.5,"rarity":"R","img":""},{"name":"Punk Pony","val":0.5,"rarity":"R","img":""},{"name":"Rat","val":0.5,"rarity":"R","img":""},{"name":"Red Fox","val":0.5,"rarity":"R","img":""},{"name":"Red Panda","val":0.5,"rarity":"UC","img":"pets/3181728128"},{"name":"Rhino","val":0.5,"rarity":"R","img":""},{"name":"Ring-tailed Lemur","val":0.5,"rarity":"R","img":""},{"name":"Samoyed","val":0.5,"rarity":"R","img":""},{"name":"Sasquatch","val":0.5,"rarity":"R","img":""},{"name":"Scarecrow Horse","val":0.5,"rarity":"R","img":""},{"name":"Scoob","val":0.5,"rarity":"R","img":""},{"name":"Sea Angel","val":0.5,"rarity":"R","img":""},{"name":"Seahorse","val":0.5,"rarity":"R","img":""},{"name":"Shetland Pony Dark Brown","val":0.5,"rarity":"R","img":""},{"name":"Shiver Wolf","val":0.5,"rarity":"R","img":""},{"name":"Singularity Beetle","val":0.5,"rarity":"R","img":""},{"name":"Singularity Pisces","val":0.5,"rarity":"R","img":""},{"name":"Sloth","val":0.5,"rarity":"R","img":"pets/3934251801"},{"name":"Sneak Weasel","val":0.5,"rarity":"R","img":""},{"name":"Snow Puma","val":0.5,"rarity":"R","img":""},{"name":"Starhopper","val":0.5,"rarity":"R","img":""},{"name":"Steppe Lion","val":0.5,"rarity":"R","img":""},{"name":"Subzero Scorpion","val":0.5,"rarity":"R","img":""},{"name":"Summer Walrus","val":0.5,"rarity":"R","img":""},{"name":"Sweetheart Rat","val":0.5,"rarity":"R","img":""},{"name":"Tarantula","val":0.5,"rarity":"R","img":""},{"name":"Tarsier","val":0.5,"rarity":"R","img":""},{"name":"Tasmanian Devil","val":0.5,"rarity":"R","img":""},{"name":"The Black Dog","val":0.5,"rarity":"R","img":""},{"name":"Thorny Devil","val":0.5,"rarity":"R","img":""},{"name":"Toy Poodle","val":0.5,"rarity":"R","img":""},{"name":"Tree Sasquatch","val":0.5,"rarity":"R","img":""},{"name":"Turtle Doves","val":0.5,"rarity":"R","img":""},{"name":"Undead Elk","val":0.5,"rarity":"R","img":""},{"name":"Water Opossum","val":0.5,"rarity":"R","img":""},{"name":"Weevil (Pet)","val":0.5,"rarity":"R","img":""},{"name":"Winter Fawn","val":0.5,"rarity":"R","img":""},{"name":"Wolf","val":0.5,"rarity":"UC","img":"pets/4506925747"},{"name":"Woodpecker","val":0.5,"rarity":"R","img":""},{"name":"Woolly Mammoth","val":0.5,"rarity":"R","img":""},{"name":"Wren","val":0.5,"rarity":"R","img":""},{"name":"Yellow Butterfly","val":0.5,"rarity":"R","img":""},{"name":"Zebra","val":0.5,"rarity":"R","img":""},{"name":"Zeopod","val":0.5,"rarity":"R","img":""},{"name":"Zombie Chick","val":0.5,"rarity":"R","img":""},{"name":"2021 Uplift Butterfly","val":0.2,"rarity":"UC","img":""},{"name":"2022 Uplift Butterfly","val":0.2,"rarity":"UC","img":""},{"name":"2025 Birthday Butterfly","val":0.2,"rarity":"UC","img":""},{"name":"Amami Rabbit","val":0.2,"rarity":"UC","img":""},{"name":"Angler Fish","val":0.2,"rarity":"UC","img":""},{"name":"Arctic Hare","val":0.2,"rarity":"UC","img":""},{"name":"Arctic Tern","val":0.2,"rarity":"UC","img":""},{"name":"Banded Palm Civet","val":0.2,"rarity":"UC","img":""},{"name":"Bat","val":0.2,"rarity":"UC","img":""},{"name":"Birthday Butterfly 2023","val":0.2,"rarity":"UC","img":""},{"name":"Birthday Butterfly 2024","val":0.2,"rarity":"UC","img":""},{"name":"Black Marlin","val":0.2,"rarity":"UC","img":""},{"name":"Black Tiger","val":0.2,"rarity":"UC","img":""},{"name":"Borhyaena Gigantica","val":0.2,"rarity":"UC","img":""},{"name":"Camel","val":0.2,"rarity":"UC","img":""},{"name":"Canadian Goose","val":0.2,"rarity":"UC","img":""},{"name":"Chickatrice","val":0.2,"rarity":"UC","img":""},{"name":"Chocolate Labrador","val":0.2,"rarity":"UC","img":""},{"name":"Cocoadile","val":0.2,"rarity":"UC","img":""},{"name":"Crab","val":0.2,"rarity":"UC","img":""},{"name":"Cute-A-Cabra","val":0.2,"rarity":"UC","img":""},{"name":"Dingo","val":0.2,"rarity":"UC","img":""},{"name":"Dolphin","val":0.2,"rarity":"UC","img":""},{"name":"Dracula Fish","val":0.2,"rarity":"UC","img":""},{"name":"Dylan","val":0.2,"rarity":"UC","img":""},{"name":"Eel","val":0.2,"rarity":"UC","img":""},{"name":"Eggnog Dog","val":0.2,"rarity":"UC","img":""},{"name":"Ermine","val":0.2,"rarity":"UC","img":""},{"name":"Fennec Fox","val":0.2,"rarity":"UC","img":""},{"name":"Fossa","val":0.2,"rarity":"UC","img":""},{"name":"Frogspawn","val":0.2,"rarity":"UC","img":""},{"name":"Gila Monster","val":0.2,"rarity":"UC","img":""},{"name":"Glyptodon","val":0.2,"rarity":"UC","img":""},{"name":"Halloween Black Mummy Cat","val":0.2,"rarity":"UC","img":""},{"name":"Halloween Blue Scorpion","val":0.2,"rarity":"UC","img":""},{"name":"Hammerhead Shark","val":0.2,"rarity":"UC","img":""},{"name":"Harp Seal","val":0.2,"rarity":"UC","img":""},{"name":"Hermit Crab","val":0.2,"rarity":"UC","img":""},{"name":"Horse","val":0.2,"rarity":"UC","img":"pets/3181727813"},{"name":"Humbug","val":0.2,"rarity":"UC","img":""},{"name":"Jumping Spider","val":0.2,"rarity":"UC","img":""},{"name":"Kaijunior","val":0.2,"rarity":"UC","img":""},{"name":"Kakapo","val":0.2,"rarity":"UC","img":""},{"name":"Kelp Crewmate","val":0.2,"rarity":"UC","img":""},{"name":"Kirin","val":0.2,"rarity":"UC","img":""},{"name":"Lobster","val":0.2,"rarity":"UC","img":""},{"name":"Magpie","val":0.2,"rarity":"UC","img":""},{"name":"Mahi Mahi","val":0.2,"rarity":"UC","img":""},{"name":"Mistletroll","val":0.2,"rarity":"UC","img":""},{"name":"Mole (Pet)","val":0.2,"rarity":"UC","img":""},{"name":"Muskrat","val":0.2,"rarity":"UC","img":""},{"name":"Old King Coal","val":0.2,"rarity":"UC","img":""},{"name":"Patchy Bear","val":0.2,"rarity":"UC","img":""},{"name":"Pet Rock","val":0.2,"rarity":"UC","img":""},{"name":"Pistachio","val":0.2,"rarity":"UC","img":""},{"name":"Poodle","val":0.2,"rarity":"UC","img":""},{"name":"Possum","val":0.2,"rarity":"UC","img":""},{"name":"Puma","val":0.2,"rarity":"UC","img":""},{"name":"Quokka","val":0.2,"rarity":"UC","img":""},{"name":"Raccoon","val":0.2,"rarity":"UC","img":""},{"name":"Rattlesnake","val":0.2,"rarity":"UC","img":""},{"name":"Red Cardinal","val":0.2,"rarity":"UC","img":""},{"name":"Rhino Beetle","val":0.2,"rarity":"UC","img":""},{"name":"River","val":0.2,"rarity":"UC","img":""},{"name":"Rock","val":0.2,"rarity":"UC","img":""},{"name":"Rock Pigeon","val":0.2,"rarity":"UC","img":""},{"name":"Rodeo Bull","val":0.2,"rarity":"UC","img":""},{"name":"Scarecrow","val":0.2,"rarity":"UC","img":""},{"name":"Sea Skeleton Panda","val":0.2,"rarity":"UC","img":""},{"name":"Shih Tzu","val":0.2,"rarity":"UC","img":""},{"name":"Slug","val":0.2,"rarity":"UC","img":""},{"name":"Snorgle","val":0.2,"rarity":"UC","img":""},{"name":"Snow Cat","val":0.2,"rarity":"UC","img":""},{"name":"Snow Leopard","val":0.2,"rarity":"UC","img":""},{"name":"Snowman","val":0.2,"rarity":"UC","img":""},{"name":"Stegosaurus","val":0.2,"rarity":"UC","img":""},{"name":"Tanuki","val":0.2,"rarity":"UC","img":""},{"name":"Tawny Frogmouth","val":0.2,"rarity":"UC","img":""},{"name":"Therapy Dog","val":0.2,"rarity":"UC","img":""},{"name":"Tree Frog","val":0.2,"rarity":"UC","img":""},{"name":"Triceratops","val":0.2,"rarity":"UC","img":""},{"name":"Velociraptor","val":0.2,"rarity":"UC","img":""},{"name":"Warthog","val":0.2,"rarity":"UC","img":""},{"name":"Yellow-lipped Sea Krait","val":0.2,"rarity":"UC","img":""},{"name":"Angelfish","val":0.0,"rarity":"C","img":""},{"name":"Ant","val":0.0,"rarity":"C","img":""},{"name":"Armadillo","val":0.0,"rarity":"C","img":""},{"name":"Ash Zebra","val":0.0,"rarity":"C","img":""},{"name":"Aye Aye","val":0.0,"rarity":"C","img":""},{"name":"Bakeneko","val":0.0,"rarity":"C","img":""},{"name":"Bali Starling","val":0.0,"rarity":"C","img":""},{"name":"Bandicoot","val":0.0,"rarity":"C","img":""},{"name":"Beaver","val":0.0,"rarity":"C","img":"pets/3181727196"},{"name":"Beluga Whale","val":0.0,"rarity":"C","img":""},{"name":"Blue Butterfly","val":0.0,"rarity":"C","img":""},{"name":"Bluebottle Fly","val":0.0,"rarity":"C","img":""},{"name":"Brachiosaurus","val":0.0,"rarity":"C","img":""},{"name":"Buffalo","val":0.0,"rarity":"C","img":""},{"name":"Bullfrog","val":0.0,"rarity":"C","img":""},{"name":"Burtaur","val":0.0,"rarity":"C","img":""},{"name":"California Condor","val":0.0,"rarity":"C","img":""},{"name":"Cat","val":0.0,"rarity":"C","img":"pets/3200646599"},{"name":"Chick","val":0.0,"rarity":"C","img":"pets/4752655872"},{"name":"Classic Teapot","val":0.0,"rarity":"C","img":""},{"name":"Cockroach","val":0.0,"rarity":"C","img":""},{"name":"Coyote","val":0.0,"rarity":"C","img":""},{"name":"Dog","val":0.0,"rarity":"C","img":"pets/3181727351"},{"name":"Dugong","val":0.0,"rarity":"C","img":""},{"name":"Flying Fish","val":0.0,"rarity":"C","img":""},{"name":"Frankenfeline","val":0.0,"rarity":"C","img":""},{"name":"Galapagos Sea Lion","val":0.0,"rarity":"C","img":""},{"name":"Garden Snake (Pet)","val":0.0,"rarity":"C","img":""},{"name":"Ghost","val":0.0,"rarity":"C","img":""},{"name":"Ground Sloth","val":0.0,"rarity":"C","img":""},{"name":"Hopbop","val":0.0,"rarity":"C","img":""},{"name":"Island Tarsier","val":0.0,"rarity":"C","img":""},{"name":"Japanese Snow Fairy","val":0.0,"rarity":"C","img":""},{"name":"Kid Goat","val":0.0,"rarity":"C","img":""},{"name":"Liger","val":0.0,"rarity":"C","img":""},{"name":"Malayan Tapir","val":0.0,"rarity":"C","img":""},{"name":"Maleo Bird","val":0.0,"rarity":"C","img":""},{"name":"Mongoose","val":0.0,"rarity":"C","img":""},{"name":"Mosquito","val":0.0,"rarity":"C","img":""},{"name":"Mouse","val":0.0,"rarity":"C","img":""},{"name":"Otter","val":0.0,"rarity":"C","img":"pets/3293758505"},{"name":"Piranha","val":0.0,"rarity":"C","img":""},{"name":"Practice Dog","val":0.0,"rarity":"C","img":""},{"name":"Rabbit","val":0.0,"rarity":"C","img":"pets/3181727278"},{"name":"Ratatoskr","val":0.0,"rarity":"C","img":""},{"name":"Robin","val":0.0,"rarity":"C","img":""},{"name":"Sado Mole","val":0.0,"rarity":"C","img":""},{"name":"Sandfish","val":0.0,"rarity":"C","img":""},{"name":"Show Pony","val":0.0,"rarity":"C","img":""},{"name":"Stingray","val":0.0,"rarity":"C","img":""},{"name":"Tasmanian Tiger","val":0.0,"rarity":"C","img":""},{"name":"Tegu","val":0.0,"rarity":"C","img":""},{"name":"Urchin","val":0.0,"rarity":"C","img":""},{"name":"Walrus","val":0.0,"rarity":"C","img":""},{"name":"Wolpertinger","val":0.0,"rarity":"C","img":""}];
+  <script src="/assets/js/adopt-values.js"></script>
+  <script>
+    const state = {
+      payload: null,
+      rows: {
+        left: [],
+        right: []
+      }
+    };
 
-var NEON_OPTS = [
-  {label:"Normal", mult:1},
-  {label:"Neon",   mult:4},
-  {label:"Mega",   mult:16}
-];
-var FR_OPTS = [
-  {label:"None",  mult:1},
-  {label:"Fly",   mult:1.5},
-  {label:"Ride",  mult:1.5},
-  {label:"FR",    mult:2}
-];
-var VERDICTS = [
-  {min:50,  cls:"vHUGEWIN",   label:"HUGE WIN"},
-  {min:20,  cls:"vBIGWIN",    label:"BIG WIN"},
-  {min:8,   cls:"vWIN",       label:"WIN"},
-  {min:3,   cls:"vSLIGHTWIN", label:"SLIGHT WIN"},
-  {min:-3,  cls:"vFAIR",      label:"FAIR TRADE"},
-  {min:-8,  cls:"vSLIGHTLOSS",label:"SLIGHT LOSS"},
-  {min:-20, cls:"vLOSS",      label:"LOSS"},
-  {min:-50, cls:"vBIGLOSS",   label:"BIG LOSS"},
-  {min:-1e9,cls:"vHUGELOSS",  label:"HUGE LOSS"}
-];
-var RARITY_LABELS = {L:"Legendary",UR:"Ultra-Rare",R:"Rare",UC:"Uncommon",C:"Common"};
+    function createLineItem(side) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "line-item";
 
-// State
-var givePets = newArr(), recvPets = newArr();
-var activePicker = null; // {side, idx}
-var pickerFilter = "all", pickerSearch = "";
+      const petSelect = document.createElement("select");
+      const variantSelect = document.createElement("select");
+      const qtyInput = document.createElement("input");
 
-function newArr(){ var a=[]; for(var i=0;i<SLOTS;i++) a.push(null); return a; }
-function sideArr(side){ return side==="give" ? givePets : recvPets; }
-function effVal(e){ return e.pet.val * e.neon.mult * e.fr.mult; }
-function fmt(n){ return n%1===0 ? String(n) : n.toFixed(1); }
+      qtyInput.type = "number";
+      qtyInput.min = "1";
+      qtyInput.value = "1";
+      qtyInput.inputMode = "numeric";
 
-// -- RENDER SLOTS --
-function renderSlots(side) {
-  var arr = sideArr(side);
-  var grid = document.getElementById(side+"-grid");
-  while(grid.firstChild) grid.removeChild(grid.firstChild);
+      petSelect.innerHTML = [
+        '<option value="">Choose a pet</option>',
+        ...state.payload.pets.map((pet) => `<option value="${pet.slug}">${pet.name}</option>`)
+      ].join("");
 
-  for(var i=0; i<SLOTS; i++) {
-    (function(idx){
-      var entry = arr[idx];
-      var slot = document.createElement("div");
+      variantSelect.innerHTML = '<option value="default">Default</option>';
 
-      if(!entry) {
-        slot.className = "slot empty";
-        slot.setAttribute("data-side", side);
-        slot.setAttribute("data-idx", idx);
-
-        var icon = document.createElement("div");
-        icon.className = "slot-empty-icon";
-        icon.textContent = "+";
-        var lbl = document.createElement("div");
-        lbl.className = "slot-empty-lbl";
-        lbl.textContent = "add pet";
-        slot.appendChild(icon);
-        slot.appendChild(lbl);
-        slot.onclick = function(){ openPicker(side, idx); };
-      } else {
-        slot.className = "slot filled";
-
-        // Remove btn
-        var rm = document.createElement("button");
-        rm.className = "slot-remove";
-        rm.textContent = "X";
-        rm.onclick = function(e){ e.stopPropagation(); removePet(side, idx); };
-        slot.appendChild(rm);
-
-        // Image
-        var img = document.createElement("img");
-        img.className = "slot-img";
-        img.src = IMG_BASE + entry.pet.img + ".png";
-        img.alt = entry.pet.name;
-        img.loading = "lazy";
-        img.onerror = function(){ this.style.opacity="0.25"; };
-        slot.appendChild(img);
-
-        // Name
-        var nm = document.createElement("div");
-        nm.className = "slot-name";
-        nm.textContent = entry.pet.name;
-        slot.appendChild(nm);
-
-        // Value
-        var vEl = document.createElement("div");
-        vEl.className = "slot-val";
-        vEl.textContent = fmt(effVal(entry)) + " pts";
-        slot.appendChild(vEl);
-
-        // Toggles
-        var toggles = document.createElement("div");
-        toggles.className = "slot-toggles";
-
-        // Neon row
-        var nRow = document.createElement("div");
-        nRow.className = "tog-row";
-        for(var ni=0; ni<NEON_OPTS.length; ni++) {
-          (function(nIdx){
-            var b = document.createElement("button");
-            b.className = "tog" + (entry.neon===NEON_OPTS[nIdx] ? " sel" : "");
-            b.textContent = NEON_OPTS[nIdx].label;
-            b.onclick = function(e){ e.stopPropagation(); setNeon(side,idx,nIdx); };
-            nRow.appendChild(b);
-          })(ni);
+      petSelect.addEventListener("change", () => {
+        const pet = state.payload.petIndex[petSelect.value];
+        if (!pet) {
+          variantSelect.innerHTML = '<option value="default">Default</option>';
+          updateTotals();
+          return;
         }
-        toggles.appendChild(nRow);
 
-        // FR row
-        var fRow = document.createElement("div");
-        fRow.className = "tog-row";
-        for(var fi=0; fi<FR_OPTS.length; fi++) {
-          (function(fIdx){
-            var b = document.createElement("button");
-            b.className = "tog" + (entry.fr===FR_OPTS[fIdx] ? " sel" : "");
-            b.textContent = FR_OPTS[fIdx].label;
-            b.onclick = function(e){ e.stopPropagation(); setFR(side,idx,fIdx); };
-            fRow.appendChild(b);
-          })(fi);
+        variantSelect.innerHTML = window.ThePatchValues.getVariantEntries(pet)
+          .map((entry) => `<option value="${entry.key}">${entry.label}</option>`)
+          .join("");
+
+        updateTotals();
+      });
+
+      variantSelect.addEventListener("change", updateTotals);
+      qtyInput.addEventListener("input", updateTotals);
+
+      wrapper.append(petSelect, variantSelect, qtyInput);
+      document.getElementById(`${side}-lines`).appendChild(wrapper);
+      state.rows[side].push({ petSelect, variantSelect, qtyInput });
+    }
+
+    function getSideTotal(side) {
+      return state.rows[side].reduce((sum, row) => {
+        const pet = state.payload.petIndex[row.petSelect.value];
+        const qty = Math.max(1, Number(row.qtyInput.value || 1));
+        if (!pet) {
+          return sum;
         }
-        toggles.appendChild(fRow);
-        slot.appendChild(toggles);
+
+        return sum + window.ThePatchValues.getVariantValue(pet, row.variantSelect.value) * qty;
+      }, 0);
+    }
+
+    function updateVerdict(leftTotal, rightTotal) {
+      const verdict = document.getElementById("verdict");
+      const note = document.getElementById("difference-note");
+
+      if (!leftTotal || !rightTotal) {
+        verdict.textContent = "Waiting for selections";
+        note.textContent = "Add pets on both sides to see the value gap and a quick fairness read.";
+        return;
       }
 
-      grid.appendChild(slot);
-    })(i);
-  }
+      const gap = rightTotal - leftTotal;
+      const baseline = Math.max(leftTotal, rightTotal);
+      const pct = Math.abs(gap) / baseline;
 
-  var filled = arr.filter(function(x){ return x!==null; }).length;
-  document.getElementById(side+"-count").textContent = filled+(filled===1?" pet":" pets");
-}
+      if (pct <= 0.08) {
+        verdict.textContent = "Close to fair";
+      } else if (gap > 0 && pct <= 0.2) {
+        verdict.textContent = "You are under by a small amount";
+      } else if (gap < 0 && pct <= 0.2) {
+        verdict.textContent = "You are over by a small amount";
+      } else if (gap > 0) {
+        verdict.textContent = "You are under by a lot";
+      } else {
+        verdict.textContent = "You are over by a lot";
+      }
 
-// -- PICKER --
-function openPicker(side, idx) {
-  activePicker = {side:side, idx:idx};
-  pickerSearch = "";
-  document.getElementById("picker-search").value = "";
-  document.getElementById("picker").removeAttribute("hidden");
-  document.getElementById("picker-search").focus();
-  renderPickerGrid();
-}
-
-function closePicker() {
-  document.getElementById("picker").setAttribute("hidden","");
-  activePicker = null;
-}
-
-function renderPickerGrid() {
-  var grid = document.getElementById("picker-grid");
-  while(grid.firstChild) grid.removeChild(grid.firstChild);
-
-  var q = pickerSearch.toLowerCase();
-  var pets = PETS.filter(function(p){
-    var matchR = pickerFilter==="all" || p.rarity===pickerFilter;
-    var matchQ = !q || p.name.toLowerCase().indexOf(q) >= 0;
-    return matchR && matchQ;
-  });
-
-  if(pets.length===0) {
-    var msg = document.createElement("div");
-    msg.style.cssText = "grid-column:1/-1;text-align:center;color:var(--text-muted);padding:24px;font-size:.8rem";
-    msg.textContent = "No pets found";
-    grid.appendChild(msg);
-    return;
-  }
-
-  pets.forEach(function(p) {
-    var tile = document.createElement("div");
-    tile.className = "pet-tile";
-    tile.onclick = function(){ selectPet(p); };
-
-    var img = document.createElement("img");
-    img.src = IMG_BASE + p.img + ".png";
-    img.alt = p.name;
-    img.loading = "lazy";
-    img.width = 52; img.height = 52;
-    img.onerror = function(){ this.style.opacity="0.2"; };
-    tile.appendChild(img);
-
-    var nm = document.createElement("div");
-    nm.className = "pt-name";
-    nm.textContent = p.name;
-    tile.appendChild(nm);
-
-    var rar = document.createElement("div");
-    rar.className = "pt-rar r"+p.rarity;
-    rar.textContent = RARITY_LABELS[p.rarity];
-    tile.appendChild(rar);
-
-    grid.appendChild(tile);
-  });
-}
-
-function selectPet(pet) {
-  if(!activePicker) return;
-  var side = activePicker.side, idx = activePicker.idx;
-  sideArr(side)[idx] = {pet:pet, neon:NEON_OPTS[0], fr:FR_OPTS[0]};
-  closePicker();
-  renderSlots(side);
-  updateVerdict();
-}
-
-// -- MODIFY --
-function removePet(side, idx) {
-  var arr = sideArr(side);
-  arr.splice(idx, 1);
-  arr.push(null);
-  renderSlots(side);
-  updateVerdict();
-}
-
-function setNeon(side, idx, ni) {
-  var e = sideArr(side)[idx];
-  if(e){ e.neon=NEON_OPTS[ni]; renderSlots(side); updateVerdict(); }
-}
-
-function setFR(side, idx, fi) {
-  var e = sideArr(side)[idx];
-  if(e){ e.fr=FR_OPTS[fi]; renderSlots(side); updateVerdict(); }
-}
-
-function clearAll() {
-  givePets=newArr(); recvPets=newArr();
-  renderSlots("give"); renderSlots("recv"); updateVerdict();
-}
-
-// -- VERDICT --
-function totalVal(arr) {
-  return arr.filter(Boolean).reduce(function(s,e){ return s+effVal(e); }, 0);
-}
-
-function updateVerdict() {
-  var gT = totalVal(givePets), rT = totalVal(recvPets);
-  var diff = rT - gT;
-  var v = VERDICTS[VERDICTS.length-1];
-  for(var i=0;i<VERDICTS.length;i++){ if(diff>=VERDICTS[i].min){ v=VERDICTS[i]; break; } }
-
-  var lbl = document.getElementById("v-label");
-  lbl.className = "verdict-label "+v.cls;
-  lbl.textContent = v.label;
-
-  var pts = document.getElementById("v-pts");
-  var sign = diff>0?"+":diff<0?"":"±";
-  pts.textContent = sign + fmt(diff);
-  pts.style.color = diff>0?"var(--green)":diff<0?"var(--red)":"var(--text-muted)";
-
-  document.getElementById("v-give").textContent = "Give: "+fmt(gT);
-  document.getElementById("v-recv").textContent = "Recv: "+fmt(rT);
-
-  // Balance bar
-  var bar = document.getElementById("v-bar");
-  var tot = gT+rT;
-  if(tot===0){
-    bar.style.left="50%"; bar.style.width="0"; bar.style.background="var(--text-muted)";
-  } else {
-    var pct = Math.min(Math.max(rT/tot*100,2),98);
-    if(diff>0){
-      bar.style.left="50%"; bar.style.width=(pct-50)+"%"; bar.style.background="var(--green)";
-    } else if(diff<0){
-      bar.style.left=pct+"%"; bar.style.width=(50-pct)+"%"; bar.style.background="var(--red)";
-    } else {
-      bar.style.left="50%"; bar.style.width="0"; bar.style.background="var(--text-muted)";
+      note.textContent = `Value gap: ${window.ThePatchValues.formatValue(Math.abs(gap))}. Demand, liquidity, and no-potion collector premiums can still move the real outcome.`;
     }
-  }
 
-  // Highlight verdict bar label
-  ["win","fair","lose"].forEach(function(k){
-    document.getElementById("vbar-"+k).classList.remove("vbar-active");
-  });
-  var hi = diff>3?"win": diff<-3?"lose":"fair";
-  document.getElementById("vbar-"+hi).classList.add("vbar-active");
-}
+    function updateTotals() {
+      const leftTotal = getSideTotal("left");
+      const rightTotal = getSideTotal("right");
 
-// -- EVENTS --
-document.getElementById("picker-search").addEventListener("input", function(e){
-  pickerSearch = e.target.value;
-  renderPickerGrid();
-});
+      document.getElementById("left-total").textContent = window.ThePatchValues.formatValue(leftTotal);
+      document.getElementById("right-total").textContent = window.ThePatchValues.formatValue(rightTotal);
+      updateVerdict(leftTotal, rightTotal);
+    }
 
-document.getElementById("picker-filters").addEventListener("click", function(e){
-  var btn = e.target.closest ? e.target.closest(".f-btn") : (e.target.classList.contains("f-btn")?e.target:null);
-  if(!btn) return;
-  pickerFilter = btn.getAttribute("data-r");
-  var btns = document.querySelectorAll("#picker-filters .f-btn");
-  for(var i=0;i<btns.length;i++) btns[i].classList.remove("active");
-  btn.classList.add("active");
-  renderPickerGrid();
-});
+    async function bootCalculator() {
+      try {
+        state.payload = await window.ThePatchValues.loadAdoptValues();
+        createLineItem("left");
+        createLineItem("left");
+        createLineItem("right");
+        createLineItem("right");
 
-document.getElementById("picker").addEventListener("click", function(e){
-  if(e.target===document.getElementById("picker")) closePicker();
-});
-document.getElementById("picker-close").addEventListener("click", closePicker);
-document.getElementById("clear-btn").addEventListener("click", clearAll);
+        document.getElementById("add-left").addEventListener("click", () => createLineItem("left"));
+        document.getElementById("add-right").addEventListener("click", () => createLineItem("right"));
+      } catch (error) {
+        const shell = document.querySelector(".tool-card");
+        window.ThePatchValues.renderError(shell, "The shared calculator data could not load. Please refresh and try again.");
+      }
+    }
 
-// -- INIT --
-renderSlots("give");
-renderSlots("recv");
-updateVerdict();
-</script>
+    bootCalculator();
+  </script>
 </body>
 </html>
-

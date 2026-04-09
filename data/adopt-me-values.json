@@ -1,0 +1,348 @@
+{
+  "updatedAt": "2026-04-08",
+  "version": "phase1",
+  "methodology": {
+    "summary": "The Patch baseline values are reviewed against major public community trackers and normalized into one consistent list for our tools.",
+    "sources": [
+      {
+        "name": "Adopt Me Values",
+        "url": "https://adoptmevalues.app/"
+      },
+      {
+        "name": "Elvebredd",
+        "url": "https://elvebredd.xyz/"
+      }
+    ],
+    "notes": [
+      "High-tier no-potion pets can be worth more than their Fly Ride versions.",
+      "Values move faster than wiki data, so demand and trend matter alongside raw numbers.",
+      "The calculator is a benchmark tool, not a guarantee that every server will trade at the same price."
+    ]
+  },
+  "pets": [
+    {
+      "slug": "bat-dragon",
+      "name": "Bat Dragon",
+      "rarity": "Legendary",
+      "segment": "High tier",
+      "demand": "Elite",
+      "trend": "Steady",
+      "confidence": "High",
+      "values": {
+        "default": 578,
+        "noPotion": 612,
+        "neon": 1400,
+        "neonNoPotion": 1675,
+        "mega": 4300,
+        "megaNoPotion": 5200
+      },
+      "notes": "Still ahead of Shadow Dragon on the public trackers reviewed on April 8, 2026."
+    },
+    {
+      "slug": "shadow-dragon",
+      "name": "Shadow Dragon",
+      "rarity": "Legendary",
+      "segment": "High tier",
+      "demand": "Elite",
+      "trend": "Steady",
+      "confidence": "High",
+      "values": {
+        "default": 372,
+        "noPotion": 401,
+        "neon": 930,
+        "neonNoPotion": 1110,
+        "mega": 2880,
+        "megaNoPotion": 3490
+      },
+      "notes": "Still one of the two strongest benchmark pets, but currently below Bat Dragon."
+    },
+    {
+      "slug": "giraffe",
+      "name": "Giraffe",
+      "rarity": "Legendary",
+      "segment": "High tier",
+      "demand": "Elite",
+      "trend": "Rising",
+      "confidence": "High",
+      "values": {
+        "default": 277,
+        "noPotion": 295,
+        "neon": 705,
+        "neonNoPotion": 820,
+        "mega": 2140,
+        "megaNoPotion": 2580
+      },
+      "notes": "Demand remains strong and usually outpaces many other old-event legends."
+    },
+    {
+      "slug": "frost-dragon",
+      "name": "Frost Dragon",
+      "rarity": "Legendary",
+      "segment": "High tier",
+      "demand": "Elite",
+      "trend": "Rising",
+      "confidence": "High",
+      "values": {
+        "default": 206,
+        "noPotion": 215,
+        "neon": 525,
+        "neonNoPotion": 610,
+        "mega": 1600,
+        "megaNoPotion": 1940
+      },
+      "notes": "One of the safest benchmark pets for mid-to-high tier trades."
+    },
+    {
+      "slug": "owl",
+      "name": "Owl",
+      "rarity": "Legendary",
+      "segment": "High tier",
+      "demand": "Very High",
+      "trend": "Steady",
+      "confidence": "High",
+      "values": {
+        "default": 167,
+        "noPotion": 171,
+        "neon": 425,
+        "neonNoPotion": 490,
+        "mega": 1290,
+        "megaNoPotion": 1540
+      },
+      "notes": "Demand stays unusually sticky because players love the design as much as the rarity."
+    },
+    {
+      "slug": "parrot",
+      "name": "Parrot",
+      "rarity": "Legendary",
+      "segment": "High tier",
+      "demand": "Very High",
+      "trend": "Steady",
+      "confidence": "High",
+      "values": {
+        "default": 122.5,
+        "noPotion": 129,
+        "neon": 315,
+        "neonNoPotion": 375,
+        "mega": 965,
+        "megaNoPotion": 1175
+      },
+      "notes": "A strong liquidity pet that is easier to move than many similarly priced legends."
+    },
+    {
+      "slug": "crow",
+      "name": "Crow",
+      "rarity": "Legendary",
+      "segment": "Upper mid tier",
+      "demand": "High",
+      "trend": "Rising",
+      "confidence": "High",
+      "values": {
+        "default": 117,
+        "noPotion": 123,
+        "neon": 300,
+        "neonNoPotion": 360,
+        "mega": 920,
+        "megaNoPotion": 1110
+      },
+      "notes": "Often trades faster than raw value alone suggests because of stable trader demand."
+    },
+    {
+      "slug": "evil-unicorn",
+      "name": "Evil Unicorn",
+      "rarity": "Legendary",
+      "segment": "Upper mid tier",
+      "demand": "High",
+      "trend": "Steady",
+      "confidence": "High",
+      "values": {
+        "default": 89,
+        "noPotion": 94,
+        "neon": 225,
+        "neonNoPotion": 275,
+        "mega": 690,
+        "megaNoPotion": 840
+      },
+      "notes": "A classic Halloween benchmark that stays liquid year-round."
+    },
+    {
+      "slug": "hedgehog",
+      "name": "Hedgehog",
+      "rarity": "Ultra-Rare",
+      "segment": "Upper mid tier",
+      "demand": "High",
+      "trend": "Rising",
+      "confidence": "Medium",
+      "values": {
+        "default": 54,
+        "noPotion": 59,
+        "neon": 145,
+        "neonNoPotion": 176,
+        "mega": 455,
+        "megaNoPotion": 560
+      },
+      "notes": "Cute-demand keeps this one stronger than many players expect from its rarity."
+    },
+    {
+      "slug": "blazing-lion",
+      "name": "Blazing Lion",
+      "rarity": "Legendary",
+      "segment": "Upper mid tier",
+      "demand": "High",
+      "trend": "Rising",
+      "confidence": "Medium",
+      "values": {
+        "default": 48,
+        "noPotion": 51,
+        "neon": 126,
+        "neonNoPotion": 151,
+        "mega": 385,
+        "megaNoPotion": 470
+      },
+      "notes": "Premium recent legend with strong collector demand but slightly wider price swings."
+    },
+    {
+      "slug": "dalmatian",
+      "name": "Dalmatian",
+      "rarity": "Ultra-Rare",
+      "segment": "Mid tier",
+      "demand": "High",
+      "trend": "Steady",
+      "confidence": "High",
+      "values": {
+        "default": 45.25,
+        "noPotion": 47.5,
+        "neon": 119,
+        "neonNoPotion": 143,
+        "mega": 365,
+        "megaNoPotion": 440
+      },
+      "notes": "Still one of the most trusted mid-tier benchmarks because supply is old and stable."
+    },
+    {
+      "slug": "arctic-reindeer",
+      "name": "Arctic Reindeer",
+      "rarity": "Legendary",
+      "segment": "Mid tier",
+      "demand": "High",
+      "trend": "Steady",
+      "confidence": "High",
+      "values": {
+        "default": 39,
+        "noPotion": 41,
+        "neon": 105,
+        "neonNoPotion": 126,
+        "mega": 320,
+        "megaNoPotion": 390
+      },
+      "notes": "A dependable benchmark in upgrades toward crow-tier trades."
+    },
+    {
+      "slug": "cow",
+      "name": "Cow",
+      "rarity": "Rare",
+      "segment": "Mid tier",
+      "demand": "High",
+      "trend": "Rising",
+      "confidence": "High",
+      "values": {
+        "default": 27,
+        "noPotion": 28.5,
+        "neon": 73,
+        "neonNoPotion": 90,
+        "mega": 225,
+        "megaNoPotion": 280
+      },
+      "notes": "Demand is consistently stronger than many rarer pets because of player preference."
+    },
+    {
+      "slug": "turtle",
+      "name": "Turtle",
+      "rarity": "Legendary",
+      "segment": "Mid tier",
+      "demand": "High",
+      "trend": "Steady",
+      "confidence": "High",
+      "values": {
+        "default": 23.25,
+        "noPotion": 24.5,
+        "neon": 63,
+        "neonNoPotion": 78,
+        "mega": 194,
+        "megaNoPotion": 240
+      },
+      "notes": "Still one of the most useful stepping-stone pets for real trades."
+    },
+    {
+      "slug": "chocolate-chip-bat-dragon",
+      "name": "Chocolate Chip Bat Dragon",
+      "rarity": "Legendary",
+      "segment": "Mid tier",
+      "demand": "Medium",
+      "trend": "Falling",
+      "confidence": "Medium",
+      "values": {
+        "default": 21.25,
+        "noPotion": 22.5,
+        "neon": 58,
+        "neonNoPotion": 71,
+        "mega": 178,
+        "megaNoPotion": 222
+      },
+      "notes": "Popular design, but newer supply keeps it more volatile than old-event benchmarks."
+    },
+    {
+      "slug": "kangaroo",
+      "name": "Kangaroo",
+      "rarity": "Legendary",
+      "segment": "Mid tier",
+      "demand": "Medium",
+      "trend": "Steady",
+      "confidence": "High",
+      "values": {
+        "default": 17,
+        "noPotion": 18,
+        "neon": 46,
+        "neonNoPotion": 56,
+        "mega": 142,
+        "megaNoPotion": 176
+      },
+      "notes": "A common add in turtle-tier trades and still a useful benchmark."
+    },
+    {
+      "slug": "unicorn",
+      "name": "Unicorn",
+      "rarity": "Legendary",
+      "segment": "Entry tier",
+      "demand": "Medium",
+      "trend": "Falling",
+      "confidence": "Medium",
+      "values": {
+        "default": 1.25,
+        "noPotion": 1.2,
+        "neon": 4.9,
+        "neonNoPotion": 5.8,
+        "mega": 16,
+        "megaNoPotion": 18
+      },
+      "notes": "Included as a familiar low-tier benchmark while the wider catalog is migrated."
+    },
+    {
+      "slug": "dragon",
+      "name": "Dragon",
+      "rarity": "Legendary",
+      "segment": "Entry tier",
+      "demand": "Low",
+      "trend": "Falling",
+      "confidence": "Medium",
+      "values": {
+        "default": 0.9,
+        "noPotion": 0.85,
+        "neon": 3.5,
+        "neonNoPotion": 4.1,
+        "mega": 11,
+        "megaNoPotion": 13
+      },
+      "notes": "Useful as a reminder that old low-demand legends do not keep pace with high-demand pets."
+    }
+  ]
+}
