@@ -1,8 +1,7 @@
-/* The Patch — Newsletter Form Handler */
+/* The Patch - Newsletter Form Handler */
 
 (function () {
-  // Inject success state styles
-  const style = document.createElement('style');
+  const style = document.createElement("style");
   style.textContent = `
     .newsletter-success {
       display: flex;
@@ -44,65 +43,76 @@
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(6px); }
-      to   { opacity: 1; transform: translateY(0); }
+      to { opacity: 1; transform: translateY(0); }
     }
   `;
   document.head.appendChild(style);
 
+  function dispatchNewsletter(status, locationTag) {
+    window.dispatchEvent(new CustomEvent("thepatch:newsletter", {
+      detail: {
+        status,
+        location: locationTag
+      }
+    }));
+  }
+
   function handleForm(form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
 
       const input = form.querySelector('input[type="email"]');
-      const btn   = form.querySelector('button[type="submit"]');
-      const email = (input.value || '').trim();
-      const container = form.closest('#beehiiv-embed-placeholder') || form.parentElement;
+      const button = form.querySelector('button[type="submit"]');
+      const email = (input.value || "").trim();
+      const container = form.closest("#beehiiv-embed-placeholder") || form.parentElement;
+      const locationTag = form.dataset.newsletterLocation || window.location.pathname;
 
-      // Remove previous error state
-      input.classList.remove('input-error');
-      const prev = form.querySelector('.field-error');
-      if (prev) prev.remove();
+      input.classList.remove("input-error");
+      const previousError = form.querySelector(".field-error");
+      if (previousError) {
+        previousError.remove();
+      }
 
-      // Validate
       if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        input.classList.add('input-error');
-        const err = document.createElement('span');
-        err.className = 'field-error';
-        err.textContent = 'Please enter a valid email address.';
-        form.appendChild(err);
+        input.classList.add("input-error");
+        const errorNode = document.createElement("span");
+        errorNode.className = "field-error";
+        errorNode.textContent = "Please enter a valid email address.";
+        form.appendChild(errorNode);
+        dispatchNewsletter("invalid", locationTag);
         input.focus();
         return;
       }
 
-      // Loading state
-      const originalText = btn.textContent;
-      btn.textContent = '…';
-      btn.disabled = true;
+      dispatchNewsletter("submit", locationTag);
+
+      button.textContent = "...";
+      button.disabled = true;
       input.disabled = true;
 
-      // Open Substack subscribe page with email pre-filled, then show success
       setTimeout(function () {
         window.open(
-          'https://thepatchgg.substack.com/subscribe?email=' + encodeURIComponent(email),
-          '_blank',
-          'noopener,noreferrer'
+          "https://thepatchgg.substack.com/subscribe?email=" + encodeURIComponent(email),
+          "_blank",
+          "noopener,noreferrer"
         );
+
+        dispatchNewsletter("success", locationTag);
         container.innerHTML =
           '<div class="newsletter-success">' +
-          '<span class="success-check">✓</span>' +
-          '<p>Almost done — finish signing up in the Substack tab that just opened.</p>' +
-          '</div>';
+          '<span class="success-check">&#10003;</span>' +
+          '<p>Almost done - finish signing up in the Substack tab that just opened.</p>' +
+          "</div>";
       }, 500);
     });
   }
 
-  // Attach to all newsletter forms on the page
   function init() {
-    document.querySelectorAll('.newsletter-form').forEach(handleForm);
+    document.querySelectorAll(".newsletter-form").forEach(handleForm);
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
   } else {
     init();
   }

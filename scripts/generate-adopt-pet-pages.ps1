@@ -264,8 +264,8 @@ foreach ($pet in $values.pets) {
           <h1>$([System.Net.WebUtility]::HtmlEncode($h1))</h1>
           <p>$([System.Net.WebUtility]::HtmlEncode($profile.summary))</p>
           <div class="cta-row">
-            <a class="button primary" href="/pet-value-calculator.html">Compare a trade</a>
-            <a class="button secondary" href="/pets/">Open benchmark library</a>
+            <a class="button primary" href="/pet-value-calculator.html" data-track-event="pet_page_cta_click" data-track-location="hero_primary">Compare a trade</a>
+            <a class="button secondary" href="/pets/" data-track-event="pet_page_cta_click" data-track-location="hero_secondary">Open benchmark library</a>
           </div>
         </div>
         <aside class="hero-panel detail-hero-panel">
@@ -380,12 +380,14 @@ $($faqMarkup -join "`r`n")
         <a href="/pet-value-calculator.html">Calculator</a>
         <a href="/market-movers.html">Market Movers</a>
         <a href="/corrections.html">Corrections</a>
+        <a href="/privacy.html">Privacy</a>
       </nav>
     </div>
   </footer>
 
   <script>window.THE_PATCH_PET_SLUG = "$($pet.slug)";</script>
   <script src="/assets/js/adopt-retention.js"></script>
+  <script src="/assets/js/adopt-analytics.js"></script>
   <script src="/assets/js/adopt-pet-pages.js"></script>
 </body>
 </html>
