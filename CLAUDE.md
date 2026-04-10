@@ -82,6 +82,8 @@ The site is already in a strong state. Protect the existing quality. Do not "mod
 
 - `index.html`
   Homepage. Keep it article-forward and visually lively.
+- `TRAFFIC_MONITORING.md`
+  Source of truth for weekly traffic review, search/query interpretation, and content-expansion decisions.
 - `pet-value-calculator.html`
   Large calculator with 700+ pets and potion toggles.
 - `neon-calculator.html`
@@ -118,3 +120,4 @@ For visual work, also preview locally and spot-check the affected pages.
 - Reuse existing patterns.
 - Keep the site feeling handcrafted, colorful, and readable.
 - When unsure, preserve what already looks good and only change the minimum necessary.
+- For traffic or SEO-related work, read `TRAFFIC_MONITORING.md` before making recommendations.

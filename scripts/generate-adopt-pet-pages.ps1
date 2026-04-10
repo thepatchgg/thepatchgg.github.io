@@ -110,7 +110,7 @@ foreach ($pet in $values.pets) {
   $defaultValueText = Format-Value ([double]$pet.values.default)
   $noPotionValueText = Format-Value ([double]$pet.values.noPotion)
   $noPotionDeltaText = Format-Value ([double][math]::Abs([double]$pet.values.noPotion - [double]$pet.values.default))
-  $benchmarkAnswer = "{0} currently carries {1} demand with {2} confidence. The current signal is {3}, so it works best as a {4} reference point rather than a guaranteed server price." -f $pet.name, $pet.demand.ToLowerInvariant(), $pet.confidence.ToLowerInvariant(), $pet.trend.ToLowerInvariant(), $pet.segment.ToLowerInvariant()
+  $benchmarkAnswer = "{0} currently carries {1} demand with {2} confidence. The current signal is {3}, so it works best as a {4} comparison page rather than a guaranteed server price." -f $pet.name, $pet.demand.ToLowerInvariant(), $pet.confidence.ToLowerInvariant(), $pet.trend.ToLowerInvariant(), $pet.segment.ToLowerInvariant()
   if ([double]$pet.values.noPotion -gt [double]$pet.values.default) {
     $noPotionAnswer = "Right now, no-potion {0} sits at {1} versus {2} for the default version, so collectors are paying about {3} more for the cleaner lane." -f $pet.name, $noPotionValueText, $defaultValueText, $noPotionDeltaText
   } elseif ([double]$pet.values.noPotion -lt [double]$pet.values.default) {
@@ -118,10 +118,10 @@ foreach ($pet in $values.pets) {
   } else {
     $noPotionAnswer = "Right now, no-potion and default {0} are valued the same, which is a reminder that not every pet gets a collector premium." -f $pet.name
   }
-  $compareAnswer = "The best sanity checks right now are {0}. Those pages sit close to {1} in real trade conversations and help you spot whether a server is drifting too far from broader benchmark behavior." -f $relatedLabel, $pet.name
+  $compareAnswer = "The best sanity checks right now are {0}. Those pages sit close to {1} in real trade conversations and help you spot whether a server is drifting too far from broader market behavior." -f $relatedLabel, $pet.name
   $faqItems = @(
     [pscustomobject]@{
-      question = "Is $($pet.name) a strong benchmark pet right now?"
+      question = "How strong is $($pet.name) in trades right now?"
       answer = $benchmarkAnswer
     },
     [pscustomobject]@{
@@ -151,7 +151,7 @@ foreach ($pet in $values.pets) {
   }
 
   $title = "{0} Value Guide 2026 | The Patch" -f $pet.name
-  $description = "{0} value guide from The Patch with live benchmark variants, demand notes, trade tips, and related Adopt Me comparisons." -f $pet.name
+  $description = "{0} value guide from The Patch with live value lanes, demand notes, trade tips, and related Adopt Me comparisons." -f $pet.name
   $canonical = "https://thepatchgg.github.io/pets/{0}.html" -f $pet.slug
   $demandTone = $toneClass[$pet.demand]
   $trendTone = $toneClass[$pet.trend]
@@ -171,7 +171,7 @@ foreach ($pet in $values.pets) {
         [pscustomobject]@{
           '@type' = 'ListItem'
           position = 2
-          name = 'Benchmark pet library'
+          name = 'Pet value library'
           item = 'https://thepatchgg.github.io/pets/'
         },
         [pscustomobject]@{
@@ -244,7 +244,7 @@ foreach ($pet in $values.pets) {
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="/">Home</a>
-        <a href="/pets/" class="active">Benchmark Library</a>
+        <a href="/pets/" class="active">Pet Library</a>
         <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
         <a href="/pet-value-calculator.html">Trade Calculator</a>
         <a href="/market-movers.html">Market Movers</a>
@@ -260,16 +260,16 @@ foreach ($pet in $values.pets) {
           <nav class="crumbs" aria-label="Breadcrumb">
             <a href="/">Home</a>
             <span aria-hidden="true">/</span>
-            <a href="/pets/">Benchmark pet library</a>
+            <a href="/pets/">Pet value library</a>
             <span aria-hidden="true">/</span>
             <span>$([System.Net.WebUtility]::HtmlEncode($pet.name))</span>
           </nav>
-          <div class="eyebrow">Benchmark pet page</div>
+          <div class="eyebrow">Pet value page</div>
           <h1>$([System.Net.WebUtility]::HtmlEncode($h1))</h1>
           <p>$([System.Net.WebUtility]::HtmlEncode($profile.summary))</p>
           <div class="cta-row">
             <a class="button primary" href="/pet-value-calculator.html" data-track-event="pet_page_cta_click" data-track-location="hero_primary">Compare a trade</a>
-            <a class="button secondary" href="/pets/" data-track-event="pet_page_cta_click" data-track-location="hero_secondary">Open benchmark library</a>
+            <a class="button secondary" href="/pets/" data-track-event="pet_page_cta_click" data-track-location="hero_secondary">Open pet library</a>
           </div>
         </div>
         <aside class="hero-panel detail-hero-panel">
@@ -346,7 +346,7 @@ $($variantRows -join "`r`n")
       <div class="shell">
         <div class="section-head">
           <div>
-            <h2>Compare with nearby benchmark pets</h2>
+            <h2>Compare with nearby pet pages</h2>
             <p class="intro-copy">These pages sit closest to $([System.Net.WebUtility]::HtmlEncode($pet.name)) in real trade conversations and give useful sanity checks before overpaying.</p>
           </div>
         </div>
@@ -364,7 +364,7 @@ $($relatedCards -join "`r`n")
             <p class="intro-copy">These quick answers cover demand, variants, and nearby comparison pets.</p>
           </div>
           <div class="section-actions">
-            <a class="pill-link" href="/pets/">Benchmark library</a>
+            <a class="pill-link" href="/pets/">Pet library</a>
             <a class="pill-link" href="/market-movers.html">Market movers</a>
           </div>
         </div>
@@ -379,7 +379,7 @@ $($faqMarkup -join "`r`n")
     <div class="footer-inner">
       <div class="footer-copy">$([System.Net.WebUtility]::HtmlEncode($pet.name)) guide with value lanes, comparisons, and trade notes.</div>
       <nav class="nav" aria-label="Footer">
-        <a href="/pets/">Benchmark Library</a>
+        <a href="/pets/">Pet Library</a>
         <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>
         <a href="/pet-value-calculator.html">Calculator</a>
         <a href="/market-movers.html">Market Movers</a>
