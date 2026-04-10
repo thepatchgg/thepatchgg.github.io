@@ -1,0 +1,61 @@
+.egg-landing-layout{max-width:var(--max-w);margin:0 auto;padding:28px 20px 72px}
+.egg-landing-layout a{color:inherit}
+.egg-landing-hero,.egg-landing-row,.egg-highlight-grid,.egg-tool-grid,.egg-rarity-stack,.egg-pet-grid,.egg-odds-grid{display:grid;gap:16px}
+.egg-landing-hero{grid-template-columns:minmax(0,1.3fr) minmax(320px,.7fr);margin-bottom:20px}
+.egg-landing-card,.egg-landing-panel,.egg-landing-empty{background:var(--surface);border:1px solid var(--border);border-radius:16px}
+.egg-landing-card,.egg-landing-panel,.egg-landing-empty{padding:22px}
+.egg-landing-badge,.egg-landing-pill,.egg-highlight-pill,.egg-rarity-pill,.egg-tool-link{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font-weight:800}
+.egg-landing-badge{margin-bottom:14px;padding:5px 11px;background:rgba(62,207,107,.12);color:var(--am);font-size:12px}
+.egg-landing-card h1{font-size:clamp(30px,3.8vw,44px);line-height:1.06;letter-spacing:-1px;margin-bottom:12px}
+.egg-landing-card p,.egg-landing-panel p,.egg-landing-empty p{font-size:14px;line-height:1.75;color:var(--text-muted);margin:0}
+.egg-landing-meta,.egg-highlight-pills{display:flex;flex-wrap:wrap;gap:10px}
+.egg-landing-meta{margin-top:16px}
+.egg-landing-pill{padding:5px 10px;background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);font-size:11px}
+.egg-landing-pill.available{color:var(--am);border-color:rgba(62,207,107,.22);background:rgba(62,207,107,.1)}
+.egg-landing-pill.retired{color:#ffb36b;border-color:rgba(255,179,107,.2);background:rgba(255,179,107,.1)}
+.egg-visual-panel{display:grid;gap:16px;background:
+  radial-gradient(circle at top left, rgba(255,202,104,.12), rgba(255,202,104,0) 30%),
+  radial-gradient(circle at top right, rgba(62,207,107,.08), rgba(62,207,107,0) 34%),
+  linear-gradient(180deg, rgba(12,17,30,.92), rgba(12,17,30,.98))}
+.egg-art-box{width:152px;height:152px;border-radius:30px;overflow:hidden;background:radial-gradient(circle at top left, rgba(255,255,255,.08), rgba(255,255,255,0) 52%), #0a0f1b;border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;padding:14px;box-shadow:0 18px 34px rgba(0,0,0,.28)}
+.egg-art-box img{width:100%;height:100%;object-fit:contain;display:block}
+.egg-visual-top{display:flex;gap:18px;align-items:center}
+.egg-visual-mark{display:inline-flex;align-items:center;justify-content:center;min-width:96px;padding:10px 14px;border-radius:16px;border:1px solid rgba(243,190,77,.22);background:radial-gradient(circle at top left, rgba(243,190,77,.18), rgba(62,207,107,.08) 58%, rgba(14,18,30,.95));color:#ffe7a8;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.egg-visual-copy strong{display:block;font-size:28px;color:var(--accent);margin-bottom:4px}
+.egg-highlight-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.egg-highlight-card{display:grid;gap:12px;padding:18px;border-radius:14px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06)}
+.egg-highlight-card h3,.egg-landing-panel h2{font-size:16px;margin:0}
+.egg-highlight-pill{padding:4px 10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);font-size:11px;color:#d8e0f2}
+.egg-highlight-pet{display:flex;gap:12px;align-items:center;padding:10px;border-radius:12px;background:var(--surface2);border:1px solid rgba(255,255,255,.05)}
+.egg-highlight-pet img{width:44px;height:44px;object-fit:contain;border-radius:12px;background:#111827;padding:4px}
+.egg-highlight-pet strong{display:block;font-size:14px;line-height:1.2}
+.egg-highlight-pet span{font-size:12px;color:var(--text-muted)}
+.egg-odds-grid{grid-template-columns:repeat(auto-fit,minmax(110px,1fr))}
+.egg-odds-card{padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.02);border:1px solid var(--border)}
+.egg-odds-card strong{display:block;font-size:18px;color:var(--accent);margin-bottom:3px}
+.egg-rarity-stack{margin-top:14px}
+.egg-rarity-group{padding:14px;border:1px solid var(--border);border-radius:14px;background:rgba(255,255,255,.02)}
+.egg-rarity-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.egg-rarity-head strong{font-size:14px}
+.egg-rarity-pill{padding:5px 10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);font-size:11px;color:#d8e0f2}
+.egg-pet-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.egg-pet-card{display:flex;gap:10px;padding:10px;border-radius:12px;background:var(--surface2);border:1px solid rgba(255,255,255,.05)}
+.egg-pet-media{width:44px;height:44px;border-radius:12px;overflow:hidden;background:#111827;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.egg-pet-media img{width:100%;height:100%;object-fit:contain}
+.egg-pet-fallback{display:none;font-size:10px;font-weight:900;color:var(--accent);text-align:center;padding:4px}
+.egg-pet-meta{display:grid;gap:4px;min-width:0}
+.egg-pet-meta strong{font-size:13px;line-height:1.2}
+.egg-pet-meta span{font-size:11px;color:var(--text-muted)}
+.egg-tool-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.egg-tool-link{justify-content:flex-start;padding:14px 16px;border-radius:14px;background:rgba(62,207,107,.08);border:1px solid rgba(62,207,107,.16);color:var(--text);text-decoration:none;font-size:13px}
+.egg-tool-link:hover{border-color:rgba(62,207,107,.28);background:rgba(62,207,107,.12)}
+.egg-inline-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.egg-inline-links a{color:var(--am);font-weight:700;text-decoration:none}
+.egg-inline-links a:hover{text-decoration:underline}
+@media(max-width:980px){.egg-landing-hero{grid-template-columns:1fr}}
+@media(max-width:720px){
+  .egg-visual-top{flex-direction:column;align-items:flex-start}
+  .egg-art-box{width:120px;height:120px}
+  .egg-rarity-head{flex-direction:column;align-items:flex-start}
+  .egg-pet-grid{grid-template-columns:1fr}
+}
