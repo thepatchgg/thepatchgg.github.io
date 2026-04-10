@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Adopt Me Egg Guide 2026 | The Patch</title>
-<meta name="description" content="Browse every major Adopt Me egg with full hatch pools, rarity odds, pull-rate guidance, and local pet art in the restored Patch style.">
+<meta name="description" content="Browse every major Adopt Me egg with full hatch pools, rarity odds, pull-rate guidance, and exact egg art in a cleaner full-width layout.">
 <meta name="theme-color" content="#08111f">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Adopt Me Egg Guide 2026 | The Patch">
-  <meta property="og:description" content="Every major Adopt Me egg, full hatch pools, rarity odds, and a player-friendly guide to what you can hatch.">
+<meta property="og:description" content="Every major Adopt Me egg, full hatch pools, rarity odds, and a player-friendly guide to what you can hatch.">
 <meta property="og:url" content="https://thepatchgg.github.io/articles/adopt-me-egg-guide.html">
 <meta property="og:site_name" content="The Patch">
-<meta property="og:image" content="https://thepatchgg.github.io/assets/pets/turtle.png">
+<meta property="og:image" content="https://thepatchgg.github.io/assets/eggs/starter.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Adopt Me Egg Guide 2026 | The Patch">
-  <meta name="twitter:description" content="Every major Adopt Me egg, full hatch pools, rarity odds, and a player-friendly guide to what you can hatch.">
-<meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/turtle.png">
+<meta name="twitter:description" content="Every major Adopt Me egg, full hatch pools, rarity odds, and a player-friendly guide to what you can hatch.">
+<meta name="twitter:image" content="https://thepatchgg.github.io/assets/eggs/starter.webp">
 <link rel="canonical" href="https://thepatchgg.github.io/articles/adopt-me-egg-guide.html">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="/site.webmanifest">
@@ -23,56 +23,65 @@
 <link rel="stylesheet" href="/assets/css/patch-compat.css">
 <style>
   .egg-guide-layout{max-width:var(--max-w);margin:0 auto;padding:28px 20px 72px}
-  .egg-hero-grid,.egg-support-grid,.egg-card-grid,.egg-kpi-grid{display:grid;gap:16px}
-  .egg-hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(260px,.85fr);margin-bottom:20px}
+  .egg-hero-grid,.egg-support-grid,.egg-card-grid,.egg-kpi-grid{display:grid;gap:18px}
+  .egg-hero-grid{grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);margin-bottom:22px}
   .egg-kpi-grid,.egg-support-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-  .egg-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .egg-card-shell,.egg-panel,.egg-card,.egg-empty{background:var(--surface);border:1px solid var(--border);border-radius:12px}
-  .egg-card-shell,.egg-panel,.egg-card,.egg-empty{padding:22px}
+  .egg-card-grid{grid-template-columns:1fr}
+  .egg-card-shell,.egg-panel,.egg-card,.egg-empty{background:var(--surface);border:1px solid var(--border);border-radius:16px}
+  .egg-card-shell,.egg-panel,.egg-empty{padding:22px}
+  .egg-card{padding:0;overflow:hidden;box-shadow:0 18px 38px rgba(0,0,0,.2)}
   .egg-badge,.egg-pill,.egg-rarity-pill,.egg-button{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font-weight:800}
-  .egg-badge{margin-bottom:14px;padding:4px 10px;background:rgba(62,207,107,.12);color:var(--am);font-size:12px}
-  .egg-card-shell h1{font-size:clamp(28px,3.5vw,40px);font-weight:900;letter-spacing:-1px;line-height:1.1;margin-bottom:10px}
+  .egg-badge{margin-bottom:14px;padding:5px 11px;background:rgba(62,207,107,.12);color:var(--am);font-size:12px}
+  .egg-card-shell h1{font-size:clamp(28px,3.5vw,40px);font-weight:900;letter-spacing:-1px;line-height:1.08;margin-bottom:10px}
   .egg-card-shell p,.egg-panel p,.egg-card p,.egg-empty p{font-size:14px;color:var(--text-muted);line-height:1.75;margin:0}
-  .egg-meta-row,.egg-card-meta,.egg-benchmark-row,.egg-filter-row{display:flex;flex-wrap:wrap;gap:10px}
+  .egg-meta-row,.egg-card-meta,.egg-filter-row{display:flex;flex-wrap:wrap;gap:10px}
   .egg-meta-row{margin-top:16px}
   .egg-pill{padding:5px 10px;background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);font-size:11px}
   .egg-pill.available{color:var(--am);border-color:rgba(62,207,107,.22);background:rgba(62,207,107,.1)}
   .egg-pill.retired{color:#ffb36b;border-color:rgba(255,179,107,.2);background:rgba(255,179,107,.1)}
-  .egg-filter-row{margin:0 0 18px}
+  .egg-filter-row{margin:0 0 20px}
   .egg-button{padding:8px 14px;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);cursor:pointer;font-size:12px}
   .egg-button.active{background:var(--accent);border-color:var(--accent);color:#000}
   .egg-panel h2{font-size:15px;font-weight:800;margin-bottom:10px}
   .egg-kpi strong{display:block;font-size:26px;color:var(--accent);margin-bottom:6px}
-  .egg-card{display:grid;gap:16px}
-  .egg-card-head{display:grid;gap:12px}
-  .egg-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
-  .egg-card-signal{display:grid;gap:8px;min-width:0}
-  .egg-card-hero{display:grid;grid-template-columns:112px minmax(0,1fr);gap:16px;align-items:flex-start}
-  .egg-mark{display:inline-flex;align-items:center;justify-content:center;min-width:86px;padding:10px 14px;border-radius:16px;border:1px solid rgba(243,190,77,.22);background:radial-gradient(circle at top left, rgba(243,190,77,.18), rgba(62,207,107,.08) 58%, rgba(14,18,30,.95));color:#ffe7a8;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
-  .egg-art-shell{width:112px;height:112px;border-radius:24px;overflow:hidden;flex-shrink:0;background:radial-gradient(circle at top left, rgba(255,255,255,.08), rgba(255,255,255,0) 52%), #0a0f1b;border:1px solid rgba(255,255,255,.08);box-shadow:0 18px 34px rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;padding:10px}
+
+  .egg-card-head{padding:24px 24px 20px;border-bottom:1px solid rgba(255,255,255,.06);background:
+    radial-gradient(circle at top left, rgba(255,202,104,.12), rgba(255,202,104,0) 30%),
+    radial-gradient(circle at top right, rgba(62,207,107,.08), rgba(62,207,107,0) 34%),
+    linear-gradient(180deg, rgba(12,17,30,.92), rgba(12,17,30,.98))}
+  .egg-card-hero{display:grid;grid-template-columns:140px minmax(0,1fr);gap:20px;align-items:start}
+  .egg-art-column{display:grid;gap:12px;justify-items:start}
+  .egg-art-shell{width:140px;height:140px;border-radius:28px;overflow:hidden;background:radial-gradient(circle at top left, rgba(255,255,255,.08), rgba(255,255,255,0) 52%), #0a0f1b;border:1px solid rgba(255,255,255,.08);box-shadow:0 18px 34px rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;padding:14px}
   .egg-art-shell img{width:100%;height:100%;display:block;object-fit:contain}
-  .egg-card-summary{display:grid;gap:12px;min-width:0}
-  .egg-card-kpis{display:flex;flex-wrap:wrap;gap:10px}
-  .egg-preview-row{display:flex;flex-wrap:wrap;gap:10px}
-  .egg-preview-pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:var(--surface2);border:1px solid var(--border);font-size:12px;font-weight:700;color:var(--text)}
+  .egg-mark{display:inline-flex;align-items:center;justify-content:center;min-width:96px;padding:10px 14px;border-radius:16px;border:1px solid rgba(243,190,77,.22);background:radial-gradient(circle at top left, rgba(243,190,77,.18), rgba(62,207,107,.08) 58%, rgba(14,18,30,.95));color:#ffe7a8;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+  .egg-card-summary{display:grid;gap:14px;min-width:0}
+  .egg-card-summary h3{font-size:30px;line-height:1.05;letter-spacing:-.8px;margin:0 0 8px}
+  .egg-card-kpis,.egg-preview-row,.egg-benchmark-strip{display:flex;flex-wrap:wrap;gap:10px}
+  .egg-preview-pill{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:999px;background:var(--surface2);border:1px solid var(--border);font-size:12px;font-weight:700;color:var(--text)}
   .egg-preview-pill img{width:26px;height:26px;object-fit:contain;border-radius:999px;background:#111827;padding:2px}
   .egg-preview-pill span{line-height:1.1}
-  .egg-odds-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
-  .egg-odds-card{padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.02);border:1px solid var(--border)}
-  .egg-odds-card strong{display:block;font-size:16px;color:var(--accent);margin-bottom:2px}
-  .egg-benchmark-strip{display:flex;flex-wrap:wrap;gap:8px}
-  .egg-benchmark-tag{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border-radius:999px;background:rgba(62,207,107,.1);border:1px solid rgba(62,207,107,.2);color:var(--am);font-size:12px;font-weight:800}
+  .egg-rarity-pill{padding:5px 10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);font-size:11px;color:#d8e0f2}
+  .egg-card-copy{max-width:880px}
+
+  .egg-card-body{display:grid;gap:18px;padding:20px 24px 22px}
+  .egg-odds-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+  .egg-odds-card{padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.02);border:1px solid var(--border)}
+  .egg-odds-card strong{display:block;font-size:18px;color:var(--accent);margin-bottom:3px}
+  .egg-benchmark-tag{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;background:rgba(62,207,107,.1);border:1px solid rgba(62,207,107,.2);color:var(--am);font-size:12px;font-weight:800;text-decoration:none}
   .egg-benchmark-tag img{width:20px;height:20px;object-fit:contain}
-  .egg-pool{border-top:1px solid var(--border);padding-top:14px}
-  .egg-pool summary{cursor:pointer;list-style:none;font-weight:800;color:var(--text)}
+  .egg-card-note{font-size:13px;color:var(--text-muted)}
+
+  .egg-pool{margin:0 24px 24px;padding:18px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01))}
+  .egg-pool summary{cursor:pointer;list-style:none;font-weight:800;color:var(--text);font-size:15px}
   .egg-pool summary::-webkit-details-marker{display:none}
-  .egg-pool summary::after{content:"+";float:right;color:var(--accent)}
+  .egg-pool summary::after{content:"+";float:right;color:var(--accent);font-size:20px;line-height:1}
   .egg-pool[open] summary::after{content:"-"}
-  .egg-rarity-stack{display:grid;gap:14px;margin-top:14px}
+  .egg-pool-copy{margin-top:6px;font-size:13px;color:var(--text-muted)}
+  .egg-rarity-stack{display:grid;gap:14px;margin-top:16px}
   .egg-rarity-group{padding:14px;border:1px solid var(--border);border-radius:14px;background:rgba(255,255,255,.02)}
   .egg-rarity-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
   .egg-rarity-head strong{font-size:14px}
-  .egg-pet-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}
+  .egg-pet-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
   .egg-pet-card{display:flex;gap:10px;padding:10px;border-radius:12px;background:var(--surface2);border:1px solid rgba(255,255,255,.05)}
   .egg-pet-media{width:44px;height:44px;border-radius:12px;overflow:hidden;background:#111827;display:flex;align-items:center;justify-content:center;flex-shrink:0}
   .egg-pet-media img{width:100%;height:100%;object-fit:contain}
@@ -80,19 +89,19 @@
   .egg-pet-meta{display:grid;gap:4px;min-width:0}
   .egg-pet-meta strong{font-size:13px;line-height:1.2}
   .egg-pet-meta span{font-size:11px;color:var(--text-muted)}
-  .egg-card h3{font-size:20px;letter-spacing:-.4px;margin:0 0 6px}
-  .egg-rarity-pill{padding:4px 9px;background:var(--surface2);border:1px solid var(--border);font-size:11px;color:var(--text-muted)}
-  .egg-card-note{font-size:13px;color:var(--text-muted)}
   .egg-empty{text-align:center}
   .egg-empty .ico{font-size:34px;margin-bottom:10px}
-  @media(max-width:1180px){.egg-card-grid{grid-template-columns:1fr}}
+
+  @media(max-width:1060px){
+    .egg-hero-grid{grid-template-columns:1fr}
+    .egg-odds-grid{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+  }
   @media(max-width:820px){
-    .egg-hero-grid,.egg-card-grid{grid-template-columns:1fr}
-    .egg-card-meta,.egg-rarity-head,.egg-card-top,.egg-card-hero{width:100%}
-    .egg-rarity-head,.egg-card-top{flex-direction:column;align-items:flex-start}
     .egg-card-hero{grid-template-columns:1fr}
-    .egg-art-shell{width:96px;height:96px}
+    .egg-art-column{justify-items:flex-start}
+    .egg-art-shell{width:112px;height:112px}
     .egg-pet-grid{grid-template-columns:1fr}
+    .egg-rarity-head{flex-direction:column;align-items:flex-start}
   }
 </style>
 <script src="/assets/js/patch-ribbon.js"></script>
@@ -128,7 +137,7 @@
     <section class="egg-card-shell">
       <div class="egg-badge">Egg Guide</div>
       <h1>Every major Adopt Me egg in one cleaner guide.</h1>
-      <p>Browse current and retired eggs, see the full hatch pool for each one, and check rarity odds and per-pet pull guidance without bouncing between a bunch of tabs.</p>
+      <p>Browse current and retired eggs, see the full hatch pool for each one, and check rarity odds and per-pet pull guidance without juggling a bunch of cramped cards.</p>
       <div class="egg-meta-row">
         <span class="egg-pill" id="egg-total-chip">Loading eggs</span>
         <span class="egg-pill" id="egg-covered-chip">Loading hatchables</span>
@@ -137,7 +146,7 @@
     </section>
     <aside class="egg-panel">
       <h2>What you get here</h2>
-      <p>This guide now shows the full hatch pool for each egg, the rarity odds behind it, and the benchmark pets that still matter most in trading.</p>
+      <p>This guide shows the full hatch pool for each egg, the rarity odds behind it, and the benchmark pets that still matter most in trading, all in a more readable egg-by-egg layout.</p>
       <div class="egg-meta-row" style="margin-top:14px">
         <a href="/egg-value-calculator.html" class="egg-pill available" style="text-decoration:none">Open Egg EV Tool</a>
         <a href="/articles/adopt-me-pet-encyclopedia.html" class="egg-pill" style="text-decoration:none">Open Pet Dex</a>
@@ -177,7 +186,7 @@
   <div class="egg-support-grid">
     <article class="egg-panel">
       <h2>How to use this page</h2>
-      <p>Use it to see the full hatch pool for an egg first, then decide which pets are worth chasing for your collection or trades.</p>
+      <p>Start with the egg you care about, scan the odds, and then open the full hatch pool if you want every pet, rarity, and pull chance in one place.</p>
     </article>
     <article class="egg-panel">
       <h2>What this page focuses on</h2>
@@ -200,7 +209,7 @@
       <a href="/methodology.html">Methodology</a>
       <a href="/privacy.html">Privacy</a>
     </nav>
-      <div class="footer-legal">&#169; 2026 The Patch. Egg timelines, hatch pools, and hatch odds for players and collectors.</div>
+    <div class="footer-legal">&#169; 2026 The Patch. Egg timelines, hatch pools, and hatch odds for players and collectors.</div>
   </div>
 </footer>
 
@@ -313,8 +322,6 @@ function normalizeEgg(rawEgg, valuePayload, catalogIndex) {
 
   egg.petCount = egg.pets.length;
   egg.benchmarkPets = egg.pets.filter((pet) => pet.benchmark);
-  egg.benchmarkChance = egg.benchmarkPets.reduce((sum, pet) => sum + (pet.chanceValue || 0), 0);
-  egg.expectedValue = egg.benchmarkPets.reduce((sum, pet) => sum + ((pet.chanceValue || 0) * pet.benchmark.values.default), 0);
   egg.previewPets = egg.pets.slice(0, 5);
   return egg;
 }
@@ -387,43 +394,46 @@ function eggCardMarkup(egg) {
   return `
     <article class="egg-card" id="egg-${egg.id}">
       <div class="egg-card-head">
-        <div class="egg-card-top egg-card-hero">
-          <div class="egg-art-shell">
-            <img src="${window.ThePatchEggs.eggVisualUrl(egg)}" alt="${egg.name}" loading="lazy" onerror="this.onerror=null;this.src='${window.ThePatchEggs.eggDisplayUrl(egg)}';">
+        <div class="egg-card-hero">
+          <div class="egg-art-column">
+            <div class="egg-art-shell">
+              <img src="${window.ThePatchEggs.eggVisualUrl(egg)}" alt="${egg.name}" loading="lazy" onerror="this.onerror=null;this.src='${window.ThePatchEggs.eggDisplayUrl(egg)}';">
+            </div>
+            <div class="egg-mark">${egg.status === "available" ? "Live Egg" : "Archive Egg"}</div>
           </div>
           <div class="egg-card-summary">
-            <div class="egg-card-signal">
-              <div class="egg-mark">${egg.status === "available" ? "Live Egg" : "Archive Egg"}</div>
-              <div>
-                <h3>${egg.name}</h3>
-                <div class="egg-card-meta">
-                  <span class="egg-pill ${egg.status === "available" ? "available" : "retired"}">${egg.status === "available" ? "Live" : "Retired"}</span>
-                  <span class="egg-pill">${egg.cost}</span>
-                  <span class="egg-pill">Released ${egg.released}</span>
-                  ${egg.retired ? `<span class="egg-pill">Retired ${egg.retired}</span>` : ""}
-                </div>
+            <div>
+              <h3>${egg.name}</h3>
+              <div class="egg-card-meta">
+                <span class="egg-pill ${egg.status === "available" ? "available" : "retired"}">${egg.status === "available" ? "Live" : "Retired"}</span>
+                <span class="egg-pill">${egg.cost}</span>
+                <span class="egg-pill">Released ${egg.released}</span>
+                ${egg.retired ? `<span class="egg-pill">Retired ${egg.retired}</span>` : ""}
               </div>
             </div>
             <div class="egg-card-kpis">
               <span class="egg-rarity-pill">${egg.petCount} hatchable pets</span>
               ${egg.benchmarkPets.length ? `<span class="egg-rarity-pill">${egg.benchmarkPets.length} benchmark hit${egg.benchmarkPets.length === 1 ? "" : "s"}</span>` : ""}
             </div>
+            <p class="egg-card-copy">${egg.notes || "Hatch pool and rarity odds for this egg."}</p>
+            <div class="egg-preview-row">
+              ${egg.previewPets.map((pet) => `
+                <span class="egg-preview-pill">
+                  <img src="${pet.image}" alt="${pet.name}" loading="lazy" onerror="this.style.display='none';">
+                  <span>${pet.name}</span>
+                </span>
+              `).join("")}
+            </div>
           </div>
         </div>
-        <p>${egg.notes || "Hatch pool and rarity odds for this egg."}</p>
-        <div class="egg-preview-row">
-          ${egg.previewPets.map((pet) => `
-            <span class="egg-preview-pill">
-              <img src="${pet.image}" alt="${pet.name}" loading="lazy" onerror="this.style.display='none';">
-              <span>${pet.name}</span>
-            </span>
-          `).join("")}
-        </div>
       </div>
-      <div class="egg-odds-grid">${oddsMarkup(egg)}</div>
-      ${benchmarkMarkup(egg)}
+      <div class="egg-card-body">
+        <div class="egg-odds-grid">${oddsMarkup(egg)}</div>
+        ${benchmarkMarkup(egg)}
+      </div>
       <details class="egg-pool">
         <summary>Show full hatch pool (${egg.petCount} pets)</summary>
+        <p class="egg-pool-copy">Open this to see every pet in the egg, grouped by rarity with each listed pull chance.</p>
         <div class="egg-rarity-stack">${raritySectionsMarkup(egg)}</div>
       </details>
     </article>
@@ -450,13 +460,10 @@ function updateKpis() {
   const hatchables = state.eggs.reduce((sum, egg) => sum + egg.petCount, 0);
   const covered = state.eggs.filter((egg) => egg.benchmarkPets.length > 0).length;
   document.getElementById("egg-total-chip").textContent = `${state.eggs.length} eggs tracked`;
-  document.getElementById("egg-covered-chip").textContent = `${hatchables} hatchable entries listed`;
+  document.getElementById("egg-covered-chip").textContent = covered ? `${hatchables} hatchables - ${covered} benchmark eggs` : `${hatchables} hatchable entries listed`;
   document.getElementById("best-benchmark-egg").textContent = `${state.eggs.length} egg types`;
   document.getElementById("best-benchmark-hit").textContent = `${liveEggs} live eggs`;
   document.getElementById("tracked-benchmark-pets").textContent = `${hatchables} hatchables`;
-  if (covered) {
-    document.getElementById("egg-covered-chip").textContent = `${hatchables} hatchables - ${covered} benchmark eggs`;
-  }
 }
 
 document.querySelectorAll("[data-filter]").forEach((button) => {
@@ -503,4 +510,3 @@ bootEggGuide();
 </script>
 </body>
 </html>
-
