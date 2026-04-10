@@ -1,0 +1,225 @@
+{
+  "updatedAt": "2026-04-09",
+  "source": "Curated The Patch egg dataset focused on verified benchmark-relevant hatches and major egg metadata.",
+  "notes": [
+    "This file intentionally tracks verified benchmark-relevant hatches instead of claiming every hatchable pet in every historical egg.",
+    "Egg value comparisons on the site use only these verified benchmark hatches plus the shared benchmark value ladder."
+  ],
+  "eggs": [
+    {
+      "id": "cracked",
+      "name": "Cracked Egg",
+      "cost": "350 Bucks",
+      "status": "available",
+      "released": "Jun 2019",
+      "img": "e/ec/AM_Cracked_Egg.png",
+      "notes": "Current nursery egg. No verified benchmark pets are tracked from the modern Cracked Egg pool yet.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "pet",
+      "name": "Pet Egg",
+      "cost": "600 Bucks",
+      "status": "available",
+      "released": "Jun 2019",
+      "img": "2/2b/Pet_Egg.png",
+      "notes": "Current nursery egg. No verified benchmark pets are tracked from the modern Pet Egg pool yet.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "royal",
+      "name": "Royal Egg",
+      "cost": "1,450 Bucks",
+      "status": "available",
+      "released": "Jun 2019",
+      "img": "3/32/AM_Royal_Egg.png",
+      "notes": "Current nursery egg. No verified benchmark pets are tracked from the modern Royal Egg pool yet.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "retired",
+      "name": "Retired Egg",
+      "cost": "600 Bucks (VIP)",
+      "status": "available",
+      "released": "Jul 2022",
+      "img": "b/b5/Retired_Egg_inventory.png",
+      "notes": "The Retired Egg is the modern home for several older nursery pets, including the familiar Dragon and Unicorn benchmark anchors.",
+      "benchmarkPets": [
+        { "slug": "dragon", "name": "Dragon", "rarity": "Legendary", "chance": 0.015 },
+        { "slug": "unicorn", "name": "Unicorn", "rarity": "Legendary", "chance": 0.015 }
+      ]
+    },
+    {
+      "id": "safari",
+      "name": "Safari Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Aug 2019",
+      "retired": "Sep 2019",
+      "img": "9/9a/Safari_Egg.png",
+      "notes": "The Safari Egg matters most today because it introduced Giraffe, one of the strongest benchmark pets on the site.",
+      "benchmarkPets": [
+        { "slug": "giraffe", "name": "Giraffe", "rarity": "Legendary", "chance": 0.03 }
+      ]
+    },
+    {
+      "id": "jungle",
+      "name": "Jungle Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Sep 2019",
+      "retired": "Nov 2019",
+      "img": "c/c9/Jungle_Egg.png",
+      "notes": "The Jungle Egg is the key source for Parrot, which keeps it relevant in high-tier trading conversations.",
+      "benchmarkPets": [
+        { "slug": "parrot", "name": "Parrot", "rarity": "Legendary", "chance": 0.03 }
+      ]
+    },
+    {
+      "id": "farm",
+      "name": "Farm Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Nov 2019",
+      "retired": "Feb 2020",
+      "img": "0/06/FarmEgg.png",
+      "notes": "The Farm Egg still matters because it introduced Crow and Owl, two upper-tier benchmark pets. Cow also comes from this egg, but it is not included in the calculator until its exact benchmark hatch chance is re-verified.",
+      "benchmarkPets": [
+        { "slug": "crow", "name": "Crow", "rarity": "Legendary", "chance": 0.015 },
+        { "slug": "owl", "name": "Owl", "rarity": "Legendary", "chance": 0.015 }
+      ]
+    },
+    {
+      "id": "aussie",
+      "name": "Aussie Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Feb 2020",
+      "retired": "Oct 2020",
+      "img": "1/16/Aussie_Egg.png",
+      "notes": "The Aussie Egg is one of the most practical old eggs for benchmark trading because Turtle and Kangaroo both remain active mid-tier anchors.",
+      "benchmarkPets": [
+        { "slug": "kangaroo", "name": "Kangaroo", "rarity": "Legendary", "chance": 0.015 },
+        { "slug": "turtle", "name": "Turtle", "rarity": "Legendary", "chance": 0.015 }
+      ]
+    },
+    {
+      "id": "fossil",
+      "name": "Fossil Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Oct 2020",
+      "retired": "Apr 2021",
+      "img": "1/14/Fossil_Egg.png",
+      "notes": "No verified benchmark pets are currently tracked from the Fossil Egg in the shared value ladder.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "ocean",
+      "name": "Ocean Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Apr 2021",
+      "retired": "Aug 2021",
+      "img": "a/a5/Images-Ocean-Egg.png",
+      "notes": "No verified benchmark pets are currently tracked from the Ocean Egg in the shared value ladder.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "mythic",
+      "name": "Mythic Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Aug 2021",
+      "retired": "Mar 2022",
+      "img": "9/92/Mythic_Egg.png",
+      "notes": "No verified benchmark pets are currently tracked from the Mythic Egg in the shared value ladder.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "japan",
+      "name": "Japan Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Mar 2022",
+      "retired": "Jun 2022",
+      "img": "2/25/Japan_Egg.png",
+      "notes": "No verified benchmark pets are currently tracked from the Japan Egg in the shared value ladder.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "desert",
+      "name": "Desert Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Jan 2024",
+      "retired": "May 2024",
+      "img": "8/8d/Desert_Egg.png",
+      "notes": "No verified benchmark pets are currently tracked from the Desert Egg in the shared value ladder.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "garden",
+      "name": "Garden Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "May 2024",
+      "retired": "Jan 2025",
+      "img": "3/3d/Garden_Egg.png",
+      "notes": "The Garden Egg has several interesting pets, but none of its hatches are in the current benchmark ladder yet.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "moon",
+      "name": "Moon Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Feb 2025",
+      "retired": "Aug 2025",
+      "img": "0/01/Moon_Egg.png",
+      "notes": "No verified benchmark pets are currently tracked from the Moon Egg in the shared value ladder.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "aztec",
+      "name": "Aztec Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Aug 2025",
+      "retired": "Feb 2026",
+      "img": "c/cc/Aztec_Egg.png",
+      "notes": "No verified benchmark pets are currently tracked from the Aztec Egg in the shared value ladder.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "endangered",
+      "name": "Endangered Egg",
+      "cost": "750 Bucks",
+      "status": "available",
+      "released": "Feb 2026",
+      "img": "c/ce/Endangered_Egg.png",
+      "notes": "Current live egg. No verified benchmark pets are currently tracked from the Endangered Egg in the shared value ladder.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "basic",
+      "name": "Basic Egg",
+      "cost": "400 Tickets",
+      "status": "available",
+      "released": "Sep 2025",
+      "img": "f/fa/Basic_Egg.png",
+      "notes": "No verified benchmark pets are currently tracked from the Basic Egg in the shared value ladder.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "crystal",
+      "name": "Crystal Egg",
+      "cost": "4,000 Tickets",
+      "status": "available",
+      "released": "Sep 2025",
+      "img": "6/6d/Crystal_Egg.png",
+      "notes": "No verified benchmark pets are currently tracked from the Crystal Egg in the shared value ladder.",
+      "benchmarkPets": []
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "updatedAt": "2026-04-09",
+  "notes": "Manual resolutions for calculator edge cases. Tradable pets use current public base values from AdoptMeTradingValues on April 9, 2026 and derive potion, Neon, and Mega lanes with the calculator's legacy scaling when explicit variant ladders are unavailable. Temporary or non-tradable pets are forced to zero so they do not distort trade results.",
+  "pets": [
+    {
+      "slug": "burtaur",
+      "name": "Burtaur",
+      "resolution": "nonTradable",
+      "baseValue": 0,
+      "sourceUrl": "https://www.playadopt.me/news/april-fools-2025",
+      "notes": "Official April Fools 2025 temporary pet."
+    },
+    {
+      "slug": "dylan",
+      "name": "Dylan",
+      "resolution": "manualTradable",
+      "baseValue": 0.14,
+      "sourceUrl": "https://adoptmetradingvalues.com/what-is-worth.php?id=1779&q=",
+      "notes": "Wrapped Doll pet using current AMTV base value."
+    },
+    {
+      "slug": "malayan-tapir",
+      "name": "Malayan Tapir",
+      "resolution": "manualTradable",
+      "baseValue": 0.12,
+      "sourceUrl": "https://adoptmetradingvalues.com/what-is-worth/1542?id=1541&q=Malaysian_Tapir",
+      "notes": "Mapped to Malaysian Tapir on AMTV."
+    },
+    {
+      "slug": "mole-pet",
+      "name": "Mole Pet",
+      "resolution": "manualTradable",
+      "baseValue": 0.06,
+      "sourceUrl": "https://adoptmetradingvalues.com/what-is-worth.php?id=2248&q=",
+      "notes": "Mapped to Mole on AMTV."
+    },
+    {
+      "slug": "pet-rock",
+      "name": "Pet Rock",
+      "resolution": "nonTradable",
+      "baseValue": 0,
+      "sourceUrl": "https://www.youtube.com/watch?v=KRHOFQnebfo",
+      "notes": "Temporary April Fools pet that was not part of the tradable market."
+    },
+    {
+      "slug": "pistachio",
+      "name": "Pistachio",
+      "resolution": "manualTradable",
+      "baseValue": 0.15,
+      "sourceUrl": "https://adoptmetradingvalues.com/what-is-worth.php?id=1781",
+      "notes": "Wrapped Doll pet using current AMTV base value."
+    },
+    {
+      "slug": "practice-dog",
+      "name": "Practice Dog",
+      "resolution": "nonTradable",
+      "baseValue": 0,
+      "notes": "Tutorial-only or non-market placeholder pet. No major live trading page found."
+    },
+    {
+      "slug": "praying-mantis-pet",
+      "name": "Praying Mantis Pet",
+      "resolution": "manualTradable",
+      "baseValue": 0.32,
+      "sourceUrl": "https://adoptmetradingvalues.com/what-is-worth.php?id=2251&q=",
+      "notes": "Mapped to Praying Mantis on AMTV."
+    },
+    {
+      "slug": "pumpkin-pet",
+      "name": "Pumpkin Pet",
+      "resolution": "nonTradable",
+      "baseValue": 0,
+      "sourceUrl": "https://www.youtube.com/watch?v=pHvElAb3tMo",
+      "notes": "Temporary Halloween event pet, not part of the current tradable pet economy."
+    },
+    {
+      "slug": "river",
+      "name": "River",
+      "resolution": "manualTradable",
+      "baseValue": 0.13,
+      "sourceUrl": "https://adoptmetradingvalues.com/what-is-worth.php?id=1780&q=",
+      "notes": "Wrapped Doll pet using current AMTV base value."
+    },
+    {
+      "slug": "scoob",
+      "name": "Scoob",
+      "resolution": "nonTradable",
+      "baseValue": 0,
+      "sourceUrl": "https://starpets.gg/adopt-me/shop/pet/scoob/7379",
+      "notes": "Temporary Scoob event pet that could not be traded."
+    },
+    {
+      "slug": "weevil-pet",
+      "name": "Weevil Pet",
+      "resolution": "manualTradable",
+      "baseValue": 0.1,
+      "sourceUrl": "https://adoptmetradingvalues.com/what-is-worth/2249",
+      "notes": "Mapped to Weevil on AMTV."
+    }
+  ]
+}

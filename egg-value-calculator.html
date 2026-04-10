@@ -4,23 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adopt Me Egg Value Calculator | The Patch</title>
-  <meta name="description" content="Compare Adopt Me eggs by benchmark hatch coverage, expected benchmark value, and the standout hatchables that already map to The Patch value system.">
+  <meta name="description" content="Compare Adopt Me eggs by benchmark hatch coverage, expected benchmark value, and the full hatch pools that sit behind each egg.">
   <meta name="theme-color" content="#08111f">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Adopt Me Egg Value Calculator | The Patch">
-  <meta property="og:description" content="Compare Adopt Me eggs by benchmark hatch coverage, expected benchmark value, and the standout hatchables that already map to The Patch value system.">
+  <meta property="og:description" content="Compare Adopt Me eggs by benchmark hatch coverage, expected benchmark value, and the full hatch pools that sit behind each egg.">
   <meta property="og:url" content="https://thepatchgg.github.io/egg-value-calculator.html">
   <meta property="og:site_name" content="The Patch">
   <meta property="og:image" content="https://thepatchgg.github.io/assets/pets/kangaroo.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Adopt Me Egg Value Calculator | The Patch">
-  <meta name="twitter:description" content="Compare Adopt Me eggs by benchmark hatch coverage, expected benchmark value, and the standout hatchables that already map to The Patch value system.">
+  <meta name="twitter:description" content="Compare Adopt Me eggs by benchmark hatch coverage, expected benchmark value, and the full hatch pools that sit behind each egg.">
   <meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/kangaroo.png">
   <link rel="canonical" href="https://thepatchgg.github.io/egg-value-calculator.html">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/css/patch-compat.css">
+  <style>
+    .egg-preview-strip,.egg-mini-grid{display:flex;flex-wrap:wrap;gap:8px}
+    .egg-preview-chip{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);font-size:12px;font-weight:700;color:var(--text)}
+    .egg-preview-chip img{width:24px;height:24px;object-fit:contain;border-radius:999px;background:#111827;padding:2px}
+    .egg-context-grid{display:grid;gap:10px;margin-top:14px}
+    .egg-context-grid .kpi-row{padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06)}
+    .egg-preview-note{font-size:12px;color:var(--text-muted);line-height:1.6}
+    .egg-table-small{display:block;font-size:11px;color:var(--text-muted);margin-top:3px}
+    .egg-inline-link{font-weight:700;color:var(--accent)}
+    .egg-mini-grid{margin-top:12px}
+    .egg-mini-card{min-width:88px;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08)}
+    .egg-mini-card strong{display:block;font-size:15px;color:var(--accent);margin-bottom:2px}
+    .egg-breakdown-pet{display:flex;align-items:center;gap:10px;min-width:0}
+    .egg-breakdown-pet img{width:30px;height:30px;object-fit:contain;border-radius:10px;background:#111827;padding:3px;flex-shrink:0}
+    .egg-breakdown-text{display:grid;gap:2px;min-width:0}
+    .egg-breakdown-text small{font-size:11px;color:var(--text-muted)}
+    .egg-preview-inline{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+    .egg-preview-inline .egg-preview-chip{padding:4px 8px;font-size:11px}
+  </style>
+  <script src="/assets/js/patch-ribbon.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -38,7 +59,7 @@
       <nav class="nav" aria-label="Primary">
         <a href="/">Home</a>
         <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
-        <a href="/egg-value-calculator.html">Egg Calculator</a>
+        <a href="/egg-value-calculator.html" class="active">Egg Calculator</a>
         <a href="/pet-value-calculator.html">Trade Calculator</a>
         <a href="/adopt-me.html">Guides</a>
       </nav>
@@ -49,12 +70,10 @@
     <section class="page-hero">
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow">Egg value beta</div>
+          <div class="eyebrow">Egg value tool</div>
           <h1>See which eggs connect best to the benchmark market.</h1>
           <p>
-            This tool does not pretend to know the full market value of every hatch in every egg yet. Instead, it shows
-            expected value and hit chance for the hatchables that already map to The Patch benchmark system, then tells you
-            exactly how much of each egg is covered by that benchmark lens.
+            Compare eggs by the benchmark pets they can produce, their hit chance, and the value those pets add to a hatch plan, while still seeing the broader hatch pool behind each egg.
           </p>
           <div class="cta-row">
             <a class="button primary" href="#egg-tool">Open the calculator</a>
@@ -64,9 +83,9 @@
         <aside class="hero-panel">
           <p class="helper">How to read it</p>
           <ul class="signal-list">
-            <li><span>Expected value uses benchmark pets only</span><span class="tone tone-strong">Honest</span></li>
-            <li><span>Tier odds are split evenly across pets in that tier</span><span class="tone tone-strong">Assumption</span></li>
-            <li><span>Low coverage means do not overread the result</span><span class="tone tone-beta">Caution</span></li>
+            <li><span>Expected value still comes only from benchmark pets tracked in each egg</span><span class="tone tone-strong">Focused</span></li>
+            <li><span>Each egg also carries its full reviewed hatch pool for context</span><span class="tone tone-strong">Expanded</span></li>
+            <li><span>Use the full egg guide when you want every pet listed on one long page</span><span class="tone tone-beta">Guide</span></li>
           </ul>
         </aside>
       </div>
@@ -94,7 +113,7 @@
         <section class="tool-card planner-panel">
           <div>
             <h2>Egg calculator</h2>
-            <p class="micro-copy">Pick an egg and hatch count to estimate benchmark-only EV and see which supported pets are driving it.</p>
+            <p class="micro-copy">Pick an egg and hatch count to estimate benchmark-only EV, then use the full-pool context to see what else can come out of it.</p>
           </div>
 
           <div class="toolbar">
@@ -110,7 +129,7 @@
 
           <div class="status-card">
             <strong id="egg-summary-headline">Loading egg data...</strong>
-            <span id="egg-summary-note">The benchmark egg view needs both the egg dataset and the shared pet values.</span>
+            <span id="egg-summary-note">The benchmark egg view needs the reviewed egg directory and the shared pet values.</span>
           </div>
 
           <div class="card-grid" id="selected-egg-card"></div>
@@ -141,7 +160,7 @@
         <div class="section-head">
           <div>
             <h2>Compare eggs quickly</h2>
-            <p class="intro-copy">Sort by benchmark EV, filter live vs retired eggs, and see which eggs currently map best to the benchmark ladder.</p>
+            <p class="intro-copy">Sort by benchmark EV, filter live vs retired eggs, and compare them while keeping the full reviewed hatch pools in mind.</p>
           </div>
         </div>
 
@@ -161,6 +180,10 @@
               <option value="bucks">Bucks</option>
               <option value="robux">Robux</option>
               <option value="tickets">Tickets</option>
+              <option value="stars">Stars</option>
+              <option value="gingerbread">Gingerbread</option>
+              <option value="event">Event currency</option>
+              <option value="free">Free reward</option>
             </select>
           </label>
         </div>
@@ -187,11 +210,11 @@
       <div class="shell card-grid">
         <article class="card">
           <h3>What EV means here</h3>
-          <p>This is not full hatch value. It only counts pets that already exist in The Patch benchmark value system, so it works best as a directional comparison instead of a final verdict.</p>
+          <p>This is still a benchmark-first tool. It compares eggs by their benchmark pets, while giving you just enough full-pool context to judge the rest of the hatch risk.</p>
         </article>
         <article class="card">
           <h3>Why some eggs look weak</h3>
-          <p>An egg can still be interesting even if the benchmark EV is low. It may just be full of pets that are not yet part of the shared benchmark ladder.</p>
+          <p>An egg can still be worth opening even if the benchmark EV is low. Some eggs matter more for collection goals than for the benchmark market.</p>
         </article>
         <article class="card">
           <h3>Best next step</h3>
@@ -216,6 +239,7 @@
 
   <script src="/assets/js/adopt-values.js"></script>
   <script src="/assets/js/adopt-eggs.js"></script>
+  <script src="/assets/js/adopt-egg-guide-data.js"></script>
   <script src="/assets/js/adopt-analytics.js"></script>
   <script>
     const state = {
@@ -225,9 +249,107 @@
       status: "all",
       currency: "all"
     };
+    const EGG_GUIDE_ORDER = [
+      "starter", "blue", "pink", "cracked", "pet", "royal", "retired", "safari", "jungle", "farm", "christmas",
+      "aussie", "golden", "diamond", "easter-2020", "fossil", "ocean", "mythic", "woodland", "zodiac-minion",
+      "japan", "southeast-asia", "fool", "danger", "wrapped-doll", "urban", "christmas-future", "royal-desert",
+      "desert", "garden", "moon", "royal-moon", "aztec", "royal-aztec", "endangered", "basic", "crystal"
+    ];
+    const PET_OVERRIDES = {
+      mole: { catalogName: "Mole Pet", slug: "mole-pet", image: "/assets/pets/mole-pet.png" },
+      weevil: { catalogName: "Weevil Pet", slug: "weevil-pet", image: "/assets/pets/weevil-pet.png" },
+      prayingmantis: { catalogName: "Praying Mantis Pet", slug: "praying-mantis-pet", image: "/assets/pets/praying-mantis-pet.png" },
+      milkchoccybunny: { slug: "milk-choco-bunny", image: "/assets/pets/milk-choco-bunny.png" },
+      whitechoccybunny: { slug: "white-choco-bunny", image: "/assets/pets/white-choco-bunny.png" },
+      darkchoccybunny: { slug: "dark-choco-bunny", image: "/assets/pets/dark-choco-bunny.png" }
+    };
+
+    function normalizeName(value) {
+      return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, "");
+    }
 
     function formatPercent(decimal) {
       return `${(decimal * 100).toFixed(decimal >= 0.1 ? 1 : 2).replace(/\.0$/, "")}%`;
+    }
+
+    function mergeEggPayload(basePayload, patchPayload) {
+      const merged = new Map((basePayload.eggs || []).map((egg) => [egg.id, egg]));
+      Object.entries((patchPayload && patchPayload.correctedEggs) || {}).forEach(([id, patch]) => {
+        const current = merged.get(id) || { id, name: patch.name || id };
+        merged.set(id, { ...current, ...patch, id: current.id || id });
+      });
+      ((patchPayload && patchPayload.extraEggs) || []).forEach((egg) => {
+        merged.set(egg.id, egg);
+      });
+      return [...merged.values()];
+    }
+
+    function buildCatalogIndex(catalogPayload) {
+      return new Map((catalogPayload.entries || []).map((entry) => [normalizeName(entry.name), entry]));
+    }
+
+    function enrichEggForCalculator(egg, valuesPayload, catalogIndex) {
+      const rarityChances = egg.rarityChances || egg.chances || {};
+      const pets = (egg.pets || [])
+        .map((entry) => window.ThePatchEggs.normalizePetEntry(entry))
+        .filter(Boolean)
+        .map((pet) => {
+          const override = PET_OVERRIDES[normalizeName(pet.name)];
+          const catalogEntry = catalogIndex.get(normalizeName((override && override.catalogName) || pet.name));
+          const slug = (override && override.slug) || pet.slug || catalogEntry?.slug || window.ThePatchEggs.slugifyPetName(pet.name);
+          return {
+            ...pet,
+            slug,
+            image: (override && override.image) || catalogEntry?.image || `/assets/pets/${slug}.png`
+          };
+        });
+
+      const rarityBuckets = pets.reduce((map, pet) => {
+        map[pet.rarity] = map[pet.rarity] || [];
+        map[pet.rarity].push(pet);
+        return map;
+      }, {});
+
+      const benchmarkPets = [];
+      Object.entries(rarityBuckets).forEach(([rarity, bucket]) => {
+        const rarityChance = window.ThePatchEggs.parseChance(rarityChances[rarity]);
+        const petsWithoutExplicitChance = bucket.filter((pet) => window.ThePatchEggs.parseChance(pet.chance) === null);
+        const perPetChance = petsWithoutExplicitChance.length && rarityChance !== null ? rarityChance / petsWithoutExplicitChance.length : 0;
+
+        bucket.forEach((pet) => {
+          const benchmark = valuesPayload.petIndex[pet.slug];
+          if (!benchmark) {
+            return;
+          }
+          const explicitChance = window.ThePatchEggs.parseChance(pet.chance);
+          const finalChance = explicitChance === null ? perPetChance : explicitChance;
+          benchmarkPets.push({
+            name: benchmark.name,
+            slug: benchmark.slug,
+            rarity,
+            chance: finalChance,
+            benchmarkValue: benchmark.values.default,
+            contribution: finalChance * benchmark.values.default,
+            image: pet.image
+          });
+        });
+      });
+
+      const cost = window.ThePatchEggs.parseCost(egg.cost);
+      return {
+        ...egg,
+        pets,
+        type: egg.type || cost.currency.toLowerCase(),
+        costAmount: cost.amount,
+        currency: cost.currency,
+        benchmarkPets: benchmarkPets.sort((left, right) => right.contribution - left.contribution),
+        benchmarkChance: benchmarkPets.reduce((sum, pet) => sum + pet.chance, 0),
+        expectedValue: benchmarkPets.reduce((sum, pet) => sum + pet.contribution, 0),
+        coveredBenchmarks: benchmarkPets.length,
+        hatchCount: pets.length,
+        previewPets: pets.slice(0, 5),
+        rarityChances
+      };
     }
 
     function renderToplineStats() {
@@ -247,10 +369,36 @@
     function buildBreakdownItem(item) {
       return `
         <li>
-          <span><a class="pet-link" href="/pets/${item.slug}.html">${item.name}</a> (${formatPercent(item.chance)})</span>
+          <span class="egg-breakdown-pet">
+            <img src="${item.image}" alt="${item.name}" loading="lazy" onerror="this.style.display='none'">
+            <span class="egg-breakdown-text">
+              <a class="pet-link" href="/pets/${item.slug}.html">${item.name}</a>
+              <small>${item.rarity} - ${formatPercent(item.chance)}</small>
+            </span>
+          </span>
           <span class="value-tag">${window.ThePatchValues.formatValue(item.contribution)}</span>
         </li>
       `;
+    }
+
+    function buildRarityMiniMarkup(egg) {
+      return Object.entries(egg.rarityChances || {})
+        .map(([rarity, chance]) => `
+          <span class="egg-mini-card">
+            <strong>${chance}</strong>
+            <span>${rarity}</span>
+          </span>
+        `)
+        .join("");
+    }
+
+    function buildPreviewInline(egg) {
+      return egg.previewPets.map((pet) => `
+        <span class="egg-preview-chip">
+          <img src="${pet.image}" alt="${pet.name}" loading="lazy" onerror="this.style.display='none'">
+          <span>${pet.name}</span>
+        </span>
+      `).join("");
     }
 
     function renderSelectedEgg() {
@@ -268,10 +416,10 @@
       const breakdown = document.getElementById("egg-breakdown-list");
       const planValue = egg.expectedValue * state.hatchCount;
 
-      summaryHeadline.textContent = `${egg.name} benchmark view`;
+      summaryHeadline.textContent = `${egg.name} value view`;
       summaryNote.textContent = egg.coveredBenchmarks
-        ? `${egg.coveredBenchmarks} benchmark hatchable${egg.coveredBenchmarks === 1 ? "" : "s"} are currently mapped in the shared value file.`
-        : "This egg currently has no pets in the active benchmark ladder, so its benchmark EV reads as zero for now.";
+        ? `${egg.coveredBenchmarks} featured hatchable${egg.coveredBenchmarks === 1 ? "" : "s"} are included in this value view out of ${egg.hatchCount} total pets in the egg.`
+        : `This egg has ${egg.hatchCount} hatchable pet${egg.hatchCount === 1 ? "" : "s"}, but none of them are part of the featured value view right now.`;
 
       selectedCard.innerHTML = `
         <article class="card benchmark-card">
@@ -280,16 +428,23 @@
             <span class="value-tag">${egg.cost}</span>
           </div>
           <div class="pet-row">
-            <img class="pet-avatar" src="${window.ThePatchEggs.eggImageUrl(egg.img)}" alt="${egg.name}">
+            <img class="pet-avatar" src="${window.ThePatchEggs.eggVisualUrl(egg)}" alt="${egg.name}" onerror="this.onerror=null;this.src='${window.ThePatchEggs.eggDisplayUrl(egg)}'">
             <div class="pet-name">
               <strong>${egg.name}</strong>
               <small>${egg.released}${egg.retired ? ` - retired ${egg.retired}` : ""}</small>
             </div>
           </div>
-          <p>Benchmark coverage: ${formatPercent(egg.benchmarkChance)} of all hatch outcomes. Expected benchmark value: ${window.ThePatchValues.formatValue(egg.expectedValue)} per hatch.</p>
+          <p>Featured value coverage: ${formatPercent(egg.benchmarkChance)} of all hatch outcomes. Expected value: ${window.ThePatchValues.formatValue(egg.expectedValue)} per hatch.</p>
+          <div class="egg-mini-grid">${buildRarityMiniMarkup(egg)}</div>
+          <div class="egg-context-grid">
+            <div class="kpi-row"><span>Total hatchables</span><strong>${egg.hatchCount}</strong></div>
+            <div class="kpi-row"><span>Full-pool preview</span><strong>${egg.previewPets.map((pet) => pet.name).join(", ")}</strong></div>
+          </div>
+          <div class="egg-preview-strip">${buildPreviewInline(egg)}</div>
+          <p class="egg-preview-note">This calculator scores eggs using the featured pets shown in the value tools. Use the full pool preview to see what else you might hatch.</p>
           <div class="card-actions">
             <span class="value-tag">Plan EV ${window.ThePatchValues.formatValue(planValue)}</span>
-            <a class="pill-link" href="/articles/adopt-me-egg-guide.html">Open full egg guide</a>
+            <a class="pill-link" href="/articles/adopt-me-egg-guide.html#egg-${egg.id}">Open full egg guide</a>
           </div>
         </article>
       `;
@@ -328,10 +483,12 @@
         <tr>
           <td>
             <div class="pet-row align-start">
-              <img class="pet-avatar" src="${window.ThePatchEggs.eggImageUrl(egg.img)}" alt="${egg.name}">
+              <img class="pet-avatar" src="${window.ThePatchEggs.eggVisualUrl(egg)}" alt="${egg.name}" onerror="this.onerror=null;this.src='${window.ThePatchEggs.eggDisplayUrl(egg)}'">
               <div class="pet-name">
                 <strong>${egg.name}</strong>
                 <small>${egg.coveredBenchmarks} covered benchmark pet${egg.coveredBenchmarks === 1 ? "" : "s"}</small>
+                <span class="egg-table-small">${egg.hatchCount} total hatchables</span>
+                <div class="egg-preview-inline">${buildPreviewInline(egg)}</div>
               </div>
             </div>
           </td>
@@ -351,12 +508,27 @@
 
     async function bootEggTool() {
       try {
-        const [valuesPayload, eggPayload] = await Promise.all([
+        const [valuesPayload, eggPayload, catalogPayload] = await Promise.all([
           window.ThePatchValues.loadAdoptValues(),
-          window.ThePatchEggs.loadEggs()
+          window.ThePatchEggs.loadEggs(window.ThePatchEggs.FULL_DATA_PATH),
+          fetch("/data/adopt-me-pet-catalog.json", { cache: "no-store" }).then((response) => {
+            if (!response.ok) {
+              throw new Error(`Unable to load pet catalog: ${response.status}`);
+            }
+            return response.json();
+          })
         ]);
 
-        state.eggs = eggPayload.eggs.map((egg) => window.ThePatchEggs.summarizeEgg(egg, valuesPayload));
+        const mergedEggs = mergeEggPayload(eggPayload, window.ThePatchEggGuideData || {});
+        const catalogIndex = buildCatalogIndex(catalogPayload);
+
+        state.eggs = mergedEggs
+          .map((egg) => enrichEggForCalculator(egg, valuesPayload, catalogIndex))
+          .sort((left, right) => {
+            const leftOrder = EGG_GUIDE_ORDER.indexOf(left.id);
+            const rightOrder = EGG_GUIDE_ORDER.indexOf(right.id);
+            return (leftOrder === -1 ? 999 : leftOrder) - (rightOrder === -1 ? 999 : rightOrder);
+          });
         state.selectedId = state.eggs[0] ? state.eggs[0].id : "";
 
         const select = document.getElementById("egg-select");

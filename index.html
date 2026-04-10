@@ -3,24 +3,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Patch | Adopt Me values, calculators, and trading tools</title>
-  <meta name="description" content="The Patch tracks Adopt Me values, calculators, and market notes with one shared data source so the homepage, value list, and calculator stay in sync.">
+  <title>The Patch - Adopt Me values, weekly update guides, and trading tools</title>
+  <meta name="description" content="The Patch covers weekly Adopt Me updates, article archives, the pet value list, and trading calculators in one place.">
   <meta name="theme-color" content="#08111f">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="The Patch | Adopt Me values, calculators, and trading tools">
-  <meta property="og:description" content="The Patch tracks Adopt Me values, calculators, and market notes with one shared data source so the homepage, value list, and calculator stay in sync.">
+  <meta property="og:title" content="The Patch - Adopt Me values, weekly update guides, and trading tools">
+  <meta property="og:description" content="Follow weekly Adopt Me updates, browse archived event coverage, and use the value list and calculators in one place.">
   <meta property="og:url" content="https://thepatchgg.github.io/">
   <meta property="og:site_name" content="The Patch">
-  <meta property="og:image" content="https://thepatchgg.github.io/assets/pets/bat-dragon.png">
+  <meta property="og:image" content="https://thepatchgg.github.io/assets/pets/latte-kitsune.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Patch | Adopt Me values, calculators, and trading tools">
-  <meta name="twitter:description" content="The Patch tracks Adopt Me values, calculators, and market notes with one shared data source so the homepage, value list, and calculator stay in sync.">
-  <meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/bat-dragon.png">
+  <meta name="twitter:title" content="The Patch - Adopt Me values, weekly update guides, and trading tools">
+  <meta name="twitter:description" content="Weekly Adopt Me update coverage, archived event guides, and calculators in one place.">
+  <meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/latte-kitsune.png">
   <link rel="canonical" href="https://thepatchgg.github.io/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "The Patch",
+    "url": "https://thepatchgg.github.io/",
+    "description": "Adopt Me values, weekly update guides, trade tools, and archive coverage.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://thepatchgg.github.io/articles/adopt-me-pet-encyclopedia.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What can I use The Patch for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Patch combines weekly Adopt Me update coverage, archived event guides, a live value list, a trade calculator, a neon calculator, and a pet encyclopedia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the homepage still feature weekly update articles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+        "text": "Yes. The homepage keeps weekly update tiles front and center, keeps recent releases pinned, and moves older coverage into an archive shelf."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do the calculator and value list use the same data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+        "text": "Yes. The current value list and calculator are designed to stay aligned so you do not get conflicting answers across the site."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    @keyframes new-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(200,255,87,0.65); }
+      50% { box-shadow: 0 0 0 5px rgba(200,255,87,0); }
+    }
+    .badge-new,
+    .badge-updated {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+      line-height: 1.5;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+    .badge-new {
+      background: #c8ff57;
+      color: #000;
+      animation: new-pulse 1.8s ease-in-out infinite;
+    }
+    .badge-updated {
+      background: rgba(200,255,87,0.12);
+      border: 1px solid rgba(200,255,87,0.35);
+      color: #c8ff57;
+    }
+    .article-card-featured {
+      border-color: rgba(200,255,87,0.3) !important;
+      box-shadow: 0 0 0 1px rgba(200,255,87,0.12), 0 4px 20px rgba(200,255,87,0.07);
+      background: linear-gradient(180deg, rgba(200,255,87,0.04) 0%, transparent 65%) !important;
+    }
+    .article-card-featured:hover {
+      border-color: rgba(200,255,87,0.55) !important;
+      box-shadow: 0 0 0 1px rgba(200,255,87,0.25), 0 6px 28px rgba(200,255,87,0.12) !important;
+    }
+    .hero-trust {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 16px;
+      margin-top: 26px;
+    }
+    .hero-panel-card,
+    .archive-banner {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 22px;
+    }
+    .hero-panel-card h3,
+    .archive-banner h3 {
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -0.2px;
+    }
+    .hero-panel-card p,
+    .archive-banner p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+    .hero-panel-card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    .hero-panel-card li + li {
+      margin-top: 8px;
+    }
+    .section-copy {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      max-width: 760px;
+    }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .tool-card {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--am);
+      border-radius: 12px;
+      padding: 22px;
+      transition: transform 0.15s, border-color 0.2s;
+    }
+    .tool-card.market { border-top-color: #c8ff57; }
+    .tool-card.library { border-top-color: #9b5de5; }
+    .tool-card.watch { border-top-color: #2fa3e0; }
+    .tool-card:hover {
+      transform: translateY(-2px);
+      border-color: #444455;
+    }
+    .tool-card .tool-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+    .tool-card h3 {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .tool-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .tool-card .tool-link {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .archive-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .archive-banner a {
+      white-space: nowrap;
+    }
+    .footer-social a[aria-disabled="true"] {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+    @media (max-width: 780px) {
+      .hero-trust,
+      .archive-banner {
+        grid-template-columns: 1fr;
+        display: grid;
+      }
+      .archive-banner a {
+        white-space: normal;
+      }
+    }
+  </style>
+  <script src="/assets/js/patch-ribbon.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -31,353 +221,269 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="/">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>The Patch</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="/">Home</a>
+      <a href="/" class="site-logo">The <span>Patch</span> &#128062;</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="/" class="active">Home</a>
         <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
-        <a href="/pet-value-calculator.html">Trade Calculator</a>
-        <a href="/neon-calculator.html">Neon Calculator</a>
-        <a href="/adopt-me.html">Guides</a>
+        <a href="/articles/adopt-me-pet-encyclopedia.html">Pet Dex</a>
+        <a href="/articles/adopt-me-egg-guide.html">Egg Guide</a>
+        <a href="/pet-value-calculator.html">Trade Calc</a>
+        <a href="/neon-calculator.html">Neon Calc</a>
+        <a href="/trading-forum.html">Trading Board</a>
+        <a href="/adopt-me.html">All Guides</a>
       </nav>
+      <a href="https://thepatchgg.substack.com" class="header-cta" target="_blank" rel="noopener" data-track-event="homepage_cta_click" data-track-location="header_subscribe">Subscribe Free</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="shell hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">Reviewed April 8, 2026</div>
-          <h1>Adopt Me values and tools that finally agree with each other.</h1>
-          <p>
-            The Patch now runs the homepage, the value list, and the trade calculator from one shared market file.
-            That means no more homepage saying one thing while the tools say another, and no more fake neon math
-            pretending every pet scales the same way.
-          </p>
-          <div class="cta-row">
-            <a class="button primary" href="/articles/adopt-me-pet-value-list-2026.html" data-track-event="homepage_cta_click" data-track-location="hero_primary">Open the live value list</a>
-            <a class="button secondary" href="/pet-value-calculator.html" data-track-event="homepage_cta_click" data-track-location="hero_secondary">Try the trade calculator</a>
-          </div>
-        </div>
-
-        <aside class="hero-panel">
-          <p class="helper">This week&apos;s trust fixes</p>
-          <ul class="spotlight-list">
-            <li>
-              <span>Bat Dragon stays above Shadow Dragon</span>
-              <span class="value-tag">Current benchmark</span>
-            </li>
-            <li>
-              <span>No-potion premiums are baked into the data</span>
-              <span class="value-tag">Not guessed</span>
-            </li>
-            <li>
-              <span>Trade calculator and value list use the same source</span>
-              <span class="value-tag">Shared data</span>
-            </li>
+    <section class="hero">
+      <div class="hero-eyebrow">Weekly update coverage + trading tools</div>
+      <h1>Follow every Adopt Me update.<br><em>Then check the value before you trade.</em></h1>
+      <p>
+        Read the latest Adopt Me guides, catch up on archived event coverage, and jump into the tools you need before your next trade.
+      </p>
+      <div class="hero-actions">
+        <a href="/articles/adopt-me-sugarfest-week4-chocolate-bunny-guide.html" class="btn-primary" data-track-event="homepage_cta_click" data-track-location="hero_primary">Read the latest event guide &#8594;</a>
+        <a href="/pet-value-calculator.html" class="btn-ghost" data-track-event="homepage_cta_click" data-track-location="hero_secondary">&#8595; Open Trade Calculator</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-panel-card">
+          <h3>What you can do here</h3>
+          <ul>
+            <li>Read weekly update guides and event recaps in one place.</li>
+            <li>Check trades, Neon builds, and egg lineups before you commit.</li>
+            <li>Use the value pages and tools to compare pets faster.</li>
           </ul>
-          <p class="helper">
-            This first pass covers the most traded benchmark pets. The broader catalog migration is next so we can
-            expand without reintroducing conflicting numbers.
-          </p>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell metrics-grid">
-        <article class="metric-card">
-          <strong>1</strong>
-          <p>Shared source of truth for values, demand, and trend instead of three competing systems.</p>
-        </article>
-        <article class="metric-card">
-          <strong>18</strong>
-          <p>Benchmark pets included in the first launch set so core high-tier and mid-tier trades are covered.</p>
-        </article>
-        <article class="metric-card">
-          <strong>0</strong>
-          <p>Expired event countdowns on the homepage. The front page is now evergreen and product-led.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <h2>Start with the pages players actually use</h2>
-            <p class="intro-copy">
-              The quickest path to trust is keeping the highest-intent pages accurate, fast, and easy to compare.
-            </p>
-          </div>
         </div>
-        <div class="feature-grid">
-          <article class="card">
-            <h3>Benchmark pet library</h3>
-            <p>Browse the full set of benchmark pet pages, revisit recent views, and move between anchor pets faster.</p>
-            <a class="pill-link" href="/pets/">Browse benchmark pets</a>
-          </article>
-          <article class="card">
-            <h3>Pet value list</h3>
-            <p>One consistent table with demand, trend, and variant-aware benchmarks instead of conflicting scales.</p>
-            <a class="pill-link" href="/articles/adopt-me-pet-value-list-2026.html">Open the list</a>
-          </article>
-          <article class="card">
-            <h3>Trade calculator</h3>
-            <p>Build both sides of a trade, compare totals, and get a fairness read without hardcoded multiplier myths.</p>
-            <a class="pill-link" href="/pet-value-calculator.html">Compare a trade</a>
-          </article>
-          <article class="card">
-            <h3>Methodology</h3>
-            <p>Clear notes on where the data comes from, why no-potion matters, and how often to expect revisions.</p>
-            <a class="pill-link" href="/methodology.html">Read the notes</a>
-          </article>
-          <article class="card">
-            <h3>Market movers</h3>
-            <p>Track which benchmark pets are rising, cooling off, or staying liquid enough to anchor harder trades.</p>
-            <a class="pill-link" href="/market-movers.html">Open market movers</a>
-          </article>
-          <article class="card">
-            <h3>Inventory planner</h3>
-            <p>Save your current pets, total their benchmark value, and see which upgrade targets are already within reach.</p>
-            <a class="pill-link" href="/inventory-planner.html">Plan your upgrades</a>
-          </article>
-          <article class="card">
-            <h3>Egg value calculator</h3>
-            <p>Compare eggs by benchmark hatch coverage and expected benchmark value instead of relying on vague hype.</p>
-            <a class="pill-link" href="/egg-value-calculator.html">Open egg calculator</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <h2>Current market signals</h2>
-            <p class="intro-copy">
-              These are the patterns shaping fair trades right now, and they all come directly from the new shared data.
-            </p>
-          </div>
-        </div>
-        <div class="card-grid" id="signal-cards"></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <h2>Why this version is better for SEO and repeat visits</h2>
-            <p class="intro-copy">
-              Fixing trust is also the foundation for growth. Search pages and tools only work long-term when they do not contradict each other.
-            </p>
-          </div>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Cleaner intent matching</h3>
-            <p>
-              The homepage now points directly to value and calculator pages instead of leading with expired event copy.
-              That helps both users and search engines understand the product faster.
-            </p>
-          </article>
-          <article class="card">
-            <h3>More reliable internal linking</h3>
-            <p>
-              Pages now reinforce one value system, which lowers bounce risk when users jump between list pages and tools.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Better monetization runway</h3>
-            <p>
-              Ad-supported traffic works best after authority is established. Shared data makes that authority easier to earn and defend.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <h2>Your saved watchlist</h2>
-            <p class="intro-copy">
-              Favorite benchmark pets to keep a shorter list of the values you care about most between visits.
-            </p>
-          </div>
-        </div>
-        <div class="card-grid" id="watchlist-cards"></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell hero-panel newsletter" id="beehiiv-embed-placeholder">
-        <div>
-          <p class="helper">Newsletter</p>
-          <h2>Get value shifts and tool updates in your inbox</h2>
+        <div class="hero-panel-card">
+          <h3>Keep up with the latest drops</h3>
           <p>
-            Subscribe for weekly market notes, high-tier changes, and new calculator releases. This form now opens the
-            live Substack signup flow instead of looking clickable and doing nothing.
+            The top stories highlight the newest Adopt Me updates first, while older event guides stay easy to revisit in the archive.
           </p>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-title">Latest Update Guides</div>
+        <p class="section-copy">
+          Start here for the latest event guides, weekly drops, and archive snapshots that players are still revisiting.
+        </p>
+        <div class="articles-grid">
+          <a href="/articles/adopt-me-sugarfest-week4-chocolate-bunny-guide.html" class="article-card article-card-featured" data-track-event="article_tile_click" data-track-location="weekly_rotation">
+            <div class="card-game-tag am">Update Archive <span class="badge-new">Latest</span></div>
+            <h3 class="card-title">Sugarfest Week 4 Archive - Chocolate Bunny, Pupcake, and Easter Bunny finale</h3>
+            <p class="card-excerpt">The final Sugarfest snapshot keeps the Week 4 pets, release framing, and end-of-event context in one clean archive page.</p>
+            <div class="card-meta"><span>April 2026 archive</span><span>&#183;</span><span>Week 4 finale</span></div>
+          </a>
+          <a href="/articles/adopt-me-sugarfest-jerboa-jam-guide.html" class="article-card article-card-featured" data-track-event="article_tile_click" data-track-location="weekly_rotation">
+            <div class="card-game-tag am">Update Archive <span class="badge-updated">Pinned</span></div>
+            <h3 class="card-title">Sugarfest Week 3 Archive - Jerboa Jam, Latte Kitsune, and Jiggly Jerboa</h3>
+            <p class="card-excerpt">Week 3 stays easy to revisit for late-event traders who want the original Jerboa Jam context and pet rollout summary.</p>
+            <div class="card-meta"><span>March 2026 archive</span><span>&#183;</span><span>Week 3 guide</span></div>
+          </a>
+          <a href="/articles/adopt-me-sugarfest-waffle-scuffle-guide.html" class="article-card" data-track-event="article_tile_click" data-track-location="weekly_rotation">
+            <div class="card-game-tag am">Update Archive</div>
+            <h3 class="card-title">Sugarfest Week 2 Archive - Mochi Meow, Waffle Wyrm, and the Waffle Scuffle minigame</h3>
+            <p class="card-excerpt">The Week 2 snapshot is still one of the best examples of how a minigame and a premium pet changed event pacing.</p>
+            <div class="card-meta"><span>March 2026 archive</span><span>&#183;</span><span>Week 2 guide</span></div>
+          </a>
+          <a href="/articles/adopt-me-sugarfest-2026.html" class="article-card" data-track-event="article_tile_click" data-track-location="weekly_rotation">
+            <div class="card-game-tag am">Event Guide</div>
+            <h3 class="card-title">Sugarfest 2026 Archive - kickoff guide, pets, and event structure</h3>
+            <p class="card-excerpt">Use the cleaned event overview as the anchor page when you want the whole Sugarfest story in one place before diving into each week.</p>
+            <div class="card-meta"><span>Event overview</span><span>&#183;</span><span>Sugarfest hub</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-title">Trading Tools</div>
+        <p class="section-copy">
+          Jump into the tools players use most when they want to compare trades, Neon builds, and inventory plans.
+        </p>
+        <div class="tools-grid">
+          <a href="/pet-value-calculator.html" class="tool-card" data-track-event="tool_tile_click" data-track-location="homepage_tools">
+            <div class="tool-icon">&#128290;</div>
+            <h3>Trade Calculator</h3>
+            <p>Compare both sides of a trade with potion toggles, pet images, and a full pet picker.</p>
+            <div class="tool-link">Open calculator &#8594;</div>
+          </a>
+          <a href="/neon-calculator.html" class="tool-card market" data-track-event="tool_tile_click" data-track-location="homepage_tools">
+            <div class="tool-icon">&#10024;</div>
+            <h3>Neon Calculator</h3>
+            <p>See whether it makes more sense to build Neon yourself or trade for the finished pet.</p>
+            <div class="tool-link">Compare neon value &#8594;</div>
+          </a>
+          <a href="/market-movers.html" class="tool-card library" data-track-event="tool_tile_click" data-track-location="homepage_tools">
+            <div class="tool-icon">&#128200;</div>
+            <h3>Market Movers</h3>
+            <p>Spot pets that are rising, holding, or cooling off before you commit to a bigger trade.</p>
+            <div class="tool-link">Open movers board &#8594;</div>
+          </a>
+          <a href="/inventory-planner.html" class="tool-card watch" data-track-event="tool_tile_click" data-track-location="homepage_tools">
+            <div class="tool-icon">&#128230;</div>
+            <h3>Inventory Planner</h3>
+            <p>Save your current pets in-browser and see what upgrade targets are already within reach.</p>
+            <div class="tool-link">Plan upgrades &#8594;</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-title">Reference Guides</div>
+        <p class="section-copy">
+          Keep the main guides close by so you can move from browsing to trading help without leaving the homepage.
+        </p>
+        <div class="articles-grid">
+          <a href="/articles/adopt-me-pet-value-list-2026.html" class="article-card article-card-featured" data-track-event="article_tile_click" data-track-location="reference_guides">
+            <div class="card-game-tag am">Value List <span class="badge-updated">Live</span></div>
+            <h3 class="card-title">Adopt Me Pet Value List 2026 - benchmark values, demand, and trend</h3>
+            <p class="card-excerpt">Use the live value list to check pet rankings, demand, trends, and the most important trade lanes.</p>
+            <div class="card-meta"><span>Live data page</span><span>&#183;</span><span>Updated April 8, 2026</span></div>
+          </a>
+          <a href="/articles/adopt-me-pet-encyclopedia.html" class="article-card" data-track-event="article_tile_click" data-track-location="reference_guides">
+            <div class="card-game-tag am">Encyclopedia</div>
+            <h3 class="card-title">Adopt Me Pet Encyclopedia - searchable pet catalog and rarity explorer</h3>
+            <p class="card-excerpt">Browse the larger pet library, check rarity labels, and jump into pet pages from the explorer.</p>
+            <div class="card-meta"><span>Database guide</span><span>&#183;</span><span>Catalog and lookup</span></div>
+          </a>
+          <a href="/articles/adopt-me-egg-guide.html" class="article-card" data-track-event="article_tile_click" data-track-location="reference_guides">
+            <div class="card-game-tag am">Egg Guide</div>
+            <h3 class="card-title">Adopt Me Egg Guide - egg lineup, hatch context, and benchmark companion tool</h3>
+            <p class="card-excerpt">See every egg in the game, the pets inside, the odds, and the best places to start hatching.</p>
+            <div class="card-meta"><span>Reference guide</span><span>&#183;</span><span>Egg coverage</span></div>
+          </a>
+          <a href="/articles/adopt-me-trading-guide-2026.html" class="article-card" data-track-event="article_tile_click" data-track-location="reference_guides">
+            <div class="card-game-tag am">Trading Guide</div>
+            <h3 class="card-title">Adopt Me Trading Guide 2026 - strategy, fair-trade framing, and scam awareness</h3>
+            <p class="card-excerpt">Keep the foundational trading article visible on the homepage so newer players can learn the basics before using the tools.</p>
+            <div class="card-meta"><span>Evergreen</span><span>&#183;</span><span>How to trade better</span></div>
+          </a>
+          <a href="/articles/adopt-me-legendary-tier-list-2026.html" class="article-card" data-track-event="article_tile_click" data-track-location="reference_guides">
+            <div class="card-game-tag am">Tier List</div>
+            <h3 class="card-title">Adopt Me Legendary Tier List 2026 - where the top pets sit right now</h3>
+            <p class="card-excerpt">The tier list remains a strong browse page for users who want rankings first and exact calculator work second.</p>
+            <div class="card-meta"><span>Evergreen</span><span>&#183;</span><span>Legendary rankings</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-title">Archived Coverage</div>
+        <div class="archive-banner">
+          <div>
+            <h3>Archive shelf for older weekly drops</h3>
+            <p>
+              Revisit older seasonal guides and event snapshots without losing the newest stories from the top of the page.
+            </p>
+          </div>
+          <a href="/adopt-me.html" class="btn-primary" data-track-event="homepage_cta_click" data-track-location="archive_banner">Browse all guides &#8594;</a>
+        </div>
+        <div class="articles-grid">
+          <a href="/articles/adopt-me-spring-event-2026.html" class="article-card" data-track-event="article_tile_click" data-track-location="archive_guides">
+            <div class="card-game-tag am">Archive Guide</div>
+            <h3 class="card-title">Adopt Me Spring Event 2026 Archive - cleaned snapshot and release context</h3>
+            <p class="card-excerpt">Revisit the spring event snapshot if you want the release framing, predictions, and seasonal context in one place.</p>
+            <div class="card-meta"><span>Archive shelf</span><span>&#183;</span><span>Seasonal recap</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section container" id="newsletter">
+      <h2>Stay ahead of every <span>Adopt Me update.</span></h2>
+      <p>New event guides, value shifts, and tool releases - in your inbox every update.</p>
+      <div id="beehiiv-embed-placeholder">
         <form class="newsletter-form" data-newsletter-location="homepage_newsletter">
-          <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
-          <button class="primary" type="submit">Subscribe</button>
+          <input type="email" name="email" placeholder="your@email.com" autocomplete="email" required>
+          <button type="submit">Subscribe Free</button>
         </form>
+      </div>
+      <p class="newsletter-note">Free forever. Finish signup in the Substack tab that opens after submission.</p>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="section-inner">
+        <div class="section-title">Why The Patch</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;">
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;">
+            <div style="font-size:28px;margin-bottom:12px;">&#128202;</div>
+            <h3 style="font-size:15px;font-weight:700;margin-bottom:8px;">Consistent Values</h3>
+            <p style="font-size:13px;color:var(--text-muted);line-height:1.6;">The value pages and calculators are built to stay in sync, so you do not get two different answers from the same site.</p>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;">
+            <div style="font-size:28px;margin-bottom:12px;">&#128240;</div>
+            <h3 style="font-size:15px;font-weight:700;margin-bottom:8px;">Weekly Coverage First</h3>
+            <p style="font-size:13px;color:var(--text-muted);line-height:1.6;">The homepage highlights article tiles and weekly game updates so fresh content stays visible and easy to revisit.</p>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;">
+            <div style="font-size:28px;margin-bottom:12px;">&#128247;</div>
+            <h3 style="font-size:15px;font-weight:700;margin-bottom:8px;">Working Pet Art</h3>
+            <p style="font-size:13px;color:var(--text-muted);line-height:1.6;">The calculators and core tools use local pet images so the artwork stays reliable.</p>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;">
+            <div style="font-size:28px;margin-bottom:12px;">&#128193;</div>
+            <h3 style="font-size:15px;font-weight:700;margin-bottom:8px;">Archive Strategy</h3>
+            <p style="font-size:13px;color:var(--text-muted);line-height:1.6;">Older weekly stories are still linked from the homepage, which helps repeat readers, internal linking, and long-tail search coverage.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-copy">The Patch is an independent fan site. Adopt Me and Roblox belong to their respective owners.</div>
-      <nav class="nav" aria-label="Footer">
-        <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>
-        <a href="/pet-value-calculator.html">Calculator</a>
-        <a href="/market-movers.html">Market Movers</a>
+      <div><div class="footer-brand">The Patch &#128062;</div></div>
+      <nav class="footer-links">
+        <a href="/">Home</a>
+        <a href="/adopt-me.html">All Guides</a>
+        <a href="/pet-value-calculator.html">Trade Calculator</a>
+        <a href="/neon-calculator.html">Neon Calculator</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
         <a href="/about.html">About</a>
-        <a href="/methodology.html">Methodology</a>
-        <a href="/corrections.html">Corrections</a>
-        <a href="/privacy.html">Privacy</a>
-        <a href="/advertising.html">Advertising</a>
       </nav>
+      <div class="footer-social">
+        <a href="/privacy.html" title="Privacy">P</a>
+        <a href="/advertising.html" title="Advertising">A</a>
+        <a href="/parents.html" title="Parents">&#128172;</a>
+      </div>
+      <div class="footer-legal">&#169; 2026 The Patch. Not affiliated with Roblox Corporation. Adopt Me! is property of Uplift Games.</div>
     </div>
   </footer>
 
-  <script src="/assets/js/adopt-values.js"></script>
-  <script src="/assets/js/adopt-retention.js"></script>
   <script src="/assets/js/adopt-analytics.js"></script>
   <script src="/newsletter.js"></script>
   <script>
-    const toneMap = {
-      Elite: "tone-elite",
-      "Very High": "tone-very-high",
-      High: "tone-high",
-      Medium: "tone-medium",
-      Low: "tone-low",
-      Rising: "tone-rising",
-      Steady: "tone-steady",
-      Falling: "tone-falling",
-      default: "tone-medium"
-    };
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
 
-    async function bootHome() {
-      const target = document.getElementById("signal-cards");
-      const watchlistTarget = document.getElementById("watchlist-cards");
-
-      try {
-        const payload = await window.ThePatchValues.loadAdoptValues();
-        const featured = [
-          payload.petIndex["bat-dragon"],
-          payload.petIndex["giraffe"],
-          payload.petIndex["chocolate-chip-bat-dragon"]
-        ];
-
-        target.innerHTML = featured.map((pet) => `
-          <article class="card">
-            <div class="toolbar">
-              <span class="tone ${toneMap[pet.demand] || toneMap.default}">${pet.demand} demand</span>
-              <span class="tone ${toneMap[pet.trend] || toneMap.default}">${pet.trend}</span>
-            </div>
-            <div class="pet-row">
-              <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
-              <h3><a class="pet-link" href="/pets/${pet.slug}.html">${pet.name}</a></h3>
-            </div>
-            <p>${pet.notes}</p>
-            <ul class="mini-list">
-              <li><span>Default</span><span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span></li>
-              <li><span>No Potion</span><span class="value-tag">${window.ThePatchValues.formatValue(pet.values.noPotion)}</span></li>
-              <li><span>Neon</span><span class="value-tag">${window.ThePatchValues.formatValue(pet.values.neon)}</span></li>
-            </ul>
-            <div class="card-actions">
-              <a class="pill-link" href="/pets/${pet.slug}.html">Open pet page</a>
-              <a class="pill-link" href="/market-movers.html">See market board</a>
-              <button class="ghost-button watch-button ${window.ThePatchRetention.isWatched(pet.slug) ? "active" : ""}" type="button" data-slug="${pet.slug}">
-                ${window.ThePatchRetention.isWatched(pet.slug) ? "Watching" : "Watch this pet"}
-              </button>
-            </div>
-          </article>
-        `).join("");
-
-        renderWatchlist(payload, watchlistTarget);
-
-        target.addEventListener("click", (event) => {
-          const button = event.target.closest(".watch-button");
-          if (!button) {
-            return;
-          }
-
-          const slugs = window.ThePatchRetention.toggleWatchlist(button.dataset.slug);
-          updateWatchButtons(target, slugs);
-          renderWatchlist(payload, watchlistTarget);
-        });
-
-        window.addEventListener("thepatch:watchlist", () => renderWatchlist(payload, watchlistTarget));
-      } catch (error) {
-        window.ThePatchValues.renderError(target, "The shared value feed could not load. Please refresh and try again.");
-      }
-    }
-
-    function updateWatchButtons(scope, slugs) {
-      scope.querySelectorAll(".watch-button").forEach((button) => {
-        const active = slugs.includes(button.dataset.slug);
-        button.classList.toggle("active", active);
-        button.textContent = active ? "Watching" : "Watch this pet";
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = nav.style.display === 'flex';
+        nav.style.display = open ? 'none' : 'flex';
+        if (!open) {
+          nav.style.flexDirection = 'column';
+          nav.style.position = 'absolute';
+          nav.style.top = '60px';
+          nav.style.left = '0';
+          nav.style.right = '0';
+          nav.style.background = '#0d0d0f';
+          nav.style.padding = '12px 20px';
+          nav.style.borderBottom = '1px solid #2a2a35';
+          nav.style.zIndex = '99';
+        }
       });
     }
-
-    function renderWatchlist(payload, target) {
-      const slugs = window.ThePatchRetention.loadWatchlist();
-
-      if (!slugs.length) {
-        target.innerHTML = `
-          <article class="card">
-            <h3>Nothing saved yet</h3>
-            <p>Use the watch buttons on the value list or the market board to keep a quick shortlist for return visits.</p>
-            <a class="pill-link" href="/articles/adopt-me-pet-value-list-2026.html">Open the value list</a>
-          </article>
-        `;
-        return;
-      }
-
-      const pets = slugs
-        .map((slug) => payload.petIndex[slug])
-        .filter(Boolean)
-        .sort((left, right) => right.values.default - left.values.default);
-
-      target.innerHTML = pets.map((pet) => `
-        <article class="card">
-          <div class="toolbar">
-            <span class="tone ${toneMap[pet.demand] || toneMap.default}">${pet.demand} demand</span>
-            <span class="tone ${toneMap[pet.trend] || toneMap.default}">${pet.trend}</span>
-          </div>
-          <div class="pet-row">
-            <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
-            <h3><a class="pet-link" href="/pets/${pet.slug}.html">${pet.name}</a></h3>
-          </div>
-          <p>${pet.notes}</p>
-          <div class="card-actions">
-            <a class="pill-link" href="/pets/${pet.slug}.html">Open pet page</a>
-            <span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span>
-            <button class="ghost-button watch-button active" type="button" data-slug="${pet.slug}">Watching</button>
-          </div>
-        </article>
-      `).join("");
-
-      target.querySelectorAll(".watch-button").forEach((button) => {
-        button.addEventListener("click", () => {
-          window.ThePatchRetention.toggleWatchlist(button.dataset.slug);
-          renderWatchlist(payload, target);
-        });
-      });
-    }
-
-    bootHome();
   </script>
 </body>
 </html>

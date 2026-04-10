@@ -1,6 +1,8 @@
 $repoRoot = Split-Path -Parent $PSScriptRoot
 
-$htmlFiles = Get-ChildItem -Path $repoRoot -Recurse -Filter *.html | Sort-Object FullName
+$htmlFiles = Get-ChildItem -Path $repoRoot -Recurse -Filter *.html |
+  Where-Object { $_.FullName -notlike (Join-Path $repoRoot 'data\*') } |
+  Sort-Object FullName
 $issues = New-Object System.Collections.Generic.List[string]
 
 function Resolve-InternalTarget {

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-08",
+  "updatedAt": "2026-04-09",
   "version": "phase1",
   "methodology": {
     "summary": "The Patch baseline values are reviewed against major public community trackers and normalized into one consistent list for our tools.",
@@ -7,6 +7,10 @@
       {
         "name": "Adopt Me Values",
         "url": "https://adoptmevalues.app/"
+      },
+      {
+        "name": "Adopt Me Trading Values",
+        "url": "https://adoptmetradingvalues.com/"
       },
       {
         "name": "Elvebredd",
@@ -30,13 +34,13 @@
       "confidence": "High",
       "values": {
         "default": 578,
-        "noPotion": 612,
-        "neon": 1400,
-        "neonNoPotion": 1675,
-        "mega": 4300,
-        "megaNoPotion": 5200
+        "noPotion": 591,
+        "neon": 1500,
+        "neonNoPotion": 1700,
+        "mega": 4000,
+        "megaNoPotion": 4200
       },
-      "notes": "Still ahead of Shadow Dragon on the public trackers reviewed on April 8, 2026."
+      "notes": "Revalidated on April 9, 2026 against live public value pages. Bat Dragon remains ahead of Shadow Dragon and keeps the strongest base lane in the current benchmark set."
     },
     {
       "slug": "shadow-dragon",
@@ -48,13 +52,13 @@
       "confidence": "High",
       "values": {
         "default": 372,
-        "noPotion": 401,
-        "neon": 930,
-        "neonNoPotion": 1110,
-        "mega": 2880,
-        "megaNoPotion": 3490
+        "noPotion": 502,
+        "neon": 865,
+        "neonNoPotion": 1500,
+        "mega": 2000,
+        "megaNoPotion": 3100
       },
-      "notes": "Still one of the two strongest benchmark pets, but currently below Bat Dragon."
+      "notes": "Revalidated on April 9, 2026 against live public value pages. Shadow Dragon stays one of the two strongest benchmark pets, but currently below Bat Dragon."
     },
     {
       "slug": "giraffe",
@@ -102,13 +106,13 @@
       "confidence": "High",
       "values": {
         "default": 167,
-        "noPotion": 171,
-        "neon": 425,
+        "noPotion": 170,
+        "neon": 454,
         "neonNoPotion": 490,
-        "mega": 1290,
-        "megaNoPotion": 1540
+        "mega": 1600,
+        "megaNoPotion": 1900
       },
-      "notes": "Demand stays unusually sticky because players love the design as much as the rarity."
+      "notes": "Revalidated on April 9, 2026 against live public value pages. Owl demand stays unusually sticky because players love the design as much as the rarity."
     },
     {
       "slug": "parrot",
@@ -120,13 +124,13 @@
       "confidence": "High",
       "values": {
         "default": 122.5,
-        "noPotion": 129,
-        "neon": 315,
-        "neonNoPotion": 375,
-        "mega": 965,
-        "megaNoPotion": 1175
+        "noPotion": 124.5,
+        "neon": 266,
+        "neonNoPotion": 395,
+        "mega": 880,
+        "megaNoPotion": 1600
       },
-      "notes": "A strong liquidity pet that is easier to move than many similarly priced legends."
+      "notes": "Revalidated on April 9, 2026 against live public value pages. Parrot remains a strong liquidity pet that is easier to move than many similarly priced legends."
     },
     {
       "slug": "crow",
@@ -138,13 +142,13 @@
       "confidence": "High",
       "values": {
         "default": 117,
-        "noPotion": 123,
-        "neon": 300,
-        "neonNoPotion": 360,
-        "mega": 920,
-        "megaNoPotion": 1110
+        "noPotion": 117.5,
+        "neon": 281,
+        "neonNoPotion": 385,
+        "mega": 1100,
+        "megaNoPotion": 1500
       },
-      "notes": "Often trades faster than raw value alone suggests because of stable trader demand."
+      "notes": "Revalidated on April 9, 2026 against live public value pages. Crow still trades faster than raw value alone suggests because of stable trader demand."
     },
     {
       "slug": "evil-unicorn",
@@ -317,14 +321,14 @@
       "trend": "Falling",
       "confidence": "Medium",
       "values": {
-        "default": 1.25,
-        "noPotion": 1.2,
-        "neon": 4.9,
-        "neonNoPotion": 5.8,
-        "mega": 16,
-        "megaNoPotion": 18
+        "default": 2.5,
+        "noPotion": 2,
+        "neon": 11.5,
+        "neonNoPotion": 10,
+        "mega": 39,
+        "megaNoPotion": 37
       },
-      "notes": "Included as a familiar low-tier benchmark while the wider catalog is migrated."
+      "notes": "Tightened on April 9, 2026 after the calculator audit showed the old Patch number lagging live public market trackers too far."
     },
     {
       "slug": "dragon",
@@ -335,14 +339,14 @@
       "trend": "Falling",
       "confidence": "Medium",
       "values": {
-        "default": 0.9,
-        "noPotion": 0.85,
-        "neon": 3.5,
-        "neonNoPotion": 4.1,
-        "mega": 11,
-        "megaNoPotion": 13
+        "default": 1.1,
+        "noPotion": 0.4,
+        "neon": 4,
+        "neonNoPotion": 2,
+        "mega": 13,
+        "megaNoPotion": 9.5
       },
-      "notes": "Useful as a reminder that old low-demand legends do not keep pace with high-demand pets."
+      "notes": "Updated on April 9, 2026 so the entry-tier benchmark stays closer to live tracker consensus instead of the older underpriced Patch value."
     }
   ]
 }

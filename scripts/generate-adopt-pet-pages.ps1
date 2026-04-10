@@ -110,13 +110,13 @@ foreach ($pet in $values.pets) {
   $defaultValueText = Format-Value ([double]$pet.values.default)
   $noPotionValueText = Format-Value ([double]$pet.values.noPotion)
   $noPotionDeltaText = Format-Value ([double][math]::Abs([double]$pet.values.noPotion - [double]$pet.values.default))
-  $benchmarkAnswer = "{0} currently carries {1} demand with {2} confidence in The Patch benchmark file. The current signal is {3}, so it works best as a {4} reference point rather than a guaranteed server price." -f $pet.name, $pet.demand.ToLowerInvariant(), $pet.confidence.ToLowerInvariant(), $pet.trend.ToLowerInvariant(), $pet.segment.ToLowerInvariant()
+  $benchmarkAnswer = "{0} currently carries {1} demand with {2} confidence. The current signal is {3}, so it works best as a {4} reference point rather than a guaranteed server price." -f $pet.name, $pet.demand.ToLowerInvariant(), $pet.confidence.ToLowerInvariant(), $pet.trend.ToLowerInvariant(), $pet.segment.ToLowerInvariant()
   if ([double]$pet.values.noPotion -gt [double]$pet.values.default) {
-    $noPotionAnswer = "In the current benchmark file, no-potion {0} sits at {1} versus {2} for the default version, so collectors are paying about {3} more for the cleaner lane right now." -f $pet.name, $noPotionValueText, $defaultValueText, $noPotionDeltaText
+    $noPotionAnswer = "Right now, no-potion {0} sits at {1} versus {2} for the default version, so collectors are paying about {3} more for the cleaner lane." -f $pet.name, $noPotionValueText, $defaultValueText, $noPotionDeltaText
   } elseif ([double]$pet.values.noPotion -lt [double]$pet.values.default) {
-    $noPotionAnswer = "In the current benchmark file, no-potion {0} sits at {1} versus {2} for the default version, so the clean copy is slightly softer by about {3} in this lane right now." -f $pet.name, $noPotionValueText, $defaultValueText, $noPotionDeltaText
+    $noPotionAnswer = "Right now, no-potion {0} sits at {1} versus {2} for the default version, so the clean copy is slightly softer by about {3} in this lane." -f $pet.name, $noPotionValueText, $defaultValueText, $noPotionDeltaText
   } else {
-    $noPotionAnswer = "In the current benchmark file, no-potion and default {0} are benchmarked the same, which is a reminder that not every pet gets a collector premium." -f $pet.name
+    $noPotionAnswer = "Right now, no-potion and default {0} are valued the same, which is a reminder that not every pet gets a collector premium." -f $pet.name
   }
   $compareAnswer = "The best sanity checks right now are {0}. Those pages sit close to {1} in real trade conversations and help you spot whether a server is drifting too far from broader benchmark behavior." -f $relatedLabel, $pet.name
   $faqItems = @(
@@ -222,7 +222,10 @@ foreach ($pet in $values.pets) {
   <link rel="canonical" href="$canonical">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/assets/css/adopt-tools.css">
+  <link rel="stylesheet" href="/assets/css/patch-compat.css">
+  <script src="/assets/js/patch-ribbon.js"></script>
   <script type="application/ld+json">$schema</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
   <script>
@@ -241,6 +244,7 @@ foreach ($pet in $values.pets) {
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="/">Home</a>
+        <a href="/pets/" class="active">Benchmark Library</a>
         <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
         <a href="/pet-value-calculator.html">Trade Calculator</a>
         <a href="/market-movers.html">Market Movers</a>
@@ -357,7 +361,7 @@ $($relatedCards -join "`r`n")
         <div class="section-head">
           <div>
             <h2>$([System.Net.WebUtility]::HtmlEncode($pet.name)) FAQ</h2>
-            <p class="intro-copy">These quick answers are generated from the shared benchmark file so the reasoning matches the live value system.</p>
+            <p class="intro-copy">These quick answers cover demand, variants, and nearby comparison pets.</p>
           </div>
           <div class="section-actions">
             <a class="pill-link" href="/pets/">Benchmark library</a>
@@ -373,7 +377,7 @@ $($faqMarkup -join "`r`n")
 
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-copy">$([System.Net.WebUtility]::HtmlEncode($pet.name)) was last reviewed in the shared benchmark system on April 9, 2026.</div>
+      <div class="footer-copy">$([System.Net.WebUtility]::HtmlEncode($pet.name)) guide with value lanes, comparisons, and trade notes.</div>
       <nav class="nav" aria-label="Footer">
         <a href="/pets/">Benchmark Library</a>
         <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>

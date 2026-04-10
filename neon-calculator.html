@@ -3,24 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adopt Me Neon Calculator | The Patch</title>
-  <meta name="description" content="See whether it is smarter to make or buy an Adopt Me Neon or Mega Neon using the same shared value data that powers The Patch trade tools.">
+  <title>Adopt Me Neon Calculator 2026 | The Patch</title>
+  <meta name="description" content="Use the restored The Patch Neon Calculator style to compare whether it is better to build or buy a benchmark Neon or Mega Neon.">
   <meta name="theme-color" content="#08111f">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Adopt Me Neon Calculator | The Patch">
-  <meta property="og:description" content="See whether it is smarter to make or buy an Adopt Me Neon or Mega Neon using the same shared value data that powers The Patch trade tools.">
+  <meta property="og:title" content="Adopt Me Neon Calculator 2026 | The Patch">
+  <meta property="og:description" content="Classic The Patch neon calculator styling with updated benchmark data and cleaner make-versus-buy guidance.">
   <meta property="og:url" content="https://thepatchgg.github.io/neon-calculator.html">
   <meta property="og:site_name" content="The Patch">
   <meta property="og:image" content="https://thepatchgg.github.io/assets/pets/bat-dragon.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Adopt Me Neon Calculator | The Patch">
-  <meta name="twitter:description" content="See whether it is smarter to make or buy an Adopt Me Neon or Mega Neon using the same shared value data that powers The Patch trade tools.">
+  <meta name="twitter:title" content="Adopt Me Neon Calculator 2026 | The Patch">
+  <meta name="twitter:description" content="Classic The Patch neon calculator styling with updated benchmark data and cleaner make-versus-buy guidance.">
   <meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/bat-dragon.png">
   <link rel="canonical" href="https://thepatchgg.github.io/neon-calculator.html">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many pets do you need to make a Neon in Adopt Me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You need 4 pets of the same type to make a Neon, and 16 pets of the same type to make a Mega Neon."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does this calculator not use a flat 4x or 16x rule?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because the market does not price every Neon and Mega the same way. The Patch uses per-pet benchmark values so no-potion and collector premiums can be represented more honestly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are Fly and Ride values handled here?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+        "text": "The Neon calculator supports No Potion, Fly, Ride, and Fly Ride views so players can compare the most common trade lanes more easily."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    .nc-layout { max-width: 960px; margin: 0 auto; padding: 32px 20px 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+    .nc-panel, .result-card, .info-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    .nc-panel-header, .result-header { background: var(--surface2); padding: 16px 20px; border-bottom: 1px solid var(--border); }
+    .nc-panel-title, .result-title { font-size: 15px; font-weight: 800; color: var(--text); }
+    .nc-panel-body, .result-body { padding: 20px; }
+    .nc-label { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 8px; }
+    .nc-select { width: 100%; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; font-size: 14px; color: var(--text); outline: none; font-family: var(--font); margin-bottom: 16px; }
+    .nc-select:focus { border-color: var(--am); }
+    .nc-btn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+    .nc-btn { padding: 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface2); color: var(--text-muted); font-size: 13px; font-weight: 700; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .nc-btn.active.target { border-color: var(--am); background: rgba(62,207,107,0.1); color: var(--am); }
+    .nc-btn.active.lane { border-color: var(--accent); background: rgba(200,255,87,0.08); color: var(--accent); }
+    .result-hero { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+    .result-avatar { width: 64px; height: 64px; object-fit: contain; border-radius: 10px; background: var(--surface2); padding: 8px; border: 1px solid var(--border); }
+    .result-sub { font-size: 13px; color: var(--text-muted); }
+    .neon-visual { display: flex; justify-content: center; gap: 8px; padding: 16px 20px; flex-wrap: wrap; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin: 0 -20px 16px; }
+    .pet-circle { width: 42px; height: 42px; border-radius: 50%; background: var(--surface2); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; }
+    .pet-circle img { width: 24px; height: 24px; object-fit: contain; }
+    .pet-circle.filled { border-color: var(--am); background: rgba(62,207,107,0.1); box-shadow: 0 0 8px rgba(62,207,107,0.25); }
+    .neon-arrow { display: flex; align-items: center; color: var(--text-muted); font-size: 20px; }
+    .result-stat { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: var(--surface2); border-radius: 8px; margin-bottom: 10px; font-size: 13px; }
+    .result-stat strong { color: var(--text); font-size: 15px; }
+    .verdict-box { margin-top: 16px; padding: 14px; border-radius: 8px; font-size: 13px; line-height: 1.7; border: 1px solid var(--border); }
+    .verdict-box.make { background: rgba(200,255,87,0.06); border-color: rgba(200,255,87,0.18); }
+    .verdict-box.buy { background: rgba(62,207,107,0.08); border-color: rgba(62,207,107,0.18); }
+    .info-card { padding: 18px 20px; margin-top: 16px; }
+    .info-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+    .info-card p { font-size: 13px; color: var(--text-muted); line-height: 1.7; margin: 0; }
+    @media (max-width: 760px) { .nc-layout { grid-template-columns: 1fr; } }
+  </style>
+  <script src="/assets/js/patch-ribbon.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -31,258 +95,243 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="/">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>The Patch</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
+      <a href="/" class="site-logo">The <span>Patch</span> &#128062;</a>
+      <nav class="main-nav" aria-label="Primary">
         <a href="/">Home</a>
         <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
-        <a href="/pet-value-calculator.html">Trade Calculator</a>
-        <a href="/neon-calculator.html">Neon Calculator</a>
-        <a href="/adopt-me.html">Guides</a>
+        <a href="/articles/adopt-me-pet-encyclopedia.html">Pet Dex</a>
+        <a href="/articles/adopt-me-egg-guide.html">Egg Guide</a>
+        <a href="/pet-value-calculator.html">Trade Calc</a>
+        <a href="/neon-calculator.html" class="active">Neon Calc</a>
+        <a href="/trading-forum.html">Trading Board</a>
+        <a href="/adopt-me.html">All Guides</a>
       </nav>
+      <a href="https://thepatchgg.substack.com" class="header-cta" target="_blank" rel="noopener">Subscribe Free</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <main>
-    <section class="page-hero">
-      <div class="shell hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">Neon strategy beta</div>
-          <h1>Find out when making Neon actually adds value.</h1>
-          <p>
-            The old version treated Neon and Mega pricing like a fixed math problem. This one uses the same shared data
-            as the value list and trade calculator, so each benchmark pet can behave differently.
-          </p>
-          <div class="cta-row">
-            <a class="button primary" href="/pet-value-calculator.html">Compare a full trade</a>
-            <a class="button secondary" href="/articles/adopt-me-pet-value-list-2026.html">View the value list</a>
+  <div style="max-width:960px;margin:0 auto;padding:32px 20px 8px;">
+    <div style="font-size:13px;color:var(--text-muted);margin-bottom:10px;">
+      <a href="/" style="color:var(--text-muted);">Home</a> <span style="opacity:.4;margin:0 4px;">/</span> Neon Calculator
+    </div>
+    <h1 style="font-size:clamp(24px,3vw,36px);font-weight:900;letter-spacing:-0.8px;margin-bottom:8px;">Adopt Me Neon Calculator</h1>
+    <p style="font-size:15px;color:var(--text-muted);margin-bottom:0;">The older calculator style is back here too, but the underlying math now reads from the same benchmark value source as the value list and trade calculator.</p>
+  </div>
+
+  <div class="nc-layout" data-tool-name="neon-calculator">
+    <div>
+      <div class="nc-panel">
+        <div class="nc-panel-header"><div class="nc-panel-title">Build target</div></div>
+        <div class="nc-panel-body">
+          <label class="nc-label" for="petSelect">Select benchmark pet</label>
+          <select class="nc-select" id="petSelect"></select>
+          <label class="nc-label">Target</label>
+          <div class="nc-btn-grid" id="targetButtons">
+            <button class="nc-btn target active" data-target="neon" type="button">Neon<br><span style="font-size:11px;font-weight:400;">4 pets required</span></button>
+            <button class="nc-btn target" data-target="mega" type="button">Mega Neon<br><span style="font-size:11px;font-weight:400;">16 pets required</span></button>
+          </div>
+          <label class="nc-label">Potion setup</label>
+          <div class="nc-btn-grid" id="laneButtons">
+            <button class="nc-btn lane" data-lane="noPotion" type="button">No Potion</button>
+            <button class="nc-btn lane" data-lane="fly" type="button">Fly</button>
+            <button class="nc-btn lane" data-lane="ride" type="button">Ride</button>
+            <button class="nc-btn lane active" data-lane="fr" type="button">Fly Ride</button>
           </div>
         </div>
-        <aside class="hero-panel">
-          <p class="helper">What this fixes</p>
-          <ul class="signal-list">
-            <li><span>No more flat 4x and 16x assumptions</span><span class="tone tone-strong">Fixed</span></li>
-            <li><span>No-potion Neon and Mega lanes are separate</span><span class="tone tone-strong">Fixed</span></li>
-            <li><span>Aging effort is shown beside trade value</span><span class="tone tone-strong">Added</span></li>
-          </ul>
-        </aside>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="shell tool-layout" data-tool-name="neon-calculator">
-        <section class="tool-card stack">
-          <div>
-            <h2>Build calculator</h2>
-            <p class="micro-copy">Choose a benchmark pet, the lane you are building from, and whether you want a Neon or Mega Neon.</p>
-          </div>
-
-          <label>
-            <span>Pet</span>
-            <select id="pet-select"></select>
-          </label>
-
-          <div>
-            <span class="micro-copy">Build target</span>
-            <div class="choice-row" id="target-row">
-              <button class="choice-pill active" data-target="neon" type="button">Neon</button>
-              <button class="choice-pill" data-target="mega" type="button">Mega Neon</button>
-            </div>
-          </div>
-
-          <div>
-            <span class="micro-copy">Component lane</span>
-            <div class="choice-row" id="lane-row">
-              <button class="choice-pill active" data-lane="default" type="button">Trade version</button>
-              <button class="choice-pill" data-lane="noPotion" type="button">No Potion</button>
-            </div>
-          </div>
-
-          <div class="callout">
-            <strong>How to read the result</strong>
-            <p class="micro-copy">
-              Component cost is the benchmark value of the pets you need to acquire. Direct target value is what the
-              finished Neon or Mega is worth on the same scale. The gap tells you whether building adds value before you
-              even account for aging time.
-            </p>
-          </div>
-        </section>
-
-        <section class="tool-card stack">
-          <div class="pet-row">
-            <img class="pet-avatar" id="result-avatar" src="" alt="">
-            <div>
-              <h2 id="result-title">Loading benchmark pet...</h2>
-              <p class="micro-copy" id="result-subtitle">Shared market baseline</p>
-            </div>
-          </div>
-
-          <div class="visual-shell">
-            <div class="visual-checklist" id="visual-grid"></div>
-          </div>
-
-          <div class="kpi-list">
-            <div class="kpi-row"><span>Pets required</span><strong id="pets-required">4</strong></div>
-            <div class="kpi-row"><span>Acquire components</span><strong id="component-cost">0</strong></div>
-            <div class="kpi-row"><span>Direct target value</span><strong id="target-value">0</strong></div>
-            <div class="kpi-row"><span>Estimated aging time</span><strong id="age-hours">0h</strong></div>
-          </div>
-
-          <div class="status-card" id="verdict-card">
-            <strong id="verdict-title">Checking build math...</strong>
-            <span id="verdict-body">Pick a pet to see whether making or buying the finished version looks better right now.</span>
-          </div>
-        </section>
+      <div class="info-card">
+        <h3>How to use this page</h3>
+        <p>Choose the pet, choose whether you are comparing a Neon or Mega, and then decide whether you are building from a No Potion, Fly, Ride, or Fly Ride lane. The result shows component cost, direct finished value, and the estimated aging burden.</p>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="shell build-grid">
-        <article class="card">
-          <h3>When making usually wins</h3>
-          <p>
-            Lower-tier pets and strong demand pets can justify the aging effort if the finished Neon or Mega commands a
-            real premium over the parts.
-          </p>
-        </article>
-        <article class="card">
-          <h3>When buying usually wins</h3>
-          <p>
-            High-tier pets often have enough collector complexity that it is cheaper to buy the finished result than to
-            gather four or sixteen clean components yourself.
-          </p>
-        </article>
+      <div class="info-card">
+        <h3>How potion estimates work</h3>
+      <p>Use this calculator to compare No Potion, Fly, Ride, and Fly Ride lanes while you decide whether to build or buy a Neon.</p>
       </div>
-    </section>
-  </main>
+    </div>
 
-  <footer class="footer">
+    <div id="resultArea">
+      <div class="result-card">
+        <div class="result-header"><div class="result-title">Loading benchmark pet...</div></div>
+      <div class="result-body" style="font-size:13px;color:var(--text-muted);">Loading calculator data...</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:960px;margin:0 auto;padding:0 20px 64px;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+      <a href="/pet-value-calculator.html" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;text-decoration:none;">
+        <div style="font-size:24px;margin-bottom:8px;">&#128290;</div>
+        <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Trade Calculator</div>
+        <div style="font-size:12px;color:var(--am);">Check full trades &#8594;</div>
+      </a>
+      <a href="/articles/adopt-me-pet-value-list-2026.html" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;text-decoration:none;">
+        <div style="font-size:24px;margin-bottom:8px;">&#128202;</div>
+        <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Pet Value List</div>
+        <div style="font-size:12px;color:var(--am);">Open live values &#8594;</div>
+      </a>
+      <a href="/articles/adopt-me-trading-guide-2026.html" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;text-decoration:none;">
+        <div style="font-size:24px;margin-bottom:8px;">&#128214;</div>
+        <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Trading Guide</div>
+        <div style="font-size:12px;color:var(--am);">Learn the basics &#8594;</div>
+      </a>
+      <a href="/privacy.html" style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;text-decoration:none;">
+        <div style="font-size:24px;margin-bottom:8px;">P</div>
+        <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Privacy</div>
+        <div style="font-size:12px;color:var(--am);">View policy &#8594;</div>
+      </a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-copy">Benchmark pets only for now. Wider catalog Neon coverage is part of the next data expansion.</div>
-      <nav class="nav" aria-label="Footer">
-        <a href="/pet-value-calculator.html">Trade Calculator</a>
-        <a href="/articles/adopt-me-pet-value-list-2026.html">Value List</a>
-        <a href="/methodology.html">Methodology</a>
+      <div><div class="footer-brand">The Patch</div></div>
+      <nav class="footer-links">
+        <a href="/">Home</a>
+        <a href="/pet-value-calculator.html">Trade Calc</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
         <a href="/privacy.html">Privacy</a>
       </nav>
+      <div class="footer-legal">&#169; 2026 The Patch. Not affiliated with Roblox Corporation. Adopt Me! is property of Uplift Games.</div>
     </div>
   </footer>
 
   <script src="/assets/js/adopt-values.js"></script>
   <script src="/assets/js/adopt-analytics.js"></script>
   <script>
-    const state = {
-      payload: null,
-      petSlug: "bat-dragon",
-      target: "neon",
-      lane: "default"
-    };
+    const state = { payload: null, petSlug: "bat-dragon", target: "neon", lane: "fr" };
+    const ageHoursByRarity = { Common: 2, Uncommon: 3, Rare: 5, "Ultra-Rare": 8, Legendary: 10 };
 
-    const ageHoursByRarity = {
-      Common: 2,
-      Uncommon: 3,
-      Rare: 5,
-      "Ultra-Rare": 8,
-      Legendary: 10
-    };
-
-    function setActive(groupId, valueKey, value) {
-      document.querySelectorAll(`#${groupId} .choice-pill`).forEach((button) => {
-        button.classList.toggle("active", button.dataset[valueKey] === value);
-      });
+    function midpoint(low, high) {
+      return low + ((high - low) / 2);
     }
 
-    function getTargetVariant() {
+    function getPotionLabel() {
+      if (state.lane === "noPotion") return "No Potion";
+      if (state.lane === "fly") return "Fly";
+      if (state.lane === "ride") return "Ride";
+      return "Fly Ride";
+    }
+
+    function getComponentPair(pet) {
+      return {
+        noPotion: window.ThePatchValues.getVariantValue(pet, "noPotion"),
+        fr: window.ThePatchValues.getVariantValue(pet, "default")
+      };
+    }
+
+    function getFinishedPair(pet) {
       if (state.target === "neon") {
-        return state.lane === "noPotion" ? "neonNoPotion" : "neon";
+        return {
+          noPotion: window.ThePatchValues.getVariantValue(pet, "neonNoPotion"),
+          fr: window.ThePatchValues.getVariantValue(pet, "neon")
+        };
       }
-      return state.lane === "noPotion" ? "megaNoPotion" : "mega";
+
+      return {
+        noPotion: window.ThePatchValues.getVariantValue(pet, "megaNoPotion"),
+        fr: window.ThePatchValues.getVariantValue(pet, "mega")
+      };
     }
 
-    function renderVisual(slug, count) {
-      const grid = document.getElementById("visual-grid");
-      grid.classList.toggle("mega", count === 16);
-      grid.innerHTML = Array.from({ length: count }).map(() => `
-        <div class="pet-token">
-          <img src="/assets/pets/${slug}.png" alt="">
-        </div>
-      `).join("");
+    function getLaneValue(pair) {
+      if (state.lane === "noPotion") return pair.noPotion;
+      if (state.lane === "fly" || state.lane === "ride") return midpoint(pair.noPotion, pair.fr);
+      return pair.fr;
+    }
+
+    function renderVisual(slug) {
+      if (state.target === "neon") {
+        return `<div class="neon-visual">${Array.from({ length: 4 }).map(() => `<div class="pet-circle filled"><img src="/assets/pets/${slug}.png" alt=""></div>`).join("")}<div class="neon-arrow">&#8594;</div><div class="pet-circle filled"><img src="/assets/pets/${slug}.png" alt=""></div></div>`;
+      }
+      return `<div class="neon-visual">${Array.from({ length: 4 }).map(() => `<div class="pet-circle filled"><img src="/assets/pets/${slug}.png" alt=""></div>`).join("")}<div class="neon-arrow">&#8595;</div>${Array.from({ length: 4 }).map(() => `<div class="pet-circle filled"><img src="/assets/pets/${slug}.png" alt=""></div>`).join("")}</div>`;
     }
 
     function renderResult() {
       const pet = state.payload.petIndex[state.petSlug];
       const needed = state.target === "mega" ? 16 : 4;
-      const sourceValue = window.ThePatchValues.getVariantValue(pet, state.lane);
-      const directValue = window.ThePatchValues.getVariantValue(pet, getTargetVariant());
+      const sourceValue = getLaneValue(getComponentPair(pet));
+      const directValue = getLaneValue(getFinishedPair(pet));
       const componentCost = sourceValue * needed;
       const delta = directValue - componentCost;
       const ageHours = (ageHoursByRarity[pet.rarity] || 6) * needed;
-      const verdictCard = document.getElementById("verdict-card");
+      const verdictClass = delta >= 0 ? "make" : "buy";
+      const verdictTitle = delta >= 0 ? "Building adds value on the benchmark board" : "Buying direct is cleaner on the benchmark board";
+      const potionNote = state.lane === "fly" || state.lane === "ride"
+        ? ` ${getPotionLabel()} uses a midpoint estimate between No Potion and Fly Ride benchmark lanes.`
+        : "";
+      const verdictBody = delta >= 0
+        ? `The finished ${state.target} benchmarks about ${window.ThePatchValues.formatValue(delta)} above the cost of the components. The main tradeoff is time: this route asks for roughly ${ageHours} hours of aging work.${potionNote}`
+        : `The components benchmark about ${window.ThePatchValues.formatValue(Math.abs(delta))} above the finished ${state.target}. Unless you already own most of the pieces, buying direct is usually the cleaner move.${potionNote}`;
 
-      document.getElementById("result-avatar").src = `/assets/pets/${pet.slug}.png`;
-      document.getElementById("result-avatar").alt = pet.name;
-      document.getElementById("result-title").textContent = `${pet.name} ${state.target === "mega" ? "Mega" : "Neon"} plan`;
-      document.getElementById("result-subtitle").textContent = `${pet.demand} demand - ${pet.trend} trend`;
-      document.getElementById("pets-required").textContent = needed;
-      document.getElementById("component-cost").textContent = window.ThePatchValues.formatValue(componentCost);
-      document.getElementById("target-value").textContent = window.ThePatchValues.formatValue(directValue);
-      document.getElementById("age-hours").textContent = `${ageHours}h`;
-
-      renderVisual(pet.slug, needed);
-
-      if (delta > 0) {
-        verdictCard.className = "status-card";
-        document.getElementById("verdict-title").textContent = "Making looks better on paper";
-        document.getElementById("verdict-body").textContent =
-          `The finished ${state.target} benchmarks about ${window.ThePatchValues.formatValue(delta)} above the cost of ${needed} ${state.lane === "noPotion" ? "no-potion" : "trade-version"} components. The real question is whether the aging time is worth it for you.`;
-      } else if (delta < 0) {
-        verdictCard.className = "status-card error";
-        document.getElementById("verdict-title").textContent = "Buying direct looks cleaner";
-        document.getElementById("verdict-body").textContent =
-          `The components benchmark about ${window.ThePatchValues.formatValue(Math.abs(delta))} above the finished ${state.target}. Unless you already own most of the parts, buying the direct result usually makes more sense.`;
-      } else {
-        verdictCard.className = "status-card";
-        document.getElementById("verdict-title").textContent = "It is basically a wash";
-        document.getElementById("verdict-body").textContent =
-          "On the current shared baseline, building and buying come out about the same. Use demand and your own aging tolerance as the tiebreaker.";
-      }
+      document.getElementById("resultArea").innerHTML = `
+        <div class="result-card">
+          <div class="result-header"><div class="result-title">${pet.name} ${state.target === "mega" ? "Mega Neon" : "Neon"} plan</div></div>
+          <div class="result-body">
+            <div class="result-hero">
+              <img class="result-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
+              <div>
+                <div style="font-size:16px;font-weight:800;color:var(--text);">${pet.name}</div>
+                <div class="result-sub">${pet.segment} &#183; ${pet.demand} demand &#183; ${pet.trend}</div>
+              </div>
+            </div>
+            ${renderVisual(pet.slug)}
+            <div class="result-stat"><span>Pets required</span><strong>${needed}</strong></div>
+            <div class="result-stat"><span>Potion lane</span><strong>${getPotionLabel()}</strong></div>
+            <div class="result-stat"><span>Acquire components</span><strong>${window.ThePatchValues.formatValue(componentCost)}</strong></div>
+            <div class="result-stat"><span>Finished ${state.target}</span><strong>${window.ThePatchValues.formatValue(directValue)}</strong></div>
+            <div class="result-stat"><span>Estimated aging time</span><strong>${ageHours}h</strong></div>
+            <div class="verdict-box ${verdictClass}"><strong style="display:block;color:var(--text);margin-bottom:6px;">${verdictTitle}</strong>${verdictBody}</div>
+          </div>
+        </div>
+      `;
     }
 
     async function boot() {
-      try {
-        state.payload = await window.ThePatchValues.loadAdoptValues();
-        const select = document.getElementById("pet-select");
-        select.innerHTML = state.payload.pets.map((pet) => `<option value="${pet.slug}">${pet.name}</option>`).join("");
-        select.value = state.petSlug;
-
-        select.addEventListener("change", () => {
-          state.petSlug = select.value;
+      state.payload = await window.ThePatchValues.loadAdoptValues();
+      const select = document.getElementById("petSelect");
+      select.innerHTML = state.payload.pets.map((pet) => `<option value="${pet.slug}">${pet.name}</option>`).join("");
+      select.value = state.petSlug;
+      select.addEventListener("change", () => { state.petSlug = select.value; renderResult(); });
+      document.querySelectorAll("#targetButtons .nc-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.target = button.dataset.target;
+          document.querySelectorAll("#targetButtons .nc-btn").forEach((item) => item.classList.remove("active"));
+          button.classList.add("active");
           renderResult();
         });
-
-        document.querySelectorAll("#target-row .choice-pill").forEach((button) => {
-          button.addEventListener("click", () => {
-            state.target = button.dataset.target;
-            setActive("target-row", "target", state.target);
-            renderResult();
-          });
+      });
+      document.querySelectorAll("#laneButtons .nc-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.lane = button.dataset.lane;
+          document.querySelectorAll("#laneButtons .nc-btn").forEach((item) => item.classList.remove("active"));
+          button.classList.add("active");
+          renderResult();
         });
+      });
+      renderResult();
+    }
 
-        document.querySelectorAll("#lane-row .choice-pill").forEach((button) => {
-          button.addEventListener("click", () => {
-            state.lane = button.dataset.lane;
-            setActive("lane-row", "lane", state.lane);
-            renderResult();
-          });
-        });
-
-        renderResult();
-      } catch (error) {
-        const target = document.querySelector(".tool-layout");
-        window.ThePatchValues.renderError(target, "The shared Neon data could not load. Please refresh and try again.");
-      }
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = nav.style.display === 'flex';
+        nav.style.display = open ? 'none' : 'flex';
+        if (!open) {
+          nav.style.flexDirection = 'column';
+          nav.style.position = 'absolute';
+          nav.style.top = '60px';
+          nav.style.left = '0';
+          nav.style.right = '0';
+          nav.style.background = '#0d0d0f';
+          nav.style.padding = '12px 20px';
+          nav.style.borderBottom = '1px solid #2a2a35';
+          nav.style.zIndex = '99';
+        }
+      });
     }
 
     boot();

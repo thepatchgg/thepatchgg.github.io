@@ -1,258 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adopt Me Trade Calculator | The Patch</title>
-  <meta name="description" content="Compare both sides of an Adopt Me trade with a shared value source that respects no-potion premiums and real benchmark pets.">
-  <meta name="theme-color" content="#08111f">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Adopt Me Trade Calculator | The Patch">
-  <meta property="og:description" content="Compare both sides of an Adopt Me trade with a shared value source that respects no-potion premiums and real benchmark pets.">
-  <meta property="og:url" content="https://thepatchgg.github.io/pet-value-calculator.html">
-  <meta property="og:site_name" content="The Patch">
-  <meta property="og:image" content="https://thepatchgg.github.io/assets/pets/shadow-dragon.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Adopt Me Trade Calculator | The Patch">
-  <meta name="twitter:description" content="Compare both sides of an Adopt Me trade with a shared value source that respects no-potion premiums and real benchmark pets.">
-  <meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/shadow-dragon.png">
-  <link rel="canonical" href="https://thepatchgg.github.io/pet-value-calculator.html">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-KXQR564341');
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Adopt Me Trade Calculator 2026 | The Patch</title>
+<meta name="description" content="Use the classic The Patch trade calculator layout with a restored 700+ pet picker, full potion toggles, updated benchmark pet values, and working local pet images.">
+<meta name="theme-color" content="#08111f">
+<meta property="og:title" content="Adopt Me Trade Calculator 2026 - The Patch">
+<meta property="og:description" content="Compare Adopt Me trades with the classic slot-based calculator feel, a restored 700+ pet picker, full potion toggles, and updated benchmark anchor values.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thepatchgg.github.io/pet-value-calculator.html">
+<meta property="og:site_name" content="The Patch">
+<meta property="og:image" content="https://thepatchgg.github.io/assets/pets/shadow-dragon.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Adopt Me Trade Calculator 2026 - The Patch">
+<meta name="twitter:description" content="Classic slot-based calculator layout with a restored 700+ pet picker, full potion toggles, updated benchmark values, and working local pet art.">
+<meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/shadow-dragon.png">
+<link rel="canonical" href="https://thepatchgg.github.io/pet-value-calculator.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Adopt Me Trade Calculator",
+  "description": "Classic The Patch trade calculator with updated benchmark values and variant-aware comparisons.",
+  "url": "https://thepatchgg.github.io/pet-value-calculator.html",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Web",
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Patch"
+  }
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0d0d0f;--surface:#16161a;--surface2:#1e1e24;--border:#2a2a35;
+  --text:#e8e8f0;--text-muted:#888898;--accent:#c8ff57;--accent-dim:rgba(200,255,87,.12);
+  --red:#f85149;--green:#3fb950;--blue:#58a6ff;
+  --font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --radius:8px;--max-w:1120px;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(13,13,15,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 20px}
+.header-inner{max-width:var(--max-w);margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.site-logo{font-size:20px;font-weight:800;letter-spacing:-.5px;color:var(--accent);white-space:nowrap}
+.site-logo span{color:var(--text)}
+.main-nav{display:flex;gap:4px}
+.main-nav a{font-size:14px;font-weight:500;color:var(--text-muted);padding:6px 12px;border-radius:var(--radius);transition:color .15s,background .15s}
+.main-nav a:hover{color:var(--text);background:var(--surface2)}
+.main-nav a.active{color:var(--accent)}
+.header-cta{background:var(--accent);color:#0d0d0f;font-size:13px;font-weight:700;padding:7px 16px;border-radius:20px;white-space:nowrap;transition:opacity .15s}
+.header-cta:hover{opacity:.88}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px}
+.page-hero{max-width:var(--max-w);margin:0 auto;padding:28px 20px 14px}
+.page-hero h1{font-size:1.75rem;font-weight:800;margin-bottom:4px}
+.page-hero p{color:var(--text-muted);font-size:.9rem}
+.hero-note{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin:.35rem 0 .8rem}
+.calc-wrap{max-width:var(--max-w);margin:0 auto;padding:0 20px 60px;display:grid;grid-template-columns:1fr 210px 1fr;gap:14px;align-items:start}
+.trade-panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.panel-head{padding:12px 16px;font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.panel-head.give{color:var(--blue)}
+.panel-head.recv{color:var(--green)}
+.panel-count{color:var(--text-muted);font-size:.72rem;font-weight:400;margin-left:auto}
+.trade-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:10px}
+.slot{aspect-ratio:1;background:var(--surface2);border:1.5px dashed var(--border);border-radius:10px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;transition:border-color .15s,background .15s;overflow:hidden;min-height:88px}
+.slot.empty:hover{border-color:var(--accent);background:rgba(200,255,87,.04)}
+.slot-empty-icon{font-size:1.6rem;color:var(--text-muted);opacity:.35;line-height:1}
+.slot-empty-lbl{font-size:.58rem;color:var(--text-muted);opacity:.45;margin-top:2px}
+.slot.filled{border-style:solid;border-color:var(--border);cursor:default;padding:5px 4px;gap:3px;justify-content:flex-start}
+.slot-img{width:46px;height:46px;object-fit:contain;flex-shrink:0}
+.slot-name{font-size:.56rem;font-weight:600;color:var(--text);text-align:center;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.2}
+.slot-val{font-size:.62rem;color:var(--accent);font-weight:700;line-height:1}
+.slot-toggles{display:flex;flex-direction:column;gap:2px;width:100%}
+.tog-row{display:flex;gap:2px;justify-content:center}
+.tog{padding:1px 3px;border-radius:4px;border:1px solid var(--border);font-size:.5rem;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .1s;white-space:nowrap;line-height:1.4}
+.tog.sel{border-color:var(--accent);background:var(--accent-dim);color:var(--accent)}
+.tog:disabled{opacity:.35;cursor:not-allowed}
+.slot-remove{position:absolute;top:3px;right:3px;background:rgba(248,81,73,.12);border:1px solid rgba(248,81,73,.3);color:var(--red);cursor:pointer;font-size:.6rem;border-radius:4px;padding:1px 4px;line-height:1;transition:opacity .15s;opacity:0}
+.slot.filled:hover .slot-remove{opacity:1}
+.verdict-panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 12px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
+.vbar{display:flex;gap:5px;justify-content:center}
+.vbar-item{padding:3px 9px;border-radius:12px;font-size:.62rem;font-weight:700;letter-spacing:.06em;transition:all .2s}
+.vbar-win{color:var(--green)}
+.vbar-fair{color:var(--text-muted)}
+.vbar-lose{color:var(--red)}
+.vbar-active{background:rgba(255,255,255,.1);color:var(--text)!important}
+.verdict-label{font-size:.92rem;font-weight:800;letter-spacing:.03em;padding:6px 14px;border-radius:20px;transition:all .3s}
+.verdict-pts{font-size:2.2rem;font-weight:900;line-height:1;transition:all .3s}
+.verdict-sub{font-size:.65rem;color:var(--text-muted)}
+.balance-wrap{width:100%;height:7px;background:var(--surface2);border-radius:4px;overflow:hidden;position:relative}
+.balance-fill{position:absolute;height:100%;background:var(--accent);border-radius:4px;transition:all .4s;width:0}
+.trade-totals{display:flex;justify-content:space-between;width:100%;font-size:.68rem;color:var(--text-muted)}
+.clear-btn{background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);border-radius:8px;padding:7px 14px;font-size:.76rem;cursor:pointer;transition:all .15s;width:100%}
+.clear-btn:hover{border-color:var(--red);color:var(--red)}
+.verdict-note{font-size:.55rem;color:var(--text-muted)}
+.vHUGEWIN{color:#1b5e20;background:rgba(27,94,32,.15)}
+.vBIGWIN{color:#2e7d32;background:rgba(46,125,50,.15)}
+.vWIN{color:#388e3c;background:rgba(56,142,60,.15)}
+.vSLIGHTWIN{color:#66bb6a;background:rgba(102,187,106,.15)}
+.vFAIR{color:var(--text-muted);background:var(--surface2)}
+.vSLIGHTLOSS{color:#ef9a9a;background:rgba(239,154,154,.1)}
+.vLOSS{color:#e53935;background:rgba(229,57,53,.1)}
+.vBIGLOSS{color:#c62828;background:rgba(198,40,40,.1)}
+.vHUGELOSS{color:#b71c1c;background:rgba(183,28,28,.1)}
+.picker-overlay{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:200;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.picker-overlay[hidden]{display:none!important}
+.picker-modal{background:var(--surface);border:1px solid var(--border);border-radius:14px;width:min(620px,95vw);max-height:82vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.6)}
+.picker-top{display:flex;align-items:center;gap:10px;padding:14px 14px 10px;border-bottom:1px solid var(--border)}
+.picker-top h3{font-size:.9rem;font-weight:700;white-space:nowrap}
+.picker-search{flex:1;background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:7px 12px;font-size:.85rem;outline:none;min-width:0}
+.picker-search:focus{border-color:var(--accent)}
+.picker-close{background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);cursor:pointer;font-size:.82rem;border-radius:6px;padding:6px 11px;flex-shrink:0;transition:all .15s}
+.picker-close:hover{color:var(--text);border-color:var(--text-muted)}
+.picker-filters{display:flex;gap:6px;padding:10px 14px;flex-wrap:wrap;border-bottom:1px solid var(--border)}
+.f-btn{padding:4px 12px;border-radius:16px;border:1px solid var(--border);font-size:.73rem;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .12s}
+.f-btn.active{border-color:var(--accent);background:var(--accent-dim);color:var(--accent)}
+.picker-grid-wrap{overflow-y:auto;flex:1}
+.picker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:12px 14px}
+.pet-tile{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:8px 4px 6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .12s}
+.pet-tile:hover{border-color:var(--accent);background:rgba(200,255,87,.06);transform:translateY(-1px)}
+.pet-tile img{width:52px;height:52px;object-fit:contain;border-radius:6px}
+.pt-name{font-size:.58rem;font-weight:600;text-align:center;color:var(--text);line-height:1.2;width:100%}
+.pt-rar{font-size:.52rem;padding:1px 6px;border-radius:10px}
+.rLegendary{color:#ffd700;background:rgba(255,215,0,.12)}
+.rUltraRare{color:#b39ddb;background:rgba(179,157,219,.12)}
+.rRare{color:#4dd0e1;background:rgba(77,208,225,.12)}
+.rUncommon{color:#81c784;background:rgba(129,199,132,.12)}
+.rCommon{color:#bdbdbd;background:rgba(189,189,189,.12)}
+.status-card{max-width:var(--max-w);margin:0 auto 24px;padding:14px 20px;border:1px solid var(--border);background:var(--surface);border-radius:12px;color:var(--text-muted);font-size:.82rem}
+.status-card strong{color:var(--text)}
+.site-footer{border-top:1px solid var(--border);padding:40px 20px;color:var(--text-muted)}
+.footer-inner{max-width:var(--max-w);margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
+.footer-brand{font-weight:800;color:var(--accent);font-size:16px}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{font-size:14px;transition:color .15s}
+.footer-links a:hover{color:var(--text)}
+.footer-legal{width:100%;font-size:12px;padding-top:20px;border-top:1px solid var(--border)}
+@media(max-width:720px){
+  .calc-wrap{grid-template-columns:1fr;padding:0 12px 40px}
+  .picker-grid{grid-template-columns:repeat(3,1fr)}
+  .main-nav,.header-cta{display:none}
+  .nav-toggle{display:flex}
+}
+</style>
+<script src="/assets/js/patch-ribbon.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KXQR564341"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KXQR564341');
+</script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="/">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>The Patch</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="/">Home</a>
-        <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
-        <a href="/pet-value-calculator.html">Trade Calculator</a>
-        <a href="/neon-calculator.html">Neon Calculator</a>
-      </nav>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">The <span>Patch</span> &#128062;</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
+      <a href="/articles/adopt-me-pet-encyclopedia.html">Pet Dex</a>
+      <a href="/articles/adopt-me-egg-guide.html">Egg Guide</a>
+      <a href="/pet-value-calculator.html" class="active">Trade Calc</a>
+      <a href="/neon-calculator.html">Neon Calc</a>
+      <a href="/trading-forum.html">Trading Board</a>
+      <a href="/adopt-me.html">All Guides</a>
+    </nav>
+    <a href="https://thepatchgg.substack.com" class="header-cta" target="_blank" rel="noopener">Subscribe Free</a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <h1>&#128014; Adopt Me Trade Calculator</h1>
+  <p class="hero-note">&#128197; Updated April 8, 2026</p>
+  <p>Classic slot-based calculator feel, a 700+ pet picker, full potion toggles, and local pet images that keep the trade view easy to use.</p>
+</div>
+
+<div class="status-card">
+  <strong>Coverage:</strong> this calculator includes <span id="coverage-count">700+</span> pets.
+  High-traffic pets have their latest value lanes, while <span id="tracker-audit-count">684</span> additional pets are supported with current reference values.
+  Another <span id="manual-audit-count">12</span> edge-case pets are filled in manually, leaving <span id="audit-unmatched">0</span> unmatched.
+</div>
+
+<div class="calc-wrap" data-tool-name="trade-calculator">
+  <div class="trade-panel">
+    <div class="panel-head give">&#11014;&#65039; You Give <span class="panel-count" id="give-count">0 pets</span></div>
+    <div class="trade-grid" id="give-grid"></div>
+  </div>
+
+  <div class="verdict-panel">
+    <div class="vbar">
+      <span class="vbar-item vbar-win" id="vbar-win">WIN</span>
+      <span class="vbar-item vbar-fair vbar-active" id="vbar-fair">FAIR</span>
+      <span class="vbar-item vbar-lose" id="vbar-lose">LOSE</span>
     </div>
-  </header>
+    <div class="verdict-label vFAIR" id="v-label">FAIR TRADE</div>
+    <div class="verdict-pts" id="v-pts" style="color:var(--text-muted)">&#177;0</div>
+    <div class="verdict-sub">point difference</div>
+    <div class="balance-wrap"><div class="balance-fill" id="v-bar"></div></div>
+    <div class="trade-totals"><span id="v-give">Give: 0</span><span id="v-recv">Recv: 0</span></div>
+    <button class="clear-btn" id="clear-btn">&#128465; Clear All</button>
+    <div class="verdict-note">Potion row: No Pot, Fly, Ride, Fly Ride &middot; benchmark pets use Patch values, matched long-tail pets use audited live tracker lanes</div>
+  </div>
 
-  <main>
-    <section class="page-hero">
-      <div class="shell hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">Calculator beta</div>
-          <h1>Compare real benchmark trades, not fake multiplier math.</h1>
-          <p>
-            This calculator uses the same data file as the homepage and value list. It also treats no-potion high tiers
-            as separate variants, which fixes one of the biggest logic errors on the old version.
-          </p>
-        </div>
-        <aside class="hero-panel">
-          <p class="helper">How to use it</p>
-          <ul class="signal-list">
-            <li><span>Pick pets and variants on each side</span><span class="tone tone-strong">Step 1</span></li>
-            <li><span>Use quantity for duplicates or multiple adds</span><span class="tone tone-strong">Step 2</span></li>
-            <li><span>Read the fairness note, then use demand as the tiebreaker</span><span class="tone tone-strong">Step 3</span></li>
-          </ul>
-        </aside>
-      </div>
-    </section>
+  <div class="trade-panel">
+    <div class="panel-head recv">&#11015;&#65039; You Receive <span class="panel-count" id="recv-count">0 pets</span></div>
+    <div class="trade-grid" id="recv-grid"></div>
+  </div>
+</div>
 
-    <section class="section">
-      <div class="shell tool-card" data-tool-name="trade-calculator">
-        <div class="trade-grid">
-          <section class="trade-side">
-            <h2>You are offering</h2>
-            <div class="line-items" id="left-lines"></div>
-            <button class="secondary" id="add-left" type="button">Add another pet</button>
-            <div class="trade-total">
-              <span>Total</span>
-              <span id="left-total">0</span>
-            </div>
-          </section>
-
-          <section class="trade-side">
-            <h2>You want</h2>
-            <div class="line-items" id="right-lines"></div>
-            <button class="secondary" id="add-right" type="button">Add another pet</button>
-            <div class="trade-total">
-              <span>Total</span>
-              <span id="right-total">0</span>
-            </div>
-          </section>
-        </div>
-
-        <div class="summary-grid">
-          <article class="summary-card">
-            <h3>Fairness snapshot</h3>
-            <div class="summary-total">
-              <span>Verdict</span>
-              <span id="verdict">Waiting for selections</span>
-            </div>
-            <p class="helper" id="difference-note">
-              Add pets on both sides to see the value gap and a quick fairness read.
-            </p>
-          </article>
-          <article class="summary-card">
-            <h3>What changed from the old tool</h3>
-            <p>
-              Potion and neon upgrades are no longer guessed with flat multipliers. Each supported pet now has its own
-              variant-aware values so Bat Dragon and Shadow Dragon behave more like the real market.
-            </p>
-          </article>
-          <article class="summary-card">
-            <h3>Coverage note</h3>
-            <p>
-              This beta covers the benchmark pets most players use to anchor trades. The wider pet catalog will keep
-              expanding from the same shared source instead of being pasted into separate pages by hand.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-copy">The Patch benchmark tool is for guidance. Server-by-server demand can still swing a trade.</div>
-      <nav class="nav" aria-label="Footer">
-        <a href="/">Home</a>
-        <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>
-        <a href="/methodology.html">Methodology</a>
-        <a href="/privacy.html">Privacy</a>
-      </nav>
+<div class="picker-overlay" id="picker" hidden>
+  <div class="picker-modal">
+    <div class="picker-top">
+      <h3>Select a Pet</h3>
+      <input type="text" class="picker-search" id="picker-search" placeholder="Search 700+ pets..." autocomplete="off">
+      <button class="picker-close" id="picker-close">&#10005; Close</button>
     </div>
-  </footer>
+    <div class="picker-filters" id="picker-filters"></div>
+    <div class="picker-grid-wrap">
+      <div class="picker-grid" id="picker-grid"></div>
+    </div>
+  </div>
+</div>
 
-  <script src="/assets/js/adopt-values.js"></script>
-  <script src="/assets/js/adopt-analytics.js"></script>
-  <script>
-    const state = {
-      payload: null,
-      rows: {
-        left: [],
-        right: []
-      }
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><div class="footer-brand">The Patch &#128062;</div></div>
+    <nav class="footer-links">
+      <a href="/">Home</a>
+      <a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a>
+      <a href="/neon-calculator.html">Neon Calculator</a>
+      <a href="/methodology.html">Methodology</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <div class="footer-legal">&#169; 2026 The Patch. Benchmark values are guidance only and can still move with live demand.</div>
+  </div>
+</footer>
+
+<script src="/assets/js/adopt-values.js"></script>
+<script src="/assets/js/adopt-analytics.js"></script>
+<script>
+var IMAGE_FALLBACK = "/favicon.svg";
+var LEGACY_DATA_PATH = "/data/adopt-me-calculator-values.json";
+var OVERRIDE_DATA_PATH = "/data/adopt-me-calculator-overrides.json";
+var SLOTS = 9;
+var STAGE_OPTS = [
+  {label:"Normal", key:"default"},
+  {label:"Neon", key:"neon"},
+  {label:"Mega", key:"mega"}
+];
+var POTION_OPTS = [
+  {label:"No Pot", key:"noPotion"},
+  {label:"Fly", key:"fly"},
+  {label:"Ride", key:"ride"},
+  {label:"Fly Ride", key:"flyRide"}
+];
+var VERDICTS = [
+  {pct:0.35, cls:"vHUGEWIN", win:"HUGE WIN", lose:"HUGE LOSS"},
+  {pct:0.22, cls:"vBIGWIN", win:"BIG WIN", lose:"BIG LOSS"},
+  {pct:0.12, cls:"vWIN", win:"WIN", lose:"LOSS"},
+  {pct:0.06, cls:"vSLIGHTWIN", win:"SLIGHT WIN", lose:"SLIGHT LOSS"},
+  {pct:0, cls:"vFAIR", win:"FAIR TRADE", lose:"FAIR TRADE"}
+];
+var state = {
+  payload: null,
+  legacyPayload: null,
+  overridePayload: null,
+  pets: [],
+  givePets: newArr(),
+  recvPets: newArr(),
+  activePicker: null,
+  pickerFilter: "all",
+  pickerSearch: ""
+};
+
+function newArr(){ var a=[]; for(var i=0;i<SLOTS;i++) a.push(null); return a; }
+function sideArr(side){ return side==="give" ? state.givePets : state.recvPets; }
+function slugImage(slug){ return "/assets/pets/" + slug + ".png"; }
+function petImage(pet){ return pet.image || slugImage(pet.slug); }
+function fmt(n){ return window.ThePatchValues ? window.ThePatchValues.formatValue(n) : String(n); }
+function normalizeSegment(segment){ return segment.toLowerCase().replace(/[^a-z0-9]+/g, "-"); }
+function normalizeRarity(rarity){
+  var map = { l:"Legendary", ur:"Ultra-Rare", r:"Rare", u:"Uncommon", c:"Common" };
+  return map[String(rarity || "").toLowerCase()] || rarity;
+}
+function potionMultiplier(key){
+  if (key === "flyRide") return 2;
+  if (key === "fly" || key === "ride") return 1.5;
+  return 1;
+}
+function stageMultiplier(key){
+  if (key === "mega") return 16;
+  if (key === "neon") return 4;
+  return 1;
+}
+function prettyRarity(rarity){ return rarity.replace(/-/g, ""); }
+function benchmarkStageLane(pet, stageKey){
+  if (stageKey === "mega") {
+    return {
+      noPotion: pet.values.megaNoPotion ?? pet.values.mega ?? pet.values.default,
+      flyRide: pet.values.mega ?? pet.values.default
     };
+  }
+  if (stageKey === "neon") {
+    return {
+      noPotion: pet.values.neonNoPotion ?? pet.values.neon ?? pet.values.default,
+      flyRide: pet.values.neon ?? pet.values.default
+    };
+  }
+  return {
+    noPotion: pet.values.noPotion ?? pet.values.default,
+    flyRide: pet.values.default
+  };
+}
+function interpolatePotion(noPotionValue, flyRideValue, potionKey){
+  if (potionKey === "noPotion") return noPotionValue;
+  if (potionKey === "flyRide") return flyRideValue;
+  return noPotionValue + ((flyRideValue - noPotionValue) * 0.7);
+}
+function resolveBenchmarkValue(pet, entry){
+  var lane = benchmarkStageLane(pet, entry.stage.key);
+  return interpolatePotion(lane.noPotion, lane.flyRide, entry.potion.key);
+}
+function resolveOverrideValue(pet, entry){
+  var stage = pet.matrix && pet.matrix[entry.stage.key];
+  if (!stage) return 0;
+  return stage[entry.potion.key] ?? stage.noPotion ?? 0;
+}
+function resolveValue(entry){
+  var pet = entry.pet;
+  if (!pet || !pet.values) return 0;
+  if (pet.source === "override") {
+    return resolveOverrideValue(pet, entry);
+  }
+  if (pet.source === "benchmark") {
+    return resolveBenchmarkValue(pet, entry);
+  }
+  return pet.values.default * stageMultiplier(entry.stage.key) * potionMultiplier(entry.potion.key);
+}
+function loadLegacyCatalog() {
+  return fetch(LEGACY_DATA_PATH, { cache: "no-store" }).then(function(response){
+    if (!response.ok) throw new Error("Unable to load calculator catalog: " + response.status);
+    return response.json();
+  });
+}
+function loadOverrideCatalog() {
+  return fetch(OVERRIDE_DATA_PATH, { cache: "no-store" }).then(function(response){
+    if (!response.ok) throw new Error("Unable to load override catalog: " + response.status);
+    return response.json();
+  });
+}
+function mergeCatalog(benchmarkPayload, legacyPayload, overridePayload) {
+  var merged = [];
+  var seen = {};
+  var benchmarkIndex = benchmarkPayload.petIndex || {};
+  var overrideIndex = {};
 
-    function createLineItem(side) {
-      const wrapper = document.createElement("div");
-      wrapper.className = "line-item";
+  (overridePayload.pets || []).forEach(function(pet){
+    overrideIndex[pet.slug] = pet;
+  });
 
-      const petSelect = document.createElement("select");
-      const variantSelect = document.createElement("select");
-      const qtyInput = document.createElement("input");
-
-      qtyInput.type = "number";
-      qtyInput.min = "1";
-      qtyInput.value = "1";
-      qtyInput.inputMode = "numeric";
-
-      petSelect.innerHTML = [
-        '<option value="">Choose a pet</option>',
-        ...state.payload.pets.map((pet) => `<option value="${pet.slug}">${pet.name}</option>`)
-      ].join("");
-
-      variantSelect.innerHTML = '<option value="default">Default</option>';
-
-      petSelect.addEventListener("change", () => {
-        const pet = state.payload.petIndex[petSelect.value];
-        if (!pet) {
-          variantSelect.innerHTML = '<option value="default">Default</option>';
-          updateTotals();
-          return;
+  legacyPayload.pets.forEach(function(legacyPet){
+    var benchmarkPet = benchmarkIndex[legacyPet.slug];
+    var overridePet = overrideIndex[legacyPet.slug];
+    var pet = overridePet
+      ? {
+          slug: legacyPet.slug,
+          name: overridePet.name || legacyPet.name,
+          rarity: normalizeRarity(legacyPet.rarity),
+          image: legacyPet.image || slugImage(legacyPet.slug),
+          source: "override",
+          matrix: overridePet.values,
+          values: { default: (overridePet.values.default && overridePet.values.default.noPotion) || legacyPet.legacyValue }
         }
+      : benchmarkPet
+      ? Object.assign({}, benchmarkPet, { image: legacyPet.image || slugImage(benchmarkPet.slug), source: "benchmark" })
+      : {
+          slug: legacyPet.slug,
+          name: legacyPet.name,
+          rarity: normalizeRarity(legacyPet.rarity),
+          image: legacyPet.image || slugImage(legacyPet.slug),
+          source: "legacy",
+          values: { default: legacyPet.legacyValue }
+        };
 
-        variantSelect.innerHTML = window.ThePatchValues.getVariantEntries(pet)
-          .map((entry) => `<option value="${entry.key}">${entry.label}</option>`)
-          .join("");
+    seen[pet.slug] = true;
+    merged.push(pet);
+  });
 
-        updateTotals();
-      });
+  benchmarkPayload.pets.forEach(function(benchmarkPet){
+    if (seen[benchmarkPet.slug]) return;
+    merged.push(Object.assign({}, benchmarkPet, {
+      image: slugImage(benchmarkPet.slug),
+      source: "benchmark"
+    }));
+  });
 
-      variantSelect.addEventListener("change", updateTotals);
-      qtyInput.addEventListener("input", updateTotals);
+  merged.sort(function(a, b){
+    var aValue = a.values && typeof a.values.default === "number" ? a.values.default : 0;
+    var bValue = b.values && typeof b.values.default === "number" ? b.values.default : 0;
+    if (bValue !== aValue) return bValue - aValue;
+    return a.name.localeCompare(b.name);
+  });
 
-      wrapper.append(petSelect, variantSelect, qtyInput);
-      document.getElementById(`${side}-lines`).appendChild(wrapper);
-      state.rows[side].push({ petSelect, variantSelect, qtyInput });
-    }
+  return merged;
+}
 
-    function getSideTotal(side) {
-      return state.rows[side].reduce((sum, row) => {
-        const pet = state.payload.petIndex[row.petSelect.value];
-        const qty = Math.max(1, Number(row.qtyInput.value || 1));
-        if (!pet) {
-          return sum;
-        }
+function renderSlots(side) {
+  var arr = sideArr(side);
+  var grid = document.getElementById(side + "-grid");
+  while (grid.firstChild) grid.removeChild(grid.firstChild);
 
-        return sum + window.ThePatchValues.getVariantValue(pet, row.variantSelect.value) * qty;
-      }, 0);
-    }
+  for (var i = 0; i < SLOTS; i++) {
+    (function(idx){
+      var entry = arr[idx];
+      var slot = document.createElement("div");
 
-    function updateVerdict(leftTotal, rightTotal) {
-      const verdict = document.getElementById("verdict");
-      const note = document.getElementById("difference-note");
+      if (!entry) {
+        slot.className = "slot empty";
+        slot.onclick = function(){ openPicker(side, idx); };
 
-      if (!leftTotal || !rightTotal) {
-        verdict.textContent = "Waiting for selections";
-        note.textContent = "Add pets on both sides to see the value gap and a quick fairness read.";
-        return;
-      }
-
-      const gap = rightTotal - leftTotal;
-      const baseline = Math.max(leftTotal, rightTotal);
-      const pct = Math.abs(gap) / baseline;
-
-      if (pct <= 0.08) {
-        verdict.textContent = "Close to fair";
-      } else if (gap > 0 && pct <= 0.2) {
-        verdict.textContent = "You are under by a small amount";
-      } else if (gap < 0 && pct <= 0.2) {
-        verdict.textContent = "You are over by a small amount";
-      } else if (gap > 0) {
-        verdict.textContent = "You are under by a lot";
+        var icon = document.createElement("div");
+        icon.className = "slot-empty-icon";
+        icon.textContent = "+";
+        var lbl = document.createElement("div");
+        lbl.className = "slot-empty-lbl";
+        lbl.textContent = "add pet";
+        slot.appendChild(icon);
+        slot.appendChild(lbl);
       } else {
-        verdict.textContent = "You are over by a lot";
+        slot.className = "slot filled";
+
+        var rm = document.createElement("button");
+        rm.className = "slot-remove";
+        rm.textContent = "X";
+        rm.onclick = function(e){ e.stopPropagation(); removePet(side, idx); };
+        slot.appendChild(rm);
+
+        var img = document.createElement("img");
+        img.className = "slot-img";
+        img.src = petImage(entry.pet);
+        img.alt = entry.pet.name;
+        img.loading = "lazy";
+        img.onerror = function(){ this.onerror = null; this.src = IMAGE_FALLBACK; };
+        slot.appendChild(img);
+
+        var nm = document.createElement("div");
+        nm.className = "slot-name";
+        nm.textContent = entry.pet.name;
+        slot.appendChild(nm);
+
+        var vEl = document.createElement("div");
+        vEl.className = "slot-val";
+        vEl.textContent = fmt(resolveValue(entry)) + " pts";
+        slot.appendChild(vEl);
+
+        var toggles = document.createElement("div");
+        toggles.className = "slot-toggles";
+
+        var sRow = document.createElement("div");
+        sRow.className = "tog-row";
+        for (var si = 0; si < STAGE_OPTS.length; si++) {
+          (function(sIdx){
+            var b = document.createElement("button");
+            b.className = "tog" + (entry.stage === STAGE_OPTS[sIdx] ? " sel" : "");
+            b.textContent = STAGE_OPTS[sIdx].label;
+            b.onclick = function(e){ e.stopPropagation(); setStage(side, idx, sIdx); };
+            sRow.appendChild(b);
+          })(si);
+        }
+        toggles.appendChild(sRow);
+
+        var pRow = document.createElement("div");
+        pRow.className = "tog-row";
+        for (var pi = 0; pi < POTION_OPTS.length; pi++) {
+          (function(pIdx){
+            var b = document.createElement("button");
+            b.className = "tog" + (entry.potion === POTION_OPTS[pIdx] ? " sel" : "");
+            b.textContent = POTION_OPTS[pIdx].label;
+            b.onclick = function(e){ e.stopPropagation(); setPotion(side, idx, pIdx); };
+            pRow.appendChild(b);
+          })(pi);
+        }
+        toggles.appendChild(pRow);
+        slot.appendChild(toggles);
       }
 
-      note.textContent = `Value gap: ${window.ThePatchValues.formatValue(Math.abs(gap))}. Demand, liquidity, and no-potion collector premiums can still move the real outcome.`;
+      grid.appendChild(slot);
+    })(i);
+  }
+
+  var filled = arr.filter(function(x){ return x !== null; }).length;
+  document.getElementById(side + "-count").textContent = filled + (filled === 1 ? " pet" : " pets");
+}
+
+function buildFilters() {
+  var filterRoot = document.getElementById("picker-filters");
+  filterRoot.innerHTML = "";
+  var allBtn = document.createElement("button");
+  allBtn.className = "f-btn active";
+  allBtn.setAttribute("data-filter", "all");
+  allBtn.textContent = "All";
+  filterRoot.appendChild(allBtn);
+
+  ["Legendary", "Ultra-Rare", "Rare", "Uncommon", "Common"].forEach(function(segment){
+    var btn = document.createElement("button");
+    btn.className = "f-btn";
+    btn.setAttribute("data-filter", normalizeSegment(segment));
+    btn.textContent = segment;
+    filterRoot.appendChild(btn);
+  });
+}
+
+function openPicker(side, idx) {
+  state.activePicker = {side:side, idx:idx};
+  state.pickerSearch = "";
+  document.getElementById("picker-search").value = "";
+  document.getElementById("picker").removeAttribute("hidden");
+  document.getElementById("picker-search").focus();
+  renderPickerGrid();
+}
+
+function closePicker() {
+  document.getElementById("picker").setAttribute("hidden","");
+  state.activePicker = null;
+}
+
+function renderPickerGrid() {
+  var grid = document.getElementById("picker-grid");
+  while (grid.firstChild) grid.removeChild(grid.firstChild);
+
+  var q = state.pickerSearch.toLowerCase();
+  var pets = state.pets.filter(function(p){
+    var matchSegment = state.pickerFilter === "all" || normalizeSegment(p.rarity) === state.pickerFilter;
+    var matchQ = !q || p.name.toLowerCase().indexOf(q) >= 0;
+    return matchSegment && matchQ;
+  });
+
+  if (!pets.length) {
+    var msg = document.createElement("div");
+    msg.style.cssText = "grid-column:1/-1;text-align:center;color:var(--text-muted);padding:24px;font-size:.8rem";
+    msg.textContent = "No pets matched that search";
+    grid.appendChild(msg);
+    return;
+  }
+
+  pets.forEach(function(p){
+    var tile = document.createElement("div");
+    tile.className = "pet-tile";
+    tile.onclick = function(){ selectPet(p); };
+
+    var img = document.createElement("img");
+    img.src = petImage(p);
+    img.alt = p.name;
+    img.loading = "lazy";
+    img.width = 52;
+    img.height = 52;
+    img.onerror = function(){ this.onerror = null; this.src = IMAGE_FALLBACK; };
+    tile.appendChild(img);
+
+    var nm = document.createElement("div");
+    nm.className = "pt-name";
+    nm.textContent = p.name;
+    tile.appendChild(nm);
+
+    var rar = document.createElement("div");
+    rar.className = "pt-rar r" + prettyRarity(p.rarity);
+    rar.textContent = p.rarity;
+    tile.appendChild(rar);
+
+    grid.appendChild(tile);
+  });
+}
+
+function selectPet(pet) {
+  if (!state.activePicker) return;
+  var side = state.activePicker.side, idx = state.activePicker.idx;
+  sideArr(side)[idx] = {pet:pet, stage:STAGE_OPTS[0], potion:POTION_OPTS[0]};
+  closePicker();
+  renderSlots(side);
+  updateVerdict();
+}
+
+function removePet(side, idx) {
+  var arr = sideArr(side);
+  arr.splice(idx, 1);
+  arr.push(null);
+  renderSlots(side);
+  updateVerdict();
+}
+
+function setStage(side, idx, stageIndex) {
+  var entry = sideArr(side)[idx];
+  if (!entry) return;
+  entry.stage = STAGE_OPTS[stageIndex];
+  renderSlots(side);
+  updateVerdict();
+}
+
+function setPotion(side, idx, potionIndex) {
+  var entry = sideArr(side)[idx];
+  if (!entry) return;
+  entry.potion = POTION_OPTS[potionIndex];
+  renderSlots(side);
+  updateVerdict();
+}
+
+function clearAll() {
+  state.givePets = newArr();
+  state.recvPets = newArr();
+  renderSlots("give");
+  renderSlots("recv");
+  updateVerdict();
+}
+
+function totalVal(arr) {
+  return arr.filter(Boolean).reduce(function(sum, entry){
+    return sum + resolveValue(entry);
+  }, 0);
+}
+
+function classifyVerdict(diff, baseline) {
+  if (!baseline) {
+    return {cls:"vFAIR", label:"FAIR TRADE", pct:0};
+  }
+
+  var pct = Math.abs(diff) / baseline;
+  for (var i = 0; i < VERDICTS.length; i++) {
+    if (pct >= VERDICTS[i].pct) {
+      return {
+        cls: VERDICTS[i].cls,
+        label: diff > 0 ? VERDICTS[i].win : diff < 0 ? VERDICTS[i].lose : "FAIR TRADE",
+        pct: pct
+      };
     }
+  }
 
-    function updateTotals() {
-      const leftTotal = getSideTotal("left");
-      const rightTotal = getSideTotal("right");
+  return {cls:"vFAIR", label:"FAIR TRADE", pct:0};
+}
 
-      document.getElementById("left-total").textContent = window.ThePatchValues.formatValue(leftTotal);
-      document.getElementById("right-total").textContent = window.ThePatchValues.formatValue(rightTotal);
-      updateVerdict(leftTotal, rightTotal);
+function updateVerdict() {
+  var gT = totalVal(state.givePets), rT = totalVal(state.recvPets);
+  var diff = rT - gT;
+  var baseline = Math.max(gT, rT);
+  var verdict = classifyVerdict(diff, baseline);
+
+  var lbl = document.getElementById("v-label");
+  lbl.className = "verdict-label " + verdict.cls;
+  lbl.textContent = verdict.label;
+
+  var pts = document.getElementById("v-pts");
+  var sign = diff > 0 ? "+" : diff < 0 ? "" : "\u00B1";
+  pts.textContent = sign + fmt(Math.abs(diff));
+  pts.style.color = diff > 0 ? "var(--green)" : diff < 0 ? "var(--red)" : "var(--text-muted)";
+
+  document.getElementById("v-give").textContent = "Give: " + fmt(gT);
+  document.getElementById("v-recv").textContent = "Recv: " + fmt(rT);
+
+  var bar = document.getElementById("v-bar");
+  var total = gT + rT;
+  if (!total || !diff) {
+    bar.style.left = "50%";
+    bar.style.width = "0";
+    bar.style.background = "var(--text-muted)";
+  } else {
+    var width = Math.max(4, Math.min(48, verdict.pct * 100));
+    if (diff > 0) {
+      bar.style.left = "50%";
+      bar.style.width = width + "%";
+      bar.style.background = "var(--green)";
+    } else {
+      bar.style.left = (50 - width) + "%";
+      bar.style.width = width + "%";
+      bar.style.background = "var(--red)";
     }
+  }
 
-    async function bootCalculator() {
-      try {
-        state.payload = await window.ThePatchValues.loadAdoptValues();
-        createLineItem("left");
-        createLineItem("left");
-        createLineItem("right");
-        createLineItem("right");
+  ["win","fair","lose"].forEach(function(key){
+    document.getElementById("vbar-" + key).classList.remove("vbar-active");
+  });
+  var hi = !diff || verdict.pct < 0.06 ? "fair" : diff > 0 ? "win" : "lose";
+  document.getElementById("vbar-" + hi).classList.add("vbar-active");
+}
 
-        document.getElementById("add-left").addEventListener("click", () => createLineItem("left"));
-        document.getElementById("add-right").addEventListener("click", () => createLineItem("right"));
-      } catch (error) {
-        const shell = document.querySelector(".tool-card");
-        window.ThePatchValues.renderError(shell, "The shared calculator data could not load. Please refresh and try again.");
-      }
+function bootCalculator() {
+  Promise.all([
+    window.ThePatchValues.loadAdoptValues(),
+    loadLegacyCatalog(),
+    loadOverrideCatalog()
+  ]).then(function(results){
+    state.payload = results[0];
+    state.legacyPayload = results[1];
+    state.overridePayload = results[2];
+    state.pets = mergeCatalog(state.payload, state.legacyPayload, state.overridePayload);
+    document.getElementById("coverage-count").textContent = state.pets.length;
+    document.getElementById("tracker-audit-count").textContent = state.overridePayload.trackerMatchedCount || 0;
+    document.getElementById("manual-audit-count").textContent = state.overridePayload.manualResolvedCount || 0;
+    document.getElementById("audit-unmatched").textContent = state.overridePayload.remainingUnmatchedCount || 0;
+    buildFilters();
+    renderSlots("give");
+    renderSlots("recv");
+    updateVerdict();
+  }).catch(function(){
+    var msg = document.createElement("div");
+    msg.className = "status-card";
+    msg.textContent = "The calculator data could not load. Please refresh and try again.";
+    document.body.insertBefore(msg, document.querySelector(".calc-wrap"));
+  });
+}
+
+document.getElementById("picker-search").addEventListener("input", function(e){
+  state.pickerSearch = e.target.value;
+  renderPickerGrid();
+});
+
+document.getElementById("picker-filters").addEventListener("click", function(e){
+  var btn = e.target.closest(".f-btn");
+  if (!btn) return;
+  state.pickerFilter = btn.getAttribute("data-filter");
+  var buttons = document.querySelectorAll("#picker-filters .f-btn");
+  for (var i = 0; i < buttons.length; i++) buttons[i].classList.remove("active");
+  btn.classList.add("active");
+  renderPickerGrid();
+});
+
+document.getElementById("picker").addEventListener("click", function(e){
+  if (e.target === document.getElementById("picker")) closePicker();
+});
+document.getElementById("picker-close").addEventListener("click", closePicker);
+document.getElementById("clear-btn").addEventListener("click", clearAll);
+
+var toggle = document.querySelector(".nav-toggle");
+var nav = document.querySelector(".main-nav");
+if (toggle && nav) {
+  toggle.addEventListener("click", function(){
+    var open = nav.style.display === "flex";
+    nav.style.display = open ? "none" : "flex";
+    if (!open) {
+      nav.style.flexDirection = "column";
+      nav.style.position = "absolute";
+      nav.style.top = "60px";
+      nav.style.left = "0";
+      nav.style.right = "0";
+      nav.style.background = "#0d0d0f";
+      nav.style.padding = "12px 20px";
+      nav.style.borderBottom = "1px solid #2a2a35";
+      nav.style.zIndex = "99";
     }
+  });
+}
 
-    bootCalculator();
-  </script>
+bootCalculator();
+</script>
 </body>
 </html>

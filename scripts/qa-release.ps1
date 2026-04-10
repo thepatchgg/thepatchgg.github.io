@@ -78,6 +78,19 @@ function Assert-Pattern {
   }
 }
 
+function Assert-LocalAssetExists {
+  param(
+    [string]$RelativePath,
+    [string]$Context
+  )
+
+  $cleanPath = $RelativePath.TrimStart('/').Replace("/", "\")
+  $assetPath = Join-Path $repoRoot $cleanPath
+  if (-not (Test-Path -LiteralPath $assetPath)) {
+    $issues.Add("Missing asset for ${Context}: /$($cleanPath -replace '\\', '/')")
+  }
+}
+
 foreach ($page in $corePages) {
   $content = Read-File $page
   if ($null -eq $content) {
@@ -133,6 +146,26 @@ $sitemap = Read-File "sitemap.xml"
 Assert-Pattern $sitemap "sitemap.xml" "https://thepatchgg\.github\.io/privacy\.html" "Missing privacy URL in sitemap"
 Assert-Pattern $sitemap "sitemap.xml" "https://thepatchgg\.github\.io/advertising\.html" "Missing advertising URL in sitemap"
 
+$benchmarkData = Get-Content -Raw -Path (Resolve-PathInRepo "data/adopt-me-values.json") | ConvertFrom-Json
+foreach ($pet in $benchmarkData.pets) {
+  Assert-LocalAssetExists -RelativePath ("assets/pets/{0}.png" -f $pet.slug) -Context ("benchmark pet {0}" -f $pet.slug)
+}
+
+$catalogData = Get-Content -Raw -Path (Resolve-PathInRepo "data/adopt-me-pet-catalog.json") | ConvertFrom-Json
+foreach ($entry in $catalogData.entries) {
+  if ($entry.image -match '^/assets/') {
+    Assert-LocalAssetExists -RelativePath $entry.image -Context ("catalog pet {0}" -f $entry.slug)
+  }
+}
+
+$profileData = Get-Content -Raw -Path (Resolve-PathInRepo "data/adopt-me-benchmark-profiles.json") | ConvertFrom-Json
+foreach ($profileName in $profileData.profiles.PSObject.Properties.Name) {
+  $petPage = "pets/{0}.html" -f $profileName
+  if (-not (Test-Path -LiteralPath (Resolve-PathInRepo $petPage))) {
+    $issues.Add("Missing generated pet page: $petPage")
+  }
+}
+
 $checklist = Read-File "PRE_MERGE_CHECKLIST.md"
 Assert-Pattern $checklist "PRE_MERGE_CHECKLIST.md" "## Merge blockers" "Missing merge blocker section"
 Assert-Pattern $checklist "PRE_MERGE_CHECKLIST.md" "## Analytics QA" "Missing analytics QA section"
@@ -140,11 +173,54 @@ Assert-Pattern $checklist "PRE_MERGE_CHECKLIST.md" "## Analytics QA" "Missing an
 $releaseNotes = Read-File "RELEASE_NOTES_DRAFT.md"
 Assert-Pattern $releaseNotes "RELEASE_NOTES_DRAFT.md" "^# Release Notes Draft" "Missing release notes heading"
 
+$auditReport = Read-File "data/adopt-me-calculator-audit-report.md"
+Assert-Pattern $auditReport "data/adopt-me-calculator-audit-report.md" "^# Calculator Audit Report" "Missing calculator audit report heading"
+Assert-Pattern $auditReport "data/adopt-me-calculator-audit-report.md" "Non-benchmark pets matched to tracker feed: 684" "Unexpected calculator audit coverage count"
+Assert-Pattern $auditReport "data/adopt-me-calculator-audit-report.md" "Non-benchmark pets manually resolved: 12" "Unexpected calculator manual resolution count"
+Assert-Pattern $auditReport "data/adopt-me-calculator-audit-report.md" "Non-benchmark pets still unmatched: 0" "Calculator audit still has unresolved pets"
+
+$catalogAudit = Read-File "data/adopt-me-pet-catalog-audit.md"
+Assert-Pattern $catalogAudit "data/adopt-me-pet-catalog-audit.md" "^# Pet Catalog Audit" "Missing pet catalog audit heading"
+Assert-Pattern $catalogAudit "data/adopt-me-pet-catalog-audit.md" "Catalog entries: 725" "Unexpected pet catalog count"
+
+$overrideData = Get-Content -Raw -Path (Resolve-PathInRepo "data/adopt-me-calculator-overrides.json") | ConvertFrom-Json
+if (@($overrideData.pets).Count -lt 690) {
+  $issues.Add("Calculator override coverage too low: $(@($overrideData.pets).Count) pets")
+}
+if ($overrideData.trackerMatchedCount -ne 684) {
+  $issues.Add("Unexpected tracker-backed calculator count: $($overrideData.trackerMatchedCount)")
+}
+if ($overrideData.manualResolvedCount -ne 12) {
+  $issues.Add("Unexpected manual calculator count: $($overrideData.manualResolvedCount)")
+}
+if ($overrideData.remainingUnmatchedCount -ne 0) {
+  $issues.Add("Calculator still has unmatched pets: $($overrideData.remainingUnmatchedCount)")
+}
+
+$calculatorPage = Read-File "pet-value-calculator.html"
+Assert-Pattern $calculatorPage "pet-value-calculator.html" 'id="tracker-audit-count">684<' "Calculator tracker audit count banner out of sync"
+Assert-Pattern $calculatorPage "pet-value-calculator.html" 'id="manual-audit-count">12<' "Calculator manual audit count banner out of sync"
+Assert-Pattern $calculatorPage "pet-value-calculator.html" 'id="audit-unmatched">0<' "Calculator unmatched count banner out of sync"
+
+if ($catalogData.counts.total -ne 725) {
+  $issues.Add("Unexpected pet catalog total: $($catalogData.counts.total)")
+}
+if ($catalogData.counts.verifiedRarity -lt 700) {
+  $issues.Add("Pet catalog verified rarity coverage dropped too low: $($catalogData.counts.verifiedRarity)")
+}
+if ($catalogData.counts.review -gt 25) {
+  $issues.Add("Too many pet catalog entries still marked for review: $($catalogData.counts.review)")
+}
+
 $scanFiles = Get-ChildItem -Path $repoRoot -Recurse -Include *.html,*.js,*.ps1,*.md,*.xml
 $badEncodingPattern = ([char]0x00E2).ToString() + "|" + ([char]0x00C2).ToString()
 foreach ($file in $scanFiles) {
   $content = Get-Content -Raw -Path $file.FullName
   $relativePath = $file.FullName.Substring($repoRoot.Length + 1) -replace "\\", "/"
+
+  if ($relativePath -eq "data/adoptmevalues-values-page.html") {
+    continue
+  }
 
   if ($content -match $badEncodingPattern) {
     $issues.Add("Encoding artifact detected in $relativePath")
@@ -169,6 +245,16 @@ foreach ($page in ($corePages + $samplePetPages)) {
     if ($content -match $entry.Pattern) {
       $issues.Add("$($entry.Message) in $page")
     }
+  }
+}
+
+$htmlFiles = Get-ChildItem -Path $repoRoot -Recurse -Filter *.html
+foreach ($file in $htmlFiles) {
+  $content = Get-Content -Raw -Path $file.FullName
+  $relativePath = $file.FullName.Substring($repoRoot.Length + 1) -replace "\\", "/"
+
+  if ($content -notmatch "/assets/js/patch-ribbon\.js") {
+    $issues.Add("Menu ribbon normalizer missing in $relativePath")
   }
 }
 

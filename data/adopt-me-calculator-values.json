@@ -1,0 +1,5005 @@
+{
+    "updatedAt":  "2026-04-09",
+    "count":  714,
+    "notes":  "Legacy long-tail calculator defaults. Benchmark entries in adopt-me-values.json override these values in the live tool.",
+    "pets":  [
+                 {
+                     "slug":  "bat-dragon",
+                     "name":  "Bat Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/bat-dragon.png",
+                     "legacyValue":  120
+                 },
+                 {
+                     "slug":  "shadow-dragon",
+                     "name":  "Shadow Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/shadow-dragon.png",
+                     "legacyValue":  82
+                 },
+                 {
+                     "slug":  "giraffe",
+                     "name":  "Giraffe",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/giraffe.png",
+                     "legacyValue":  55
+                 },
+                 {
+                     "slug":  "frost-dragon",
+                     "name":  "Frost Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/frost-dragon.png",
+                     "legacyValue":  41
+                 },
+                 {
+                     "slug":  "owl",
+                     "name":  "Owl",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/owl.png",
+                     "legacyValue":  34
+                 },
+                 {
+                     "slug":  "parrot",
+                     "name":  "Parrot",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/parrot.png",
+                     "legacyValue":  27
+                 },
+                 {
+                     "slug":  "crow",
+                     "name":  "Crow",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/crow.png",
+                     "legacyValue":  23
+                 },
+                 {
+                     "slug":  "evil-unicorn",
+                     "name":  "Evil Unicorn",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/evil-unicorn.png",
+                     "legacyValue":  20
+                 },
+                 {
+                     "slug":  "diamond-butterfly",
+                     "name":  "Diamond Butterfly",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/diamond-butterfly.png",
+                     "legacyValue":  19
+                 },
+                 {
+                     "slug":  "balloon-unicorn",
+                     "name":  "Balloon Unicorn",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/balloon-unicorn.png",
+                     "legacyValue":  18
+                 },
+                 {
+                     "slug":  "hedgehog",
+                     "name":  "Hedgehog",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/hedgehog.png",
+                     "legacyValue":  14
+                 },
+                 {
+                     "slug":  "blazing-lion",
+                     "name":  "Blazing Lion",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/blazing-lion.png",
+                     "legacyValue":  13
+                 },
+                 {
+                     "slug":  "orchid-butterfly",
+                     "name":  "Orchid Butterfly",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/orchid-butterfly.png",
+                     "legacyValue":  13
+                 },
+                 {
+                     "slug":  "dalmatian",
+                     "name":  "Dalmatian",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/dalmatian.png",
+                     "legacyValue":  12
+                 },
+                 {
+                     "slug":  "arctic-reindeer",
+                     "name":  "Arctic Reindeer",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/arctic-reindeer.png",
+                     "legacyValue":  9
+                 },
+                 {
+                     "slug":  "cow",
+                     "name":  "Cow",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/cow.png",
+                     "legacyValue":  7
+                 },
+                 {
+                     "slug":  "flamingo",
+                     "name":  "Flamingo",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/flamingo.png",
+                     "legacyValue":  6
+                 },
+                 {
+                     "slug":  "monkey-king-pet",
+                     "name":  "Monkey King",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/monkey-king-pet.png",
+                     "legacyValue":  6
+                 },
+                 {
+                     "slug":  "turtle",
+                     "name":  "Turtle",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/turtle.png",
+                     "legacyValue":  6
+                 },
+                 {
+                     "slug":  "albino-monkey",
+                     "name":  "Albino Monkey",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/albino-monkey.png",
+                     "legacyValue":  5
+                 },
+                 {
+                     "slug":  "field-mouse",
+                     "name":  "Field Mouse",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/field-mouse.png",
+                     "legacyValue":  4
+                 },
+                 {
+                     "slug":  "flower-power-duckling",
+                     "name":  "Flower Power Duckling",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/flower-power-duckling.png",
+                     "legacyValue":  4
+                 },
+                 {
+                     "slug":  "glormy-hound",
+                     "name":  "Glormy Hound",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/glormy-hound.png",
+                     "legacyValue":  4
+                 },
+                 {
+                     "slug":  "glormy-leo",
+                     "name":  "Glormy Leo",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/glormy-leo.png",
+                     "legacyValue":  4
+                 },
+                 {
+                     "slug":  "meerkat",
+                     "name":  "Meerkat",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/meerkat.png",
+                     "legacyValue":  4
+                 },
+                 {
+                     "slug":  "capricorn",
+                     "name":  "Capricorn",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/capricorn.png",
+                     "legacyValue":  3.5
+                 },
+                 {
+                     "slug":  "chameleon",
+                     "name":  "Chameleon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/chameleon.png",
+                     "legacyValue":  3.5
+                 },
+                 {
+                     "slug":  "glacier-kitsune",
+                     "name":  "Glacier Kitsune",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/glacier-kitsune.png",
+                     "legacyValue":  3.5
+                 },
+                 {
+                     "slug":  "griffin",
+                     "name":  "Griffin",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/griffin.png",
+                     "legacyValue":  3.5
+                 },
+                 {
+                     "slug":  "phoenix-pet",
+                     "name":  "Phoenix",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/phoenix-pet.png",
+                     "legacyValue":  3.5
+                 },
+                 {
+                     "slug":  "sheeeeep",
+                     "name":  "Sheeeeep",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/sheeeeep.png",
+                     "legacyValue":  3.5
+                 },
+                 {
+                     "slug":  "zombie-buffalo",
+                     "name":  "Zombie Buffalo",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/zombie-buffalo.png",
+                     "legacyValue":  3.5
+                 },
+                 {
+                     "slug":  "african-wild-dog",
+                     "name":  "African Wild Dog",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/african-wild-dog.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "albino-gorilla",
+                     "name":  "Albino Gorilla",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/albino-gorilla.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "black-panther",
+                     "name":  "Black Panther",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/black-panther.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "caelum-cervi",
+                     "name":  "Caelum Cervi",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/caelum-cervi.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "candyfloss-chick",
+                     "name":  "Candyfloss Chick",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/candyfloss-chick.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "chocolate-chip-bat-dragon",
+                     "name":  "Chocolate Chip Bat Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/chocolate-chip-bat-dragon.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "diamond-hamster",
+                     "name":  "Diamond Hamster",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/diamond-hamster.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "diamond-king-penguin",
+                     "name":  "Diamond King Penguin",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/diamond-king-penguin.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "elephant",
+                     "name":  "Elephant",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/elephant.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "firefly",
+                     "name":  "Firefly",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/firefly.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "frost-fury-pet",
+                     "name":  "Frost Fury",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/frost-fury-pet.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "frost-unicorn",
+                     "name":  "Frost Unicorn",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/frost-unicorn.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "giant-gold-scarab",
+                     "name":  "Giant Gold Scarab",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/giant-gold-scarab.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "glacier-moth",
+                     "name":  "Glacier Moth",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/glacier-moth.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "golden-chow-chow",
+                     "name":  "Golden Chow-Chow",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-chow-chow.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "golden-hummingbird",
+                     "name":  "Golden Hummingbird",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-hummingbird.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "golden-ladybug",
+                     "name":  "Golden Ladybug",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-ladybug.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "honey-badger",
+                     "name":  "Honey Badger",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/honey-badger.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "hot-doggo",
+                     "name":  "Hot Doggo",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/hot-doggo.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "hyena",
+                     "name":  "Hyena",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/hyena.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "irish-water-spaniel",
+                     "name":  "Irish Water Spaniel",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/irish-water-spaniel.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "jekyll-hydra",
+                     "name":  "Jekyll Hydra",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/jekyll-hydra.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "jellyfish",
+                     "name":  "Jellyfish",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/jellyfish.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "kangaroo",
+                     "name":  "Kangaroo",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/kangaroo.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "lava-dragon",
+                     "name":  "Lava Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/lava-dragon.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "lunar-moon-bear",
+                     "name":  "Lunar Moon Bear",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/lunar-moon-bear.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "mechapup",
+                     "name":  "Mechapup",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/mechapup.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "mini-pig",
+                     "name":  "Mini Pig",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/mini-pig.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "nessie",
+                     "name":  "Nessie",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/nessie.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "peppermint-penguin",
+                     "name":  "Peppermint Penguin",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/peppermint-penguin.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "puffin",
+                     "name":  "Puffin",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/puffin.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "strawberry-shortcake-bat-dragon",
+                     "name":  "Strawberry Shortcake Bat Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/strawberry-shortcake-bat-dragon.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "sugar-axolotl",
+                     "name":  "Sugar Axolotl",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/sugar-axolotl.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "undead-jousting-horse",
+                     "name":  "Undead Jousting Horse",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/undead-jousting-horse.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "vampire-dragon",
+                     "name":  "Vampire Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/vampire-dragon.png",
+                     "legacyValue":  3
+                 },
+                 {
+                     "slug":  "brown-bear",
+                     "name":  "Brown Bear",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/brown-bear.png",
+                     "legacyValue":  2.5
+                 },
+                 {
+                     "slug":  "caterpillar",
+                     "name":  "Caterpillar",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/caterpillar.png",
+                     "legacyValue":  2.5
+                 },
+                 {
+                     "slug":  "criosphinx",
+                     "name":  "Criosphinx",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/criosphinx.png",
+                     "legacyValue":  2.5
+                 },
+                 {
+                     "slug":  "cuddly-candle",
+                     "name":  "Cuddly Candle",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/cuddly-candle.png",
+                     "legacyValue":  2.5
+                 },
+                 {
+                     "slug":  "goat",
+                     "name":  "Goat",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/goat.png",
+                     "legacyValue":  2.5
+                 },
+                 {
+                     "slug":  "golden-hamster",
+                     "name":  "Golden Hamster",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-hamster.png",
+                     "legacyValue":  2.5
+                 },
+                 {
+                     "slug":  "mushroom-friend-pet",
+                     "name":  "Mushroom Friend",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/mushroom-friend-pet.png",
+                     "legacyValue":  2.5
+                 },
+                 {
+                     "slug":  "pelican",
+                     "name":  "Pelican",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/pelican.png",
+                     "legacyValue":  2.5
+                 },
+                 {
+                     "slug":  "shrew",
+                     "name":  "Shrew",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/shrew.png",
+                     "legacyValue":  2.5
+                 },
+                 {
+                     "slug":  "tan-chow-chow",
+                     "name":  "Tan Chow-Chow",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/tan-chow-chow.png",
+                     "legacyValue":  2.5
+                 },
+                 {
+                     "slug":  "tortuga-de-la-isla-pet",
+                     "name":  "Tortuga de la Isla",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/tortuga-de-la-isla-pet.png",
+                     "legacyValue":  2.5
+                 },
+                 {
+                     "slug":  "border-collie",
+                     "name":  "Border Collie",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/border-collie.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "capybara",
+                     "name":  "Capybara",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/capybara.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "diamond-albatross",
+                     "name":  "Diamond Albatross",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/diamond-albatross.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "diamond-mahi-mahi",
+                     "name":  "Diamond Mahi Mahi",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/diamond-mahi-mahi.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "diamond-unicorn",
+                     "name":  "Diamond Unicorn",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/diamond-unicorn.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "dimorphodon",
+                     "name":  "Dimorphodon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/dimorphodon.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "emu",
+                     "name":  "Emu",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/emu.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "gargoyle",
+                     "name":  "Gargoyle",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/gargoyle.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "giant-anteater",
+                     "name":  "Giant Anteater",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/giant-anteater.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "groundhog",
+                     "name":  "Groundhog",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/groundhog.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "haetae",
+                     "name":  "Haetae",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/haetae.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "headless-horse",
+                     "name":  "Headless Horse",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/headless-horse.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "hummingbird",
+                     "name":  "Hummingbird",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/hummingbird.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "ice-golem",
+                     "name":  "Ice Golem",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/ice-golem.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "ice-wolf",
+                     "name":  "Ice Wolf",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ice-wolf.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "kraken",
+                     "name":  "Kraken",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/kraken.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "lavender-dragon",
+                     "name":  "Lavender Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/lavender-dragon.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "lion",
+                     "name":  "Lion",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/lion.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "llama",
+                     "name":  "Lloma",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/llama.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "mecha-meow",
+                     "name":  "Mecha Meow",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/mecha-meow.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "naga-dragon",
+                     "name":  "Naga Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/naga-dragon.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "nautilus",
+                     "name":  "Nautilus",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/nautilus.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "princess-capuchin-monkey-pet",
+                     "name":  "Princess Capuchin Monkey",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/princess-capuchin-monkey-pet.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "purple-butterfly",
+                     "name":  "Purple Butterfly",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/purple-butterfly.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "rosy-maple-moth-pet",
+                     "name":  "Rosy Maple Moth",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/rosy-maple-moth-pet.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "royal-capuchin-monkey",
+                     "name":  "Royal Capuchin Monkey",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/royal-capuchin-monkey.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "royal-palace-spaniel",
+                     "name":  "Royal Palace Spaniel",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/royal-palace-spaniel.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "scarebear",
+                     "name":  "Scarebear",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/scarebear.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "skele-rex",
+                     "name":  "Skele-Rex",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/skele-rex.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "sugar-glider",
+                     "name":  "Sugar Glider",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/sugar-glider.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "toucan",
+                     "name":  "Toucan",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/toucan.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "unicorn",
+                     "name":  "Unicorn",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/unicorn.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "werewolf",
+                     "name":  "Werewolf",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/werewolf.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "alicorn",
+                     "name":  "Alicorn",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/alicorn.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "ancient-dragon",
+                     "name":  "Ancient Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/ancient-dragon.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "arctic-fox",
+                     "name":  "Arctic Fox",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/arctic-fox.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "axolotl",
+                     "name":  "Axolotl",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/axolotl.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "black-chow-chow",
+                     "name":  "Black Chow-Chow",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/black-chow-chow.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "chocolate-chow-chow",
+                     "name":  "Chocolate Chow-Chow",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/chocolate-chow-chow.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "diamond-dragon",
+                     "name":  "Diamond Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/diamond-dragon.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "diamond-griffin",
+                     "name":  "Diamond Griffin",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/diamond-griffin.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "diamond-ladybug",
+                     "name":  "Diamond Ladybug",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/diamond-ladybug.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "dodo",
+                     "name":  "Dodo",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/dodo.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "giant-blue-scarab",
+                     "name":  "Giant Blue Scarab",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/giant-blue-scarab.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "golden-rat",
+                     "name":  "Golden Rat",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-rat.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "golden-unicorn",
+                     "name":  "Golden Unicorn",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-unicorn.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "jousting-horse",
+                     "name":  "Jousting Horse",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/jousting-horse.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "karate-gorilla-pet",
+                     "name":  "Karate Gorilla",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/karate-gorilla-pet.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "lava-wolf",
+                     "name":  "Lava Wolf",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/lava-wolf.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "leviathan",
+                     "name":  "Leviathan",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/leviathan.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "octopus",
+                     "name":  "Octopus",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/octopus.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "polar-bear",
+                     "name":  "Polar Bear",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/polar-bear.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "reindeer",
+                     "name":  "Reindeer",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/reindeer.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "shark-puppy",
+                     "name":  "Shark Puppy",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/shark-puppy.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "silly-duck",
+                     "name":  "Silly Duck",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/silly-duck.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "swan",
+                     "name":  "Swan",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/swan.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "tree-kangaroo",
+                     "name":  "Tree Kangaroo",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/tree-kangaroo.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "white-amazon",
+                     "name":  "White Amazon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/white-amazon.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "wild-boar",
+                     "name":  "Wild Boar",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/wild-boar.png",
+                     "legacyValue":  1.5
+                 },
+                 {
+                     "slug":  "2d-kitty",
+                     "name":  "2D Kitty",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/2d-kitty.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "albatross",
+                     "name":  "Albatross",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/albatross.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "albino-bat",
+                     "name":  "Albino Bat",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/albino-bat.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "alley-cat",
+                     "name":  "Alley Cat",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/alley-cat.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "alpaca",
+                     "name":  "Alpaca",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/alpaca.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "angus-bull",
+                     "name":  "Angus Bull",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/angus-bull.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "angus-calf",
+                     "name":  "Angus Calf",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/angus-calf.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "apple-owl",
+                     "name":  "Apple Owl",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/apple-owl.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "arctic-dusk-dragon",
+                     "name":  "Arctic Dusk Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/arctic-dusk-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "astronaut-gorilla-pet",
+                     "name":  "Astronaut Gorilla",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/astronaut-gorilla-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "aurora-fox",
+                     "name":  "Aurora Fox",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/aurora-fox.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "australian-kelpie",
+                     "name":  "Australian Kelpie",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/australian-kelpie.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "badger",
+                     "name":  "Badger",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/badger.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "baku",
+                     "name":  "Baku",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/baku.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "bald-eagle",
+                     "name":  "Bald Eagle",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/bald-eagle.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "bauble-buddies",
+                     "name":  "Bauble Buddies",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/bauble-buddies.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "berry-cool-cube",
+                     "name":  "Berry Cool Cube",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/berry-cool-cube.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "billy-goat",
+                     "name":  "Billy Goat",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/billy-goat.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "binturong",
+                     "name":  "Binturong",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/binturong.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "black-kite",
+                     "name":  "Black Kite",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/black-kite.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "black-macaque",
+                     "name":  "Black Macaque",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/black-macaque.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "black-springer-spaniel",
+                     "name":  "Black Springer Spaniel",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/black-springer-spaniel.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "black-widow",
+                     "name":  "Black Widow",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/black-widow.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "black-chested-pheasant",
+                     "name":  "Black-Chested Pheasant",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/black-chested-pheasant.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "black-footed-ferret",
+                     "name":  "Black-Footed Ferret",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/black-footed-ferret.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "blue-betta-fish",
+                     "name":  "Blue Betta Fish",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/blue-betta-fish.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "blue-ringed-octopus",
+                     "name":  "Blue Ringed Octopus",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/blue-ringed-octopus.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "blue-whale",
+                     "name":  "Blue Whale",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/blue-whale.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "brown-springer-spaniel",
+                     "name":  "Brown Springer Spaniel",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/brown-springer-spaniel.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "brown-chested-pheasant",
+                     "name":  "Brown-Chested Pheasant",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/brown-chested-pheasant.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "bunny-swirl",
+                     "name":  "Bunny Swirl",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/bunny-swirl.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "burning-bunny",
+                     "name":  "Burning Bunny",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/burning-bunny.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "bush-elephant",
+                     "name":  "Bush Elephant",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/bush-elephant.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "business-monkey-pet",
+                     "name":  "Business Monkey",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/business-monkey-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "cabbit",
+                     "name":  "Cabbit",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/cabbit.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "cactus-friend",
+                     "name":  "Cactus Friend",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/cactus-friend.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "candicorn",
+                     "name":  "Candicorn",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/candicorn.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "candy-cane-snail",
+                     "name":  "Candy Cane Snail",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/candy-cane-snail.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "candy-hare",
+                     "name":  "Candy Hare",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/candy-hare.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "cerberus",
+                     "name":  "Cerberus",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/cerberus.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "cheetah",
+                     "name":  "Cheetah",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/cheetah.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "chef-gorilla-pet",
+                     "name":  "Chef Gorilla",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/chef-gorilla-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "chicken",
+                     "name":  "Chicken",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/chicken.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "chilling-spider",
+                     "name":  "Chilling Spider",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/chilling-spider.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "chimera",
+                     "name":  "Chimera",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/chimera.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "choco-penguin",
+                     "name":  "Choco Penguin",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/choco-penguin.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "christmas-pudding-pup",
+                     "name":  "Christmas Pudding Pup",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/christmas-pudding-pup.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "christmas-spirit",
+                     "name":  "Christmas Spirit",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/christmas-spirit.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "clementine-owl",
+                     "name":  "Clementine Owl",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/clementine-owl.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "clownfish",
+                     "name":  "Clownfish",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/clownfish.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "cobra",
+                     "name":  "Cobra",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/cobra.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "coconut-friend",
+                     "name":  "Coconut Friend",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/coconut-friend.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "cold-cube",
+                     "name":  "Cold Cube",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/cold-cube.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "corgi",
+                     "name":  "Corgi",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/corgi.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "corn-doggo",
+                     "name":  "Corn Doggo",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/corn-doggo.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "cozy-mistletroll",
+                     "name":  "Cozy Mistletroll",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/cozy-mistletroll.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "crocodile",
+                     "name":  "Crocodile",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/crocodile.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "cryptid",
+                     "name":  "Cryptid",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/cryptid.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "cupid-dragon",
+                     "name":  "Cupid Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/cupid-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "dancing-dragon",
+                     "name":  "Dancing Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/dancing-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "dango-penguins",
+                     "name":  "Dango Penguins",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/dango-penguins.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "deathstalker-scorpion",
+                     "name":  "Deathstalker Scorpion",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/deathstalker-scorpion.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "deinonychus",
+                     "name":  "Deinonychus",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/deinonychus.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "diamond-amazon",
+                     "name":  "Diamond Amazon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/diamond-amazon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "diamond-hummingbird",
+                     "name":  "Diamond Hummingbird",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/diamond-hummingbird.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "dimension-drifter",
+                     "name":  "Dimension Drifter",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/dimension-drifter.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "dire-stag",
+                     "name":  "Dire Stag",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/dire-stag.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "dire-wolf",
+                     "name":  "Dire Wolf",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/dire-wolf.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "donkey",
+                     "name":  "Donkey",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/donkey.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "dracula-parrot",
+                     "name":  "Dracula Parrot",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/dracula-parrot.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "dragon",
+                     "name":  "Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "dragonfly",
+                     "name":  "Dragonfly",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/dragonfly.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "dragonfruit-fox-pet",
+                     "name":  "Dragonfruit Fox",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/dragonfruit-fox-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "drake",
+                     "name":  "Drake",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/drake.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ehecatl",
+                     "name":  "Ehecatl",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ehecatl.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "elasmosaurus",
+                     "name":  "Elasmosaurus",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/elasmosaurus.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "emberlight",
+                     "name":  "Emberlight",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/emberlight.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "emperor-gorilla-pet",
+                     "name":  "Emperor Gorilla",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/emperor-gorilla-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "evil-basilisk",
+                     "name":  "Evil Basilisk",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/evil-basilisk.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "evil-chick",
+                     "name":  "Evil Chick",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/evil-chick.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "evil-chickatrice",
+                     "name":  "Evil Chickatrice",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/evil-chickatrice.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "evil-rock",
+                     "name":  "Evil Rock",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/evil-rock.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "fairy-bat-dragon",
+                     "name":  "Fairy Bat Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/fairy-bat-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "fallow-deer",
+                     "name":  "Fallow Deer",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/fallow-deer.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "fanghorn-tortoise",
+                     "name":  "Fanghorn Tortoise",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/fanghorn-tortoise.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "fire-foal",
+                     "name":  "Fire Foal",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/fire-foal.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "fire-mare",
+                     "name":  "Fire Mare",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/fire-mare.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "fire-stallion",
+                     "name":  "Fire Stallion",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/fire-stallion.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "firefighter-gibbon",
+                     "name":  "Firefighter Gibbon",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/firefighter-gibbon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "flaming-fox",
+                     "name":  "Flaming Fox",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/flaming-fox.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "fleur-de-ice",
+                     "name":  "Fleur De Ice",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/fleur-de-ice.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "floral-eggy",
+                     "name":  "Floral Eggy",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/floral-eggy.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "frog",
+                     "name":  "Frog",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/frog.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "frost-phoenix",
+                     "name":  "Frost Phoenix",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/frost-phoenix.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "frostbite-bear",
+                     "name":  "Frostbite Bear",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/frostbite-bear.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "frostbite-cub",
+                     "name":  "Frostbite Cub",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/frostbite-cub.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "frostclaw-pet",
+                     "name":  "Frostclaw",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/frostclaw-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "frozen-penguin",
+                     "name":  "Frozen Penguin",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/frozen-penguin.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "german-shepherd",
+                     "name":  "German Shepherd",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/german-shepherd.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ghost-bunny",
+                     "name":  "Ghost Bunny",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ghost-bunny.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ghost-chick",
+                     "name":  "Ghost Chick",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ghost-chick.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ghostly-cat",
+                     "name":  "Ghostly Cat",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ghostly-cat.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "giant-black-scarab",
+                     "name":  "Giant Black Scarab",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/giant-black-scarab.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "giant-panda",
+                     "name":  "Giant Panda",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/giant-panda.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "gilded-snake",
+                     "name":  "Gilded Snake",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/gilded-snake.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ginger-cat",
+                     "name":  "Ginger Cat",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ginger-cat.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "gingerbread-hare",
+                     "name":  "Gingerbread Hare",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/gingerbread-hare.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "gingerbread-mouse",
+                     "name":  "Gingerbread Mouse",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/gingerbread-mouse.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "gingerbread-reindeer",
+                     "name":  "Gingerbread Reindeer",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/gingerbread-reindeer.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "glormy-dolphin",
+                     "name":  "Glormy Dolphin",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/glormy-dolphin.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "gold-mahi-mahi",
+                     "name":  "Gold Mahi Mahi",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/gold-mahi-mahi.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "golden-albatross",
+                     "name":  "Golden Albatross",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-albatross.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "golden-dragon",
+                     "name":  "Golden Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "golden-griffin",
+                     "name":  "Golden Griffin",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-griffin.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "golden-jaguar",
+                     "name":  "Golden Jaguar",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/golden-jaguar.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "golden-king-penguin",
+                     "name":  "Golden King Penguin",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-king-penguin.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "golden-penguin",
+                     "name":  "Golden Penguin",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-penguin.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "golden-tortoise-beetle",
+                     "name":  "Golden Tortoise Beetle",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-tortoise-beetle.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "golden-walrus",
+                     "name":  "Golden Walrus",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/golden-walrus.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "goldhorn",
+                     "name":  "Goldhorn",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/goldhorn.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "grave-owl",
+                     "name":  "Grave Owl",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/grave-owl.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "green-amazon",
+                     "name":  "Green Amazon",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/green-amazon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "green-butterfly",
+                     "name":  "Green Butterfly",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/green-butterfly.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "green-chested-pheasant",
+                     "name":  "Green-Chested Pheasant",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/green-chested-pheasant.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "grim-dragon",
+                     "name":  "Grim Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/grim-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "grinmoire",
+                     "name":  "Grinmoire",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/grinmoire.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "guardian-lion",
+                     "name":  "Guardian Lion",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/guardian-lion.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "gumball-caterpillar",
+                     "name":  "Gumball Caterpillar",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/gumball-caterpillar.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "halloween-golden-mummy-cat",
+                     "name":  "Halloween Golden Mummy Cat",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/halloween-golden-mummy-cat.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "halloween-white-ghost-dragon",
+                     "name":  "Halloween White Ghost Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/halloween-white-ghost-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "halloween-white-skeleton-dog",
+                     "name":  "Halloween White Skeleton Dog",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/halloween-white-skeleton-dog.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "hamster",
+                     "name":  "Hamster",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/hamster.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "happy-clam",
+                     "name":  "Happy Clam",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/happy-clam.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "hawk",
+                     "name":  "Hawk",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/hawk.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "hero-gibbon",
+                     "name":  "Hero Gibbon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/hero-gibbon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "highland-cow",
+                     "name":  "Highland Cow",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/highland-cow.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "hippogriff",
+                     "name":  "Hippogriff",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/hippogriff.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "hydra",
+                     "name":  "Hydra",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/hydra.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ice-cream-hermit-crab",
+                     "name":  "Ice Cream Hermit Crab",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ice-cream-hermit-crab.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ice-moth-dragon",
+                     "name":  "Ice Moth Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/ice-moth-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "icy-porcupine",
+                     "name":  "Icy Porcupine",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/icy-porcupine.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "indian-flying-fox",
+                     "name":  "Indian Flying Fox",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/indian-flying-fox.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "influencer-gibbon",
+                     "name":  "Influencer Gibbon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/influencer-gibbon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "inmate-capuchin-monkey-pet",
+                     "name":  "Inmate Capuchin Monkey",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/inmate-capuchin-monkey-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "kage-crow",
+                     "name":  "Kage Crow",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/kage-crow.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "kelp-captain",
+                     "name":  "Kelp Captain",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/kelp-captain.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "kelp-hunter",
+                     "name":  "Kelp Hunter",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/kelp-hunter.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "king-bee",
+                     "name":  "King Bee",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/king-bee.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "king-penguin",
+                     "name":  "King Penguin",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/king-penguin.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "kitsune",
+                     "name":  "Kitsune",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/kitsune.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "kitty-bat",
+                     "name":  "Kitty Bat",
+                     "rarity":  "review",
+                     "image":  "/assets/pets/kitty-bat.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "komodo-dragon",
+                     "name":  "Komodo Dragon",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/komodo-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "kookaburra",
+                     "name":  "Kookaburra",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/kookaburra.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ladybug",
+                     "name":  "Ladybug",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ladybug.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "lamb",
+                     "name":  "Lamb",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/lamb.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "lammergeier",
+                     "name":  "Lammergeier",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/lammergeier.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "lion-cub",
+                     "name":  "Lion Cub",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/lion-cub.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "lionfish",
+                     "name":  "Lionfish",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/lionfish.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "lunar-gold-tiger",
+                     "name":  "Lunar Gold Tiger",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/lunar-gold-tiger.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "lunar-ox",
+                     "name":  "Lunar Ox",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/lunar-ox.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "lunar-white-tiger",
+                     "name":  "Lunar White Tiger",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/lunar-white-tiger.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "magma-moose",
+                     "name":  "Magma Moose",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/magma-moose.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "magma-snail",
+                     "name":  "Magma Snail",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/magma-snail.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "maine-coon",
+                     "name":  "Maine Coon",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/maine-coon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "majestic-pony",
+                     "name":  "Majestic Pony",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/majestic-pony.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "maneki-neko",
+                     "name":  "Maneki-Neko",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/maneki-neko.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "manta-ray",
+                     "name":  "Manta Ray",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/manta-ray.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "many-mackerel",
+                     "name":  "Many Mackerel",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/many-mackerel.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "mermicorn",
+                     "name":  "Mermicorn",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/mermicorn.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "merry-mistletroll",
+                     "name":  "Merry Mistletroll",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/merry-mistletroll.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "metal-ox",
+                     "name":  "Metal Ox",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/metal-ox.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "midnight-dragon",
+                     "name":  "Midnight Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/midnight-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "mini-schnauzer",
+                     "name":  "Mini Schnauzer",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/mini-schnauzer.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "mirai-moth",
+                     "name":  "Mirai Moth",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/mirai-moth.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "mochi-meow",
+                     "name":  "Mochi Meow",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/mochi-meow.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "momma-moose",
+                     "name":  "Momma Moose",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/momma-moose.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "moonbeam-butterfly",
+                     "name":  "Moonbeam Butterfly",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/moonbeam-butterfly.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "moose-calf",
+                     "name":  "Moose Calf",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/moose-calf.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "mr-whiskerpips",
+                     "name":  "Mr. Whiskerpips",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/mr-whiskerpips.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "mrs-whiskerpips",
+                     "name":  "Mrs. Whiskerpips",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/mrs-whiskerpips.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "naughty-mistletroll",
+                     "name":  "Naughty Mistletroll",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/naughty-mistletroll.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "nightmare-owl",
+                     "name":  "Nightmare Owl",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/nightmare-owl.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ninja-monkey-pet",
+                     "name":  "Ninja Monkey",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/ninja-monkey-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "officer-gibbon",
+                     "name":  "Officer Gibbon",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/officer-gibbon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "onza",
+                     "name":  "Onza",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/onza.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "orange-butterfly",
+                     "name":  "Orange Butterfly",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/orange-butterfly.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "orca",
+                     "name":  "Orca",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/orca.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ornate-horned-frog",
+                     "name":  "Ornate Horned Frog",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ornate-horned-frog.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "owlbear",
+                     "name":  "Owlbear",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/owlbear.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "pangolin",
+                     "name":  "Pangolin",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/pangolin.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "papa-moose",
+                     "name":  "Papa Moose",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/papa-moose.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "partridge",
+                     "name":  "Partridge",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/partridge.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "peach-owl",
+                     "name":  "Peach Owl",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/peach-owl.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "peacock",
+                     "name":  "Peacock",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/peacock.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "peregrine-falcon",
+                     "name":  "Peregrine Falcon",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/peregrine-falcon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "persian-cat",
+                     "name":  "Persian Cat",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/persian-cat.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "phantom-dragon",
+                     "name":  "Phantom Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/phantom-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "pine-marten",
+                     "name":  "Pine Marten",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/pine-marten.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "pineapple-owl",
+                     "name":  "Pineapple Owl",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/pineapple-owl.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "pink-betta-fish",
+                     "name":  "Pink Betta Fish",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/pink-betta-fish.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "pirate-ghost-capuchin-monkey-pet",
+                     "name":  "Pirate Ghost Capuchin Monkey",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/pirate-ghost-capuchin-monkey-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "pirate-hermit-crab",
+                     "name":  "Pirate Hermit Crab",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/pirate-hermit-crab.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "platypus",
+                     "name":  "Platypus",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/platypus.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "pomeranian",
+                     "name":  "Pomeranian",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/pomeranian.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "praying-mantis-pet",
+                     "name":  "Praying Mantis Pet",
+                     "rarity":  "review",
+                     "image":  "/assets/pets/praying-mantis-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "preppy-capuchin-monkey-pet",
+                     "name":  "Preppy Capuchin Monkey",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/preppy-capuchin-monkey-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "pretty-pony",
+                     "name":  "Pretty Pony",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/pretty-pony.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "priceless-shrimp",
+                     "name":  "Priceless Shrimp",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/priceless-shrimp.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "primal-kaijunior",
+                     "name":  "Primal Kaijunior",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/primal-kaijunior.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "prismatic-butterfly",
+                     "name":  "Prismatic Butterfly",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/prismatic-butterfly.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "puffer-fish",
+                     "name":  "Puffer Fish",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/puffer-fish.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "pumpkin-friend",
+                     "name":  "Pumpkin Friend",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/pumpkin-friend.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "puptune",
+                     "name":  "Puptune",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/puptune.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "queen-bee",
+                     "name":  "Queen Bee",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/queen-bee.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "quetzalcoatl",
+                     "name":  "Quetzalcoatl",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/quetzalcoatl.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "rainbow-dragon",
+                     "name":  "Rainbow Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/rainbow-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ram",
+                     "name":  "Ram",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ram.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "red-crowned-crane",
+                     "name":  "Red Crowned Crane",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/red-crowned-crane.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "red-sand-dollar",
+                     "name":  "Red Sand Dollar",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/red-sand-dollar.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "red-squirrel",
+                     "name":  "Red Squirrel",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/red-squirrel.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ribbon-seal",
+                     "name":  "Ribbon Seal",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ribbon-seal.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "rice-cake-rabbit",
+                     "name":  "Rice Cake Rabbit",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/rice-cake-rabbit.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ringmaster-gibbon-pet",
+                     "name":  "Ringmaster Gibbon",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/ringmaster-gibbon-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "roadrunner",
+                     "name":  "Roadrunner",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/roadrunner.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "robo-dog",
+                     "name":  "Robo Dog",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/robo-dog.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "robot",
+                     "name":  "Robot",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/robot.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "rooster",
+                     "name":  "Rooster",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/rooster.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "rose-dragon",
+                     "name":  "Rose Dragon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/rose-dragon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "royal-corgi",
+                     "name":  "Royal Corgi",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/royal-corgi.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "royal-mistletroll",
+                     "name":  "Royal Mistletroll",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/royal-mistletroll.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "sabertooth",
+                     "name":  "Sabertooth",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/sabertooth.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "sakura-spirit",
+                     "name":  "Sakura Spirit",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/sakura-spirit.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "salamander",
+                     "name":  "Salamander",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/salamander.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "scarecrow-cat",
+                     "name":  "Scarecrow Cat",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/scarecrow-cat.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "scarecrow-crow",
+                     "name":  "Scarecrow Crow",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/scarecrow-crow.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "scarlet-butterfly",
+                     "name":  "Scarlet Butterfly",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/scarlet-butterfly.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "scorching-kaijunior",
+                     "name":  "Scorching Kaijunior",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/scorching-kaijunior.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "sea-slug",
+                     "name":  "Sea Slug",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/sea-slug.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "sea-turtle",
+                     "name":  "Sea Turtle",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/sea-turtle.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "seabed-creeper",
+                     "name":  "Seabed Creeper",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/seabed-creeper.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "seafoam-butterfly",
+                     "name":  "Seafoam Butterfly",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/seafoam-butterfly.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "seagull",
+                     "name":  "Seagull",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/seagull.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "shark",
+                     "name":  "Shark",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/shark.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "shetland-pony-light-brown",
+                     "name":  "Shetland Pony Light Brown",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/shetland-pony-light-brown.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "shetland-pony-white",
+                     "name":  "Shetland Pony White",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/shetland-pony-white.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "shiba-inu",
+                     "name":  "Shiba Inu",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/shiba-inu.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "siamese-cat",
+                     "name":  "Siamese Cat",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/siamese-cat.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "silverback-gorilla",
+                     "name":  "Silverback Gorilla",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/silverback-gorilla.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "skelebat",
+                     "name":  "Skelebat",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/skelebat.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "skunk-pet",
+                     "name":  "Skunk",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/skunk-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "slime",
+                     "name":  "Slime",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/slime.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "slimingo",
+                     "name":  "Slimingo",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/slimingo.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "snow-monkey",
+                     "name":  "Snow Monkey",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/snow-monkey.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "snow-owl",
+                     "name":  "Snow Owl",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/snow-owl.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "snowball-pet",
+                     "name":  "Snowball Pet",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/snowball-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "snowball-pug",
+                     "name":  "Snowball Pug",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/snowball-pug.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "snowy-mammoth",
+                     "name":  "Snowy Mammoth",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/snowy-mammoth.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "space-whale",
+                     "name":  "Space Whale",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/space-whale.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "spider-crab",
+                     "name":  "Spider Crab",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/spider-crab.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "spinosaurus",
+                     "name":  "Spinosaurus",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/spinosaurus.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "sprout-snail",
+                     "name":  "Sprout Snail",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/sprout-snail.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "squid",
+                     "name":  "Squid",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/squid.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "st-bernard",
+                     "name":  "St Bernard",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/st-bernard.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "starfish",
+                     "name":  "Starfish",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/starfish.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "starmite",
+                     "name":  "Starmite",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/starmite.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "strawberry-penguin",
+                     "name":  "Strawberry Penguin",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/strawberry-penguin.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "striped-eggy",
+                     "name":  "Striped Eggy",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/striped-eggy.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "sunglider",
+                     "name":  "Sunglider",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/sunglider.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "sunrise-duckling",
+                     "name":  "Sunrise Duckling",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/sunrise-duckling.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "super-saru",
+                     "name":  "Super Saru",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/super-saru.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "swordfish",
+                     "name":  "Swordfish",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/swordfish.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "temple-friend",
+                     "name":  "Temple Friend",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/temple-friend.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "ti-de-nadal",
+                     "name":  "Ti De Nadal",
+                     "rarity":  "review",
+                     "image":  "/assets/pets/ti-de-nadal.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "toasty-red-panda",
+                     "name":  "Toasty Red Panda",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/toasty-red-panda.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "toxic-kaijunior",
+                     "name":  "Toxic Kaijunior",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/toxic-kaijunior.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "toy-monkey-pet",
+                     "name":  "Toy Monkey",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/toy-monkey-pet.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "trapdoor-snail",
+                     "name":  "Trapdoor Snail",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/trapdoor-snail.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "t-rex",
+                     "name":  "T-Rex",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/t-rex.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "tri-horned-treehopper",
+                     "name":  "Tri-horned Treehopper",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/tri-horned-treehopper.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "turkey",
+                     "name":  "Turkey",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/turkey.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "vanilla-penguin",
+                     "name":  "Vanilla Penguin",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/vanilla-penguin.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "velocirooster",
+                     "name":  "Velocirooster",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/velocirooster.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "vermilion-butterfly",
+                     "name":  "Vermillion Butterfly",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/vermilion-butterfly.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "villain-gibbon",
+                     "name":  "Villain Gibbon",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/villain-gibbon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "violet-butterfly",
+                     "name":  "Violet Butterfly",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/violet-butterfly.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "volcanic-rhino",
+                     "name":  "Volcanic Rhino",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/volcanic-rhino.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "vulture",
+                     "name":  "Vulture",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/vulture.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "waffle-wyrm",
+                     "name":  "Waffle Wyrm",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/waffle-wyrm.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "water-moon-bear",
+                     "name":  "Water Moon Bear",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/water-moon-bear.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "water-rabbit",
+                     "name":  "Water Rabbit",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/water-rabbit.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "white-sand-dollar",
+                     "name":  "White Sand Dollar",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/white-sand-dollar.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "wildfire-hawk",
+                     "name":  "Wildfire Hawk",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/wildfire-hawk.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "winged-horse",
+                     "name":  "Winged Horse",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/winged-horse.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "winged-tiger",
+                     "name":  "Winged Tiger",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/winged-tiger.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "winter-buck",
+                     "name":  "Winter Buck",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/winter-buck.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "winter-doe",
+                     "name":  "Winter Doe",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/winter-doe.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "wood-pigeon",
+                     "name":  "Wood Pigeon",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/wood-pigeon.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "wooly-rhino",
+                     "name":  "Wooly Rhino",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/wooly-rhino.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "wyvern",
+                     "name":  "Wyvern",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/wyvern.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "yeti",
+                     "name":  "Yeti",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/yeti.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "yule-log-dog",
+                     "name":  "Yule Log Dog",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/yule-log-dog.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "zodiac-minion-chick",
+                     "name":  "Zodiac Minion Chick",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/zodiac-minion-chick.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "zombie-wolf",
+                     "name":  "Zombie Wolf",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/zombie-wolf.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "abyssinian-cat",
+                     "name":  "Abyssinian Cat",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/abyssinian-cat.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "amber-butterfly",
+                     "name":  "Amber Butterfly",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/amber-butterfly.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "angus-cow",
+                     "name":  "Angus Cow",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/angus-cow.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "ankylosaurus",
+                     "name":  "Ankylosaurus",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/ankylosaurus.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "basilisk",
+                     "name":  "Basilisk",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/basilisk.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "bird-of-paradise",
+                     "name":  "Bird of Paradise",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/bird-of-paradise.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "black-moon-bear",
+                     "name":  "Black Moon Bear",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/black-moon-bear.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "black-rhino",
+                     "name":  "Black Rhino",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/black-rhino.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "bloodhound",
+                     "name":  "Bloodhound",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/bloodhound.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "blossom-snake",
+                     "name":  "Blossom Snake",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/blossom-snake.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "blue-dog",
+                     "name":  "Blue Dog",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/blue-dog.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "blue-jay-pet",
+                     "name":  "Blue Jay",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/blue-jay-pet.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "bunny",
+                     "name":  "Bunny",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/bunny.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "capuchin-monkey",
+                     "name":  "Capuchin Monkey",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/capuchin-monkey.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "cassowary",
+                     "name":  "Cassowary",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/cassowary.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "castle-hermit-crab",
+                     "name":  "Castle Hermit Crab",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/castle-hermit-crab.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "chanekeh",
+                     "name":  "Chanekeh",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/chanekeh.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "cherub-chipmunk",
+                     "name":  "Cherub Chipmunk",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/cherub-chipmunk.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "chipmunk",
+                     "name":  "Chipmunk",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/chipmunk.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "clover-cow",
+                     "name":  "Clover Cow",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/clover-cow.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "cow-calf",
+                     "name":  "Cow Calf",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/cow-calf.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "dilophosaurus",
+                     "name":  "Dilophosaurus",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/dilophosaurus.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "dj-snooze",
+                     "name":  "DJ Snooze",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/dj-snooze.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "dotted-eggy",
+                     "name":  "Dotted Eggy",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/dotted-eggy.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "eggnog-hare",
+                     "name":  "Eggnog Hare",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/eggnog-hare.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "emperor-shrimp",
+                     "name":  "Emperor Shrimp",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/emperor-shrimp.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "english-sheepdog",
+                     "name":  "English Sheepdog",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/english-sheepdog.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "feesh",
+                     "name":  "Feesh",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/feesh.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "flaming-zebra",
+                     "name":  "Flaming Zebra",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/flaming-zebra.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "french-bulldog",
+                     "name":  "French Bulldog",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/french-bulldog.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "gecko",
+                     "name":  "Gecko",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/gecko.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "ghost-dog",
+                     "name":  "Ghost Dog",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/ghost-dog.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "ghost-wolf",
+                     "name":  "Ghost Wolf",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/ghost-wolf.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "gibbon",
+                     "name":  "Gibbon",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/gibbon.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "goldfish",
+                     "name":  "Goldfish",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/goldfish.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "goose",
+                     "name":  "Goose",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/goose.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "gorilla",
+                     "name":  "Gorilla",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/gorilla.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "great-pyrenees",
+                     "name":  "Great Pyrenees",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/great-pyrenees.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "gummy-guana",
+                     "name":  "Gummy Guana",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/gummy-guana.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "halloween-evil-dachshund",
+                     "name":  "Halloween Evil Dachshund",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/halloween-evil-dachshund.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "halloween-white-mummy-cat",
+                     "name":  "Halloween White Mummy Cat",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/halloween-white-mummy-cat.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "happy-duckling",
+                     "name":  "Happy Duckling",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/happy-duckling.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "hare",
+                     "name":  "Hare",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/hare.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "hippo",
+                     "name":  "Hippo",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/hippo.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "husky",
+                     "name":  "Husky",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/husky.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "ibex",
+                     "name":  "Ibex",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/ibex.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "ibis",
+                     "name":  "Ibis",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/ibis.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "ice-cube",
+                     "name":  "Ice Cube",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/ice-cube.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "indian-leopard",
+                     "name":  "Indian Leopard",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/indian-leopard.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "irish-elk",
+                     "name":  "Irish Elk",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/irish-elk.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "kappakid",
+                     "name":  "Kappakid",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/kappakid.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "kelp-raider",
+                     "name":  "Kelp Raider",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/kelp-raider.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "kiwi",
+                     "name":  "Kiwi",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/kiwi.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "koala",
+                     "name":  "Koala",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/koala.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "koi-carp",
+                     "name":  "Koi Carp",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/koi-carp.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "leopard-cat",
+                     "name":  "Leopard Cat",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/leopard-cat.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "leopard-shark",
+                     "name":  "Leopard Shark",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/leopard-shark.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "longhorn-cow",
+                     "name":  "Longhorn Cow",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/longhorn-cow.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "love-bird",
+                     "name":  "Love Bird",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/love-bird.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "lunar-tiger",
+                     "name":  "Lunar Tiger",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/lunar-tiger.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "lynx",
+                     "name":  "Lynx",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/lynx.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "marabou-stork",
+                     "name":  "Marabou Stork",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/marabou-stork.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "mecha-r4bbit",
+                     "name":  "Mecha R4BBIT",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/mecha-r4bbit.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "merhorse",
+                     "name":  "Merhorse",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/merhorse.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "mexican-wolf",
+                     "name":  "Mexican Wolf",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/mexican-wolf.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "monkey",
+                     "name":  "Monkey",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/monkey.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "moon-rabbit",
+                     "name":  "Moon Rabbit",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/moon-rabbit.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "moonlight-moth",
+                     "name":  "Moonlight Moth",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/moonlight-moth.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "moonpine",
+                     "name":  "Moonpine",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/moonpine.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "mule",
+                     "name":  "Mule",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/mule.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "munchkin-cat",
+                     "name":  "Munchkin Cat",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/munchkin-cat.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "musk-ox",
+                     "name":  "Musk Ox",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/musk-ox.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "narwhal",
+                     "name":  "Narwhal",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/narwhal.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "nebula-snake",
+                     "name":  "Nebula Snake",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/nebula-snake.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "nutcracker-squirrel",
+                     "name":  "Nutcracker Squirrel",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/nutcracker-squirrel.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "ocelot",
+                     "name":  "Ocelot",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/ocelot.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "orange-betta-fish",
+                     "name":  "Orange Betta Fish",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/orange-betta-fish.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "orangutan",
+                     "name":  "Orangutan",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/orangutan.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "oryx",
+                     "name":  "Oryx",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/oryx.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "ostrich",
+                     "name":  "Ostrich",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/ostrich.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "ox",
+                     "name":  "Ox",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/ox.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "panda",
+                     "name":  "Panda",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/panda.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "parakeet",
+                     "name":  "Parakeet",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/parakeet.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "penguin",
+                     "name":  "Penguin",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/penguin.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "pig",
+                     "name":  "Pig",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/pig.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "pink-cat",
+                     "name":  "Pink Cat",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/pink-cat.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "poison-dart-frog",
+                     "name":  "Poison Dart Frog",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/poison-dart-frog.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "prism-snake",
+                     "name":  "Prism Snake",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/prism-snake.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "pterodactyl",
+                     "name":  "Pterodactyl",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/pterodactyl.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "pudding-cat",
+                     "name":  "Pudding Cat",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/pudding-cat.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "pumpkin-pet",
+                     "name":  "Pumpkin Pet",
+                     "rarity":  "review",
+                     "image":  "/assets/pets/pumpkin-pet.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "punk-pony",
+                     "name":  "Punk Pony",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/punk-pony.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "rat",
+                     "name":  "Rat",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/rat.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "red-fox",
+                     "name":  "Red Fox",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/red-fox.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "red-panda",
+                     "name":  "Red Panda",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/red-panda.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "rhino",
+                     "name":  "Rhino",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/rhino.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "ring-tailed-lemur",
+                     "name":  "Ring-tailed Lemur",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/ring-tailed-lemur.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "samoyed",
+                     "name":  "Samoyed",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/samoyed.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "sasquatch",
+                     "name":  "Sasquatch",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/sasquatch.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "scarecrow-horse",
+                     "name":  "Scarecrow Horse",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/scarecrow-horse.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "scoob",
+                     "name":  "Scoob",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/scoob.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "sea-angel",
+                     "name":  "Sea Angel",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/sea-angel.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "seahorse",
+                     "name":  "Seahorse",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/seahorse.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "shetland-pony-dark-brown",
+                     "name":  "Shetland Pony Dark Brown",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/shetland-pony-dark-brown.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "shiver-wolf",
+                     "name":  "Shiver Wolf",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/shiver-wolf.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "singularity-beetle",
+                     "name":  "Singularity Beetle",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/singularity-beetle.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "singularity-pisces",
+                     "name":  "Singularity Pisces",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/singularity-pisces.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "sloth",
+                     "name":  "Sloth",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/sloth.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "sneak-weasel",
+                     "name":  "Sneak Weasel",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/sneak-weasel.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "snow-puma",
+                     "name":  "Snow Puma",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/snow-puma.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "starhopper",
+                     "name":  "Starhopper",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/starhopper.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "steppe-lion",
+                     "name":  "Steppe Lion",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/steppe-lion.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "subzero-scorpion",
+                     "name":  "Subzero Scorpion",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/subzero-scorpion.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "summer-walrus",
+                     "name":  "Summer Walrus",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/summer-walrus.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "sweetheart-rat",
+                     "name":  "Sweetheart Rat",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/sweetheart-rat.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "tarantula",
+                     "name":  "Tarantula",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/tarantula.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "tarsier",
+                     "name":  "Tarsier",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/tarsier.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "tasmanian-devil",
+                     "name":  "Tasmanian Devil",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/tasmanian-devil.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "the-black-dog",
+                     "name":  "The Black Dog",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/the-black-dog.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "thorny-devil",
+                     "name":  "Thorny Devil",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/thorny-devil.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "toy-poodle",
+                     "name":  "Toy Poodle",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/toy-poodle.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "tree-sasquatch",
+                     "name":  "Tree Sasquatch",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/tree-sasquatch.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "turtle-doves",
+                     "name":  "Turtle Doves",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/turtle-doves.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "undead-elk",
+                     "name":  "Undead Elk",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/undead-elk.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "water-opossum",
+                     "name":  "Water Opossum",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/water-opossum.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "weevil-pet",
+                     "name":  "Weevil Pet",
+                     "rarity":  "review",
+                     "image":  "/assets/pets/weevil-pet.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "winter-fawn",
+                     "name":  "Winter Fawn",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/winter-fawn.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "wolf",
+                     "name":  "Wolf",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/wolf.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "woodpecker",
+                     "name":  "Woodpecker",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/woodpecker.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "woolly-mammoth",
+                     "name":  "Woolly Mammoth",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/woolly-mammoth.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "wren",
+                     "name":  "Wron",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/wren.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "yellow-butterfly",
+                     "name":  "Yellow Butterfly",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/yellow-butterfly.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "zebra",
+                     "name":  "Zebra",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/zebra.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "zeopod",
+                     "name":  "Zeopod",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/zeopod.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "zombie-chick",
+                     "name":  "Zombie Chick",
+                     "rarity":  "review",
+                     "image":  "/assets/pets/zombie-chick.png",
+                     "legacyValue":  0.5
+                 },
+                 {
+                     "slug":  "2021-uplift-butterfly",
+                     "name":  "2021 Uplift Butterfly",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/2021-uplift-butterfly.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "2022-uplift-butterfly",
+                     "name":  "2022 Uplift Butterfly",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/2022-uplift-butterfly.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "2025-birthday-butterfly",
+                     "name":  "2025 Birthday Butterfly",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/2025-birthday-butterfly.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "amami-rabbit",
+                     "name":  "Amami Rabbit",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/amami-rabbit.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "angler-fish",
+                     "name":  "Angler Fish",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/angler-fish.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "arctic-hare",
+                     "name":  "Arctic Hare",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/arctic-hare.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "arctic-tern",
+                     "name":  "Arctic Tern",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/arctic-tern.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "banded-palm-civet",
+                     "name":  "Banded Palm Civet",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/banded-palm-civet.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "bat",
+                     "name":  "Bat",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/bat.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "birthday-butterfly-2023",
+                     "name":  "Birthday Butterfly 2023",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/birthday-butterfly-2023.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "birthday-butterfly-2024",
+                     "name":  "Birthday Butterfly 2024",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/birthday-butterfly-2024.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "black-marlin",
+                     "name":  "Black Marlin",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/black-marlin.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "black-tiger",
+                     "name":  "Black Tiger",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/black-tiger.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "borhyaena-gigantica",
+                     "name":  "Borhyaena Gigantica",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/borhyaena-gigantica.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "camel",
+                     "name":  "Camel",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/camel.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "canadian-goose",
+                     "name":  "Canadian Goose",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/canadian-goose.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "chickatrice",
+                     "name":  "Chickatrice",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/chickatrice.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "chocolate-labrador",
+                     "name":  "Chocolate Labrador",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/chocolate-labrador.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "cocoadile",
+                     "name":  "Cocoadile",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/cocoadile.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "crab",
+                     "name":  "Crab",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/crab.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "cute-a-cabra",
+                     "name":  "Cute-A-Cabra",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/cute-a-cabra.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "dingo",
+                     "name":  "Dingo",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/dingo.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "dolphin",
+                     "name":  "Dolphin",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/dolphin.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "dracula-fish",
+                     "name":  "Dracula Fish",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/dracula-fish.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "dylan",
+                     "name":  "Dylan",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/dylan.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "eel",
+                     "name":  "Eel",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/eel.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "eggnog-dog",
+                     "name":  "Eggnog Dog",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/eggnog-dog.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "ermine",
+                     "name":  "Ermine",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/ermine.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "fennec-fox",
+                     "name":  "Fennec Fox",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/fennec-fox.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "fossa",
+                     "name":  "Fossa",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/fossa.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "frogspawn",
+                     "name":  "Frogspawn",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/frogspawn.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "gila-monster",
+                     "name":  "Gila Monster",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/gila-monster.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "glyptodon",
+                     "name":  "Glyptodon",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/glyptodon.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "halloween-black-mummy-cat",
+                     "name":  "Halloween Black Mummy Cat",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/halloween-black-mummy-cat.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "halloween-blue-scorpion",
+                     "name":  "Halloween Blue Scorpion",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/halloween-blue-scorpion.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "hammerhead-shark",
+                     "name":  "Hammerhead Shark",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/hammerhead-shark.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "harp-seal",
+                     "name":  "Harp Seal",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/harp-seal.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "hermit-crab",
+                     "name":  "Hermit Crab",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/hermit-crab.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "horse",
+                     "name":  "Horse",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/horse.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "humbug",
+                     "name":  "Humbug",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/humbug.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "jumping-spider",
+                     "name":  "Jumping Spider",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/jumping-spider.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "kaijunior",
+                     "name":  "Kaijunior",
+                     "rarity":  "review",
+                     "image":  "/assets/pets/kaijunior.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "kakapo",
+                     "name":  "Kakapo",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/kakapo.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "kelp-crewmate",
+                     "name":  "Kelp Crewmate",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/kelp-crewmate.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "kirin",
+                     "name":  "Kirin",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/kirin.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "lobster",
+                     "name":  "Lobster",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/lobster.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "magpie",
+                     "name":  "Magpie",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/magpie.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "mahi-mahi",
+                     "name":  "Mahi Mahi",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/mahi-mahi.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "mistletroll",
+                     "name":  "Mistletroll",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/mistletroll.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "mole-pet",
+                     "name":  "Mole Pet",
+                     "rarity":  "review",
+                     "image":  "/assets/pets/mole-pet.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "muskrat",
+                     "name":  "Muskrat",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/muskrat.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "old-king-coal",
+                     "name":  "Old King Coal",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/old-king-coal.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "patchy-bear",
+                     "name":  "Patchy Bear",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/patchy-bear.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "pet-rock",
+                     "name":  "Pet Rock",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/pet-rock.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "pistachio",
+                     "name":  "Pistachio",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/pistachio.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "poodle",
+                     "name":  "Poodle",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/poodle.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "possum",
+                     "name":  "Possum",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/possum.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "puma",
+                     "name":  "Puma",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/puma.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "quokka",
+                     "name":  "Quokka",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/quokka.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "raccoon",
+                     "name":  "Raccoon",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/raccoon.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "rattlesnake",
+                     "name":  "Rattlesnake",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/rattlesnake.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "red-cardinal",
+                     "name":  "Red Cardinal",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/red-cardinal.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "rhino-beetle",
+                     "name":  "Rhino Beetle",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/rhino-beetle.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "river",
+                     "name":  "River",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/river.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "rock",
+                     "name":  "Rock",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/rock.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "rock-pigeon",
+                     "name":  "Rock Pigeon",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/rock-pigeon.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "rodeo-bull",
+                     "name":  "Rodeo Bull",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/rodeo-bull.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "scarecrow",
+                     "name":  "Scarecrow",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/scarecrow.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "sea-skeleton-panda",
+                     "name":  "Sea Skeleton Panda",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/sea-skeleton-panda.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "shih-tzu",
+                     "name":  "Shih Tzu",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/shih-tzu.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "slug",
+                     "name":  "Slug",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/slug.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "snorgle",
+                     "name":  "Snorgle",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/snorgle.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "snow-cat",
+                     "name":  "Snow Cat",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/snow-cat.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "snow-leopard",
+                     "name":  "Snow Leopard",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/snow-leopard.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "snowman",
+                     "name":  "Snowman",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/snowman.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "stegosaurus",
+                     "name":  "Stegosaurus",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/stegosaurus.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "tanuki",
+                     "name":  "Tanuki",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/tanuki.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "tawny-frogmouth",
+                     "name":  "Tawny Frogmouth",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/tawny-frogmouth.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "therapy-dog",
+                     "name":  "Therapy Dog",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/therapy-dog.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "tree-frog",
+                     "name":  "Tree Frog",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/tree-frog.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "triceratops",
+                     "name":  "Triceratops",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/triceratops.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "velociraptor",
+                     "name":  "Velociraptor",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/velociraptor.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "warthog",
+                     "name":  "Warthog",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/warthog.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "yellow-lipped-sea-krait",
+                     "name":  "Yellow-lipped Sea Krait",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/yellow-lipped-sea-krait.png",
+                     "legacyValue":  0.2
+                 },
+                 {
+                     "slug":  "angelfish",
+                     "name":  "Angelfish",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/angelfish.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "ant",
+                     "name":  "Ant",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/ant.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "armadillo",
+                     "name":  "Armadillo",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/armadillo.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "ash-zebra",
+                     "name":  "Ash Zebra",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/ash-zebra.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "aye-aye",
+                     "name":  "Aye Aye",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/aye-aye.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "bakeneko",
+                     "name":  "Bakeneko",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/bakeneko.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "bali-starling",
+                     "name":  "Bali Starling",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/bali-starling.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "bandicoot",
+                     "name":  "Bandicoot",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/bandicoot.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "beaver",
+                     "name":  "Beaver",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/beaver.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "beluga-whale",
+                     "name":  "Beluga Whale",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/beluga-whale.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "blue-butterfly",
+                     "name":  "Blue Butterfly",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/blue-butterfly.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "bluebottle-fly",
+                     "name":  "Bluebottle Fly",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/bluebottle-fly.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "brachiosaurus",
+                     "name":  "Brachiosaurus",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/brachiosaurus.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "buffalo",
+                     "name":  "Buffalo",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/buffalo.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "bullfrog",
+                     "name":  "Bullfrog",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/bullfrog.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "burtaur",
+                     "name":  "Burtaur",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/burtaur.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "california-condor",
+                     "name":  "California Condor",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/california-condor.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "cat",
+                     "name":  "Cat",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/cat.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "chick",
+                     "name":  "Chick",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/chick.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "classic-teapot",
+                     "name":  "Classic Teapot",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/classic-teapot.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "cockroach",
+                     "name":  "Cockroach",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/cockroach.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "coyote",
+                     "name":  "Coyote",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/coyote.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "dog",
+                     "name":  "Dog",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/dog.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "dugong",
+                     "name":  "Dugong",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/dugong.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "flying-fish",
+                     "name":  "Flying Fish",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/flying-fish.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "frankenfeline",
+                     "name":  "Frankenfeline",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/frankenfeline.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "galapagos-sea-lion",
+                     "name":  "Galapagos Sea Lion",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/galapagos-sea-lion.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "garden-snake-pet",
+                     "name":  "Garden Snake",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/garden-snake-pet.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "ghost",
+                     "name":  "Ghost",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/ghost.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "ground-sloth",
+                     "name":  "Ground Sloth",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/ground-sloth.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "hopbop",
+                     "name":  "Hopbop",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/hopbop.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "island-tarsier",
+                     "name":  "Island Tarsier",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/island-tarsier.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "japanese-snow-fairy",
+                     "name":  "Japanese Snow Fairy",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/japanese-snow-fairy.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "kid-goat",
+                     "name":  "Kid Goat",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/kid-goat.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "liger",
+                     "name":  "Liger",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/liger.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "malayan-tapir",
+                     "name":  "Malayan Tapir",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/malayan-tapir.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "maleo-bird",
+                     "name":  "Maleo Bird",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/maleo-bird.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "mongoose",
+                     "name":  "Mongoose",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/mongoose.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "mosquito",
+                     "name":  "Mosquito",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/mosquito.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "mouse",
+                     "name":  "Mouse",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/mouse.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "otter",
+                     "name":  "Otter",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/otter.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "piranha",
+                     "name":  "Piranha",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/piranha.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "practice-dog",
+                     "name":  "Practice Dog",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/practice-dog.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "rabbit",
+                     "name":  "Rabbit",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/rabbit.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "ratatoskr",
+                     "name":  "Ratatoskr",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/ratatoskr.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "robin",
+                     "name":  "Robin",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/robin.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "sado-mole",
+                     "name":  "Sado Mole",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/sado-mole.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "sandfish",
+                     "name":  "Sandfish",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/sandfish.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "show-pony",
+                     "name":  "Show Pony",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/show-pony.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "stingray",
+                     "name":  "Stingroy",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/stingray.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "tasmanian-tiger",
+                     "name":  "Tasmanian Tiger",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/tasmanian-tiger.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "tegu",
+                     "name":  "Tegu",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/tegu.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "urchin",
+                     "name":  "Urchin",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/urchin.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "walrus",
+                     "name":  "Walrus",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/walrus.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "wolpertinger",
+                     "name":  "Wolpertinger",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/wolpertinger.png",
+                     "legacyValue":  0
+                 }
+             ]
+}
