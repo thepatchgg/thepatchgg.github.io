@@ -671,6 +671,366 @@
                                 },
                      "rarity":  "Ultra-Rare",
                      "segment":  "Entry tier"
+                 },
+                 {
+                     "slug":  "mini-pig",
+                     "name":  "Mini Pig",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Mini Pig has become one of the stronger modern collector pets and regularly beats older expectation-based lists.",
+                     "values":  {
+                                    "default":  24.25,
+                                    "noPotion":  23,
+                                    "neon":  84,
+                                    "neonNoPotion":  82,
+                                    "mega":  347,
+                                    "megaNoPotion":  350
+                                }
+                 },
+                 {
+                     "slug":  "monkey-king-pet",
+                     "name":  "Monkey King",
+                     "rarity":  "Legendary",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Monkey King still carries strong collector demand and clean prestige compared with many older event legends.",
+                     "values":  {
+                                    "default":  21.25,
+                                    "noPotion":  20.75,
+                                    "neon":  69,
+                                    "neonNoPotion":  85.5,
+                                    "mega":  266,
+                                    "megaNoPotion":  363.38
+                                }
+                 },
+                 {
+                     "slug":  "flamingo",
+                     "name":  "Flamingo",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Collector tier",
+                     "demand":  "Very High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Flamingo remains one of the strongest older ultra-rares because collector demand is deep and easy to understand.",
+                     "values":  {
+                                    "default":  20,
+                                    "noPotion":  19,
+                                    "neon":  76,
+                                    "neonNoPotion":  75,
+                                    "mega":  304,
+                                    "megaNoPotion":  329
+                                }
+                 },
+                 {
+                     "slug":  "elephant",
+                     "name":  "Elephant",
+                     "rarity":  "Rare",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Elephant keeps outperforming its rarity tag because old supply and player preference are both real.",
+                     "values":  {
+                                    "default":  17,
+                                    "noPotion":  16.25,
+                                    "neon":  52,
+                                    "neonNoPotion":  51,
+                                    "mega":  194,
+                                    "megaNoPotion":  204
+                                }
+                 },
+                 {
+                     "slug":  "albino-monkey",
+                     "name":  "Albino Monkey",
+                     "rarity":  "Legendary",
+                     "segment":  "Upper mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Albino Monkey still sits above many practical mid legends because of event identity and steady collector demand.",
+                     "values":  {
+                                    "default":  16.5,
+                                    "noPotion":  15.5,
+                                    "neon":  51,
+                                    "neonNoPotion":  57,
+                                    "mega":  190,
+                                    "megaNoPotion":  270
+                                }
+                 },
+                 {
+                     "slug":  "crocodile",
+                     "name":  "Crocodile",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Upper mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Crocodile stays strong because it is both old and immediately recognizable in trading.",
+                     "values":  {
+                                    "default":  14,
+                                    "noPotion":  13,
+                                    "neon":  43,
+                                    "neonNoPotion":  42,
+                                    "mega":  172,
+                                    "megaNoPotion":  187
+                                }
+                 },
+                 {
+                     "slug":  "lion",
+                     "name":  "Lion",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Upper mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Lion holds a cleaner lane than many older non-dragon collector pets thanks to strong identity and decent liquidity.",
+                     "values":  {
+                                    "default":  13,
+                                    "noPotion":  12,
+                                    "neon":  43,
+                                    "neonNoPotion":  42,
+                                    "mega":  171,
+                                    "megaNoPotion":  186
+                                }
+                 },
+                 {
+                     "slug":  "blue-dog",
+                     "name":  "Blue Dog",
+                     "rarity":  "Uncommon",
+                     "segment":  "Upper mid tier",
+                     "demand":  "Very High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Blue Dog is still one of the clearest examples of rarity mattering less than age, demand, and collector prestige.",
+                     "values":  {
+                                    "default":  12.5,
+                                    "noPotion":  12,
+                                    "neon":  43,
+                                    "neonNoPotion":  46,
+                                    "mega":  162,
+                                    "megaNoPotion":  178
+                                }
+                 },
+                 {
+                     "slug":  "pig",
+                     "name":  "Pig",
+                     "rarity":  "Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Pig keeps climbing out of the casual-trader blind spot because nostalgia demand is real.",
+                     "values":  {
+                                    "default":  7.5,
+                                    "noPotion":  6.5,
+                                    "neon":  21,
+                                    "neonNoPotion":  20,
+                                    "mega":  80,
+                                    "megaNoPotion":  83
+                                }
+                 },
+                 {
+                     "slug":  "pink-cat",
+                     "name":  "Pink Cat",
+                     "rarity":  "Uncommon",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Pink Cat still gets collector attention because of age and its place in early Adopt Me history.",
+                     "values":  {
+                                    "default":  6.5,
+                                    "noPotion":  6,
+                                    "neon":  22.5,
+                                    "neonNoPotion":  22.5,
+                                    "mega":  90,
+                                    "megaNoPotion":  95
+                                }
+                 },
+                 {
+                     "slug":  "hyena",
+                     "name":  "Hyena",
+                     "rarity":  "Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Hyena benefits from old supply and a quirky identity that players genuinely remember.",
+                     "values":  {
+                                    "default":  5,
+                                    "noPotion":  4.25,
+                                    "neon":  20,
+                                    "neonNoPotion":  18.5,
+                                    "mega":  85,
+                                    "megaNoPotion":  90
+                                }
+                 },
+                 {
+                     "slug":  "brown-bear",
+                     "name":  "Brown Bear",
+                     "rarity":  "Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "Medium",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Brown Bear is a stable collector rare that works well as a middle-of-the-board compare point.",
+                     "values":  {
+                                    "default":  4.85,
+                                    "noPotion":  4.25,
+                                    "neon":  18.5,
+                                    "neonNoPotion":  17.5,
+                                    "mega":  77,
+                                    "megaNoPotion":  80
+                                }
+                 },
+                 {
+                     "slug":  "polar-bear",
+                     "name":  "Polar Bear",
+                     "rarity":  "Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "Medium",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Polar Bear stays tradable because winter collector pets are easy for players to remember and compare.",
+                     "values":  {
+                                    "default":  4.85,
+                                    "noPotion":  4.25,
+                                    "neon":  18,
+                                    "neonNoPotion":  17,
+                                    "mega":  75,
+                                    "megaNoPotion":  78
+                                }
+                 },
+                 {
+                     "slug":  "platypus",
+                     "name":  "Platypus",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Platypus keeps outperforming simpler rarity logic because players actually like it and supply is old.",
+                     "values":  {
+                                    "default":  4.75,
+                                    "noPotion":  4,
+                                    "neon":  20,
+                                    "neonNoPotion":  19,
+                                    "mega":  84,
+                                    "megaNoPotion":  92
+                                }
+                 },
+                 {
+                     "slug":  "golden-penguin",
+                     "name":  "Golden Penguin",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "Medium",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Golden Penguin is still a recognizable premium-era legend, but the real trade lane is more grounded than hype-era lists suggest.",
+                     "values":  {
+                                    "default":  2.75,
+                                    "noPotion":  2,
+                                    "neon":  12.5,
+                                    "neonNoPotion":  10.5,
+                                    "mega":  54,
+                                    "megaNoPotion":  51
+                                }
+                 },
+                 {
+                     "slug":  "rhino",
+                     "name":  "Rhino",
+                     "rarity":  "Rare",
+                     "segment":  "Entry tier",
+                     "demand":  "Medium",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Rhino is a good old-school compare point for smaller adds and low-end collector packages.",
+                     "values":  {
+                                    "default":  2.1,
+                                    "noPotion":  1.5,
+                                    "neon":  7,
+                                    "neonNoPotion":  6,
+                                    "mega":  35,
+                                    "megaNoPotion":  34
+                                }
+                 },
+                 {
+                     "slug":  "skele-rex",
+                     "name":  "Skele-Rex",
+                     "rarity":  "Legendary",
+                     "segment":  "Entry tier",
+                     "demand":  "Medium",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Skele-Rex still gets attention because players remember it, but the market lane is much calmer than peak event hype.",
+                     "values":  {
+                                    "default":  2,
+                                    "noPotion":  1.25,
+                                    "neon":  9.25,
+                                    "neonNoPotion":  7.25,
+                                    "mega":  40,
+                                    "megaNoPotion":  37
+                                }
+                 },
+                 {
+                     "slug":  "black-panther",
+                     "name":  "Black Panther",
+                     "rarity":  "Uncommon",
+                     "segment":  "Entry tier",
+                     "demand":  "Medium",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Black Panther is a nice example of a low-rarity collector pet staying useful because the demand story is clear.",
+                     "values":  {
+                                    "default":  1.95,
+                                    "noPotion":  1.35,
+                                    "neon":  6.75,
+                                    "neonNoPotion":  5.75,
+                                    "mega":  31,
+                                    "megaNoPotion":  29
+                                }
+                 },
+                 {
+                     "slug":  "t-rex",
+                     "name":  "T-Rex",
+                     "rarity":  "Legendary",
+                     "segment":  "Entry tier",
+                     "demand":  "Medium",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. T-Rex remains a familiar fossil-era legend and a practical page for lower-mid bundle math.",
+                     "values":  {
+                                    "default":  1.75,
+                                    "noPotion":  1,
+                                    "neon":  7.5,
+                                    "neonNoPotion":  5.5,
+                                    "mega":  31,
+                                    "megaNoPotion":  28
+                                }
+                 },
+                 {
+                     "slug":  "snow-owl",
+                     "name":  "Snow Owl",
+                     "rarity":  "Legendary",
+                     "segment":  "Entry tier",
+                     "demand":  "Medium",
+                     "trend":  "Falling",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Snow Owl is still common in trading, but the lane is softer than many winter nostalgia lists imply.",
+                     "values":  {
+                                    "default":  1.5,
+                                    "noPotion":  0.75,
+                                    "neon":  6,
+                                    "neonNoPotion":  4,
+                                    "mega":  23,
+                                    "megaNoPotion":  20
+                                }
                  }
              ]
 }

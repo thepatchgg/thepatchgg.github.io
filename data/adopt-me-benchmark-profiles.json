@@ -432,6 +432,246 @@
                                      "summary":  "Griffin is one of the best low-end value pages because it keeps the bottom of the legend ladder honest.",
                                      "tradeTip":  "If someone is selling Griffin on nostalgia, compare it directly against Alicorn and Kitsune before accepting that story.",
                                      "origin":  "Long-running permanent-pool legend with massive recognition but very soft modern demand."
-                                 }
+                                 },
+                     "albino-monkey":  {
+                                           "summary":  "Albino Monkey still feels premium compared with many middle-of-the-board legends.",
+                                           "origin":  "Event legendary with a recognizable design and steadier collector demand than many one-off legends.",
+                                           "liquidity":  "Albino Monkey can move well when the trader pool understands collector/event pets.",
+                                           "tradeTip":  "Compare Albino Monkey against Monkey King and Crocodile before overpaying on event nostalgia.",
+                                           "watchReason":  "Watch Albino Monkey when you want to gauge the real floor for event collector legends.",
+                                           "compareWith":  [
+                                                               "monkey-king-pet",
+                                                               "crocodile",
+                                                               "lion"
+                                                           ]
+                                       },
+                     "monkey-king-pet":  {
+                                             "summary":  "Monkey King still sits in a premium collector lane because the identity and demand are both strong.",
+                                             "origin":  "Older event legendary with long-term collector appeal and stronger prestige than many neighboring legends.",
+                                             "liquidity":  "Monkey King is not mass-liquid, but strong collectors know exactly what it is and value it accordingly.",
+                                             "tradeTip":  "Use Monkey King to sanity-check collector-heavy offers instead of assuming every event legend moves the same.",
+                                             "watchReason":  "Watch Monkey King when you want a read on premium collector legends outside the absolute top tier.",
+                                             "compareWith":  [
+                                                                 "mini-pig",
+                                                                 "flamingo",
+                                                                 "albino-monkey"
+                                                             ]
+                                         },
+                     "skele-rex":  {
+                                       "summary":  "Skele-Rex still gets attention because players remember it, even though the market is much calmer now.",
+                                       "origin":  "Halloween event legendary with strong name recognition and a more grounded real trade lane today.",
+                                       "liquidity":  "Skele-Rex moves well enough to matter, but not well enough to treat old hype as current value.",
+                                       "tradeTip":  "Compare Skele-Rex against Golden Penguin and Snow Owl before letting event nostalgia carry the offer.",
+                                       "watchReason":  "Watch Skele-Rex when you want a reality check on remembered event legends.",
+                                       "compareWith":  [
+                                                           "golden-penguin",
+                                                           "snow-owl",
+                                                           "t-rex"
+                                                       ]
+                                   },
+                     "polar-bear":  {
+                                        "summary":  "Polar Bear is a steady winter collector rare that helps anchor lower collector trades.",
+                                        "origin":  "Older winter rare with decent recognition and a straightforward demand story.",
+                                        "liquidity":  "Polar Bear trades steadily, though it usually sits below the stronger preference-driven old rares.",
+                                        "tradeTip":  "Compare Polar Bear against Brown Bear and Rhino before overpaying for winter nostalgia.",
+                                        "watchReason":  "Watch Polar Bear when you want a stable winter rare reference.",
+                                        "compareWith":  [
+                                                            "brown-bear",
+                                                            "rhino",
+                                                            "black-panther"
+                                                        ]
+                                    },
+                     "pink-cat":  {
+                                      "summary":  "Pink Cat still commands real collector respect because it is tied to very early Adopt Me history.",
+                                      "origin":  "Early uncommon with a collector story that matters far more than its rarity tag.",
+                                      "liquidity":  "Pink Cat is less universal than a broad-market pet, but collectors usually price it seriously.",
+                                      "tradeTip":  "Use Pink Cat next to Blue Dog to check whether a server is underpricing early-game pets.",
+                                      "watchReason":  "Watch Pink Cat when you want to see how early-history prestige is trading.",
+                                      "compareWith":  [
+                                                          "blue-dog",
+                                                          "pig",
+                                                          "platypus"
+                                                      ]
+                                  },
+                     "mini-pig":  {
+                                      "summary":  "Mini Pig has become one of the strongest modern collector pets, so it deserves its own high-signal page.",
+                                      "origin":  "Modern collector ultra-rare with strong player preference and a much bigger real market lane than casual lists suggest.",
+                                      "liquidity":  "Mini Pig is not a top-tier mega anchor, but traders consistently pay attention when it shows up in real offers.",
+                                      "tradeTip":  "Compare Mini Pig against Monkey King and Flamingo before treating it like a random cute ultra-rare.",
+                                      "watchReason":  "Watch Mini Pig when you want to see whether newer collector pets are holding their post-launch strength.",
+                                      "compareWith":  [
+                                                          "monkey-king-pet",
+                                                          "flamingo",
+                                                          "crocodile"
+                                                      ]
+                                  },
+                     "brown-bear":  {
+                                        "summary":  "Brown Bear is a steady middle-of-the-board collector rare with useful comparison value.",
+                                        "origin":  "Older rare that works well as a grounded reference point for other nostalgic collector pets.",
+                                        "liquidity":  "Brown Bear does not spike like the flashier old pets, but it stays useful because the lane is stable.",
+                                        "tradeTip":  "Use Brown Bear to keep old rare bundles honest when players try to price everything like Pig or Elephant.",
+                                        "watchReason":  "Watch Brown Bear when you want a calmer benchmark for collector rares.",
+                                        "compareWith":  [
+                                                            "polar-bear",
+                                                            "hyena",
+                                                            "pig"
+                                                        ]
+                                    },
+                     "crocodile":  {
+                                       "summary":  "Crocodile stays strong because it is old, recognizable, and genuinely liked.",
+                                       "origin":  "Jungle-era ultra-rare with a collector lane that remains stronger than casual rarity-based lists imply.",
+                                       "liquidity":  "Crocodile is one of the cleaner old ultra-rares to trade because players know where it belongs.",
+                                       "tradeTip":  "If a server is pricing Crocodile near generic old ultra-rares, compare it back to Flamingo and Platypus.",
+                                       "watchReason":  "Watch Crocodile to track demand for older ultra-rares with strong identity.",
+                                       "compareWith":  [
+                                                           "flamingo",
+                                                           "platypus",
+                                                           "lion"
+                                                       ]
+                                   },
+                     "flamingo":  {
+                                      "summary":  "Flamingo remains one of the strongest older ultra-rares in the game.",
+                                      "origin":  "Safari-era ultra-rare that stays expensive because supply is old and demand is still obvious.",
+                                      "liquidity":  "Flamingo usually moves cleanly because most experienced traders understand its lane.",
+                                      "tradeTip":  "Compare Flamingo against Elephant and Crocodile before treating other old ultra-rares as equal.",
+                                      "watchReason":  "Watch Flamingo when you want a clean signal for older collector pet demand.",
+                                      "compareWith":  [
+                                                          "elephant",
+                                                          "crocodile",
+                                                          "mini-pig"
+                                                      ]
+                                  },
+                     "t-rex":  {
+                                   "summary":  "T-Rex remains a familiar fossil-era legend and still works as a practical bundle-math reference.",
+                                   "origin":  "Recognizable fossil legend with enough demand to stay tradable even if it is no longer a hype pet.",
+                                   "liquidity":  "T-Rex is useful because many players know it, not because it carries premium collector weight.",
+                                   "tradeTip":  "Use T-Rex next to Skele-Rex and Golden Penguin when checking lower-mid legend bundles.",
+                                   "watchReason":  "Watch T-Rex when you want a grounded lower-mid legend compare page.",
+                                   "compareWith":  [
+                                                       "skele-rex",
+                                                       "golden-penguin",
+                                                       "snow-owl"
+                                                   ]
+                               },
+                     "platypus":  {
+                                      "summary":  "Platypus stays stronger than its rarity implies because it is memorable and old.",
+                                      "origin":  "Jungle-era ultra-rare whose collector lane remains healthier than many ordinary old ultra-rares.",
+                                      "liquidity":  "Platypus is not as broad as Flamingo, but it still moves because players actually want it.",
+                                      "tradeTip":  "Use Platypus alongside Crocodile and Blue Dog when a collector offer feels messy.",
+                                      "watchReason":  "Watch Platypus when you want a reality check on quirky older ultra-rares.",
+                                      "compareWith":  [
+                                                          "crocodile",
+                                                          "blue-dog",
+                                                          "pink-cat"
+                                                      ]
+                                  },
+                     "blue-dog":  {
+                                      "summary":  "Blue Dog remains one of the best examples of age and prestige beating raw rarity.",
+                                      "origin":  "Very early uncommon whose history and collector appeal still keep it in a premium lane.",
+                                      "liquidity":  "Blue Dog is niche but powerful because collectors know exactly what it represents.",
+                                      "tradeTip":  "Do not let the rarity tag fool you. Compare Blue Dog with Pink Cat and Crocodile before pricing it.",
+                                      "watchReason":  "Watch Blue Dog when you want to track prestige-driven collector demand.",
+                                      "compareWith":  [
+                                                          "pink-cat",
+                                                          "crocodile",
+                                                          "flamingo"
+                                                      ]
+                                  },
+                     "hyena":  {
+                                   "summary":  "Hyena is a strong old rare because the pet stands out and collector demand is real.",
+                                   "origin":  "Safari-era rare with a quirky identity that helps it stay relevant in mid-tier collector trades.",
+                                   "liquidity":  "Hyena is easier to move than many old rares because players remember it.",
+                                   "tradeTip":  "Compare Hyena against Pig and Brown Bear when old rare bundles start looking inflated.",
+                                   "watchReason":  "Watch Hyena when you want to track preference-driven old rare demand.",
+                                   "compareWith":  [
+                                                       "pig",
+                                                       "brown-bear",
+                                                       "elephant"
+                                                   ]
+                               },
+                     "rhino":  {
+                                   "summary":  "Rhino is a useful old-school compare page for smaller collector bundles and old rare adds.",
+                                   "origin":  "Old rare with enough recognition to stay relevant even though the value lane is modest.",
+                                   "liquidity":  "Rhino is not flashy, but it is stable enough to be a dependable lower-value reference.",
+                                   "tradeTip":  "Use Rhino to check whether small collector add bundles are grounded in real demand.",
+                                   "watchReason":  "Watch Rhino when you want a lower-entry old rare reference point.",
+                                   "compareWith":  [
+                                                       "polar-bear",
+                                                       "black-panther",
+                                                       "pig"
+                                                   ]
+                               },
+                     "lion":  {
+                                  "summary":  "Lion holds a sturdy older-collector lane and is more reliable than many pet lists admit.",
+                                  "origin":  "Safari-era ultra-rare with enough recognition to stay relevant in real collector trades.",
+                                  "liquidity":  "Lion is not a top anchor, but its identity gives it steadier movement than many mid-range collector pets.",
+                                  "tradeTip":  "Use Lion to compare Crocodile and Elephant-style offers before assuming all safari pets trade equally.",
+                                  "watchReason":  "Watch Lion when you want a cleaner read on mid-range safari demand.",
+                                  "compareWith":  [
+                                                      "crocodile",
+                                                      "elephant",
+                                                      "albino-monkey"
+                                                  ]
+                              },
+                     "elephant":  {
+                                      "summary":  "Elephant keeps outperforming its rarity because old collector rares still matter.",
+                                      "origin":  "Safari-era rare with strong recognition and a much stronger trade story than its rarity tag alone suggests.",
+                                      "liquidity":  "Elephant is easier to move than many old rares because the demand case is straightforward.",
+                                      "tradeTip":  "Use Elephant to check whether a collector rare offer has real demand behind it.",
+                                      "watchReason":  "Watch Elephant when you want to track strong old rares versus old ultra-rares.",
+                                      "compareWith":  [
+                                                          "flamingo",
+                                                          "pig",
+                                                          "hyena"
+                                                      ]
+                                  },
+                     "snow-owl":  {
+                                      "summary":  "Snow Owl is still common in trades, but the lane is softer than winter nostalgia lists usually imply.",
+                                      "origin":  "Winter event legendary that remains recognizable and useful mostly as a lower-mid comparison point.",
+                                      "liquidity":  "Snow Owl trades often enough to matter, but usually at a softer lane than remembered hype suggests.",
+                                      "tradeTip":  "Compare Snow Owl against T-Rex and Skele-Rex before giving winter-themed offers too much credit.",
+                                      "watchReason":  "Watch Snow Owl when you want to track softer remembered event legends.",
+                                      "compareWith":  [
+                                                          "skele-rex",
+                                                          "t-rex",
+                                                          "golden-penguin"
+                                                      ]
+                                  },
+                     "golden-penguin":  {
+                                            "summary":  "Golden Penguin is a recognizable premium-era legend that works well as a grounded mid-tier compare page.",
+                                            "origin":  "Older premium legend with lasting recognition but a more modest real trade lane than hype-era memory suggests.",
+                                            "liquidity":  "Golden Penguin still trades because people know it, though the market is calmer now.",
+                                            "tradeTip":  "Compare Golden Penguin against Skele-Rex and T-Rex before treating it like a standout legend.",
+                                            "watchReason":  "Watch Golden Penguin when you want a cleaner read on lower-mid premium legends.",
+                                            "compareWith":  [
+                                                                "skele-rex",
+                                                                "t-rex",
+                                                                "snow-owl"
+                                                            ]
+                                        },
+                     "black-panther":  {
+                                           "summary":  "Black Panther is a good example of a low-rarity collector pet staying useful because the demand story is real.",
+                                           "origin":  "Old uncommon with enough collector demand to stay relevant despite the rarity tag.",
+                                           "liquidity":  "Black Panther is niche but useful because collectors know exactly where it belongs.",
+                                           "tradeTip":  "Compare Black Panther against Rhino and Polar Bear before treating it like a random uncommon.",
+                                           "watchReason":  "Watch Black Panther when you want a lower-entry collector pet that still has a real market.",
+                                           "compareWith":  [
+                                                               "rhino",
+                                                               "polar-bear",
+                                                               "pink-cat"
+                                                           ]
+                                       },
+                     "pig":  {
+                                 "summary":  "Pig has become a very practical old rare to watch because preference demand is easy to see.",
+                                 "origin":  "Farm-era rare that continues to outperform simple rarity logic because players genuinely like it.",
+                                 "liquidity":  "Pig moves well for its tier because many traders recognize it immediately.",
+                                 "tradeTip":  "Compare Pig against Elephant and Hyena before dismissing it as a small rare add.",
+                                 "watchReason":  "Watch Pig when you want a strong read on mid-tier old rares.",
+                                 "compareWith":  [
+                                                     "elephant",
+                                                     "hyena",
+                                                     "brown-bear"
+                                                 ]
+                             }
                  }
 }
