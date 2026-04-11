@@ -672,6 +672,258 @@
                                                      "hyena",
                                                      "brown-bear"
                                                  ]
-                             }
+                             },
+                     "strawberry-shortcake-bat-dragon":  {
+                                                             "summary":  "Strawberry Shortcake Bat Dragon still holds a strong collector lane because the branding is unforgettable.",
+                                                             "origin":  "Limited bat-dragon variant with broad recognition and steadier collector value than many themed legends.",
+                                                             "liquidity":  "This pet moves well because players instantly recognize it and understand why it carries value.",
+                                                             "tradeTip":  "Compare Strawberry Shortcake Bat Dragon against Hot Doggo and Peppermint Penguin before overpaying for theme-based hype.",
+                                                             "watchReason":  "Watch Strawberry Shortcake Bat Dragon when you want to track premium novelty legends.",
+                                                             "compareWith":  [
+                                                                                 "hot-doggo",
+                                                                                 "peppermint-penguin",
+                                                                                 "fairy-bat-dragon"
+                                                                             ]
+                                                         },
+                     "goose":  {
+                                   "summary":  "Goose has become a very practical collector rare because demand is obvious and easy to compare.",
+                                   "origin":  "Modern rare whose strong preference demand pushed it well above ordinary newer rares.",
+                                   "liquidity":  "Goose is one of the easier collector rares to move because many players understand its lane.",
+                                   "tradeTip":  "Use Goose to compare Border Collie and Goat-tier collector offers before overpaying.",
+                                   "watchReason":  "Watch Goose when you want a strong modern rare reference.",
+                                   "compareWith":  [
+                                                       "border-collie",
+                                                       "goat",
+                                                       "alpaca"
+                                                   ]
+                               },
+                     "african-wild-dog":  {
+                                              "summary":  "African Wild Dog is one of the strongest modern collector ultra-rares on the site right now.",
+                                              "origin":  "Modern collector ultra-rare with exceptionally strong preference demand and a much bigger real lane than many lists imply.",
+                                              "liquidity":  "African Wild Dog has enough demand that strong traders actively watch where it is settling.",
+                                              "tradeTip":  "Compare African Wild Dog against Balloon Unicorn and Giant Panda before assuming newer collector pets are all interchangeable.",
+                                              "watchReason":  "Watch African Wild Dog when you want a read on premium modern collector demand.",
+                                              "compareWith":  [
+                                                                  "balloon-unicorn",
+                                                                  "giant-panda",
+                                                                  "pelican"
+                                                              ]
+                                          },
+                     "cactus-friend":  {
+                                           "summary":  "Cactus Friend sits lower on the board than stronger collector pets, but it is still recognizable enough to track.",
+                                           "origin":  "Modern legendary whose identity gives it enough staying power to remain useful in lower-tier trade math.",
+                                           "liquidity":  "Cactus Friend is softer than the stronger modern collector pets, but still known well enough to be a real compare page.",
+                                           "tradeTip":  "Use Cactus Friend against Frost Unicorn and Field Mouse when checking lower-end modern legend bundles.",
+                                           "watchReason":  "Watch Cactus Friend when you want a grounded entry-tier modern legend page.",
+                                           "compareWith":  [
+                                                               "frost-unicorn",
+                                                               "field-mouse",
+                                                               "goat"
+                                                           ]
+                                       },
+                     "alpaca":  {
+                                    "summary":  "Alpaca has carved out a strong modern collector lane and is worth tracking directly.",
+                                    "origin":  "Modern collector ultra-rare with strong player preference and a healthy real trade lane.",
+                                    "liquidity":  "Alpaca is not top-tier, but it trades better than many similarly priced pets because demand is clear.",
+                                    "tradeTip":  "Use Alpaca alongside Goat and Goose when checking modern collector ultra-rares.",
+                                    "watchReason":  "Watch Alpaca when you want another strong modern collector-ultra reference.",
+                                    "compareWith":  [
+                                                        "goat",
+                                                        "goose",
+                                                        "border-collie"
+                                                    ]
+                                },
+                     "hot-doggo":  {
+                                       "summary":  "Hot Doggo is one of the clearest examples of a joke-design pet holding real premium value.",
+                                       "origin":  "Modern legendary whose playful identity translated into lasting collector demand.",
+                                       "liquidity":  "Hot Doggo trades better than many neighboring legends because players remember and like it.",
+                                       "tradeTip":  "Compare Hot Doggo against Strawberry Shortcake Bat Dragon and Peppermint Penguin before assuming novelty pets are soft.",
+                                       "watchReason":  "Watch Hot Doggo when you want to track premium novelty-legends.",
+                                       "compareWith":  [
+                                                           "strawberry-shortcake-bat-dragon",
+                                                           "peppermint-penguin",
+                                                           "candyfloss-chick"
+                                                       ]
+                                   },
+                     "frost-unicorn":  {
+                                           "summary":  "Frost Unicorn is one of the stronger newer unicorn-themed legends and keeps a healthy collector lane.",
+                                           "origin":  "Modern legendary with good name recognition and a steadier lane than many newer low-end legends.",
+                                           "liquidity":  "Frost Unicorn moves well because players understand the theme and generally like the pet.",
+                                           "tradeTip":  "Use Frost Unicorn against Goat and Undead Jousting Horse before treating unicorn branding like an automatic premium.",
+                                           "watchReason":  "Watch Frost Unicorn when you want a practical newer-legend reference.",
+                                           "compareWith":  [
+                                                               "undead-jousting-horse",
+                                                               "goat",
+                                                               "fairy-bat-dragon"
+                                                           ]
+                                       },
+                     "border-collie":  {
+                                           "summary":  "Border Collie is one of the better modern rare pages to watch because preference demand is easy to see.",
+                                           "origin":  "Modern rare with very healthy player preference and a strong lane for its tier.",
+                                           "liquidity":  "Border Collie moves better than many modern rares because people genuinely want it.",
+                                           "tradeTip":  "Compare Border Collie against Goose and Goat before treating it like a basic rare add.",
+                                           "watchReason":  "Watch Border Collie when you want a grounded modern collector-rare reference.",
+                                           "compareWith":  [
+                                                               "goose",
+                                                               "goat",
+                                                               "alpaca"
+                                                           ]
+                                       },
+                     "orchid-butterfly":  {
+                                              "summary":  "Orchid Butterfly remains one of the strongest butterfly pets and still carries serious collector interest.",
+                                              "origin":  "Premium butterfly legend with a stronger real market than most rarity-first lists suggest.",
+                                              "liquidity":  "Orchid Butterfly is not casual-trader liquid, but collectors value it consistently.",
+                                              "tradeTip":  "Use Orchid Butterfly to compare Diamond Butterfly and Giant Panda-tier offers before overpaying.",
+                                              "watchReason":  "Watch Orchid Butterfly when you want to track the premium butterfly lane.",
+                                              "compareWith":  [
+                                                                  "diamond-butterfly",
+                                                                  "giant-panda",
+                                                                  "balloon-unicorn"
+                                                              ]
+                                          },
+                     "peppermint-penguin":  {
+                                                "summary":  "Peppermint Penguin remains one of the strongest winter collector ultra-rares on the board.",
+                                                "origin":  "Winter-themed collector ultra-rare that still gets strong attention long after release.",
+                                                "liquidity":  "Peppermint Penguin moves well because the demand case is simple and the design is memorable.",
+                                                "tradeTip":  "Use Peppermint Penguin next to Pelican and Hot Doggo when a collector offer feels inflated.",
+                                                "watchReason":  "Watch Peppermint Penguin when you want a clean winter collector signal.",
+                                                "compareWith":  [
+                                                                    "pelican",
+                                                                    "hot-doggo",
+                                                                    "strawberry-shortcake-bat-dragon"
+                                                                ]
+                                            },
+                     "goat":  {
+                                  "summary":  "Goat stays relevant because the pet is recognizable, limited, and genuinely liked by players.",
+                                  "origin":  "Modern ultra-rare with surprisingly strong preference demand and a better lane than casual lists imply.",
+                                  "liquidity":  "Goat trades cleanly for the tier because many players know exactly what it is worth relative to similar pets.",
+                                  "tradeTip":  "Compare Goat against Alpaca and Goose before assuming all cute modern ultras move the same.",
+                                  "watchReason":  "Watch Goat when you want a useful modern preference-pet reference.",
+                                  "compareWith":  [
+                                                      "alpaca",
+                                                      "goose",
+                                                      "border-collie"
+                                                  ]
+                              },
+                     "pelican":  {
+                                     "summary":  "Pelican is a strong modern collector ultra-rare that sits well above ordinary newer ultra-rares.",
+                                     "origin":  "Modern collector ultra-rare with a strong demand lane and unusually healthy pricing for the tier.",
+                                     "liquidity":  "Pelican is easier to move than most ultra-rares in its age range because players genuinely want it.",
+                                     "tradeTip":  "Use Pelican to check whether a modern collector ultra-rare offer is grounded in real demand.",
+                                     "watchReason":  "Watch Pelican when you want to track strong modern ultra-rares.",
+                                     "compareWith":  [
+                                                         "african-wild-dog",
+                                                         "peppermint-penguin",
+                                                         "caterpillar"
+                                                     ]
+                                 },
+                     "undead-jousting-horse":  {
+                                                   "summary":  "Undead Jousting Horse remains one of the better premium halloween legends outside the very top event lane.",
+                                                   "origin":  "Halloween legendary with strong branding and better lasting demand than many themed peers.",
+                                                   "liquidity":  "Undead Jousting Horse moves better than average because the concept is memorable and the market understands it.",
+                                                   "tradeTip":  "Compare Undead Jousting Horse against Frost Unicorn and Fairy Bat Dragon before letting event branding overrule value.",
+                                                   "watchReason":  "Watch Undead Jousting Horse when you want a premium halloween reference.",
+                                                   "compareWith":  [
+                                                                       "frost-unicorn",
+                                                                       "fairy-bat-dragon",
+                                                                       "hot-doggo"
+                                                                   ]
+                                               },
+                     "diamond-butterfly":  {
+                                               "summary":  "Diamond Butterfly still commands premium collector respect even after the early spotlight faded.",
+                                               "origin":  "Collector-focused legend with a prestige lane that remains strong among experienced traders.",
+                                               "liquidity":  "Diamond Butterfly is more niche than broad-market pets, but the people who want it price it seriously.",
+                                               "tradeTip":  "Compare Diamond Butterfly against Orchid Butterfly and Fairy Bat Dragon before treating every prestige legend the same.",
+                                               "watchReason":  "Watch Diamond Butterfly when you want a prestige-collector benchmark outside the biggest dragons.",
+                                               "compareWith":  [
+                                                                   "orchid-butterfly",
+                                                                   "fairy-bat-dragon",
+                                                                   "pelican"
+                                                               ]
+                                           },
+                     "field-mouse":  {
+                                         "summary":  "Field Mouse stays relevant because it is cute, limited, and easy for players to value.",
+                                         "origin":  "Modern legendary with strong preference demand and a cleaner lane than many simple rarity lists show.",
+                                         "liquidity":  "Field Mouse trades well because players understand it immediately.",
+                                         "tradeTip":  "Use Field Mouse to compare Bush Elephant and Candyfloss Chick when modern collector offers feel noisy.",
+                                         "watchReason":  "Watch Field Mouse when you want a clean modern-cute legend reference.",
+                                         "compareWith":  [
+                                                             "bush-elephant",
+                                                             "candyfloss-chick",
+                                                             "goat"
+                                                         ]
+                                     },
+                     "caterpillar":  {
+                                         "summary":  "Caterpillar keeps outperforming simpler rarity logic because the pet is memorable and still in demand.",
+                                         "origin":  "Modern ultra-rare with a strong collector lane and better staying power than many peers.",
+                                         "liquidity":  "Caterpillar trades well because the pet stands out and players remember it.",
+                                         "tradeTip":  "Compare Caterpillar against Pelican and Candyfloss Chick before assuming modern collector pets are flat.",
+                                         "watchReason":  "Watch Caterpillar when you want to track stronger modern ultra-rares.",
+                                         "compareWith":  [
+                                                             "pelican",
+                                                             "candyfloss-chick",
+                                                             "goose"
+                                                         ]
+                                     },
+                     "candyfloss-chick":  {
+                                              "summary":  "Candyfloss Chick is proving much stronger than a typical newer legend and deserves a dedicated page.",
+                                              "origin":  "Modern legendary with strong visual identity and a better-than-expected collector lane.",
+                                              "liquidity":  "Candyfloss Chick is not top-tier, but demand is real enough that traders pay attention.",
+                                              "tradeTip":  "Use Candyfloss Chick against Hot Doggo and Caterpillar when value lists feel disconnected from real trades.",
+                                              "watchReason":  "Watch Candyfloss Chick when you want a read on rising modern novelty legends.",
+                                              "compareWith":  [
+                                                                  "hot-doggo",
+                                                                  "caterpillar",
+                                                                  "field-mouse"
+                                                              ]
+                                          },
+                     "fairy-bat-dragon":  {
+                                              "summary":  "Fairy Bat Dragon still carries notable interest because dragon branding and cute design matter.",
+                                              "origin":  "Modern themed legendary with strong recognizability and a healthier lane than many casual lists show.",
+                                              "liquidity":  "Fairy Bat Dragon trades well enough to matter, though not at the same level as the strongest modern collector legends.",
+                                              "tradeTip":  "Use Fairy Bat Dragon to compare Diamond Butterfly and Strawberry Shortcake Bat Dragon offers before overpaying for theme alone.",
+                                              "watchReason":  "Watch Fairy Bat Dragon when you want a clean themed-dragon reference.",
+                                              "compareWith":  [
+                                                                  "diamond-butterfly",
+                                                                  "strawberry-shortcake-bat-dragon",
+                                                                  "frost-unicorn"
+                                                              ]
+                                          },
+                     "balloon-unicorn":  {
+                                             "summary":  "Balloon Unicorn is trading like a premium modern legend and belongs near the top of the newer collector cluster.",
+                                             "origin":  "Modern legendary with standout branding and stronger real demand than many recent high-hype releases.",
+                                             "liquidity":  "Balloon Unicorn moves better than many peers because players immediately understand the pet and want it.",
+                                             "tradeTip":  "Use Balloon Unicorn to check whether a premium modern legend offer has real demand behind it.",
+                                             "watchReason":  "Watch Balloon Unicorn when you want to track the upper end of the current modern legend market.",
+                                             "compareWith":  [
+                                                                 "african-wild-dog",
+                                                                 "giant-panda",
+                                                                 "orchid-butterfly"
+                                                             ]
+                                         },
+                     "giant-panda":  {
+                                         "summary":  "Giant Panda has built a surprisingly strong lane for a modern release and is worth tracking directly.",
+                                         "origin":  "Modern legendary with broad appeal and steadier collector demand than many similar-era pets.",
+                                         "liquidity":  "Giant Panda is one of the cleaner modern legends to move because the demand story is straightforward.",
+                                         "tradeTip":  "Compare Giant Panda against Balloon Unicorn and Orchid Butterfly before pricing modern collector legends in isolation.",
+                                         "watchReason":  "Watch Giant Panda when you want a stable high-end modern legend reference.",
+                                         "compareWith":  [
+                                                             "balloon-unicorn",
+                                                             "orchid-butterfly",
+                                                             "african-wild-dog"
+                                                         ]
+                                     },
+                     "bush-elephant":  {
+                                           "summary":  "Bush Elephant is trading above many comparable modern legends because the design and demand are both strong.",
+                                           "origin":  "Modern legendary with standout visual identity and a healthier lane than many recent legends.",
+                                           "liquidity":  "Bush Elephant moves well because players remember it and the demand story is easy to explain.",
+                                           "tradeTip":  "Compare Bush Elephant against Field Mouse and Giant Panda before assuming all modern legends trade alike.",
+                                           "watchReason":  "Watch Bush Elephant when you want to track strong but not top-tier modern legends.",
+                                           "compareWith":  [
+                                                               "field-mouse",
+                                                               "giant-panda",
+                                                               "candyfloss-chick"
+                                                           ]
+                                       }
                  }
 }

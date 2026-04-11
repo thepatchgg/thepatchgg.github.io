@@ -1031,6 +1031,384 @@
                                     "mega":  23,
                                     "megaNoPotion":  20
                                 }
+                 },
+                 {
+                     "slug":  "african-wild-dog",
+                     "name":  "African Wild Dog",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Premium tier",
+                     "demand":  "Very High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. African Wild Dog has become one of the strongest modern collector ultra-rares and still commands real attention.",
+                     "values":  {
+                                    "default":  122,
+                                    "noPotion":  120,
+                                    "neon":  372,
+                                    "neonNoPotion":  387,
+                                    "mega":  1172,
+                                    "megaNoPotion":  1232
+                                }
+                 },
+                 {
+                     "slug":  "balloon-unicorn",
+                     "name":  "Balloon Unicorn",
+                     "rarity":  "Legendary",
+                     "segment":  "Premium tier",
+                     "demand":  "Very High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Balloon Unicorn is trading like a premium modern legend and deserves a high-signal landing page.",
+                     "values":  {
+                                    "default":  106,
+                                    "noPotion":  104,
+                                    "neon":  348,
+                                    "neonNoPotion":  353,
+                                    "mega":  1275,
+                                    "megaNoPotion":  1376
+                                }
+                 },
+                 {
+                     "slug":  "giant-panda",
+                     "name":  "Giant Panda",
+                     "rarity":  "Legendary",
+                     "segment":  "Premium tier",
+                     "demand":  "Very High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Giant Panda has held a strikingly strong lane for a modern release and is worth tracking directly.",
+                     "values":  {
+                                    "default":  94,
+                                    "noPotion":  92,
+                                    "neon":  320,
+                                    "neonNoPotion":  318,
+                                    "mega":  1180,
+                                    "megaNoPotion":  1178
+                                }
+                 },
+                 {
+                     "slug":  "orchid-butterfly",
+                     "name":  "Orchid Butterfly",
+                     "rarity":  "Legendary",
+                     "segment":  "Premium tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Orchid Butterfly remains one of the most valuable butterfly pets and still has strong collector demand.",
+                     "values":  {
+                                    "default":  55,
+                                    "noPotion":  53,
+                                    "neon":  228,
+                                    "neonNoPotion":  226,
+                                    "mega":  920,
+                                    "megaNoPotion":  925
+                                }
+                 },
+                 {
+                     "slug":  "diamond-butterfly",
+                     "name":  "Diamond Butterfly",
+                     "rarity":  "Legendary",
+                     "segment":  "Premium tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Diamond Butterfly still trades like a premium collector legend even after the initial spotlight faded.",
+                     "values":  {
+                                    "default":  51,
+                                    "noPotion":  51,
+                                    "neon":  168,
+                                    "neonNoPotion":  166,
+                                    "mega":  615,
+                                    "megaNoPotion":  666
+                                }
+                 },
+                 {
+                     "slug":  "pelican",
+                     "name":  "Pelican",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Pelican is a modern collector ultra-rare with stronger real demand than many casual lists assume.",
+                     "values":  {
+                                    "default":  27.25,
+                                    "noPotion":  26,
+                                    "neon":  112,
+                                    "neonNoPotion":  117,
+                                    "mega":  470,
+                                    "megaNoPotion":  490
+                                }
+                 },
+                 {
+                     "slug":  "strawberry-shortcake-bat-dragon",
+                     "name":  "Strawberry Shortcake Bat Dragon",
+                     "rarity":  "Legendary",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Strawberry Shortcake Bat Dragon still has strong name recognition and a healthy collector lane.",
+                     "values":  {
+                                    "default":  25.5,
+                                    "noPotion":  23.5,
+                                    "neon":  70,
+                                    "neonNoPotion":  68,
+                                    "mega":  240,
+                                    "megaNoPotion":  257
+                                }
+                 },
+                 {
+                     "slug":  "peppermint-penguin",
+                     "name":  "Peppermint Penguin",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Peppermint Penguin has held onto a strong winter collector lane and keeps showing up in real offers.",
+                     "values":  {
+                                    "default":  23,
+                                    "noPotion":  21.75,
+                                    "neon":  76,
+                                    "neonNoPotion":  74,
+                                    "mega":  276,
+                                    "megaNoPotion":  282
+                                }
+                 },
+                 {
+                     "slug":  "hot-doggo",
+                     "name":  "Hot Doggo",
+                     "rarity":  "Legendary",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Hot Doggo remains one of the more valuable modern joke-design pets because demand is very real.",
+                     "values":  {
+                                    "default":  22.75,
+                                    "noPotion":  21.5,
+                                    "neon":  93,
+                                    "neonNoPotion":  91,
+                                    "mega":  387,
+                                    "megaNoPotion":  392
+                                }
+                 },
+                 {
+                     "slug":  "goose",
+                     "name":  "Goose",
+                     "rarity":  "Rare",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Goose has become a very practical collector rare because players know and actively want it.",
+                     "values":  {
+                                    "default":  17,
+                                    "noPotion":  15.75,
+                                    "neon":  60,
+                                    "neonNoPotion":  58.5,
+                                    "mega":  240,
+                                    "megaNoPotion":  238
+                                }
+                 },
+                 {
+                     "slug":  "caterpillar",
+                     "name":  "Caterpillar",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Caterpillar keeps outperforming simple rarity logic because the pet is memorable and demand has held up.",
+                     "values":  {
+                                    "default":  16,
+                                    "noPotion":  14.75,
+                                    "neon":  62,
+                                    "neonNoPotion":  60,
+                                    "mega":  259,
+                                    "megaNoPotion":  262
+                                }
+                 },
+                 {
+                     "slug":  "candyfloss-chick",
+                     "name":  "Candyfloss Chick",
+                     "rarity":  "Legendary",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Candyfloss Chick is proving much stronger than a typical newer legend and deserves its own search page.",
+                     "values":  {
+                                    "default":  15.5,
+                                    "noPotion":  14.25,
+                                    "neon":  59,
+                                    "neonNoPotion":  57,
+                                    "mega":  240,
+                                    "megaNoPotion":  245
+                                }
+                 },
+                 {
+                     "slug":  "border-collie",
+                     "name":  "Border Collie",
+                     "rarity":  "Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Border Collie is one of the better modern rare pages to watch because player preference is easy to see.",
+                     "values":  {
+                                    "default":  12,
+                                    "noPotion":  10.75,
+                                    "neon":  45,
+                                    "neonNoPotion":  43.5,
+                                    "mega":  186,
+                                    "megaNoPotion":  184
+                                }
+                 },
+                 {
+                     "slug":  "fairy-bat-dragon",
+                     "name":  "Fairy Bat Dragon",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Fairy Bat Dragon still carries notable interest thanks to the design and dragon branding.",
+                     "values":  {
+                                    "default":  12,
+                                    "noPotion":  10.5,
+                                    "neon":  37.5,
+                                    "neonNoPotion":  35.5,
+                                    "mega":  146,
+                                    "megaNoPotion":  149
+                                }
+                 },
+                 {
+                     "slug":  "undead-jousting-horse",
+                     "name":  "Undead Jousting Horse",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Undead Jousting Horse remains a useful premium-halloween legend reference with better demand than many peers.",
+                     "values":  {
+                                    "default":  11.25,
+                                    "noPotion":  10.5,
+                                    "neon":  46,
+                                    "neonNoPotion":  44,
+                                    "mega":  195,
+                                    "megaNoPotion":  205
+                                }
+                 },
+                 {
+                     "slug":  "frost-unicorn",
+                     "name":  "Frost Unicorn",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Frost Unicorn is one of the stronger newer unicorn-themed legends and keeps a healthy collector lane.",
+                     "values":  {
+                                    "default":  9.25,
+                                    "noPotion":  8.5,
+                                    "neon":  38,
+                                    "neonNoPotion":  36,
+                                    "mega":  162,
+                                    "megaNoPotion":  167
+                                }
+                 },
+                 {
+                     "slug":  "goat",
+                     "name":  "Goat",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Goat stays relevant because the pet is recognizable, limited, and genuinely liked by players.",
+                     "values":  {
+                                    "default":  9.1,
+                                    "noPotion":  8.5,
+                                    "neon":  38,
+                                    "neonNoPotion":  36.5,
+                                    "mega":  164,
+                                    "megaNoPotion":  162
+                                }
+                 },
+                 {
+                     "slug":  "alpaca",
+                     "name":  "Alpaca",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Alpaca has carved out a strong modern collector lane and is worth tracking directly.",
+                     "values":  {
+                                    "default":  9.1,
+                                    "noPotion":  8.5,
+                                    "neon":  37,
+                                    "neonNoPotion":  35.5,
+                                    "mega":  161,
+                                    "megaNoPotion":  159
+                                }
+                 },
+                 {
+                     "slug":  "bush-elephant",
+                     "name":  "Bush Elephant",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Bush Elephant is trading above many comparable modern legends because the design and demand are both strong.",
+                     "values":  {
+                                    "default":  8.75,
+                                    "noPotion":  8,
+                                    "neon":  36,
+                                    "neonNoPotion":  34,
+                                    "mega":  155,
+                                    "megaNoPotion":  160
+                                }
+                 },
+                 {
+                     "slug":  "field-mouse",
+                     "name":  "Field Mouse",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Field Mouse has stayed relevant because it is cute, limited, and easy for players to value.",
+                     "values":  {
+                                    "default":  8.5,
+                                    "noPotion":  7.75,
+                                    "neon":  35,
+                                    "neonNoPotion":  33,
+                                    "mega":  152,
+                                    "megaNoPotion":  149
+                                }
+                 },
+                 {
+                     "slug":  "cactus-friend",
+                     "name":  "Cactus Friend",
+                     "rarity":  "Legendary",
+                     "segment":  "Entry tier",
+                     "demand":  "Medium",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Cactus Friend is lower on the board than many newer collector pets, but it is still recognizable enough to justify a dedicated page.",
+                     "values":  {
+                                    "default":  1.55,
+                                    "noPotion":  0.8,
+                                    "neon":  6.75,
+                                    "neonNoPotion":  4.75,
+                                    "mega":  30,
+                                    "megaNoPotion":  27
+                                }
                  }
              ]
 }

@@ -40,6 +40,16 @@ Use this after shipping new guides, calculators, or pet pages.
 - `https://thepatchgg.github.io/pets/pig.html`
 - `https://thepatchgg.github.io/pets/pink-cat.html`
 - `https://thepatchgg.github.io/pets/platypus.html`
+- `https://thepatchgg.github.io/pets/balloon-unicorn.html`
+- `https://thepatchgg.github.io/pets/giant-panda.html`
+- `https://thepatchgg.github.io/pets/african-wild-dog.html`
+- `https://thepatchgg.github.io/pets/pelican.html`
+- `https://thepatchgg.github.io/pets/strawberry-shortcake-bat-dragon.html`
+- `https://thepatchgg.github.io/pets/peppermint-penguin.html`
+- `https://thepatchgg.github.io/pets/hot-doggo.html`
+- `https://thepatchgg.github.io/pets/orchid-butterfly.html`
+- `https://thepatchgg.github.io/pets/diamond-butterfly.html`
+- `https://thepatchgg.github.io/pets/goose.html`
 - `https://thepatchgg.github.io/articles/adopt-me-basic-egg-guide.html`
 - `https://thepatchgg.github.io/articles/adopt-me-crystal-egg-guide.html`
 - `https://thepatchgg.github.io/articles/adopt-me-endangered-egg-guide.html`
