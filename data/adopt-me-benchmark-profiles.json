@@ -1,5 +1,5 @@
 ﻿{
-    "updatedAt":  "2026-04-09",
+    "updatedAt":  "2026-04-10",
     "profiles":  {
                      "bat-dragon":  {
                                         "summary":  "Bat Dragon is one of the clearest top-end pets in the market because demand, collector interest, and no-potion premiums all stay strong at the same time.",
@@ -924,6 +924,150 @@
                                                                "giant-panda",
                                                                "candyfloss-chick"
                                                            ]
-                                       }
+                                       },
+                     "cryptid":  {
+                                      "summary":  "Cryptid is already trading like a real upper-mid benchmark and is one of the strongest current modern pets outside the old legacy tier.",
+                                      "origin":  "Modern event legendary with strong identity, very healthy demand, and enough market weight to matter in serious offers.",
+                                      "liquidity":  "Cryptid moves well because traders recognize it immediately and still treat it like a premium modern hold.",
+                                      "tradeTip":  "Compare Cryptid against Haetae and Evil Unicorn before assuming every modern premium pet belongs in the same lane.",
+                                      "watchReason":  "Watch Cryptid when you want a read on the upper end of the current modern-pet market.",
+                                      "compareWith":  [
+                                                          "haetae",
+                                                          "evil-unicorn",
+                                                          "crow"
+                                                      ]
+                                  },
+                     "haetae":  {
+                                     "summary":  "Haetae has settled into a strong modern collector lane with enough demand to deserve direct comparisons against established upper-mid pets.",
+                                     "origin":  "Modern legendary with prestige styling, strong collector appeal, and healthier staying power than many trend-driven releases.",
+                                     "liquidity":  "Haetae trades well because the demand story is clear and the pet still feels premium to experienced traders.",
+                                     "tradeTip":  "Use Haetae against Cryptid and Hedgehog before treating all high-value modern collector pets as interchangeable.",
+                                     "watchReason":  "Watch Haetae when you want to track top-end modern collector momentum.",
+                                     "compareWith":  [
+                                                         "cryptid",
+                                                         "hedgehog",
+                                                         "blazing-lion"
+                                                     ]
+                                 },
+                     "cabbit":  {
+                                    "summary":  "Cabbit has become one of the cleanest modern collector pets to watch because the design and event identity still matter in real trades.",
+                                    "origin":  "Modern collector legend with strong name recognition and a healthier lane than a casual rarity-first view would suggest.",
+                                    "liquidity":  "Cabbit moves well because traders remember it, like it, and generally agree that it belongs above basic mid-tier filler.",
+                                    "tradeTip":  "Use Cabbit against Velocirooster and Mermicorn before overpaying for modern collector hype.",
+                                    "watchReason":  "Watch Cabbit when you want a reliable modern collector-legends reference.",
+                                    "compareWith":  [
+                                                        "velocirooster",
+                                                        "mermicorn",
+                                                        "goose"
+                                                    ]
+                                },
+                     "velocirooster":  {
+                                             "summary":  "Velocirooster is a timely search target and already carries enough demand to justify a dedicated page.",
+                                             "origin":  "Admin Abuse 2026 legendary with fresh update interest and a stronger-than-average launch lane.",
+                                             "liquidity":  "Velocirooster should stay very visible in the near term because recency and design both help it move.",
+                                             "tradeTip":  "Use Velocirooster against Cabbit and Mermicorn while the launch interest is still fresh.",
+                                             "watchReason":  "Watch Velocirooster when you want the clearest live signal from the newest hype-driven pet lane.",
+                                             "compareWith":  [
+                                                                 "cabbit",
+                                                                 "mermicorn",
+                                                                 "hot-doggo"
+                                                             ]
+                                         },
+                     "mermicorn":  {
+                                        "summary":  "Mermicorn is holding value like a meaningful modern collector legend rather than a disposable seasonal release.",
+                                        "origin":  "Modern collector legend with strong theme demand and a healthier lane than many pets in the same raw tier.",
+                                        "liquidity":  "Mermicorn trades cleanly because the pet is memorable and there is still real player preference behind it.",
+                                        "tradeTip":  "Compare Mermicorn against Jekyll Hydra and Cabbit before treating any one modern theme pet as obviously stronger.",
+                                        "watchReason":  "Watch Mermicorn when you want another stable modern collector-legends page.",
+                                        "compareWith":  [
+                                                            "jekyll-hydra",
+                                                            "cabbit",
+                                                            "velocirooster"
+                                                        ]
+                                    },
+                     "jekyll-hydra":  {
+                                          "summary":  "Jekyll Hydra still has enough collector heat to outperform many similarly priced modern legends.",
+                                          "origin":  "Modern themed legend with strong identity and a solid pricing lane that has held after release.",
+                                          "liquidity":  "Jekyll Hydra is not elite, but it is recognizable enough to act like a real collector benchmark.",
+                                          "tradeTip":  "Use Jekyll Hydra against Mermicorn and Sugar Glider before assuming a modern legend offer is fully grounded.",
+                                          "watchReason":  "Watch Jekyll Hydra when you want a read on stronger second-tier modern collector legends.",
+                                          "compareWith":  [
+                                                              "mermicorn",
+                                                              "sugar-glider",
+                                                              "hot-doggo"
+                                                          ]
+                                      },
+                     "sugar-glider":  {
+                                          "summary":  "Sugar Glider has one of the healthiest modern ultra-rare lanes and gets searched enough to deserve direct coverage.",
+                                          "origin":  "Modern ultra-rare with strong collector appeal and a better market lane than many newer legends below it.",
+                                          "liquidity":  "Sugar Glider trades well because both collectors and casual players recognize the pet immediately.",
+                                          "tradeTip":  "Use Sugar Glider against Field Mouse and Goat before treating every cute modern pet like pure preference value.",
+                                          "watchReason":  "Watch Sugar Glider when you want a stronger modern ultra-rare reference point.",
+                                          "compareWith":  [
+                                                              "field-mouse",
+                                                              "goat",
+                                                              "jekyll-hydra"
+                                                          ]
+                                      },
+                     "silverback-gorilla":  {
+                                               "summary":  "Silverback Gorilla is a solid modern legend compare page because it is familiar and the lane is stable enough to read cleanly.",
+                                               "origin":  "Modern legendary with decent recognition and a grounded, tradable lane rather than pure collector hype.",
+                                               "liquidity":  "Silverback Gorilla moves well enough to matter, though it is not as hot as the strongest current collector pets.",
+                                               "tradeTip":  "Use Silverback Gorilla against Winged Tiger and Frostbite Bear when lower-mid modern legend offers feel noisy.",
+                                               "watchReason":  "Watch Silverback Gorilla when you want a calmer modern-legend benchmark.",
+                                               "compareWith":  [
+                                                                   "winged-tiger",
+                                                                   "frostbite-bear",
+                                                                   "dragonfruit-fox-pet"
+                                                               ]
+                                           },
+                     "winged-tiger":  {
+                                          "summary":  "Winged Tiger remains a useful modern legend reference because the pet is recognizable and still actively traded.",
+                                          "origin":  "Modern themed legend with healthy recognition and enough staying power to remain useful in trade math.",
+                                          "liquidity":  "Winged Tiger is easier to move than many forgettable newer legends because people still remember the pet.",
+                                          "tradeTip":  "Compare Winged Tiger against Frostbite Bear and Silverback Gorilla before assuming any mid modern legend is a premium lane.",
+                                          "watchReason":  "Watch Winged Tiger when you want a practical mid-range modern legend page.",
+                                          "compareWith":  [
+                                                              "frostbite-bear",
+                                                              "silverback-gorilla",
+                                                              "dragonfruit-fox-pet"
+                                                          ]
+                                      },
+                     "frostbite-bear":  {
+                                            "summary":  "Frostbite Bear has held its winter collector appeal better than many comparable themed legends.",
+                                            "origin":  "Winter-themed modern legend with a strong identity and enough demand to stay relevant after release.",
+                                            "liquidity":  "Frostbite Bear trades better than average because players remember the design and the lane stays fairly clear.",
+                                            "tradeTip":  "Use Frostbite Bear against Winged Tiger and Siamese Cat when winter pet offers feel inflated.",
+                                            "watchReason":  "Watch Frostbite Bear when you want another readable seasonal collector reference.",
+                                            "compareWith":  [
+                                                                "winged-tiger",
+                                                                "siamese-cat",
+                                                                "dragonfruit-fox-pet"
+                                                            ]
+                                        },
+                     "siamese-cat":  {
+                                          "summary":  "Siamese Cat continues to benefit from strong player preference and a clean collector lane.",
+                                          "origin":  "Modern ultra-rare with a lot more demand than its basic rarity tag would suggest.",
+                                          "liquidity":  "Siamese Cat moves well for the tier because players like it and understand it quickly.",
+                                          "tradeTip":  "Use Siamese Cat against Dragonfruit Fox and Border Collie before treating cute collector pets like generic adds.",
+                                          "watchReason":  "Watch Siamese Cat when you want a sharper read on modern preference-pet demand.",
+                                          "compareWith":  [
+                                                              "dragonfruit-fox-pet",
+                                                              "border-collie",
+                                                              "goat"
+                                                          ]
+                                      },
+                     "dragonfruit-fox-pet":  {
+                                                 "summary":  "Dragonfruit Fox is still one of the most memorable newer egg legends and is worth covering directly.",
+                                                 "origin":  "Crystal Egg legendary with strong theme recognition and better staying power than many recent egg pets.",
+                                                 "liquidity":  "Dragonfruit Fox trades well because the egg source and design make it easy for players to understand.",
+                                                 "tradeTip":  "Use Dragonfruit Fox against Siamese Cat and Field Mouse before overpaying for newer egg-legends.",
+                                                 "watchReason":  "Watch Dragonfruit Fox when you want a clean read on the newer egg-pet lane.",
+                                                 "compareWith":  [
+                                                                     "siamese-cat",
+                                                                     "field-mouse",
+                                                                     "frostbite-bear"
+                                                                 ]
+                                             }
                  }
 }

@@ -1409,6 +1409,222 @@
                                     "mega":  30,
                                     "megaNoPotion":  27
                                 }
+                 },
+                 {
+                     "slug":  "cryptid",
+                     "name":  "Cryptid",
+                     "rarity":  "Legendary",
+                     "segment":  "Upper mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Cryptid is already trading like a real upper-mid benchmark and is one of the strongest current modern pets not tied to the old legacy tier.",
+                     "values":  {
+                                    "default":  79,
+                                    "noPotion":  77,
+                                    "neon":  183,
+                                    "neonNoPotion":  181,
+                                    "mega":  610,
+                                    "megaNoPotion":  615
+                                }
+                 },
+                 {
+                     "slug":  "haetae",
+                     "name":  "Haetae",
+                     "rarity":  "Legendary",
+                     "segment":  "Upper mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Haetae has settled into a strong modern collector lane with enough demand to merit direct comparisons against established upper-mid pets.",
+                     "values":  {
+                                    "default":  62,
+                                    "noPotion":  60,
+                                    "neon":  227,
+                                    "neonNoPotion":  232,
+                                    "mega":  790,
+                                    "megaNoPotion":  810
+                                }
+                 },
+                 {
+                     "slug":  "cabbit",
+                     "name":  "Cabbit",
+                     "rarity":  "Legendary",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Cabbit has become one of the cleanest modern collector pets to watch because the design and event identity still matter in real trades.",
+                     "values":  {
+                                    "default":  19.25,
+                                    "noPotion":  18,
+                                    "neon":  51,
+                                    "neonNoPotion":  49,
+                                    "mega":  181,
+                                    "megaNoPotion":  179
+                                }
+                 },
+                 {
+                     "slug":  "velocirooster",
+                     "name":  "Velocirooster",
+                     "rarity":  "Legendary",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Velocirooster is a timely search target and already carries enough demand to justify a dedicated page.",
+                     "values":  {
+                                    "default":  19,
+                                    "noPotion":  17.5,
+                                    "neon":  80,
+                                    "neonNoPotion":  78,
+                                    "mega":  350,
+                                    "megaNoPotion":  347
+                                }
+                 },
+                 {
+                     "slug":  "mermicorn",
+                     "name":  "Mermicorn",
+                     "rarity":  "Legendary",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Mermicorn is holding value like a meaningful modern collector legend rather than a disposable seasonal release.",
+                     "values":  {
+                                    "default":  16,
+                                    "noPotion":  15.25,
+                                    "neon":  62,
+                                    "neonNoPotion":  60,
+                                    "mega":  261,
+                                    "megaNoPotion":  266
+                                }
+                 },
+                 {
+                     "slug":  "jekyll-hydra",
+                     "name":  "Jekyll Hydra",
+                     "rarity":  "Legendary",
+                     "segment":  "Collector tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Jekyll Hydra still has enough collector heat to outperform many similarly priced modern legends.",
+                     "values":  {
+                                    "default":  15.25,
+                                    "noPotion":  14.5,
+                                    "neon":  61,
+                                    "neonNoPotion":  59,
+                                    "mega":  251,
+                                    "megaNoPotion":  256
+                                }
+                 },
+                 {
+                     "slug":  "sugar-glider",
+                     "name":  "Sugar Glider",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Sugar Glider has one of the healthiest modern ultra-rare lanes and gets searched enough to deserve direct coverage.",
+                     "values":  {
+                                    "default":  13,
+                                    "noPotion":  12.25,
+                                    "neon":  53,
+                                    "neonNoPotion":  51,
+                                    "mega":  225,
+                                    "megaNoPotion":  230
+                                }
+                 },
+                 {
+                     "slug":  "silverback-gorilla",
+                     "name":  "Silverback Gorilla",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Silverback Gorilla is a solid modern legend compare page because it is familiar and the lane is stable enough to read cleanly.",
+                     "values":  {
+                                    "default":  10.75,
+                                    "noPotion":  10,
+                                    "neon":  43,
+                                    "neonNoPotion":  41,
+                                    "mega":  176,
+                                    "megaNoPotion":  172
+                                }
+                 },
+                 {
+                     "slug":  "winged-tiger",
+                     "name":  "Winged Tiger",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Winged Tiger remains a useful modern legend reference because the pet is recognizable and still actively traded.",
+                     "values":  {
+                                    "default":  10,
+                                    "noPotion":  9.25,
+                                    "neon":  41,
+                                    "neonNoPotion":  39,
+                                    "mega":  174,
+                                    "megaNoPotion":  179
+                                }
+                 },
+                 {
+                     "slug":  "frostbite-bear",
+                     "name":  "Frostbite Bear",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Frostbite Bear has held its winter collector appeal better than many comparable themed legends.",
+                     "values":  {
+                                    "default":  10,
+                                    "noPotion":  9.25,
+                                    "neon":  41,
+                                    "neonNoPotion":  39,
+                                    "mega":  175,
+                                    "megaNoPotion":  178
+                                }
+                 },
+                 {
+                     "slug":  "siamese-cat",
+                     "name":  "Siamese Cat",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Siamese Cat continues to benefit from strong player preference and a clean collector lane.",
+                     "values":  {
+                                    "default":  8.85,
+                                    "noPotion":  8.25,
+                                    "neon":  31.5,
+                                    "neonNoPotion":  30,
+                                    "mega":  116,
+                                    "megaNoPotion":  113
+                                }
+                 },
+                 {
+                     "slug":  "dragonfruit-fox-pet",
+                     "name":  "Dragonfruit Fox",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Dragonfruit Fox is still one of the most memorable newer egg legends and is worth covering directly.",
+                     "values":  {
+                                    "default":  8.5,
+                                    "noPotion":  7.75,
+                                    "neon":  34,
+                                    "neonNoPotion":  32,
+                                    "mega":  140,
+                                    "megaNoPotion":  136
+                                }
                  }
              ]
 }
