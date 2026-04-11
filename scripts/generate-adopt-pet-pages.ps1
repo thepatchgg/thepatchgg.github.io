@@ -184,6 +184,32 @@ foreach ($pet in $values.pets) {
     },
     [pscustomobject]@{
       '@context' = 'https://schema.org'
+      '@type' = 'Article'
+      headline = $title
+      description = $description
+      image = "https://thepatchgg.github.io/assets/pets/$($pet.slug).png"
+      mainEntityOfPage = $canonical
+      author = [pscustomobject]@{
+        '@type' = 'Organization'
+        name = 'The Patch Staff'
+      }
+      publisher = [pscustomobject]@{
+        '@type' = 'Organization'
+        name = 'The Patch'
+        logo = [pscustomobject]@{
+          '@type' = 'ImageObject'
+          url = 'https://thepatchgg.github.io/favicon.svg'
+        }
+      }
+      about = @(
+        $pet.name,
+        'Adopt Me value guide',
+        'Adopt Me trading',
+        $pet.rarity
+      )
+    },
+    [pscustomobject]@{
+      '@context' = 'https://schema.org'
       '@type' = 'FAQPage'
       mainEntity = @(
         $faqItems | ForEach-Object {

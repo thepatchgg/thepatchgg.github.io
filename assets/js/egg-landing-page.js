@@ -209,6 +209,57 @@
       .join("");
   }
 
+  function addSchema(egg) {
+    const canonical = `https://thepatchgg.github.io/articles/adopt-me-${egg.id}-egg-guide.html`;
+    const headlineNode = document.querySelector("h1");
+    const descriptionNode = document.querySelector('meta[name="description"]');
+    const headline = headlineNode ? headlineNode.textContent.trim() : `${egg.name} guide`;
+    const description = descriptionNode ? descriptionNode.getAttribute("content") : `${egg.name} hatch list and odds guide from The Patch.`;
+    const image = `https://thepatchgg.github.io${window.ThePatchEggs.eggVisualUrl(egg)}`;
+    const schema = [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://thepatchgg.github.io/" },
+          { "@type": "ListItem", position: 2, name: "Egg Guide", item: "https://thepatchgg.github.io/articles/adopt-me-egg-guide.html" },
+          { "@type": "ListItem", position: 3, name: egg.name, item: canonical }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline,
+        description,
+        image,
+        mainEntityOfPage: canonical,
+        author: {
+          "@type": "Organization",
+          name: "The Patch Staff"
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "The Patch",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://thepatchgg.github.io/favicon.svg"
+          }
+        },
+        about: [
+          egg.name,
+          "Adopt Me egg guide",
+          "Adopt Me hatch list",
+          "Adopt Me odds"
+        ]
+      }
+    ];
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+  }
+
   async function boot() {
     try {
       const [baseEggPayload, valuePayload, catalogPayload] = await Promise.all([
@@ -250,6 +301,8 @@
           this.src = window.ThePatchEggs.eggDisplayUrl(egg);
         };
       }
+
+      addSchema(egg);
     } catch (error) {
       setHtml("egg-rarity-stack", `<div class="egg-landing-empty"><p>This egg page could not load the hatch data right now. Please refresh and try again.</p></div>`);
     }
