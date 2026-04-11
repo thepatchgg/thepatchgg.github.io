@@ -1625,6 +1625,222 @@
                                     "mega":  140,
                                     "megaNoPotion":  136
                                 }
+                 },
+                 {
+                     "slug":  "cupid-dragon",
+                     "name":  "Cupid Dragon",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Cupid Dragon is still one of the more searched modern themed dragons and keeps a healthy collector lane.",
+                     "values":  {
+                                    "default":  8,
+                                    "noPotion":  7,
+                                    "neon":  32,
+                                    "neonNoPotion":  30,
+                                    "mega":  135,
+                                    "megaNoPotion":  140
+                                }
+                 },
+                 {
+                     "slug":  "lion-cub",
+                     "name":  "Lion Cub",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Lion Cub still carries stronger demand than many modern legends in the same raw price range.",
+                     "values":  {
+                                    "default":  8.1,
+                                    "noPotion":  7.5,
+                                    "neon":  35,
+                                    "neonNoPotion":  33.5,
+                                    "mega":  150,
+                                    "megaNoPotion":  153
+                                }
+                 },
+                 {
+                     "slug":  "shark-puppy",
+                     "name":  "Shark Puppy",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Shark Puppy remains a strong search target because the pet is memorable and still actively traded.",
+                     "values":  {
+                                    "default":  8,
+                                    "noPotion":  7.25,
+                                    "neon":  33,
+                                    "neonNoPotion":  31,
+                                    "mega":  140,
+                                    "megaNoPotion":  145
+                                }
+                 },
+                 {
+                     "slug":  "irish-water-spaniel",
+                     "name":  "Irish Water Spaniel",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Irish Water Spaniel keeps a clean collector lane and gets searched often enough to justify direct coverage.",
+                     "values":  {
+                                    "default":  7.85,
+                                    "noPotion":  7.25,
+                                    "neon":  33,
+                                    "neonNoPotion":  31.5,
+                                    "mega":  140,
+                                    "megaNoPotion":  143
+                                }
+                 },
+                 {
+                     "slug":  "werewolf",
+                     "name":  "Werewolf",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Werewolf still benefits from strong Halloween branding and better demand than many themed peers.",
+                     "values":  {
+                                    "default":  7,
+                                    "noPotion":  6.25,
+                                    "neon":  28,
+                                    "neonNoPotion":  26,
+                                    "mega":  118,
+                                    "megaNoPotion":  115
+                                }
+                 },
+                 {
+                     "slug":  "vampire-dragon",
+                     "name":  "Vampire Dragon",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Vampire Dragon remains a useful modern dragon reference because it is still widely recognized.",
+                     "values":  {
+                                    "default":  6.5,
+                                    "noPotion":  5.5,
+                                    "neon":  25,
+                                    "neonNoPotion":  23,
+                                    "mega":  110,
+                                    "megaNoPotion":  111
+                                }
+                 },
+                 {
+                     "slug":  "jellyfish",
+                     "name":  "Jellyfish",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Jellyfish has one of the strongest modern ultra-rare collector lanes and is worth a dedicated page.",
+                     "values":  {
+                                    "default":  6.1,
+                                    "noPotion":  5.5,
+                                    "neon":  27,
+                                    "neonNoPotion":  25.5,
+                                    "mega":  121,
+                                    "megaNoPotion":  119
+                                }
+                 },
+                 {
+                     "slug":  "sheeeeep",
+                     "name":  "Sheeeeep",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Sheeeeep keeps a recognizable collector lane and still gets searched more than many pets around it.",
+                     "values":  {
+                                    "default":  6.1,
+                                    "noPotion":  5.5,
+                                    "neon":  26.5,
+                                    "neonNoPotion":  25,
+                                    "mega":  116,
+                                    "megaNoPotion":  117
+                                }
+                 },
+                 {
+                     "slug":  "owlbear",
+                     "name":  "Owlbear",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Owlbear is still one of the cleaner newer collector legend references thanks to its strong identity.",
+                     "values":  {
+                                    "default":  7.25,
+                                    "noPotion":  6.5,
+                                    "neon":  30,
+                                    "neonNoPotion":  28,
+                                    "mega":  127,
+                                    "megaNoPotion":  124
+                                }
+                 },
+                 {
+                     "slug":  "papa-moose",
+                     "name":  "Papa Moose",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Papa Moose has become a solid modern collector search page with a stable premium lane.",
+                     "values":  {
+                                    "default":  7.75,
+                                    "noPotion":  7,
+                                    "neon":  32,
+                                    "neonNoPotion":  30,
+                                    "mega":  135,
+                                    "megaNoPotion":  132
+                                }
+                 },
+                 {
+                     "slug":  "black-chested-pheasant",
+                     "name":  "Black-Chested Pheasant",
+                     "rarity":  "Legendary",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Black-Chested Pheasant keeps enough collector interest to justify direct comparison coverage.",
+                     "values":  {
+                                    "default":  7.25,
+                                    "noPotion":  6.5,
+                                    "neon":  30,
+                                    "neonNoPotion":  28,
+                                    "mega":  130,
+                                    "megaNoPotion":  135
+                                }
+                 },
+                 {
+                     "slug":  "shrew",
+                     "name":  "Shrew",
+                     "rarity":  "Rare",
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "confidence":  "Medium",
+                     "notes":  "Tracker-reviewed on April 10, 2026. Shrew is an older holiday pet that still gets enough real search interest to earn its own page.",
+                     "values":  {
+                                    "default":  6.25,
+                                    "noPotion":  5.25,
+                                    "neon":  23,
+                                    "neonNoPotion":  21.5,
+                                    "mega":  92,
+                                    "megaNoPotion":  97
+                                }
                  }
              ]
 }

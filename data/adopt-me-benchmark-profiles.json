@@ -1068,6 +1068,150 @@
                                                                      "field-mouse",
                                                                      "frostbite-bear"
                                                                  ]
-                                             }
+                                             },
+                     "cupid-dragon":  {
+                                            "summary":  "Cupid Dragon is still one of the more searched modern themed dragons and keeps a healthy collector lane.",
+                                            "origin":  "Modern dragon legend with strong theme recognition and steady collector demand.",
+                                            "liquidity":  "Cupid Dragon trades well because the branding is memorable and players still actively want the pet.",
+                                            "tradeTip":  "Use Cupid Dragon against Vampire Dragon and Lion Cub before assuming every themed legend is priced the same.",
+                                            "watchReason":  "Watch Cupid Dragon when you want a cleaner read on modern themed-dragon demand.",
+                                            "compareWith":  [
+                                                                "vampire-dragon",
+                                                                "lion-cub",
+                                                                "dragonfruit-fox-pet"
+                                                            ]
+                                        },
+                     "lion-cub":  {
+                                      "summary":  "Lion Cub still carries stronger demand than many modern legends in the same raw price range.",
+                                      "origin":  "Modern collector legend with broad visual appeal and healthier real demand than many comparable releases.",
+                                      "liquidity":  "Lion Cub moves well because players recognize it quickly and tend to value it above ordinary newer legends.",
+                                      "tradeTip":  "Use Lion Cub against Cupid Dragon and Papa Moose when modern collector offers feel inflated.",
+                                      "watchReason":  "Watch Lion Cub when you want another reliable modern collector-legends benchmark.",
+                                      "compareWith":  [
+                                                          "cupid-dragon",
+                                                          "papa-moose",
+                                                          "shark-puppy"
+                                                      ]
+                                  },
+                     "shark-puppy":  {
+                                          "summary":  "Shark Puppy remains a strong search target because the pet is memorable and still actively traded.",
+                                          "origin":  "Modern themed legend with a standout identity and healthy player preference behind it.",
+                                          "liquidity":  "Shark Puppy moves well because players remember the pet immediately and the lane is easy to explain.",
+                                          "tradeTip":  "Use Shark Puppy against Lion Cub and Owlbear before treating all cute modern legends as interchangeable.",
+                                          "watchReason":  "Watch Shark Puppy when you want a practical modern novelty-legends page.",
+                                          "compareWith":  [
+                                                              "lion-cub",
+                                                              "owlbear",
+                                                              "jellyfish"
+                                                          ]
+                                      },
+                     "irish-water-spaniel":  {
+                                                 "summary":  "Irish Water Spaniel keeps a clean collector lane and gets searched often enough to justify direct coverage.",
+                                                 "origin":  "Modern ultra-rare with stronger collector demand than a basic rarity view would suggest.",
+                                                 "liquidity":  "Irish Water Spaniel trades steadily because the pet is distinctive and the lane is fairly clear.",
+                                                 "tradeTip":  "Use Irish Water Spaniel against Shrew and Jellyfish before overpaying for older collector rares and ultras.",
+                                                 "watchReason":  "Watch Irish Water Spaniel when you want another stable mid-tier collector reference.",
+                                                 "compareWith":  [
+                                                                     "shrew",
+                                                                     "jellyfish",
+                                                                     "siamese-cat"
+                                                                 ]
+                                             },
+                     "werewolf":  {
+                                       "summary":  "Werewolf still benefits from strong Halloween branding and better demand than many themed peers.",
+                                       "origin":  "Halloween legend with memorable styling and a healthier market lane than many seasonal pets around it.",
+                                       "liquidity":  "Werewolf trades better than average because the pet is recognizable and the Halloween premium still matters.",
+                                       "tradeTip":  "Use Werewolf against Vampire Dragon and Frostbite Bear before paying a seasonal premium that is too aggressive.",
+                                       "watchReason":  "Watch Werewolf when you want a practical modern Halloween reference.",
+                                       "compareWith":  [
+                                                           "vampire-dragon",
+                                                           "frostbite-bear",
+                                                           "cupid-dragon"
+                                                       ]
+                                   },
+                     "vampire-dragon":  {
+                                              "summary":  "Vampire Dragon remains a useful modern dragon reference because it is still widely recognized.",
+                                              "origin":  "Halloween-themed dragon legend with strong name recognition and a fairly stable collector lane.",
+                                              "liquidity":  "Vampire Dragon stays tradable because the concept is easy to remember even when the value lane softens a little.",
+                                              "tradeTip":  "Use Vampire Dragon against Cupid Dragon and Werewolf before paying a blanket premium for dragon branding.",
+                                              "watchReason":  "Watch Vampire Dragon when you want another themed-dragon sanity check.",
+                                              "compareWith":  [
+                                                                  "cupid-dragon",
+                                                                  "werewolf",
+                                                                  "frostbite-bear"
+                                                              ]
+                                          },
+                     "jellyfish":  {
+                                         "summary":  "Jellyfish has one of the strongest modern ultra-rare collector lanes and is worth a dedicated page.",
+                                         "origin":  "Modern ultra-rare with strong visual identity and better real demand than many newer legends below it.",
+                                         "liquidity":  "Jellyfish moves well because collectors and casual players both understand the appeal immediately.",
+                                         "tradeTip":  "Use Jellyfish against Sheeeeep and Irish Water Spaniel before treating collector ultras as generic adds.",
+                                         "watchReason":  "Watch Jellyfish when you want a strong modern ultra-rare reference.",
+                                         "compareWith":  [
+                                                             "sheeeeep",
+                                                             "irish-water-spaniel",
+                                                             "siamese-cat"
+                                                         ]
+                                     },
+                     "sheeeeep":  {
+                                        "summary":  "Sheeeeep keeps a recognizable collector lane and still gets searched more than many pets around it.",
+                                        "origin":  "Modern ultra-rare with a fun identity and enough preference demand to stay relevant.",
+                                        "liquidity":  "Sheeeeep is not elite, but it trades cleanly because players remember it and generally agree on the rough lane.",
+                                        "tradeTip":  "Use Sheeeeep against Jellyfish and Shrew before overpaying for novelty alone.",
+                                        "watchReason":  "Watch Sheeeeep when you want a softer but still useful collector-ultra page.",
+                                        "compareWith":  [
+                                                            "jellyfish",
+                                                            "shrew",
+                                                            "irish-water-spaniel"
+                                                        ]
+                                    },
+                     "owlbear":  {
+                                      "summary":  "Owlbear is still one of the cleaner newer collector legend references thanks to its strong identity.",
+                                      "origin":  "Modern legend with broad theme appeal and a stronger staying power than many one-cycle releases.",
+                                      "liquidity":  "Owlbear stays fairly tradable because the concept is memorable and the pet still has real fans.",
+                                      "tradeTip":  "Use Owlbear against Shark Puppy and Black-Chested Pheasant before assuming a newer collector legend is overpriced.",
+                                      "watchReason":  "Watch Owlbear when you want another grounded modern legend page.",
+                                      "compareWith":  [
+                                                          "shark-puppy",
+                                                          "black-chested-pheasant",
+                                                          "lion-cub"
+                                                      ]
+                                  },
+                     "papa-moose":  {
+                                         "summary":  "Papa Moose has become a solid modern collector search page with a stable premium lane.",
+                                         "origin":  "Modern collector legend whose limited feel and recognizability help it keep a healthy market lane.",
+                                         "liquidity":  "Papa Moose moves well enough to justify direct comparisons with other current collector legends.",
+                                         "tradeTip":  "Use Papa Moose against Lion Cub and Cupid Dragon when offer stacks feel noisy.",
+                                         "watchReason":  "Watch Papa Moose when you want another high-intent modern collector legend page.",
+                                         "compareWith":  [
+                                                             "lion-cub",
+                                                             "cupid-dragon",
+                                                             "black-chested-pheasant"
+                                                         ]
+                                     },
+                     "black-chested-pheasant":  {
+                                                    "summary":  "Black-Chested Pheasant keeps enough collector interest to justify direct comparison coverage.",
+                                                    "origin":  "Modern legend with a solid event identity and a better lane than many forgettable releases.",
+                                                    "liquidity":  "Black-Chested Pheasant is not top-tier, but it stays tradable because people know the pet and generally respect the lane.",
+                                                    "tradeTip":  "Use Black-Chested Pheasant against Owlbear and Papa Moose before treating event legends as flat equivalents.",
+                                                    "watchReason":  "Watch Black-Chested Pheasant when you want a stable event-legend reference.",
+                                                    "compareWith":  [
+                                                                        "owlbear",
+                                                                        "papa-moose",
+                                                                        "lion-cub"
+                                                                    ]
+                                                },
+                     "shrew":  {
+                                    "summary":  "Shrew is an older holiday pet that still gets enough real search interest to earn its own page.",
+                                    "origin":  "Older holiday rare with enduring collector attention and stronger nostalgia demand than many pets in the same rarity lane.",
+                                    "liquidity":  "Shrew is not a mass-market benchmark, but collectors know it well enough that it still matters in real trade math.",
+                                    "tradeTip":  "Use Shrew against Irish Water Spaniel and Sheeeeep before overpaying for nostalgia alone.",
+                                    "watchReason":  "Watch Shrew when you want an older holiday collector reference below the top legacy tier.",
+                                    "compareWith":  [
+                                                        "irish-water-spaniel",
+                                                        "sheeeeep",
+                                                        "jellyfish"
+                                                    ]
+                                }
                  }
 }
