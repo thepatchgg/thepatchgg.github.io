@@ -150,8 +150,8 @@ foreach ($pet in $values.pets) {
 "@
   }
 
-  $title = "{0} Value Guide 2026 | The Patch" -f $pet.name
-  $description = "{0} value guide from The Patch with live value lanes, demand notes, trade tips, and related Adopt Me comparisons." -f $pet.name
+  $title = "{0} Value in Adopt Me 2026 | Trade Guide | The Patch" -f $pet.name
+  $description = "Check current {0} value in Adopt Me with no-potion lanes, demand notes, trend signals, and the best pets to compare in trades." -f $pet.name
   $canonical = "https://thepatchgg.github.io/pets/{0}.html" -f $pet.slug
   $demandTone = $toneClass[$pet.demand]
   $trendTone = $toneClass[$pet.trend]
@@ -234,6 +234,7 @@ foreach ($pet in $values.pets) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>$([System.Net.WebUtility]::HtmlEncode($title))</title>
   <meta name="description" content="$([System.Net.WebUtility]::HtmlEncode($description))">
+  <meta name="robots" content="max-image-preview:large">
   <meta name="theme-color" content="#08111f">
   <meta property="og:type" content="article">
   <meta property="og:title" content="$([System.Net.WebUtility]::HtmlEncode($title))">
@@ -241,10 +242,12 @@ foreach ($pet in $values.pets) {
   <meta property="og:url" content="$canonical">
   <meta property="og:site_name" content="The Patch">
   <meta property="og:image" content="https://thepatchgg.github.io/assets/pets/$($pet.slug).png">
+  <meta property="og:image:alt" content="$([System.Net.WebUtility]::HtmlEncode($pet.name)) featured on The Patch Adopt Me value guide">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="$([System.Net.WebUtility]::HtmlEncode($title))">
   <meta name="twitter:description" content="$([System.Net.WebUtility]::HtmlEncode($description))">
   <meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/$($pet.slug).png">
+  <meta name="twitter:image:alt" content="$([System.Net.WebUtility]::HtmlEncode($pet.name)) featured on The Patch Adopt Me value guide">
   <link rel="canonical" href="$canonical">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
