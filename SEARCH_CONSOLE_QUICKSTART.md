@@ -80,6 +80,9 @@ Use this after shipping new guides, calculators, or pet pages.
 - `https://thepatchgg.github.io/articles/adopt-me-aztec-egg-guide.html`
 - `https://thepatchgg.github.io/articles/adopt-me-royal-aztec-egg-guide.html`
 - `https://thepatchgg.github.io/articles/adopt-me-moon-egg-guide.html`
+- `https://thepatchgg.github.io/articles/adopt-me-bat-dragon-vs-shadow-dragon-guide.html`
+- `https://thepatchgg.github.io/articles/adopt-me-owl-vs-parrot-guide.html`
+- `https://thepatchgg.github.io/articles/adopt-me-basic-vs-crystal-egg-guide.html`
 
 ## Weekly routine
 
