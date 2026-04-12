@@ -83,6 +83,7 @@ Use this after shipping new guides, calculators, or pet pages.
 - `https://thepatchgg.github.io/articles/adopt-me-bat-dragon-vs-shadow-dragon-guide.html`
 - `https://thepatchgg.github.io/articles/adopt-me-owl-vs-parrot-guide.html`
 - `https://thepatchgg.github.io/articles/adopt-me-basic-vs-crystal-egg-guide.html`
+- `https://thepatchgg.github.io/the-patch-staff.html`
 
 ## Weekly routine
 

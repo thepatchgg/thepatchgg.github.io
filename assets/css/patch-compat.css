@@ -599,6 +599,22 @@ button.secondary,
   color: var(--text-muted);
 }
 
+.detail-byline {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.detail-byline a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.detail-byline a:hover {
+  text-decoration: underline;
+}
+
 .catalog-meta,
 .detail-kpis,
 .variant-list,

@@ -9,6 +9,9 @@
 .comparison-hero p{max-width:840px;font-size:15px;color:var(--text-muted);line-height:1.8;margin:0}
 .comparison-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
 .comparison-pill{display:inline-flex;align-items:center;justify-content:center;padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);font-size:12px;font-weight:700;color:var(--text-muted)}
+.comparison-byline{margin-top:14px;font-size:13px;color:var(--text-muted)}
+.comparison-byline .author-link{color:var(--accent);font-weight:800;text-decoration:none}
+.comparison-byline .author-link:hover{text-decoration:underline}
 .comparison-grid,.comparison-two-up,.comparison-faq-grid,.comparison-cta-grid{display:grid;gap:16px}
 .comparison-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:18px}
 .comparison-two-up{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:18px}
@@ -37,6 +40,14 @@
 .comparison-faq h3{font-size:15px;font-weight:800;margin:0 0 10px}
 .comparison-cta-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .comparison-link{display:inline-flex;align-items:center;gap:8px;margin-top:12px;color:var(--am);font-weight:800;text-decoration:none}
+.comparison-author-card{margin-top:4px;padding:22px 24px;border-radius:16px;background:radial-gradient(circle at top left,rgba(200,255,87,.07),rgba(200,255,87,0) 30%),linear-gradient(180deg,rgba(12,17,30,.94),rgba(12,17,30,.98));border:1px solid rgba(200,255,87,.14)}
+.comparison-author-card h2{font-size:20px;font-weight:850;margin:0 0 8px}
+.comparison-author-card p{font-size:14px;line-height:1.75;color:var(--text-muted);margin:0}
+.comparison-author-card .author-link{color:var(--text);text-decoration:none}
+.comparison-author-card .author-link:hover{color:var(--accent)}
+.comparison-author-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.comparison-author-links a{display:inline-flex;align-items:center;justify-content:center;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);font-size:12px;font-weight:700;color:var(--text);text-decoration:none}
+.comparison-author-links a:hover{border-color:rgba(200,255,87,.18);color:var(--accent)}
 @media(max-width:900px){
   .comparison-grid,.comparison-versus,.comparison-two-up{grid-template-columns:1fr}
 }

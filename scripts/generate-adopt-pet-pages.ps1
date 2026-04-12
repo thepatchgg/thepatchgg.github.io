@@ -192,6 +192,7 @@ foreach ($pet in $values.pets) {
       author = [pscustomobject]@{
         '@type' = 'Organization'
         name = 'The Patch Staff'
+        url = 'https://thepatchgg.github.io/the-patch-staff.html'
       }
       publisher = [pscustomobject]@{
         '@type' = 'Organization'
@@ -296,6 +297,7 @@ foreach ($pet in $values.pets) {
           <div class="eyebrow">Pet value page</div>
           <h1>$([System.Net.WebUtility]::HtmlEncode($h1))</h1>
           <p>$([System.Net.WebUtility]::HtmlEncode($profile.summary))</p>
+          <p class="detail-byline">Reviewed by <a href="/the-patch-staff.html">The Patch Staff</a> using the current Patch benchmark methodology.</p>
           <div class="cta-row">
             <a class="button primary" href="/pet-value-calculator.html" data-track-event="pet_page_cta_click" data-track-location="hero_primary">Compare a trade</a>
             <a class="button secondary" href="/pets/" data-track-event="pet_page_cta_click" data-track-location="hero_secondary">Open pet library</a>
