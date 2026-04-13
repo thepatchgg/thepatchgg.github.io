@@ -86,6 +86,9 @@ Use this after shipping new guides, calculators, or pet pages.
 - `https://thepatchgg.github.io/articles/adopt-me-frost-dragon-vs-giraffe-guide.html`
 - `https://thepatchgg.github.io/articles/adopt-me-crow-vs-evil-unicorn-guide.html`
 - `https://thepatchgg.github.io/articles/adopt-me-turtle-vs-kangaroo-guide.html`
+- `https://thepatchgg.github.io/articles/adopt-me-best-pets-to-trade-up-into-guide.html`
+- `https://thepatchgg.github.io/articles/adopt-me-should-you-make-neon-turtle-guide.html`
+- `https://thepatchgg.github.io/articles/adopt-me-best-eggs-to-buy-right-now-guide.html`
 - `https://thepatchgg.github.io/the-patch-staff.html`
 
 ## Weekly routine
