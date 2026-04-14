@@ -138,6 +138,9 @@ img{display:block}
 .rCommon{color:#bdbdbd;background:rgba(189,189,189,.12)}
 .status-card{max-width:var(--max-w);margin:0 auto 24px;padding:14px 20px;border:1px solid var(--border);background:var(--surface);border-radius:12px;color:var(--text-muted);font-size:.82rem}
 .status-card strong{color:var(--text)}
+.status-card.audit-mode{border-color:#f4c95d;background:linear-gradient(135deg,rgba(244,201,93,.16),rgba(111,78,55,.16));color:#f8e5a6}
+.status-card.audit-mode strong{color:#fff2c8}
+.status-card.audit-mode code{color:#fff2c8;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
 .site-footer{border-top:1px solid var(--border);padding:40px 20px;color:var(--text-muted)}
 .footer-inner{max-width:var(--max-w);margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
 .footer-brand{font-weight:800;color:var(--accent);font-size:16px}
@@ -189,8 +192,14 @@ img{display:block}
 
 <div class="status-card">
   <strong>Coverage:</strong> this calculator includes <span id="coverage-count">700+</span> pets.
-  High-traffic pets have their latest value lanes, while <span id="tracker-audit-count">684</span> additional pets are supported with current reference values.
+  High-traffic pets have their latest value lanes, while <span id="tracker-audit-count">601</span> additional pets are supported with current reference values.
   Another <span id="manual-audit-count">12</span> edge-case pets are filled in manually, leaving <span id="audit-unmatched">0</span> unmatched.
+</div>
+
+<div class="status-card audit-mode" id="audit-mode-card" hidden>
+  <strong>Review Mode:</strong> this local preview is loading the audit-only candidate override file at
+  <code>/data/value-sync-staging/adopt-me-calculator-overrides.candidate.json</code>.
+  Use this page to spot-check flagged pets before promoting anything into production.
 </div>
 
 <div class="calc-wrap" data-tool-name="trade-calculator">
@@ -254,6 +263,9 @@ img{display:block}
 var IMAGE_FALLBACK = "/favicon.svg";
 var LEGACY_DATA_PATH = "/data/adopt-me-calculator-values.json";
 var OVERRIDE_DATA_PATH = "/data/adopt-me-calculator-overrides.json";
+var CANDIDATE_OVERRIDE_DATA_PATH = "/data/value-sync-staging/adopt-me-calculator-overrides.candidate.json";
+var urlParams = new URLSearchParams(window.location.search);
+var USE_CANDIDATE_VALUES = urlParams.get("candidateValues") === "1";
 var SLOTS = 9;
 var STAGE_OPTS = [
   {label:"Normal", key:"default"},
@@ -356,10 +368,18 @@ function loadLegacyCatalog() {
   });
 }
 function loadOverrideCatalog() {
-  return fetch(OVERRIDE_DATA_PATH, { cache: "no-store" }).then(function(response){
+  var overridePath = USE_CANDIDATE_VALUES ? CANDIDATE_OVERRIDE_DATA_PATH : OVERRIDE_DATA_PATH;
+  return fetch(overridePath, { cache: "no-store" }).then(function(response){
     if (!response.ok) throw new Error("Unable to load override catalog: " + response.status);
     return response.json();
   });
+}
+function showAuditModeBanner() {
+  if (!USE_CANDIDATE_VALUES) return;
+  var card = document.getElementById("audit-mode-card");
+  if (card) {
+    card.hidden = false;
+  }
 }
 function mergeCatalog(benchmarkPayload, legacyPayload, overridePayload) {
   var merged = [];
@@ -695,6 +715,7 @@ function updateVerdict() {
 }
 
 function bootCalculator() {
+  showAuditModeBanner();
   Promise.all([
     window.ThePatchValues.loadAdoptValues(),
     loadLegacyCatalog(),

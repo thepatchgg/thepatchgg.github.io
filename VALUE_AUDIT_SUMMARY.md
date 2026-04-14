@@ -1,50 +1,46 @@
 # Value Audit Summary
 
-- Date: 2026-04-09
+- Date: 2026-04-13
+- Source refresh: cached
+- Mode: audit-only
 - Scope: Adopt Me trade calculator long-tail pet values
-- Reference source: locally cached public values index from `adoptmevalues.app`
+- Reference source: adoptmevalues.app values index
 - Local calculator coverage: 714 pets
-- Non-benchmark pets in local calculator: 696
-- Non-benchmark pets matched to public tracker feed: 684
+- Benchmark/editorial pets currently handled outside the override layer: 101
+- Comparable non-benchmark pet coverage in this run: 613
+- Non-benchmark pets matched to public tracker feed: 601
 - Non-benchmark pets manually resolved: 12
 - Non-benchmark pets still unmatched: 0
+- Current production comparable non-benchmark coverage: 613
+- Legacy production override entries now superseded by the benchmark layer: 83
 
 ## What Changed
 
-- The calculator now keeps The Patch benchmark layer for the core anchor pets.
-- A bulk override layer now supplies live tracker lanes for 684 non-benchmark pets.
-- A manual edge-case layer now resolves the final 12 non-benchmark pets instead of leaving them stale or unmatched.
-- The restored calculator potion row supports `No Pot`, `Fly`, `Ride`, and `Fly Ride`.
-- Long-tail matched pets now use explicit stage and potion lanes instead of legacy flat multipliers.
+- The calculator override layer was refreshed from the latest available tracker source.
+- Tracker-backed lanes now update the broad long-tail value catalog without overwriting the editorial benchmark layer.
+- Manual edge-case mappings remain in place for pets that do not map cleanly to the public tracker feed.
+- Coverage should be judged against the current non-benchmark split, not older override totals from before the benchmark library expanded.
+- The detailed calculator audit lives in data/adopt-me-calculator-audit-report.md.
 
-## Biggest Remaining Benchmark Divergences
+## Benchmark Review Queue
 
-These are the largest differences still left after the April 9, 2026 benchmark review. The biggest low-tier misses were corrected first, and the main high-tier anchors were re-synced to current live page-level values where the potion, Neon, and Mega lanes had drifted.
+These benchmark pets still deserve human review before any editorial benchmark change:
 
 | Pet | Patch default | Tracker FR | Delta % |
 | --- | ---: | ---: | ---: |
+| Parrot | 122.5 | 149 | -17.8% |
+| Shadow Dragon | 372 | 419 | -11.2% |
+| Owl | 167 | 187 | -10.7% |
+| Bat Dragon | 578 | 647 | -10.7% |
+| Crow | 117 | 129 | -9.3% |
+| Unicorn | 2.5 | 2.75 | -9.1% |
 | Blazing Lion | 48 | 52.5 | -8.6% |
 | Kangaroo | 17 | 18.5 | -8.1% |
-| Frost Dragon | 206 | 224 | -8.0% |
-| Chocolate Chip Bat Dragon | 21.25 | 23 | -7.6% |
-| Cow | 27 | 29 | -6.9% |
-| Arctic Reindeer | 39 | 41.5 | -6.0% |
-
-## Manual Edge-Case Resolutions
-
-- Burtaur: forced to zero as a temporary April Fools pet.
-- Pet Rock: forced to zero as a temporary non-tradable pet.
-- Practice Dog: forced to zero because it is not part of the live tradable pet market.
-- Pumpkin Pet: forced to zero as a temporary event pet rather than the tradable Pumpkin Friend.
-- Scoob: forced to zero as a temporary non-tradable event pet.
-- Dylan, Pistachio, and River: mapped to current Wrapped Doll pet values.
-- Malayan Tapir: mapped to Malaysian Tapir.
-- Mole Pet: mapped to Mole.
-- Praying Mantis Pet: mapped to Praying Mantis.
-- Weevil Pet: mapped to Weevil.
 
 ## Recommendation
 
-- Keep the current hybrid model for launch: benchmark pets on The Patch values, long-tail pets on tracker-backed overrides, and edge cases on documented manual resolutions.
-- Sync only the obvious low-tier benchmark misses to market consensus. Unicorn and Dragon were the clearest underpriced anchors and should be tightened first.
-- The five major high-tier anchors reviewed in this pass now keep their Patch ordering while using fresher live per-pet variant lanes.
+- Do not auto-update benchmark pets from this workflow.
+- Cross-check benchmark and spotlight pets against a second market reference before changing any live value file.
+- If audit-only mode was used, review the candidate files in data/value-sync-staging before publishing.
+- Only publish calculator override changes after QA passes and the conflict queue looks acceptable.
+- Keep the current hybrid model: editorial anchors in the benchmark layer, tracker-backed long tail in the calculator override layer.

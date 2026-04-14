@@ -1,10 +1,10 @@
 # Calculator Audit Report
 
-- Date: 2026-04-09
+- Date: 2026-04-13
 - Tracker pet rows parsed: 719
 - Local calculator pets: 714
-- Non-benchmark local pets: 696
-- Non-benchmark pets matched to tracker feed: 684
+- Non-benchmark local pets: 613
+- Non-benchmark pets matched to tracker feed: 601
 - Non-benchmark pets manually resolved: 12
 - Non-benchmark pets still unmatched: 0
 
@@ -30,6 +30,13 @@
 | Hedgehog | 54 | 56.5 | -4.4% | 59 | 55.5 |
 | Dragon | 1.1 | 1.15 | -4.3% | 0.4 | 0.4 |
 | Giraffe | 277 | 284 | -2.5% | 295 | 295 |
+| Cryptid | 79 | 79 | 0% | 77 | 77 |
+| Cupid Dragon | 8 | 8 | 0% | 7 | 7 |
+| Giant Panda | 94 | 94 | 0% | 92 | 92 |
+| Dragonfruit Fox | 8.5 | 8.5 | 0% | 7.75 | 7.75 |
+| Octopus | 1.65 | 1.65 | 0% | 0.9 | 0.9 |
+| Golden Penguin | 2.75 | 2.75 | 0% | 2 | 2 |
+| Fairy Bat Dragon | 12 | 12 | 0% | 10.5 | 10.5 |
 
 ## Manual Edge-Case Resolutions
 
