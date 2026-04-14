@@ -233,7 +233,7 @@ $overridePets = @($overridePets | Sort-Object name)
 
 $payload = [ordered]@{
   updatedAt = (Get-Date -Format "yyyy-MM-dd")
-  notes = "Bulk calculator override audit generated from the public Adopt Me Values values index cached locally on April 9, 2026, with manual resolutions for edge-case pets. Benchmark pets remain on The Patch's shared benchmark layer."
+  notes = "Bulk calculator override audit generated from the public Adopt Me Values values index source, with manual resolutions for edge-case pets. Benchmark pets remain on The Patch's shared benchmark layer."
   trackerMatchedCount = $trackerMatchedCount
   manualResolvedCount = $manualResolvedCount
   remainingUnmatchedCount = $unmatched.Count

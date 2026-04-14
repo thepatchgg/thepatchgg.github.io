@@ -45,7 +45,9 @@ The site is already in a strong state. Protect the existing quality. Do not "mod
     Tracker-backed overrides for the large calculator catalog.
   - `data/adopt-me-calculator-manual-mappings.json`
     Edge-case manual mappings.
+- The recurring value sync is audit-only by default. Candidate outputs belong in `data/value-sync-staging` until a human approves promotion.
 - Do not casually overwrite the benchmark layer with a single public tracker's opinions. High-tier benchmark pets are editorial anchors and may intentionally differ slightly from public tools.
+- Before changing any benchmark or spotlight pet, confirm it against at least two public market references. Do not rely on a single source when the sources disagree.
 - If updating benchmark pets, be especially careful with:
   - Bat Dragon
   - Shadow Dragon
@@ -54,6 +56,8 @@ The site is already in a strong state. Protect the existing quality. Do not "mod
   - Crow
   - Unicorn
   - Dragon
+  - Dragonfruit Fox
+  - Silverback Gorilla
 
 ## Egg/Pet Data Guardrails
 
@@ -84,6 +88,8 @@ The site is already in a strong state. Protect the existing quality. Do not "mod
   Homepage. Keep it article-forward and visually lively.
 - `TRAFFIC_MONITORING.md`
   Source of truth for weekly traffic review, search/query interpretation, and content-expansion decisions.
+- `VALUE_SYNC_PROCESS.md`
+  Source of truth for the twice-weekly pet value refresh and audit workflow.
 - `pet-value-calculator.html`
   Large calculator with 700+ pets and potion toggles.
 - `neon-calculator.html`
@@ -121,3 +127,4 @@ For visual work, also preview locally and spot-check the affected pages.
 - Keep the site feeling handcrafted, colorful, and readable.
 - When unsure, preserve what already looks good and only change the minimum necessary.
 - For traffic or SEO-related work, read `TRAFFIC_MONITORING.md` before making recommendations.
+- For value-refresh work, read `VALUE_SYNC_PROCESS.md` before changing pet values or calculator overrides.
