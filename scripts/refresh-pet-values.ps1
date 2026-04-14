@@ -5,6 +5,7 @@ param(
   [string]$OutReport = "data/adopt-me-calculator-audit-report.md",
   [string]$OutSummary = "VALUE_AUDIT_SUMMARY.md",
   [string]$StagingDir = "data/value-sync-staging",
+  [string]$BenchmarkData = "data/adopt-me-values.json",
   [switch]$AuditOnly,
   [switch]$UseCachedSource,
   [switch]$SkipQa
@@ -58,6 +59,7 @@ $resolvedSourcePath = Resolve-RepoPath $SourceHtml
 $resolvedOutJson = Resolve-RepoPath $OutJson
 $resolvedOutReport = Resolve-RepoPath $OutReport
 $resolvedOutSummary = Resolve-RepoPath $OutSummary
+$resolvedBenchmarkData = Resolve-RepoPath $BenchmarkData
 
 if ($AuditOnly) {
   $resolvedStagingDir = Resolve-RepoPath $StagingDir
@@ -92,6 +94,23 @@ $buildOutput = & (Join-Path $PSScriptRoot "build-calculator-overrides.ps1") -Sou
 $overridePayload = Get-Content -LiteralPath $resolvedOutJson -Raw | ConvertFrom-Json
 $reportLines = Get-Content -LiteralPath $resolvedOutReport
 $benchmarkRows = Get-BenchmarkTableRows -Lines $reportLines
+$benchmarkPayload = Get-Content -LiteralPath $resolvedBenchmarkData -Raw | ConvertFrom-Json
+$benchmarkSet = @{}
+foreach ($pet in $benchmarkPayload.pets) {
+  $benchmarkSet[$pet.slug] = $true
+}
+
+$productionComparableCoverage = $null
+$legacyBenchmarkManagedCount = 0
+if (-not $AuditOnly -and (Test-Path -LiteralPath (Resolve-RepoPath "data/adopt-me-calculator-overrides.json"))) {
+  $productionPayload = Get-Content -LiteralPath (Resolve-RepoPath "data/adopt-me-calculator-overrides.json") -Raw | ConvertFrom-Json
+  $productionComparableCoverage = @($productionPayload.pets | Where-Object { -not $benchmarkSet.ContainsKey($_.slug) }).Count
+  $legacyBenchmarkManagedCount = @($productionPayload.pets | Where-Object { $benchmarkSet.ContainsKey($_.slug) }).Count
+} elseif ($AuditOnly -and (Test-Path -LiteralPath (Resolve-RepoPath "data/adopt-me-calculator-overrides.json"))) {
+  $productionPayload = Get-Content -LiteralPath (Resolve-RepoPath "data/adopt-me-calculator-overrides.json") -Raw | ConvertFrom-Json
+  $productionComparableCoverage = @($productionPayload.pets | Where-Object { -not $benchmarkSet.ContainsKey($_.slug) }).Count
+  $legacyBenchmarkManagedCount = @($productionPayload.pets | Where-Object { $benchmarkSet.ContainsKey($_.slug) }).Count
+}
 
 $summary = @()
 $summary += "# Value Audit Summary"
@@ -102,15 +121,24 @@ $summary += "- Mode: $(if ($AuditOnly) { 'audit-only' } else { 'production refre
 $summary += "- Scope: Adopt Me trade calculator long-tail pet values"
 $summary += "- Reference source: adoptmevalues.app values index"
 $summary += "- Local calculator coverage: 714 pets"
+$summary += "- Benchmark/editorial pets currently handled outside the override layer: $($benchmarkPayload.pets.Count)"
+$summary += "- Comparable non-benchmark pet coverage in this run: $($overridePayload.pets.Count)"
 $summary += "- Non-benchmark pets matched to public tracker feed: $($overridePayload.trackerMatchedCount)"
 $summary += "- Non-benchmark pets manually resolved: $($overridePayload.manualResolvedCount)"
 $summary += "- Non-benchmark pets still unmatched: $($overridePayload.remainingUnmatchedCount)"
+if ($null -ne $productionComparableCoverage) {
+  $summary += "- Current production comparable non-benchmark coverage: $productionComparableCoverage"
+  if ($legacyBenchmarkManagedCount -gt 0) {
+    $summary += "- Legacy production override entries now superseded by the benchmark layer: $legacyBenchmarkManagedCount"
+  }
+}
 $summary += ""
 $summary += "## What Changed"
 $summary += ""
 $summary += "- The calculator override layer was refreshed from the latest available tracker source."
 $summary += "- Tracker-backed lanes now update the broad long-tail value catalog without overwriting the editorial benchmark layer."
 $summary += "- Manual edge-case mappings remain in place for pets that do not map cleanly to the public tracker feed."
+$summary += "- Coverage should be judged against the current non-benchmark split, not older override totals from before the benchmark library expanded."
 $summary += "- The detailed calculator audit lives in `data/adopt-me-calculator-audit-report.md`."
 $summary += ""
 $summary += "## Benchmark Review Queue"
