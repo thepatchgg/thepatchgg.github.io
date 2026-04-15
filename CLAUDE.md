@@ -88,6 +88,8 @@ The site is already in a strong state. Protect the existing quality. Do not "mod
   Homepage. Keep it article-forward and visually lively.
 - `TRAFFIC_MONITORING.md`
   Source of truth for weekly traffic review, search/query interpretation, and content-expansion decisions.
+- `DISCOVERY_NEXT_7_DAYS.md`
+  Short-term growth checklist for the current live-update window and next-step discovery work.
 - `VALUE_SYNC_PROCESS.md`
   Source of truth for the twice-weekly pet value refresh and audit workflow.
 - `pet-value-calculator.html`
@@ -127,4 +129,5 @@ For visual work, also preview locally and spot-check the affected pages.
 - Keep the site feeling handcrafted, colorful, and readable.
 - When unsure, preserve what already looks good and only change the minimum necessary.
 - For traffic or SEO-related work, read `TRAFFIC_MONITORING.md` before making recommendations.
+- For short-term growth execution, also read `DISCOVERY_NEXT_7_DAYS.md` before proposing a fresh traffic plan from scratch.
 - For value-refresh work, read `VALUE_SYNC_PROCESS.md` before changing pet values or calculator overrides.
