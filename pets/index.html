@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet Value Library | The Patch</title>
-  <meta name="description" content="Browse The Patch Adopt Me pet value pages, revisit recently viewed pets, and jump into the strongest comparison anchors on the site.">
+  <meta name="description" content="Browse The Patch Adopt Me pet value pages, revisit recently viewed pets, and jump into benchmark anchors, current guides, and long-tail reference pages.">
   <meta name="theme-color" content="#08111f">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pet Value Library | The Patch">
-  <meta property="og:description" content="Browse The Patch Adopt Me pet value pages, revisit recently viewed pets, and jump into the strongest comparison anchors on the site.">
+  <meta property="og:description" content="Browse The Patch Adopt Me pet value pages, revisit recently viewed pets, and jump into benchmark anchors, current guides, and long-tail reference pages.">
   <meta property="og:url" content="https://thepatchgg.github.io/pets/">
   <meta property="og:site_name" content="The Patch">
   <meta property="og:image" content="https://thepatchgg.github.io/assets/pets/bat-dragon.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pet Value Library | The Patch">
-  <meta name="twitter:description" content="Browse The Patch Adopt Me pet value pages, revisit recently viewed pets, and jump into the strongest comparison anchors on the site.">
+  <meta name="twitter:description" content="Browse The Patch Adopt Me pet value pages, revisit recently viewed pets, and jump into benchmark anchors, current guides, and long-tail reference pages.">
   <meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/bat-dragon.png">
   <link rel="canonical" href="https://thepatchgg.github.io/pets/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -78,10 +78,11 @@
             <span>Pet value library</span>
           </nav>
           <div class="eyebrow">Pet library</div>
-          <h1>The fastest way to browse The Patch pet value pages.</h1>
+          <h1>The fastest way to browse every live pet page on The Patch.</h1>
           <p>
-            This directory brings The Patch pet pages together in one place so players can move between high-signal
-            value pages, revisit recent views, and jump from a pet page straight into calculators or movers.
+            This directory brings the full Patch pet-page library together in one place so players can move between
+            benchmark anchors, current calculator-backed pages, revisit recent views, and jump from a pet page straight
+            into calculators or movers.
           </p>
           <div class="cta-row">
             <a class="button primary" href="/articles/adopt-me-pet-value-list-2026.html">Open full value list</a>
@@ -93,7 +94,7 @@
           <ul class="signal-list">
             <li><span>Tracked pet value pages</span><span class="tone tone-strong" id="library-count">Loading</span></li>
             <li><span>Recent views saved in this browser</span><span class="tone tone-strong">Retention</span></li>
-            <li><span>Shared with values and market tools</span><span class="tone tone-strong">One source</span></li>
+            <li><span>Shared with values and market tools</span><span class="tone tone-strong">Merged source</span></li>
           </ul>
         </aside>
       </div>
@@ -122,23 +123,23 @@
             <input id="library-search" type="search" placeholder="Bat Dragon, Owl, Turtle...">
           </label>
           <label>
-            <span>Filter trend</span>
-            <select id="library-trend">
-              <option value="all">All trends</option>
-              <option value="Rising">Rising</option>
-              <option value="Steady">Steady</option>
-              <option value="Falling">Falling</option>
+            <span>Filter page type</span>
+            <select id="library-type">
+              <option value="all">All page types</option>
+              <option value="Benchmark anchor">Benchmark anchors</option>
+              <option value="Current guide">Current guides</option>
+              <option value="Reference lane">Reference lanes</option>
             </select>
           </label>
           <label>
-            <span>Filter demand</span>
-            <select id="library-demand">
-              <option value="all">All demand tiers</option>
-              <option value="Elite">Elite</option>
-              <option value="Very High">Very High</option>
-              <option value="High">High</option>
-              <option value="Medium">Medium</option>
-              <option value="Low">Low</option>
+            <span>Filter value tier</span>
+            <select id="library-segment">
+              <option value="all">All value tiers</option>
+              <option value="High tier">High tier</option>
+              <option value="Upper mid tier">Upper mid tier</option>
+              <option value="Mid tier">Mid tier</option>
+              <option value="Lower mid tier">Lower mid tier</option>
+              <option value="Entry tier">Entry tier</option>
             </select>
           </label>
         </div>
@@ -170,22 +171,39 @@
   <script src="/assets/js/adopt-retention.js"></script>
   <script src="/assets/js/adopt-analytics.js"></script>
   <script>
+    const PET_PAGE_DATA_PATH = "/data/adopt-me-pet-pages.json";
+    const toneMap = {
+      "Benchmark anchor": "tone-strong",
+      "Current guide": "tone-high",
+      "Reference lane": "tone-medium",
+      Rising: "tone-rising",
+      Steady: "tone-steady",
+      Falling: "tone-falling",
+      Elite: "tone-elite",
+      "Very High": "tone-very-high",
+      High: "tone-high",
+      Medium: "tone-medium",
+      Low: "tone-low"
+    };
     const libraryState = {
       payload: null,
+      petIndex: {},
       search: "",
-      trend: "all",
-      demand: "all"
+      type: "all",
+      segment: "all"
     };
 
     function buildCard(pet, recentMode) {
+      const pageTone = toneMap[pet.pageLabel] || "tone-medium";
+      const supportTone = toneMap[pet.supportTone] || toneMap[pet.pageLabel] || "tone-medium";
       return `
         <article class="card ${recentMode ? "recent-card" : "benchmark-card"}">
           <div class="toolbar">
-            <span class="tone tone-${pet.trend.toLowerCase()}">${pet.trend}</span>
-            <span class="tone tone-${pet.demand.toLowerCase().replace(/ /g, "-")}">${pet.demand} demand</span>
+            <span class="tone ${pageTone}">${pet.pageLabel}</span>
+            <span class="tone ${supportTone}">${pet.supportLabel}</span>
           </div>
           <div class="pet-row">
-            <img class="pet-avatar" src="/assets/pets/${pet.slug}.png" alt="${pet.name}">
+            <img class="pet-avatar" src="${pet.image}" alt="${pet.name}">
             <div class="pet-name">
               <strong><a class="pet-link" href="/pets/${pet.slug}.html">${pet.name}</a></strong>
               <small>${pet.segment} - ${pet.rarity}</small>
@@ -206,10 +224,10 @@
           if (libraryState.search && !pet.name.toLowerCase().includes(libraryState.search)) {
             return false;
           }
-          if (libraryState.trend !== "all" && pet.trend !== libraryState.trend) {
+          if (libraryState.type !== "all" && pet.pageLabel !== libraryState.type) {
             return false;
           }
-          if (libraryState.demand !== "all" && pet.demand !== libraryState.demand) {
+          if (libraryState.segment !== "all" && pet.segment !== libraryState.segment) {
             return false;
           }
           return true;
@@ -220,7 +238,7 @@
     function renderRecentPets() {
       const target = document.getElementById("recent-grid");
       const recent = window.ThePatchRetention.loadRecentPets()
-        .map((entry) => libraryState.payload.petIndex[entry.slug])
+        .map((entry) => libraryState.petIndex[entry.slug])
         .filter(Boolean);
 
       if (!recent.length) {
@@ -242,6 +260,8 @@
 
       document.getElementById("library-headline").textContent = `${pets.length} pet pages match this filter`;
       document.getElementById("library-count").textContent = String(libraryState.payload.pets.length);
+      document.getElementById("library-note").textContent =
+        `${libraryState.payload.counts.benchmark} benchmark anchors, ${libraryState.payload.counts.currentGuide} current guides, and ${libraryState.payload.counts.referenceLane} reference lanes are live in the library.`;
 
       if (!pets.length) {
         target.innerHTML = `
@@ -258,7 +278,12 @@
 
     async function bootLibrary() {
       try {
-        libraryState.payload = await window.ThePatchValues.loadAdoptValues();
+        const response = await fetch(PET_PAGE_DATA_PATH, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error("pet page data unavailable");
+        }
+        libraryState.payload = await response.json();
+        libraryState.petIndex = Object.fromEntries(libraryState.payload.pets.map((pet) => [pet.slug, pet]));
         renderRecentPets();
         renderLibrary();
 
@@ -267,13 +292,13 @@
           renderLibrary();
         });
 
-        document.getElementById("library-trend").addEventListener("change", (event) => {
-          libraryState.trend = event.target.value;
+        document.getElementById("library-type").addEventListener("change", (event) => {
+          libraryState.type = event.target.value;
           renderLibrary();
         });
 
-        document.getElementById("library-demand").addEventListener("change", (event) => {
-          libraryState.demand = event.target.value;
+        document.getElementById("library-segment").addEventListener("change", (event) => {
+          libraryState.segment = event.target.value;
           renderLibrary();
         });
 

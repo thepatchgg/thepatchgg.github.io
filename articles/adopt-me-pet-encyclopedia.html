@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adopt Me Pet Explorer | The Patch</title>
-  <meta name="description" content="Browse The Patch local Adopt Me pet explorer with search, rarity filters, benchmark badges, and a restored older Patch visual style.">
+  <meta name="description" content="Browse The Patch local Adopt Me pet explorer with search, rarity filters, pet-page links, and a restored older Patch visual style.">
   <meta name="theme-color" content="#08111f">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Adopt Me Pet Explorer | The Patch">
@@ -230,12 +230,12 @@
   <section class="game-hero" style="border-bottom: 3px solid var(--am);">
     <div class="game-hero-inner">
       <div class="game-eyebrow" style="color: var(--am);">Pet Explorer</div>
-      <h1>Browse the local Adopt Me catalog.<br><span style="color: var(--am);">Then jump into benchmark pets fast.</span></h1>
-      <p>Browse the local pet catalog, filter by rarity, and jump straight into the benchmark pet pages that matter most for trading.</p>
+      <h1>Browse the local Adopt Me catalog.<br><span style="color: var(--am);">Then jump into pet pages fast.</span></h1>
+      <p>Browse the local pet catalog, filter by rarity, and jump straight into the live Patch pet pages that matter most for trading.</p>
       <div class="game-meta-row">
         <span class="game-meta-item" id="total-count-chip">Loading total</span>
         <span class="game-meta-item" id="verified-count-chip">Loading rarity coverage</span>
-        <span class="game-meta-item" id="benchmark-count-chip">Loading benchmark count</span>
+        <span class="game-meta-item" id="benchmark-count-chip">Loading page count</span>
       </div>
     </div>
   </section>
@@ -259,6 +259,7 @@
           Quick filter
           <select id="quick-select">
             <option value="all">All entries</option>
+            <option value="pages">Pet pages only</option>
             <option value="benchmark">Benchmark pets only</option>
             <option value="review">Needs review only</option>
           </select>
@@ -324,17 +325,22 @@
   <script>
     const rarityLabels = { c: "Common", u: "Uncommon", r: "Rare", ur: "Ultra-Rare", l: "Legendary", event: "Event", review: "Needs review" };
     const rarityOrder = { review: 99, c: 1, u: 2, r: 3, ur: 4, l: 5, event: 6 };
-    const state = { catalog: null, values: null, search: "", sort: "alpha", rarity: "all", quick: "all" };
+    const state = { catalog: null, pageData: null, pageIndex: {}, search: "", sort: "alpha", rarity: "all", quick: "all" };
+
+    function getPageForEntry(entry) {
+      return state.pageIndex[entry.slug] || null;
+    }
 
     function getValueForEntry(entry) {
-      if (!state.values || !state.values.petIndex[entry.slug]) return null;
-      return state.values.petIndex[entry.slug].values.default;
+      const page = getPageForEntry(entry);
+      return page ? page.values.default : null;
     }
 
     function getFilteredEntries() {
       return state.catalog.entries
         .filter((entry) => {
           if (state.rarity !== "all" && entry.rarity !== state.rarity) return false;
+          if (state.quick === "pages" && !getPageForEntry(entry)) return false;
           if (state.quick === "benchmark" && !entry.benchmark) return false;
           if (state.quick === "review" && entry.rarity !== "review") return false;
           if (state.search && !entry.name.toLowerCase().includes(state.search)) return false;
@@ -350,7 +356,7 @@
     function renderCounts() {
       document.getElementById("total-count-chip").textContent = `${state.catalog.counts.total} local entries`;
       document.getElementById("verified-count-chip").textContent = `${state.catalog.counts.verifiedRarity} verified rarity`;
-      document.getElementById("benchmark-count-chip").textContent = `${state.catalog.counts.benchmark} benchmark pets`;
+      document.getElementById("benchmark-count-chip").textContent = `${state.pageData.count} live pet pages`;
     }
 
     function renderGrid() {
@@ -360,21 +366,23 @@
 
       document.getElementById("results-headline").textContent = `${entries.length} matching entries`;
       document.getElementById("results-note").textContent = state.catalog.counts.review
-        ? `${state.catalog.counts.review} special entries are still listed with a temporary rarity label.`
-        : "All listed entries currently have a rarity label.";
+        ? `${state.pageData.count} pet pages are live, and ${state.catalog.counts.review} special entries are still listed with a temporary rarity label.`
+        : `${state.pageData.count} pet pages are live, and all listed entries currently have a rarity label.`;
 
       grid.innerHTML = entries.map((entry) => {
+        const page = getPageForEntry(entry);
         const benchmarkValue = getValueForEntry(entry);
         return `
           <article class="catalog-card">
             <img src="${entry.image}" alt="${entry.name}">
-            <h3>${entry.benchmark ? `<a href="/pets/${entry.slug}.html">${entry.name}</a>` : entry.name}</h3>
+            <h3>${page ? `<a href="/pets/${entry.slug}.html">${entry.name}</a>` : entry.name}</h3>
             <div class="catalog-sub">${rarityLabels[entry.rarity] || "Unknown"}</div>
             <div class="catalog-meta">
               <span class="catalog-pill">${rarityLabels[entry.rarity] || "Unknown"}</span>
-              ${entry.benchmark && benchmarkValue !== null ? `<span class="catalog-pill benchmark">${window.ThePatchValues.formatValue(benchmarkValue)}</span>` : ""}
+              ${page ? `<span class="catalog-pill benchmark">${page.pageLabel}</span>` : ""}
+              ${benchmarkValue !== null ? `<span class="catalog-pill benchmark">${window.ThePatchValues.formatValue(benchmarkValue)}</span>` : ""}
             </div>
-            ${entry.benchmark ? `<div class="catalog-actions"><a href="/pets/${entry.slug}.html">Open pet page &#8594;</a></div>` : ""}
+            ${page ? `<div class="catalog-actions"><a href="/pets/${entry.slug}.html">Open pet page &#8594;</a></div>` : ""}
           </article>
         `;
       }).join("");
@@ -384,13 +392,14 @@
 
     async function bootExplorer() {
       try {
-        const [catalogResponse, values] = await Promise.all([
+        const [catalogResponse, pageResponse] = await Promise.all([
           fetch("/data/adopt-me-pet-catalog.json", { cache: "no-store" }),
-          window.ThePatchValues.loadAdoptValues()
+          fetch("/data/adopt-me-pet-pages.json", { cache: "no-store" })
         ]);
-        if (!catalogResponse.ok) throw new Error("catalog load failed");
+        if (!catalogResponse.ok || !pageResponse.ok) throw new Error("catalog load failed");
         state.catalog = await catalogResponse.json();
-        state.values = values;
+        state.pageData = await pageResponse.json();
+        state.pageIndex = Object.fromEntries(state.pageData.pets.map((pet) => [pet.slug, pet]));
         renderCounts();
         renderGrid();
 
