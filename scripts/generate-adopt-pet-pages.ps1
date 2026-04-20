@@ -4,6 +4,8 @@ $profilesPath = Join-Path $repoRoot "data\adopt-me-benchmark-profiles.json"
 $legacyPath = Join-Path $repoRoot "data\adopt-me-calculator-values.json"
 $overridesPath = Join-Path $repoRoot "data\adopt-me-calculator-overrides.json"
 $catalogPath = Join-Path $repoRoot "data\adopt-me-pet-catalog.json"
+$eggsPath = Join-Path $repoRoot "data\adopt-me-audited-eggs.json"
+$originOverridesPath = Join-Path $repoRoot "data\adopt-me-pet-origin-overrides.json"
 $petPagesDataPath = Join-Path $repoRoot "data\adopt-me-pet-pages.json"
 $petsDir = Join-Path $repoRoot "pets"
 $sitemapPath = Join-Path $repoRoot "sitemap.xml"
@@ -24,6 +26,15 @@ function Get-CoalescedValue {
 
 function HtmlEncode([string]$Value) {
   return [System.Net.WebUtility]::HtmlEncode([string]$Value)
+}
+
+function Normalize-Key([string]$Text) {
+  if ([string]::IsNullOrWhiteSpace($Text)) { return "" }
+  $normalized = $Text.ToLowerInvariant()
+  $normalized = $normalized -replace "&amp;", "and"
+  $normalized = $normalized -replace "\(pet\)", ""
+  $normalized = $normalized -replace "[^a-z0-9]+", "-"
+  return $normalized.Trim("-")
 }
 
 function Normalize-RarityCode([string]$Rarity) {
@@ -97,6 +108,113 @@ function Get-SitemapPriority([double]$Value) {
   return "0.5"
 }
 
+function Get-ReleaseYear([string]$DateText) {
+  if ([string]::IsNullOrWhiteSpace($DateText)) { return $null }
+  $match = [regex]::Match($DateText, "(19|20)\d{2}")
+  if ($match.Success) { return $match.Value }
+  return $null
+}
+
+function Get-DateSortKey([string]$DateText) {
+  if ([string]::IsNullOrWhiteSpace($DateText)) { return 999999 }
+  $yearMatch = [regex]::Match($DateText, "(19|20)\d{2}")
+  if (-not $yearMatch.Success) { return 999999 }
+
+  $year = [int]$yearMatch.Value
+  $monthValue = 6
+  $monthMap = @{
+    "jan" = 1
+    "feb" = 2
+    "mar" = 3
+    "apr" = 4
+    "may" = 5
+    "jun" = 6
+    "jul" = 7
+    "aug" = 8
+    "sep" = 9
+    "oct" = 10
+    "nov" = 11
+    "dec" = 12
+  }
+
+  $monthMatch = [regex]::Match($DateText.ToLowerInvariant(), "jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec")
+  if ($monthMatch.Success -and $monthMap.ContainsKey($monthMatch.Value)) {
+    $monthValue = $monthMap[$monthMatch.Value]
+  }
+
+  return ($year * 100) + $monthValue
+}
+
+function Get-SourceTypeLabel([string]$SourceName) {
+  if ([string]::IsNullOrWhiteSpace($SourceName)) { return "Source" }
+  if ($SourceName -match "egg") { return "Egg" }
+  if ($SourceName -match "doll|box|gift|crate|capsule") { return "Container" }
+  return "Special source"
+}
+
+function Get-StatusLabel([string]$Status) {
+  if ([string]::IsNullOrWhiteSpace($Status)) { return "Audit in progress" }
+  switch ($Status.Trim().ToLowerInvariant()) {
+    "current" { return "Currently available" }
+    "available" { return "Currently available" }
+    "retired" { return "Retired" }
+    default { return (Get-Culture).TextInfo.ToTitleCase($Status.Trim().ToLowerInvariant()) }
+  }
+}
+
+function Get-EventContext([object]$SourceEntry) {
+  $candidates = @([string]$SourceEntry.cost, [string]$SourceEntry.notes, [string]$SourceEntry.name)
+  foreach ($candidate in $candidates) {
+    if ([string]::IsNullOrWhiteSpace($candidate)) { continue }
+    $match = [regex]::Match($candidate, "\(([^)]*(event|festival|lab|countdown|solution)[^)]*)\)", [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    if ($match.Success) { return $match.Groups[1].Value.Trim() }
+    if ($candidate -match "christmas|easter|sugarfest|moon|aztec|gru's lab|pet countdown") {
+      return $candidate.Trim()
+    }
+  }
+  return $null
+}
+
+function Get-PropertyValue($Object, [string]$Name) {
+  if ($null -eq $Object) { return $null }
+  $property = $Object.PSObject.Properties[$Name]
+  if ($property) { return $property.Value }
+  return $null
+}
+
+function Get-PetRarityBand([object]$SourceEntry, [string]$PetRarity, [int]$TotalPetsInSource) {
+  if ($TotalPetsInSource -eq 1) { return "Guaranteed from this source" }
+  $chanceMap = Get-PropertyValue $SourceEntry "chances"
+  if ($null -eq $chanceMap -or [string]::IsNullOrWhiteSpace($PetRarity)) { return $null }
+  $chanceValue = Get-PropertyValue $chanceMap $PetRarity
+  if ([string]::IsNullOrWhiteSpace([string]$chanceValue)) { return $null }
+  return "{0} hatch band: {1}" -f $PetRarity, $chanceValue
+}
+
+function Convert-OriginPetEntry([object]$EggPet) {
+  $name = if ($EggPet.Count -ge 1) { [string]$EggPet[0] } else { "" }
+  $rarity = ""
+  $chance = $null
+
+  if ($EggPet.Count -ge 3) {
+    $thirdValue = [string]$EggPet[2]
+    if ($thirdValue -match "%" -or $thirdValue -match "varies" -or $EggPet[2] -is [double] -or $EggPet[2] -is [int]) {
+      $rarity = [string]$EggPet[1]
+      $chance = [string]$EggPet[2]
+    } else {
+      $rarity = [string]$EggPet[2]
+    }
+  } elseif ($EggPet.Count -ge 2) {
+    $rarity = [string]$EggPet[1]
+  }
+
+  return [pscustomobject]@{
+    name = $name
+    rarity = $rarity
+    chance = $chance
+  }
+}
+
 function Convert-OverrideValues($Matrix) {
   $default = if ($null -ne $Matrix.default.flyRide) { [double]$Matrix.default.flyRide } else { [double]$Matrix.default.noPotion }
   $noPotion = if ($null -ne $Matrix.default.noPotion) { [double]$Matrix.default.noPotion } else { $default }
@@ -139,6 +257,12 @@ $profiles = (Get-Content -Raw -Path $profilesPath | ConvertFrom-Json).profiles
 $legacy = Get-Content -Raw -Path $legacyPath | ConvertFrom-Json
 $overrides = Get-Content -Raw -Path $overridesPath | ConvertFrom-Json
 $catalog = Get-Content -Raw -Path $catalogPath | ConvertFrom-Json
+$eggs = (Get-Content -Raw -Path $eggsPath | ConvertFrom-Json).eggs
+$originOverrides = if (Test-Path -LiteralPath $originOverridesPath) {
+  (Get-Content -Raw -Path $originOverridesPath | ConvertFrom-Json).pets
+} else {
+  @()
+}
 
 $toneClass = @{
   "Elite" = "tone-elite"
@@ -281,6 +405,96 @@ $allPets = @(
 $petIndex = @{}
 foreach ($pet in $allPets) { $petIndex[$pet.slug] = $pet }
 
+$manualOriginIndex = @{}
+foreach ($entry in $originOverrides) {
+  if (-not [string]::IsNullOrWhiteSpace([string]$entry.slug)) {
+    $manualOriginIndex[$entry.slug] = $entry
+  }
+}
+
+$originSlugAliases = @{
+  "blue-jay-pet" = @("blue-jay")
+  "dragonfruit-fox-pet" = @("dragonfruit-fox")
+  "frost-fury-pet" = @("frost-fury")
+  "karate-gorilla-pet" = @("karate-gorilla")
+  "monkey-king-pet" = @("monkey-king")
+  "mushroom-friend-pet" = @("mushroom-friend")
+  "phoenix-pet" = @("phoenix")
+  "princess-capuchin-monkey-pet" = @("princess-capuchin-monkey")
+  "rosy-maple-moth-pet" = @("rosy-maple-moth")
+  "tortuga-de-la-isla-pet" = @("tortuga-de-la-isla")
+}
+
+$originNameAliases = @{
+  "wooly-mammoth" = "woolly-mammoth"
+  "koi-fish" = "koi-carp"
+}
+
+$petLookup = @{}
+foreach ($pet in $allPets) {
+  $lookupCandidates = New-Object System.Collections.Generic.List[string]
+  $lookupCandidates.Add((Normalize-Key $pet.name))
+  $lookupCandidates.Add((Normalize-Key $pet.slug))
+  if ($pet.slug -match "-pet$") {
+    $lookupCandidates.Add((Normalize-Key ($pet.slug -replace "-pet$", "")))
+  }
+  if ($originSlugAliases.ContainsKey($pet.slug)) {
+    foreach ($alias in $originSlugAliases[$pet.slug]) {
+      $lookupCandidates.Add((Normalize-Key $alias))
+    }
+  }
+
+  foreach ($candidate in ($lookupCandidates | Select-Object -Unique)) {
+    if (-not [string]::IsNullOrWhiteSpace($candidate)) {
+      $petLookup[$candidate] = $pet.slug
+    }
+  }
+}
+
+$petOrigins = @{}
+foreach ($egg in $eggs) {
+  $eggPets = @($egg.pets)
+  $totalPetsInSource = $eggPets.Count
+
+  foreach ($eggPet in $eggPets) {
+    if ($null -eq $eggPet -or $eggPet.Count -lt 1) { continue }
+    $petOriginEntry = Convert-OriginPetEntry $eggPet
+    $petName = $petOriginEntry.name
+    $petRarity = $petOriginEntry.rarity
+    $lookupKey = Normalize-Key $petName
+    if ($originNameAliases.ContainsKey($lookupKey)) {
+      $lookupKey = $originNameAliases[$lookupKey]
+    }
+    if (-not $petLookup.ContainsKey($lookupKey)) { continue }
+
+    $slug = $petLookup[$lookupKey]
+    if (-not $petOrigins.ContainsKey($slug)) {
+      $petOrigins[$slug] = New-Object System.Collections.Generic.List[object]
+    }
+
+    $petOrigins[$slug].Add([pscustomobject]@{
+      sourceName = [string]$egg.name
+      sourceType = Get-SourceTypeLabel ([string]$egg.name)
+      status = [string]$egg.status
+      statusLabel = Get-StatusLabel ([string]$egg.status)
+      released = [string]$egg.released
+      releaseYear = Get-ReleaseYear ([string]$egg.released)
+      retired = [string](Get-CoalescedValue @($egg.retired))
+      cost = [string](Get-CoalescedValue @($egg.cost))
+      petRarity = $petRarity
+      chanceText = [string](Get-CoalescedValue @($petOriginEntry.chance))
+      rarityBand = if (-not [string]::IsNullOrWhiteSpace([string]$petOriginEntry.chance)) {
+        "Exact hatch chance: $($petOriginEntry.chance)"
+      } else {
+        Get-PetRarityBand -SourceEntry $egg -PetRarity $petRarity -TotalPetsInSource $totalPetsInSource
+      }
+      eventContext = Get-EventContext $egg
+      notes = [string](Get-CoalescedValue @($egg.notes))
+      sortKey = Get-DateSortKey ([string]$egg.released)
+    })
+  }
+}
+
 $generatedPets = New-Object System.Collections.Generic.List[object]
 
 foreach ($pet in $allPets) {
@@ -338,6 +552,60 @@ foreach ($pet in $allPets) {
     }
   }
 
+  $originEntries = New-Object System.Collections.Generic.List[object]
+  if ($manualOriginIndex.ContainsKey($pet.slug)) {
+    foreach ($entry in @($manualOriginIndex[$pet.slug].sources)) {
+      $originEntries.Add([pscustomobject]@{
+        sourceName = [string](Get-CoalescedValue @($entry.sourceName))
+        sourceType = [string](Get-CoalescedValue @($entry.sourceType, "Special source"))
+        status = [string](Get-CoalescedValue @($entry.status, "retired"))
+        statusLabel = Get-StatusLabel ([string](Get-CoalescedValue @($entry.status, "retired")))
+        released = [string](Get-CoalescedValue @($entry.released))
+        releaseYear = [string](Get-CoalescedValue @($entry.releaseYear, (Get-ReleaseYear ([string](Get-CoalescedValue @($entry.released))))))
+        retired = [string](Get-CoalescedValue @($entry.retired))
+        cost = [string](Get-CoalescedValue @($entry.cost))
+        petRarity = [string](Get-CoalescedValue @($entry.petRarity))
+        chanceText = [string](Get-CoalescedValue @($entry.chanceText))
+        rarityBand = [string](Get-CoalescedValue @($entry.rarityBand))
+        eventContext = [string](Get-CoalescedValue @($entry.eventContext))
+        notes = [string](Get-CoalescedValue @($entry.notes))
+        sortKey = if ($entry.PSObject.Properties["sortKey"]) { [int]$entry.sortKey } else { Get-DateSortKey ([string](Get-CoalescedValue @($entry.released))) }
+      })
+    }
+  } elseif ($petOrigins.ContainsKey($pet.slug)) {
+    foreach ($entry in ($petOrigins[$pet.slug].ToArray() | Sort-Object @{ Expression = { $_.sortKey } }, @{ Expression = { $_.sourceName } })) {
+      $originEntries.Add($entry)
+    }
+  }
+  $originEntryArray = @($originEntries.ToArray())
+  $firstOrigin = if ($originEntries.Count -gt 0) { $originEntries[0] } else { $null }
+  $currentOrigins = @($originEntryArray | Where-Object { @("available", "current") -contains $_.status })
+  $originLabels = @($originEntryArray | ForEach-Object { $_.sourceName } | Select-Object -Unique)
+  $currentOriginLabels = @($currentOrigins | ForEach-Object { $_.sourceName } | Select-Object -Unique)
+  $eventLabels = @(
+    $originEntryArray |
+    ForEach-Object { $_.eventContext } |
+    Where-Object { -not [string]::IsNullOrWhiteSpace($_) } |
+    Select-Object -Unique
+  )
+  $releaseYears = @(
+    $originEntryArray |
+    ForEach-Object { $_.releaseYear } |
+    Where-Object { -not [string]::IsNullOrWhiteSpace($_) } |
+    Select-Object -Unique
+  )
+  $originSummary = [pscustomobject]@{
+    audited = ($originEntries.Count -gt 0)
+    sources = $originEntryArray
+    sourceCount = $originEntries.Count
+    firstSource = $firstOrigin
+    currentSources = $currentOrigins
+    currentSourceLabels = $currentOriginLabels
+    sourceLabels = $originLabels
+    eventLabels = $eventLabels
+    releaseYears = $releaseYears
+  }
+
   $faqItems = @(
     [pscustomobject]@{
       question = "How should I use this $($pet.name) page?"
@@ -362,6 +630,22 @@ foreach ($pet in $allPets) {
       answer = "The fastest sanity checks right now are $relatedLabel. Those pages sit close enough to $($pet.name) that they help you keep offers grounded before you move ahead."
     }
   )
+  if ($originSummary.audited) {
+    $originAnswer = if ($originSummary.currentSourceLabels.Count -gt 0) {
+      "$($pet.name) first shows up in the audited dataset through $($originSummary.firstSource.sourceName) from $($originSummary.firstSource.released). Right now, the current audited sources are $((Join-Names $originSummary.currentSourceLabels))."
+    } else {
+      "$($pet.name) first shows up in the audited dataset through $($originSummary.firstSource.sourceName) from $($originSummary.firstSource.released). That source is currently retired in the site's audited pet-origin data."
+    }
+    $faqItems += [pscustomobject]@{
+      question = "Where did $($pet.name) come from in Adopt Me?"
+      answer = $originAnswer
+    }
+  } else {
+    $faqItems += [pscustomobject]@{
+      question = "Do we know where $($pet.name) originally came from?"
+      answer = "The Patch has current value lanes for $($pet.name), but the origin and release history for this pet is still being audited before we publish it on this page."
+    }
+  }
 
   $faqMarkup = foreach ($item in $faqItems) {
 @"
@@ -417,6 +701,90 @@ foreach ($pet in $allPets) {
 @"
                 <li><span>$($variantLabels[$key])</span><span class="value-tag">$(Format-Value([double]$pet.values.$key))</span></li>
 "@
+  }
+
+  if ($originSummary.audited) {
+    $firstSourceText = "$($originSummary.firstSource.sourceName)"
+    if (-not [string]::IsNullOrWhiteSpace($originSummary.firstSource.released)) {
+      $firstSourceText += " - first seen $($originSummary.firstSource.released)"
+    }
+    $currentSourceText = if ($originSummary.currentSourceLabels.Count -gt 0) {
+      Join-Names $originSummary.currentSourceLabels
+    } else {
+      "No currently available audited source"
+    }
+    $releaseText = if ($originSummary.releaseYears.Count -gt 1) {
+      "{0} through {1}" -f $originSummary.releaseYears[0], $originSummary.releaseYears[-1]
+    } elseif ($originSummary.releaseYears.Count -eq 1) {
+      $originSummary.releaseYears[0]
+    } else {
+      "Audit in progress"
+    }
+    $eventText = if ($originSummary.eventLabels.Count -gt 0) {
+      Join-Names $originSummary.eventLabels
+    } else {
+      "No special event note in the audited source list"
+    }
+    $originSnapshotRows = @(
+      @{ label = "First audited source"; value = $firstSourceText },
+      @{ label = "Current source"; value = $currentSourceText },
+      @{ label = "Release year"; value = $releaseText },
+      @{ label = "Event note"; value = $eventText }
+    ) | ForEach-Object {
+@"
+                <li><span>$($_.label)</span><span>$([System.Net.WebUtility]::HtmlEncode([string]$_.value))</span></li>
+"@
+    }
+
+    $originDetailCards = foreach ($source in @($originSummary.sources | Select-Object -First 4)) {
+      $sourceMeta = @()
+      if (-not [string]::IsNullOrWhiteSpace($source.cost)) { $sourceMeta += $source.cost }
+      if (-not [string]::IsNullOrWhiteSpace($source.petRarity)) {
+        $rarityLabel = if ([string]$source.sourceType -eq "Egg") { "$($source.petRarity) hatch" } else { "$($source.petRarity) pet" }
+        $sourceMeta += $rarityLabel
+      }
+      if (-not [string]::IsNullOrWhiteSpace($source.rarityBand)) { $sourceMeta += $source.rarityBand }
+      $detailText = if ($sourceMeta.Count -gt 0) { $sourceMeta -join " - " } else { "Origin details audited from the Patch pet-origin dataset." }
+      $footerBits = @()
+      if (-not [string]::IsNullOrWhiteSpace($source.retired)) { $footerBits += "Retired $($source.retired)" }
+      if (-not [string]::IsNullOrWhiteSpace($source.eventContext)) { $footerBits += $source.eventContext }
+      if (-not [string]::IsNullOrWhiteSpace($source.notes)) { $footerBits += $source.notes }
+      $footerText = if ($footerBits.Count -gt 0) { $footerBits -join " - " } else { "Audited source status: $($source.statusLabel)." }
+@"
+            <article class="card">
+              <h3>$(HtmlEncode $source.sourceName)</h3>
+              <p><strong>$(HtmlEncode $source.statusLabel)</strong>$(if (-not [string]::IsNullOrWhiteSpace($source.released)) { " - Released $(HtmlEncode $source.released)" })</p>
+              <p>$(HtmlEncode $detailText)</p>
+              <p>$(HtmlEncode $footerText)</p>
+            </article>
+"@
+    }
+    $originIntro = "These release and source notes come from The Patch's audited pet-origin dataset. We only publish this section when the source trail is confirmed."
+  } else {
+    $originSnapshotRows = @(
+@"
+                <li><span>Origin status</span><span>Audit still in progress</span></li>
+"@,
+@"
+                <li><span>Release year</span><span>Pending confirmation</span></li>
+"@,
+@"
+                <li><span>Event note</span><span>Pending confirmation</span></li>
+"@,
+@"
+                <li><span>Source count</span><span>No audited source published yet</span></li>
+"@
+    )
+    $originDetailCards = @(
+@"
+            <article class="card">
+              <h3>Origin audit still in progress</h3>
+              <p>The Patch has current value lanes for $(HtmlEncode $pet.name), but we have not yet published a fully confirmed release/source trail for this pet.</p>
+              <p>We only surface egg, event, and release details here after they line up with the audited pet-origin dataset used elsewhere on the site.</p>
+            </article>
+"@
+    )
+    $originIntro = "This page already has current value lanes. The extra release and source details will appear here once the audited origin pass is complete for this pet."
   }
 
   $title = "{0} Value in Adopt Me 2026 | Trade Guide | The Patch" -f $pet.name
@@ -603,6 +971,36 @@ $($variantRows -join "`r`n")
     </section>
 
     <section class="section">
+      <div class="shell detail-grid">
+        <section class="tool-card stack detail-main">
+          <div class="section-head">
+            <div>
+              <h2>Audited pet details</h2>
+              <p class="intro-copy">$(HtmlEncode $originIntro)</p>
+            </div>
+          </div>
+          <div class="card-grid detail-card-grid">
+$($originDetailCards -join "`r`n")
+          </div>
+        </section>
+        <aside class="tool-card stack detail-sidebar">
+          <div>
+            <h2>Origin snapshot</h2>
+            <p class="micro-copy">Release dates, source types, and event notes only show up here when the pet's origin has been confirmed in the local audited dataset.</p>
+          </div>
+          <ul class="mini-list variant-list">
+$($originSnapshotRows -join "`r`n")
+          </ul>
+          <div class="stack-actions">
+            <a class="pill-link" href="/articles/adopt-me-egg-guide.html">Open egg guide</a>
+            <a class="pill-link" href="/articles/adopt-me-pet-encyclopedia.html">Browse pet encyclopedia</a>
+            <a class="pill-link" href="/pet-value-calculator.html">Run trade calculator</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="shell">
         <div class="section-head">
           <div>
@@ -691,6 +1089,7 @@ $($faqMarkup -join "`r`n")
     supportTone = $pet.supportTone
     pageUrl = "/pets/$($pet.slug).html"
     compareSlugs = $compareSlugs
+    origin = $originSummary
   })
 }
 

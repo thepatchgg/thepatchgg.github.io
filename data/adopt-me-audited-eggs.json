@@ -1,0 +1,2392 @@
+{
+  "updatedAt": "2026-04-16",
+  "source": "Merged audited egg dataset for pet origin details and egg guides.",
+  "eggs": [
+    {
+      "id": "aussie",
+      "name": "Aussie Egg",
+      "cost": "750 Bucks",
+      "type": "robux",
+      "status": "retired",
+      "released": "Feb 2020",
+      "retired": "Oct 2020",
+      "img": "1/16/Aussie_Egg.png",
+      "chances": {
+        "Common": "30%",
+        "Uncommon": "25%",
+        "Rare": "27%",
+        "Ultra-Rare": "15%",
+        "Legendary": "3%"
+      },
+      "pets": [
+        [
+          "Bandicoot",
+          "Common"
+        ],
+        [
+          "Dingo",
+          "Uncommon"
+        ],
+        [
+          "Australian Kelpie",
+          "Rare"
+        ],
+        [
+          "Emu",
+          "Rare"
+        ],
+        [
+          "Frog",
+          "Ultra-Rare"
+        ],
+        [
+          "Koala",
+          "Ultra-Rare"
+        ],
+        [
+          "Kangaroo",
+          "Legendary"
+        ],
+        [
+          "Turtle",
+          "Legendary"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "30%",
+        "Uncommon": "25%",
+        "Rare": "27%",
+        "Ultra-Rare": "15%",
+        "Legendary": "3%"
+      }
+    },
+    {
+      "id": "aztec",
+      "name": "Aztec Egg",
+      "cost": "750 Robux",
+      "type": "robux",
+      "status": "retired",
+      "released": "Aug 2025",
+      "retired": "Feb 2026",
+      "img": "c/cc/Aztec_Egg.png",
+      "chances": {
+        "Common": "35%",
+        "Uncommon": "25%",
+        "Rare": "24%",
+        "Ultra-Rare": "12%",
+        "Legendary": "4%"
+      },
+      "pets": [
+        [
+          "Tegu",
+          "6/69/Tegu.png",
+          "Common"
+        ],
+        [
+          "Tree Frog",
+          "1/13/Tree_Frog.png",
+          "Uncommon"
+        ],
+        [
+          "Chanekeh",
+          "a/a3/Chanekeh.png",
+          "Rare"
+        ],
+        [
+          "Water Opossum",
+          "b/b3/Water_Opossum.png",
+          "Rare"
+        ],
+        [
+          "Ehecatl",
+          "2/20/Ehecatl.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Onza",
+          "c/ce/Onza.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Quetzalcoatl",
+          "6/61/Quetzalcoatl.png",
+          "Legendary"
+        ],
+        [
+          "Temple Friend",
+          "e/e2/Temple_Friend.png",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "basic",
+      "name": "Basic Egg",
+      "cost": "400 Tickets",
+      "type": "tickets",
+      "status": "available",
+      "released": "Sep 2025",
+      "img": "f/fa/Basic_Egg.png",
+      "chances": {
+        "Common": "59.75%",
+        "Uncommon": "35%",
+        "Rare": "4%",
+        "Ultra-Rare": "0.99%",
+        "Legendary": "0.26%"
+      },
+      "pets": [
+        [
+          "Ant",
+          "Common",
+          "11.95%"
+        ],
+        [
+          "California Condor",
+          "Common",
+          "11.95%"
+        ],
+        [
+          "Galapagos Sea Lion",
+          "Common",
+          "11.95%"
+        ],
+        [
+          "Jiggly Jerboa",
+          "Common",
+          "11.95%"
+        ],
+        [
+          "Mouse",
+          "Common",
+          "11.95%"
+        ],
+        [
+          "Black Tiger",
+          "Uncommon",
+          "3.89%"
+        ],
+        [
+          "Camel",
+          "Uncommon",
+          "3.89%"
+        ],
+        [
+          "Cocoadile",
+          "Uncommon",
+          "3.89%"
+        ],
+        [
+          "Donkey",
+          "Uncommon",
+          "3.89%"
+        ],
+        [
+          "Kakapo",
+          "Uncommon",
+          "3.89%"
+        ],
+        [
+          "Mahi Mahi",
+          "Uncommon",
+          "3.89%"
+        ],
+        [
+          "Muskrat",
+          "Uncommon",
+          "3.89%"
+        ],
+        [
+          "Poodle",
+          "Uncommon",
+          "3.89%"
+        ],
+        [
+          "Shih Tzu",
+          "Uncommon",
+          "3.89%"
+        ],
+        [
+          "Abyssinian Cat",
+          "Rare",
+          "0.5%"
+        ],
+        [
+          "Black Rhino",
+          "Rare",
+          "0.5%"
+        ],
+        [
+          "Mexican Wolf",
+          "Rare",
+          "0.5%"
+        ],
+        [
+          "Milk Choccybunny",
+          "Rare",
+          "0.5%"
+        ],
+        [
+          "Ocelot",
+          "Rare",
+          "0.5%"
+        ],
+        [
+          "Orangutan",
+          "Rare",
+          "0.5%"
+        ],
+        [
+          "Parakeet",
+          "Rare",
+          "0.5%"
+        ],
+        [
+          "Zebra",
+          "Rare",
+          "0.5%"
+        ],
+        [
+          "Badger",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Black-Footed Ferret",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Corgi",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Ginger Cat",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Gold Mahi Mahi",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Grinmoire",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Orca",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Pangolin",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Pomeranian",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Ribbon Seal",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Robot",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Starfish",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Swordfish",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Toucan",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Waffle Wyrm",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "White Choccybunny",
+          "Ultra-Rare",
+          "0.0619%"
+        ],
+        [
+          "Alicorn",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Ancient Dragon",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Blue Whale",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Dango Penguins",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Dark Choccybunny",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Diamond Dragon",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Diamond Griffin",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Diamond Mahi Mahi",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Diamond Unicorn",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Dragonfruit Fox",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Dragonfly",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Emberlight",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Golden Dragon",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Golden Griffin",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Golden Unicorn",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Sea Turtle",
+          "Legendary",
+          "0.0179%"
+        ],
+        [
+          "Silverback Gorilla",
+          "Legendary",
+          "0.01%"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "59.75%",
+        "Uncommon": "35%",
+        "Rare": "4%",
+        "Ultra-Rare": "0.99%",
+        "Legendary": "0.26%"
+      },
+      "notes": "Current ticket-stall rotation reviewed April 10, 2026."
+    },
+    {
+      "id": "blue",
+      "name": "Blue Egg",
+      "cost": "100 Bucks (event quest)",
+      "status": "retired",
+      "released": "Jun 2019",
+      "retired": "Jun 2019",
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "100%",
+        "Rare": "0%",
+        "Ultra-Rare": "0%",
+        "Legendary": "0%"
+      },
+      "pets": [
+        [
+          "Blue Dog",
+          "Uncommon"
+        ]
+      ]
+    },
+    {
+      "id": "christmas",
+      "name": "Christmas Egg",
+      "cost": "1,440 Gingerbread or 4,300 Gingerbread",
+      "status": "retired",
+      "released": "Dec 2019",
+      "retired": "Jan 2020",
+      "rarityChances": {
+        "Common": "45%",
+        "Uncommon": "33%",
+        "Rare": "14.5%",
+        "Ultra-Rare": "6%",
+        "Legendary": "1.5%"
+      },
+      "pets": [
+        [
+          "Robin",
+          "Common"
+        ],
+        [
+          "Wolf",
+          "Uncommon"
+        ],
+        [
+          "Swan",
+          "Rare"
+        ],
+        [
+          "Polar Bear",
+          "Rare"
+        ],
+        [
+          "Arctic Fox",
+          "Ultra-Rare"
+        ],
+        [
+          "Arctic Reindeer",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "christmas-future",
+      "name": "Christmas Future Egg",
+      "cost": "Free (Winter Festival 2023)",
+      "status": "retired",
+      "released": "Dec 2023",
+      "retired": "Dec 2023",
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "100%",
+        "Rare": "0%",
+        "Ultra-Rare": "0%",
+        "Legendary": "0%"
+      },
+      "pets": [
+        [
+          "Eggnog Dog",
+          "Uncommon"
+        ]
+      ]
+    },
+    {
+      "id": "cracked",
+      "name": "Cracked Egg",
+      "cost": "350 Bucks",
+      "type": "bucks",
+      "status": "available",
+      "released": "Jun 2019",
+      "img": "e/ec/AM_Cracked_Egg.png",
+      "chances": {
+        "Common": "45%",
+        "Uncommon": "33%",
+        "Rare": "14.5%",
+        "Ultra-Rare": "6%",
+        "Legendary": "1.5%"
+      },
+      "pets": [
+        [
+          "Ant",
+          "Common"
+        ],
+        [
+          "Mouse",
+          "Common"
+        ],
+        [
+          "Camel",
+          "Uncommon"
+        ],
+        [
+          "Donkey",
+          "Uncommon"
+        ],
+        [
+          "Poodle",
+          "Uncommon"
+        ],
+        [
+          "Orangutan",
+          "Rare"
+        ],
+        [
+          "Parakeet",
+          "Rare"
+        ],
+        [
+          "Zebra",
+          "Rare"
+        ],
+        [
+          "Corgi",
+          "Ultra-Rare"
+        ],
+        [
+          "Robot",
+          "Ultra-Rare"
+        ],
+        [
+          "Swordfish",
+          "Ultra-Rare"
+        ],
+        [
+          "Alicorn",
+          "Legendary"
+        ],
+        [
+          "Ancient Dragon",
+          "Legendary"
+        ],
+        [
+          "Dragonfly",
+          "Legendary"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "45%",
+        "Uncommon": "33%",
+        "Rare": "14.5%",
+        "Ultra-Rare": "6%",
+        "Legendary": "1.5%"
+      }
+    },
+    {
+      "id": "crystal",
+      "name": "Crystal Egg",
+      "cost": "4,000 Tickets",
+      "type": "tickets",
+      "status": "available",
+      "released": "Sep 2025",
+      "img": "6/6d/Crystal_Egg.png",
+      "chances": {
+        "Common": "0%",
+        "Uncommon": "0%",
+        "Rare": "50%",
+        "Ultra-Rare": "44%",
+        "Legendary": "6%"
+      },
+      "pets": [
+        [
+          "Abyssinian Cat",
+          "Rare",
+          "6.25%"
+        ],
+        [
+          "Black Rhino",
+          "Rare",
+          "6.25%"
+        ],
+        [
+          "Mexican Wolf",
+          "Rare",
+          "6.25%"
+        ],
+        [
+          "Milk Choccybunny",
+          "Rare",
+          "6.25%"
+        ],
+        [
+          "Ocelot",
+          "Rare",
+          "6.25%"
+        ],
+        [
+          "Orangutan",
+          "Rare",
+          "6.25%"
+        ],
+        [
+          "Parakeet",
+          "Rare",
+          "6.25%"
+        ],
+        [
+          "Zebra",
+          "Rare",
+          "6.25%"
+        ],
+        [
+          "Badger",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Black-Footed Ferret",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Corgi",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Ginger Cat",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Gold Mahi Mahi",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Grinmoire",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Orca",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Pangolin",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Pomeranian",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Ribbon Seal",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Robot",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Starfish",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Swordfish",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Toucan",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Waffle Wyrm",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "White Choccybunny",
+          "Ultra-Rare",
+          "2.75%"
+        ],
+        [
+          "Alicorn",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Ancient Dragon",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Blue Whale",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Dango Penguins",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Dark Choccybunny",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Diamond Dragon",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Diamond Griffin",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Diamond Mahi Mahi",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Diamond Unicorn",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Dragonfruit Fox",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Dragonfly",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Emberlight",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Golden Dragon",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Golden Griffin",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Golden Unicorn",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Sea Turtle",
+          "Legendary",
+          "0.4214%"
+        ],
+        [
+          "Silverback Gorilla",
+          "Legendary",
+          "0.1%"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "0%",
+        "Rare": "50%",
+        "Ultra-Rare": "44%",
+        "Legendary": "6%"
+      },
+      "notes": "Current ticket-stall rotation reviewed April 10, 2026."
+    },
+    {
+      "id": "danger",
+      "name": "Danger Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Jun 2023",
+      "retired": "Aug 2023",
+      "rarityChances": {
+        "Common": "35%",
+        "Uncommon": "25%",
+        "Rare": "20%",
+        "Ultra-Rare": "16%",
+        "Legendary": "4%"
+      },
+      "pets": [
+        [
+          "Liger",
+          "Common"
+        ],
+        [
+          "Mosquito",
+          "Common"
+        ],
+        [
+          "Piranha",
+          "Common"
+        ],
+        [
+          "Angler Fish",
+          "Uncommon"
+        ],
+        [
+          "Borhyaena Gigantica",
+          "Uncommon"
+        ],
+        [
+          "Hippo",
+          "Rare"
+        ],
+        [
+          "Poison Dart Frog",
+          "Rare"
+        ],
+        [
+          "Blue Ringed Octopus",
+          "Ultra-Rare"
+        ],
+        [
+          "Lammergeier",
+          "Ultra-Rare"
+        ],
+        [
+          "Puffer Fish",
+          "Ultra-Rare"
+        ],
+        [
+          "Owlbear",
+          "Legendary"
+        ],
+        [
+          "Spinosaurus",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "desert",
+      "name": "Desert Egg",
+      "cost": "750 Robux",
+      "type": "robux",
+      "status": "retired",
+      "released": "Jan 2024",
+      "retired": "May 2024",
+      "img": "8/8d/Desert_Egg.png",
+      "chances": {
+        "Common": "40%",
+        "Uncommon": "25%",
+        "Rare": "17%",
+        "Ultra-Rare": "14%",
+        "Legendary": "4%"
+      },
+      "pets": [
+        [
+          "Armadillo",
+          "9/9f/Armadillo.png",
+          "Common"
+        ],
+        [
+          "Coyote",
+          "0/02/Coyote.png",
+          "Common"
+        ],
+        [
+          "Sandfish",
+          "b/bb/Sandfish.png",
+          "Common"
+        ],
+        [
+          "Gila Monster",
+          "5/59/Gila_Monster.png",
+          "Uncommon"
+        ],
+        [
+          "Rattlesnake",
+          "6/6c/Rattlesnake.png",
+          "Uncommon"
+        ],
+        [
+          "Oryx",
+          "6/64/Oryx.png",
+          "Uncommon"
+        ],
+        [
+          "Thorny Devil",
+          "f/fc/Thorny_Devil.png",
+          "Rare"
+        ],
+        [
+          "Deathstalker Scorpion",
+          "1/1f/Deathstalker_Scorpion.png",
+          "Rare"
+        ],
+        [
+          "Roadrunner",
+          "0/05/Roadrunner.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Vulture",
+          "0/01/Vulture.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Cactus Friend",
+          "e/e8/Cactus_Friend_%28Pet%29.png",
+          "Legendary"
+        ],
+        [
+          "Criosphinx",
+          "0/01/Criosphinx.png",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "diamond",
+      "name": "Diamond Egg",
+      "cost": "660 Stars",
+      "status": "available",
+      "released": "Mar 2020",
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "0%",
+        "Rare": "0%",
+        "Ultra-Rare": "0%",
+        "Legendary": "100%"
+      },
+      "pets": [
+        [
+          "Diamond Griffin",
+          "Legendary",
+          "33.33%"
+        ],
+        [
+          "Diamond Dragon",
+          "Legendary",
+          "33.33%"
+        ],
+        [
+          "Diamond Unicorn",
+          "Legendary",
+          "33.33%"
+        ]
+      ]
+    },
+    {
+      "id": "easter-2020",
+      "name": "Easter 2020 Egg",
+      "cost": "Free (Easter 2020 event)",
+      "status": "retired",
+      "released": "Apr 2020",
+      "retired": "Apr 2020",
+      "rarityChances": {
+        "Common": "100%",
+        "Uncommon": "0%",
+        "Rare": "0%",
+        "Ultra-Rare": "0%",
+        "Legendary": "0%"
+      },
+      "pets": [
+        [
+          "Chick",
+          "Common"
+        ]
+      ]
+    },
+    {
+      "id": "endangered",
+      "name": "Endangered Egg",
+      "cost": "750 Robux",
+      "type": "robux",
+      "status": "available",
+      "released": "Feb 2026",
+      "img": "c/ce/Endangered_Egg.png",
+      "chances": {
+        "Common": "35%",
+        "Uncommon": "30%",
+        "Rare": "20%",
+        "Ultra-Rare": "12%",
+        "Legendary": "3%"
+      },
+      "pets": [
+        [
+          "California Condor",
+          "6/6a/California_Condor.png",
+          "Common"
+        ],
+        [
+          "Galapagos Sea Lion",
+          "7/74/Galapagos_Sea_Lion.png",
+          "Common"
+        ],
+        [
+          "Black Tiger",
+          "0/0e/Black_Tiger.png",
+          "Uncommon"
+        ],
+        [
+          "Kakapo",
+          "4/45/Kakapo.png",
+          "Uncommon"
+        ],
+        [
+          "Black Rhino",
+          "0/0f/Black_Rhino.png",
+          "Rare"
+        ],
+        [
+          "Mexican Wolf",
+          "6/63/Mexican_Wolf.png",
+          "Rare"
+        ],
+        [
+          "Black-Footed Ferret",
+          "0/07/Black-Footed_Ferret.png",
+          "Rare"
+        ],
+        [
+          "Pangolin",
+          "2/28/Pangolin.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Blue Whale",
+          "d/dc/Blue_Whale.png",
+          "Legendary"
+        ],
+        [
+          "Sea Turtle",
+          "f/f0/Sea_Turtle.png",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "farm",
+      "name": "Farm Egg",
+      "cost": "750 Bucks",
+      "type": "robux",
+      "status": "retired",
+      "released": "Nov 2019",
+      "retired": "Feb 2020",
+      "img": "0/06/FarmEgg.png",
+      "chances": {
+        "Common": "20%",
+        "Uncommon": "35%",
+        "Rare": "27%",
+        "Ultra-Rare": "15%",
+        "Legendary": "3%"
+      },
+      "pets": [
+        [
+          "Chicken",
+          "Common"
+        ],
+        [
+          "Drake",
+          "Uncommon"
+        ],
+        [
+          "Silly Duck",
+          "Uncommon"
+        ],
+        [
+          "Cow",
+          "Rare"
+        ],
+        [
+          "Pig",
+          "Rare"
+        ],
+        [
+          "Llama",
+          "Ultra-Rare"
+        ],
+        [
+          "Turkey",
+          "Ultra-Rare"
+        ],
+        [
+          "Crow",
+          "Legendary"
+        ],
+        [
+          "Owl",
+          "Legendary"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "20%",
+        "Uncommon": "35%",
+        "Rare": "27%",
+        "Ultra-Rare": "15%",
+        "Legendary": "3%"
+      }
+    },
+    {
+      "id": "fool",
+      "name": "Fool Egg",
+      "cost": "1,000 Bucks",
+      "status": "retired",
+      "released": "Apr 2023",
+      "retired": "Apr 2023",
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "0%",
+        "Rare": "65%",
+        "Ultra-Rare": "25%",
+        "Legendary": "10%"
+      },
+      "pets": [
+        [
+          "Pudding Cat",
+          "Rare"
+        ],
+        [
+          "Sprout Snail",
+          "Ultra-Rare"
+        ],
+        [
+          "Yule Log Dog",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "fossil",
+      "name": "Fossil Egg",
+      "cost": "750 Bucks",
+      "type": "robux",
+      "status": "retired",
+      "released": "Oct 2020",
+      "retired": "Apr 2021",
+      "img": "1/14/Fossil_Egg.png",
+      "chances": {
+        "Common": "25%",
+        "Uncommon": "30%",
+        "Rare": "25%",
+        "Ultra-Rare": "15%",
+        "Legendary": "5%"
+      },
+      "pets": [
+        [
+          "Tasmanian Tiger",
+          "Common"
+        ],
+        [
+          "Ground Sloth",
+          "Common"
+        ],
+        [
+          "Triceratops",
+          "Uncommon"
+        ],
+        [
+          "Stegosaurus",
+          "Uncommon"
+        ],
+        [
+          "Glyptodon",
+          "Uncommon"
+        ],
+        [
+          "Dilophosaurus",
+          "Rare"
+        ],
+        [
+          "Pterodactyl",
+          "Rare"
+        ],
+        [
+          "Woolly Mammoth",
+          "Rare"
+        ],
+        [
+          "Sabertooth",
+          "Ultra-Rare"
+        ],
+        [
+          "Deinonychus",
+          "Ultra-Rare"
+        ],
+        [
+          "Dodo",
+          "Legendary"
+        ],
+        [
+          "T-Rex",
+          "Legendary"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "25%",
+        "Uncommon": "30%",
+        "Rare": "25%",
+        "Ultra-Rare": "15%",
+        "Legendary": "5%"
+      }
+    },
+    {
+      "id": "garden",
+      "name": "Garden Egg",
+      "cost": "750 Robux",
+      "type": "robux",
+      "status": "retired",
+      "released": "May 2024",
+      "retired": "Jan 2025",
+      "img": "3/3d/Garden_Egg.png",
+      "chances": {
+        "Common": "35%",
+        "Uncommon": "25%",
+        "Rare": "24%",
+        "Ultra-Rare": "12%",
+        "Legendary": "4%"
+      },
+      "pets": [
+        [
+          "Garden Snake",
+          "8/80/Garden_Snake.png",
+          "Common"
+        ],
+        [
+          "Mole",
+          "6/63/Mole.png",
+          "Uncommon"
+        ],
+        [
+          "Weevil",
+          "8/81/Weevil.png",
+          "Rare"
+        ],
+        [
+          "Blue Jay",
+          "8/87/Blue_Jay.png",
+          "Rare"
+        ],
+        [
+          "Praying Mantis",
+          "c/c7/Praying_Mantis.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Skunk",
+          "7/79/Skunk.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Rosy Maple Moth",
+          "5/59/Rosy_Maple_Moth.png",
+          "Legendary"
+        ],
+        [
+          "Mushroom Friend",
+          "e/ed/Mushroom_Friend.png",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "golden",
+      "name": "Golden Egg",
+      "cost": "660 Stars",
+      "status": "available",
+      "released": "Mar 2020",
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "0%",
+        "Rare": "0%",
+        "Ultra-Rare": "0%",
+        "Legendary": "100%"
+      },
+      "pets": [
+        [
+          "Golden Griffin",
+          "Legendary",
+          "33.33%"
+        ],
+        [
+          "Golden Dragon",
+          "Legendary",
+          "33.33%"
+        ],
+        [
+          "Golden Unicorn",
+          "Legendary",
+          "33.33%"
+        ]
+      ]
+    },
+    {
+      "id": "japan",
+      "name": "Japan Egg",
+      "cost": "750 Bucks",
+      "type": "robux",
+      "status": "retired",
+      "released": "Sep 2022",
+      "retired": "Mar 2023",
+      "img": "2/25/Japan_Egg.png",
+      "chances": {
+        "Common": "22%",
+        "Uncommon": "19%",
+        "Rare": "34%",
+        "Ultra-Rare": "20%",
+        "Legendary": "5%"
+      },
+      "pets": [
+        [
+          "Dugong",
+          "Common"
+        ],
+        [
+          "Sado Mole",
+          "Common"
+        ],
+        [
+          "Rhino Beetle",
+          "Uncommon"
+        ],
+        [
+          "Tanuki",
+          "Uncommon"
+        ],
+        [
+          "Ibis",
+          "Rare"
+        ],
+        [
+          "Koi Carp",
+          "Rare"
+        ],
+        [
+          "Leopard Cat",
+          "Rare"
+        ],
+        [
+          "Red Crowned Crane",
+          "Ultra-Rare"
+        ],
+        [
+          "Spider Crab",
+          "Ultra-Rare"
+        ],
+        [
+          "Trapdoor Snail",
+          "Ultra-Rare"
+        ],
+        [
+          "Baku",
+          "Legendary"
+        ],
+        [
+          "Maneki-Neko",
+          "Legendary"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "22%",
+        "Uncommon": "19%",
+        "Rare": "34%",
+        "Ultra-Rare": "20%",
+        "Legendary": "5%"
+      }
+    },
+    {
+      "id": "jungle",
+      "name": "Jungle Egg",
+      "cost": "750 Bucks",
+      "type": "robux",
+      "status": "retired",
+      "released": "Aug 2019",
+      "retired": "Nov 2019",
+      "img": "c/c9/Jungle_Egg.png",
+      "chances": {
+        "Common": "0%",
+        "Uncommon": "45%",
+        "Rare": "37%",
+        "Ultra-Rare": "15%",
+        "Legendary": "3%"
+      },
+      "pets": [
+        [
+          "Black Panther",
+          "Uncommon"
+        ],
+        [
+          "Capybara",
+          "Uncommon"
+        ],
+        [
+          "Brown Bear",
+          "Rare"
+        ],
+        [
+          "Rhino",
+          "Rare"
+        ],
+        [
+          "Crocodile",
+          "Ultra-Rare"
+        ],
+        [
+          "Platypus",
+          "Ultra-Rare"
+        ],
+        [
+          "Parrot",
+          "Legendary"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "45%",
+        "Rare": "37%",
+        "Ultra-Rare": "15%",
+        "Legendary": "3%"
+      }
+    },
+    {
+      "id": "moon",
+      "name": "Moon Egg",
+      "cost": "750 Robux",
+      "type": "robux",
+      "status": "retired",
+      "released": "Feb 2025",
+      "retired": "Aug 2025",
+      "img": "0/01/Moon_Egg.png",
+      "chances": {
+        "Common": "35%",
+        "Uncommon": "25%",
+        "Rare": "24%",
+        "Ultra-Rare": "12%",
+        "Legendary": "4%"
+      },
+      "pets": [
+        [
+          "Hopbop",
+          "c/c5/HopBop.png",
+          "Common"
+        ],
+        [
+          "Snorgle",
+          "5/5b/Snorgle.png",
+          "Uncommon"
+        ],
+        [
+          "Moonpine",
+          "4/4e/Moonpine.png",
+          "Rare"
+        ],
+        [
+          "Zeopod",
+          "7/7c/Zeopod.png",
+          "Rare"
+        ],
+        [
+          "Puptune",
+          "2/29/Puptune.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Starmite",
+          "1/1b/Starmite.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Dimension Drifter",
+          "a/a9/Dimension_Drifter.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Sunglider",
+          "e/ea/Sunglider.png",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "mythic",
+      "name": "Mythic Egg",
+      "cost": "750 Robux",
+      "type": "robux",
+      "status": "retired",
+      "released": "Aug 2021",
+      "retired": "Mar 2022",
+      "img": "9/92/Mythic_Egg.png",
+      "chances": {
+        "Common": "22%",
+        "Uncommon": "19%",
+        "Rare": "34%",
+        "Ultra-Rare": "20%",
+        "Legendary": "5%"
+      },
+      "pets": [
+        [
+          "Wolpertinger",
+          "2/20/Wolpertinger.png",
+          "Common"
+        ],
+        [
+          "Kirin",
+          "8/84/KirinIcon.png",
+          "Uncommon"
+        ],
+        [
+          "Merhorse",
+          "f/f3/MerhorseIcon.png",
+          "Rare"
+        ],
+        [
+          "Sasquatch",
+          "6/65/SasquatchIcon.png",
+          "Rare"
+        ],
+        [
+          "Hydra",
+          "0/03/HydraIcon.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Wyvern",
+          "7/77/WyvernIcon.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Goldhorn",
+          "0/0b/GoldenHornMain-Render.png",
+          "Legendary"
+        ],
+        [
+          "Phoenix",
+          "2/2a/PhoenixIcon.png",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "ocean",
+      "name": "Ocean Egg",
+      "cost": "750 Bucks",
+      "type": "robux",
+      "status": "retired",
+      "released": "Apr 2021",
+      "retired": "Aug 2021",
+      "img": "a/a5/Images-Ocean-Egg.png",
+      "chances": {
+        "Common": "20%",
+        "Uncommon": "35%",
+        "Rare": "30%",
+        "Ultra-Rare": "10%",
+        "Legendary": "5%"
+      },
+      "pets": [
+        [
+          "Stingray",
+          "Common"
+        ],
+        [
+          "Crab",
+          "Uncommon"
+        ],
+        [
+          "Dolphin",
+          "Uncommon"
+        ],
+        [
+          "Narwhal",
+          "Rare"
+        ],
+        [
+          "Seahorse",
+          "Rare"
+        ],
+        [
+          "Clownfish",
+          "Ultra-Rare"
+        ],
+        [
+          "Octopus",
+          "Legendary"
+        ],
+        [
+          "Shark",
+          "Legendary"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "20%",
+        "Uncommon": "35%",
+        "Rare": "30%",
+        "Ultra-Rare": "10%",
+        "Legendary": "5%"
+      }
+    },
+    {
+      "id": "pet",
+      "name": "Pet Egg",
+      "cost": "600 Bucks",
+      "type": "bucks",
+      "status": "available",
+      "released": "Jun 2019",
+      "img": "2/2b/Pet_Egg.png",
+      "chances": {
+        "Common": "20%",
+        "Uncommon": "35%",
+        "Rare": "27%",
+        "Ultra-Rare": "15%",
+        "Legendary": "3%"
+      },
+      "pets": [
+        [
+          "Ant",
+          "Common"
+        ],
+        [
+          "Mouse",
+          "Common"
+        ],
+        [
+          "Camel",
+          "Uncommon"
+        ],
+        [
+          "Donkey",
+          "Uncommon"
+        ],
+        [
+          "Poodle",
+          "Uncommon"
+        ],
+        [
+          "Orangutan",
+          "Rare"
+        ],
+        [
+          "Parakeet",
+          "Rare"
+        ],
+        [
+          "Zebra",
+          "Rare"
+        ],
+        [
+          "Corgi",
+          "Ultra-Rare"
+        ],
+        [
+          "Robot",
+          "Ultra-Rare"
+        ],
+        [
+          "Swordfish",
+          "Ultra-Rare"
+        ],
+        [
+          "Alicorn",
+          "Legendary"
+        ],
+        [
+          "Ancient Dragon",
+          "Legendary"
+        ],
+        [
+          "Dragonfly",
+          "Legendary"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "20%",
+        "Uncommon": "35%",
+        "Rare": "27%",
+        "Ultra-Rare": "15%",
+        "Legendary": "3%"
+      }
+    },
+    {
+      "id": "pink",
+      "name": "Pink Egg",
+      "cost": "100 Bucks (Pet Countdown event)",
+      "status": "retired",
+      "released": "Jun 2019",
+      "retired": "Jun 2019",
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "100%",
+        "Rare": "0%",
+        "Ultra-Rare": "0%",
+        "Legendary": "0%"
+      },
+      "pets": [
+        [
+          "Pink Cat",
+          "Uncommon"
+        ]
+      ]
+    },
+    {
+      "id": "retired",
+      "name": "Retired Egg",
+      "cost": "600 Bucks (VIP)",
+      "type": "bucks",
+      "status": "available",
+      "released": "Jul 2022",
+      "img": "b/b5/Retired_Egg_inventory.png",
+      "chances": {
+        "Common": "20%",
+        "Uncommon": "35%",
+        "Rare": "27%",
+        "Ultra-Rare": "15%",
+        "Legendary": "3%"
+      },
+      "pets": [
+        [
+          "Buffalo",
+          "0/0a/Buffalo.png",
+          "Common"
+        ],
+        [
+          "Cat",
+          "7/7e/Cat_Icon.png",
+          "Common"
+        ],
+        [
+          "Dog",
+          "3/35/Dog.png",
+          "Common"
+        ],
+        [
+          "Otter",
+          "a/a3/Otter_AM.png",
+          "Common"
+        ],
+        [
+          "Chocolate Labrador",
+          "1/17/Chocolate_Labrador2.png",
+          "Uncommon"
+        ],
+        [
+          "Fennec Fox",
+          "b/bc/Fennec_Fox_AM.png",
+          "Uncommon"
+        ],
+        [
+          "Puma",
+          "6/63/Puma.png",
+          "Uncommon"
+        ],
+        [
+          "Snow Cat",
+          "3/3e/Snow_Cat2.png",
+          "Uncommon"
+        ],
+        [
+          "Beaver",
+          "2/26/Beaver.png",
+          "Rare"
+        ],
+        [
+          "Bunny",
+          "a/a9/Bunny2.png",
+          "Rare"
+        ],
+        [
+          "Rabbit",
+          "9/94/Rabbit1.png",
+          "Rare"
+        ],
+        [
+          "Snow Puma",
+          "d/de/SnowPuma.png",
+          "Rare"
+        ],
+        [
+          "Red Panda",
+          "8/8b/Red_Panda.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Shiba Inu",
+          "0/03/ShibaInu_Pet.png",
+          "Ultra-Rare"
+        ],
+        [
+          "Dragon",
+          "3/3c/Dragon_Pet.png",
+          "Legendary"
+        ],
+        [
+          "Unicorn",
+          "1/1f/Unicorn_Pet.png",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "royal-aztec",
+      "name": "Royal Aztec Egg",
+      "cost": "15 Golden Aztec Skulls",
+      "status": "retired",
+      "released": "Aug 2025",
+      "retired": "Aug 2025",
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "35%",
+        "Rare": "34%",
+        "Ultra-Rare": "25%",
+        "Legendary": "6%"
+      },
+      "pets": [
+        [
+          "Tree Frog",
+          "Uncommon"
+        ],
+        [
+          "Chanekeh",
+          "Rare"
+        ],
+        [
+          "Water Opossum",
+          "Rare"
+        ],
+        [
+          "Ehecatl",
+          "Ultra-Rare"
+        ],
+        [
+          "Onza",
+          "Ultra-Rare"
+        ],
+        [
+          "Quetzalcoatl",
+          "Legendary"
+        ],
+        [
+          "Temple Friend",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "royal-desert",
+      "name": "Royal Desert Egg",
+      "cost": "Free (Sphinx's Solution event)",
+      "status": "retired",
+      "released": "Jan 2024",
+      "retired": "Jan 2024",
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "25%",
+        "Rare": "37%",
+        "Ultra-Rare": "30%",
+        "Legendary": "8%"
+      },
+      "pets": [
+        [
+          "Rattlesnake",
+          "Uncommon"
+        ],
+        [
+          "Gila Monster",
+          "Uncommon"
+        ],
+        [
+          "Oryx",
+          "Rare"
+        ],
+        [
+          "Thorny Devil",
+          "Rare"
+        ],
+        [
+          "Deathstalker Scorpion",
+          "Ultra-Rare"
+        ],
+        [
+          "Roadrunner",
+          "Ultra-Rare"
+        ],
+        [
+          "Vulture",
+          "Ultra-Rare"
+        ],
+        [
+          "Cactus Friend",
+          "Legendary"
+        ],
+        [
+          "Criosphinx",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "royal",
+      "name": "Royal Egg",
+      "cost": "1,450 Bucks",
+      "type": "bucks",
+      "status": "available",
+      "released": "Jun 2019",
+      "img": "3/32/AM_Royal_Egg.png",
+      "chances": {
+        "Common": "0%",
+        "Uncommon": "25%",
+        "Rare": "37%",
+        "Ultra-Rare": "30%",
+        "Legendary": "8%"
+      },
+      "pets": [
+        [
+          "Camel",
+          "Uncommon"
+        ],
+        [
+          "Donkey",
+          "Uncommon"
+        ],
+        [
+          "Poodle",
+          "Uncommon"
+        ],
+        [
+          "Orangutan",
+          "Rare"
+        ],
+        [
+          "Parakeet",
+          "Rare"
+        ],
+        [
+          "Zebra",
+          "Rare"
+        ],
+        [
+          "Corgi",
+          "Ultra-Rare"
+        ],
+        [
+          "Robot",
+          "Ultra-Rare"
+        ],
+        [
+          "Swordfish",
+          "Ultra-Rare"
+        ],
+        [
+          "Alicorn",
+          "Legendary"
+        ],
+        [
+          "Ancient Dragon",
+          "Legendary"
+        ],
+        [
+          "Dragonfly",
+          "Legendary"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "25%",
+        "Rare": "37%",
+        "Ultra-Rare": "30%",
+        "Legendary": "8%"
+      }
+    },
+    {
+      "id": "royal-moon",
+      "name": "Royal Moon Egg",
+      "cost": "18 Moon Beams",
+      "status": "retired",
+      "released": "Feb 2025",
+      "retired": "Feb 2025",
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "35%",
+        "Rare": "34%",
+        "Ultra-Rare": "25%",
+        "Legendary": "6%"
+      },
+      "pets": [
+        [
+          "Snorgle",
+          "Uncommon"
+        ],
+        [
+          "Moonpine",
+          "Rare"
+        ],
+        [
+          "Zeopod",
+          "Rare"
+        ],
+        [
+          "Puptune",
+          "Ultra-Rare"
+        ],
+        [
+          "Starmite",
+          "Ultra-Rare"
+        ],
+        [
+          "Dimension Drifter",
+          "Legendary"
+        ],
+        [
+          "Sunglider",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "safari",
+      "name": "Safari Egg",
+      "cost": "750 Bucks",
+      "type": "robux",
+      "status": "retired",
+      "released": "Jul 2019",
+      "retired": "Aug 2019",
+      "img": "9/9a/Safari_Egg.png",
+      "chances": {
+        "Common": "0%",
+        "Uncommon": "45%",
+        "Rare": "37%",
+        "Ultra-Rare": "15%",
+        "Legendary": "3%"
+      },
+      "pets": [
+        [
+          "Meerkat",
+          "Uncommon"
+        ],
+        [
+          "Wild Boar",
+          "Uncommon"
+        ],
+        [
+          "Elephant",
+          "Rare"
+        ],
+        [
+          "Hyena",
+          "Rare"
+        ],
+        [
+          "Flamingo",
+          "Ultra-Rare"
+        ],
+        [
+          "Lion",
+          "Ultra-Rare"
+        ],
+        [
+          "Giraffe",
+          "Legendary"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "45%",
+        "Rare": "37%",
+        "Ultra-Rare": "15%",
+        "Legendary": "3%"
+      }
+    },
+    {
+      "id": "southeast-asia",
+      "name": "Southeast Asia Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Mar 2023",
+      "retired": "Jun 2023",
+      "rarityChances": {
+        "Common": "35%",
+        "Uncommon": "25%",
+        "Rare": "20%",
+        "Ultra-Rare": "16%",
+        "Legendary": "4%"
+      },
+      "pets": [
+        [
+          "Bali Starling",
+          "Common"
+        ],
+        [
+          "Malayan Tapir",
+          "Common"
+        ],
+        [
+          "Maleo Bird",
+          "Common"
+        ],
+        [
+          "Yellow-lipped Sea Krait",
+          "Uncommon"
+        ],
+        [
+          "Banded Palm Civet",
+          "Uncommon"
+        ],
+        [
+          "Gecko",
+          "Rare"
+        ],
+        [
+          "Tarsier",
+          "Rare"
+        ],
+        [
+          "Binturong",
+          "Ultra-Rare"
+        ],
+        [
+          "Black Macaque",
+          "Ultra-Rare"
+        ],
+        [
+          "Komodo Dragon",
+          "Ultra-Rare"
+        ],
+        [
+          "Naga Dragon",
+          "Legendary"
+        ],
+        [
+          "Tree Kangaroo",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "starter",
+      "name": "Starter Egg",
+      "cost": "Free",
+      "status": "available",
+      "released": "Jun 2019",
+      "chanceMode": "variable",
+      "rarityChances": {
+        "Common": "100%",
+        "Uncommon": "0%",
+        "Rare": "0%",
+        "Ultra-Rare": "0%",
+        "Legendary": "0%"
+      },
+      "notes": "Starter Egg rewards use two hatch pools: Cat or Dog, then Ant or Mouse from later Guide eggs.",
+      "pets": [
+        [
+          "Cat",
+          "Common",
+          "Varies"
+        ],
+        [
+          "Dog",
+          "Common",
+          "Varies"
+        ],
+        [
+          "Ant",
+          "Common",
+          "Varies"
+        ],
+        [
+          "Mouse",
+          "Common",
+          "Varies"
+        ]
+      ]
+    },
+    {
+      "id": "urban",
+      "name": "Urban Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Aug 2023",
+      "retired": "Jan 2024",
+      "rarityChances": {
+        "Common": "35%",
+        "Uncommon": "25%",
+        "Rare": "20%",
+        "Ultra-Rare": "16%",
+        "Legendary": "4%"
+      },
+      "pets": [
+        [
+          "Bluebottle Fly",
+          "Common"
+        ],
+        [
+          "Cockroach",
+          "Common"
+        ],
+        [
+          "Mongoose",
+          "Common"
+        ],
+        [
+          "Tawny Frogmouth",
+          "Uncommon"
+        ],
+        [
+          "Rock Pigeon",
+          "Uncommon"
+        ],
+        [
+          "Indian Leopard",
+          "Rare"
+        ],
+        [
+          "Toy Poodle",
+          "Rare"
+        ],
+        [
+          "Alley Cat",
+          "Ultra-Rare"
+        ],
+        [
+          "Seagull",
+          "Ultra-Rare"
+        ],
+        [
+          "Black Kite",
+          "Ultra-Rare"
+        ],
+        [
+          "Billy Goat",
+          "Legendary"
+        ],
+        [
+          "Gargoyle",
+          "Legendary"
+        ]
+      ]
+    },
+    {
+      "id": "woodland",
+      "name": "Woodland Egg",
+      "cost": "750 Bucks",
+      "type": "robux",
+      "status": "retired",
+      "released": "Mar 2022",
+      "retired": "Sep 2022",
+      "img": "2/22/Woodland_Egg.png",
+      "chances": {
+        "Common": "22%",
+        "Uncommon": "19%",
+        "Rare": "34%",
+        "Ultra-Rare": "20%",
+        "Legendary": "5%"
+      },
+      "pets": [
+        [
+          "Bullfrog",
+          "Common"
+        ],
+        [
+          "Red Cardinal",
+          "Uncommon"
+        ],
+        [
+          "Red Fox",
+          "Rare"
+        ],
+        [
+          "Woodpecker",
+          "Rare"
+        ],
+        [
+          "Pine Marten",
+          "Ultra-Rare"
+        ],
+        [
+          "Salamander",
+          "Ultra-Rare"
+        ],
+        [
+          "Fallow Deer",
+          "Legendary"
+        ],
+        [
+          "Hawk",
+          "Legendary"
+        ]
+      ],
+      "rarityChances": {
+        "Common": "22%",
+        "Uncommon": "19%",
+        "Rare": "34%",
+        "Ultra-Rare": "20%",
+        "Legendary": "5%"
+      }
+    },
+    {
+      "id": "wrapped-doll",
+      "name": "Wrapped Doll",
+      "cost": "900 Bucks",
+      "status": "retired",
+      "released": "Jul 2023",
+      "retired": "Jul 2023",
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "100%",
+        "Rare": "0%",
+        "Ultra-Rare": "0%",
+        "Legendary": "0%"
+      },
+      "notes": "Acts like an egg-style doll container for River, Dylan, and Pistachio.",
+      "pets": [
+        [
+          "River",
+          "Uncommon",
+          "33.3%"
+        ],
+        [
+          "Dylan",
+          "Uncommon",
+          "33.3%"
+        ],
+        [
+          "Pistachio",
+          "Uncommon",
+          "33.3%"
+        ]
+      ]
+    },
+    {
+      "id": "zodiac-minion",
+      "name": "Zodiac Minion Egg",
+      "cost": "Free (Gru's Lab event)",
+      "status": "retired",
+      "released": "Jun 2022",
+      "retired": "Jun 2022",
+      "rarityChances": {
+        "Common": "0%",
+        "Uncommon": "0%",
+        "Rare": "0%",
+        "Ultra-Rare": "0%",
+        "Legendary": "100%"
+      },
+      "pets": [
+        [
+          "Zodiac Minion Chick",
+          "Legendary"
+        ]
+      ]
+    }
+  ]
+}
