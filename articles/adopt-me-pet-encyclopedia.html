@@ -252,7 +252,7 @@
           <select id="sort-select">
             <option value="alpha">A to Z</option>
             <option value="rarity">Rarity</option>
-            <option value="benchmark">Benchmark value</option>
+            <option value="benchmark">Pet page FR value</option>
           </select>
         </label>
         <label>
@@ -336,6 +336,12 @@
       return page ? page.values.default : null;
     }
 
+    function getValueBadgeForEntry(entry) {
+      const page = getPageForEntry(entry);
+      if (!page || typeof page.values.default !== "number") return "";
+      return `FR ${window.ThePatchValues.formatValue(page.values.default)}`;
+    }
+
     function getFilteredEntries() {
       return state.catalog.entries
         .filter((entry) => {
@@ -366,12 +372,13 @@
 
       document.getElementById("results-headline").textContent = `${entries.length} matching entries`;
       document.getElementById("results-note").textContent = state.catalog.counts.review
-        ? `${state.pageData.count} pet pages are live, and ${state.catalog.counts.review} special entries are still listed with a temporary rarity label.`
-        : `${state.pageData.count} pet pages are live, and all listed entries currently have a rarity label.`;
+        ? `${state.pageData.count} pet pages are live, and ${state.catalog.counts.review} special entries are still listed with a temporary rarity label. Value pills here use the pet page Fly Ride lane; the trade calculator opens on No Potion by default.`
+        : `${state.pageData.count} pet pages are live, and all listed entries currently have a rarity label. Value pills here use the pet page Fly Ride lane; the trade calculator opens on No Potion by default.`;
 
       grid.innerHTML = entries.map((entry) => {
         const page = getPageForEntry(entry);
         const benchmarkValue = getValueForEntry(entry);
+        const valueBadge = getValueBadgeForEntry(entry);
         return `
           <article class="catalog-card">
             <img src="${entry.image}" alt="${entry.name}">
@@ -380,7 +387,7 @@
             <div class="catalog-meta">
               <span class="catalog-pill">${rarityLabels[entry.rarity] || "Unknown"}</span>
               ${page ? `<span class="catalog-pill benchmark">${page.pageLabel}</span>` : ""}
-              ${benchmarkValue !== null ? `<span class="catalog-pill benchmark">${window.ThePatchValues.formatValue(benchmarkValue)}</span>` : ""}
+              ${benchmarkValue !== null ? `<span class="catalog-pill benchmark">${valueBadge}</span>` : ""}
             </div>
             ${page ? `<div class="catalog-actions"><a href="/pets/${entry.slug}.html">Open pet page &#8594;</a></div>` : ""}
           </article>
