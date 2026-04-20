@@ -3663,6 +3663,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "purrowl",
+                        "name":  "Purrowl",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/purrowl.svg",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "purple-butterfly",
                         "name":  "Purple Butterfly",
                         "rarity":  "ur",

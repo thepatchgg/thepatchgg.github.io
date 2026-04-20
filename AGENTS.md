@@ -8,6 +8,8 @@ For short-term discovery and content-routing work, also read [DISCOVERY_NEXT_7_D
 
 For pet-value refresh or calculator-value work, also read [VALUE_SYNC_PROCESS.md](./VALUE_SYNC_PROCESS.md).
 
+For newly released pets or Friday update pet coverage, also read [NEW_PET_RELEASE_PLAYBOOK.md](./NEW_PET_RELEASE_PLAYBOOK.md).
+
 The guidance there is the source of truth for:
 
 - design guardrails
@@ -17,3 +19,4 @@ The guidance there is the source of truth for:
 - QA expectations
 - release safety
 - audit-only value sync workflow
+- new pet release coverage workflow

@@ -92,6 +92,8 @@ The site is already in a strong state. Protect the existing quality. Do not "mod
   Short-term growth checklist for the current live-update window and next-step discovery work.
 - `VALUE_SYNC_PROCESS.md`
   Source of truth for the twice-weekly pet value refresh and audit workflow.
+- `NEW_PET_RELEASE_PLAYBOOK.md`
+  Source of truth for same-day new pet release coverage, channel checks, and the coverage audit workflow.
 - `pet-value-calculator.html`
   Large calculator with 700+ pets and potion toggles.
 - `neon-calculator.html`
@@ -131,3 +133,4 @@ For visual work, also preview locally and spot-check the affected pages.
 - For traffic or SEO-related work, read `TRAFFIC_MONITORING.md` before making recommendations.
 - For short-term growth execution, also read `DISCOVERY_NEXT_7_DAYS.md` before proposing a fresh traffic plan from scratch.
 - For value-refresh work, read `VALUE_SYNC_PROCESS.md` before changing pet values or calculator overrides.
+- For newly released pets, read `NEW_PET_RELEASE_PLAYBOOK.md` before claiming a pet is fully covered across the site.

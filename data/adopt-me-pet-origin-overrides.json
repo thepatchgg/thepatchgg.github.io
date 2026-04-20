@@ -7593,6 +7593,21 @@
       ]
     },
     {
+      "slug": "purrowl",
+      "sources": [
+        {
+          "sourceName": "Birthday gift reward",
+          "sourceType": "Pet age-up reward",
+          "status": "current",
+          "released": "Apr 17, 2026",
+          "cost": "Free",
+          "petRarity": "Legendary",
+          "eventContext": "Birthday Magic (2026)",
+          "notes": "Can appear as a birthday gift reward when a pet levels up during the Birthday Magic update."
+        }
+      ]
+    },
+    {
       "slug": "scoob",
       "sources": [
         {

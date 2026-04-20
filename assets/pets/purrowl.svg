@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Purrowl placeholder art</title>
+  <desc id="desc">A local placeholder illustration for the Adopt Me pet Purrowl until exact art is imported.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1a34"/>
+      <stop offset="100%" stop-color="#0f0d18"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8f6bff"/>
+      <stop offset="100%" stop-color="#5b3fd1"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe681"/>
+      <stop offset="100%" stop-color="#ffb857"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <circle cx="256" cy="230" r="154" fill="#2f2456" opacity=".48"/>
+  <path d="M164 190 128 108l88 52zm184 0 36-82-88 52z" fill="url(#fur)"/>
+  <circle cx="256" cy="256" r="132" fill="url(#fur)"/>
+  <ellipse cx="206" cy="250" rx="24" ry="34" fill="#f8f3ff"/>
+  <ellipse cx="306" cy="250" rx="24" ry="34" fill="#f8f3ff"/>
+  <circle cx="206" cy="252" r="12" fill="#1b1430"/>
+  <circle cx="306" cy="252" r="12" fill="#1b1430"/>
+  <path d="M256 276c18 0 32 14 32 32 0 10-4 18-10 24l-22 18-22-18c-6-6-10-14-10-24 0-18 14-32 32-32z" fill="url(#glow)"/>
+  <path d="M210 318c24 18 68 18 92 0" fill="none" stroke="#f8f3ff" stroke-linecap="round" stroke-width="12"/>
+  <circle cx="154" cy="224" r="10" fill="#ffe681" opacity=".95"/>
+  <circle cx="360" cy="204" r="8" fill="#ffe681" opacity=".95"/>
+  <circle cx="376" cy="286" r="12" fill="#ffb857" opacity=".85"/>
+  <circle cx="136" cy="304" r="8" fill="#ffb857" opacity=".8"/>
+  <text x="256" y="440" text-anchor="middle" fill="#f6f2ff" font-family="Arial, sans-serif" font-size="40" font-weight="700">Purrowl</text>
+</svg>
