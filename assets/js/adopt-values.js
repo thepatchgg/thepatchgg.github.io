@@ -1,11 +1,31 @@
 (function () {
   const DATA_PATH = "/data/adopt-me-values.json";
+  const VARIANT_ORDER = [
+    "default",
+    "fly",
+    "ride",
+    "noPotion",
+    "neon",
+    "neonFly",
+    "neonRide",
+    "neonNoPotion",
+    "mega",
+    "megaFly",
+    "megaRide",
+    "megaNoPotion"
+  ];
   const VARIANT_LABELS = {
-    default: "Default",
+    default: "Fly Ride",
+    fly: "Fly",
+    ride: "Ride",
     noPotion: "No Potion",
-    neon: "Neon",
+    neon: "Neon Fly Ride",
+    neonFly: "Neon Fly",
+    neonRide: "Neon Ride",
     neonNoPotion: "Neon No Potion",
-    mega: "Mega Neon",
+    mega: "Mega Fly Ride",
+    megaFly: "Mega Fly",
+    megaRide: "Mega Ride",
     megaNoPotion: "Mega No Potion"
   };
 
@@ -34,7 +54,7 @@
   }
 
   function getVariantEntries(pet) {
-    return Object.keys(pet.values)
+    return VARIANT_ORDER
       .filter((key) => typeof pet.values[key] === "number")
       .map((key) => ({
         key,
@@ -53,6 +73,7 @@
 
   window.ThePatchValues = {
     DATA_PATH,
+    VARIANT_ORDER,
     VARIANT_LABELS,
     formatValue,
     getVariantEntries,

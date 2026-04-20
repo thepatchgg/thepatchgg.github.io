@@ -86,6 +86,24 @@ function Format-Value([double]$Value) {
   return ("{0:0.0}" -f $Value).TrimEnd("0").TrimEnd(".")
 }
 
+function Get-NumericOrFallback {
+  param(
+    [object]$Value,
+    [double]$Fallback
+  )
+
+  if ($null -eq $Value) {
+    return $Fallback
+  }
+
+  $text = [string]$Value
+  if ([string]::IsNullOrWhiteSpace($text)) {
+    return $Fallback
+  }
+
+  return [double]$Value
+}
+
 function Join-Names([string[]]$Names) {
   if (-not $Names -or $Names.Count -eq 0) { return "" }
   if ($Names.Count -eq 1) { return $Names[0] }
@@ -279,13 +297,22 @@ $toneClass = @{
 }
 
 $variantLabels = @{
-  "default" = "Default"
+  "default" = "Fly Ride"
+  "fly" = "Fly"
+  "ride" = "Ride"
   "noPotion" = "No Potion"
-  "neon" = "Neon"
+  "neon" = "Neon Fly Ride"
+  "neonFly" = "Neon Fly"
+  "neonRide" = "Neon Ride"
   "neonNoPotion" = "Neon No Potion"
-  "mega" = "Mega Neon"
+  "mega" = "Mega Fly Ride"
+  "megaFly" = "Mega Fly"
+  "megaRide" = "Mega Ride"
   "megaNoPotion" = "Mega No Potion"
 }
+
+$benchmarkVariantKeys = @("default", "fly", "ride", "noPotion", "neon", "neonFly", "neonRide", "neonNoPotion", "mega", "megaFly", "megaRide", "megaNoPotion")
+$referenceVariantKeys = @("default", "noPotion", "neon", "neonNoPotion", "mega", "megaNoPotion")
 
 $comparisonGuideMap = @{
   "bat-dragon" = @([pscustomobject]@{ href = "/articles/adopt-me-bat-dragon-vs-shadow-dragon-guide.html"; title = "Bat Dragon vs Shadow Dragon"; description = "Use the direct comparison guide when you want the cleanest top-tier sanity check before a major overpay." })
@@ -332,10 +359,16 @@ foreach ($legacyPet in $legacy.pets) {
       confidence = $benchmarkPet.confidence
       values = [ordered]@{
         default = [double]$benchmarkPet.values.default
+        fly = (Get-NumericOrFallback $benchmarkPet.values.fly ([double]$benchmarkPet.values.default))
+        ride = (Get-NumericOrFallback $benchmarkPet.values.ride ([double]$benchmarkPet.values.default))
         noPotion = [double]$benchmarkPet.values.noPotion
         neon = [double]$benchmarkPet.values.neon
+        neonFly = (Get-NumericOrFallback $benchmarkPet.values.neonFly ([double]$benchmarkPet.values.neon))
+        neonRide = (Get-NumericOrFallback $benchmarkPet.values.neonRide ([double]$benchmarkPet.values.neon))
         neonNoPotion = [double]$benchmarkPet.values.neonNoPotion
         mega = [double]$benchmarkPet.values.mega
+        megaFly = (Get-NumericOrFallback $benchmarkPet.values.megaFly ([double]$benchmarkPet.values.mega))
+        megaRide = (Get-NumericOrFallback $benchmarkPet.values.megaRide ([double]$benchmarkPet.values.mega))
         megaNoPotion = [double]$benchmarkPet.values.megaNoPotion
       }
       notes = $benchmarkPet.notes
@@ -697,10 +730,25 @@ foreach ($pet in $allPets) {
 "@
   }
 
-  $variantRows = foreach ($key in @("default", "noPotion", "neon", "neonNoPotion", "mega", "megaNoPotion")) {
+  $variantKeys = if ($pet.benchmark) { $benchmarkVariantKeys } else { $referenceVariantKeys }
+  $variantRows = foreach ($key in $variantKeys) {
 @"
                 <li><span>$($variantLabels[$key])</span><span class="value-tag">$(Format-Value([double]$pet.values.$key))</span></li>
 "@
+  }
+
+  $heroMetricRows = if ($pet.benchmark) {
+    foreach ($key in @("default", "fly", "ride", "noPotion")) {
+@"
+            <li><span>$($variantLabels[$key])</span><span class="value-tag">$(Format-Value([double]$pet.values.$key))</span></li>
+"@
+    }
+  } else {
+    foreach ($key in @("default", "noPotion", "neon")) {
+@"
+            <li><span>$($variantLabels[$key])</span><span class="value-tag">$(Format-Value([double]$pet.values.$key))</span></li>
+"@
+    }
   }
 
   if ($originSummary.audited) {
@@ -924,9 +972,7 @@ foreach ($pet in $allPets) {
             <span class="value-tag">$(Format-Value([double]$pet.values.default))</span>
           </div>
           <ul class="mini-list detail-kpis">
-            <li><span>Default</span><span class="value-tag">$(Format-Value([double]$pet.values.default))</span></li>
-            <li><span>No Potion</span><span class="value-tag">$(Format-Value([double]$pet.values.noPotion))</span></li>
-            <li><span>Neon</span><span class="value-tag">$(Format-Value([double]$pet.values.neon))</span></li>
+$($heroMetricRows -join "`n")
           </ul>
           <button class="ghost-button watch-button" type="button" data-watch-pet>Watch this pet</button>
         </aside>

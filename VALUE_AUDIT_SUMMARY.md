@@ -2,7 +2,7 @@
 
 - Date: 2026-04-19
 - Source refresh: cached
-- Mode: audit-only
+- Mode: production refresh
 - Scope: Adopt Me trade calculator long-tail pet values
 - Reference source: adoptmevalues.app values index
 - Local calculator coverage: 714 pets
@@ -12,7 +12,6 @@
 - Non-benchmark pets manually resolved: 12
 - Non-benchmark pets still unmatched: 0
 - Current production comparable non-benchmark coverage: 614
-- Legacy production override entries now superseded by the benchmark layer: 83
 
 ## What Changed
 
@@ -28,14 +27,14 @@ These benchmark pets still deserve human review before any editorial benchmark c
 
 | Pet | Patch default | Tracker FR | Delta % |
 | --- | ---: | ---: | ---: |
-| Parrot | 122.5 | 149 | -17.8% |
-| Shadow Dragon | 372 | 419 | -11.2% |
-| Owl | 167 | 187 | -10.7% |
-| Bat Dragon | 578 | 647 | -10.7% |
-| Crow | 117 | 129 | -9.3% |
-| Unicorn | 2.5 | 2.75 | -9.1% |
-| Blazing Lion | 48 | 52.5 | -8.6% |
-| Kangaroo | 17 | 18.5 | -8.1% |
+| Candicorn | 7.75 | 7.75 | 0% |
+| Cerberus | 1.65 | 1.65 | 0% |
+| Chicken | 1.75 | 1.75 | 0% |
+| Bush Elephant | 8.75 | 8.75 | 0% |
+| Cabbit | 21.75 | 21.75 | 0% |
+| Cactus Friend | 1.55 | 1.55 | 0% |
+| Dragon | 1.1 | 1.1 | 0% |
+| Dragonfruit Fox | 6.5 | 6.5 | 0% |
 
 ## Recommendation
 

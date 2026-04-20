@@ -273,6 +273,10 @@ foreach ($file in $htmlFiles) {
   $content = Get-Content -Raw -Path $file.FullName
   $relativePath = $file.FullName.Substring($repoRoot.Length + 1) -replace "\\", "/"
 
+  if ($relativePath -eq "data/adoptmevalues-values-page.html") {
+    continue
+  }
+
   if ($content -notmatch "/assets/js/patch-ribbon\.js") {
     $issues.Add("Menu ribbon normalizer missing in $relativePath")
   }

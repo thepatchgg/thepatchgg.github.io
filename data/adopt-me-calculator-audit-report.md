@@ -1,8 +1,8 @@
 # Calculator Audit Report
 
 - Date: 2026-04-19
-- Tracker pet rows parsed: 719
-- Local calculator pets: 714
+- Tracker pet rows parsed: 720
+- Local calculator pets: 715
 - Non-benchmark local pets: 614
 - Non-benchmark pets matched to tracker feed: 602
 - Non-benchmark pets manually resolved: 12
@@ -12,31 +12,31 @@
 
 | Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Parrot | 122.5 | 149 | -17.8% | 124.5 | 151 |
-| Shadow Dragon | 372 | 419 | -11.2% | 502 | 549 |
-| Owl | 167 | 187 | -10.7% | 170 | 190 |
-| Bat Dragon | 578 | 647 | -10.7% | 591 | 660 |
-| Crow | 117 | 129 | -9.3% | 117.5 | 130 |
-| Unicorn | 2.5 | 2.75 | -9.1% | 2 | 2 |
-| Blazing Lion | 48 | 52.5 | -8.6% | 51 | 50.5 |
-| Kangaroo | 17 | 18.5 | -8.1% | 18 | 17 |
-| Frost Dragon | 206 | 224 | -8% | 215 | 237 |
-| Chocolate Chip Bat Dragon | 21.25 | 23 | -7.6% | 22.5 | 21 |
-| Cow | 27 | 29 | -6.9% | 28.5 | 26.5 |
-| Arctic Reindeer | 39 | 41.5 | -6% | 41 | 41 |
-| Evil Unicorn | 89 | 94 | -5.3% | 94 | 94.5 |
-| Turtle | 23.25 | 24.5 | -5.1% | 24.5 | 22 |
-| Dalmatian | 45.25 | 47.5 | -4.7% | 47.5 | 46.5 |
-| Hedgehog | 54 | 56.5 | -4.4% | 59 | 55.5 |
-| Dragon | 1.1 | 1.15 | -4.3% | 0.4 | 0.4 |
-| Giraffe | 277 | 284 | -2.5% | 295 | 295 |
-| Cryptid | 79 | 79 | 0% | 77 | 77 |
-| Cupid Dragon | 8 | 8 | 0% | 7 | 7 |
-| Giant Panda | 94 | 94 | 0% | 92 | 92 |
-| Dragonfruit Fox | 8.5 | 8.5 | 0% | 7.75 | 7.75 |
+| Candicorn | 7.75 | 7.75 | 0% | 7 | 7 |
+| Cerberus | 1.65 | 1.65 | 0% | 0.9 | 0.9 |
+| Chicken | 1.75 | 1.75 | 0% | 1.25 | 1.25 |
+| Bush Elephant | 8.75 | 8.75 | 0% | 8 | 8 |
+| Cabbit | 21.75 | 21.75 | 0% | 20.25 | 20.25 |
+| Cactus Friend | 1.55 | 1.55 | 0% | 0.8 | 0.8 |
+| Dragon | 1.1 | 1.1 | 0% | 0.35 | 0.35 |
+| Dragonfruit Fox | 6.5 | 6.5 | 0% | 5.75 | 5.75 |
+| Fairy Bat Dragon | 12.5 | 12.5 | 0% | 11 | 11 |
+| Crocodile | 14.25 | 14.25 | 0% | 13.25 | 13.25 |
+| Cryptid | 81 | 81 | 0% | 79 | 79 |
+| Cupid Dragon | 7.25 | 7.25 | 0% | 6.25 | 6.25 |
+| Black-Chested Pheasant | 7.5 | 7.5 | 0% | 6.75 | 6.75 |
+| Unicorn | 2.5 | 2.5 | 0% | 1.75 | 1.75 |
+| Werewolf | 7.25 | 7.25 | 0% | 6.5 | 6.5 |
+| Alicorn | 1.15 | 1.15 | 0% | 0.4 | 0.4 |
+| Lion | 14 | 14 | 0% | 13 | 13 |
+| Skele-Rex | 2 | 2 | 0% | 1.25 | 1.25 |
+| Sugar Glider | 13 | 13 | 0% | 12 | 12 |
+| Polar Bear | 4.85 | 4.85 | 0% | 4.25 | 4.25 |
+| Shark Puppy | 8 | 8 | 0% | 7.25 | 7.25 |
+| Alpaca | 9.1 | 9.1 | 0% | 8.5 | 8.5 |
+| Arctic Fox | 7.5 | 7.5 | 0% | 6 | 6 |
+| Dodo | 1.75 | 1.75 | 0% | 1 | 1 |
 | Octopus | 1.65 | 1.65 | 0% | 0.9 | 0.9 |
-| Golden Penguin | 2.75 | 2.75 | 0% | 2 | 2 |
-| Fairy Bat Dragon | 12 | 12 | 0% | 10.5 | 10.5 |
 
 ## Manual Edge-Case Resolutions
 

@@ -1,26 +1,18 @@
-﻿{
-    "updatedAt":  "2026-04-10",
+{
+    "updatedAt":  "2026-04-19",
     "version":  "phase1",
     "methodology":  {
-                        "summary":  "The Patch baseline values are reviewed against major public community trackers and normalized into one consistent list for our tools.",
+                        "summary":  "The Patch benchmark values are aligned directly to the live Adopt Me Values feed so our benchmark pets match the same public lanes shown at adoptmevalues.app/values.",
                         "sources":  [
                                         {
                                             "name":  "Adopt Me Values",
-                                            "url":  "https://adoptmevalues.app/"
-                                        },
-                                        {
-                                            "name":  "Adopt Me Trading Values",
-                                            "url":  "https://adoptmetradingvalues.com/"
-                                        },
-                                        {
-                                            "name":  "Elvebredd",
-                                            "url":  "https://elvebredd.xyz/"
+                                            "url":  "https://www.adoptmevalues.app/values"
                                         }
                                     ],
                         "notes":  [
-                                      "High-tier no-potion pets can be worth more than their Fly Ride versions.",
-                                      "Values move faster than wiki data, so demand and trend matter alongside raw numbers.",
-                                      "The calculator is a benchmark tool, not a guarantee that every server will trade at the same price."
+                                      "Benchmark pets now mirror the live Adopt Me Values public feed.",
+                                      "No Potion, Fly, Ride, and Fly Ride lanes are carried through from the same tracker source.",
+                                      "Values can still move quickly, so recheck the source feed before making high-stakes trades."
                                   ]
                     },
     "pets":  [
@@ -32,15 +24,21 @@
                      "demand":  "Elite",
                      "trend":  "Steady",
                      "confidence":  "High",
+                     "notes":  "Revalidated on April 19, 2026 against live public value pages. Bat Dragon remains ahead of Shadow Dragon and keeps the strongest base lane in the current benchmark set.",
                      "values":  {
-                                    "default":  578,
-                                    "noPotion":  591,
-                                    "neon":  1500,
-                                    "neonNoPotion":  1700,
-                                    "mega":  4000,
-                                    "megaNoPotion":  4200
-                                },
-                     "notes":  "Revalidated on April 9, 2026 against live public value pages. Bat Dragon remains ahead of Shadow Dragon and keeps the strongest base lane in the current benchmark set."
+                                    "default":  672,
+                                    "fly":  672,
+                                    "ride":  672,
+                                    "noPotion":  685,
+                                    "neon":  1680,
+                                    "neonFly":  1772.8,
+                                    "neonRide":  1726.4,
+                                    "neonNoPotion":  1840,
+                                    "mega":  4570,
+                                    "megaFly":  4686,
+                                    "megaRide":  4639.6,
+                                    "megaNoPotion":  4802
+                                }
                  },
                  {
                      "slug":  "shadow-dragon",
@@ -50,15 +48,21 @@
                      "demand":  "Elite",
                      "trend":  "Steady",
                      "confidence":  "High",
+                     "notes":  "Revalidated on April 19, 2026 against live public value pages. Shadow Dragon stays one of the two strongest benchmark pets, but currently below Bat Dragon.",
                      "values":  {
-                                    "default":  372,
-                                    "noPotion":  502,
-                                    "neon":  865,
-                                    "neonNoPotion":  1500,
-                                    "mega":  2000,
-                                    "megaNoPotion":  3100
-                                },
-                     "notes":  "Revalidated on April 9, 2026 against live public value pages. Shadow Dragon stays one of the two strongest benchmark pets, but currently below Bat Dragon."
+                                    "default":  430,
+                                    "fly":  432,
+                                    "ride":  434,
+                                    "noPotion":  560,
+                                    "neon":  972,
+                                    "neonFly":  1076.4,
+                                    "neonRide":  1134.4,
+                                    "neonNoPotion":  1520,
+                                    "mega":  2310,
+                                    "megaFly":  2420,
+                                    "megaRide":  2810,
+                                    "megaNoPotion":  3400
+                                }
                  },
                  {
                      "slug":  "giraffe",
@@ -68,15 +72,21 @@
                      "demand":  "Elite",
                      "trend":  "Rising",
                      "confidence":  "High",
+                     "notes":  "Demand remains strong and usually outpaces many other old-event legends.",
                      "values":  {
-                                    "default":  277,
-                                    "noPotion":  295,
-                                    "neon":  705,
-                                    "neonNoPotion":  820,
-                                    "mega":  2140,
-                                    "megaNoPotion":  2580
-                                },
-                     "notes":  "Demand remains strong and usually outpaces many other old-event legends."
+                                    "default":  294,
+                                    "fly":  294,
+                                    "ride":  294,
+                                    "noPotion":  305,
+                                    "neon":  700,
+                                    "neonFly":  711,
+                                    "neonRide":  711,
+                                    "neonNoPotion":  770,
+                                    "mega":  2220,
+                                    "megaFly":  2289.6,
+                                    "megaRide":  2266.4,
+                                    "megaNoPotion":  2740
+                                }
                  },
                  {
                      "slug":  "frost-dragon",
@@ -86,15 +96,21 @@
                      "demand":  "Elite",
                      "trend":  "Rising",
                      "confidence":  "High",
+                     "notes":  "One of the safest benchmark pets for mid-to-high tier trades.",
                      "values":  {
-                                    "default":  206,
-                                    "noPotion":  215,
-                                    "neon":  525,
-                                    "neonNoPotion":  610,
-                                    "mega":  1600,
-                                    "megaNoPotion":  1940
-                                },
-                     "notes":  "One of the safest benchmark pets for mid-to-high tier trades."
+                                    "default":  232,
+                                    "fly":  232,
+                                    "ride":  232,
+                                    "noPotion":  245,
+                                    "neon":  472,
+                                    "neonFly":  478,
+                                    "neonRide":  478,
+                                    "neonNoPotion":  590,
+                                    "mega":  1178,
+                                    "megaFly":  1410,
+                                    "megaRide":  1472,
+                                    "megaNoPotion":  2300
+                                }
                  },
                  {
                      "slug":  "owl",
@@ -104,15 +120,21 @@
                      "demand":  "Very High",
                      "trend":  "Steady",
                      "confidence":  "High",
+                     "notes":  "Revalidated on April 19, 2026 against live public value pages. Owl demand stays unusually sticky because players love the design as much as the rarity.",
                      "values":  {
-                                    "default":  167,
-                                    "noPotion":  170,
-                                    "neon":  454,
-                                    "neonNoPotion":  490,
-                                    "mega":  1600,
-                                    "megaNoPotion":  1900
-                                },
-                     "notes":  "Revalidated on April 9, 2026 against live public value pages. Owl demand stays unusually sticky because players love the design as much as the rarity."
+                                    "default":  193,
+                                    "fly":  192.5,
+                                    "ride":  192.5,
+                                    "noPotion":  196,
+                                    "neon":  515,
+                                    "neonFly":  520,
+                                    "neonRide":  520,
+                                    "neonNoPotion":  525,
+                                    "mega":  1742,
+                                    "megaFly":  1974,
+                                    "megaRide":  1935,
+                                    "megaNoPotion":  2100
+                                }
                  },
                  {
                      "slug":  "parrot",
@@ -122,15 +144,21 @@
                      "demand":  "Very High",
                      "trend":  "Steady",
                      "confidence":  "High",
+                     "notes":  "Revalidated on April 19, 2026 against live public value pages. Parrot remains a strong liquidity pet that is easier to move than many similarly priced legends.",
                      "values":  {
-                                    "default":  122.5,
-                                    "noPotion":  124.5,
-                                    "neon":  266,
-                                    "neonNoPotion":  395,
-                                    "mega":  880,
-                                    "megaNoPotion":  1600
-                                },
-                     "notes":  "Revalidated on April 9, 2026 against live public value pages. Parrot remains a strong liquidity pet that is easier to move than many similarly priced legends."
+                                    "default":  153,
+                                    "fly":  152.5,
+                                    "ride":  152.5,
+                                    "noPotion":  155,
+                                    "neon":  322,
+                                    "neonFly":  322,
+                                    "neonRide":  322,
+                                    "neonNoPotion":  450,
+                                    "mega":  1010,
+                                    "megaFly":  1079.6,
+                                    "megaRide":  1056.4,
+                                    "megaNoPotion":  1800
+                                }
                  },
                  {
                      "slug":  "crow",
@@ -140,15 +168,21 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "High",
+                     "notes":  "Revalidated on April 19, 2026 against live public value pages. Crow still trades faster than raw value alone suggests because of stable trader demand.",
                      "values":  {
-                                    "default":  117,
-                                    "noPotion":  117.5,
-                                    "neon":  281,
-                                    "neonNoPotion":  385,
-                                    "mega":  1100,
-                                    "megaNoPotion":  1500
-                                },
-                     "notes":  "Revalidated on April 9, 2026 against live public value pages. Crow still trades faster than raw value alone suggests because of stable trader demand."
+                                    "default":  133,
+                                    "fly":  132.5,
+                                    "ride":  132.5,
+                                    "noPotion":  134,
+                                    "neon":  310,
+                                    "neonFly":  313,
+                                    "neonRide":  313,
+                                    "neonNoPotion":  415,
+                                    "mega":  1182,
+                                    "megaFly":  1274.8,
+                                    "megaRide":  1251.6,
+                                    "megaNoPotion":  1660
+                                }
                  },
                  {
                      "slug":  "evil-unicorn",
@@ -158,15 +192,21 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
+                     "notes":  "A classic Halloween benchmark that stays liquid year-round.",
                      "values":  {
-                                    "default":  89,
-                                    "noPotion":  94,
-                                    "neon":  225,
-                                    "neonNoPotion":  275,
-                                    "mega":  690,
-                                    "megaNoPotion":  840
-                                },
-                     "notes":  "A classic Halloween benchmark that stays liquid year-round."
+                                    "default":  96,
+                                    "fly":  95.5,
+                                    "ride":  95.5,
+                                    "noPotion":  96,
+                                    "neon":  194,
+                                    "neonFly":  197,
+                                    "neonRide":  197,
+                                    "neonNoPotion":  260,
+                                    "mega":  707,
+                                    "megaFly":  776.6,
+                                    "megaRide":  753.4,
+                                    "megaNoPotion":  1040
+                                }
                  },
                  {
                      "slug":  "hedgehog",
@@ -176,15 +216,21 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
+                     "notes":  "Cute-demand keeps this one stronger than many players expect from its rarity.",
                      "values":  {
-                                    "default":  54,
-                                    "noPotion":  59,
-                                    "neon":  145,
-                                    "neonNoPotion":  176,
-                                    "mega":  455,
-                                    "megaNoPotion":  560
-                                },
-                     "notes":  "Cute-demand keeps this one stronger than many players expect from its rarity."
+                                    "default":  57,
+                                    "fly":  56,
+                                    "ride":  56,
+                                    "noPotion":  56,
+                                    "neon":  187,
+                                    "neonFly":  188,
+                                    "neonRide":  188,
+                                    "neonNoPotion":  192,
+                                    "mega":  722,
+                                    "megaFly":  736,
+                                    "megaRide":  736,
+                                    "megaNoPotion":  762
+                                }
                  },
                  {
                      "slug":  "blazing-lion",
@@ -194,15 +240,21 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
+                     "notes":  "Premium recent legend with strong collector demand but slightly wider price swings.",
                      "values":  {
-                                    "default":  48,
+                                    "default":  53,
+                                    "fly":  52,
+                                    "ride":  52,
                                     "noPotion":  51,
-                                    "neon":  126,
-                                    "neonNoPotion":  151,
-                                    "mega":  385,
-                                    "megaNoPotion":  470
-                                },
-                     "notes":  "Premium recent legend with strong collector demand but slightly wider price swings."
+                                    "neon":  190,
+                                    "neonFly":  189,
+                                    "neonRide":  189,
+                                    "neonNoPotion":  195,
+                                    "mega":  748,
+                                    "megaFly":  746.75,
+                                    "megaRide":  746,
+                                    "megaNoPotion":  799
+                                }
                  },
                  {
                      "slug":  "dalmatian",
@@ -212,15 +264,21 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
+                     "notes":  "Still one of the most trusted mid-tier benchmarks because supply is old and stable.",
                      "values":  {
-                                    "default":  45.25,
-                                    "noPotion":  47.5,
-                                    "neon":  119,
-                                    "neonNoPotion":  143,
-                                    "mega":  365,
-                                    "megaNoPotion":  440
-                                },
-                     "notes":  "Still one of the most trusted mid-tier benchmarks because supply is old and stable."
+                                    "default":  48,
+                                    "fly":  47,
+                                    "ride":  47,
+                                    "noPotion":  47,
+                                    "neon":  142,
+                                    "neonFly":  141.5,
+                                    "neonRide":  141.5,
+                                    "neonNoPotion":  148,
+                                    "mega":  504,
+                                    "megaFly":  512,
+                                    "megaRide":  512,
+                                    "megaNoPotion":  534
+                                }
                  },
                  {
                      "slug":  "arctic-reindeer",
@@ -230,15 +288,21 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
+                     "notes":  "A dependable benchmark in upgrades toward crow-tier trades.",
                      "values":  {
-                                    "default":  39,
-                                    "noPotion":  41,
-                                    "neon":  105,
-                                    "neonNoPotion":  126,
-                                    "mega":  320,
-                                    "megaNoPotion":  390
-                                },
-                     "notes":  "A dependable benchmark in upgrades toward crow-tier trades."
+                                    "default":  43,
+                                    "fly":  42,
+                                    "ride":  42,
+                                    "noPotion":  42.5,
+                                    "neon":  92,
+                                    "neonFly":  92,
+                                    "neonRide":  92,
+                                    "neonNoPotion":  113.25,
+                                    "mega":  314,
+                                    "megaFly":  324,
+                                    "megaRide":  324,
+                                    "megaNoPotion":  481.31
+                                }
                  },
                  {
                      "slug":  "cow",
@@ -248,15 +312,21 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "High",
+                     "notes":  "Demand is consistently stronger than many rarer pets because of player preference.",
                      "values":  {
-                                    "default":  27,
+                                    "default":  31,
+                                    "fly":  29.75,
+                                    "ride":  29.5,
                                     "noPotion":  28.5,
-                                    "neon":  73,
-                                    "neonNoPotion":  90,
-                                    "mega":  225,
-                                    "megaNoPotion":  280
-                                },
-                     "notes":  "Demand is consistently stronger than many rarer pets because of player preference."
+                                    "neon":  69,
+                                    "neonFly":  68,
+                                    "neonRide":  68,
+                                    "neonNoPotion":  68,
+                                    "mega":  222,
+                                    "megaFly":  221,
+                                    "megaRide":  221,
+                                    "megaNoPotion":  252
+                                }
                  },
                  {
                      "slug":  "turtle",
@@ -266,15 +336,21 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
+                     "notes":  "Still one of the most useful stepping-stone pets for real trades.",
                      "values":  {
-                                    "default":  23.25,
-                                    "noPotion":  24.5,
-                                    "neon":  63,
-                                    "neonNoPotion":  78,
-                                    "mega":  194,
-                                    "megaNoPotion":  240
-                                },
-                     "notes":  "Still one of the most useful stepping-stone pets for real trades."
+                                    "default":  25,
+                                    "fly":  23.75,
+                                    "ride":  23.5,
+                                    "noPotion":  22.5,
+                                    "neon":  51.5,
+                                    "neonFly":  50.5,
+                                    "neonRide":  50.5,
+                                    "neonNoPotion":  50.5,
+                                    "mega":  131,
+                                    "megaFly":  129.75,
+                                    "megaRide":  129,
+                                    "megaNoPotion":  204
+                                }
                  },
                  {
                      "slug":  "chocolate-chip-bat-dragon",
@@ -284,15 +360,21 @@
                      "demand":  "Medium",
                      "trend":  "Falling",
                      "confidence":  "Medium",
+                     "notes":  "Popular design, but newer supply keeps it more volatile than old-event benchmarks.",
                      "values":  {
-                                    "default":  21.25,
-                                    "noPotion":  22.5,
-                                    "neon":  58,
-                                    "neonNoPotion":  71,
-                                    "mega":  178,
-                                    "megaNoPotion":  222
-                                },
-                     "notes":  "Popular design, but newer supply keeps it more volatile than old-event benchmarks."
+                                    "default":  24,
+                                    "fly":  23,
+                                    "ride":  23,
+                                    "noPotion":  22,
+                                    "neon":  69,
+                                    "neonFly":  68,
+                                    "neonRide":  68,
+                                    "neonNoPotion":  67,
+                                    "mega":  235,
+                                    "megaFly":  233.75,
+                                    "megaRide":  233,
+                                    "megaNoPotion":  248
+                                }
                  },
                  {
                      "slug":  "kangaroo",
@@ -302,15 +384,21 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "High",
+                     "notes":  "A common add in turtle-tier trades and still a useful benchmark.",
                      "values":  {
-                                    "default":  17,
-                                    "noPotion":  18,
-                                    "neon":  46,
-                                    "neonNoPotion":  56,
-                                    "mega":  142,
-                                    "megaNoPotion":  176
-                                },
-                     "notes":  "A common add in turtle-tier trades and still a useful benchmark."
+                                    "default":  19,
+                                    "fly":  18.25,
+                                    "ride":  18.25,
+                                    "noPotion":  17.5,
+                                    "neon":  39,
+                                    "neonFly":  38,
+                                    "neonRide":  38,
+                                    "neonNoPotion":  38,
+                                    "mega":  104,
+                                    "megaFly":  102.75,
+                                    "megaRide":  102,
+                                    "megaNoPotion":  121.5
+                                }
                  },
                  {
                      "slug":  "unicorn",
@@ -320,15 +408,21 @@
                      "demand":  "Medium",
                      "trend":  "Falling",
                      "confidence":  "Medium",
+                     "notes":  "Tightened on April 19, 2026 after the calculator audit showed the old Patch number lagging live public market trackers too far.",
                      "values":  {
                                     "default":  2.5,
-                                    "noPotion":  2,
-                                    "neon":  11.5,
-                                    "neonNoPotion":  10,
-                                    "mega":  39,
-                                    "megaNoPotion":  37
-                                },
-                     "notes":  "Tightened on April 9, 2026 after the calculator audit showed the old Patch number lagging live public market trackers too far."
+                                    "fly":  2.1,
+                                    "ride":  2.05,
+                                    "noPotion":  1.75,
+                                    "neon":  11,
+                                    "neonFly":  9.75,
+                                    "neonRide":  9.75,
+                                    "neonNoPotion":  8.5,
+                                    "mega":  36,
+                                    "megaFly":  34.75,
+                                    "megaRide":  34,
+                                    "megaNoPotion":  33
+                                }
                  },
                  {
                      "slug":  "dragon",
@@ -338,339 +432,453 @@
                      "demand":  "Low",
                      "trend":  "Falling",
                      "confidence":  "Medium",
+                     "notes":  "Updated on April 19, 2026 so the entry-tier benchmark stays closer to live tracker consensus instead of the older underpriced Patch value.",
                      "values":  {
                                     "default":  1.1,
-                                    "noPotion":  0.4,
-                                    "neon":  4,
-                                    "neonNoPotion":  2,
-                                    "mega":  13,
-                                    "megaNoPotion":  9.5
-                                },
-                     "notes":  "Updated on April 9, 2026 so the entry-tier benchmark stays closer to live tracker consensus instead of the older underpriced Patch value."
+                                    "fly":  0.7,
+                                    "ride":  0.65,
+                                    "noPotion":  0.35,
+                                    "neon":  3.75,
+                                    "neonFly":  2.75,
+                                    "neonRide":  2.75,
+                                    "neonNoPotion":  1.75,
+                                    "mega":  12,
+                                    "megaFly":  10.75,
+                                    "megaRide":  10,
+                                    "megaNoPotion":  8.5
+                                }
                  },
                  {
                      "slug":  "frost-fury-pet",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Frost Fury is still one of the sturdier older event dragons in the mid tier.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Frost Fury is still one of the sturdier older event dragons in the mid tier.",
                      "trend":  "Steady",
                      "name":  "Frost Fury",
-                     "values":  {
-                                    "default":  6.75,
-                                    "neon":  16,
-                                    "megaNoPotion":  60,
-                                    "noPotion":  5.75,
-                                    "neonNoPotion":  14,
-                                    "mega":  57
-                                },
                      "rarity":  "Legendary",
-                     "segment":  "Mid tier"
+                     "segment":  "Mid tier",
+                     "values":  {
+                                    "default":  7,
+                                    "fly":  6.4,
+                                    "ride":  6.4,
+                                    "noPotion":  6,
+                                    "neon":  16.25,
+                                    "neonFly":  15.25,
+                                    "neonRide":  15.25,
+                                    "neonNoPotion":  14.25,
+                                    "mega":  56,
+                                    "megaFly":  54.75,
+                                    "megaRide":  54,
+                                    "megaNoPotion":  59
+                                }
                  },
                  {
                      "slug":  "candicorn",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Candicorn is much stronger than older stale lists suggest and deserves a real mid-tier lane.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Candicorn is much stronger than older stale lists suggest and deserves a real mid-tier lane.",
                      "trend":  "Rising",
                      "name":  "Candicorn",
-                     "values":  {
-                                    "default":  8.75,
-                                    "neon":  37,
-                                    "megaNoPotion":  149,
-                                    "noPotion":  8,
-                                    "neonNoPotion":  34,
-                                    "mega":  153
-                                },
                      "rarity":  "Legendary",
-                     "segment":  "Mid tier"
+                     "segment":  "Mid tier",
+                     "values":  {
+                                    "default":  7.75,
+                                    "fly":  7.35,
+                                    "ride":  7.3,
+                                    "noPotion":  7,
+                                    "neon":  32,
+                                    "neonFly":  31,
+                                    "neonRide":  31,
+                                    "neonNoPotion":  30,
+                                    "mega":  135,
+                                    "megaFly":  133.75,
+                                    "megaRide":  133,
+                                    "megaNoPotion":  132
+                                }
                  },
                  {
                      "slug":  "arctic-fox",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Arctic Fox keeps outperforming basic rarity-first expectations because old supply and collector demand still matter.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Arctic Fox keeps outperforming basic rarity-first expectations because old supply and collector demand still matter.",
                      "trend":  "Rising",
                      "name":  "Arctic Fox",
-                     "values":  {
-                                    "default":  7.25,
-                                    "neon":  23,
-                                    "megaNoPotion":  91,
-                                    "noPotion":  5.75,
-                                    "neonNoPotion":  21.5,
-                                    "mega":  95
-                                },
                      "rarity":  "Ultra-Rare",
-                     "segment":  "Mid tier"
+                     "segment":  "Mid tier",
+                     "values":  {
+                                    "default":  7.5,
+                                    "fly":  6.25,
+                                    "ride":  6.25,
+                                    "noPotion":  6,
+                                    "neon":  23,
+                                    "neonFly":  22,
+                                    "neonRide":  22,
+                                    "neonNoPotion":  22,
+                                    "mega":  88,
+                                    "megaFly":  86.75,
+                                    "megaRide":  86,
+                                    "megaNoPotion":  91
+                                }
                  },
                  {
                      "slug":  "lavender-dragon",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Lavender Dragon stays relevant because it is recognizable, limited, and easier to move than many low-end legends.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Lavender Dragon stays relevant because it is recognizable, limited, and easier to move than many low-end legends.",
                      "trend":  "Steady",
                      "name":  "Lavender Dragon",
+                     "rarity":  "Legendary",
+                     "segment":  "Lower mid tier",
                      "values":  {
                                     "default":  2.75,
-                                    "neon":  11,
-                                    "megaNoPotion":  49,
+                                    "fly":  2.35,
+                                    "ride":  2.3,
                                     "noPotion":  2,
+                                    "neon":  12,
+                                    "neonFly":  11,
+                                    "neonRide":  11,
                                     "neonNoPotion":  10,
-                                    "mega":  51
-                                },
-                     "rarity":  "Legendary",
-                     "segment":  "Lower mid tier"
+                                    "mega":  51,
+                                    "megaFly":  49.75,
+                                    "megaRide":  49,
+                                    "megaNoPotion":  48
+                                }
                  },
                  {
                      "slug":  "queen-bee",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Queen Bee still carries more weight than basic permanent-pool legends, but it is not as liquid as the stronger collector lanes.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Queen Bee still carries more weight than basic permanent-pool legends, but it is not as liquid as the stronger collector lanes.",
                      "trend":  "Steady",
                      "name":  "Queen Bee",
+                     "rarity":  "Legendary",
+                     "segment":  "Lower mid tier",
                      "values":  {
                                     "default":  2.4,
-                                    "neon":  10.5,
-                                    "megaNoPotion":  48,
+                                    "fly":  2,
+                                    "ride":  1.95,
                                     "noPotion":  1.65,
-                                    "neonNoPotion":  9.5,
-                                    "mega":  50
-                                },
-                     "rarity":  "Legendary",
-                     "segment":  "Lower mid tier"
+                                    "neon":  11,
+                                    "neonFly":  10,
+                                    "neonRide":  10,
+                                    "neonNoPotion":  9,
+                                    "mega":  47,
+                                    "megaFly":  45.75,
+                                    "megaRide":  45,
+                                    "megaNoPotion":  44
+                                }
                  },
                  {
                      "slug":  "phoenix-pet",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Phoenix remains one of the better mythic-era legends, especially for players building through practical mid-tier adds.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Phoenix remains one of the better mythic-era legends, especially for players building through practical mid-tier adds.",
                      "trend":  "Steady",
                      "name":  "Phoenix",
+                     "rarity":  "Legendary",
+                     "segment":  "Lower mid tier",
                      "values":  {
                                     "default":  1.9,
-                                    "neon":  8,
-                                    "megaNoPotion":  32,
+                                    "fly":  1.5,
+                                    "ride":  1.45,
                                     "noPotion":  1.15,
-                                    "neonNoPotion":  6.75,
-                                    "mega":  34
-                                },
-                     "rarity":  "Legendary",
-                     "segment":  "Lower mid tier"
+                                    "neon":  8.5,
+                                    "neonFly":  7.5,
+                                    "neonRide":  7.5,
+                                    "neonNoPotion":  6.5,
+                                    "mega":  34,
+                                    "megaFly":  32.75,
+                                    "megaRide":  32,
+                                    "megaNoPotion":  31
+                                }
                  },
                  {
                      "slug":  "dodo",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Dodo is still a familiar fossil-era ladder pet, but demand is steadier than explosive.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Dodo is still a familiar fossil-era ladder pet, but demand is steadier than explosive.",
                      "trend":  "Steady",
                      "name":  "Dodo",
+                     "rarity":  "Legendary",
+                     "segment":  "Lower mid tier",
                      "values":  {
                                     "default":  1.75,
-                                    "neon":  6.75,
-                                    "megaNoPotion":  30,
+                                    "fly":  1.35,
+                                    "ride":  1.3,
                                     "noPotion":  1,
+                                    "neon":  7.75,
+                                    "neonFly":  6.75,
+                                    "neonRide":  6.75,
                                     "neonNoPotion":  5.75,
-                                    "mega":  32
-                                },
-                     "rarity":  "Legendary",
-                     "segment":  "Lower mid tier"
+                                    "mega":  32,
+                                    "megaFly":  30.75,
+                                    "megaRide":  30,
+                                    "megaNoPotion":  29
+                                }
                  },
                  {
                      "slug":  "shark",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Shark remains a practical compare point for other lower mid legends that players still trade often.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Shark remains a practical compare point for other lower mid legends that players still trade often.",
                      "trend":  "Steady",
                      "name":  "Shark",
+                     "rarity":  "Legendary",
+                     "segment":  "Lower mid tier",
                      "values":  {
                                     "default":  1.75,
-                                    "neon":  6.75,
-                                    "megaNoPotion":  31,
+                                    "fly":  1.35,
+                                    "ride":  1.3,
                                     "noPotion":  1,
+                                    "neon":  7.75,
+                                    "neonFly":  6.75,
+                                    "neonRide":  6.75,
                                     "neonNoPotion":  5.75,
-                                    "mega":  33
-                                },
-                     "rarity":  "Legendary",
-                     "segment":  "Lower mid tier"
+                                    "mega":  33,
+                                    "megaFly":  31.75,
+                                    "megaRide":  31,
+                                    "megaNoPotion":  30
+                                }
                  },
                  {
                      "slug":  "octopus",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Octopus is close to Shark in practice, which makes it useful for side-by-side value checks.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Octopus is close to Shark in practice, which makes it useful for side-by-side value checks.",
                      "trend":  "Steady",
                      "name":  "Octopus",
+                     "rarity":  "Legendary",
+                     "segment":  "Lower mid tier",
                      "values":  {
                                     "default":  1.65,
-                                    "neon":  6,
-                                    "megaNoPotion":  28,
+                                    "fly":  1.25,
+                                    "ride":  1.2,
                                     "noPotion":  0.9,
+                                    "neon":  7.25,
+                                    "neonFly":  6.25,
+                                    "neonRide":  6.25,
                                     "neonNoPotion":  5.25,
-                                    "mega":  30
-                                },
-                     "rarity":  "Legendary",
-                     "segment":  "Lower mid tier"
+                                    "mega":  30,
+                                    "megaFly":  28.75,
+                                    "megaRide":  28,
+                                    "megaNoPotion":  27
+                                }
                  },
                  {
                      "slug":  "cerberus",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Cerberus still has name recognition, but its real market lane is much lower than myth-based value lists imply.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Cerberus still has name recognition, but its real market lane is much lower than myth-based value lists imply.",
                      "trend":  "Steady",
                      "name":  "Cerberus",
+                     "rarity":  "Legendary",
+                     "segment":  "Lower mid tier",
                      "values":  {
                                     "default":  1.65,
-                                    "neon":  6,
-                                    "megaNoPotion":  29,
+                                    "fly":  1.25,
+                                    "ride":  1.2,
                                     "noPotion":  0.9,
+                                    "neon":  7.25,
+                                    "neonFly":  6.25,
+                                    "neonRide":  6.25,
                                     "neonNoPotion":  5.25,
-                                    "mega":  31
-                                },
-                     "rarity":  "Legendary",
-                     "segment":  "Lower mid tier"
+                                    "mega":  31,
+                                    "megaFly":  29.75,
+                                    "megaRide":  29,
+                                    "megaNoPotion":  28
+                                }
                  },
                  {
                      "slug":  "king-bee",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. King Bee is a familiar lower-mid legend that works well as a comparison point for other permanent-pool pets.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. King Bee is a familiar lower-mid legend that works well as a comparison point for other permanent-pool pets.",
                      "trend":  "Steady",
                      "name":  "King Bee",
+                     "rarity":  "Legendary",
+                     "segment":  "Lower mid tier",
                      "values":  {
                                     "default":  1.5,
-                                    "neon":  5,
-                                    "megaNoPotion":  22,
+                                    "fly":  1.1,
+                                    "ride":  1.05,
                                     "noPotion":  0.75,
-                                    "neonNoPotion":  4.25,
-                                    "mega":  24
-                                },
-                     "rarity":  "Legendary",
-                     "segment":  "Lower mid tier"
+                                    "neon":  6,
+                                    "neonFly":  5,
+                                    "neonRide":  5,
+                                    "neonNoPotion":  4,
+                                    "mega":  24,
+                                    "megaFly":  22.75,
+                                    "megaRide":  22,
+                                    "megaNoPotion":  21
+                                }
                  },
                  {
                      "slug":  "capybara",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Capybara keeps overperforming its rarity because players love it and old supply is limited.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Capybara keeps overperforming its rarity because players love it and old supply is limited.",
                      "trend":  "Rising",
                      "name":  "Capybara",
+                     "rarity":  "Uncommon",
+                     "segment":  "Lower mid tier",
                      "values":  {
                                     "default":  1.95,
-                                    "neon":  7,
-                                    "megaNoPotion":  31,
+                                    "fly":  1.6,
+                                    "ride":  1.6,
                                     "noPotion":  1.35,
+                                    "neon":  7.25,
+                                    "neonFly":  7,
+                                    "neonRide":  7,
                                     "neonNoPotion":  6.25,
-                                    "mega":  33
-                                },
-                     "rarity":  "Uncommon",
-                     "segment":  "Lower mid tier"
+                                    "mega":  33,
+                                    "megaFly":  32,
+                                    "megaRide":  32,
+                                    "megaNoPotion":  31
+                                }
                  },
                  {
                      "slug":  "chicken",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Chicken is one of the clearest examples of a low-rarity pet staying relevant because demand is real.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Chicken is one of the clearest examples of a low-rarity pet staying relevant because demand is real.",
                      "trend":  "Rising",
                      "name":  "Chicken",
+                     "rarity":  "Common",
+                     "segment":  "Lower mid tier",
                      "values":  {
                                     "default":  1.75,
-                                    "neon":  7.5,
-                                    "megaNoPotion":  32.5,
+                                    "fly":  1.5,
+                                    "ride":  1.5,
                                     "noPotion":  1.25,
-                                    "neonNoPotion":  6.75,
-                                    "mega":  34
-                                },
-                     "rarity":  "Common",
-                     "segment":  "Lower mid tier"
+                                    "neon":  7.5,
+                                    "neonFly":  7.25,
+                                    "neonRide":  7.25,
+                                    "neonNoPotion":  7,
+                                    "mega":  33,
+                                    "megaFly":  32.75,
+                                    "megaRide":  32.75,
+                                    "megaNoPotion":  32.5
+                                }
                  },
                  {
                      "slug":  "kitsune",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Kitsune is still widely recognized, but its value lane is more modest than many casual traders expect.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Kitsune is still widely recognized, but its value lane is more modest than many casual traders expect.",
                      "trend":  "Steady",
                      "name":  "Kitsune",
+                     "rarity":  "Legendary",
+                     "segment":  "Entry tier",
                      "values":  {
                                     "default":  1.3,
-                                    "neon":  3.5,
-                                    "megaNoPotion":  15,
+                                    "fly":  0.9,
+                                    "ride":  0.85,
                                     "noPotion":  0.55,
+                                    "neon":  5,
+                                    "neonFly":  4,
+                                    "neonRide":  4,
                                     "neonNoPotion":  3,
-                                    "mega":  16
-                                },
-                     "rarity":  "Legendary",
-                     "segment":  "Entry tier"
+                                    "mega":  18,
+                                    "megaFly":  16.75,
+                                    "megaRide":  16,
+                                    "megaNoPotion":  15
+                                }
                  },
                  {
                      "slug":  "alicorn",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Alicorn sits in the practical low-legend range and works best as a compare point, not a premium hold.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Alicorn sits in the practical low-legend range and works best as a compare point, not a premium hold.",
                      "trend":  "Steady",
                      "name":  "Alicorn",
-                     "values":  {
-                                    "default":  1.2,
-                                    "neon":  3,
-                                    "megaNoPotion":  11.5,
-                                    "noPotion":  0.45,
-                                    "neonNoPotion":  2.5,
-                                    "mega":  12.5
-                                },
                      "rarity":  "Legendary",
-                     "segment":  "Entry tier"
+                     "segment":  "Entry tier",
+                     "values":  {
+                                    "default":  1.15,
+                                    "fly":  0.75,
+                                    "ride":  0.7,
+                                    "noPotion":  0.4,
+                                    "neon":  4,
+                                    "neonFly":  3,
+                                    "neonRide":  3,
+                                    "neonNoPotion":  2,
+                                    "mega":  13,
+                                    "megaFly":  11.75,
+                                    "megaRide":  11,
+                                    "megaNoPotion":  9.5
+                                }
                  },
                  {
                      "slug":  "griffin",
                      "demand":  "Low",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Griffin is still highly recognizable, but demand is soft and the trade lane is weaker than nostalgia suggests.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Griffin is still highly recognizable, but demand is soft and the trade lane is weaker than nostalgia suggests.",
                      "trend":  "Falling",
                      "name":  "Griffin",
+                     "rarity":  "Legendary",
+                     "segment":  "Entry tier",
                      "values":  {
                                     "default":  1.2,
-                                    "neon":  3,
-                                    "megaNoPotion":  12,
+                                    "fly":  0.8,
+                                    "ride":  0.75,
                                     "noPotion":  0.45,
+                                    "neon":  4.5,
+                                    "neonFly":  3.5,
+                                    "neonRide":  3.5,
                                     "neonNoPotion":  2.5,
-                                    "mega":  13
-                                },
-                     "rarity":  "Legendary",
-                     "segment":  "Entry tier"
+                                    "mega":  15,
+                                    "megaFly":  13.75,
+                                    "megaRide":  13,
+                                    "megaNoPotion":  12
+                                }
                  },
                  {
                      "slug":  "horse",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Horse is a useful low-tier compare page because it is familiar and shows how much potion lanes can matter at the bottom of the board.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Horse is a useful low-tier compare page because it is familiar and shows how much potion lanes can matter at the bottom of the board.",
                      "trend":  "Steady",
                      "name":  "Horse",
+                     "rarity":  "Ultra-Rare",
+                     "segment":  "Entry tier",
                      "values":  {
                                     "default":  0.98,
-                                    "neon":  3,
-                                    "megaNoPotion":  14,
+                                    "fly":  0.68,
+                                    "ride":  0.68,
                                     "noPotion":  0.38,
+                                    "neon":  3.75,
+                                    "neonFly":  3,
+                                    "neonRide":  3,
                                     "neonNoPotion":  2.5,
-                                    "mega":  15
-                                },
-                     "rarity":  "Ultra-Rare",
-                     "segment":  "Entry tier"
+                                    "mega":  17,
+                                    "megaFly":  15.75,
+                                    "megaRide":  15,
+                                    "megaNoPotion":  14
+                                }
                  },
                  {
                      "slug":  "koala",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Tracker-reviewed on April 9, 2026. Koala remains one of the better-known aussie-era adds, but it stays in the lower-value lane.",
+                     "notes":  "Tracker-reviewed on April 19, 2026. Koala remains one of the better-known aussie-era adds, but it stays in the lower-value lane.",
                      "trend":  "Steady",
                      "name":  "Koala",
-                     "values":  {
-                                    "default":  0.92,
-                                    "neon":  2.25,
-                                    "megaNoPotion":  11,
-                                    "noPotion":  0.32,
-                                    "neonNoPotion":  1.75,
-                                    "mega":  12
-                                },
                      "rarity":  "Ultra-Rare",
-                     "segment":  "Entry tier"
+                     "segment":  "Entry tier",
+                     "values":  {
+                                    "default":  0.9,
+                                    "fly":  0.6,
+                                    "ride":  0.6,
+                                    "noPotion":  0.3,
+                                    "neon":  3,
+                                    "neonFly":  2.25,
+                                    "neonRide":  2.25,
+                                    "neonNoPotion":  1.75,
+                                    "mega":  14,
+                                    "megaFly":  12.75,
+                                    "megaRide":  12,
+                                    "megaNoPotion":  11
+                                }
                  },
                  {
                      "slug":  "mini-pig",
@@ -682,12 +890,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Mini Pig has become one of the stronger modern collector pets and regularly beats older expectation-based lists.",
                      "values":  {
-                                    "default":  24.25,
-                                    "noPotion":  23,
-                                    "neon":  84,
-                                    "neonNoPotion":  82,
-                                    "mega":  347,
-                                    "megaNoPotion":  350
+                                    "default":  25,
+                                    "fly":  24.25,
+                                    "ride":  24.25,
+                                    "noPotion":  23.75,
+                                    "neon":  90,
+                                    "neonFly":  89,
+                                    "neonRide":  89,
+                                    "neonNoPotion":  88,
+                                    "mega":  365,
+                                    "megaFly":  363.75,
+                                    "megaRide":  363,
+                                    "megaNoPotion":  368
                                 }
                  },
                  {
@@ -700,12 +914,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Monkey King still carries strong collector demand and clean prestige compared with many older event legends.",
                      "values":  {
-                                    "default":  21.25,
-                                    "noPotion":  20.75,
+                                    "default":  21.5,
+                                    "fly":  20.5,
+                                    "ride":  20.5,
+                                    "noPotion":  21,
                                     "neon":  69,
-                                    "neonNoPotion":  85.5,
+                                    "neonFly":  69,
+                                    "neonRide":  69,
+                                    "neonNoPotion":  86,
                                     "mega":  266,
-                                    "megaNoPotion":  363.38
+                                    "megaFly":  276,
+                                    "megaRide":  276,
+                                    "megaNoPotion":  365.5
                                 }
                  },
                  {
@@ -719,10 +939,16 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Flamingo remains one of the strongest older ultra-rares because collector demand is deep and easy to understand.",
                      "values":  {
                                     "default":  20,
+                                    "fly":  19,
+                                    "ride":  19,
                                     "noPotion":  19,
                                     "neon":  76,
+                                    "neonFly":  75,
+                                    "neonRide":  75,
                                     "neonNoPotion":  75,
                                     "mega":  304,
+                                    "megaFly":  302.75,
+                                    "megaRide":  302,
                                     "megaNoPotion":  329
                                 }
                  },
@@ -736,11 +962,17 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Elephant keeps outperforming its rarity tag because old supply and player preference are both real.",
                      "values":  {
-                                    "default":  17,
-                                    "noPotion":  16.25,
-                                    "neon":  52,
-                                    "neonNoPotion":  51,
+                                    "default":  17.25,
+                                    "fly":  16.5,
+                                    "ride":  16.5,
+                                    "noPotion":  16.5,
+                                    "neon":  53,
+                                    "neonFly":  52,
+                                    "neonRide":  52,
+                                    "neonNoPotion":  52,
                                     "mega":  194,
+                                    "megaFly":  193,
+                                    "megaRide":  193,
                                     "megaNoPotion":  204
                                 }
                  },
@@ -754,12 +986,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Albino Monkey still sits above many practical mid legends because of event identity and steady collector demand.",
                      "values":  {
-                                    "default":  16.5,
-                                    "noPotion":  15.5,
-                                    "neon":  51,
-                                    "neonNoPotion":  57,
+                                    "default":  17,
+                                    "fly":  16,
+                                    "ride":  16,
+                                    "noPotion":  16,
+                                    "neon":  51.5,
+                                    "neonFly":  51.5,
+                                    "neonRide":  51.5,
+                                    "neonNoPotion":  59.5,
                                     "mega":  190,
-                                    "megaNoPotion":  270
+                                    "megaFly":  191,
+                                    "megaRide":  191,
+                                    "megaNoPotion":  252.88
                                 }
                  },
                  {
@@ -772,11 +1010,17 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Crocodile stays strong because it is both old and immediately recognizable in trading.",
                      "values":  {
-                                    "default":  14,
-                                    "noPotion":  13,
+                                    "default":  14.25,
+                                    "fly":  13.25,
+                                    "ride":  13.25,
+                                    "noPotion":  13.25,
                                     "neon":  43,
+                                    "neonFly":  42,
+                                    "neonRide":  42,
                                     "neonNoPotion":  42,
                                     "mega":  172,
+                                    "megaFly":  170.75,
+                                    "megaRide":  170,
                                     "megaNoPotion":  187
                                 }
                  },
@@ -790,12 +1034,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Lion holds a cleaner lane than many older non-dragon collector pets thanks to strong identity and decent liquidity.",
                      "values":  {
-                                    "default":  13,
-                                    "noPotion":  12,
+                                    "default":  14,
+                                    "fly":  13,
+                                    "ride":  13,
+                                    "noPotion":  13,
                                     "neon":  43,
+                                    "neonFly":  42,
+                                    "neonRide":  42,
                                     "neonNoPotion":  42,
-                                    "mega":  171,
-                                    "megaNoPotion":  186
+                                    "mega":  172,
+                                    "megaFly":  170.75,
+                                    "megaRide":  170,
+                                    "megaNoPotion":  187
                                 }
                  },
                  {
@@ -809,10 +1059,16 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Blue Dog is still one of the clearest examples of rarity mattering less than age, demand, and collector prestige.",
                      "values":  {
                                     "default":  12.5,
+                                    "fly":  12,
+                                    "ride":  12,
                                     "noPotion":  12,
                                     "neon":  43,
+                                    "neonFly":  42.5,
+                                    "neonRide":  42.5,
                                     "neonNoPotion":  46,
                                     "mega":  162,
+                                    "megaFly":  161,
+                                    "megaRide":  161,
                                     "megaNoPotion":  178
                                 }
                  },
@@ -826,12 +1082,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Pig keeps climbing out of the casual-trader blind spot because nostalgia demand is real.",
                      "values":  {
-                                    "default":  7.5,
-                                    "noPotion":  6.5,
-                                    "neon":  21,
-                                    "neonNoPotion":  20,
-                                    "mega":  80,
-                                    "megaNoPotion":  83
+                                    "default":  7.75,
+                                    "fly":  6.75,
+                                    "ride":  6.75,
+                                    "noPotion":  6.75,
+                                    "neon":  22,
+                                    "neonFly":  21,
+                                    "neonRide":  21,
+                                    "neonNoPotion":  21,
+                                    "mega":  82,
+                                    "megaFly":  81,
+                                    "megaRide":  81,
+                                    "megaNoPotion":  85
                                 }
                  },
                  {
@@ -844,11 +1106,17 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Pink Cat still gets collector attention because of age and its place in early Adopt Me history.",
                      "values":  {
-                                    "default":  6.5,
-                                    "noPotion":  6,
-                                    "neon":  22.5,
-                                    "neonNoPotion":  22.5,
+                                    "default":  6.75,
+                                    "fly":  6.5,
+                                    "ride":  6.5,
+                                    "noPotion":  6.25,
+                                    "neon":  23,
+                                    "neonFly":  22.5,
+                                    "neonRide":  22.5,
+                                    "neonNoPotion":  23,
                                     "mega":  90,
+                                    "megaFly":  89,
+                                    "megaRide":  89,
                                     "megaNoPotion":  95
                                 }
                  },
@@ -863,10 +1131,16 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Hyena benefits from old supply and a quirky identity that players genuinely remember.",
                      "values":  {
                                     "default":  5,
+                                    "fly":  4.5,
+                                    "ride":  4.5,
                                     "noPotion":  4.25,
                                     "neon":  20,
+                                    "neonFly":  19,
+                                    "neonRide":  19,
                                     "neonNoPotion":  18.5,
                                     "mega":  85,
+                                    "megaFly":  84,
+                                    "megaRide":  84,
                                     "megaNoPotion":  90
                                 }
                  },
@@ -881,10 +1155,16 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Brown Bear is a stable collector rare that works well as a middle-of-the-board compare point.",
                      "values":  {
                                     "default":  4.85,
+                                    "fly":  4.5,
+                                    "ride":  4.5,
                                     "noPotion":  4.25,
                                     "neon":  18.5,
+                                    "neonFly":  17.75,
+                                    "neonRide":  17.75,
                                     "neonNoPotion":  17.5,
                                     "mega":  77,
+                                    "megaFly":  76,
+                                    "megaRide":  76,
                                     "megaNoPotion":  80
                                 }
                  },
@@ -899,10 +1179,16 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Polar Bear stays tradable because winter collector pets are easy for players to remember and compare.",
                      "values":  {
                                     "default":  4.85,
+                                    "fly":  4.5,
+                                    "ride":  4.5,
                                     "noPotion":  4.25,
                                     "neon":  18,
+                                    "neonFly":  17.25,
+                                    "neonRide":  17.25,
                                     "neonNoPotion":  17,
                                     "mega":  75,
+                                    "megaFly":  74,
+                                    "megaRide":  74,
                                     "megaNoPotion":  78
                                 }
                  },
@@ -917,10 +1203,16 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Platypus keeps outperforming simpler rarity logic because players actually like it and supply is old.",
                      "values":  {
                                     "default":  4.75,
+                                    "fly":  4,
+                                    "ride":  4,
                                     "noPotion":  4,
                                     "neon":  20,
+                                    "neonFly":  19,
+                                    "neonRide":  19,
                                     "neonNoPotion":  19,
                                     "mega":  84,
+                                    "megaFly":  82.75,
+                                    "megaRide":  82,
                                     "megaNoPotion":  92
                                 }
                  },
@@ -935,11 +1227,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Golden Penguin is still a recognizable premium-era legend, but the real trade lane is more grounded than hype-era lists suggest.",
                      "values":  {
                                     "default":  2.75,
+                                    "fly":  2.35,
+                                    "ride":  2.3,
                                     "noPotion":  2,
-                                    "neon":  12.5,
-                                    "neonNoPotion":  10.5,
-                                    "mega":  54,
-                                    "megaNoPotion":  51
+                                    "neon":  12,
+                                    "neonFly":  11,
+                                    "neonRide":  11,
+                                    "neonNoPotion":  10,
+                                    "mega":  51,
+                                    "megaFly":  49.75,
+                                    "megaRide":  49,
+                                    "megaNoPotion":  48
                                 }
                  },
                  {
@@ -953,11 +1251,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Rhino is a good old-school compare point for smaller adds and low-end collector packages.",
                      "values":  {
                                     "default":  2.1,
+                                    "fly":  1.75,
+                                    "ride":  1.75,
                                     "noPotion":  1.5,
-                                    "neon":  7,
-                                    "neonNoPotion":  6,
-                                    "mega":  35,
-                                    "megaNoPotion":  34
+                                    "neon":  7.25,
+                                    "neonFly":  6.5,
+                                    "neonRide":  6.5,
+                                    "neonNoPotion":  6.25,
+                                    "mega":  33,
+                                    "megaFly":  32,
+                                    "megaRide":  32,
+                                    "megaNoPotion":  32
                                 }
                  },
                  {
@@ -971,11 +1275,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Skele-Rex still gets attention because players remember it, but the market lane is much calmer than peak event hype.",
                      "values":  {
                                     "default":  2,
+                                    "fly":  1.6,
+                                    "ride":  1.55,
                                     "noPotion":  1.25,
                                     "neon":  9.25,
+                                    "neonFly":  8.25,
+                                    "neonRide":  8.25,
                                     "neonNoPotion":  7.25,
-                                    "mega":  40,
-                                    "megaNoPotion":  37
+                                    "mega":  39,
+                                    "megaFly":  37.75,
+                                    "megaRide":  37,
+                                    "megaNoPotion":  36
                                 }
                  },
                  {
@@ -988,11 +1298,17 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Black Panther is a nice example of a low-rarity collector pet staying useful because the demand story is clear.",
                      "values":  {
-                                    "default":  1.95,
-                                    "noPotion":  1.35,
+                                    "default":  1.85,
+                                    "fly":  1.5,
+                                    "ride":  1.5,
+                                    "noPotion":  1.25,
                                     "neon":  6.75,
+                                    "neonFly":  6.25,
+                                    "neonRide":  6.25,
                                     "neonNoPotion":  5.75,
                                     "mega":  31,
+                                    "megaFly":  30,
+                                    "megaRide":  30,
                                     "megaNoPotion":  29
                                 }
                  },
@@ -1007,11 +1323,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. T-Rex remains a familiar fossil-era legend and a practical page for lower-mid bundle math.",
                      "values":  {
                                     "default":  1.75,
+                                    "fly":  1.35,
+                                    "ride":  1.3,
                                     "noPotion":  1,
                                     "neon":  7.5,
+                                    "neonFly":  6.5,
+                                    "neonRide":  6.5,
                                     "neonNoPotion":  5.5,
-                                    "mega":  31,
-                                    "megaNoPotion":  28
+                                    "mega":  30,
+                                    "megaFly":  28.75,
+                                    "megaRide":  28,
+                                    "megaNoPotion":  27
                                 }
                  },
                  {
@@ -1025,11 +1347,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Snow Owl is still common in trading, but the lane is softer than many winter nostalgia lists imply.",
                      "values":  {
                                     "default":  1.5,
+                                    "fly":  1.1,
+                                    "ride":  1.05,
                                     "noPotion":  0.75,
                                     "neon":  6,
+                                    "neonFly":  5,
+                                    "neonRide":  5,
                                     "neonNoPotion":  4,
-                                    "mega":  23,
-                                    "megaNoPotion":  20
+                                    "mega":  24,
+                                    "megaFly":  22.75,
+                                    "megaRide":  22,
+                                    "megaNoPotion":  21
                                 }
                  },
                  {
@@ -1042,12 +1370,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. African Wild Dog has become one of the strongest modern collector ultra-rares and still commands real attention.",
                      "values":  {
-                                    "default":  122,
-                                    "noPotion":  120,
-                                    "neon":  372,
-                                    "neonNoPotion":  387,
-                                    "mega":  1172,
-                                    "megaNoPotion":  1232
+                                    "default":  135,
+                                    "fly":  133.75,
+                                    "ride":  133,
+                                    "noPotion":  133,
+                                    "neon":  402,
+                                    "neonFly":  401,
+                                    "neonRide":  401,
+                                    "neonNoPotion":  417,
+                                    "mega":  1208,
+                                    "megaFly":  1206.75,
+                                    "megaRide":  1206,
+                                    "megaNoPotion":  1268
                                 }
                  },
                  {
@@ -1060,12 +1394,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Balloon Unicorn is trading like a premium modern legend and deserves a high-signal landing page.",
                      "values":  {
-                                    "default":  106,
-                                    "noPotion":  104,
-                                    "neon":  348,
-                                    "neonNoPotion":  353,
-                                    "mega":  1275,
-                                    "megaNoPotion":  1376
+                                    "default":  116,
+                                    "fly":  114.75,
+                                    "ride":  114,
+                                    "noPotion":  114,
+                                    "neon":  370,
+                                    "neonFly":  369,
+                                    "neonRide":  369,
+                                    "neonNoPotion":  375,
+                                    "mega":  1303,
+                                    "megaFly":  1301.75,
+                                    "megaRide":  1301,
+                                    "megaNoPotion":  1417
                                 }
                  },
                  {
@@ -1078,12 +1418,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Giant Panda has held a strikingly strong lane for a modern release and is worth tracking directly.",
                      "values":  {
-                                    "default":  94,
-                                    "noPotion":  92,
-                                    "neon":  320,
-                                    "neonNoPotion":  318,
-                                    "mega":  1180,
-                                    "megaNoPotion":  1178
+                                    "default":  98,
+                                    "fly":  96.75,
+                                    "ride":  96,
+                                    "noPotion":  96,
+                                    "neon":  324,
+                                    "neonFly":  323,
+                                    "neonRide":  323,
+                                    "neonNoPotion":  322,
+                                    "mega":  1213,
+                                    "megaFly":  1211.75,
+                                    "megaRide":  1211,
+                                    "megaNoPotion":  1218
                                 }
                  },
                  {
@@ -1096,12 +1442,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Orchid Butterfly remains one of the most valuable butterfly pets and still has strong collector demand.",
                      "values":  {
-                                    "default":  55,
-                                    "noPotion":  53,
-                                    "neon":  228,
-                                    "neonNoPotion":  226,
-                                    "mega":  920,
-                                    "megaNoPotion":  925
+                                    "default":  57,
+                                    "fly":  55.75,
+                                    "ride":  55,
+                                    "noPotion":  55,
+                                    "neon":  234,
+                                    "neonFly":  233,
+                                    "neonRide":  233,
+                                    "neonNoPotion":  232,
+                                    "mega":  930,
+                                    "megaFly":  928.75,
+                                    "megaRide":  928,
+                                    "megaNoPotion":  935
                                 }
                  },
                  {
@@ -1115,11 +1467,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Diamond Butterfly still trades like a premium collector legend even after the initial spotlight faded.",
                      "values":  {
                                     "default":  51,
-                                    "noPotion":  51,
+                                    "fly":  50,
+                                    "ride":  50,
+                                    "noPotion":  50,
                                     "neon":  168,
+                                    "neonFly":  167,
+                                    "neonRide":  167,
                                     "neonNoPotion":  166,
-                                    "mega":  615,
-                                    "megaNoPotion":  666
+                                    "mega":  610,
+                                    "megaFly":  608.75,
+                                    "megaRide":  608,
+                                    "megaNoPotion":  660
                                 }
                  },
                  {
@@ -1132,12 +1490,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Pelican is a modern collector ultra-rare with stronger real demand than many casual lists assume.",
                      "values":  {
-                                    "default":  27.25,
-                                    "noPotion":  26,
-                                    "neon":  112,
-                                    "neonNoPotion":  117,
-                                    "mega":  470,
-                                    "megaNoPotion":  490
+                                    "default":  28.25,
+                                    "fly":  27.5,
+                                    "ride":  27.5,
+                                    "noPotion":  27,
+                                    "neon":  116,
+                                    "neonFly":  115,
+                                    "neonRide":  115,
+                                    "neonNoPotion":  121,
+                                    "mega":  486,
+                                    "megaFly":  484.75,
+                                    "megaRide":  484,
+                                    "megaNoPotion":  506
                                 }
                  },
                  {
@@ -1150,12 +1514,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Strawberry Shortcake Bat Dragon still has strong name recognition and a healthy collector lane.",
                      "values":  {
-                                    "default":  25.5,
-                                    "noPotion":  23.5,
-                                    "neon":  70,
-                                    "neonNoPotion":  68,
+                                    "default":  26.75,
+                                    "fly":  25.75,
+                                    "ride":  25.75,
+                                    "noPotion":  24.75,
+                                    "neon":  71,
+                                    "neonFly":  70,
+                                    "neonRide":  70,
+                                    "neonNoPotion":  69,
                                     "mega":  240,
-                                    "megaNoPotion":  257
+                                    "megaFly":  238.75,
+                                    "megaRide":  238,
+                                    "megaNoPotion":  253
                                 }
                  },
                  {
@@ -1168,12 +1538,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Peppermint Penguin has held onto a strong winter collector lane and keeps showing up in real offers.",
                      "values":  {
-                                    "default":  23,
-                                    "noPotion":  21.75,
-                                    "neon":  76,
-                                    "neonNoPotion":  74,
-                                    "mega":  276,
-                                    "megaNoPotion":  282
+                                    "default":  22.5,
+                                    "fly":  21.5,
+                                    "ride":  21.5,
+                                    "noPotion":  21,
+                                    "neon":  77,
+                                    "neonFly":  76,
+                                    "neonRide":  76,
+                                    "neonNoPotion":  75,
+                                    "mega":  280,
+                                    "megaFly":  278.75,
+                                    "megaRide":  278,
+                                    "megaNoPotion":  286
                                 }
                  },
                  {
@@ -1186,12 +1562,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Hot Doggo remains one of the more valuable modern joke-design pets because demand is very real.",
                      "values":  {
-                                    "default":  22.75,
-                                    "noPotion":  21.5,
-                                    "neon":  93,
-                                    "neonNoPotion":  91,
-                                    "mega":  387,
-                                    "megaNoPotion":  392
+                                    "default":  25.25,
+                                    "fly":  24.5,
+                                    "ride":  24.5,
+                                    "noPotion":  24,
+                                    "neon":  101,
+                                    "neonFly":  100,
+                                    "neonRide":  100,
+                                    "neonNoPotion":  99,
+                                    "mega":  410,
+                                    "megaFly":  408.75,
+                                    "megaRide":  408,
+                                    "megaNoPotion":  415
                                 }
                  },
                  {
@@ -1204,12 +1586,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Goose has become a very practical collector rare because players know and actively want it.",
                      "values":  {
-                                    "default":  17,
-                                    "noPotion":  15.75,
-                                    "neon":  60,
-                                    "neonNoPotion":  58.5,
-                                    "mega":  240,
-                                    "megaNoPotion":  238
+                                    "default":  18.5,
+                                    "fly":  17.9,
+                                    "ride":  17.9,
+                                    "noPotion":  17.5,
+                                    "neon":  63,
+                                    "neonFly":  62.25,
+                                    "neonRide":  62.25,
+                                    "neonNoPotion":  61.5,
+                                    "mega":  256,
+                                    "megaFly":  255,
+                                    "megaRide":  255,
+                                    "megaNoPotion":  254
                                 }
                  },
                  {
@@ -1222,12 +1610,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Caterpillar keeps outperforming simple rarity logic because the pet is memorable and demand has held up.",
                      "values":  {
-                                    "default":  16,
-                                    "noPotion":  14.75,
-                                    "neon":  62,
-                                    "neonNoPotion":  60,
-                                    "mega":  259,
-                                    "megaNoPotion":  262
+                                    "default":  17,
+                                    "fly":  16.25,
+                                    "ride":  16.25,
+                                    "noPotion":  15.75,
+                                    "neon":  65,
+                                    "neonFly":  64,
+                                    "neonRide":  64,
+                                    "neonNoPotion":  63,
+                                    "mega":  273,
+                                    "megaFly":  271.75,
+                                    "megaRide":  271,
+                                    "megaNoPotion":  276
                                 }
                  },
                  {
@@ -1240,12 +1634,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Candyfloss Chick is proving much stronger than a typical newer legend and deserves its own search page.",
                      "values":  {
-                                    "default":  15.5,
-                                    "noPotion":  14.25,
-                                    "neon":  59,
-                                    "neonNoPotion":  57,
-                                    "mega":  240,
-                                    "megaNoPotion":  245
+                                    "default":  16.25,
+                                    "fly":  15.65,
+                                    "ride":  15.65,
+                                    "noPotion":  15.25,
+                                    "neon":  63,
+                                    "neonFly":  62,
+                                    "neonRide":  62,
+                                    "neonNoPotion":  61,
+                                    "mega":  258,
+                                    "megaFly":  256.75,
+                                    "megaRide":  256,
+                                    "megaNoPotion":  263
                                 }
                  },
                  {
@@ -1258,12 +1658,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Border Collie is one of the better modern rare pages to watch because player preference is easy to see.",
                      "values":  {
-                                    "default":  12,
-                                    "noPotion":  10.75,
-                                    "neon":  45,
-                                    "neonNoPotion":  43.5,
-                                    "mega":  186,
-                                    "megaNoPotion":  184
+                                    "default":  11.5,
+                                    "fly":  10.9,
+                                    "ride":  10.9,
+                                    "noPotion":  10.5,
+                                    "neon":  46,
+                                    "neonFly":  45.25,
+                                    "neonRide":  45.25,
+                                    "neonNoPotion":  44.5,
+                                    "mega":  193,
+                                    "megaFly":  192,
+                                    "megaRide":  192,
+                                    "megaNoPotion":  191
                                 }
                  },
                  {
@@ -1276,12 +1682,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Fairy Bat Dragon still carries notable interest thanks to the design and dragon branding.",
                      "values":  {
-                                    "default":  12,
-                                    "noPotion":  10.5,
-                                    "neon":  37.5,
-                                    "neonNoPotion":  35.5,
-                                    "mega":  146,
-                                    "megaNoPotion":  149
+                                    "default":  12.5,
+                                    "fly":  11.75,
+                                    "ride":  11.75,
+                                    "noPotion":  11,
+                                    "neon":  38,
+                                    "neonFly":  37,
+                                    "neonRide":  37,
+                                    "neonNoPotion":  36,
+                                    "mega":  142,
+                                    "megaFly":  140.75,
+                                    "megaRide":  140,
+                                    "megaNoPotion":  145
                                 }
                  },
                  {
@@ -1294,12 +1706,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Undead Jousting Horse remains a useful premium-halloween legend reference with better demand than many peers.",
                      "values":  {
-                                    "default":  11.25,
+                                    "default":  11.5,
+                                    "fly":  10.9,
+                                    "ride":  10.9,
                                     "noPotion":  10.5,
-                                    "neon":  46,
-                                    "neonNoPotion":  44,
-                                    "mega":  195,
-                                    "megaNoPotion":  205
+                                    "neon":  47,
+                                    "neonFly":  46,
+                                    "neonRide":  46,
+                                    "neonNoPotion":  45,
+                                    "mega":  197,
+                                    "megaFly":  195.75,
+                                    "megaRide":  195,
+                                    "megaNoPotion":  207
                                 }
                  },
                  {
@@ -1313,11 +1731,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Frost Unicorn is one of the stronger newer unicorn-themed legends and keeps a healthy collector lane.",
                      "values":  {
                                     "default":  9.25,
+                                    "fly":  8.85,
+                                    "ride":  8.8,
                                     "noPotion":  8.5,
                                     "neon":  38,
+                                    "neonFly":  37,
+                                    "neonRide":  37,
                                     "neonNoPotion":  36,
-                                    "mega":  162,
-                                    "megaNoPotion":  167
+                                    "mega":  160,
+                                    "megaFly":  158.75,
+                                    "megaRide":  158,
+                                    "megaNoPotion":  165
                                 }
                  },
                  {
@@ -1330,12 +1754,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Goat stays relevant because the pet is recognizable, limited, and genuinely liked by players.",
                      "values":  {
-                                    "default":  9.1,
-                                    "noPotion":  8.5,
-                                    "neon":  38,
-                                    "neonNoPotion":  36.5,
-                                    "mega":  164,
-                                    "megaNoPotion":  162
+                                    "default":  8.35,
+                                    "fly":  8.05,
+                                    "ride":  8.05,
+                                    "noPotion":  7.75,
+                                    "neon":  35,
+                                    "neonFly":  34.25,
+                                    "neonRide":  34.25,
+                                    "neonNoPotion":  33.5,
+                                    "mega":  149,
+                                    "megaFly":  147.75,
+                                    "megaRide":  147,
+                                    "megaNoPotion":  147
                                 }
                  },
                  {
@@ -1349,11 +1779,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Alpaca has carved out a strong modern collector lane and is worth tracking directly.",
                      "values":  {
                                     "default":  9.1,
+                                    "fly":  8.8,
+                                    "ride":  8.8,
                                     "noPotion":  8.5,
-                                    "neon":  37,
-                                    "neonNoPotion":  35.5,
-                                    "mega":  161,
-                                    "megaNoPotion":  159
+                                    "neon":  38,
+                                    "neonFly":  37.25,
+                                    "neonRide":  37.25,
+                                    "neonNoPotion":  36.5,
+                                    "mega":  162,
+                                    "megaFly":  160.75,
+                                    "megaRide":  160,
+                                    "megaNoPotion":  160
                                 }
                  },
                  {
@@ -1367,11 +1803,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Bush Elephant is trading above many comparable modern legends because the design and demand are both strong.",
                      "values":  {
                                     "default":  8.75,
+                                    "fly":  8.35,
+                                    "ride":  8.3,
                                     "noPotion":  8,
                                     "neon":  36,
+                                    "neonFly":  35,
+                                    "neonRide":  35,
                                     "neonNoPotion":  34,
-                                    "mega":  155,
-                                    "megaNoPotion":  160
+                                    "mega":  152,
+                                    "megaFly":  150.75,
+                                    "megaRide":  150,
+                                    "megaNoPotion":  157
                                 }
                  },
                  {
@@ -1385,11 +1827,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Field Mouse has stayed relevant because it is cute, limited, and easy for players to value.",
                      "values":  {
                                     "default":  8.5,
+                                    "fly":  8.1,
+                                    "ride":  8.05,
                                     "noPotion":  7.75,
                                     "neon":  35,
+                                    "neonFly":  34,
+                                    "neonRide":  34,
                                     "neonNoPotion":  33,
-                                    "mega":  152,
-                                    "megaNoPotion":  149
+                                    "mega":  148,
+                                    "megaFly":  146.75,
+                                    "megaRide":  146,
+                                    "megaNoPotion":  145
                                 }
                  },
                  {
@@ -1403,11 +1851,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Cactus Friend is lower on the board than many newer collector pets, but it is still recognizable enough to justify a dedicated page.",
                      "values":  {
                                     "default":  1.55,
+                                    "fly":  1.15,
+                                    "ride":  1.1,
                                     "noPotion":  0.8,
                                     "neon":  6.75,
+                                    "neonFly":  5.75,
+                                    "neonRide":  5.75,
                                     "neonNoPotion":  4.75,
-                                    "mega":  30,
-                                    "megaNoPotion":  27
+                                    "mega":  29,
+                                    "megaFly":  27.75,
+                                    "megaRide":  27,
+                                    "megaNoPotion":  26
                                 }
                  },
                  {
@@ -1420,12 +1874,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Cryptid is already trading like a real upper-mid benchmark and is one of the strongest current modern pets not tied to the old legacy tier.",
                      "values":  {
-                                    "default":  79,
-                                    "noPotion":  77,
-                                    "neon":  183,
-                                    "neonNoPotion":  181,
-                                    "mega":  610,
-                                    "megaNoPotion":  615
+                                    "default":  81,
+                                    "fly":  79.75,
+                                    "ride":  79,
+                                    "noPotion":  79,
+                                    "neon":  188,
+                                    "neonFly":  187,
+                                    "neonRide":  187,
+                                    "neonNoPotion":  186,
+                                    "mega":  620,
+                                    "megaFly":  618.75,
+                                    "megaRide":  618,
+                                    "megaNoPotion":  625
                                 }
                  },
                  {
@@ -1438,12 +1898,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Haetae has settled into a strong modern collector lane with enough demand to merit direct comparisons against established upper-mid pets.",
                      "values":  {
-                                    "default":  62,
-                                    "noPotion":  60,
-                                    "neon":  227,
-                                    "neonNoPotion":  232,
-                                    "mega":  790,
-                                    "megaNoPotion":  810
+                                    "default":  67,
+                                    "fly":  65.75,
+                                    "ride":  65,
+                                    "noPotion":  65,
+                                    "neon":  240,
+                                    "neonFly":  239,
+                                    "neonRide":  239,
+                                    "neonNoPotion":  245,
+                                    "mega":  800,
+                                    "megaFly":  798.75,
+                                    "megaRide":  798,
+                                    "megaNoPotion":  820
                                 }
                  },
                  {
@@ -1456,12 +1922,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Cabbit has become one of the cleanest modern collector pets to watch because the design and event identity still matter in real trades.",
                      "values":  {
-                                    "default":  19.25,
-                                    "noPotion":  18,
-                                    "neon":  51,
-                                    "neonNoPotion":  49,
-                                    "mega":  181,
-                                    "megaNoPotion":  179
+                                    "default":  21.75,
+                                    "fly":  20.75,
+                                    "ride":  20.75,
+                                    "noPotion":  20.25,
+                                    "neon":  56,
+                                    "neonFly":  55,
+                                    "neonRide":  55,
+                                    "neonNoPotion":  54,
+                                    "mega":  199,
+                                    "megaFly":  197.75,
+                                    "megaRide":  197,
+                                    "megaNoPotion":  197
                                 }
                  },
                  {
@@ -1474,12 +1946,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Velocirooster is a timely search target and already carries enough demand to justify a dedicated page.",
                      "values":  {
-                                    "default":  19,
-                                    "noPotion":  17.5,
-                                    "neon":  80,
-                                    "neonNoPotion":  78,
-                                    "mega":  350,
-                                    "megaNoPotion":  347
+                                    "default":  14.75,
+                                    "fly":  14.35,
+                                    "ride":  14.3,
+                                    "noPotion":  14,
+                                    "neon":  60,
+                                    "neonFly":  59,
+                                    "neonRide":  59,
+                                    "neonNoPotion":  58,
+                                    "mega":  252,
+                                    "megaFly":  250.75,
+                                    "megaRide":  250,
+                                    "megaNoPotion":  249
                                 }
                  },
                  {
@@ -1492,12 +1970,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Mermicorn is holding value like a meaningful modern collector legend rather than a disposable seasonal release.",
                      "values":  {
-                                    "default":  16,
-                                    "noPotion":  15.25,
-                                    "neon":  62,
-                                    "neonNoPotion":  60,
-                                    "mega":  261,
-                                    "megaNoPotion":  266
+                                    "default":  16.75,
+                                    "fly":  16.15,
+                                    "ride":  16.15,
+                                    "noPotion":  15.75,
+                                    "neon":  67,
+                                    "neonFly":  66,
+                                    "neonRide":  66,
+                                    "neonNoPotion":  65,
+                                    "mega":  281,
+                                    "megaFly":  279.75,
+                                    "megaRide":  279,
+                                    "megaNoPotion":  286
                                 }
                  },
                  {
@@ -1510,12 +1994,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Jekyll Hydra still has enough collector heat to outperform many similarly priced modern legends.",
                      "values":  {
-                                    "default":  15.25,
-                                    "noPotion":  14.5,
-                                    "neon":  61,
-                                    "neonNoPotion":  59,
-                                    "mega":  251,
-                                    "megaNoPotion":  256
+                                    "default":  19.25,
+                                    "fly":  18.65,
+                                    "ride":  18.65,
+                                    "noPotion":  18.25,
+                                    "neon":  73,
+                                    "neonFly":  72,
+                                    "neonRide":  72,
+                                    "neonNoPotion":  71,
+                                    "mega":  296,
+                                    "megaFly":  294.75,
+                                    "megaRide":  294,
+                                    "megaNoPotion":  301
                                 }
                  },
                  {
@@ -1529,11 +2019,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Sugar Glider has one of the healthiest modern ultra-rare lanes and gets searched enough to deserve direct coverage.",
                      "values":  {
                                     "default":  13,
-                                    "noPotion":  12.25,
+                                    "fly":  12.4,
+                                    "ride":  12.4,
+                                    "noPotion":  12,
                                     "neon":  53,
+                                    "neonFly":  52,
+                                    "neonRide":  52,
                                     "neonNoPotion":  51,
-                                    "mega":  225,
-                                    "megaNoPotion":  230
+                                    "mega":  223,
+                                    "megaFly":  221.75,
+                                    "megaRide":  221,
+                                    "megaNoPotion":  228
                                 }
                  },
                  {
@@ -1546,12 +2042,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Silverback Gorilla is a solid modern legend compare page because it is familiar and the lane is stable enough to read cleanly.",
                      "values":  {
-                                    "default":  10.75,
-                                    "noPotion":  10,
-                                    "neon":  43,
-                                    "neonNoPotion":  41,
-                                    "mega":  176,
-                                    "megaNoPotion":  172
+                                    "default":  7.5,
+                                    "fly":  7.1,
+                                    "ride":  7.05,
+                                    "noPotion":  6.75,
+                                    "neon":  30,
+                                    "neonFly":  29,
+                                    "neonRide":  29,
+                                    "neonNoPotion":  28,
+                                    "mega":  123,
+                                    "megaFly":  121.75,
+                                    "megaRide":  120.75,
+                                    "megaNoPotion":  119.5
                                 }
                  },
                  {
@@ -1565,11 +2067,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Winged Tiger remains a useful modern legend reference because the pet is recognizable and still actively traded.",
                      "values":  {
                                     "default":  10,
+                                    "fly":  9.6,
+                                    "ride":  9.55,
                                     "noPotion":  9.25,
                                     "neon":  41,
+                                    "neonFly":  40,
+                                    "neonRide":  40,
                                     "neonNoPotion":  39,
-                                    "mega":  174,
-                                    "megaNoPotion":  179
+                                    "mega":  172,
+                                    "megaFly":  170.75,
+                                    "megaRide":  170,
+                                    "megaNoPotion":  177
                                 }
                  },
                  {
@@ -1582,12 +2090,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Frostbite Bear has held its winter collector appeal better than many comparable themed legends.",
                      "values":  {
-                                    "default":  10,
-                                    "noPotion":  9.25,
-                                    "neon":  41,
-                                    "neonNoPotion":  39,
-                                    "mega":  175,
-                                    "megaNoPotion":  178
+                                    "default":  10.25,
+                                    "fly":  9.85,
+                                    "ride":  9.8,
+                                    "noPotion":  9.5,
+                                    "neon":  42,
+                                    "neonFly":  41,
+                                    "neonRide":  41,
+                                    "neonNoPotion":  40,
+                                    "mega":  176,
+                                    "megaFly":  174.75,
+                                    "megaRide":  174,
+                                    "megaNoPotion":  179
                                 }
                  },
                  {
@@ -1601,11 +2115,17 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Siamese Cat continues to benefit from strong player preference and a clean collector lane.",
                      "values":  {
                                     "default":  8.85,
+                                    "fly":  8.55,
+                                    "ride":  8.55,
                                     "noPotion":  8.25,
-                                    "neon":  31.5,
-                                    "neonNoPotion":  30,
-                                    "mega":  116,
-                                    "megaNoPotion":  113
+                                    "neon":  32,
+                                    "neonFly":  31.25,
+                                    "neonRide":  31.25,
+                                    "neonNoPotion":  30.5,
+                                    "mega":  118,
+                                    "megaFly":  116.75,
+                                    "megaRide":  116,
+                                    "megaNoPotion":  115
                                 }
                  },
                  {
@@ -1618,12 +2138,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Dragonfruit Fox is still one of the most memorable newer egg legends and is worth covering directly.",
                      "values":  {
-                                    "default":  8.5,
-                                    "noPotion":  7.75,
-                                    "neon":  34,
-                                    "neonNoPotion":  32,
-                                    "mega":  140,
-                                    "megaNoPotion":  136
+                                    "default":  6.5,
+                                    "fly":  6.1,
+                                    "ride":  6.05,
+                                    "noPotion":  5.75,
+                                    "neon":  26,
+                                    "neonFly":  25,
+                                    "neonRide":  25,
+                                    "neonNoPotion":  24,
+                                    "mega":  108,
+                                    "megaFly":  106.75,
+                                    "megaRide":  105.75,
+                                    "megaNoPotion":  104.5
                                 }
                  },
                  {
@@ -1636,12 +2162,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Cupid Dragon is still one of the more searched modern themed dragons and keeps a healthy collector lane.",
                      "values":  {
-                                    "default":  8,
-                                    "noPotion":  7,
-                                    "neon":  32,
-                                    "neonNoPotion":  30,
-                                    "mega":  135,
-                                    "megaNoPotion":  140
+                                    "default":  7.25,
+                                    "fly":  6.65,
+                                    "ride":  6.65,
+                                    "noPotion":  6.25,
+                                    "neon":  29,
+                                    "neonFly":  28,
+                                    "neonRide":  28,
+                                    "neonNoPotion":  27,
+                                    "mega":  122,
+                                    "megaFly":  120.75,
+                                    "megaRide":  120,
+                                    "megaNoPotion":  127
                                 }
                  },
                  {
@@ -1654,11 +2186,17 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Lion Cub still carries stronger demand than many modern legends in the same raw price range.",
                      "values":  {
-                                    "default":  8.1,
-                                    "noPotion":  7.5,
+                                    "default":  8.35,
+                                    "fly":  8.05,
+                                    "ride":  8.05,
+                                    "noPotion":  7.75,
                                     "neon":  35,
+                                    "neonFly":  34.25,
+                                    "neonRide":  34.25,
                                     "neonNoPotion":  33.5,
                                     "mega":  150,
+                                    "megaFly":  148.75,
+                                    "megaRide":  148,
                                     "megaNoPotion":  153
                                 }
                  },
@@ -1673,10 +2211,16 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Shark Puppy remains a strong search target because the pet is memorable and still actively traded.",
                      "values":  {
                                     "default":  8,
+                                    "fly":  7.6,
+                                    "ride":  7.55,
                                     "noPotion":  7.25,
                                     "neon":  33,
+                                    "neonFly":  32,
+                                    "neonRide":  32,
                                     "neonNoPotion":  31,
                                     "mega":  140,
+                                    "megaFly":  138.75,
+                                    "megaRide":  138,
                                     "megaNoPotion":  145
                                 }
                  },
@@ -1691,10 +2235,16 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Irish Water Spaniel keeps a clean collector lane and gets searched often enough to justify direct coverage.",
                      "values":  {
                                     "default":  7.85,
+                                    "fly":  7.55,
+                                    "ride":  7.55,
                                     "noPotion":  7.25,
                                     "neon":  33,
+                                    "neonFly":  32.25,
+                                    "neonRide":  32.25,
                                     "neonNoPotion":  31.5,
                                     "mega":  140,
+                                    "megaFly":  138.75,
+                                    "megaRide":  138,
                                     "megaNoPotion":  143
                                 }
                  },
@@ -1708,12 +2258,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Werewolf still benefits from strong Halloween branding and better demand than many themed peers.",
                      "values":  {
-                                    "default":  7,
-                                    "noPotion":  6.25,
-                                    "neon":  28,
-                                    "neonNoPotion":  26,
-                                    "mega":  118,
-                                    "megaNoPotion":  115
+                                    "default":  7.25,
+                                    "fly":  6.85,
+                                    "ride":  6.8,
+                                    "noPotion":  6.5,
+                                    "neon":  30,
+                                    "neonFly":  29,
+                                    "neonRide":  29,
+                                    "neonNoPotion":  28,
+                                    "mega":  127,
+                                    "megaFly":  125.75,
+                                    "megaRide":  125,
+                                    "megaNoPotion":  124
                                 }
                  },
                  {
@@ -1726,12 +2282,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Vampire Dragon remains a useful modern dragon reference because it is still widely recognized.",
                      "values":  {
-                                    "default":  6.5,
-                                    "noPotion":  5.5,
-                                    "neon":  25,
-                                    "neonNoPotion":  23,
-                                    "mega":  110,
-                                    "megaNoPotion":  111
+                                    "default":  9,
+                                    "fly":  8.4,
+                                    "ride":  8.4,
+                                    "noPotion":  8,
+                                    "neon":  36,
+                                    "neonFly":  35,
+                                    "neonRide":  35,
+                                    "neonNoPotion":  34,
+                                    "mega":  152,
+                                    "megaFly":  150.75,
+                                    "megaRide":  150,
+                                    "megaNoPotion":  153
                                 }
                  },
                  {
@@ -1744,12 +2306,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Jellyfish has one of the strongest modern ultra-rare collector lanes and is worth a dedicated page.",
                      "values":  {
-                                    "default":  6.1,
-                                    "noPotion":  5.5,
-                                    "neon":  27,
-                                    "neonNoPotion":  25.5,
-                                    "mega":  121,
-                                    "megaNoPotion":  119
+                                    "default":  7.1,
+                                    "fly":  6.8,
+                                    "ride":  6.8,
+                                    "noPotion":  6.5,
+                                    "neon":  30,
+                                    "neonFly":  29.25,
+                                    "neonRide":  29.25,
+                                    "neonNoPotion":  28.5,
+                                    "mega":  129,
+                                    "megaFly":  127.75,
+                                    "megaRide":  127,
+                                    "megaNoPotion":  127
                                 }
                  },
                  {
@@ -1762,12 +2330,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Sheeeeep keeps a recognizable collector lane and still gets searched more than many pets around it.",
                      "values":  {
-                                    "default":  6.1,
-                                    "noPotion":  5.5,
-                                    "neon":  26.5,
-                                    "neonNoPotion":  25,
-                                    "mega":  116,
-                                    "megaNoPotion":  117
+                                    "default":  6.6,
+                                    "fly":  6.3,
+                                    "ride":  6.3,
+                                    "noPotion":  6,
+                                    "neon":  28,
+                                    "neonFly":  27.25,
+                                    "neonRide":  27.25,
+                                    "neonNoPotion":  26.5,
+                                    "mega":  120,
+                                    "megaFly":  118.75,
+                                    "megaRide":  118,
+                                    "megaNoPotion":  121
                                 }
                  },
                  {
@@ -1780,12 +2354,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Owlbear is still one of the cleaner newer collector legend references thanks to its strong identity.",
                      "values":  {
-                                    "default":  7.25,
-                                    "noPotion":  6.5,
-                                    "neon":  30,
-                                    "neonNoPotion":  28,
-                                    "mega":  127,
-                                    "megaNoPotion":  124
+                                    "default":  7,
+                                    "fly":  6.6,
+                                    "ride":  6.55,
+                                    "noPotion":  6.25,
+                                    "neon":  29,
+                                    "neonFly":  28,
+                                    "neonRide":  28,
+                                    "neonNoPotion":  27,
+                                    "mega":  122,
+                                    "megaFly":  120.75,
+                                    "megaRide":  120,
+                                    "megaNoPotion":  119
                                 }
                  },
                  {
@@ -1799,10 +2379,16 @@
                      "notes":  "Tracker-reviewed on April 10, 2026. Papa Moose has become a solid modern collector search page with a stable premium lane.",
                      "values":  {
                                     "default":  7.75,
+                                    "fly":  7.35,
+                                    "ride":  7.3,
                                     "noPotion":  7,
                                     "neon":  32,
+                                    "neonFly":  31,
+                                    "neonRide":  31,
                                     "neonNoPotion":  30,
                                     "mega":  135,
+                                    "megaFly":  133.75,
+                                    "megaRide":  133,
                                     "megaNoPotion":  132
                                 }
                  },
@@ -1816,12 +2402,18 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Black-Chested Pheasant keeps enough collector interest to justify direct comparison coverage.",
                      "values":  {
-                                    "default":  7.25,
-                                    "noPotion":  6.5,
-                                    "neon":  30,
-                                    "neonNoPotion":  28,
-                                    "mega":  130,
-                                    "megaNoPotion":  135
+                                    "default":  7.5,
+                                    "fly":  7.1,
+                                    "ride":  7.05,
+                                    "noPotion":  6.75,
+                                    "neon":  31,
+                                    "neonFly":  30,
+                                    "neonRide":  30,
+                                    "neonNoPotion":  29,
+                                    "mega":  131,
+                                    "megaFly":  129.75,
+                                    "megaRide":  129,
+                                    "megaNoPotion":  136
                                 }
                  },
                  {
@@ -1834,11 +2426,17 @@
                      "confidence":  "Medium",
                      "notes":  "Tracker-reviewed on April 10, 2026. Shrew is an older holiday pet that still gets enough real search interest to earn its own page.",
                      "values":  {
-                                    "default":  6.25,
-                                    "noPotion":  5.25,
+                                    "default":  6.5,
+                                    "fly":  5.5,
+                                    "ride":  5.5,
+                                    "noPotion":  5.5,
                                     "neon":  23,
+                                    "neonFly":  22,
+                                    "neonRide":  22,
                                     "neonNoPotion":  21.5,
                                     "mega":  92,
+                                    "megaFly":  91,
+                                    "megaRide":  91,
                                     "megaNoPotion":  97
                                 }
                  }
