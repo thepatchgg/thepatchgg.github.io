@@ -1726,6 +1726,13 @@
                      "legacyValue":  1
                  },
                  {
+                     "slug":  "glormy-crab",
+                     "name":  "Glormy Crab",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/glormy-crab.png",
+                     "legacyValue":  1
+                 },
+                 {
                      "slug":  "glormy-dolphin",
                      "name":  "Glormy Dolphin",
                      "rarity":  "l",
@@ -2202,6 +2209,13 @@
                      "legacyValue":  1
                  },
                  {
+                     "slug":  "moonbeam-peacock",
+                     "name":  "Moonbeam Peacock",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/moonbeam-peacock.png",
+                     "legacyValue":  1
+                 },
+                 {
                      "slug":  "moose-calf",
                      "name":  "Moose Calf",
                      "rarity":  "l",
@@ -2314,10 +2328,24 @@
                      "legacyValue":  1
                  },
                  {
+                     "slug":  "peachick",
+                     "name":  "Peachick",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/peachick.png",
+                     "legacyValue":  1
+                 },
+                 {
                      "slug":  "peacock",
                      "name":  "Peacock",
                      "rarity":  "l",
                      "image":  "/assets/pets/peacock.png",
+                     "legacyValue":  1
+                 },
+                 {
+                     "slug":  "peahen",
+                     "name":  "Peahen",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/peahen.png",
                      "legacyValue":  1
                  },
                  {

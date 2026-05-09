@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15",
+  "updatedAt": "2026-05-08",
   "source": "Curated Adopt Me Wiki pet-origin overrides from the main Pets index and select pet pages.",
   "pets": [
     {
@@ -7604,6 +7604,77 @@
           "petRarity": "Legendary",
           "eventContext": "Birthday Magic (2026)",
           "notes": "Can appear as a birthday gift reward when a pet levels up during the Birthday Magic update."
+        }
+      ]
+    },
+    {
+      "slug": "glormy-crab",
+      "sources": [
+        {
+          "sourceName": "Final Stop Shop",
+          "sourceType": "Event shop",
+          "status": "retired",
+          "released": "Apr 24, 2026",
+          "retired": "May 1, 2026",
+          "cost": "30,000 Tickets",
+          "petRarity": "Legendary",
+          "eventContext": "Sean's Sale (2026)",
+          "notes": "Sold directly through Sean's Final Stop Shop for 30,000 Tickets during the April 24 update window. Moved to the Admin Abuse Egg as a hatch-only pet on May 1, 2026."
+        },
+        {
+          "sourceName": "Admin Abuse Egg",
+          "sourceType": "Hatchable egg",
+          "status": "current",
+          "released": "May 1, 2026",
+          "cost": "Admin Abuse Egg",
+          "petRarity": "Legendary",
+          "eventContext": "Sean's Sale (2026)",
+          "notes": "Becomes a hatch-only pet inside the Admin Abuse Egg after the Sean's Sale shop window closes."
+        }
+      ]
+    },
+    {
+      "slug": "peachick",
+      "sources": [
+        {
+          "sourceName": "Golden Dandelion",
+          "sourceType": "Robux treat",
+          "status": "current",
+          "released": "May 1, 2026",
+          "cost": "195 Robux per pull",
+          "petRarity": "Ultra Rare",
+          "eventContext": "Salon Revamp (2026)",
+          "notes": "Most-pulled outcome from the Golden Dandelion treat introduced with the Salon Revamp. Official drop chance 87.5%."
+        }
+      ]
+    },
+    {
+      "slug": "peahen",
+      "sources": [
+        {
+          "sourceName": "Golden Dandelion",
+          "sourceType": "Robux treat",
+          "status": "current",
+          "released": "May 1, 2026",
+          "cost": "195 Robux per pull",
+          "petRarity": "Legendary",
+          "eventContext": "Salon Revamp (2026)",
+          "notes": "Mid-rarity outcome from the Golden Dandelion treat introduced with the Salon Revamp. Official drop chance 10.0%."
+        }
+      ]
+    },
+    {
+      "slug": "moonbeam-peacock",
+      "sources": [
+        {
+          "sourceName": "Golden Dandelion",
+          "sourceType": "Robux treat",
+          "status": "current",
+          "released": "May 1, 2026",
+          "cost": "195 Robux per pull",
+          "petRarity": "Legendary",
+          "eventContext": "Salon Revamp (2026)",
+          "notes": "Chase pet outcome from the Golden Dandelion treat introduced with the Salon Revamp. Official drop chance 2.5%."
         }
       ]
     },

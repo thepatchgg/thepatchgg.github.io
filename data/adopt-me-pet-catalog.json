@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-04-10",
+    "updatedAt":  "2026-05-08",
     "entries":  [
                     {
                         "slug":  "2021-uplift-butterfly",
@@ -1843,6 +1843,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "glormy-crab",
+                        "name":  "Glormy Crab",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/glormy-crab.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "glormy-dolphin",
                         "name":  "Glormy Dolphin",
                         "rarity":  "l",
@@ -3040,6 +3047,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "moonbeam-peacock",
+                        "name":  "Moonbeam Peacock",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/moonbeam-peacock.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "moonlight-moth",
                         "name":  "Moonlight Moth",
                         "rarity":  "r",
@@ -3362,10 +3376,24 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "peachick",
+                        "name":  "Peachick",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/peachick.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "peacock",
                         "name":  "Peacock",
                         "rarity":  "l",
                         "image":  "/assets/pets/peacock.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "peahen",
+                        "name":  "Peahen",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/peahen.png",
                         "benchmark":  false
                     },
                     {
