@@ -175,12 +175,11 @@ Assert-Pattern $releaseNotes "RELEASE_NOTES_DRAFT.md" "^# Release Notes Draft" "
 
 $auditReport = Read-File "data/adopt-me-calculator-audit-report.md"
 Assert-Pattern $auditReport "data/adopt-me-calculator-audit-report.md" "^# Calculator Audit Report" "Missing calculator audit report heading"
-Assert-Pattern $auditReport "data/adopt-me-calculator-audit-report.md" "Non-benchmark pets manually resolved: 12" "Unexpected calculator manual resolution count"
 Assert-Pattern $auditReport "data/adopt-me-calculator-audit-report.md" "Non-benchmark pets still unmatched: 0" "Calculator audit still has unresolved pets"
 
 $catalogAudit = Read-File "data/adopt-me-pet-catalog-audit.md"
 Assert-Pattern $catalogAudit "data/adopt-me-pet-catalog-audit.md" "^# Pet Catalog Audit" "Missing pet catalog audit heading"
-Assert-Pattern $catalogAudit "data/adopt-me-pet-catalog-audit.md" "Catalog entries: 725" "Unexpected pet catalog count"
+Assert-Pattern $catalogAudit "data/adopt-me-pet-catalog-audit.md" ("Catalog entries: {0}" -f $catalogData.counts.total) "Unexpected pet catalog count"
 
 $overrideData = Get-Content -Raw -Path (Resolve-PathInRepo "data/adopt-me-calculator-overrides.json") | ConvertFrom-Json
 if (@($overrideData.pets).Count -lt 600) {
@@ -189,8 +188,8 @@ if (@($overrideData.pets).Count -lt 600) {
 if ($overrideData.trackerMatchedCount -lt 590) {
   $issues.Add("Unexpected tracker-backed calculator count: $($overrideData.trackerMatchedCount)")
 }
-if ($overrideData.manualResolvedCount -ne 12) {
-  $issues.Add("Unexpected manual calculator count: $($overrideData.manualResolvedCount)")
+if ($overrideData.manualResolvedCount -lt 12) {
+  $issues.Add("Manual calculator count dropped unexpectedly: $($overrideData.manualResolvedCount)")
 }
 if ($overrideData.remainingUnmatchedCount -ne 0) {
   $issues.Add("Calculator still has unmatched pets: $($overrideData.remainingUnmatchedCount)")
@@ -217,13 +216,21 @@ if ($auditReport -match "Non-benchmark pets matched to tracker feed: (\d+)") {
   $issues.Add("Missing tracker-backed count in data/adopt-me-calculator-audit-report.md")
 }
 
+if ($auditReport -match "Non-benchmark pets manually resolved: (\d+)") {
+  if ([int]$matches[1] -ne [int]$overrideData.manualResolvedCount) {
+    $issues.Add("Calculator audit report manual count does not match override payload count")
+  }
+} else {
+  $issues.Add("Missing manual resolution count in data/adopt-me-calculator-audit-report.md")
+}
+
 $calculatorPage = Read-File "pet-value-calculator.html"
 Assert-Pattern $calculatorPage "pet-value-calculator.html" ('id="tracker-audit-count">{0}<' -f $overrideData.trackerMatchedCount) "Calculator tracker audit count banner out of sync"
 Assert-Pattern $calculatorPage "pet-value-calculator.html" ('id="manual-audit-count">{0}<' -f $overrideData.manualResolvedCount) "Calculator manual audit count banner out of sync"
 Assert-Pattern $calculatorPage "pet-value-calculator.html" ('id="audit-unmatched">{0}<' -f $overrideData.remainingUnmatchedCount) "Calculator unmatched count banner out of sync"
 
-if ($catalogData.counts.total -ne 725) {
-  $issues.Add("Unexpected pet catalog total: $($catalogData.counts.total)")
+if ($catalogData.counts.total -ne @($catalogData.entries).Count) {
+  $issues.Add("Pet catalog total does not match entry count: $($catalogData.counts.total) vs $(@($catalogData.entries).Count)")
 }
 if ($catalogData.counts.verifiedRarity -lt 700) {
   $issues.Add("Pet catalog verified rarity coverage dropped too low: $($catalogData.counts.verifiedRarity)")

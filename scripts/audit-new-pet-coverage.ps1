@@ -48,6 +48,7 @@ $overridesPath = Resolve-RepoPath "data/adopt-me-calculator-overrides.json"
 $petPagesPath = Resolve-RepoPath "data/adopt-me-pet-pages.json"
 $indexPath = Resolve-RepoPath "index.html"
 $hubPath = Resolve-RepoPath "adopt-me.html"
+$featuredContentPath = Resolve-RepoPath "assets/js/adopt-featured-content.js"
 $articlesDir = Resolve-RepoPath "articles"
 $petsDir = Resolve-RepoPath "pets"
 $assetsDir = Resolve-RepoPath "assets/pets"
@@ -61,6 +62,7 @@ $petPages = Get-Content -Raw -LiteralPath $petPagesPath | ConvertFrom-Json
 
 $indexContent = Get-Content -Raw -LiteralPath $indexPath
 $hubContent = Get-Content -Raw -LiteralPath $hubPath
+$featuredContent = if (Test-Path -LiteralPath $featuredContentPath) { Get-Content -Raw -LiteralPath $featuredContentPath } else { "" }
 $articleFiles = Get-ChildItem -LiteralPath $articlesDir -Filter *.html
 $articleHits = @{}
 
@@ -95,8 +97,8 @@ foreach ($petName in $PetNames) {
     }
   }
 
-  $homepageMention = $indexContent -match [regex]::Escape($petName)
-  $hubMention = $hubContent -match [regex]::Escape($petName)
+  $homepageMention = ($indexContent + "`n" + $featuredContent) -match [regex]::Escape($petName)
+  $hubMention = ($hubContent + "`n" + $featuredContent) -match [regex]::Escape($petName)
 
   $rows.Add([pscustomobject]@{
     Pet = $petName

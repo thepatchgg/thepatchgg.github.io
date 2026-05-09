@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Adopt Me Trade Calculator | 700+ Pets, Fly/Ride Values | The Patch</title>
-<meta name="description" content="Use The Patch Adopt Me trade calculator with 700+ pets, fly and ride toggles, no-potion lanes, and updated values for fair trade checks.">
+<title>Adopt Me Trade Calculator &amp; Value Checker | The Patch</title>
+<meta name="description" content="Use The Patch Adopt Me trade calculator to compare 700+ pets, potion variants, and fair-trade value lanes in one fast checker.">
 <meta name="robots" content="max-image-preview:large">
 <meta name="theme-color" content="#08111f">
-<meta property="og:title" content="Adopt Me Trade Calculator | 700+ Pets, Fly/Ride Values | The Patch">
-<meta property="og:description" content="Compare Adopt Me trades with 700+ pets, full potion toggles, and updated value lanes on The Patch.">
+<meta property="og:title" content="Adopt Me Trade Calculator &amp; Value Checker | The Patch">
+<meta property="og:description" content="Compare Adopt Me trades with 700+ pets, potion toggles, and shared value lanes from The Patch.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thepatchgg.github.io/pet-value-calculator.html">
 <meta property="og:site_name" content="The Patch">
 <meta property="og:image" content="https://thepatchgg.github.io/assets/pets/shadow-dragon.png">
 <meta property="og:image:alt" content="Shadow Dragon featured on The Patch trade calculator">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Adopt Me Trade Calculator | 700+ Pets, Fly/Ride Values | The Patch">
-<meta name="twitter:description" content="Check fair Adopt Me trades with 700+ pets, full potion toggles, and updated value lanes.">
+<meta name="twitter:title" content="Adopt Me Trade Calculator &amp; Value Checker | The Patch">
+<meta name="twitter:description" content="Check fair Adopt Me trades with 700+ pets, potion toggles, and shared value lanes.">
 <meta name="twitter:image" content="https://thepatchgg.github.io/assets/pets/shadow-dragon.png">
 <meta name="twitter:image:alt" content="Shadow Dragon featured on The Patch trade calculator">
 <link rel="canonical" href="https://thepatchgg.github.io/pet-value-calculator.html">
@@ -141,6 +141,9 @@ img{display:block}
 .status-card.audit-mode{border-color:#f4c95d;background:linear-gradient(135deg,rgba(244,201,93,.16),rgba(111,78,55,.16));color:#f8e5a6}
 .status-card.audit-mode strong{color:#fff2c8}
 .status-card.audit-mode code{color:#fff2c8;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+.status-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.status-link{display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:999px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:.74rem;font-weight:700;transition:border-color .15s,color .15s,background .15s}
+.status-link:hover{border-color:var(--accent);color:var(--accent);background:rgba(200,255,87,.06)}
 .site-footer{border-top:1px solid var(--border);padding:40px 20px;color:var(--text-muted)}
 .footer-inner{max-width:var(--max-w);margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
 .footer-brand{font-weight:800;color:var(--accent);font-size:16px}
@@ -161,7 +164,7 @@ img{display:block}
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-KXQR564341');
+  gtag('config', 'G-KXQR564341', window.ThePatchAnalyticsDefaults || {});
 </script>
 </head>
 <body>
@@ -176,7 +179,7 @@ img{display:block}
       <a href="/articles/adopt-me-egg-guide.html">Egg Guide</a>
       <a href="/pet-value-calculator.html" class="active">Trade Calc</a>
       <a href="/neon-calculator.html">Neon Calc</a>
-      <a href="/trading-forum.html">Trading Board</a>
+      <a href="/market-movers.html">Movers</a>
       <a href="/adopt-me.html">All Guides</a>
     </nav>
     <a href="https://thepatchgg.substack.com" class="header-cta" target="_blank" rel="noopener">Subscribe Free</a>
@@ -193,13 +196,22 @@ img{display:block}
 <div class="status-card">
   <strong>Coverage:</strong> this calculator includes <span id="coverage-count">700+</span> pets.
   High-traffic pets have their latest value lanes, while <span id="tracker-audit-count">602</span> additional pets are supported with current reference values.
-  Another <span id="manual-audit-count">12</span> edge-case pets are filled in manually, leaving <span id="audit-unmatched">0</span> unmatched.
+  Another <span id="manual-audit-count">16</span> edge-case pets are filled in manually, leaving <span id="audit-unmatched">0</span> unmatched.
 </div>
 
 <div class="status-card audit-mode" id="audit-mode-card" hidden>
   <strong>Review Mode:</strong> this local preview is loading the audit-only candidate override file at
   <code>/data/value-sync-staging/adopt-me-calculator-overrides.candidate.json</code>.
   Use this page to spot-check flagged pets before promoting anything into production.
+</div>
+
+<div class="status-card">
+  <strong>Best next clicks:</strong> this calculator shares its value lanes with the rest of the active Patch trading surface, so you can sanity-check totals, browse pet pages, or scan movers without leaving the same data loop.
+  <div class="status-links">
+    <a class="status-link" href="/articles/adopt-me-pet-value-list-2026.html">Open full value list</a>
+    <a class="status-link" href="/articles/adopt-me-pet-encyclopedia.html">Browse Pet Dex</a>
+    <a class="status-link" href="/market-movers.html">Check market movers</a>
+  </div>
 </div>
 
 <div class="calc-wrap" data-tool-name="trade-calculator">
@@ -786,3 +798,4 @@ bootCalculator();
 </script>
 </body>
 </html>
+

@@ -1,11 +1,11 @@
 # Calculator Audit Report
 
-- Date: 2026-04-19
+- Date: 2026-05-08
 - Tracker pet rows parsed: 720
-- Local calculator pets: 715
-- Non-benchmark local pets: 614
+- Local calculator pets: 719
+- Non-benchmark local pets: 618
 - Non-benchmark pets matched to tracker feed: 602
-- Non-benchmark pets manually resolved: 12
+- Non-benchmark pets manually resolved: 16
 - Non-benchmark pets still unmatched: 0
 
 ## Benchmark Divergence
@@ -52,6 +52,10 @@
 - River: manualTradable (Wrapped Doll pet using current AMTV base value.)
 - Scoob: nonTradable (Temporary Scoob event pet that could not be traded.)
 - Weevil Pet: manualTradable (Mapped to Weevil on AMTV.)
+- Glormy Crab: manualTradable (May 2026 release pet using conservative early-window value lanes pending the next successful live tracker fetch.)
+- Moonbeam Peacock: manualTradable (May 2026 release pet using conservative early-window value lanes pending the next successful live tracker fetch.)
+- Peachick: manualTradable (May 2026 release pet using conservative early-window value lanes pending the next successful live tracker fetch.)
+- Peahen: manualTradable (May 2026 release pet using conservative early-window value lanes pending the next successful live tracker fetch.)
 
 ## Unmatched Local Pets
 
