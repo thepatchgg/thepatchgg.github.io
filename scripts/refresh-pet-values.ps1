@@ -93,7 +93,7 @@ $buildOutput = & (Join-Path $PSScriptRoot "build-calculator-overrides.ps1") -Sou
 
 $overridePayload = Get-Content -LiteralPath $resolvedOutJson -Raw | ConvertFrom-Json
 $reportLines = Get-Content -LiteralPath $resolvedOutReport
-$benchmarkRows = Get-BenchmarkTableRows -Lines $reportLines
+$benchmarkRows = @(Get-BenchmarkTableRows -Lines $reportLines)
 $benchmarkPayload = Get-Content -LiteralPath $resolvedBenchmarkData -Raw | ConvertFrom-Json
 $legacyPayload = Get-Content -LiteralPath (Resolve-RepoPath "data/adopt-me-calculator-values.json") -Raw | ConvertFrom-Json
 $benchmarkSet = @{}

@@ -23,18 +23,7 @@
 
 ## Benchmark Review Queue
 
-These benchmark pets still deserve human review before any editorial benchmark change:
-
-| Pet | Patch default | Tracker FR | Delta % |
-| --- | ---: | ---: | ---: |
-| Jekyll Hydra | 19.25 | 40 | -51.9% |
-| Mermicorn | 16.75 | 34 | -50.7% |
-| Velocirooster | 14.75 | 10 | 47.5% |
-| Haetae | 67 | 127 | -47.2% |
-| Undead Jousting Horse | 11.5 | 19 | -39.5% |
-| Silverback Gorilla | 7.5 | 5.45 | 37.6% |
-| Unicorn | 2.5 | 1.9 | 31.6% |
-| Dragonfruit Fox | 6.5 | 4.95 | 31.3% |
+No benchmark divergence rows were produced in the latest audit.
 
 ## Recommendation
 

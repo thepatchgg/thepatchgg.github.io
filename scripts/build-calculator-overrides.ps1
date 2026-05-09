@@ -254,7 +254,7 @@ $benchmarkDiffs = @($benchmarkComparisons | ForEach-Object {
     TrackerNoPotion = $_.TrackerNoPotion
     BenchmarkNoPotion = $_.BenchmarkNoPotion
   }
-} | Sort-Object {[math]::Abs($_.DefaultDeltaPct)} -Descending)
+} | Where-Object { [math]::Abs($_.DefaultDeltaPct) -ge 0.1 } | Sort-Object {[math]::Abs($_.DefaultDeltaPct)} -Descending)
 
 $report = @()
 $report += "# Calculator Audit Report"
@@ -269,10 +269,14 @@ $report += "- Non-benchmark pets still unmatched: $unmatchedCount"
 $report += ""
 $report += "## Benchmark Divergence"
 $report += ""
-$report += "| Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |"
-$report += "| --- | ---: | ---: | ---: | ---: | ---: |"
-foreach ($row in ($benchmarkDiffs | Select-Object -First 25)) {
-  $report += "| $($row.Name) | $($row.BenchmarkDefault) | $($row.TrackerDefault) | $($row.DefaultDeltaPct)% | $($row.BenchmarkNoPotion) | $($row.TrackerNoPotion) |"
+if ($benchmarkDiffs.Count -eq 0) {
+  $report += "No benchmark divergence rows were produced in the latest audit."
+} else {
+  $report += "| Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |"
+  $report += "| --- | ---: | ---: | ---: | ---: | ---: |"
+  foreach ($row in ($benchmarkDiffs | Select-Object -First 25)) {
+    $report += "| $($row.Name) | $($row.BenchmarkDefault) | $($row.TrackerDefault) | $($row.DefaultDeltaPct)% | $($row.BenchmarkNoPotion) | $($row.TrackerNoPotion) |"
+  }
 }
 $report += ""
 $report += "## Manual Edge-Case Resolutions"
