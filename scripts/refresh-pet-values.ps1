@@ -95,6 +95,7 @@ $overridePayload = Get-Content -LiteralPath $resolvedOutJson -Raw | ConvertFrom-
 $reportLines = Get-Content -LiteralPath $resolvedOutReport
 $benchmarkRows = Get-BenchmarkTableRows -Lines $reportLines
 $benchmarkPayload = Get-Content -LiteralPath $resolvedBenchmarkData -Raw | ConvertFrom-Json
+$legacyPayload = Get-Content -LiteralPath (Resolve-RepoPath "data/adopt-me-calculator-values.json") -Raw | ConvertFrom-Json
 $benchmarkSet = @{}
 foreach ($pet in $benchmarkPayload.pets) {
   $benchmarkSet[$pet.slug] = $true
@@ -120,7 +121,7 @@ $summary += "- Source refresh: $sourceStatus"
 $summary += "- Mode: $(if ($AuditOnly) { 'audit-only' } else { 'production refresh' })"
 $summary += "- Scope: Adopt Me trade calculator long-tail pet values"
 $summary += "- Reference source: adoptmevalues.app values index"
-$summary += "- Local calculator coverage: 714 pets"
+$summary += "- Local calculator coverage: $(@($legacyPayload.pets).Count) pets"
 $summary += "- Benchmark/editorial pets currently handled outside the override layer: $($benchmarkPayload.pets.Count)"
 $summary += "- Comparable non-benchmark pet coverage in this run: $($overridePayload.pets.Count)"
 $summary += "- Non-benchmark pets matched to public tracker feed: $($overridePayload.trackerMatchedCount)"

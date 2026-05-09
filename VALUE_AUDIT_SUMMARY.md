@@ -1,17 +1,17 @@
 # Value Audit Summary
 
-- Date: 2026-04-19
-- Source refresh: cached
+- Date: 2026-05-09
+- Source refresh: fresh
 - Mode: production refresh
 - Scope: Adopt Me trade calculator long-tail pet values
 - Reference source: adoptmevalues.app values index
-- Local calculator coverage: 714 pets
+- Local calculator coverage: 719 pets
 - Benchmark/editorial pets currently handled outside the override layer: 101
-- Comparable non-benchmark pet coverage in this run: 614
-- Non-benchmark pets matched to public tracker feed: 602
+- Comparable non-benchmark pet coverage in this run: 618
+- Non-benchmark pets matched to public tracker feed: 606
 - Non-benchmark pets manually resolved: 12
 - Non-benchmark pets still unmatched: 0
-- Current production comparable non-benchmark coverage: 614
+- Current production comparable non-benchmark coverage: 618
 
 ## What Changed
 
@@ -27,14 +27,14 @@ These benchmark pets still deserve human review before any editorial benchmark c
 
 | Pet | Patch default | Tracker FR | Delta % |
 | --- | ---: | ---: | ---: |
-| Candicorn | 7.75 | 7.75 | 0% |
-| Cerberus | 1.65 | 1.65 | 0% |
-| Chicken | 1.75 | 1.75 | 0% |
-| Bush Elephant | 8.75 | 8.75 | 0% |
-| Cabbit | 21.75 | 21.75 | 0% |
-| Cactus Friend | 1.55 | 1.55 | 0% |
-| Dragon | 1.1 | 1.1 | 0% |
-| Dragonfruit Fox | 6.5 | 6.5 | 0% |
+| Jekyll Hydra | 19.25 | 40 | -51.9% |
+| Mermicorn | 16.75 | 34 | -50.7% |
+| Velocirooster | 14.75 | 10 | 47.5% |
+| Haetae | 67 | 127 | -47.2% |
+| Undead Jousting Horse | 11.5 | 19 | -39.5% |
+| Silverback Gorilla | 7.5 | 5.45 | 37.6% |
+| Unicorn | 2.5 | 1.9 | 31.6% |
+| Dragonfruit Fox | 6.5 | 4.95 | 31.3% |
 
 ## Recommendation
 

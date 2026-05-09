@@ -1,42 +1,42 @@
 # Calculator Audit Report
 
-- Date: 2026-05-08
-- Tracker pet rows parsed: 720
+- Date: 2026-05-09
+- Tracker pet rows parsed: 724
 - Local calculator pets: 719
 - Non-benchmark local pets: 618
-- Non-benchmark pets matched to tracker feed: 602
-- Non-benchmark pets manually resolved: 16
+- Non-benchmark pets matched to tracker feed: 606
+- Non-benchmark pets manually resolved: 12
 - Non-benchmark pets still unmatched: 0
 
 ## Benchmark Divergence
 
 | Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Candicorn | 7.75 | 7.75 | 0% | 7 | 7 |
-| Cerberus | 1.65 | 1.65 | 0% | 0.9 | 0.9 |
-| Chicken | 1.75 | 1.75 | 0% | 1.25 | 1.25 |
-| Bush Elephant | 8.75 | 8.75 | 0% | 8 | 8 |
-| Cabbit | 21.75 | 21.75 | 0% | 20.25 | 20.25 |
-| Cactus Friend | 1.55 | 1.55 | 0% | 0.8 | 0.8 |
-| Dragon | 1.1 | 1.1 | 0% | 0.35 | 0.35 |
-| Dragonfruit Fox | 6.5 | 6.5 | 0% | 5.75 | 5.75 |
-| Fairy Bat Dragon | 12.5 | 12.5 | 0% | 11 | 11 |
-| Crocodile | 14.25 | 14.25 | 0% | 13.25 | 13.25 |
-| Cryptid | 81 | 81 | 0% | 79 | 79 |
-| Cupid Dragon | 7.25 | 7.25 | 0% | 6.25 | 6.25 |
-| Black-Chested Pheasant | 7.5 | 7.5 | 0% | 6.75 | 6.75 |
-| Unicorn | 2.5 | 2.5 | 0% | 1.75 | 1.75 |
-| Werewolf | 7.25 | 7.25 | 0% | 6.5 | 6.5 |
-| Alicorn | 1.15 | 1.15 | 0% | 0.4 | 0.4 |
-| Lion | 14 | 14 | 0% | 13 | 13 |
-| Skele-Rex | 2 | 2 | 0% | 1.25 | 1.25 |
-| Sugar Glider | 13 | 13 | 0% | 12 | 12 |
-| Polar Bear | 4.85 | 4.85 | 0% | 4.25 | 4.25 |
-| Shark Puppy | 8 | 8 | 0% | 7.25 | 7.25 |
-| Alpaca | 9.1 | 9.1 | 0% | 8.5 | 8.5 |
-| Arctic Fox | 7.5 | 7.5 | 0% | 6 | 6 |
-| Dodo | 1.75 | 1.75 | 0% | 1 | 1 |
-| Octopus | 1.65 | 1.65 | 0% | 0.9 | 0.9 |
+| Jekyll Hydra | 19.25 | 40 | -51.9% | 18.25 | 39 |
+| Mermicorn | 16.75 | 34 | -50.7% | 15.75 | 33 |
+| Velocirooster | 14.75 | 10 | 47.5% | 14 | 9 |
+| Haetae | 67 | 127 | -47.2% | 65 | 125 |
+| Undead Jousting Horse | 11.5 | 19 | -39.5% | 10.5 | 18 |
+| Silverback Gorilla | 7.5 | 5.45 | 37.6% | 6.75 | 4.75 |
+| Unicorn | 2.5 | 1.9 | 31.6% | 1.75 | 1.2 |
+| Dragonfruit Fox | 6.5 | 4.95 | 31.3% | 5.75 | 4.25 |
+| Blazing Lion | 53 | 77 | -31.2% | 51 | 75 |
+| Siamese Cat | 8.85 | 12.5 | -29.2% | 8.25 | 11.5 |
+| Shark Puppy | 8 | 11 | -27.3% | 7.25 | 10 |
+| Alpaca | 9.1 | 12 | -24.2% | 8.5 | 11 |
+| Koala | 0.9 | 0.73 | 23.3% | 0.3 | 0.28 |
+| Vampire Dragon | 9 | 7.35 | 22.4% | 8 | 6.5 |
+| Candicorn | 7.75 | 6.45 | 20.2% | 7 | 5.75 |
+| Mini Pig | 25 | 31 | -19.4% | 23.75 | 29.5 |
+| Cryptid | 81 | 99 | -18.2% | 79 | 97 |
+| African Wild Dog | 135 | 115 | 17.4% | 133 | 113 |
+| Bush Elephant | 8.75 | 10.5 | -16.7% | 8 | 9.5 |
+| Alicorn | 1.15 | 1 | 15% | 0.4 | 0.3 |
+| Cabbit | 21.75 | 25.5 | -14.7% | 20.25 | 24 |
+| Giant Panda | 98 | 114 | -14% | 96 | 112 |
+| Frostbite Bear | 10.25 | 9 | 13.9% | 9.5 | 8.25 |
+| Jellyfish | 7.1 | 8.25 | -13.9% | 6.5 | 7.5 |
+| Werewolf | 7.25 | 8.25 | -12.1% | 6.5 | 7.5 |
 
 ## Manual Edge-Case Resolutions
 
@@ -52,10 +52,6 @@
 - River: manualTradable (Wrapped Doll pet using current AMTV base value.)
 - Scoob: nonTradable (Temporary Scoob event pet that could not be traded.)
 - Weevil Pet: manualTradable (Mapped to Weevil on AMTV.)
-- Glormy Crab: manualTradable (May 2026 release pet using conservative early-window value lanes pending the next successful live tracker fetch.)
-- Moonbeam Peacock: manualTradable (May 2026 release pet using conservative early-window value lanes pending the next successful live tracker fetch.)
-- Peachick: manualTradable (May 2026 release pet using conservative early-window value lanes pending the next successful live tracker fetch.)
-- Peahen: manualTradable (May 2026 release pet using conservative early-window value lanes pending the next successful live tracker fetch.)
 
 ## Unmatched Local Pets
 

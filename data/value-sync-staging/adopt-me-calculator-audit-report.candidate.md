@@ -1,10 +1,10 @@
 # Calculator Audit Report
 
-- Date: 2026-04-13
-- Tracker pet rows parsed: 719
-- Local calculator pets: 714
-- Non-benchmark local pets: 613
-- Non-benchmark pets matched to tracker feed: 601
+- Date: 2026-05-09
+- Tracker pet rows parsed: 724
+- Local calculator pets: 719
+- Non-benchmark local pets: 618
+- Non-benchmark pets matched to tracker feed: 606
 - Non-benchmark pets manually resolved: 12
 - Non-benchmark pets still unmatched: 0
 
@@ -12,31 +12,31 @@
 
 | Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Parrot | 122.5 | 149 | -17.8% | 124.5 | 151 |
-| Shadow Dragon | 372 | 419 | -11.2% | 502 | 549 |
-| Owl | 167 | 187 | -10.7% | 170 | 190 |
-| Bat Dragon | 578 | 647 | -10.7% | 591 | 660 |
-| Crow | 117 | 129 | -9.3% | 117.5 | 130 |
-| Unicorn | 2.5 | 2.75 | -9.1% | 2 | 2 |
-| Blazing Lion | 48 | 52.5 | -8.6% | 51 | 50.5 |
-| Kangaroo | 17 | 18.5 | -8.1% | 18 | 17 |
-| Frost Dragon | 206 | 224 | -8% | 215 | 237 |
-| Chocolate Chip Bat Dragon | 21.25 | 23 | -7.6% | 22.5 | 21 |
-| Cow | 27 | 29 | -6.9% | 28.5 | 26.5 |
-| Arctic Reindeer | 39 | 41.5 | -6% | 41 | 41 |
-| Evil Unicorn | 89 | 94 | -5.3% | 94 | 94.5 |
-| Turtle | 23.25 | 24.5 | -5.1% | 24.5 | 22 |
-| Dalmatian | 45.25 | 47.5 | -4.7% | 47.5 | 46.5 |
-| Hedgehog | 54 | 56.5 | -4.4% | 59 | 55.5 |
-| Dragon | 1.1 | 1.15 | -4.3% | 0.4 | 0.4 |
-| Giraffe | 277 | 284 | -2.5% | 295 | 295 |
-| Cryptid | 79 | 79 | 0% | 77 | 77 |
-| Cupid Dragon | 8 | 8 | 0% | 7 | 7 |
-| Giant Panda | 94 | 94 | 0% | 92 | 92 |
-| Dragonfruit Fox | 8.5 | 8.5 | 0% | 7.75 | 7.75 |
-| Octopus | 1.65 | 1.65 | 0% | 0.9 | 0.9 |
-| Golden Penguin | 2.75 | 2.75 | 0% | 2 | 2 |
-| Fairy Bat Dragon | 12 | 12 | 0% | 10.5 | 10.5 |
+| Jekyll Hydra | 19.25 | 40 | -51.9% | 18.25 | 39 |
+| Mermicorn | 16.75 | 34 | -50.7% | 15.75 | 33 |
+| Velocirooster | 14.75 | 10 | 47.5% | 14 | 9 |
+| Haetae | 67 | 127 | -47.2% | 65 | 125 |
+| Undead Jousting Horse | 11.5 | 19 | -39.5% | 10.5 | 18 |
+| Silverback Gorilla | 7.5 | 5.45 | 37.6% | 6.75 | 4.75 |
+| Unicorn | 2.5 | 1.9 | 31.6% | 1.75 | 1.2 |
+| Dragonfruit Fox | 6.5 | 4.95 | 31.3% | 5.75 | 4.25 |
+| Blazing Lion | 53 | 77 | -31.2% | 51 | 75 |
+| Siamese Cat | 8.85 | 12.5 | -29.2% | 8.25 | 11.5 |
+| Shark Puppy | 8 | 11 | -27.3% | 7.25 | 10 |
+| Alpaca | 9.1 | 12 | -24.2% | 8.5 | 11 |
+| Koala | 0.9 | 0.73 | 23.3% | 0.3 | 0.28 |
+| Vampire Dragon | 9 | 7.35 | 22.4% | 8 | 6.5 |
+| Candicorn | 7.75 | 6.45 | 20.2% | 7 | 5.75 |
+| Mini Pig | 25 | 31 | -19.4% | 23.75 | 29.5 |
+| Cryptid | 81 | 99 | -18.2% | 79 | 97 |
+| African Wild Dog | 135 | 115 | 17.4% | 133 | 113 |
+| Bush Elephant | 8.75 | 10.5 | -16.7% | 8 | 9.5 |
+| Alicorn | 1.15 | 1 | 15% | 0.4 | 0.3 |
+| Cabbit | 21.75 | 25.5 | -14.7% | 20.25 | 24 |
+| Giant Panda | 98 | 114 | -14% | 96 | 112 |
+| Frostbite Bear | 10.25 | 9 | 13.9% | 9.5 | 8.25 |
+| Jellyfish | 7.1 | 8.25 | -13.9% | 6.5 | 7.5 |
+| Werewolf | 7.25 | 8.25 | -12.1% | 6.5 | 7.5 |
 
 ## Manual Edge-Case Resolutions
 
