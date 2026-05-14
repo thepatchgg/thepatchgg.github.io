@@ -1,0 +1,74 @@
+name: Generate Pet Pages
+on:
+  workflow_dispatch:
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate pet pages and sitemap
+        run: |
+          node - << 'GENEOF'
+          const https = require('https'), fs = require('fs');
+          function get(url) {
+            return new Promise((res,rej) => {
+              https.get(url, r => { let d=''; r.on('data',c=>d+=c); r.on('end',()=>res(JSON.parse(d))); r.on('error',rej); });
+            });
+          }
+          function rc(r){return r==='Legendary'?'leg':r==='Ultra-Rare'?'ur':r==='Rare'?'r':r==='Uncommon'?'uc':'c';}
+          function ctx(p){const r=p.rarity,n=p.name;if(r==='Legendary')return `The ${n} is one of the most sought-after pets in Adopt Me. Verify values before accepting offers.`;if(r==='Ultra-Rare')return `As an Ultra-Rare, ${n} has strong demand. Use the calculator to ensure fair value.`;if(r==='Rare')return `The ${n} is a Rare pet that trades well in mid-tier offers.`;return `As a ${r} pet, ${n} is widely available and used in bulk trades.`;}
+          function rctx(p){const r=p.rarity,n=p.name;if(r==='Legendary')return `Legendary pets are the rarest in Adopt Me — ${n} is highly valued.`;if(r==='Ultra-Rare')return `Ultra-Rare pets like ${n} require significant trading to acquire.`;if(r==='Rare')return `${n} is a Rare pet — obtainable through trading or events.`;return `${n} is a ${r} pet with typical availability in Adopt Me.`;}
+          const NAV='<nav class="main-nav"><a href="/">Home</a><a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a><a href="/articles/adopt-me-pet-encyclopedia.html">Pet Dex</a><a href="/pet-value-calculator.html">Trade Calc</a><a href="/neon-calculator.html">Neon Calc</a><a href="/market-movers.html">Movers</a><a href="/adopt-me.html">All Guides</a></nav>';
+          function makeHTML(p){
+            const s=p.slug,n=p.name,r=p.rarity,cl=rc(r),nv=p.normalVal,ne=p.neonVal,mg=p.megaVal,d=p.demand||'Moderate';
+            return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${n} Value &amp; Trade Worth 2026 | The Patch</title><meta name="description" content="What is ${n} worth in Adopt Me? Value: ${nv}. Neon: ${ne}. Mega: ${mg}. Updated May 2026."><link rel="canonical" href="https://thepatchgg.github.io/pets/${s}.html"><link rel="stylesheet" href="/style.css"><style>.pet-spotlight{background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:24px;max-width:400px;margin:24px auto}.pet-name{font-size:1.4rem;font-weight:800;margin-bottom:8px}.pet-rarity{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:16px}.rarity-leg{background:#7b5e00;color:#ffd700}.rarity-ur{background:#3a0060;color:#c084fc}.rarity-r{background:#003060;color:#60a5fa}.rarity-uc{background:#004020;color:#4ade80}.rarity-c{background:#2a2a35;color:#e8e8f0}.pet-stat{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:15px}.val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}.val-card{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center}.vc-label{font-size:12px;font-weight:700;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px}.vc-value{font-size:1.6rem;font-weight:800;color:var(--accent)}.vc-note{font-size:11px;color:var(--text-muted);margin-top:4px}.faq{margin:24px 0}.faq-item{border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px}.faq-q{font-weight:700;margin-bottom:8px}.faq-a{color:var(--text-muted);font-size:15px}.breadcrumb{font-size:13px;color:var(--text-muted);margin-bottom:16px}.callout{display:flex;gap:12px;background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px;margin:20px 0}.callout-icon{font-size:1.5rem}.callout-title{font-weight:700;margin-bottom:6px}.article-wrap{max-width:760px;margin:0 auto;padding:24px 20px}.event-badge{display:inline-block;background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:4px 12px;font-size:12px;font-weight:700;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px}.article-meta{font-size:13px;color:var(--text-muted);margin:12px 0}.tag{background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:11px}.newsletter-cta{background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:28px;text-align:center;margin:40px 0}.newsletter-cta a{background:var(--accent);color:#000;padding:10px 24px;border-radius:999px;font-weight:700;text-decoration:none}.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin:24px 0}.related-card{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px;text-decoration:none;color:inherit}.rc-tag{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px}.rc-title{font-weight:700;margin-bottom:4px}.rc-desc{font-size:13px;color:var(--text-muted)}</style></head><body>${NAV}<main><div class="article-wrap">
+<div class="breadcrumb"><a href="/">Home</a> › <a href="/articles/adopt-me-pet-value-list-2026.html">Pets</a> › ${n}</div><div class="article-hero"><div class="event-badge">${r} · Adopt Me Pet</div><h1>${n} — Current Value &amp; Trade Worth</h1><div class="article-meta">Updated <strong>May 2026</strong> · The Patch Staff <span class="tag">${r}</span></div><div class="pet-spotlight"><div class="pet-name">&#x1F43E; ${n}</div><div class="pet-rarity rarity-${cl}">${r}</div><div class="pet-stat"><span>Normal</span><strong>${nv}</strong></div><div class="pet-stat"><span>Neon</span><strong>${ne}</strong></div><div class="pet-stat"><span>Mega Neon</span><strong>${mg}</strong></div><div class="pet-stat"><span>Demand</span><strong>${d}</strong></div></div></div><div class="prose"><div class="callout"><div class="callout-icon">&#x1F4CA;</div><div><div class="callout-title">Value Summary</div><p>The <strong>${n}</strong> is currently valued at <strong>${nv}</strong>. Neon: <strong>${ne}</strong>. Mega Neon: <strong>${mg}</strong>.</p></div></div><h2>Current ${n} Trade Values</h2><div class="val-grid"><div class="val-card"><div class="vc-label">Normal</div><div class="vc-value">${nv}</div><div class="vc-note">May 2026</div></div><div class="val-card"><div class="vc-label">Neon</div><div class="vc-value">${ne}</div><div class="vc-note">≈ 4× normal</div></div><div class="val-card"><div class="vc-label">Mega Neon</div><div class="vc-value">${mg}</div><div class="vc-note">≈ 4× neon</div></div></div><h2>Is ${n} a Good Trade?</h2><p>${ctx(p)}</p><div class="callout"><div class="callout-icon">&#x1F4A1;</div><div><div class="callout-title">Trading Tip</div><p>Use the <a href="/pet-value-calculator.html">Adopt Me Trade Calculator</a> to check if any trade involving ${n} is fair.</p></div></div>
+<h2>FAQ</h2><div class="faq"><div class="faq-item"><div class="faq-q">What is ${n} worth in Adopt Me?</div><div class="faq-a">The ${n} is currently worth <strong>${nv}</strong>. Neon: ${ne}. Mega Neon: ${mg}.</div></div><div class="faq-item"><div class="faq-q">Is ${n} rare in Adopt Me?</div><div class="faq-a">${n} is a <strong>${r}</strong> pet. ${rctx(p)}</div></div><div class="faq-item"><div class="faq-q">What can I trade for ${n}?</div><div class="faq-a">Use the <a href="/pet-value-calculator.html">trade calculator</a> to find fair trades for ${n} (${nv} value).</div></div></div></div><div class="newsletter-cta"><h3>Get every Adopt Me value update</h3><p>Free weekly digest — new pets, value changes, trading tips.</p><a href="/#newsletter">Subscribe Free</a></div><div class="related-grid"><a href="/pet-value-calculator.html" class="related-card"><div class="rc-tag">Tool</div><div class="rc-title">Trade Calculator</div><div class="rc-desc">Check if any trade involving ${n} is fair.</div></a><a href="/articles/adopt-me-pet-value-list-2026.html" class="related-card"><div class="rc-tag">Guide</div><div class="rc-title">Full Pet Value List 2026</div><div class="rc-desc">See values for all Adopt Me pets.</div></a></div></div></main><footer class="site-footer"><div class="footer-inner"><a href="/">The Patch &#x1F43E;</a></div></footer></body></html>`;}
+          async function main() {
+            const [legacy,override,bench] = await Promise.all([
+              get('https://thepatchgg.github.io/data/adopt-me-calculator-values.json'),
+              get('https://thepatchgg.github.io/data/adopt-me-calculator-overrides.json'),
+              get('https://thepatchgg.github.io/data/adopt-me-values.json')
+            ]);
+            const bMap=Object.fromEntries(bench.pets.map(p=>[p.slug,p]));
+            const oMap=Object.fromEntries(override.pets.map(p=>[p.slug,p]));
+            const RM={l:'Legendary',ur:'Ultra-Rare',r:'Rare',uc:'Uncommon',c:'Common'};
+            const pets=legacy.pets.map(lp=>{
+              const b=bMap[lp.slug],o=oMap[lp.slug];
+              let rarity=RM[lp.rarity]||lp.rarity||'Common',nv,ne,mg,demand;
+              if(b){nv=b.values.default;ne=b.values.neon;mg=b.values.mega;demand=b.demand;rarity=b.rarity||rarity;}
+              else if(o){
+                const dv=o.values.default||{},nv2=o.values.neon||{},mv=o.values.mega||{};
+                nv=dv.noPotion||dv.flyRide||Object.values(dv)[0]||lp.legacyValue;
+                ne=Object.values(nv2)[0]||null;mg=Object.values(mv)[0]||null;demand=null;
+              } else {nv=lp.legacyValue;}
+              if(nv&&!ne)ne=Math.round(nv*4*10)/10;
+              if(ne&&!mg)mg=Math.round(ne*4*10)/10;
+              return {slug:lp.slug,name:lp.name,rarity,normalVal:nv,neonVal:ne,megaVal:mg,demand:demand||'Moderate'};
+            });
+            fs.mkdirSync('pets',{recursive:true});
+            let n=0;
+            for(const p of pets){fs.writeFileSync(`pets/${p.slug}.html`,makeHTML(p));if(++n%100===0)console.log(n+'/');}
+            const today=new Date().toISOString().split('T')[0];
+            const statics=[['/',1.0,'weekly'],['/pet-value-calculator.html',0.9,'weekly'],['/neon-calculator.html',0.9,'weekly'],['/market-movers.html',0.9,'weekly'],['/articles/adopt-me-pet-value-list-2026.html',0.8,'weekly'],['/articles/adopt-me-pet-encyclopedia.html',0.8,'weekly'],['/articles/adopt-me-egg-guide.html',0.8,'weekly'],['/articles/adopt-me-trading-guide-2026.html',0.8,'weekly'],['/trading-forum.html',0.8,'weekly'],['/adopt-me.html',0.8,'weekly']];
+            let sm='<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+';
+            for(const[u,pr,fr]of statics)sm+=`  <url><loc>https://thepatchgg.github.io${u}</loc><lastmod>${today}</lastmod><changefreq>${fr}</changefreq><priority>${pr}</priority></url>
+`;
+            for(const p of pets)sm+=`  <url><loc>https://thepatchgg.github.io/pets/${p.slug}.html</loc><lastmod>${today}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+`;
+            sm+='</urlset>';
+            fs.writeFileSync('sitemap.xml',sm);
+            console.log(`Generated ${n} pet pages + sitemap.xml`);
+          }
+          main().catch(console.error);
+          GENEOF
+      - name: Commit and push
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add pets/ sitemap.xml
+          git diff --staged --quiet || (git commit -m "feat: add pet value pages + sitemap.xml [skip ci]" && git push)
