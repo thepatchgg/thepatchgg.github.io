@@ -1,6 +1,6 @@
 # Value Audit Summary
 
-- Date: 2026-05-09
+- Date: 2026-05-16
 - Source refresh: fresh
 - Mode: audit-only
 - Scope: Adopt Me trade calculator long-tail pet values
@@ -8,8 +8,8 @@
 - Local calculator coverage: 719 pets
 - Benchmark/editorial pets currently handled outside the override layer: 101
 - Comparable non-benchmark pet coverage in this run: 618
-- Non-benchmark pets matched to public tracker feed: 606
-- Non-benchmark pets manually resolved: 12
+- Non-benchmark pets matched to public tracker feed: 609
+- Non-benchmark pets manually resolved: 9
 - Non-benchmark pets still unmatched: 0
 - Current production comparable non-benchmark coverage: 618
 
@@ -23,7 +23,18 @@
 
 ## Benchmark Review Queue
 
-No benchmark divergence rows were produced in the latest audit.
+These benchmark pets still deserve human review before any editorial benchmark change:
+
+| Pet | Patch default | Tracker FR | Delta % |
+| --- | ---: | ---: | ---: |
+| Mini Pig | 31 | 38.5 | -19.5% |
+| Hot Doggo | 27.5 | 34 | -19.1% |
+| Shark Puppy | 11 | 13.25 | -17% |
+| Haetae | 127 | 109 | 16.5% |
+| Bush Elephant | 10.5 | 12.5 | -16% |
+| Velocirooster | 10 | 8.75 | 14.3% |
+| Unicorn | 1.9 | 1.7 | 11.8% |
+| Jekyll Hydra | 40 | 36 | 11.1% |
 
 ## Recommendation
 

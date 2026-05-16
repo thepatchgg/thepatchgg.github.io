@@ -1,13 +1,35 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-tims-trial-tonics-potion-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Tim's Trial Tonics",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Tim's Trial Tonics guide &mdash; potion recipes, ingredients, and what to craft first",
+          excerpt: "The May 15 update adds a one-week potion crafting event with three temporary ingredients, Tim's cauldron, 10 potion effects, and no new pets to value this week.",
+          meta: ["May 15, 2026", "Live guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Tim's Trial Tonics Guide - potion recipes, ingredients, and event timing",
+          excerpt: "Farm ingredients from pet needs and taskboard quests, then brew 10 temporary potion effects. The May 15 update is a potion event, not a new-pet drop.",
+          meta: ["May 15", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-new-weather-needs-guide.html",
       featured: true,
       contexts: {
         home: {
           tag: "New Weather Needs",
-          badgeLabel: "New",
-          badgeTone: "new",
+          badgeLabel: "Pinned",
+          badgeTone: "updated",
           title: "New Weather Needs guide &mdash; weather-exclusive needs, the Super Age-Up Potion, and profile saves",
           excerpt: "The May 8 update adds four weather-exclusive pet needs, a one-week Super Age-Up Potion, profile saving, a permanent countdown bell, and a fresh wave of quality-of-life upgrades.",
           meta: ["May 8, 2026", "Live guide"]
@@ -186,7 +208,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the New Weather Needs guide &#8594;"
+      labelHtml: "Read the Tim's Trial Tonics guide &#8594;"
     },
     hub: {
       href: updates[0].href,
