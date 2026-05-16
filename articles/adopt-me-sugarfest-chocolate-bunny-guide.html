@@ -2,24 +2,1037 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/articles/adopt-me-sugarfest-week4-chocolate-bunny-guide.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting to Sugarfest Week 4 Archive | The Patch</title>
-  <meta name="robots" content="noindex, follow">
-  <link rel="canonical" href="https://thepatchgg.github.io/articles/adopt-me-sugarfest-week4-chocolate-bunny-guide.html">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/assets/css/adopt-tools.css">
-  <link rel="stylesheet" href="/assets/css/patch-compat.css">
-<script src="/assets/js/patch-ribbon.js"></script>
+  <title>Adopt Me Sugarfest Week 4 Guide | The Patch</title>
+  <meta name="description" content="Adopt Me Sugarfest Week 4 archive guide covering Chocolate Bunny Box, Pupcake, and Easter Bunny.">
+  <style>/* THE PATCH — Main Stylesheet */
+
+:root {
+  --bg: #0d0d0f;
+  --surface: #16161a;
+  --surface2: #1e1e24;
+  --border: #2a2a35;
+  --text: #e8e8f0;
+  --text-muted: #888898;
+  --accent: #c8ff57;
+  --accent-dim: rgba(200,255,87,0.12);
+  --lol: #c8972a;
+  --val: #e84057;
+  --fn: #2fa3e0;
+  --am: #3ecf6b;
+  --mr: #9b5de5;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  --radius: 8px;
+  --max-w: 1120px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/* ── LAYOUT ── */
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 20px; }
+
+/* ── HEADER ── */
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(13,13,15,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 20px;
+}
+.header-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.site-logo {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.site-logo span { color: var(--text); }
+
+.main-nav { display: flex; gap: 4px; }
+.main-nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  transition: color 0.15s, background 0.15s;
+}
+.main-nav a:hover { color: var(--text); background: var(--surface2); }
+.main-nav a.active { color: var(--accent); }
+
+.header-cta {
+  background: var(--accent);
+  color: #0d0d0f;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 7px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+  flex-shrink: 0;
+}
+.header-cta:hover { opacity: 0.88; }
+
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+.nav-toggle span {
+  display: block; width: 22px; height: 2px;
+  background: var(--text); margin: 5px 0;
+  transition: all 0.2s;
+}
+
+/* ── HERO ── */
+.hero {
+  padding: 64px 20px 48px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--accent);
+  background: var(--accent-dim);
+  padding: 4px 10px; border-radius: 20px;
+  margin-bottom: 20px;
+}
+.hero-eyebrow::before {
+  content: ''; display: block;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 16px;
+  max-width: 700px;
+}
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero p {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 540px;
+  margin-bottom: 32px;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.btn-primary {
+  background: var(--accent);
+  color: #0d0d0f;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  transition: opacity 0.15s, transform 0.1s;
+}
+.btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+.btn-ghost {
+  color: var(--text-muted);
+  font-size: 15px;
+  display: flex; align-items: center; gap: 6px;
+  padding: 12px 0;
+}
+.btn-ghost:hover { color: var(--text); }
+
+/* ── GAME FILTER TABS ── */
+.game-tabs {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 40px;
+  overflow-x: auto;
+  -ms-overflow-style: none; scrollbar-width: none;
+}
+.game-tabs::-webkit-scrollbar { display: none; }
+.tabs-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex; gap: 4px;
+}
+.tab {
+  display: flex; align-items: center; gap: 8px;
+  padding: 14px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  background: none; border-top: none; border-left: none; border-right: none;
+  text-decoration: none;
+}
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--text); border-bottom-color: var(--accent); }
+.tab-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  flex-shrink: 0;
+}
+.tab-dot.lol { background: var(--lol); }
+.tab-dot.val { background: var(--val); }
+.tab-dot.fn  { background: var(--fn);  }
+.tab-dot.am  { background: var(--am);  }
+.tab-dot.mr  { background: var(--mr);  }
+
+/* ── ARTICLE GRID ── */
+.section { padding: 0 20px 64px; }
+.section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+.section-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  display: flex; align-items: center; gap: 10px;
+}
+.section-title::after {
+  content: ''; flex: 1; height: 1px; background: var(--border);
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+.articles-grid.featured {
+  grid-template-columns: repeat(12, 1fr);
+}
+.articles-grid.featured .card:first-child {
+  grid-column: span 7;
+}
+.articles-grid.featured .card:nth-child(n+2) {
+  grid-column: span 5;
+}
+
+/* ── ARTICLE CARD (used on game hub pages) ── */
+.article-card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 22px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.2s, transform 0.15s;
+}
+.article-card:hover { border-color: #444455; transform: translateY(-2px); text-decoration: none; }
+
+.card-game-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.card-game-tag.lol { background: rgba(200,170,0,0.15); color: var(--lol); }
+.card-game-tag.val { background: rgba(255,70,85,0.15);  color: var(--val); }
+.card-game-tag.fn  { background: rgba(0,196,255,0.12);  color: var(--fn);  }
+.card-game-tag.am  { background: rgba(255,140,0,0.12);  color: var(--am);  }
+.card-game-tag.mr  { background: rgba(230,30,30,0.12);  color: var(--mr);  }
+
+.article-card .card-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+.article-card:hover .card-title { color: var(--accent); }
+
+.article-card .card-excerpt {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.article-card .card-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* ── CARD ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.15s;
+  display: flex; flex-direction: column;
+}
+.card:hover { border-color: #444455; transform: translateY(-2px); }
+
+.card-game-bar { height: 3px; }
+.card-game-bar.lol { background: var(--lol); }
+.card-game-bar.val { background: var(--val); }
+.card-game-bar.fn  { background: var(--fn);  }
+.card-game-bar.am  { background: var(--am);  }
+.card-game-bar.mr  { background: var(--mr);  }
+
+.card-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+
+.card-meta {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 12px;
+}
+.game-tag {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
+  text-transform: uppercase; padding: 3px 8px; border-radius: 4px;
+}
+.game-tag.lol { background: rgba(200,151,42,0.15); color: var(--lol); }
+.game-tag.val { background: rgba(232,64,87,0.15); color: var(--val); }
+.game-tag.fn  { background: rgba(47,163,224,0.15); color: var(--fn);  }
+.game-tag.am  { background: rgba(62,207,107,0.15); color: var(--am);  }
+.game-tag.mr  { background: rgba(155,93,229,0.15); color: var(--mr);  }
+
+.card-date { font-size: 12px; color: var(--text-muted); }
+
+.card-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+  margin-bottom: 10px;
+  flex: 1;
+}
+.card:hover .card-title { color: var(--accent); transition: color 0.15s; }
+
+.card-excerpt {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+}
+.card-badge {
+  display: flex; align-items: center; gap: 4px;
+  font-weight: 600; color: var(--text-muted);
+}
+.card-badge.hot { color: #ff6b35; }
+.card-badge.new { color: var(--am); }
+.read-more { color: var(--text-muted); font-size: 12px; }
+.card:hover .read-more { color: var(--accent); }
+
+/* ── NEWSLETTER SECTION ── */
+.newsletter-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 48px;
+  text-align: center;
+  margin: 0 20px 64px;
+  max-width: calc(var(--max-w) - 0px);
+  margin-left: auto; margin-right: auto;
+  position: relative; overflow: hidden;
+}
+.newsletter-section::before {
+  content: '';
+  position: absolute; top: -60px; left: 50%; transform: translateX(-50%);
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(200,255,87,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+.newsletter-section h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 900;
+  letter-spacing: -0.8px;
+  margin-bottom: 12px;
+}
+.newsletter-section h2 span { color: var(--accent); }
+.newsletter-section p {
+  color: var(--text-muted);
+  font-size: 16px;
+  max-width: 480px;
+  margin: 0 auto 28px;
+}
+.newsletter-form {
+  display: flex; gap: 8px;
+  max-width: 440px;
+  margin: 0 auto 16px;
+}
+.newsletter-form input {
+  flex: 1;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 12px 18px;
+  font-size: 15px;
+  color: var(--text);
+  outline: none;
+  font-family: var(--font);
+  transition: border-color 0.15s;
+}
+.newsletter-form input:focus { border-color: var(--accent); }
+.newsletter-form input::placeholder { color: var(--text-muted); }
+.newsletter-form button {
+  background: var(--accent);
+  color: #0d0d0f;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: var(--font);
+  transition: opacity 0.15s;
+}
+.newsletter-form button:hover { opacity: 0.88; }
+.newsletter-note { font-size: 12px; color: var(--text-muted); }
+
+/* ── QUICK HITS SIDEBAR ── */
+.quick-hits h3 {
+  font-size: 13px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--text-muted);
+  margin-bottom: 12px; padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.quick-hit {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex; gap: 12px; align-items: flex-start;
+}
+.quick-hit:last-child { border-bottom: none; }
+.qh-game {
+  width: 28px; height: 28px; border-radius: 6px;
+  font-size: 10px; font-weight: 800; text-transform: uppercase;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; letter-spacing: 0.5px;
+}
+.qh-game.lol { background: rgba(200,151,42,0.2); color: var(--lol); }
+.qh-game.val { background: rgba(232,64,87,0.2); color: var(--val); }
+.qh-game.fn  { background: rgba(47,163,224,0.2); color: var(--fn); }
+.qh-game.am  { background: rgba(62,207,107,0.2); color: var(--am); }
+.qh-game.mr  { background: rgba(155,93,229,0.2); color: var(--mr); }
+.qh-text { font-size: 14px; line-height: 1.4; }
+.qh-text strong { font-weight: 600; }
+.qh-time { font-size: 12px; color: var(--text-muted); display: block; margin-top: 2px; }
+
+/* ── ARTICLE PAGE ── */
+.article-layout {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 48px;
+  align-items: start;
+}
+.article-main { min-width: 0; }
+.article-sidebar { position: sticky; top: 80px; }
+
+.article-header { margin-bottom: 32px; }
+.article-breadcrumb {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 13px; color: var(--text-muted);
+  margin-bottom: 16px;
+}
+.article-breadcrumb a:hover { color: var(--accent); }
+.article-breadcrumb span { opacity: 0.4; }
+
+.article-game-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.5px;
+  text-transform: uppercase; padding: 4px 10px; border-radius: 6px;
+  margin-bottom: 14px;
+}
+.article-game-badge .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+}
+
+.article-title {
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+.article-meta {
+  display: flex; align-items: center; gap: 16px;
+  font-size: 14px; color: var(--text-muted);
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.article-meta strong { color: var(--accent); font-weight: 700; }
+
+.article-tldr {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 32px;
+}
+.article-tldr h3 {
+  font-size: 12px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
+}
+.article-tldr ol { padding-left: 18px; }
+.article-tldr li { font-size: 15px; margin-bottom: 6px; }
+
+/* Article body typography */
+.article-body h2 {
+  font-size: 22px; font-weight: 800; letter-spacing: -0.4px;
+  margin: 36px 0 16px; padding-top: 36px;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+}
+.article-body h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+.article-body h3 {
+  font-size: 18px; font-weight: 700;
+  margin: 24px 0 12px; color: var(--text);
+}
+.article-body p { margin-bottom: 16px; line-height: 1.7; }
+.article-body strong { color: var(--text); font-weight: 700; }
+.article-body em { color: var(--accent); font-style: normal; font-weight: 700; }
+
+.article-body ul, .article-body ol {
+  padding-left: 20px; margin-bottom: 16px;
+}
+.article-body li { margin-bottom: 8px; line-height: 1.6; }
+
+/* Pet / Winner / Loser cards */
+.card-pet {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+}
+.card-pet-header {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+}
+.pet-name { font-size: 17px; font-weight: 800; }
+.pet-rarity {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
+  text-transform: uppercase; padding: 3px 8px; border-radius: 4px;
+}
+.rarity-legendary { background: rgba(255,170,0,0.15); color: #ffaa00; }
+.rarity-ultra-rare { background: rgba(155,93,229,0.15); color: #9b5de5; }
+.rarity-rare { background: rgba(47,163,224,0.15); color: var(--fn); }
+.rarity-uncommon { background: rgba(62,207,107,0.15); color: var(--am); }
+.rarity-common { background: rgba(255,255,255,0.08); color: #aaa; }
+
+.pet-verdict {
+  display: inline-block;
+  font-size: 12px; font-weight: 700; padding: 2px 8px;
+  border-radius: 4px; margin-left: auto;
+}
+.verdict-s { background: rgba(255,170,0,0.15); color: #ffaa00; }
+.verdict-a { background: rgba(62,207,107,0.15); color: var(--am); }
+.verdict-b { background: rgba(47,163,224,0.15); color: var(--fn); }
+.verdict-c { background: rgba(200,255,87,0.12); color: var(--accent); }
+.verdict-d { background: rgba(232,64,87,0.15); color: var(--val); }
+
+.pet-stat {
+  font-size: 13px; color: var(--text-muted);
+  display: grid; grid-template-columns: 110px 1fr;
+  gap: 4px 8px; margin-bottom: 8px;
+}
+.pet-stat strong { color: var(--text); }
+.pet-analysis { font-size: 14px; line-height: 1.6; color: var(--text-muted); }
+.pet-analysis strong { color: var(--text); }
+.pet-our-call {
+  margin-top: 10px; padding-top: 10px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+}
+.pet-our-call::before { content: '💡 Our call: '; font-weight: 700; color: var(--accent); }
+
+/* Tier table */
+.tier-table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 24px; font-size: 14px;
+}
+.tier-table th {
+  background: var(--surface2); padding: 10px 14px;
+  text-align: left; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.5px; text-transform: uppercase;
+  color: var(--text-muted); border-bottom: 1px solid var(--border);
+}
+.tier-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.tier-label {
+  font-weight: 900; font-size: 16px;
+  width: 40px; text-align: center;
+}
+.tier-label.s { color: #ffaa00; }
+.tier-label.a { color: var(--am); }
+.tier-label.b { color: var(--fn); }
+.tier-label.c { color: var(--accent); }
+.tier-label.d { color: var(--val); }
+
+/* Timeline table */
+.timeline-table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 24px; font-size: 14px;
+}
+.timeline-table th {
+  background: var(--surface2); padding: 10px 14px;
+  text-align: left; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.5px; text-transform: uppercase;
+  color: var(--text-muted); border-bottom: 2px solid var(--border);
+}
+.timeline-table td { padding: 12px 14px; border-bottom: 1px solid var(--border); }
+.week-current { background: rgba(200,255,87,0.04); }
+
+/* Parent note box */
+.parent-note {
+  background: rgba(62,207,107,0.06);
+  border: 1px solid rgba(62,207,107,0.2);
+  border-radius: 10px; padding: 18px 20px; margin-top: 32px;
+}
+.parent-note h3 {
+  font-size: 14px; font-weight: 700; color: var(--am);
+  margin-bottom: 8px; letter-spacing: 0;
+}
+.parent-note p { font-size: 14px; color: var(--text-muted); margin: 0; }
+
+/* Newsletter CTA inline */
+.inline-cta {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px; padding: 20px;
+  text-align: center; margin: 32px 0;
+}
+.inline-cta p { font-size: 15px; margin-bottom: 12px; }
+.inline-cta a {
+  display: inline-block; background: var(--accent); color: #0d0d0f;
+  font-weight: 700; font-size: 14px; padding: 10px 22px;
+  border-radius: 20px; transition: opacity 0.15s;
+}
+.inline-cta a:hover { opacity: 0.88; }
+
+/* Sidebar widgets */
+.sidebar-widget {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px; padding: 18px 16px;
+  margin-bottom: 16px;
+}
+.sidebar-widget h3 {
+  font-size: 12px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--text-muted);
+  margin-bottom: 14px; padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.sub-cta-widget {
+  background: linear-gradient(135deg, rgba(200,255,87,0.06) 0%, var(--surface) 100%);
+  border-color: rgba(200,255,87,0.2);
+  text-align: center;
+}
+.sub-cta-widget h3 { color: var(--accent); border-bottom-color: rgba(200,255,87,0.15); }
+.sub-cta-widget p { font-size: 13px; color: var(--text-muted); margin-bottom: 14px; }
+.sub-cta-widget .btn-primary { display: block; width: 100%; text-align: center; border-radius: 8px; padding: 10px; }
+.sub-count { font-size: 20px; font-weight: 900; color: var(--accent); display: block; margin-bottom: 2px; }
+.sub-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* ── FOOTER ── */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 20px;
+  color: var(--text-muted);
+}
+.footer-inner {
+  max-width: var(--max-w); margin: 0 auto;
+  display: flex; flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px; align-items: center;
+}
+.footer-brand { font-weight: 800; color: var(--accent); font-size: 16px; }
+.footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.footer-links a { font-size: 14px; transition: color 0.15s; }
+.footer-links a:hover { color: var(--text); }
+.footer-social { display: flex; gap: 12px; }
+.footer-social a {
+  width: 34px; height: 34px; border-radius: 8px;
+  background: var(--surface2); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; transition: border-color 0.15s;
+}
+.footer-social a:hover { border-color: #555566; color: var(--text); }
+.footer-legal { width: 100%; font-size: 12px; padding-top: 20px; border-top: 1px solid var(--border); }
+
+/* ── GAME HUB PAGES ── */
+.game-hero {
+  max-width: 100%;
+  padding: 64px 20px 56px;
+  background: var(--bg);
+}
+.game-hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.game-eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.game-hero h1 {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+.game-hero p {
+  font-size: 18px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+.game-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.game-meta-item {
+  font-size: 13px;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 6px 14px;
+}
+
+/* Coming-soon state for game pages with no articles yet */
+.coming-soon-state {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 56px 48px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.coming-soon-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.coming-soon-heading {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text);
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+.coming-soon-body {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.coming-soon-schedule {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+.schedule-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+.schedule-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+.schedule-value {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Placeholder card (not a link, no hover state) */
+.card-placeholder {
+  cursor: default;
+  opacity: 0.55;
+}
+.card-placeholder:hover {
+  transform: none;
+  border-color: var(--border);
+}
+
+/* ── AD SLOTS ── */
+.ad-slot {
+  background: var(--surface2);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); font-size: 12px;
+  min-height: 90px; margin: 24px 0;
+  text-align: center;
+}
+.ad-slot-leaderboard { min-height: 90px; }
+.ad-slot-rectangle { min-height: 250px; max-width: 300px; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .articles-grid.featured { grid-template-columns: 1fr; }
+  .articles-grid.featured .card:first-child,
+  .articles-grid.featured .card:nth-child(n+2) { grid-column: span 1; }
+  .article-layout { grid-template-columns: 1fr; }
+  .article-sidebar { position: static; }
+}
+@media (max-width: 640px) {
+  .main-nav { display: none; }
+  .nav-toggle { display: block; }
+  .newsletter-section { padding: 32px 20px; }
+  .newsletter-form { flex-direction: column; }
+  .hero h1 { font-size: 30px; letter-spacing: -0.8px; }
+}
+
+.article-wrap{max-width:860px;margin:0 auto;padding:48px 24px 80px}
+.breadcrumb{font-size:.76rem;color:#b1b6c8;margin-bottom:20px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.breadcrumb a{color:#b8c36b}
+.breadcrumb span{color:#4a4e61}
+.article-hero{margin-bottom:36px;padding:28px 28px 30px;border:1px solid rgba(200,255,87,.2);border-radius:20px;background:radial-gradient(circle at top left,rgba(200,255,87,.08),transparent 26%),radial-gradient(circle at top right,rgba(255,166,87,.14),transparent 30%),linear-gradient(135deg,rgba(60,45,34,.82),rgba(36,35,34,.95) 42%,rgba(28,28,34,.98) 100%);box-shadow:0 24px 52px rgba(0,0,0,.24)}
+.event-badge,.archive-badge,.status-badge{display:inline-flex;align-items:center;gap:6px;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:16px}
+.event-badge{background:rgba(200,255,87,.14);border:1px solid rgba(200,255,87,.5);color:#d8ff73;box-shadow:0 0 0 1px rgba(200,255,87,.06) inset}
+.archive-badge{background:rgba(255,166,87,.18);border:1px solid rgba(255,166,87,.52);color:#ffc789;box-shadow:0 0 0 1px rgba(255,166,87,.08) inset,0 8px 18px rgba(255,166,87,.08);margin-left:8px}
+.status-badge{background:rgba(248,81,73,.14);border:1px solid rgba(248,81,73,.4);color:#ff8e86}
+.article-hero h1{font-size:2.15rem;font-weight:900;line-height:1.15;letter-spacing:-.03em;margin-bottom:14px;color:#f6f7fb}
+.article-meta{display:flex;flex-wrap:wrap;gap:14px;font-size:.8rem;color:#c0c6d8;align-items:center}
+.article-meta strong{color:#f6f7fb}
+.article-meta .author-link{color:#dfff76;font-weight:800;text-decoration:none}
+.article-meta .author-link:hover{text-decoration:underline;color:#edffad}
+.tag{background:rgba(39,40,49,.9);border:1px solid rgba(255,255,255,.08);padding:3px 9px;border-radius:999px;font-size:.7rem;color:#d7dbea}
+.hero-card{background:rgba(25,25,31,.84);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:22px;margin-top:26px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+.pet-spotlight{background:linear-gradient(180deg,rgba(46,46,57,.98),rgba(34,34,43,.98));border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.pet-spotlight .pet-name{font-size:1.03rem;font-weight:850;color:#f7f8fd}
+.pet-spotlight .pet-rarity{font-size:.7rem;font-weight:800;padding:3px 9px;border-radius:6px;display:inline-block;width:fit-content}
+.leg{background:#ffb15f;color:#17120b}
+.ult{background:#b36aff;color:#fff}
+.rar{background:#5995ff;color:#fff}
+.unc{background:#6fe38b;color:#111712}
+.com{background:#7f8695;color:#fff}
+.evt{background:#394154;color:#edf0f8}
+.pet-spotlight .pet-stat{font-size:.79rem;color:#c0c7d7;display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.pet-spotlight .pet-stat:last-child{border-bottom:none}
+.pet-spotlight .pet-stat strong{color:#f6f7fb;text-align:right}
+.prose{color:#e6e9f3;font-size:.98rem}
+.prose h2{font-size:1.42rem;font-weight:850;letter-spacing:-.02em;margin:44px 0 14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.08);box-shadow:inset 0 -2px 0 rgba(200,255,87,.12)}
+.prose h3{font-size:1.07rem;font-weight:750;margin:28px 0 10px;color:#d7ff76}
+.prose p{margin-bottom:16px;color:#d6dae6}
+.prose ul,.prose ol{margin:12px 0 18px 20px}
+.prose li{margin-bottom:7px}
+.prose strong{color:#f7f8fd;font-weight:700}
+.callout{border-radius:14px;padding:16px 20px;margin:24px 0;font-size:.89rem;display:flex;gap:12px;align-items:flex-start}
+.callout-icon{font-size:1.2rem;flex-shrink:0;margin-top:1px;color:#f7f8fd}
+.callout-tip{background:linear-gradient(135deg,rgba(63,185,80,.16),rgba(63,185,80,.07));border:1px solid rgba(63,185,80,.34)}
+.callout-warn{background:linear-gradient(135deg,rgba(255,166,87,.16),rgba(255,166,87,.07));border:1px solid rgba(255,166,87,.34)}
+.callout-info{background:linear-gradient(135deg,rgba(200,255,87,.12),rgba(200,255,87,.05));border:1px solid rgba(200,255,87,.28)}
+.callout-hot{background:linear-gradient(135deg,rgba(248,81,73,.14),rgba(248,81,73,.05));border:1px solid rgba(248,81,73,.3)}
+.callout .callout-title{font-weight:800;margin-bottom:4px;color:#f7f8fd}
+.callout p{margin:0;color:#dde2ee}
+.steps{display:flex;flex-direction:column;gap:12px;margin:20px 0}
+.step{background:linear-gradient(180deg,rgba(38,39,49,.95),rgba(29,30,37,.95));border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:14px 16px;display:flex;gap:14px;align-items:flex-start}
+.step-num{background:linear-gradient(135deg,#ebff9d,var(--accent));color:#111;font-weight:900;font-size:.8rem;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.step-body .step-title{font-weight:700;font-size:.92rem;margin-bottom:4px;color:#f7f8fd}
+.step-body p{font-size:.84rem;color:#cfd4e2;margin:0}
+.price-table-wrap{overflow-x:auto;margin:24px 0}
+.price-table{width:100%;border-collapse:collapse;font-size:.88rem;background:rgba(25,25,31,.55);border-radius:12px;overflow:hidden}
+.price-table th{background:linear-gradient(180deg,rgba(56,57,69,.9),rgba(38,39,48,.9));color:#bcc1d3;padding:11px 14px;text-align:left;border-bottom:2px solid rgba(200,255,87,.16);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+.price-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:middle}
+.price-table tr:hover td{background:rgba(255,255,255,.025)}
+.item-name{font-weight:650;color:#f4f6fb}
+.price-eggs{color:#d9ff76;font-weight:700}
+.price-robux{color:#ffbe7a;font-weight:700}
+.timeline{display:flex;flex-direction:column;gap:0;margin:22px 0}
+.tl-item{display:flex;gap:16px;padding:0 0 18px;position:relative}
+.tl-item:not(:last-child)::before{content:'';position:absolute;left:11px;top:24px;bottom:0;width:2px;background:linear-gradient(180deg,rgba(200,255,87,.42),rgba(255,166,87,.24),rgba(255,255,255,.08))}
+.tl-dot{width:24px;height:24px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:800;z-index:1}
+.tl-dot-done{background:#6fe38b;color:#111}
+.tl-dot-now{background:#dfff76;color:#111;box-shadow:0 0 0 4px rgba(200,255,87,.14)}
+.tl-dot-future{background:#2f3340;border:2px solid rgba(255,255,255,.1);color:#c0c6d7}
+.tl-content{flex:1;background:linear-gradient(180deg,rgba(40,41,51,.97),rgba(29,30,38,.97));border:1px solid rgba(255,255,255,.08);border-left:4px solid rgba(255,166,87,.48);border-radius:12px;padding:12px 14px;box-shadow:0 10px 22px rgba(0,0,0,.08)}
+.tl-content .tl-date{font-size:.73rem;color:#c7cddd;margin-bottom:3px}
+.tl-content .tl-title{font-weight:780;font-size:.92rem;color:#f5f7fb}
+.tl-content p{font-size:.82rem;color:#d9deea;margin:4px 0 0}
+.faq{display:flex;flex-direction:column;gap:8px;margin:20px 0}
+.faq-item{background:linear-gradient(180deg,rgba(35,36,45,.95),rgba(28,29,37,.95));border:1px solid rgba(255,255,255,.08);border-radius:10px;overflow:hidden}
+.faq-q{padding:14px 16px;font-weight:760;font-size:.89rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;color:#f6f8fc}
+.faq-q::after{content:'\25BE';color:#dfff76;font-size:.8rem}
+.faq-a{padding:12px 16px 14px;font-size:.85rem;color:#d0d5e3;border-top:1px solid rgba(255,255,255,.06);display:none}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:24px 0}
+.related-card{background:linear-gradient(180deg,rgba(37,38,47,.95),rgba(29,30,38,.95));border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:16px;text-decoration:none;transition:border-color .15s,transform .15s,box-shadow .15s;display:flex;flex-direction:column;gap:6px}
+.related-card:hover{border-color:#d8ff73;text-decoration:none;transform:translateY(-2px);box-shadow:0 16px 28px rgba(0,0,0,.12)}
+.related-card .rc-tag{font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:#d8ff73}
+.related-card .rc-title{font-size:.9rem;font-weight:760;color:#f6f8fc;line-height:1.3}
+.related-card .rc-desc{font-size:.77rem;color:#cdd3e2}
+.newsletter-cta{background:radial-gradient(circle at top center,rgba(200,255,87,.08),transparent 52%),linear-gradient(180deg,rgba(40,41,50,.95),rgba(29,30,38,.95));border:1px solid rgba(200,255,87,.28);border-radius:16px;padding:28px 24px;text-align:center;margin:44px 0}
+.newsletter-cta h3{font-size:1.12rem;font-weight:840;margin-bottom:8px;color:#f7f8fd}
+.newsletter-cta p{color:#cfd4e2;font-size:.88rem;margin-bottom:16px}
+.newsletter-cta a{display:inline-block;background:linear-gradient(135deg,#ebff9d,var(--accent));color:#111;font-weight:820;font-size:.85rem;padding:10px 22px;border-radius:20px;text-decoration:none;transition:opacity .15s,transform .15s}
+.newsletter-cta a:hover{opacity:.92;transform:translateY(-1px)}
+.author-card{margin:30px 0 24px;padding:18px 20px;border-radius:16px;border:1px solid rgba(200,255,87,.22);background:radial-gradient(circle at top left,rgba(200,255,87,.08),transparent 34%),linear-gradient(180deg,rgba(35,36,45,.96),rgba(28,29,37,.96));box-shadow:0 16px 32px rgba(0,0,0,.12)}
+.author-card-kicker{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#dfff76;margin-bottom:6px}
+.author-card h3{margin:0 0 8px;color:#f7f8fd}
+.author-card p{margin:0;color:#d5d9e6}
+.author-card-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.author-card-links a{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);color:#e6ebf7;text-decoration:none;font-size:.77rem;font-weight:750}
+.author-card-links a:hover{border-color:rgba(200,255,87,.34);color:#edffad}
+@media(max-width:720px){.article-hero h1{font-size:1.62rem}.hero-card{grid-template-columns:1fr}.article-hero{padding:22px 18px 24px}}
+</style>
 </head>
 <body>
-  <main class="section">
-    <div class="shell hero-panel">
-      <p class="helper">Redirect</p>
-      <h1>Sugarfest Week 4 moved to one canonical archive page.</h1>
-      <p>This older duplicate URL now points to the cleaned Week 4 archive so the site only has one main version of that coverage.</p>
-      <a class="button primary" href="/articles/adopt-me-sugarfest-week4-chocolate-bunny-guide.html">Open the canonical Week 4 archive</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="/">The Patch</a>
+      <nav class="main-nav" aria-label="Primary"><a href="/">Home</a><a href="/articles/adopt-me-pet-value-list-2026.html">Pet Values</a><a href="/articles/adopt-me-pet-encyclopedia.html">Pet Dex</a><a href="/articles/adopt-me-egg-guide.html">Egg Guide</a><a href="/pet-value-calculator.html">Trade Calc</a><a href="/neon-calculator.html">Neon Calc</a><a href="/market-movers.html">Movers</a><a href="/trading-forum.html">Trading Board</a><a href="/adopt-me.html" class="active">All Guides</a></nav>
+    </div>
+  </header>
+  <main class="article-wrap">
+    <div class="breadcrumb"><a href="/">Home</a><span>›</span><a href="/adopt-me.html">Adopt Me</a><span>›</span><a href="/adopt-me.html">Event Guides</a><span>›</span><span>Sugarfest Week 4</span></div>
+    <div class="article-hero">
+      <div class="event-badge">Sugarfest Week 4</div>
+      <div class="archive-badge">Archive Guide</div>
+      <h1>Adopt Me Sugarfest Week 4: Chocolate Bunny Box, Pupcake, and Easter Bunny</h1>
+      <div class="article-meta">
+        <span>Published <strong>April 3, 2026</strong></span><span>·</span>
+        <span>6 min read</span><span>·</span>
+        <a class="author-link" href="/the-patch-staff.html">The Patch Staff</a><span>·</span>
+        <span class="tag">Final event wave</span><span class="tag">Archive guide</span>
+      </div>
+      <div class="hero-card">
+        <div class="pet-spotlight">
+          <div class="pet-name">Chocolate Bunny Box</div><div class="pet-rarity leg">3 Pets Inside</div>
+          <div class="pet-stat"><span>Cost</span><strong>15,000 Candy Eggs</strong></div>
+          <div class="pet-stat"><span>Contains</span><strong>All 3 Choco Bunnies</strong></div>
+          <div class="pet-stat"><span>Standout pet</span><strong>Dark Choco Bunny</strong></div>
+          <div class="pet-stat"><span>Why it stuck</span><strong>Week 4 headline</strong></div>
+        </div>
+        <div class="pet-spotlight">
+          <div class="pet-name">Pupcake</div><div class="pet-rarity ur">Ultra-Rare</div>
+          <div class="pet-stat"><span>Cost</span><strong>99 Robux</strong></div>
+          <div class="pet-stat"><span>Type</span><strong>Premium event pet</strong></div>
+          <div class="pet-stat"><span>Player appeal</span><strong>Accessible buy</strong></div>
+          <div class="pet-stat"><span>Why it stuck</span><strong>Low-cost premium</strong></div>
+        </div>
+        <div class="pet-spotlight">
+          <div class="pet-name">Easter Bunny</div><div class="pet-rarity leg">Legendary</div>
+          <div class="pet-stat"><span>Release</span><strong>April 4, 2026</strong></div>
+          <div class="pet-stat"><span>How to get</span><strong>Hatch 25 eggs</strong></div>
+          <div class="pet-stat"><span>Role</span><strong>Final chase pet</strong></div>
+          <div class="pet-stat"><span>Why it stuck</span><strong>Event closeout</strong></div>
+        </div>
+      </div>
+    </div>
+    <div class="prose">
+      <div class="callout callout-info"><div class="callout-icon">i</div><div><div class="callout-title">Quick Week 4 guide</div><p>Week 4 was the Sugarfest finale, bringing the Chocolate Bunny Box, Pupcake, and Easter Bunny together in the event's biggest closing wave.</p></div></div>
+      <h2>What landed in Week 4</h2>
+      <p>Week 4 gave Sugarfest a real finale. It combined a themed box, a low-cost premium pet, and one last Legendary target before the event wrapped. That mix made it one of the most memorable weekly update pages from the whole event run.</p>
+      <div class="price-table-wrap">
+        <table class="price-table">
+          <thead><tr><th>Item</th><th>Rarity</th><th>How to get</th><th>Cost</th></tr></thead>
+          <tbody>
+            <tr><td class="item-name">Milk Choco Bunny</td><td><span class="rarity-badge rb-rare">Rare</span></td><td>Chocolate Bunny Box</td><td class="price-eggs">15,000 Candy Eggs</td></tr>
+            <tr><td class="item-name">White Choco Bunny</td><td><span class="rarity-badge rb-ultra">Ultra-Rare</span></td><td>Chocolate Bunny Box</td><td class="price-eggs">15,000 Candy Eggs</td></tr>
+            <tr><td class="item-name">Dark Choco Bunny</td><td><span class="rarity-badge rb-legendary">Legendary</span></td><td>Chocolate Bunny Box</td><td class="price-eggs">15,000 Candy Eggs</td></tr>
+            <tr><td class="item-name">Pupcake</td><td><span class="rarity-badge rb-ultra">Ultra-Rare</span></td><td>Premium shop</td><td class="price-robux">99 Robux</td></tr>
+            <tr><td class="item-name">Easter Bunny</td><td><span class="rarity-badge rb-legendary">Legendary</span></td><td>Hatch challenge</td><td class="price-eggs">25 eggs</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Why the final week mattered</h2>
+      <h3>Chocolate Bunny Box finale</h3>
+      <p>The Chocolate Bunny Box gave Week 4 its identity. Because it bundled three themed pets into one purchase, it stayed more memorable than a standard single-pet shop update.</p>
+      <h3>Pupcake value conversation</h3>
+      <p>Pupcake stood out because it was a low-cost premium pet in the final week. Players still revisit this page when they want the release context behind Pupcake's popularity.</p>
+      <h3>Easter Bunny closeout</h3>
+      <p>Easter Bunny gave the event one last Legendary target, which helped the final week feel like a proper closing chapter rather than a cooldown.</p>
+      <div class="callout callout-tip"><div class="callout-icon">+</div><div><div class="callout-title">Best use for this archive</div><p>Use this page for Week 4 release context, then switch to the live value list or trade calculator if you want current pricing and offer math.</p></div></div>
+      <h2>Sugarfest timeline</h2>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot tl-dot-done">1</div><div class="tl-content"><div class="tl-date">March 13, 2026</div><div class="tl-title">Week 1 launch</div><p>Candicorn, Gumball Caterpillar, Gummy Guana, Cocoadile, and the first Sugarfest loop.</p></div></div>
+        <div class="tl-item"><div class="tl-dot tl-dot-done">2</div><div class="tl-content"><div class="tl-date">March 20, 2026</div><div class="tl-title">Week 2: Waffle Scuffle</div><p>Mochi Meow, Waffle Wyrm, and the second content wave.</p></div></div>
+        <div class="tl-item"><div class="tl-dot tl-dot-done">3</div><div class="tl-content"><div class="tl-date">March 27, 2026</div><div class="tl-title">Week 3: Jerboa Jam</div><p>Latte Kitsune, Jiggly Jerboa, and the late-event grind shift.</p></div></div>
+        <div class="tl-item"><div class="tl-dot tl-dot-now">4</div><div class="tl-content"><div class="tl-date">April 3, 2026</div><div class="tl-title">Week 4 finale</div><p>Chocolate Bunny Box, Pupcake, and Easter Bunny close out the event.</p></div></div>
+      </div>
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <div class="faq-item"><div class="faq-q">What made Week 4 different from the earlier Sugarfest weeks?</div><div class="faq-a">Week 4 combined a bundled box (Chocolate Bunny Box with three rarities), a low-cost premium pet (Pupcake at 99 Robux), and a hatch-challenge Legendary (Easter Bunny), making it the most varied single-week drop of the event.</div></div>
+        <div class="faq-item"><div class="faq-q">Are the old Week 4 values still current?</div><div class="faq-a">This is an archive page covering release context only. For current trading values, check the live pet value list or use the trade calculator for up-to-date offer math.</div></div>
+        <div class="faq-item"><div class="faq-q">Where should I go next after this archive page?</div><div class="faq-a">The Sugarfest 2026 archive hub links all four weeks together. The live pet value list and trade calculator are the best next stops if you want current pricing.</div></div>
+      </div>
+      <h2>Related guides</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/articles/adopt-me-sugarfest-jerboa-jam-guide.html"><div class="rc-tag">Week 3</div><div class="rc-title">Jerboa Jam: Latte Kitsune and Jiggly Jerboa</div><div class="rc-desc">Go back one week to the late-event setup that led into the finale.</div></a>
+        <a class="related-card" href="/articles/adopt-me-sugarfest-2026.html"><div class="rc-tag">Archive Hub</div><div class="rc-title">Sugarfest 2026 archive</div><div class="rc-desc">Browse the full event timeline in one place.</div></a>
+        <a class="related-card" href="/articles/adopt-me-pet-value-list-2026.html"><div class="rc-tag">Live Values</div><div class="rc-title">Current pet value list</div><div class="rc-desc">Switch from event context to current prices and trade help.</div></a>
+      </div>
+      <div class="newsletter-cta">
+        <p>Keep the next update on your radar</p>
+        <p>Follow The Patch for weekly Adopt Me updates, value shifts, and archive-worthy event guides.</p>
+        <a href="/newsletter.html">Subscribe Free</a>
+      </div>
     </div>
   </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><div class="footer-brand">The Patch</div></div>
+      <nav class="footer-links">
+        <a href="/articles/adopt-me-sugarfest-2026.html">Sugarfest Archive</a>
+        <a href="/articles/adopt-me-pet-value-list-2026.html">Values</a>
+        <a href="/pet-value-calculator.html">Trade Calc</a>
+        <a href="/privacy.html">Privacy</a>
+      </nav>
+      <div class="footer-legal">Week 4 Sugarfest archive for Chocolate Bunny Box, Pupcake, and Easter Bunny.</div>
+    </div>
+  </footer>
 </body>
 </html>
