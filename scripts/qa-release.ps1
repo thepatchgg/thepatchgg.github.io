@@ -188,8 +188,8 @@ if (@($overrideData.pets).Count -lt 600) {
 if ($overrideData.trackerMatchedCount -lt 590) {
   $issues.Add("Unexpected tracker-backed calculator count: $($overrideData.trackerMatchedCount)")
 }
-if ($overrideData.manualResolvedCount -lt 12) {
-  $issues.Add("Manual calculator count dropped unexpectedly: $($overrideData.manualResolvedCount)")
+if ($overrideData.manualResolvedCount -gt 20) {
+  $issues.Add("Too many calculator pets require manual mappings: $($overrideData.manualResolvedCount)")
 }
 if ($overrideData.remainingUnmatchedCount -ne 0) {
   $issues.Add("Calculator still has unmatched pets: $($overrideData.remainingUnmatchedCount)")
