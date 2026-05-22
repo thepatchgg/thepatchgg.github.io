@@ -1,6 +1,6 @@
 # Value Audit Summary
 
-- Date: 2026-05-16
+- Date: 2026-05-22
 - Source refresh: fresh
 - Mode: production refresh
 - Scope: Adopt Me trade calculator long-tail pet values
@@ -27,14 +27,14 @@ These benchmark pets still deserve human review before any editorial benchmark c
 
 | Pet | Patch default | Tracker FR | Delta % |
 | --- | ---: | ---: | ---: |
-| Mini Pig | 31 | 38.5 | -19.5% |
-| Hot Doggo | 27.5 | 34 | -19.1% |
-| Shark Puppy | 11 | 13.25 | -17% |
+| Siamese Cat | 12.5 | 16.5 | -24.2% |
+| Hot Doggo | 27.5 | 35.5 | -22.5% |
+| Mini Pig | 31 | 40 | -22.5% |
+| Velocirooster | 10 | 8.5 | 17.6% |
+| Balloon Unicorn | 125 | 151 | -17.2% |
+| Goose | 20.75 | 25 | -17% |
 | Haetae | 127 | 109 | 16.5% |
 | Bush Elephant | 10.5 | 12.5 | -16% |
-| Velocirooster | 10 | 8.75 | 14.3% |
-| Unicorn | 1.9 | 1.7 | 11.8% |
-| Jekyll Hydra | 40 | 36 | 11.1% |
 
 ## Recommendation
 

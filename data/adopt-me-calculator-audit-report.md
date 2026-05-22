@@ -1,6 +1,6 @@
 # Calculator Audit Report
 
-- Date: 2026-05-16
+- Date: 2026-05-22
 - Tracker pet rows parsed: 728
 - Local calculator pets: 719
 - Non-benchmark local pets: 618
@@ -12,31 +12,31 @@
 
 | Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Mini Pig | 31 | 38.5 | -19.5% | 29.5 | 37 |
-| Hot Doggo | 27.5 | 34 | -19.1% | 26.5 | 33 |
-| Shark Puppy | 11 | 13.25 | -17% | 10 | 12.25 |
+| Siamese Cat | 12.5 | 16.5 | -24.2% | 11.5 | 15.5 |
+| Hot Doggo | 27.5 | 35.5 | -22.5% | 26.5 | 34.5 |
+| Mini Pig | 31 | 40 | -22.5% | 29.5 | 38.5 |
+| Velocirooster | 10 | 8.5 | 17.6% | 9 | 7.75 |
+| Balloon Unicorn | 125 | 151 | -17.2% | 123 | 149 |
+| Goose | 20.75 | 25 | -17% | 19.25 | 23.5 |
 | Haetae | 127 | 109 | 16.5% | 125 | 107 |
 | Bush Elephant | 10.5 | 12.5 | -16% | 9.5 | 11.5 |
-| Velocirooster | 10 | 8.75 | 14.3% | 9 | 8 |
-| Unicorn | 1.9 | 1.7 | 11.8% | 1.2 | 1 |
-| Jekyll Hydra | 40 | 36 | 11.1% | 39 | 35 |
-| Alpaca | 12 | 13.5 | -11.1% | 11 | 12.5 |
-| Siamese Cat | 12.5 | 14 | -10.7% | 11.5 | 13 |
-| African Wild Dog | 115 | 124 | -7.3% | 113 | 122 |
-| Balloon Unicorn | 125 | 134 | -6.7% | 123 | 132 |
+| Shark Puppy | 11 | 13 | -15.4% | 10 | 12 |
+| Unicorn | 1.9 | 1.65 | 15.2% | 1.2 | 0.95 |
+| Alpaca | 12 | 13.75 | -12.7% | 11 | 12.75 |
+| African Wild Dog | 115 | 130 | -11.5% | 113 | 128 |
+| Jekyll Hydra | 40 | 36.5 | 9.6% | 39 | 35.5 |
+| Frostbite Bear | 9 | 8.25 | 9.1% | 8.25 | 7.5 |
+| Werewolf | 8.25 | 9 | -8.3% | 7.5 | 8.25 |
+| Papa Moose | 7.5 | 7 | 7.1% | 6.75 | 6.25 |
 | Cryptid | 99 | 106 | -6.6% | 97 | 104 |
+| Field Mouse | 8.25 | 7.75 | 6.5% | 7.5 | 7 |
+| Dragon | 1 | 0.94 | 6.4% | 0.3 | 0.24 |
+| Alicorn | 1 | 0.94 | 6.4% | 0.3 | 0.24 |
+| Undead Jousting Horse | 19 | 20.25 | -6.2% | 18 | 19.25 |
 | Golden Penguin | 2.7 | 2.55 | 5.9% | 2 | 1.85 |
-| Werewolf | 8.25 | 8.75 | -5.7% | 7.5 | 8 |
-| Dragon | 1 | 0.95 | 5.3% | 0.3 | 0.25 |
 | Dragonfruit Fox | 4.95 | 4.7 | 5.3% | 4.25 | 4 |
 | Blazing Lion | 77 | 81 | -4.9% | 75 | 79 |
-| Alicorn | 1 | 0.96 | 4.2% | 0.3 | 0.26 |
-| Candicorn | 6.45 | 6.2 | 4% | 5.75 | 5.5 |
-| Papa Moose | 7.5 | 7.25 | 3.4% | 6.75 | 6.5 |
-| Field Mouse | 8.25 | 8 | 3.1% | 7.5 | 7.25 |
-| Bat Dragon | 722 | 742 | -2.7% | 735 | 755 |
-| Undead Jousting Horse | 19 | 19.5 | -2.6% | 18 | 18.5 |
-| Giraffe | 315 | 323 | -2.5% | 327 | 335 |
+| Bat Dragon | 722 | 758 | -4.7% | 735 | 771 |
 
 ## Manual Edge-Case Resolutions
 

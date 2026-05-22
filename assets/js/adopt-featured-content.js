@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-stormy-ducky-drama-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Stormy Ducky Drama",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Stormy Ducky Drama guide &mdash; Rubber Ducky Box odds, Shadow Dragon Ducky, and storm rewards",
+          excerpt: "The May 22 update adds Rubber Ducky, Glyptodon Ducky, Unicorn Ducky, Strawberry Shortcake Ducky, Shadow Dragon Ducky, a storm task, and day-one value notes.",
+          meta: ["May 22, 2026", "Live guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Stormy Ducky Drama Guide - Rubber Ducky Box odds and Shadow Dragon Ducky",
+          excerpt: "Open the May 22 guide for Rubber Ducky, Glyptodon Ducky, Unicorn Ducky, Strawberry Shortcake Ducky, Shadow Dragon Ducky, storm rewards, and value-status notes.",
+          meta: ["May 22", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-tims-trial-tonics-potion-guide.html",
       featured: true,
       contexts: {
@@ -208,7 +230,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Tim's Trial Tonics guide &#8594;"
+      labelHtml: "Read the Stormy Ducky Drama guide &#8594;"
     },
     hub: {
       href: updates[0].href,

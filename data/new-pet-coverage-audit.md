@@ -1,26 +1,30 @@
 # New Pet Coverage Audit
 
-- Date: 2026-05-16
-- Pets checked: Glormy Crab, Peachick, Peahen, Moonbeam Peacock
+- Date: 2026-05-22
+- Pets checked: Rubber Ducky, Glyptodon Ducky, Unicorn Ducky, Strawberry Shortcake Ducky, Shadow Dragon Ducky
 
 | Pet | Article | Home | Hub | Catalog | Legacy Calc | Benchmark | Override | Pet Page Data | Pet Page | Image |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Glormy Crab | Yes | Yes | Yes | Yes | Yes | No | Yes | Yes | Yes | Yes |
-| Peachick | Yes | Yes | Yes | Yes | Yes | No | Yes | Yes | Yes | Yes |
-| Peahen | Yes | Yes | Yes | Yes | Yes | No | Yes | Yes | Yes | Yes |
-| Moonbeam Peacock | Yes | Yes | Yes | Yes | Yes | No | Yes | Yes | Yes | Yes |
+| Rubber Ducky | Yes | Yes | Yes | No | No | No | No | No | No | No |
+| Glyptodon Ducky | Yes | Yes | Yes | No | No | No | No | No | No | No |
+| Unicorn Ducky | Yes | Yes | Yes | No | No | No | No | No | No | No |
+| Strawberry Shortcake Ducky | Yes | Yes | Yes | No | No | No | No | No | No | No |
+| Shadow Dragon Ducky | Yes | Yes | Yes | No | No | No | No | No | No | No |
 
 ## Notes
 
-- **Glormy Crab**
-  - Article hits: adopt-me-new-weather-needs-guide.html, adopt-me-salon-revamp-moonbeam-peacock-guide.html, adopt-me-seans-sale-item-releaser-guide.html
-  - Missing: benchmark layer
-- **Peachick**
-  - Article hits: adopt-me-new-weather-needs-guide.html, adopt-me-salon-revamp-moonbeam-peacock-guide.html, adopt-me-tims-trial-tonics-potion-guide.html
-  - Missing: benchmark layer
-- **Peahen**
-  - Article hits: adopt-me-new-weather-needs-guide.html, adopt-me-salon-revamp-moonbeam-peacock-guide.html, adopt-me-tims-trial-tonics-potion-guide.html
-  - Missing: benchmark layer
-- **Moonbeam Peacock**
-  - Article hits: adopt-me-new-weather-needs-guide.html, adopt-me-salon-revamp-moonbeam-peacock-guide.html, adopt-me-tims-trial-tonics-potion-guide.html
-  - Missing: benchmark layer
+- **Rubber Ducky**
+  - Article hits: adopt-me-stormy-ducky-drama-guide.html
+  - Missing: pet catalog, legacy calculator dataset, benchmark layer, override layer, pet-page dataset, generated pet page, local image asset
+- **Glyptodon Ducky**
+  - Article hits: adopt-me-stormy-ducky-drama-guide.html
+  - Missing: pet catalog, legacy calculator dataset, benchmark layer, override layer, pet-page dataset, generated pet page, local image asset
+- **Unicorn Ducky**
+  - Article hits: adopt-me-stormy-ducky-drama-guide.html
+  - Missing: pet catalog, legacy calculator dataset, benchmark layer, override layer, pet-page dataset, generated pet page, local image asset
+- **Strawberry Shortcake Ducky**
+  - Article hits: adopt-me-stormy-ducky-drama-guide.html
+  - Missing: pet catalog, legacy calculator dataset, benchmark layer, override layer, pet-page dataset, generated pet page, local image asset
+- **Shadow Dragon Ducky**
+  - Article hits: adopt-me-stormy-ducky-drama-guide.html
+  - Missing: pet catalog, legacy calculator dataset, benchmark layer, override layer, pet-page dataset, generated pet page, local image asset
