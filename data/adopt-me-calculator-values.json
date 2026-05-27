@@ -1,6 +1,6 @@
 {
-    "updatedAt":  "2026-04-19",
-    "count":  715,
+    "updatedAt":  "2026-05-26",
+    "count":  725,
     "notes":  "Legacy long-tail calculator defaults. Benchmark entries in adopt-me-values.json override these values in the live tool.",
     "pets":  [
                  {
@@ -5035,6 +5035,48 @@
                      "rarity":  "c",
                      "image":  "/assets/pets/wolpertinger.png",
                      "legacyValue":  0
+                 },
+                 {
+                     "slug":  "dirty-ducky",
+                     "name":  "Dirty Ducky",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/dirty-ducky.png",
+                     "legacyValue":  0.12
+                 },
+                 {
+                     "slug":  "glyptodon-ducky",
+                     "name":  "Glyptodon Ducky",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/glyptodon-ducky.png",
+                     "legacyValue":  0.03
+                 },
+                 {
+                     "slug":  "rubber-ducky",
+                     "name":  "Rubber Ducky",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/rubber-ducky.png",
+                     "legacyValue":  0.014
+                 },
+                 {
+                     "slug":  "shadow-dragon-ducky",
+                     "name":  "Shadow Dragon Ducky",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/shadow-dragon-ducky.png",
+                     "legacyValue":  0.86
+                 },
+                 {
+                     "slug":  "strawberry-shortcake-ducky",
+                     "name":  "Strawberry Shortcake Ducky",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/strawberry-shortcake-ducky.png",
+                     "legacyValue":  0.85
+                 },
+                 {
+                     "slug":  "unicorn-ducky",
+                     "name":  "Unicorn Ducky",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/unicorn-ducky.png",
+                     "legacyValue":  0.08
                  }
              ]
 }

@@ -9,7 +9,7 @@
           badgeLabel: "New",
           badgeTone: "new",
           title: "Stormy Ducky Drama guide &mdash; Rubber Ducky Box odds, Shadow Dragon Ducky, and storm rewards",
-          excerpt: "The May 22 update adds Rubber Ducky, Glyptodon Ducky, Unicorn Ducky, Strawberry Shortcake Ducky, Shadow Dragon Ducky, a storm task, and day-one value notes.",
+          excerpt: "The May 22-23 update wave adds Rubber Ducky, Glyptodon Ducky, Unicorn Ducky, Strawberry Shortcake Ducky, Shadow Dragon Ducky, Dirty Ducky, a storm task, and live value notes.",
           meta: ["May 22, 2026", "Live guide"]
         },
         hub: {
@@ -17,7 +17,7 @@
           badgeLabel: "New",
           badgeTone: "new",
           title: "Stormy Ducky Drama Guide - Rubber Ducky Box odds and Shadow Dragon Ducky",
-          excerpt: "Open the May 22 guide for Rubber Ducky, Glyptodon Ducky, Unicorn Ducky, Strawberry Shortcake Ducky, Shadow Dragon Ducky, storm rewards, and value-status notes.",
+          excerpt: "Open the May 22-23 guide for Rubber Ducky, Glyptodon Ducky, Unicorn Ducky, Strawberry Shortcake Ducky, Shadow Dragon Ducky, Dirty Ducky, storm rewards, and live value notes.",
           meta: ["May 22", "Live guide"]
         }
       }

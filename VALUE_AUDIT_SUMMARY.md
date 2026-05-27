@@ -1,17 +1,17 @@
 # Value Audit Summary
 
-- Date: 2026-05-22
+- Date: 2026-05-26
 - Source refresh: fresh
 - Mode: production refresh
 - Scope: Adopt Me trade calculator long-tail pet values
 - Reference source: adoptmevalues.app values index
-- Local calculator coverage: 719 pets
+- Local calculator coverage: 725 pets
 - Benchmark/editorial pets currently handled outside the override layer: 101
-- Comparable non-benchmark pet coverage in this run: 618
-- Non-benchmark pets matched to public tracker feed: 609
+- Comparable non-benchmark pet coverage in this run: 624
+- Non-benchmark pets matched to public tracker feed: 615
 - Non-benchmark pets manually resolved: 9
 - Non-benchmark pets still unmatched: 0
-- Current production comparable non-benchmark coverage: 618
+- Current production comparable non-benchmark coverage: 624
 
 ## What Changed
 
@@ -27,14 +27,14 @@ These benchmark pets still deserve human review before any editorial benchmark c
 
 | Pet | Patch default | Tracker FR | Delta % |
 | --- | ---: | ---: | ---: |
-| Siamese Cat | 12.5 | 16.5 | -24.2% |
+| Siamese Cat | 12.5 | 18.5 | -32.4% |
+| Goose | 20.75 | 27 | -23.1% |
 | Hot Doggo | 27.5 | 35.5 | -22.5% |
 | Mini Pig | 31 | 40 | -22.5% |
+| Unicorn | 1.9 | 1.6 | 18.7% |
 | Velocirooster | 10 | 8.5 | 17.6% |
-| Balloon Unicorn | 125 | 151 | -17.2% |
-| Goose | 20.75 | 25 | -17% |
 | Haetae | 127 | 109 | 16.5% |
-| Bush Elephant | 10.5 | 12.5 | -16% |
+| Balloon Unicorn | 125 | 149 | -16.1% |
 
 ## Recommendation
 
