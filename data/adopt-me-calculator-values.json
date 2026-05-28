@@ -1,6 +1,6 @@
-{
-    "updatedAt":  "2026-05-26",
-    "count":  725,
+﻿{
+    "updatedAt":  "2026-05-27",
+    "count":  731,
     "notes":  "Legacy long-tail calculator defaults. Benchmark entries in adopt-me-values.json override these values in the live tool.",
     "pets":  [
                  {
@@ -5077,6 +5077,48 @@
                      "rarity":  "ur",
                      "image":  "/assets/pets/unicorn-ducky.png",
                      "legacyValue":  0.08
+                 },
+                 {
+                     "slug":  "latte-kitsune",
+                     "name":  "Latte Kitsune",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/latte-kitsune.png",
+                     "legacyValue":  2
+                 },
+                 {
+                     "slug":  "jiggly-jerboa",
+                     "name":  "Jiggly Jerboa",
+                     "rarity":  "c",
+                     "image":  "/assets/pets/jiggly-jerboa.png",
+                     "legacyValue":  0.016
+                 },
+                 {
+                     "slug":  "pupcake",
+                     "name":  "Pupcake",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/pupcake.png",
+                     "legacyValue":  0.45
+                 },
+                 {
+                     "slug":  "milk-choco-bunny",
+                     "name":  "Milk Choccybunny",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/milk-choco-bunny.png",
+                     "legacyValue":  0.025
+                 },
+                 {
+                     "slug":  "white-choco-bunny",
+                     "name":  "White Choccybunny",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/white-choco-bunny.png",
+                     "legacyValue":  0.05
+                 },
+                 {
+                     "slug":  "dark-choco-bunny",
+                     "name":  "Dark Choccybunny",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/dark-choco-bunny.png",
+                     "legacyValue":  0.1
                  }
              ]
 }

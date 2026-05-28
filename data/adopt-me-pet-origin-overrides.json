@@ -1,5 +1,5 @@
-{
-    "updatedAt":  "2026-05-26",
+﻿{
+    "updatedAt":  "2026-05-27",
     "source":  "Curated Adopt Me Wiki pet-origin overrides from the main Pets index and select pet pages.",
     "pets":  [
                  {
@@ -1555,6 +1555,23 @@
                                          "petRarity":  "Legendary",
                                          "eventContext":  "Lunar New Year (2022)",
                                          "notes":  "Premium Lunar New Year dragon sold at the Lunar New Year Stand throughout the 2022 event."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "dark-choco-bunny",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Choccybunny Box",
+                                         "sourceType":  "Event box pet",
+                                         "status":  "retired",
+                                         "released":  "Apr 3, 2026",
+                                         "retired":  "Apr 17, 2026",
+                                         "cost":  "15,000 Candy Eggs box; 4% pull rate",
+                                         "petRarity":  "Legendary",
+                                         "chanceText":  "4% from Choccybunny Box",
+                                         "eventContext":  "Sugarfest 2026 - Choccybunny Box",
+                                         "notes":  "Limited Sugarfest box pet from the Choccybunny Box."
                                      }
                                  ]
                  },
@@ -3894,6 +3911,22 @@
                                  ]
                  },
                  {
+                     "slug":  "jiggly-jerboa",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Sugarfest shop",
+                                         "sourceType":  "Event shop pet",
+                                         "status":  "retired",
+                                         "released":  "Mar 27, 2026",
+                                         "retired":  "Apr 17, 2026",
+                                         "cost":  "6,000 Candy Eggs",
+                                         "petRarity":  "Common",
+                                         "eventContext":  "Sugarfest 2026 - Jerboa Jam",
+                                         "notes":  "Limited Sugarfest pet released with the Jerboa Jam minigame."
+                                     }
+                                 ]
+                 },
+                 {
                      "slug":  "jousting-horse",
                      "sources":  [
                                      {
@@ -4212,6 +4245,22 @@
                                          "petRarity":  "Ultra-Rare",
                                          "eventContext":  "Easter Event (2021)",
                                          "notes":  "Premium Easter Event pet sold at the Easter Event Stand."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "latte-kitsune",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Premium shop",
+                                         "sourceType":  "Robux event pet",
+                                         "status":  "retired",
+                                         "released":  "Mar 27, 2026",
+                                         "retired":  "Apr 17, 2026",
+                                         "cost":  "600 Robux",
+                                         "petRarity":  "Legendary",
+                                         "eventContext":  "Sugarfest 2026 - Jerboa Jam",
+                                         "notes":  "Limited premium Sugarfest pet released during Jerboa Jam week."
                                      }
                                  ]
                  },
@@ -4702,6 +4751,23 @@
                                          "petRarity":  "Legendary",
                                          "eventContext":  "Lunar New Year (2024)",
                                          "notes":  "Premium Lunar New Year dragon sold during the 2024 event."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "milk-choco-bunny",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Choccybunny Box",
+                                         "sourceType":  "Event box pet",
+                                         "status":  "retired",
+                                         "released":  "Apr 3, 2026",
+                                         "retired":  "Apr 17, 2026",
+                                         "cost":  "15,000 Candy Eggs box; 76% pull rate",
+                                         "petRarity":  "Rare",
+                                         "chanceText":  "76% from Choccybunny Box",
+                                         "eventContext":  "Sugarfest 2026 - Choccybunny Box",
+                                         "notes":  "Limited Sugarfest box pet from the Choccybunny Box."
                                      }
                                  ]
                  },
@@ -5725,6 +5791,22 @@
                                          "petRarity":  "Rare",
                                          "eventContext":  "Summer State Fair (2024)",
                                          "notes":  "Limited state-fair pet earned by leveling the Pony Pass in the Speedy Stables minigame during week two of the 2024 Summer State Fair."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "pupcake",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Premium shop",
+                                         "sourceType":  "Robux event pet",
+                                         "status":  "retired",
+                                         "released":  "Apr 3, 2026",
+                                         "retired":  "Apr 17, 2026",
+                                         "cost":  "99 Robux",
+                                         "petRarity":  "Ultra-Rare",
+                                         "eventContext":  "Sugarfest 2026 - Choccybunny Box",
+                                         "notes":  "Limited premium Sugarfest pet released with the Choccybunny Box update."
                                      }
                                  ]
                  },
@@ -7527,6 +7609,23 @@
                                          "petRarity":  "Legendary",
                                          "eventContext":  "Rain Weather Update",
                                          "notes":  "Current rain-rotation parrot obtainable through the Rain Pet Shop with a Golden Plantain."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "white-choco-bunny",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Choccybunny Box",
+                                         "sourceType":  "Event box pet",
+                                         "status":  "retired",
+                                         "released":  "Apr 3, 2026",
+                                         "retired":  "Apr 17, 2026",
+                                         "cost":  "15,000 Candy Eggs box; 20% pull rate",
+                                         "petRarity":  "Ultra-Rare",
+                                         "chanceText":  "20% from Choccybunny Box",
+                                         "eventContext":  "Sugarfest 2026 - Choccybunny Box",
+                                         "notes":  "Limited Sugarfest box pet from the Choccybunny Box."
                                      }
                                  ]
                  },

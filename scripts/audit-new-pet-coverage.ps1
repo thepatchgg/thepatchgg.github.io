@@ -22,7 +22,19 @@ function Normalize-Key([string]$Text) {
   $normalized = $normalized -replace "&amp;", "and"
   $normalized = $normalized -replace "\(pet\)", ""
   $normalized = $normalized -replace "[^a-z0-9]+", "-"
-  return $normalized.Trim("-")
+  $normalized = $normalized.Trim("-")
+
+  $slugAliases = @{
+    "milk-choccybunny" = "milk-choco-bunny"
+    "white-choccybunny" = "white-choco-bunny"
+    "dark-choccybunny" = "dark-choco-bunny"
+  }
+
+  if ($slugAliases.ContainsKey($normalized)) {
+    return $slugAliases[$normalized]
+  }
+
+  return $normalized
 }
 
 function Find-BySlugOrName($Collection, [string]$Slug, [string]$Name) {

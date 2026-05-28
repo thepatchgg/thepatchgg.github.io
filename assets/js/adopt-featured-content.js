@@ -162,14 +162,14 @@
           tag: "Update Archive",
           badgeLabel: "Pinned",
           badgeTone: "updated",
-          title: "Sugarfest Week 4 Archive - Chocolate Bunny, Pupcake, and Easter Bunny finale",
-          excerpt: "The final Sugarfest snapshot keeps the Week 4 pets, release framing, and end-of-event context in one clean archive page.",
+          title: "Sugarfest Week 4 Archive - Milk, White, and Dark Choccybunny plus Pupcake",
+          excerpt: "The final Sugarfest snapshot keeps Pupcake, Milk Choccybunny, White Choccybunny, Dark Choccybunny, release framing, and end-of-event context in one clean archive page.",
           meta: ["April 2026 archive", "Week 4 finale"]
         },
         hub: {
           tag: "Weekly Update",
-          title: "Sugarfest Week 4 Guide - Chocolate Bunny, Pupcake, and Easter Bunny finale",
-          excerpt: "A clean recap of the final Sugarfest drop, including the Week 4 pets players still revisit after the event ended.",
+          title: "Sugarfest Week 4 Guide - Choccybunny Box, Pupcake, and Easter Bunny finale",
+          excerpt: "A clean recap of the final Sugarfest drop, including Pupcake, Milk Choccybunny, White Choccybunny, and Dark Choccybunny.",
           meta: ["Week 4", "Featured update"]
         }
       }

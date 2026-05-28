@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-05-09",
+    "updatedAt":  "2026-05-27",
     "version":  "phase1",
     "methodology":  {
                         "summary":  "The Patch benchmark values are aligned directly to the live Adopt Me Values feed so our benchmark pets match the same public lanes shown at adoptmevalues.app/values.",
@@ -10,7 +10,7 @@
                                         }
                                     ],
                         "notes":  [
-                                      "Benchmark pets mirror the live Adopt Me Values public feed as of 2026-05-09.",
+                                      "Benchmark pets mirror the live Adopt Me Values public feed as of 2026-05-27.",
                                       "No Potion, Fly, Ride, Fly Ride, Neon, and Mega lanes are carried through from the same tracker source.",
                                       "Values can still move quickly, so recheck the source feed before making high-stakes trades."
                                   ]
@@ -24,20 +24,20 @@
                      "demand":  "Elite",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  722,
-                                    "fly":  722,
-                                    "ride":  722,
-                                    "noPotion":  735,
-                                    "neon":  1720,
-                                    "neonFly":  1769.6,
-                                    "neonRide":  1769.6,
-                                    "neonNoPotion":  1870,
-                                    "mega":  4680,
-                                    "megaFly":  4729.6,
-                                    "megaRide":  4754.4,
-                                    "megaNoPotion":  4928
+                                    "default":  794,
+                                    "fly":  794,
+                                    "ride":  794,
+                                    "noPotion":  807,
+                                    "neon":  1792,
+                                    "neonFly":  1844.4,
+                                    "neonRide":  1844.4,
+                                    "neonNoPotion":  1920,
+                                    "mega":  4820,
+                                    "megaFly":  4872.4,
+                                    "megaRide":  4898.6,
+                                    "megaNoPotion":  5082
                                 }
                  },
                  {
@@ -48,20 +48,20 @@
                      "demand":  "Elite",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  454,
-                                    "fly":  456,
-                                    "ride":  458,
-                                    "noPotion":  567.5,
-                                    "neon":  999,
-                                    "neonFly":  1098.2,
-                                    "neonRide":  1147.8,
-                                    "neonNoPotion":  1520,
-                                    "mega":  2360,
-                                    "megaFly":  2470,
-                                    "megaRide":  2860,
-                                    "megaNoPotion":  3500
+                                    "default":  477,
+                                    "fly":  479,
+                                    "ride":  481,
+                                    "noPotion":  596.25,
+                                    "neon":  1017,
+                                    "neonFly":  1121.8,
+                                    "neonRide":  1174.2,
+                                    "neonNoPotion":  1550,
+                                    "mega":  2400,
+                                    "megaFly":  2510,
+                                    "megaRide":  2900,
+                                    "megaNoPotion":  3600
                                 }
                  },
                  {
@@ -72,20 +72,20 @@
                      "demand":  "Elite",
                      "trend":  "Rising",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  315,
-                                    "fly":  315,
-                                    "ride":  315,
-                                    "noPotion":  327,
-                                    "neon":  727,
-                                    "neonFly":  735,
-                                    "neonRide":  735,
-                                    "neonNoPotion":  795,
-                                    "mega":  2276,
-                                    "megaFly":  2350.4,
-                                    "megaRide":  2325.6,
-                                    "megaNoPotion":  2740
+                                    "default":  333,
+                                    "fly":  333,
+                                    "ride":  333,
+                                    "noPotion":  345,
+                                    "neon":  743,
+                                    "neonFly":  751,
+                                    "neonRide":  751,
+                                    "neonNoPotion":  815,
+                                    "mega":  2320,
+                                    "megaFly":  2398.6,
+                                    "megaRide":  2372.4,
+                                    "megaNoPotion":  2800
                                 }
                  },
                  {
@@ -96,19 +96,19 @@
                      "demand":  "Elite",
                      "trend":  "Rising",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  248,
-                                    "fly":  248,
-                                    "ride":  248,
-                                    "noPotion":  260,
-                                    "neon":  487,
-                                    "neonFly":  493,
-                                    "neonRide":  493,
-                                    "neonNoPotion":  560,
+                                    "default":  262,
+                                    "fly":  262,
+                                    "ride":  262,
+                                    "noPotion":  274,
+                                    "neon":  498,
+                                    "neonFly":  504,
+                                    "neonRide":  504,
+                                    "neonNoPotion":  600,
                                     "mega":  1194,
-                                    "megaFly":  1442,
-                                    "megaRide":  1509,
+                                    "megaFly":  1456,
+                                    "megaRide":  1527,
                                     "megaNoPotion":  2300
                                 }
                  },
@@ -120,20 +120,20 @@
                      "demand":  "Very High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  205,
-                                    "fly":  204.5,
-                                    "ride":  204.5,
-                                    "noPotion":  208,
-                                    "neon":  535,
-                                    "neonFly":  539,
-                                    "neonRide":  539,
-                                    "neonNoPotion":  590,
-                                    "mega":  1775,
-                                    "megaFly":  1869.5,
-                                    "megaRide":  1838,
-                                    "megaNoPotion":  2140
+                                    "default":  215,
+                                    "fly":  214.5,
+                                    "ride":  214.5,
+                                    "noPotion":  218,
+                                    "neon":  547,
+                                    "neonFly":  551,
+                                    "neonRide":  551,
+                                    "neonNoPotion":  605,
+                                    "mega":  1770,
+                                    "megaFly":  1869.9,
+                                    "megaRide":  1836.6,
+                                    "megaNoPotion":  2160
                                 }
                  },
                  {
@@ -144,20 +144,20 @@
                      "demand":  "Very High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  162,
-                                    "fly":  161.5,
-                                    "ride":  161.5,
-                                    "noPotion":  164,
-                                    "neon":  340,
-                                    "neonFly":  342,
-                                    "neonRide":  342,
-                                    "neonNoPotion":  460,
+                                    "default":  169,
+                                    "fly":  168.5,
+                                    "ride":  168.5,
+                                    "noPotion":  171,
+                                    "neon":  354,
+                                    "neonFly":  356,
+                                    "neonRide":  356,
+                                    "neonNoPotion":  465,
                                     "mega":  1034,
-                                    "megaFly":  1108.4,
-                                    "megaRide":  1083.6,
-                                    "megaNoPotion":  1840
+                                    "megaFly":  1112.6,
+                                    "megaRide":  1086.4,
+                                    "megaNoPotion":  1860
                                 }
                  },
                  {
@@ -168,20 +168,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  142,
-                                    "fly":  141.5,
-                                    "ride":  141.5,
-                                    "noPotion":  143,
-                                    "neon":  329,
-                                    "neonFly":  331,
-                                    "neonRide":  331,
-                                    "neonNoPotion":  425,
-                                    "mega":  1222,
-                                    "megaFly":  1296.4,
-                                    "megaRide":  1271.6,
-                                    "megaNoPotion":  1700
+                                    "default":  149,
+                                    "fly":  148.5,
+                                    "ride":  148.5,
+                                    "noPotion":  150,
+                                    "neon":  345,
+                                    "neonFly":  347,
+                                    "neonRide":  347,
+                                    "neonNoPotion":  430,
+                                    "mega":  1245,
+                                    "megaFly":  1323.6,
+                                    "megaRide":  1297.4,
+                                    "megaNoPotion":  1720
                                 }
                  },
                  {
@@ -192,19 +192,19 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  100,
-                                    "fly":  99.5,
-                                    "ride":  99.5,
-                                    "noPotion":  100,
-                                    "neon":  194,
-                                    "neonFly":  196,
-                                    "neonRide":  196,
+                                    "default":  103,
+                                    "fly":  102.5,
+                                    "ride":  102.5,
+                                    "noPotion":  103,
+                                    "neon":  195,
+                                    "neonFly":  197,
+                                    "neonRide":  197,
                                     "neonNoPotion":  250,
-                                    "mega":  700,
-                                    "megaFly":  749.6,
-                                    "megaRide":  724.8,
+                                    "mega":  680,
+                                    "megaFly":  732.4,
+                                    "megaRide":  706.2,
                                     "megaNoPotion":  1000
                                 }
                  },
@@ -216,19 +216,19 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  59,
-                                    "fly":  57.85,
-                                    "ride":  57.75,
-                                    "noPotion":  57.5,
+                                    "default":  59.5,
+                                    "fly":  58.35,
+                                    "ride":  58.25,
+                                    "noPotion":  58,
                                     "neon":  188,
                                     "neonFly":  189,
                                     "neonRide":  189,
                                     "neonNoPotion":  193,
                                     "mega":  728,
-                                    "megaFly":  742,
-                                    "megaRide":  742,
+                                    "megaFly":  738,
+                                    "megaRide":  738,
                                     "megaNoPotion":  768
                                 }
                  },
@@ -240,20 +240,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  77,
-                                    "fly":  76,
-                                    "ride":  76,
-                                    "noPotion":  75,
-                                    "neon":  266,
-                                    "neonFly":  265,
-                                    "neonRide":  265,
-                                    "neonNoPotion":  271,
-                                    "mega":  931,
-                                    "megaFly":  929.85,
-                                    "megaRide":  929,
-                                    "megaNoPotion":  1006
+                                    "default":  81,
+                                    "fly":  80,
+                                    "ride":  80,
+                                    "noPotion":  79,
+                                    "neon":  277,
+                                    "neonFly":  276,
+                                    "neonRide":  276,
+                                    "neonNoPotion":  282,
+                                    "mega":  936,
+                                    "megaFly":  934.9,
+                                    "megaRide":  934,
+                                    "megaNoPotion":  1015
                                 }
                  },
                  {
@@ -264,20 +264,20 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  49.5,
-                                    "fly":  48.35,
-                                    "ride":  48.25,
-                                    "noPotion":  48,
+                                    "default":  51,
+                                    "fly":  49.85,
+                                    "ride":  49.75,
+                                    "noPotion":  49.5,
                                     "neon":  140,
                                     "neonFly":  139.5,
                                     "neonRide":  139.5,
                                     "neonNoPotion":  146,
-                                    "mega":  510,
-                                    "megaFly":  518,
-                                    "megaRide":  518,
-                                    "megaNoPotion":  540
+                                    "mega":  514,
+                                    "megaFly":  522,
+                                    "megaRide":  522,
+                                    "megaNoPotion":  544
                                 }
                  },
                  {
@@ -288,20 +288,20 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  44,
-                                    "fly":  42.85,
-                                    "ride":  42.75,
-                                    "noPotion":  42.5,
-                                    "neon":  93,
-                                    "neonFly":  93,
-                                    "neonRide":  93,
-                                    "neonNoPotion":  114.25,
-                                    "mega":  314,
-                                    "megaFly":  324,
-                                    "megaRide":  324,
-                                    "megaNoPotion":  485.56
+                                    "default":  44.25,
+                                    "fly":  43.1,
+                                    "ride":  43,
+                                    "noPotion":  42.75,
+                                    "neon":  95,
+                                    "neonFly":  95,
+                                    "neonRide":  95,
+                                    "neonNoPotion":  116.38,
+                                    "mega":  310,
+                                    "megaFly":  320,
+                                    "megaRide":  320,
+                                    "megaNoPotion":  494.59
                                 }
                  },
                  {
@@ -312,20 +312,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  32.5,
-                                    "fly":  31.35,
-                                    "ride":  30.5,
-                                    "noPotion":  30,
-                                    "neon":  70,
-                                    "neonFly":  69,
-                                    "neonRide":  69,
-                                    "neonNoPotion":  69,
-                                    "mega":  222,
-                                    "megaFly":  220.85,
-                                    "megaRide":  220,
-                                    "megaNoPotion":  252
+                                    "default":  33.25,
+                                    "fly":  32.1,
+                                    "ride":  31.25,
+                                    "noPotion":  30.75,
+                                    "neon":  71,
+                                    "neonFly":  70,
+                                    "neonRide":  70,
+                                    "neonNoPotion":  70,
+                                    "mega":  216,
+                                    "megaFly":  214.9,
+                                    "megaRide":  214,
+                                    "megaNoPotion":  246
                                 }
                  },
                  {
@@ -336,7 +336,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  25,
                                     "fly":  23.85,
@@ -347,7 +347,7 @@
                                     "neonRide":  50.5,
                                     "neonNoPotion":  50.5,
                                     "mega":  131,
-                                    "megaFly":  129.85,
+                                    "megaFly":  129.9,
                                     "megaRide":  129,
                                     "megaNoPotion":  204
                                 }
@@ -360,20 +360,20 @@
                      "demand":  "Medium",
                      "trend":  "Falling",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  25.25,
-                                    "fly":  24.1,
-                                    "ride":  23.75,
-                                    "noPotion":  23.25,
-                                    "neon":  69,
-                                    "neonFly":  68,
-                                    "neonRide":  68,
-                                    "neonNoPotion":  67,
-                                    "mega":  241,
-                                    "megaFly":  239.85,
-                                    "megaRide":  239,
-                                    "megaNoPotion":  254
+                                    "default":  25.75,
+                                    "fly":  24.6,
+                                    "ride":  24.25,
+                                    "noPotion":  23.75,
+                                    "neon":  70,
+                                    "neonFly":  69,
+                                    "neonRide":  69,
+                                    "neonNoPotion":  68,
+                                    "mega":  245,
+                                    "megaFly":  243.9,
+                                    "megaRide":  243,
+                                    "megaNoPotion":  258
                                 }
                  },
                  {
@@ -384,7 +384,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  19,
                                     "fly":  17.85,
@@ -395,7 +395,7 @@
                                     "neonRide":  38,
                                     "neonNoPotion":  38,
                                     "mega":  104,
-                                    "megaFly":  102.85,
+                                    "megaFly":  102.9,
                                     "megaRide":  102,
                                     "megaNoPotion":  121.5
                                 }
@@ -408,20 +408,20 @@
                      "demand":  "Medium",
                      "trend":  "Falling",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  1.9,
-                                    "fly":  1.5,
-                                    "ride":  1.5,
-                                    "noPotion":  1.2,
-                                    "neon":  7.5,
-                                    "neonFly":  6.7,
-                                    "neonRide":  6.7,
-                                    "neonNoPotion":  5.75,
-                                    "mega":  23,
-                                    "megaFly":  21.85,
-                                    "megaRide":  20.8,
-                                    "megaNoPotion":  19.65
+                                    "default":  1.6,
+                                    "fly":  1.2,
+                                    "ride":  1.2,
+                                    "noPotion":  0.9,
+                                    "neon":  5.9,
+                                    "neonFly":  5.1,
+                                    "neonRide":  5.1,
+                                    "neonNoPotion":  4.5,
+                                    "mega":  18,
+                                    "megaFly":  16.9,
+                                    "megaRide":  16,
+                                    "megaNoPotion":  15
                                 }
                  },
                  {
@@ -432,27 +432,27 @@
                      "demand":  "Low",
                      "trend":  "Falling",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  1,
-                                    "fly":  0.6,
-                                    "ride":  0.6,
-                                    "noPotion":  0.3,
-                                    "neon":  2.5,
-                                    "neonFly":  1.8,
-                                    "neonRide":  1.8,
-                                    "neonNoPotion":  1,
-                                    "mega":  10.5,
-                                    "megaFly":  9.35,
-                                    "megaRide":  8.5,
-                                    "megaNoPotion":  7.5
+                                    "default":  0.93,
+                                    "fly":  0.53,
+                                    "ride":  0.53,
+                                    "noPotion":  0.23,
+                                    "neon":  2.15,
+                                    "neonFly":  1.45,
+                                    "neonRide":  1.45,
+                                    "neonNoPotion":  1.05,
+                                    "mega":  8.75,
+                                    "megaFly":  7.65,
+                                    "megaRide":  6.75,
+                                    "megaNoPotion":  5.75
                                 }
                  },
                  {
                      "slug":  "frost-fury-pet",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Frost Fury",
                      "rarity":  "Legendary",
@@ -467,7 +467,7 @@
                                     "neonRide":  15.45,
                                     "neonNoPotion":  14.5,
                                     "mega":  56,
-                                    "megaFly":  54.85,
+                                    "megaFly":  54.9,
                                     "megaRide":  54,
                                     "megaNoPotion":  59
                                 }
@@ -476,31 +476,31 @@
                      "slug":  "candicorn",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Rising",
                      "name":  "Candicorn",
                      "rarity":  "Legendary",
                      "segment":  "Mid tier",
                      "values":  {
-                                    "default":  6.45,
-                                    "fly":  6.05,
-                                    "ride":  6.05,
-                                    "noPotion":  5.75,
-                                    "neon":  26,
-                                    "neonFly":  25.2,
-                                    "neonRide":  25.2,
-                                    "neonNoPotion":  24.25,
-                                    "mega":  108,
-                                    "megaFly":  106.85,
-                                    "megaRide":  106,
-                                    "megaNoPotion":  105
+                                    "default":  5.7,
+                                    "fly":  5.3,
+                                    "ride":  5.3,
+                                    "noPotion":  5,
+                                    "neon":  22,
+                                    "neonFly":  21.2,
+                                    "neonRide":  21.2,
+                                    "neonNoPotion":  20.25,
+                                    "mega":  91,
+                                    "megaFly":  89.9,
+                                    "megaRide":  89,
+                                    "megaNoPotion":  88
                                 }
                  },
                  {
                      "slug":  "arctic-fox",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Rising",
                      "name":  "Arctic Fox",
                      "rarity":  "Ultra-Rare",
@@ -514,17 +514,17 @@
                                     "neonFly":  22,
                                     "neonRide":  22,
                                     "neonNoPotion":  22,
-                                    "mega":  87,
-                                    "megaFly":  85.85,
-                                    "megaRide":  85,
-                                    "megaNoPotion":  90
+                                    "mega":  85,
+                                    "megaFly":  83.9,
+                                    "megaRide":  83,
+                                    "megaNoPotion":  88
                                 }
                  },
                  {
                      "slug":  "lavender-dragon",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Lavender Dragon",
                      "rarity":  "Legendary",
@@ -539,7 +539,7 @@
                                     "neonRide":  10.2,
                                     "neonNoPotion":  9.25,
                                     "mega":  46,
-                                    "megaFly":  44.85,
+                                    "megaFly":  44.9,
                                     "megaRide":  44,
                                     "megaNoPotion":  43
                                 }
@@ -548,7 +548,7 @@
                      "slug":  "queen-bee",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Queen Bee",
                      "rarity":  "Legendary",
@@ -563,7 +563,7 @@
                                     "neonRide":  8.2,
                                     "neonNoPotion":  7.25,
                                     "mega":  38,
-                                    "megaFly":  36.85,
+                                    "megaFly":  36.9,
                                     "megaRide":  36,
                                     "megaNoPotion":  35
                                 }
@@ -572,7 +572,7 @@
                      "slug":  "phoenix-pet",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Phoenix",
                      "rarity":  "Legendary",
@@ -585,9 +585,9 @@
                                     "neon":  7,
                                     "neonFly":  6.2,
                                     "neonRide":  6.2,
-                                    "neonNoPotion":  5.25,
+                                    "neonNoPotion":  5,
                                     "mega":  30,
-                                    "megaFly":  28.85,
+                                    "megaFly":  28.9,
                                     "megaRide":  28,
                                     "megaNoPotion":  27
                                 }
@@ -596,7 +596,7 @@
                      "slug":  "dodo",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Dodo",
                      "rarity":  "Legendary",
@@ -609,9 +609,9 @@
                                     "neon":  7,
                                     "neonFly":  6.2,
                                     "neonRide":  6.2,
-                                    "neonNoPotion":  5.25,
+                                    "neonNoPotion":  5,
                                     "mega":  30,
-                                    "megaFly":  28.85,
+                                    "megaFly":  28.9,
                                     "megaRide":  28,
                                     "megaNoPotion":  27
                                 }
@@ -620,7 +620,7 @@
                      "slug":  "shark",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Shark",
                      "rarity":  "Legendary",
@@ -633,9 +633,9 @@
                                     "neon":  7,
                                     "neonFly":  6.2,
                                     "neonRide":  6.2,
-                                    "neonNoPotion":  5.25,
+                                    "neonNoPotion":  5,
                                     "mega":  30,
-                                    "megaFly":  28.85,
+                                    "megaFly":  28.9,
                                     "megaRide":  28,
                                     "megaNoPotion":  27
                                 }
@@ -644,7 +644,7 @@
                      "slug":  "octopus",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Octopus",
                      "rarity":  "Legendary",
@@ -657,9 +657,9 @@
                                     "neon":  6.3,
                                     "neonFly":  5.5,
                                     "neonRide":  5.5,
-                                    "neonNoPotion":  4.55,
+                                    "neonNoPotion":  4.35,
                                     "mega":  26,
-                                    "megaFly":  24.85,
+                                    "megaFly":  24.9,
                                     "megaRide":  24,
                                     "megaNoPotion":  23
                                 }
@@ -668,7 +668,7 @@
                      "slug":  "cerberus",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Cerberus",
                      "rarity":  "Legendary",
@@ -681,9 +681,9 @@
                                     "neon":  6.3,
                                     "neonFly":  5.5,
                                     "neonRide":  5.5,
-                                    "neonNoPotion":  4.55,
+                                    "neonNoPotion":  4.35,
                                     "mega":  26,
-                                    "megaFly":  24.85,
+                                    "megaFly":  24.9,
                                     "megaRide":  24,
                                     "megaNoPotion":  23
                                 }
@@ -692,31 +692,31 @@
                      "slug":  "king-bee",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "King Bee",
                      "rarity":  "Legendary",
                      "segment":  "Lower mid tier",
                      "values":  {
-                                    "default":  1.4,
-                                    "fly":  1,
-                                    "ride":  1,
-                                    "noPotion":  0.7,
-                                    "neon":  4.9,
-                                    "neonFly":  4.1,
-                                    "neonRide":  4.1,
-                                    "neonNoPotion":  3.15,
-                                    "mega":  21,
-                                    "megaFly":  19.85,
-                                    "megaRide":  19,
-                                    "megaNoPotion":  18
+                                    "default":  1.3,
+                                    "fly":  0.9,
+                                    "ride":  0.9,
+                                    "noPotion":  0.6,
+                                    "neon":  4.2,
+                                    "neonFly":  3.4,
+                                    "neonRide":  3.4,
+                                    "neonNoPotion":  2.7,
+                                    "mega":  18,
+                                    "megaFly":  16.9,
+                                    "megaRide":  16,
+                                    "megaNoPotion":  15
                                 }
                  },
                  {
                      "slug":  "capybara",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Rising",
                      "name":  "Capybara",
                      "rarity":  "Uncommon",
@@ -731,7 +731,7 @@
                                     "neonRide":  6.5,
                                     "neonNoPotion":  6,
                                     "mega":  30,
-                                    "megaFly":  28.85,
+                                    "megaFly":  28.9,
                                     "megaRide":  28,
                                     "megaNoPotion":  28
                                 }
@@ -740,7 +740,7 @@
                      "slug":  "chicken",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Rising",
                      "name":  "Chicken",
                      "rarity":  "Common",
@@ -755,7 +755,7 @@
                                     "neonRide":  6.75,
                                     "neonNoPotion":  6.5,
                                     "mega":  30,
-                                    "megaFly":  28.85,
+                                    "megaFly":  28.9,
                                     "megaRide":  28,
                                     "megaNoPotion":  28
                                 }
@@ -764,7 +764,7 @@
                      "slug":  "kitsune",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Kitsune",
                      "rarity":  "Legendary",
@@ -777,9 +777,9 @@
                                     "neon":  3.85,
                                     "neonFly":  3.05,
                                     "neonRide":  3.05,
-                                    "neonNoPotion":  2.1,
+                                    "neonNoPotion":  2.5,
                                     "mega":  16,
-                                    "megaFly":  14.85,
+                                    "megaFly":  14.9,
                                     "megaRide":  14,
                                     "megaNoPotion":  13
                                 }
@@ -788,31 +788,31 @@
                      "slug":  "alicorn",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Alicorn",
                      "rarity":  "Legendary",
                      "segment":  "Entry tier",
                      "values":  {
-                                    "default":  1,
-                                    "fly":  0.6,
-                                    "ride":  0.6,
-                                    "noPotion":  0.3,
-                                    "neon":  2.5,
-                                    "neonFly":  1.8,
-                                    "neonRide":  1.8,
-                                    "neonNoPotion":  1,
-                                    "mega":  10.5,
-                                    "megaFly":  9.35,
-                                    "megaRide":  8.5,
-                                    "megaNoPotion":  7.5
+                                    "default":  0.94,
+                                    "fly":  0.54,
+                                    "ride":  0.54,
+                                    "noPotion":  0.24,
+                                    "neon":  2.2,
+                                    "neonFly":  1.5,
+                                    "neonRide":  1.5,
+                                    "neonNoPotion":  1.1,
+                                    "mega":  9,
+                                    "megaFly":  7.9,
+                                    "megaRide":  7,
+                                    "megaNoPotion":  6
                                 }
                  },
                  {
                      "slug":  "griffin",
                      "demand":  "Low",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Falling",
                      "name":  "Griffin",
                      "rarity":  "Legendary",
@@ -825,9 +825,9 @@
                                     "neon":  3.25,
                                     "neonFly":  2.45,
                                     "neonRide":  2.45,
-                                    "neonNoPotion":  1.5,
+                                    "neonNoPotion":  2.05,
                                     "mega":  14,
-                                    "megaFly":  12.85,
+                                    "megaFly":  12.9,
                                     "megaRide":  12,
                                     "megaNoPotion":  11
                                 }
@@ -836,31 +836,31 @@
                      "slug":  "horse",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Horse",
                      "rarity":  "Ultra-Rare",
                      "segment":  "Entry tier",
                      "values":  {
-                                    "default":  0.9,
-                                    "fly":  0.65,
-                                    "ride":  0.65,
-                                    "noPotion":  0.45,
-                                    "neon":  3.05,
-                                    "neonFly":  2.73,
-                                    "neonRide":  2.73,
-                                    "neonNoPotion":  2.4,
-                                    "mega":  13.2,
-                                    "megaFly":  12.05,
-                                    "megaRide":  11.45,
-                                    "megaNoPotion":  10.45
+                                    "default":  0.91,
+                                    "fly":  0.66,
+                                    "ride":  0.66,
+                                    "noPotion":  0.46,
+                                    "neon":  3.1,
+                                    "neonFly":  2.78,
+                                    "neonRide":  2.78,
+                                    "neonNoPotion":  2.45,
+                                    "mega":  13.4,
+                                    "megaFly":  12.3,
+                                    "megaRide":  11.65,
+                                    "megaNoPotion":  10.65
                                 }
                  },
                  {
                      "slug":  "koala",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Koala",
                      "rarity":  "Ultra-Rare",
@@ -875,7 +875,7 @@
                                     "neonRide":  1.9,
                                     "neonNoPotion":  1.6,
                                     "mega":  9.5,
-                                    "megaFly":  8.35,
+                                    "megaFly":  8.4,
                                     "megaRide":  8,
                                     "megaNoPotion":  7
                                 }
@@ -888,20 +888,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  31,
-                                    "fly":  30.1,
-                                    "ride":  30,
-                                    "noPotion":  29.5,
-                                    "neon":  106,
-                                    "neonFly":  105,
-                                    "neonRide":  105,
-                                    "neonNoPotion":  104,
-                                    "mega":  418,
-                                    "megaFly":  416.85,
-                                    "megaRide":  416,
-                                    "megaNoPotion":  421
+                                    "default":  40,
+                                    "fly":  39.1,
+                                    "ride":  39,
+                                    "noPotion":  38.5,
+                                    "neon":  118,
+                                    "neonFly":  117,
+                                    "neonRide":  117,
+                                    "neonNoPotion":  116,
+                                    "mega":  417,
+                                    "megaFly":  415.9,
+                                    "megaRide":  415,
+                                    "megaNoPotion":  420
                                 }
                  },
                  {
@@ -912,20 +912,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  21.5,
-                                    "fly":  20.5,
-                                    "ride":  20.5,
-                                    "noPotion":  21,
-                                    "neon":  69,
-                                    "neonFly":  69,
-                                    "neonRide":  69,
-                                    "neonNoPotion":  86,
-                                    "mega":  266,
-                                    "megaFly":  271,
-                                    "megaRide":  271,
-                                    "megaNoPotion":  365.5
+                                    "default":  21.75,
+                                    "fly":  20.75,
+                                    "ride":  20.75,
+                                    "noPotion":  21.25,
+                                    "neon":  74,
+                                    "neonFly":  74,
+                                    "neonRide":  74,
+                                    "neonNoPotion":  95.75,
+                                    "mega":  292,
+                                    "megaFly":  297,
+                                    "megaRide":  297,
+                                    "megaNoPotion":  406.94
                                 }
                  },
                  {
@@ -936,7 +936,7 @@
                      "demand":  "Very High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  20,
                                     "fly":  18.85,
@@ -947,7 +947,7 @@
                                     "neonRide":  75,
                                     "neonNoPotion":  75,
                                     "mega":  302,
-                                    "megaFly":  300.85,
+                                    "megaFly":  300.9,
                                     "megaRide":  300,
                                     "megaNoPotion":  322
                                 }
@@ -960,7 +960,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  17.25,
                                     "fly":  16.1,
@@ -970,10 +970,10 @@
                                     "neonFly":  52,
                                     "neonRide":  52,
                                     "neonNoPotion":  52,
-                                    "mega":  194,
-                                    "megaFly":  192.85,
-                                    "megaRide":  192,
-                                    "megaNoPotion":  204
+                                    "mega":  193,
+                                    "megaFly":  191.9,
+                                    "megaRide":  191,
+                                    "megaNoPotion":  203
                                 }
                  },
                  {
@@ -984,7 +984,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  17,
                                     "fly":  15.85,
@@ -995,7 +995,7 @@
                                     "neonRide":  51.5,
                                     "neonNoPotion":  59.25,
                                     "mega":  190,
-                                    "megaFly":  188.85,
+                                    "megaFly":  188.9,
                                     "megaRide":  188,
                                     "megaNoPotion":  251.81
                                 }
@@ -1008,7 +1008,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  14.5,
                                     "fly":  13.35,
@@ -1019,7 +1019,7 @@
                                     "neonRide":  43,
                                     "neonNoPotion":  43,
                                     "mega":  174,
-                                    "megaFly":  172.85,
+                                    "megaFly":  172.9,
                                     "megaRide":  172,
                                     "megaNoPotion":  189
                                 }
@@ -1032,7 +1032,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  14,
                                     "fly":  12.85,
@@ -1043,7 +1043,7 @@
                                     "neonRide":  42,
                                     "neonNoPotion":  42,
                                     "mega":  170,
-                                    "megaFly":  168.85,
+                                    "megaFly":  168.9,
                                     "megaRide":  168,
                                     "megaNoPotion":  185
                                 }
@@ -1056,7 +1056,7 @@
                      "demand":  "Very High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  12.5,
                                     "fly":  12,
@@ -1067,7 +1067,7 @@
                                     "neonRide":  42,
                                     "neonNoPotion":  44,
                                     "mega":  162,
-                                    "megaFly":  160.85,
+                                    "megaFly":  160.9,
                                     "megaRide":  160,
                                     "megaNoPotion":  177
                                 }
@@ -1080,20 +1080,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  8,
-                                    "fly":  6.85,
-                                    "ride":  6.75,
-                                    "noPotion":  6.5,
+                                    "default":  8.25,
+                                    "fly":  7.1,
+                                    "ride":  7,
+                                    "noPotion":  6.75,
                                     "neon":  22,
                                     "neonFly":  21,
                                     "neonRide":  21,
                                     "neonNoPotion":  21,
-                                    "mega":  82,
-                                    "megaFly":  80.85,
-                                    "megaRide":  80,
-                                    "megaNoPotion":  87
+                                    "mega":  85,
+                                    "megaFly":  83.9,
+                                    "megaRide":  83,
+                                    "megaNoPotion":  90
                                 }
                  },
                  {
@@ -1104,7 +1104,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  6.75,
                                     "fly":  6.25,
@@ -1115,7 +1115,7 @@
                                     "neonRide":  22,
                                     "neonNoPotion":  23,
                                     "mega":  90,
-                                    "megaFly":  88.85,
+                                    "megaFly":  88.9,
                                     "megaRide":  88,
                                     "megaNoPotion":  95
                                 }
@@ -1128,7 +1128,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  5,
                                     "fly":  4.6,
@@ -1139,7 +1139,7 @@
                                     "neonRide":  18,
                                     "neonNoPotion":  17.5,
                                     "mega":  76,
-                                    "megaFly":  74.85,
+                                    "megaFly":  74.9,
                                     "megaRide":  74,
                                     "megaNoPotion":  81
                                 }
@@ -1152,7 +1152,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  4.75,
                                     "fly":  4.35,
@@ -1162,10 +1162,10 @@
                                     "neonFly":  17.25,
                                     "neonRide":  17.25,
                                     "neonNoPotion":  17,
-                                    "mega":  72,
-                                    "megaFly":  70.85,
-                                    "megaRide":  70,
-                                    "megaNoPotion":  72
+                                    "mega":  71,
+                                    "megaFly":  69.9,
+                                    "megaRide":  69,
+                                    "megaNoPotion":  71
                                 }
                  },
                  {
@@ -1176,7 +1176,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  4.5,
                                     "fly":  4.1,
@@ -1186,10 +1186,10 @@
                                     "neonFly":  16.25,
                                     "neonRide":  16.25,
                                     "neonNoPotion":  16,
-                                    "mega":  68,
-                                    "megaFly":  66.85,
-                                    "megaRide":  66,
-                                    "megaNoPotion":  68
+                                    "mega":  67,
+                                    "megaFly":  65.9,
+                                    "megaRide":  65,
+                                    "megaNoPotion":  67
                                 }
                  },
                  {
@@ -1200,7 +1200,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  4.75,
                                     "fly":  4.35,
@@ -1211,7 +1211,7 @@
                                     "neonRide":  17,
                                     "neonNoPotion":  17,
                                     "mega":  75,
-                                    "megaFly":  73.85,
+                                    "megaFly":  73.9,
                                     "megaRide":  73,
                                     "megaNoPotion":  82
                                 }
@@ -1224,20 +1224,20 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  2.7,
-                                    "fly":  2.3,
-                                    "ride":  2.3,
-                                    "noPotion":  2,
-                                    "neon":  11,
-                                    "neonFly":  10.2,
-                                    "neonRide":  10.2,
-                                    "neonNoPotion":  9.25,
-                                    "mega":  46,
-                                    "megaFly":  44.85,
-                                    "megaRide":  44,
-                                    "megaNoPotion":  43
+                                    "default":  2.55,
+                                    "fly":  2.15,
+                                    "ride":  2.15,
+                                    "noPotion":  1.85,
+                                    "neon":  10.5,
+                                    "neonFly":  9.7,
+                                    "neonRide":  9.7,
+                                    "neonNoPotion":  8.75,
+                                    "mega":  44,
+                                    "megaFly":  42.9,
+                                    "megaRide":  42,
+                                    "megaNoPotion":  41
                                 }
                  },
                  {
@@ -1248,7 +1248,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  1.95,
                                     "fly":  1.7,
@@ -1259,7 +1259,7 @@
                                     "neonRide":  6.5,
                                     "neonNoPotion":  6,
                                     "mega":  30,
-                                    "megaFly":  28.85,
+                                    "megaFly":  28.9,
                                     "megaRide":  28,
                                     "megaNoPotion":  28
                                 }
@@ -1272,7 +1272,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  1.95,
                                     "fly":  1.55,
@@ -1283,7 +1283,7 @@
                                     "neonRide":  7.2,
                                     "neonNoPotion":  6.25,
                                     "mega":  34,
-                                    "megaFly":  32.85,
+                                    "megaFly":  32.9,
                                     "megaRide":  32,
                                     "megaNoPotion":  31
                                 }
@@ -1296,7 +1296,7 @@
                      "demand":  "Medium",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  1.85,
                                     "fly":  1.5,
@@ -1307,7 +1307,7 @@
                                     "neonRide":  6,
                                     "neonNoPotion":  5.5,
                                     "mega":  28,
-                                    "megaFly":  26.85,
+                                    "megaFly":  26.9,
                                     "megaRide":  26,
                                     "megaNoPotion":  26
                                 }
@@ -1320,7 +1320,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  1.65,
                                     "fly":  1.25,
@@ -1329,11 +1329,11 @@
                                     "neon":  6.65,
                                     "neonFly":  5.85,
                                     "neonRide":  5.85,
-                                    "neonNoPotion":  4.9,
-                                    "mega":  28,
-                                    "megaFly":  26.85,
-                                    "megaRide":  26,
-                                    "megaNoPotion":  25
+                                    "neonNoPotion":  4.75,
+                                    "mega":  27,
+                                    "megaFly":  25.9,
+                                    "megaRide":  25,
+                                    "megaNoPotion":  24
                                 }
                  },
                  {
@@ -1344,7 +1344,7 @@
                      "demand":  "Medium",
                      "trend":  "Falling",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  1.45,
                                     "fly":  1.05,
@@ -1353,9 +1353,9 @@
                                     "neon":  5.25,
                                     "neonFly":  4.45,
                                     "neonRide":  4.45,
-                                    "neonNoPotion":  3.5,
+                                    "neonNoPotion":  3.6,
                                     "mega":  22,
-                                    "megaFly":  20.85,
+                                    "megaFly":  20.9,
                                     "megaRide":  20,
                                     "megaNoPotion":  19
                                 }
@@ -1368,20 +1368,20 @@
                      "demand":  "Very High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  115,
-                                    "fly":  113.85,
-                                    "ride":  113,
-                                    "noPotion":  113,
-                                    "neon":  370,
-                                    "neonFly":  369,
-                                    "neonRide":  369,
-                                    "neonNoPotion":  385,
-                                    "mega":  1138,
-                                    "megaFly":  1136.85,
-                                    "megaRide":  1136,
-                                    "megaNoPotion":  1198
+                                    "default":  130,
+                                    "fly":  128.85,
+                                    "ride":  128,
+                                    "noPotion":  128,
+                                    "neon":  414,
+                                    "neonFly":  413,
+                                    "neonRide":  413,
+                                    "neonNoPotion":  429,
+                                    "mega":  1326,
+                                    "megaFly":  1324.9,
+                                    "megaRide":  1324,
+                                    "megaNoPotion":  1386
                                 }
                  },
                  {
@@ -1392,20 +1392,20 @@
                      "demand":  "Very High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  125,
-                                    "fly":  123.85,
-                                    "ride":  123,
-                                    "noPotion":  123,
-                                    "neon":  380,
-                                    "neonFly":  379,
-                                    "neonRide":  379,
-                                    "neonNoPotion":  385,
-                                    "mega":  1250,
-                                    "megaFly":  1248.85,
-                                    "megaRide":  1248,
-                                    "megaNoPotion":  1373
+                                    "default":  149,
+                                    "fly":  147.85,
+                                    "ride":  147,
+                                    "noPotion":  147,
+                                    "neon":  457,
+                                    "neonFly":  456,
+                                    "neonRide":  456,
+                                    "neonNoPotion":  462,
+                                    "mega":  1502,
+                                    "megaFly":  1500.9,
+                                    "megaRide":  1500,
+                                    "megaNoPotion":  1649
                                 }
                  },
                  {
@@ -1416,20 +1416,20 @@
                      "demand":  "Very High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  114,
-                                    "fly":  112.85,
-                                    "ride":  112,
-                                    "noPotion":  112,
-                                    "neon":  358,
-                                    "neonFly":  357,
-                                    "neonRide":  357,
-                                    "neonNoPotion":  356,
-                                    "mega":  1415,
-                                    "megaFly":  1413.85,
-                                    "megaRide":  1413,
-                                    "megaNoPotion":  1420
+                                    "default":  117,
+                                    "fly":  115.85,
+                                    "ride":  115,
+                                    "noPotion":  115,
+                                    "neon":  362,
+                                    "neonFly":  361,
+                                    "neonRide":  361,
+                                    "neonNoPotion":  360,
+                                    "mega":  1435,
+                                    "megaFly":  1433.9,
+                                    "megaRide":  1433,
+                                    "megaNoPotion":  1440
                                 }
                  },
                  {
@@ -1440,7 +1440,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  59,
                                     "fly":  57.85,
@@ -1450,10 +1450,10 @@
                                     "neonFly":  234,
                                     "neonRide":  234,
                                     "neonNoPotion":  233,
-                                    "mega":  920,
-                                    "megaFly":  918.85,
-                                    "megaRide":  918,
-                                    "megaNoPotion":  925
+                                    "mega":  910,
+                                    "megaFly":  908.9,
+                                    "megaRide":  908,
+                                    "megaNoPotion":  915
                                 }
                  },
                  {
@@ -1464,7 +1464,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  51,
                                     "fly":  50,
@@ -1474,10 +1474,10 @@
                                     "neonFly":  165,
                                     "neonRide":  165,
                                     "neonNoPotion":  164,
-                                    "mega":  595,
-                                    "megaFly":  593.85,
-                                    "megaRide":  593,
-                                    "megaNoPotion":  645
+                                    "mega":  610,
+                                    "megaFly":  608.9,
+                                    "megaRide":  608,
+                                    "megaNoPotion":  660
                                 }
                  },
                  {
@@ -1488,20 +1488,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  31.5,
-                                    "fly":  30.6,
-                                    "ride":  30.5,
-                                    "noPotion":  30,
-                                    "neon":  126,
-                                    "neonFly":  125,
-                                    "neonRide":  125,
-                                    "neonNoPotion":  131,
-                                    "mega":  504,
-                                    "megaFly":  502.85,
-                                    "megaRide":  502,
-                                    "megaNoPotion":  524
+                                    "default":  32,
+                                    "fly":  31.1,
+                                    "ride":  31,
+                                    "noPotion":  30.5,
+                                    "neon":  128,
+                                    "neonFly":  127,
+                                    "neonRide":  127,
+                                    "neonNoPotion":  133,
+                                    "mega":  512,
+                                    "megaFly":  510.9,
+                                    "megaRide":  510,
+                                    "megaNoPotion":  532
                                 }
                  },
                  {
@@ -1512,20 +1512,20 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  28,
-                                    "fly":  26.85,
-                                    "ride":  26.5,
-                                    "noPotion":  26,
-                                    "neon":  72,
-                                    "neonFly":  71,
-                                    "neonRide":  71,
-                                    "neonNoPotion":  70,
-                                    "mega":  248,
-                                    "megaFly":  246.85,
-                                    "megaRide":  246,
-                                    "megaNoPotion":  261
+                                    "default":  28.5,
+                                    "fly":  27.35,
+                                    "ride":  27,
+                                    "noPotion":  26.5,
+                                    "neon":  73,
+                                    "neonFly":  72,
+                                    "neonRide":  72,
+                                    "neonNoPotion":  71,
+                                    "mega":  252,
+                                    "megaFly":  250.9,
+                                    "megaRide":  250,
+                                    "megaNoPotion":  265
                                 }
                  },
                  {
@@ -1536,7 +1536,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  22.75,
                                     "fly":  21.85,
@@ -1546,10 +1546,10 @@
                                     "neonFly":  77,
                                     "neonRide":  77,
                                     "neonNoPotion":  76,
-                                    "mega":  290,
-                                    "megaFly":  288.85,
-                                    "megaRide":  288,
-                                    "megaNoPotion":  296
+                                    "mega":  298,
+                                    "megaFly":  296.9,
+                                    "megaRide":  296,
+                                    "megaNoPotion":  304
                                 }
                  },
                  {
@@ -1560,20 +1560,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  27.5,
-                                    "fly":  26.95,
-                                    "ride":  26.9,
-                                    "noPotion":  26.5,
-                                    "neon":  108,
-                                    "neonFly":  107,
-                                    "neonRide":  107,
-                                    "neonNoPotion":  106,
-                                    "mega":  431,
-                                    "megaFly":  429.85,
-                                    "megaRide":  429,
-                                    "megaNoPotion":  436
+                                    "default":  35.5,
+                                    "fly":  34.95,
+                                    "ride":  34.9,
+                                    "noPotion":  34.5,
+                                    "neon":  126,
+                                    "neonFly":  125,
+                                    "neonRide":  125,
+                                    "neonNoPotion":  124,
+                                    "mega":  444,
+                                    "megaFly":  442.9,
+                                    "megaRide":  442,
+                                    "megaNoPotion":  449
                                 }
                  },
                  {
@@ -1584,20 +1584,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  20.75,
-                                    "fly":  19.85,
-                                    "ride":  19.75,
-                                    "noPotion":  19.25,
-                                    "neon":  67,
-                                    "neonFly":  66.25,
-                                    "neonRide":  66.25,
-                                    "neonNoPotion":  65.5,
-                                    "mega":  268,
-                                    "megaFly":  266.85,
-                                    "megaRide":  266,
-                                    "megaNoPotion":  266
+                                    "default":  28,
+                                    "fly":  27.1,
+                                    "ride":  27,
+                                    "noPotion":  26.5,
+                                    "neon":  78,
+                                    "neonFly":  77.25,
+                                    "neonRide":  77.25,
+                                    "neonNoPotion":  76.5,
+                                    "mega":  280,
+                                    "megaFly":  278.9,
+                                    "megaRide":  278,
+                                    "megaNoPotion":  278
                                 }
                  },
                  {
@@ -1608,7 +1608,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  16.5,
                                     "fly":  15.95,
@@ -1618,10 +1618,10 @@
                                     "neonFly":  64,
                                     "neonRide":  64,
                                     "neonNoPotion":  63,
-                                    "mega":  273,
-                                    "megaFly":  271.85,
-                                    "megaRide":  271,
-                                    "megaNoPotion":  276
+                                    "mega":  270,
+                                    "megaFly":  268.9,
+                                    "megaRide":  268,
+                                    "megaNoPotion":  273
                                 }
                  },
                  {
@@ -1632,7 +1632,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  16.25,
                                     "fly":  15.7,
@@ -1643,7 +1643,7 @@
                                     "neonRide":  62,
                                     "neonNoPotion":  61,
                                     "mega":  258,
-                                    "megaFly":  256.85,
+                                    "megaFly":  256.9,
                                     "megaRide":  256,
                                     "megaNoPotion":  263
                                 }
@@ -1656,20 +1656,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  11,
                                     "fly":  10.4,
                                     "ride":  10.4,
                                     "noPotion":  10,
-                                    "neon":  45,
-                                    "neonFly":  44.25,
-                                    "neonRide":  44.25,
-                                    "neonNoPotion":  43.5,
-                                    "mega":  187,
-                                    "megaFly":  185.85,
-                                    "megaRide":  185,
-                                    "megaNoPotion":  185
+                                    "neon":  44,
+                                    "neonFly":  43.25,
+                                    "neonRide":  43.25,
+                                    "neonNoPotion":  42.5,
+                                    "mega":  182,
+                                    "megaFly":  180.9,
+                                    "megaRide":  180,
+                                    "megaNoPotion":  180
                                 }
                  },
                  {
@@ -1680,7 +1680,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  12.5,
                                     "fly":  11.35,
@@ -1691,7 +1691,7 @@
                                     "neonRide":  37,
                                     "neonNoPotion":  36,
                                     "mega":  140,
-                                    "megaFly":  138.85,
+                                    "megaFly":  138.9,
                                     "megaRide":  138,
                                     "megaNoPotion":  143
                                 }
@@ -1704,20 +1704,20 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  19,
-                                    "fly":  18.45,
-                                    "ride":  18.4,
-                                    "noPotion":  18,
-                                    "neon":  70,
-                                    "neonFly":  69,
-                                    "neonRide":  69,
-                                    "neonNoPotion":  68,
-                                    "mega":  290,
-                                    "megaFly":  288.85,
-                                    "megaRide":  288,
-                                    "megaNoPotion":  300
+                                    "default":  21,
+                                    "fly":  20.45,
+                                    "ride":  20.4,
+                                    "noPotion":  20,
+                                    "neon":  79,
+                                    "neonFly":  78,
+                                    "neonRide":  78,
+                                    "neonNoPotion":  77,
+                                    "mega":  314,
+                                    "megaFly":  312.9,
+                                    "megaRide":  312,
+                                    "megaNoPotion":  324
                                 }
                  },
                  {
@@ -1728,18 +1728,18 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  10.25,
-                                    "fly":  9.7,
-                                    "ride":  9.65,
-                                    "noPotion":  9.25,
-                                    "neon":  41,
-                                    "neonFly":  40,
-                                    "neonRide":  40,
-                                    "neonNoPotion":  39,
+                                    "default":  10.5,
+                                    "fly":  9.95,
+                                    "ride":  9.9,
+                                    "noPotion":  9.5,
+                                    "neon":  42,
+                                    "neonFly":  41,
+                                    "neonRide":  41,
+                                    "neonNoPotion":  40,
                                     "mega":  174,
-                                    "megaFly":  172.85,
+                                    "megaFly":  172.9,
                                     "megaRide":  172,
                                     "megaNoPotion":  179
                                 }
@@ -1752,20 +1752,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  7.75,
-                                    "fly":  7.35,
-                                    "ride":  7.3,
-                                    "noPotion":  7,
-                                    "neon":  31,
-                                    "neonFly":  30,
-                                    "neonRide":  30,
-                                    "neonNoPotion":  29,
-                                    "mega":  130,
-                                    "megaFly":  128.85,
-                                    "megaRide":  128,
-                                    "megaNoPotion":  128
+                                    "default":  7.5,
+                                    "fly":  7.1,
+                                    "ride":  7.05,
+                                    "noPotion":  6.75,
+                                    "neon":  30,
+                                    "neonFly":  29,
+                                    "neonRide":  29,
+                                    "neonNoPotion":  28,
+                                    "mega":  126,
+                                    "megaFly":  124.9,
+                                    "megaRide":  124,
+                                    "megaNoPotion":  124
                                 }
                  },
                  {
@@ -1776,20 +1776,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  12,
-                                    "fly":  11.45,
-                                    "ride":  11.4,
-                                    "noPotion":  11,
-                                    "neon":  48,
-                                    "neonFly":  47,
-                                    "neonRide":  47,
-                                    "neonNoPotion":  46,
-                                    "mega":  200,
-                                    "megaFly":  198.85,
-                                    "megaRide":  198,
-                                    "megaNoPotion":  198
+                                    "default":  13.75,
+                                    "fly":  13.2,
+                                    "ride":  13.15,
+                                    "noPotion":  12.75,
+                                    "neon":  55,
+                                    "neonFly":  54,
+                                    "neonRide":  54,
+                                    "neonNoPotion":  53,
+                                    "mega":  228,
+                                    "megaFly":  226.9,
+                                    "megaRide":  226,
+                                    "megaNoPotion":  226
                                 }
                  },
                  {
@@ -1800,20 +1800,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  10.5,
-                                    "fly":  9.95,
-                                    "ride":  9.9,
-                                    "noPotion":  9.5,
-                                    "neon":  42,
-                                    "neonFly":  41,
-                                    "neonRide":  41,
-                                    "neonNoPotion":  40,
-                                    "mega":  174,
-                                    "megaFly":  172.85,
-                                    "megaRide":  172,
-                                    "megaNoPotion":  179
+                                    "default":  12.5,
+                                    "fly":  11.95,
+                                    "ride":  11.9,
+                                    "noPotion":  11.5,
+                                    "neon":  50,
+                                    "neonFly":  49,
+                                    "neonRide":  49,
+                                    "neonNoPotion":  48,
+                                    "mega":  208,
+                                    "megaFly":  206.9,
+                                    "megaRide":  206,
+                                    "megaNoPotion":  213
                                 }
                  },
                  {
@@ -1824,20 +1824,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  8.25,
-                                    "fly":  7.85,
-                                    "ride":  7.8,
-                                    "noPotion":  7.5,
-                                    "neon":  33,
-                                    "neonFly":  32,
-                                    "neonRide":  32,
-                                    "neonNoPotion":  31,
-                                    "mega":  137,
-                                    "megaFly":  135.85,
-                                    "megaRide":  135,
-                                    "megaNoPotion":  134
+                                    "default":  7.75,
+                                    "fly":  7.35,
+                                    "ride":  7.3,
+                                    "noPotion":  7,
+                                    "neon":  31,
+                                    "neonFly":  30,
+                                    "neonRide":  30,
+                                    "neonNoPotion":  29,
+                                    "mega":  128,
+                                    "megaFly":  126.9,
+                                    "megaRide":  126,
+                                    "megaNoPotion":  125
                                 }
                  },
                  {
@@ -1848,7 +1848,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  1.55,
                                     "fly":  1.15,
@@ -1857,9 +1857,9 @@
                                     "neon":  5.95,
                                     "neonFly":  5.15,
                                     "neonRide":  5.15,
-                                    "neonNoPotion":  4.2,
+                                    "neonNoPotion":  4.1,
                                     "mega":  25,
-                                    "megaFly":  23.85,
+                                    "megaFly":  23.9,
                                     "megaRide":  23,
                                     "megaNoPotion":  22
                                 }
@@ -1872,20 +1872,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  99,
-                                    "fly":  97.85,
-                                    "ride":  97,
-                                    "noPotion":  97,
-                                    "neon":  217,
-                                    "neonFly":  216,
-                                    "neonRide":  216,
-                                    "neonNoPotion":  215,
-                                    "mega":  721,
-                                    "megaFly":  719.85,
-                                    "megaRide":  719,
-                                    "megaNoPotion":  726
+                                    "default":  106,
+                                    "fly":  104.85,
+                                    "ride":  104,
+                                    "noPotion":  104,
+                                    "neon":  228,
+                                    "neonFly":  227,
+                                    "neonRide":  227,
+                                    "neonNoPotion":  226,
+                                    "mega":  740,
+                                    "megaFly":  738.9,
+                                    "megaRide":  738,
+                                    "megaNoPotion":  745
                                 }
                  },
                  {
@@ -1896,20 +1896,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  127,
-                                    "fly":  125.85,
-                                    "ride":  125,
-                                    "noPotion":  125,
-                                    "neon":  325,
-                                    "neonFly":  324,
-                                    "neonRide":  324,
-                                    "neonNoPotion":  330,
-                                    "mega":  1055,
-                                    "megaFly":  1053.85,
-                                    "megaRide":  1053,
-                                    "megaNoPotion":  1075
+                                    "default":  109,
+                                    "fly":  107.85,
+                                    "ride":  107,
+                                    "noPotion":  107,
+                                    "neon":  285,
+                                    "neonFly":  284,
+                                    "neonRide":  284,
+                                    "neonNoPotion":  290,
+                                    "mega":  956,
+                                    "megaFly":  954.9,
+                                    "megaRide":  954,
+                                    "megaNoPotion":  976
                                 }
                  },
                  {
@@ -1920,20 +1920,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  25.5,
                                     "fly":  24.6,
                                     "ride":  24.5,
                                     "noPotion":  24,
-                                    "neon":  55,
-                                    "neonFly":  54,
-                                    "neonRide":  54,
-                                    "neonNoPotion":  53,
-                                    "mega":  190,
-                                    "megaFly":  188.85,
-                                    "megaRide":  188,
-                                    "megaNoPotion":  188
+                                    "neon":  57,
+                                    "neonFly":  56,
+                                    "neonRide":  56,
+                                    "neonNoPotion":  55,
+                                    "mega":  220,
+                                    "megaFly":  218.9,
+                                    "megaRide":  218,
+                                    "megaNoPotion":  218
                                 }
                  },
                  {
@@ -1944,20 +1944,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  10,
-                                    "fly":  9.45,
-                                    "ride":  9.4,
-                                    "noPotion":  9,
-                                    "neon":  40,
-                                    "neonFly":  39,
-                                    "neonRide":  39,
-                                    "neonNoPotion":  38,
-                                    "mega":  166,
-                                    "megaFly":  164.85,
-                                    "megaRide":  164,
-                                    "megaNoPotion":  163
+                                    "default":  8.5,
+                                    "fly":  8.1,
+                                    "ride":  8.05,
+                                    "noPotion":  7.75,
+                                    "neon":  34,
+                                    "neonFly":  33,
+                                    "neonRide":  33,
+                                    "neonNoPotion":  32,
+                                    "mega":  141,
+                                    "megaFly":  139.9,
+                                    "megaRide":  139,
+                                    "megaNoPotion":  138
                                 }
                  },
                  {
@@ -1968,20 +1968,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  34,
                                     "fly":  33.45,
                                     "ride":  33.4,
                                     "noPotion":  33,
-                                    "neon":  97,
-                                    "neonFly":  96,
-                                    "neonRide":  96,
-                                    "neonNoPotion":  95,
-                                    "mega":  285,
-                                    "megaFly":  283.85,
-                                    "megaRide":  283,
-                                    "megaNoPotion":  290
+                                    "neon":  99,
+                                    "neonFly":  98,
+                                    "neonRide":  98,
+                                    "neonNoPotion":  97,
+                                    "mega":  364,
+                                    "megaFly":  362.9,
+                                    "megaRide":  362,
+                                    "megaNoPotion":  369
                                 }
                  },
                  {
@@ -1992,20 +1992,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  40,
-                                    "fly":  39.45,
-                                    "ride":  39.4,
-                                    "noPotion":  39,
+                                    "default":  36.5,
+                                    "fly":  35.95,
+                                    "ride":  35.9,
+                                    "noPotion":  35.5,
                                     "neon":  107,
                                     "neonFly":  106,
                                     "neonRide":  106,
                                     "neonNoPotion":  105,
-                                    "mega":  316,
-                                    "megaFly":  314.85,
-                                    "megaRide":  314,
-                                    "megaNoPotion":  321
+                                    "mega":  375,
+                                    "megaFly":  373.9,
+                                    "megaRide":  373,
+                                    "megaNoPotion":  380
                                 }
                  },
                  {
@@ -2016,18 +2016,18 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  13.5,
-                                    "fly":  12.95,
-                                    "ride":  12.9,
-                                    "noPotion":  12.5,
-                                    "neon":  54,
-                                    "neonFly":  53,
-                                    "neonRide":  53,
-                                    "neonNoPotion":  52,
+                                    "default":  13.25,
+                                    "fly":  12.7,
+                                    "ride":  12.65,
+                                    "noPotion":  12.25,
+                                    "neon":  53,
+                                    "neonFly":  52,
+                                    "neonRide":  52,
+                                    "neonNoPotion":  51,
                                     "mega":  220,
-                                    "megaFly":  218.85,
+                                    "megaFly":  218.9,
                                     "megaRide":  218,
                                     "megaNoPotion":  225
                                 }
@@ -2040,7 +2040,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  5.45,
                                     "fly":  5.05,
@@ -2051,9 +2051,9 @@
                                     "neonRide":  20.7,
                                     "neonNoPotion":  19.75,
                                     "mega":  90,
-                                    "megaFly":  88.85,
-                                    "megaRide":  87.8,
-                                    "megaNoPotion":  86.65
+                                    "megaFly":  88.9,
+                                    "megaRide":  88,
+                                    "megaNoPotion":  87
                                 }
                  },
                  {
@@ -2064,20 +2064,20 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  10.5,
-                                    "fly":  9.95,
-                                    "ride":  9.9,
-                                    "noPotion":  9.5,
-                                    "neon":  42,
-                                    "neonFly":  41,
-                                    "neonRide":  41,
-                                    "neonNoPotion":  40,
-                                    "mega":  174,
-                                    "megaFly":  172.85,
-                                    "megaRide":  172,
-                                    "megaNoPotion":  179
+                                    "default":  11,
+                                    "fly":  10.45,
+                                    "ride":  10.4,
+                                    "noPotion":  10,
+                                    "neon":  44,
+                                    "neonFly":  43,
+                                    "neonRide":  43,
+                                    "neonNoPotion":  42,
+                                    "mega":  182,
+                                    "megaFly":  180.9,
+                                    "megaRide":  180,
+                                    "megaNoPotion":  187
                                 }
                  },
                  {
@@ -2088,20 +2088,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  9,
-                                    "fly":  8.6,
-                                    "ride":  8.55,
-                                    "noPotion":  8.25,
-                                    "neon":  36,
-                                    "neonFly":  35,
-                                    "neonRide":  35,
-                                    "neonNoPotion":  34,
-                                    "mega":  150,
-                                    "megaFly":  148.85,
-                                    "megaRide":  148,
-                                    "megaNoPotion":  153
+                                    "default":  8.25,
+                                    "fly":  7.85,
+                                    "ride":  7.8,
+                                    "noPotion":  7.5,
+                                    "neon":  33,
+                                    "neonFly":  32,
+                                    "neonRide":  32,
+                                    "neonNoPotion":  31,
+                                    "mega":  137,
+                                    "megaFly":  135.9,
+                                    "megaRide":  135,
+                                    "megaNoPotion":  140
                                 }
                  },
                  {
@@ -2112,20 +2112,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  12.5,
-                                    "fly":  11.95,
-                                    "ride":  11.9,
-                                    "noPotion":  11.5,
-                                    "neon":  39,
-                                    "neonFly":  38,
-                                    "neonRide":  38,
-                                    "neonNoPotion":  37,
-                                    "mega":  144,
-                                    "megaFly":  142.85,
-                                    "megaRide":  142,
-                                    "megaNoPotion":  141
+                                    "default":  19,
+                                    "fly":  18.45,
+                                    "ride":  18.4,
+                                    "noPotion":  18,
+                                    "neon":  51,
+                                    "neonFly":  50,
+                                    "neonRide":  50,
+                                    "neonNoPotion":  49,
+                                    "mega":  155,
+                                    "megaFly":  153.9,
+                                    "megaRide":  153,
+                                    "megaNoPotion":  152
                                 }
                  },
                  {
@@ -2136,20 +2136,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  4.95,
-                                    "fly":  4.55,
-                                    "ride":  4.55,
-                                    "noPotion":  4.25,
-                                    "neon":  20,
-                                    "neonFly":  19.2,
-                                    "neonRide":  19.2,
-                                    "neonNoPotion":  18.25,
-                                    "mega":  83,
-                                    "megaFly":  81.85,
-                                    "megaRide":  80.8,
-                                    "megaNoPotion":  79.65
+                                    "default":  4.7,
+                                    "fly":  4.3,
+                                    "ride":  4.3,
+                                    "noPotion":  4,
+                                    "neon":  19,
+                                    "neonFly":  18.2,
+                                    "neonRide":  18.2,
+                                    "neonNoPotion":  17.25,
+                                    "mega":  80,
+                                    "megaFly":  78.9,
+                                    "megaRide":  78,
+                                    "megaNoPotion":  77
                                 }
                  },
                  {
@@ -2160,7 +2160,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  6.85,
                                     "fly":  6.4,
@@ -2171,7 +2171,7 @@
                                     "neonRide":  26,
                                     "neonNoPotion":  25,
                                     "mega":  112,
-                                    "megaFly":  110.85,
+                                    "megaFly":  110.9,
                                     "megaRide":  110,
                                     "megaNoPotion":  117
                                 }
@@ -2184,7 +2184,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  8.5,
                                     "fly":  8.1,
@@ -2195,7 +2195,7 @@
                                     "neonRide":  33,
                                     "neonNoPotion":  32,
                                     "mega":  143,
-                                    "megaFly":  141.85,
+                                    "megaFly":  141.9,
                                     "megaRide":  141,
                                     "megaNoPotion":  141
                                 }
@@ -2208,20 +2208,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  11,
-                                    "fly":  10.45,
-                                    "ride":  10.4,
-                                    "noPotion":  10,
-                                    "neon":  44,
-                                    "neonFly":  43,
-                                    "neonRide":  43,
-                                    "neonNoPotion":  42,
-                                    "mega":  180,
-                                    "megaFly":  178.85,
-                                    "megaRide":  178,
-                                    "megaNoPotion":  185
+                                    "default":  12.5,
+                                    "fly":  11.95,
+                                    "ride":  11.9,
+                                    "noPotion":  11.5,
+                                    "neon":  47,
+                                    "neonFly":  46,
+                                    "neonRide":  46,
+                                    "neonNoPotion":  45,
+                                    "mega":  187,
+                                    "megaFly":  185.9,
+                                    "megaRide":  185,
+                                    "megaNoPotion":  192
                                 }
                  },
                  {
@@ -2232,7 +2232,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  8,
                                     "fly":  7.6,
@@ -2243,7 +2243,7 @@
                                     "neonRide":  31,
                                     "neonNoPotion":  30,
                                     "mega":  134,
-                                    "megaFly":  132.85,
+                                    "megaFly":  132.9,
                                     "megaRide":  132,
                                     "megaNoPotion":  134
                                 }
@@ -2256,20 +2256,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  8.25,
-                                    "fly":  7.85,
-                                    "ride":  7.8,
-                                    "noPotion":  7.5,
-                                    "neon":  34,
-                                    "neonFly":  33,
-                                    "neonRide":  33,
-                                    "neonNoPotion":  32,
-                                    "mega":  141,
-                                    "megaFly":  139.85,
-                                    "megaRide":  139,
-                                    "megaNoPotion":  138
+                                    "default":  9.75,
+                                    "fly":  9.35,
+                                    "ride":  9.3,
+                                    "noPotion":  9,
+                                    "neon":  40,
+                                    "neonFly":  39,
+                                    "neonRide":  39,
+                                    "neonNoPotion":  38,
+                                    "mega":  165,
+                                    "megaFly":  163.9,
+                                    "megaRide":  163,
+                                    "megaNoPotion":  162
                                 }
                  },
                  {
@@ -2280,7 +2280,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  7.35,
                                     "fly":  6.9,
@@ -2291,7 +2291,7 @@
                                     "neonRide":  28,
                                     "neonNoPotion":  27,
                                     "mega":  120,
-                                    "megaFly":  118.85,
+                                    "megaFly":  118.9,
                                     "megaRide":  118,
                                     "megaNoPotion":  121
                                 }
@@ -2304,7 +2304,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  8.25,
                                     "fly":  7.85,
@@ -2314,10 +2314,10 @@
                                     "neonFly":  32,
                                     "neonRide":  32,
                                     "neonNoPotion":  31,
-                                    "mega":  139,
-                                    "megaFly":  137.85,
-                                    "megaRide":  137,
-                                    "megaNoPotion":  137
+                                    "mega":  140,
+                                    "megaFly":  138.9,
+                                    "megaRide":  138,
+                                    "megaNoPotion":  138
                                 }
                  },
                  {
@@ -2328,7 +2328,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  6.75,
                                     "fly":  6.35,
@@ -2339,7 +2339,7 @@
                                     "neonRide":  26,
                                     "neonNoPotion":  25,
                                     "mega":  113,
-                                    "megaFly":  111.85,
+                                    "megaFly":  111.9,
                                     "megaRide":  111,
                                     "megaNoPotion":  113
                                 }
@@ -2352,7 +2352,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  7,
                                     "fly":  6.6,
@@ -2363,7 +2363,7 @@
                                     "neonRide":  27,
                                     "neonNoPotion":  26,
                                     "mega":  116,
-                                    "megaFly":  114.85,
+                                    "megaFly":  114.9,
                                     "megaRide":  114,
                                     "megaNoPotion":  113
                                 }
@@ -2376,20 +2376,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
-                                    "default":  7.5,
-                                    "fly":  7.1,
-                                    "ride":  7.05,
-                                    "noPotion":  6.75,
-                                    "neon":  30,
-                                    "neonFly":  29,
-                                    "neonRide":  29,
-                                    "neonNoPotion":  28,
-                                    "mega":  125,
-                                    "megaFly":  123.85,
-                                    "megaRide":  123,
-                                    "megaNoPotion":  122
+                                    "default":  7,
+                                    "fly":  6.6,
+                                    "ride":  6.55,
+                                    "noPotion":  6.25,
+                                    "neon":  28,
+                                    "neonFly":  27,
+                                    "neonRide":  27,
+                                    "neonNoPotion":  26,
+                                    "mega":  116,
+                                    "megaFly":  114.9,
+                                    "megaRide":  114,
+                                    "megaNoPotion":  113
                                 }
                  },
                  {
@@ -2400,7 +2400,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  8,
                                     "fly":  7.6,
@@ -2411,7 +2411,7 @@
                                     "neonRide":  31,
                                     "neonNoPotion":  30,
                                     "mega":  133,
-                                    "megaFly":  131.85,
+                                    "megaFly":  131.9,
                                     "megaRide":  131,
                                     "megaNoPotion":  138
                                 }
@@ -2424,20 +2424,20 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-05-27 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  6.5,
                                     "fly":  5.35,
                                     "ride":  5.25,
                                     "noPotion":  5,
-                                    "neon":  22.5,
-                                    "neonFly":  21.5,
-                                    "neonRide":  21.5,
-                                    "neonNoPotion":  21,
-                                    "mega":  90,
-                                    "megaFly":  88.85,
-                                    "megaRide":  88,
-                                    "megaNoPotion":  95
+                                    "neon":  21,
+                                    "neonFly":  20,
+                                    "neonRide":  20,
+                                    "neonNoPotion":  19.5,
+                                    "mega":  87,
+                                    "megaFly":  85.9,
+                                    "megaRide":  85,
+                                    "megaNoPotion":  92
                                 }
                  }
              ]

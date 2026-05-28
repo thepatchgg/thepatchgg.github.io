@@ -1,5 +1,5 @@
-{
-    "updatedAt":  "2026-05-26",
+﻿{
+    "updatedAt":  "2026-05-27",
     "entries":  [
                     {
                         "slug":  "2021-uplift-butterfly",
@@ -1081,7 +1081,7 @@
                     },
                     {
                         "slug":  "dark-choco-bunny",
-                        "name":  "Dark Choco Bunny",
+                        "name":  "Dark Choccybunny",
                         "rarity":  "l",
                         "image":  "/assets/pets/dark-choco-bunny.png",
                         "benchmark":  false
@@ -2971,7 +2971,7 @@
                     },
                     {
                         "slug":  "milk-choco-bunny",
-                        "name":  "Milk Choco Bunny",
+                        "name":  "Milk Choccybunny",
                         "rarity":  "r",
                         "image":  "/assets/pets/milk-choco-bunny.png",
                         "benchmark":  false
@@ -4966,7 +4966,7 @@
                     },
                     {
                         "slug":  "white-choco-bunny",
-                        "name":  "White Choco Bunny",
+                        "name":  "White Choccybunny",
                         "rarity":  "ur",
                         "image":  "/assets/pets/white-choco-bunny.png",
                         "benchmark":  false
