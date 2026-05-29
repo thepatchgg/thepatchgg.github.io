@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-journey-to-summer-camp-week-1-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Journey to Summer Camp",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Journey to Summer Camp Week 1 guide &mdash; Bison, Ranger Beaver, and Compass Coins",
+          excerpt: "The May 29 update adds Beaver Bob's van activity, Compass Coins, the one-week Rare Bison, the 99 Robux Ranger Beaver bundle, and market-forming value notes.",
+          meta: ["May 29, 2026", "Live guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Journey to Summer Camp Week 1 Guide - Bison, Ranger Beaver, and Compass Coins",
+          excerpt: "Open the May 29 guide for Bison, Ranger Beaver, Beaver Bob's van activity, Compass Coin spending, bug fixes, and value status.",
+          meta: ["May 29", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-stormy-ducky-drama-guide.html",
       featured: true,
       contexts: {
@@ -230,7 +252,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Stormy Ducky Drama guide &#8594;"
+      labelHtml: "Read the Summer Camp Week 1 guide &#8594;"
     },
     hub: {
       href: updates[0].href,

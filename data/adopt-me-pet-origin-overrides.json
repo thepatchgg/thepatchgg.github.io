@@ -1,5 +1,5 @@
 ﻿{
-    "updatedAt":  "2026-05-27",
+    "updatedAt":  "2026-05-29",
     "source":  "Curated Adopt Me Wiki pet-origin overrides from the main Pets index and select pet pages.",
     "pets":  [
                  {
@@ -613,6 +613,21 @@
                                          "petRarity":  "Legendary",
                                          "chanceText":  "2.5%",
                                          "notes":  "Legendary pheasant obtainable from Golden Wheat during the monthly Fall Weather rotation."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "bison",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Journey to Summer Camp Week 1",
+                                         "sourceType":  "Event shop pet",
+                                         "status":  "current",
+                                         "released":  "May 29, 2026",
+                                         "cost":  "6,850 Compass Coins",
+                                         "petRarity":  "Rare",
+                                         "eventContext":  "Journey to Summer Camp Week 1",
+                                         "notes":  "Rare Compass Coins pet sold from Beaver Bob's Journey to Summer Camp Week 1 shop. Official notes say it leaves after one week."
                                      }
                                  ]
                  },
@@ -6040,6 +6055,21 @@
                                          "cost":  "100 Robux",
                                          "petRarity":  "Rare",
                                          "notes":  "Jungle Zone premium pet sold during the Safari/Jungle zone run."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "ranger-beaver",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Beaver Bob Bundle",
+                                         "sourceType":  "Robux bundle pet",
+                                         "status":  "current",
+                                         "released":  "May 29, 2026",
+                                         "cost":  "99 Robux bundle",
+                                         "petRarity":  "Rare",
+                                         "eventContext":  "Journey to Summer Camp Week 1",
+                                         "notes":  "Rare pet included in the Beaver Bob Bundle alongside Forest Warden Hat, Ranger Neckerchief, and Hiking Boots. Official notes say the bundle stays available for all three Journey weeks."
                                      }
                                  ]
                  },
