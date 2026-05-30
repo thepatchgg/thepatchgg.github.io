@@ -233,7 +233,11 @@
           }
           return true;
         })
-        .sort((left, right) => right.values.default - left.values.default);
+        .sort((left, right) => {
+          const leftValue = Number.isFinite(left.values && left.values.default) ? left.values.default : -1;
+          const rightValue = Number.isFinite(right.values && right.values.default) ? right.values.default : -1;
+          return rightValue - leftValue;
+        });
     }
 
     function renderRecentPets() {

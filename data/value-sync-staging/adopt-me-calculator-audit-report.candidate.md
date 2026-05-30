@@ -1,16 +1,25 @@
 # Calculator Audit Report
 
-- Date: 2026-05-29
-- Tracker pet rows parsed: 734
+- Date: 2026-05-30
+- Tracker pet rows parsed: 732
 - Local calculator pets: 731
 - Non-benchmark local pets: 630
-- Non-benchmark pets matched to tracker feed: 621
-- Non-benchmark pets manually resolved: 9
+- Non-benchmark pets matched to tracker feed: 619
+- Non-benchmark pets manually resolved: 11
 - Non-benchmark pets still unmatched: 0
 
 ## Benchmark Divergence
 
-No benchmark divergence rows were produced in the latest audit.
+| Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Dragonfruit Fox | 4.7 | 4.45 | 5.6% | 4 | 3.75 |
+| Siamese Cat | 19 | 20 | -5% | 18 | 19 |
+| Papa Moose | 7 | 6.75 | 3.7% | 6.25 | 6 |
+| Field Mouse | 7.75 | 7.5 | 3.3% | 7 | 6.75 |
+| Werewolf | 9.75 | 10 | -2.5% | 9 | 9.25 |
+| Goose | 28 | 28.5 | -1.8% | 26.5 | 27 |
+| Undead Jousting Horse | 21 | 21.25 | -1.2% | 20 | 20.25 |
+| Bat Dragon | 794 | 800 | -0.8% | 807 | 813 |
 
 ## Manual Edge-Case Resolutions
 

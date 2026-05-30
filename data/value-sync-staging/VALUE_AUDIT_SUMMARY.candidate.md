@@ -1,6 +1,6 @@
 # Value Audit Summary
 
-- Date: 2026-05-29
+- Date: 2026-05-30
 - Source refresh: cached fallback
 - Mode: audit-only
 - Scope: Adopt Me trade calculator long-tail pet values
@@ -8,8 +8,8 @@
 - Local calculator coverage: 731 pets
 - Benchmark/editorial pets currently handled outside the override layer: 101
 - Comparable non-benchmark pet coverage in this run: 630
-- Non-benchmark pets matched to public tracker feed: 621
-- Non-benchmark pets manually resolved: 9
+- Non-benchmark pets matched to public tracker feed: 619
+- Non-benchmark pets manually resolved: 11
 - Non-benchmark pets still unmatched: 0
 - Current production comparable non-benchmark coverage: 630
 
@@ -23,7 +23,18 @@
 
 ## Benchmark Review Queue
 
-No benchmark divergence rows were produced in the latest audit.
+These benchmark pets still deserve human review before any editorial benchmark change:
+
+| Pet | Patch default | Tracker FR | Delta % |
+| --- | ---: | ---: | ---: |
+| Dragonfruit Fox | 4.7 | 4.45 | 5.6% |
+| Siamese Cat | 19 | 20 | -5% |
+| Papa Moose | 7 | 6.75 | 3.7% |
+| Field Mouse | 7.75 | 7.5 | 3.3% |
+| Werewolf | 9.75 | 10 | -2.5% |
+| Goose | 28 | 28.5 | -1.8% |
+| Undead Jousting Horse | 21 | 21.25 | -1.2% |
+| Bat Dragon | 794 | 800 | -0.8% |
 
 ## Recommendation
 
