@@ -1,6 +1,50 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-journey-to-summer-camp-week-1-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Journey to Summer Camp",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Journey to Summer Camp Week 1 guide &mdash; Bison, Ranger Beaver, and Compass Coins",
+          excerpt: "The May 29 update adds Beaver Bob's van activity, Compass Coins, the one-week Rare Bison, the 99 Robux Ranger Beaver bundle, and market-forming value notes.",
+          meta: ["May 29, 2026", "Live guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Journey to Summer Camp Week 1 Guide - Bison, Ranger Beaver, and Compass Coins",
+          excerpt: "Open the May 29 guide for Bison, Ranger Beaver, Beaver Bob's van activity, Compass Coin spending, bug fixes, and value status.",
+          meta: ["May 29", "Live guide"]
+        }
+      }
+    },
+    {
+      href: "/articles/adopt-me-stormy-ducky-drama-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Stormy Ducky Drama",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Stormy Ducky Drama guide &mdash; Rubber Ducky Box odds, Shadow Dragon Ducky, and storm rewards",
+          excerpt: "The May 22-23 update wave adds Rubber Ducky, Glyptodon Ducky, Unicorn Ducky, Strawberry Shortcake Ducky, Shadow Dragon Ducky, Dirty Ducky, a storm task, and live value notes.",
+          meta: ["May 22, 2026", "Live guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Stormy Ducky Drama Guide - Rubber Ducky Box odds and Shadow Dragon Ducky",
+          excerpt: "Open the May 22-23 guide for Rubber Ducky, Glyptodon Ducky, Unicorn Ducky, Strawberry Shortcake Ducky, Shadow Dragon Ducky, Dirty Ducky, storm rewards, and live value notes.",
+          meta: ["May 22", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-tims-trial-tonics-potion-guide.html",
       featured: true,
       contexts: {
@@ -140,14 +184,14 @@
           tag: "Update Archive",
           badgeLabel: "Pinned",
           badgeTone: "updated",
-          title: "Sugarfest Week 4 Archive - Chocolate Bunny, Pupcake, and Easter Bunny finale",
-          excerpt: "The final Sugarfest snapshot keeps the Week 4 pets, release framing, and end-of-event context in one clean archive page.",
+          title: "Sugarfest Week 4 Archive - Milk, White, and Dark Choccybunny plus Pupcake",
+          excerpt: "The final Sugarfest snapshot keeps Pupcake, Milk Choccybunny, White Choccybunny, Dark Choccybunny, release framing, and end-of-event context in one clean archive page.",
           meta: ["April 2026 archive", "Week 4 finale"]
         },
         hub: {
           tag: "Weekly Update",
-          title: "Sugarfest Week 4 Guide - Chocolate Bunny, Pupcake, and Easter Bunny finale",
-          excerpt: "A clean recap of the final Sugarfest drop, including the Week 4 pets players still revisit after the event ended.",
+          title: "Sugarfest Week 4 Guide - Choccybunny Box, Pupcake, and Easter Bunny finale",
+          excerpt: "A clean recap of the final Sugarfest drop, including Pupcake, Milk Choccybunny, White Choccybunny, and Dark Choccybunny.",
           meta: ["Week 4", "Featured update"]
         }
       }
@@ -208,7 +252,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Tim's Trial Tonics guide &#8594;"
+      labelHtml: "Read the Summer Camp Week 1 guide &#8594;"
     },
     hub: {
       href: updates[0].href,
