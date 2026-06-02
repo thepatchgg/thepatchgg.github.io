@@ -196,7 +196,7 @@ img{display:block}
 <div class="status-card">
   <strong>Coverage:</strong> this calculator includes <span id="coverage-count">700+</span> pets.
   High-traffic pets have their latest value lanes, while <span id="tracker-audit-count">609</span> additional pets are supported with current reference values.
-  Another <span id="manual-audit-count">10</span> edge-case pets are filled in manually, leaving <span id="audit-unmatched">0</span> unmatched.
+  Another <span id="manual-audit-count">10</span> edge-case and new-release pets are filled in manually, leaving <span id="audit-unmatched">0</span> unmatched.
 </div>
 
 <div class="status-card audit-mode" id="audit-mode-card" hidden>
@@ -275,6 +275,7 @@ img{display:block}
 var IMAGE_FALLBACK = "/favicon.svg";
 var LEGACY_DATA_PATH = "/data/adopt-me-calculator-values.json";
 var OVERRIDE_DATA_PATH = "/data/adopt-me-calculator-overrides.json";
+var NEW_PET_OVERRIDE_DATA_PATH = "/data/adopt-me-new-pet-overrides.json";
 var CANDIDATE_OVERRIDE_DATA_PATH = "/data/value-sync-staging/adopt-me-calculator-overrides.candidate.json";
 var urlParams = new URLSearchParams(window.location.search);
 var USE_CANDIDATE_VALUES = urlParams.get("candidateValues") === "1";
@@ -301,6 +302,7 @@ var state = {
   payload: null,
   legacyPayload: null,
   overridePayload: null,
+  newPetOverridePayload: null,
   pets: [],
   givePets: newArr(),
   recvPets: newArr(),
@@ -386,6 +388,14 @@ function loadOverrideCatalog() {
     return response.json();
   });
 }
+function loadNewPetOverrideCatalog() {
+  if (USE_CANDIDATE_VALUES) return Promise.resolve({ pets: [] });
+  return fetch(NEW_PET_OVERRIDE_DATA_PATH, { cache: "no-store" }).then(function(response){
+    if (response.status === 404) return { pets: [] };
+    if (!response.ok) throw new Error("Unable to load new-pet override catalog: " + response.status);
+    return response.json();
+  });
+}
 function showAuditModeBanner() {
   if (!USE_CANDIDATE_VALUES) return;
   var card = document.getElementById("audit-mode-card");
@@ -393,13 +403,28 @@ function showAuditModeBanner() {
     card.hidden = false;
   }
 }
-function mergeCatalog(benchmarkPayload, legacyPayload, overridePayload) {
+function overridePetToCatalogPet(overridePet, legacyPet) {
+  return {
+    slug: legacyPet ? legacyPet.slug : overridePet.slug,
+    name: overridePet.name || (legacyPet && legacyPet.name) || overridePet.slug,
+    rarity: normalizeRarity((legacyPet && legacyPet.rarity) || overridePet.rarity),
+    image: overridePet.image || (legacyPet && legacyPet.image) || slugImage(overridePet.slug),
+    source: "override",
+    matrix: overridePet.values,
+    values: { default: (overridePet.values.default && overridePet.values.default.noPotion) || (legacyPet && legacyPet.legacyValue) || 0 }
+  };
+}
+function mergeCatalog(benchmarkPayload, legacyPayload, overridePayload, newPetOverridePayload) {
   var merged = [];
   var seen = {};
   var benchmarkIndex = benchmarkPayload.petIndex || {};
   var overrideIndex = {};
+  var newPetOverrides = newPetOverridePayload.pets || [];
 
   (overridePayload.pets || []).forEach(function(pet){
+    overrideIndex[pet.slug] = pet;
+  });
+  newPetOverrides.forEach(function(pet){
     overrideIndex[pet.slug] = pet;
   });
 
@@ -407,15 +432,7 @@ function mergeCatalog(benchmarkPayload, legacyPayload, overridePayload) {
     var benchmarkPet = benchmarkIndex[legacyPet.slug];
     var overridePet = overrideIndex[legacyPet.slug];
     var pet = overridePet
-      ? {
-          slug: legacyPet.slug,
-          name: overridePet.name || legacyPet.name,
-          rarity: normalizeRarity(legacyPet.rarity),
-          image: legacyPet.image || slugImage(legacyPet.slug),
-          source: "override",
-          matrix: overridePet.values,
-          values: { default: (overridePet.values.default && overridePet.values.default.noPotion) || legacyPet.legacyValue }
-        }
+      ? overridePetToCatalogPet(overridePet, legacyPet)
       : benchmarkPet
       ? Object.assign({}, benchmarkPet, { image: legacyPet.image || slugImage(benchmarkPet.slug), source: "benchmark" })
       : {
@@ -429,6 +446,12 @@ function mergeCatalog(benchmarkPayload, legacyPayload, overridePayload) {
 
     seen[pet.slug] = true;
     merged.push(pet);
+  });
+
+  newPetOverrides.forEach(function(overridePet){
+    if (seen[overridePet.slug]) return;
+    seen[overridePet.slug] = true;
+    merged.push(overridePetToCatalogPet(overridePet, null));
   });
 
   benchmarkPayload.pets.forEach(function(benchmarkPet){
@@ -731,15 +754,17 @@ function bootCalculator() {
   Promise.all([
     window.ThePatchValues.loadAdoptValues(),
     loadLegacyCatalog(),
-    loadOverrideCatalog()
+    loadOverrideCatalog(),
+    loadNewPetOverrideCatalog()
   ]).then(function(results){
     state.payload = results[0];
     state.legacyPayload = results[1];
     state.overridePayload = results[2];
-    state.pets = mergeCatalog(state.payload, state.legacyPayload, state.overridePayload);
+    state.newPetOverridePayload = results[3];
+    state.pets = mergeCatalog(state.payload, state.legacyPayload, state.overridePayload, state.newPetOverridePayload);
     document.getElementById("coverage-count").textContent = state.pets.length;
     document.getElementById("tracker-audit-count").textContent = state.overridePayload.trackerMatchedCount || 0;
-    document.getElementById("manual-audit-count").textContent = state.overridePayload.manualResolvedCount || 0;
+    document.getElementById("manual-audit-count").textContent = (state.overridePayload.manualResolvedCount || 0) + (state.newPetOverridePayload.manualResolvedCount || 0);
     document.getElementById("audit-unmatched").textContent = state.overridePayload.remainingUnmatchedCount || 0;
     buildFilters();
     renderSlots("give");

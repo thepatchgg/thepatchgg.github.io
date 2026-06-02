@@ -1,0 +1,35 @@
+{
+  "updatedAt": "2026-06-02",
+  "notes": "Small production overlay for newly released Adopt Me pets that need calculator coverage before the next full generated value sync. Keep entries conservative and remove them once the generated override or benchmark layer owns the pet.",
+  "manualResolvedCount": 1,
+  "pets": [
+    {
+      "slug": "bison",
+      "name": "Bison",
+      "rarity": "r",
+      "image": "/assets/pets/bison.png",
+      "sourceType": "new-pet-projection",
+      "sourceNote": "Early June 2, 2026 projection from reviewed Elvebredd values and current marketplace listing checks; keep out of benchmark layer until normal tracker sync confirms.",
+      "values": {
+        "default": {
+          "noPotion": 0.3,
+          "fly": 0.5,
+          "ride": 0.5,
+          "flyRide": 0.75
+        },
+        "neon": {
+          "noPotion": 1.7,
+          "fly": 1.98,
+          "ride": 1.98,
+          "flyRide": 2.25
+        },
+        "mega": {
+          "noPotion": 7.5,
+          "fly": 8.4,
+          "ride": 8.4,
+          "flyRide": 9.8
+        }
+      }
+    }
+  ]
+}

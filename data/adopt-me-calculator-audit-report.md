@@ -6,6 +6,7 @@
 - Non-benchmark local pets: 619
 - Non-benchmark pets matched to tracker feed: 609
 - Non-benchmark pets manually resolved: 10
+- New-pet production overlay rows: 1
 - Non-benchmark pets still unmatched: 0
 
 ## Benchmark Divergence
@@ -52,6 +53,7 @@
 - River: manualTradable (Wrapped Doll pet using current AMTV base value.)
 - Scoob: nonTradable (Temporary Scoob event pet that could not be traded.)
 - Weevil Pet: manualTradable (Mapped to Weevil on AMTV.)
+- Bison: newPetProjection (Small production overlay for June 2, 2026; reviewed early values are 0.3 no potion, 0.75 fly ride, and 2.25 neon fly ride.)
 
 ## Unmatched Local Pets
 
