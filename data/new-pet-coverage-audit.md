@@ -1,6 +1,6 @@
 # New Pet Coverage Audit
 
-- Date: 2026-05-31
+- Date: 2026-06-02
 - Pets checked: Bison, Ranger Beaver
 
 | Pet | Article | Home | Hub | Catalog | Legacy Calc | Benchmark | Override | Pet Page Data | Pet Page | Image |
