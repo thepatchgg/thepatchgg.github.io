@@ -1,6 +1,6 @@
 # Value Audit Summary
 
-- Date: 2026-05-30
+- Date: 2026-06-03
 - Source refresh: cached fallback
 - Mode: audit-only
 - Scope: Adopt Me trade calculator long-tail pet values
