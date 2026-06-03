@@ -1,7 +1,7 @@
 # Value Audit Summary
 
-- Date: 2026-05-29
-- Source refresh: fresh
+- Date: 2026-06-03
+- Source refresh: cached fallback
 - Mode: production refresh
 - Scope: Adopt Me trade calculator long-tail pet values
 - Reference source: adoptmevalues.app values index
