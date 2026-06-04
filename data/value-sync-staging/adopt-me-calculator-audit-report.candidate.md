@@ -1,25 +1,42 @@
 # Calculator Audit Report
 
-- Date: 2026-06-03
-- Tracker pet rows parsed: 732
+- Date: 2026-06-04
+- Tracker pet rows parsed: 737
 - Local calculator pets: 731
 - Non-benchmark local pets: 630
-- Non-benchmark pets matched to tracker feed: 619
-- Non-benchmark pets manually resolved: 11
+- Non-benchmark pets matched to tracker feed: 621
+- Non-benchmark pets manually resolved: 9
 - Non-benchmark pets still unmatched: 0
 
 ## Benchmark Divergence
 
 | Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |
 | --- | ---: | ---: | ---: | ---: | ---: |
+| Siamese Cat | 19 | 26 | -26.9% | 18 | 24.5 |
+| Goose | 28 | 32 | -12.5% | 26.5 | 30.5 |
+| Werewolf | 9.75 | 11.1 | -12.2% | 9 | 10.25 |
+| Black Panther | 1.85 | 2 | -7.5% | 1.25 | 1.25 |
+| Chicken | 1.85 | 2 | -7.5% | 1.25 | 1.25 |
+| Rhino | 1.95 | 2.1 | -7.1% | 1.35 | 1.35 |
+| Capybara | 1.95 | 2.1 | -7.1% | 1.35 | 1.35 |
+| Bat Dragon | 794 | 852 | -6.8% | 807 | 865 |
+| Candicorn | 5.7 | 6.1 | -6.6% | 5 | 5.25 |
+| Dragon | 0.93 | 0.88 | 5.7% | 0.23 | 0.18 |
 | Dragonfruit Fox | 4.7 | 4.45 | 5.6% | 4 | 3.75 |
-| Siamese Cat | 19 | 20 | -5% | 18 | 19 |
+| Alicorn | 0.94 | 0.89 | 5.6% | 0.24 | 0.19 |
+| Shadow Dragon | 477 | 496 | -3.8% | 596.25 | 661.333333333333 |
 | Papa Moose | 7 | 6.75 | 3.7% | 6.25 | 6 |
 | Field Mouse | 7.75 | 7.5 | 3.3% | 7 | 6.75 |
-| Werewolf | 9.75 | 10 | -2.5% | 9 | 9.25 |
-| Goose | 28 | 28.5 | -1.8% | 26.5 | 27 |
-| Undead Jousting Horse | 21 | 21.25 | -1.2% | 20 | 20.25 |
-| Bat Dragon | 794 | 800 | -0.8% | 807 | 813 |
+| Unicorn | 1.6 | 1.55 | 3.2% | 0.9 | 0.85 |
+| Frostbite Bear | 8.25 | 8 | 3.1% | 7.5 | 7.25 |
+| Pig | 8.25 | 8.5 | -2.9% | 6.75 | 7 |
+| Polar Bear | 4.5 | 4.6 | -2.2% | 3.75 | 3.75 |
+| Giraffe | 333 | 340 | -2.1% | 345 | 352 |
+| Platypus | 4.75 | 4.85 | -2.1% | 4 | 4 |
+| Brown Bear | 4.75 | 4.85 | -2.1% | 4 | 4 |
+| Hyena | 5 | 5.1 | -2% | 4.25 | 4.25 |
+| Frost Dragon | 262 | 266 | -1.5% | 274 | 278 |
+| Dalmatian | 51 | 51.75 | -1.4% | 49.5 | 50.25 |
 
 ## Manual Edge-Case Resolutions
 
