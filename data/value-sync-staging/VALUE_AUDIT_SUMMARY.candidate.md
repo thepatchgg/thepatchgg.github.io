@@ -1,15 +1,15 @@
 # Value Audit Summary
 
-- Date: 2026-06-03
-- Source refresh: cached fallback
+- Date: 2026-06-04
+- Source refresh: fresh
 - Mode: audit-only
 - Scope: Adopt Me trade calculator long-tail pet values
 - Reference source: adoptmevalues.app values index
 - Local calculator coverage: 731 pets
 - Benchmark/editorial pets currently handled outside the override layer: 101
 - Comparable non-benchmark pet coverage in this run: 630
-- Non-benchmark pets matched to public tracker feed: 619
-- Non-benchmark pets manually resolved: 11
+- Non-benchmark pets matched to public tracker feed: 621
+- Non-benchmark pets manually resolved: 9
 - Non-benchmark pets still unmatched: 0
 - Current production comparable non-benchmark coverage: 630
 
@@ -27,14 +27,14 @@ These benchmark pets still deserve human review before any editorial benchmark c
 
 | Pet | Patch default | Tracker FR | Delta % |
 | --- | ---: | ---: | ---: |
-| Dragonfruit Fox | 4.7 | 4.45 | 5.6% |
-| Siamese Cat | 19 | 20 | -5% |
-| Papa Moose | 7 | 6.75 | 3.7% |
-| Field Mouse | 7.75 | 7.5 | 3.3% |
-| Werewolf | 9.75 | 10 | -2.5% |
-| Goose | 28 | 28.5 | -1.8% |
-| Undead Jousting Horse | 21 | 21.25 | -1.2% |
-| Bat Dragon | 794 | 800 | -0.8% |
+| Siamese Cat | 19 | 26 | -26.9% |
+| Goose | 28 | 32 | -12.5% |
+| Werewolf | 9.75 | 11.1 | -12.2% |
+| Black Panther | 1.85 | 2 | -7.5% |
+| Chicken | 1.85 | 2 | -7.5% |
+| Rhino | 1.95 | 2.1 | -7.1% |
+| Capybara | 1.95 | 2.1 | -7.1% |
+| Bat Dragon | 794 | 852 | -6.8% |
 
 ## Recommendation
 
