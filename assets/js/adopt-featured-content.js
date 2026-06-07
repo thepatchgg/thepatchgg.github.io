@@ -1,24 +1,46 @@
 (function () {
   const updates = [
     {
-      href: "/articles/adopt-me-journey-to-summer-camp-week-1-guide.html",
+      href: "/articles/adopt-me-journey-through-waves-guide.html",
       featured: true,
       contexts: {
         home: {
-          tag: "Journey to Summer Camp",
+          tag: "Journey Through Waves",
           badgeLabel: "New",
           badgeTone: "new",
-          title: "Journey to Summer Camp Week 1 guide &mdash; Bison, Ranger Beaver, and Compass Coins",
-          excerpt: "The May 29 update adds Beaver Bob's van activity, Compass Coins, the one-week Rare Bison, the 99 Robux Ranger Beaver bundle, and market-forming value notes.",
-          meta: ["May 29, 2026", "Live guide"]
+          title: "Journey Through Waves guide &mdash; Nurse Shark, river cleanup, and Week 2 value status",
+          excerpt: "The June 5 update sends Journey to Summer Camp onto the water route, introduces Nurse Shark, and keeps live values pending until tracker-backed rows appear.",
+          meta: ["June 5, 2026", "Live guide"]
         },
         hub: {
           tag: "Weekly Update",
           badgeLabel: "New",
           badgeTone: "new",
+          title: "Journey Through Waves Guide - Nurse Shark and the water-route cleanup loop",
+          excerpt: "Open the June 5 guide for Nurse Shark, the river-cleanup loop, Journey to Summer Camp's second leg, and current value status.",
+          meta: ["June 5", "Live guide"]
+        }
+      }
+    },
+    {
+      href: "/articles/adopt-me-journey-to-summer-camp-week-1-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Journey to Summer Camp",
+          badgeLabel: "Updated",
+          badgeTone: "updated",
+          title: "Journey to Summer Camp Week 1 guide &mdash; Bison, Ranger Beaver, and Compass Coins",
+          excerpt: "The May 29 update adds Beaver Bob's van activity, Compass Coins, the one-week Rare Bison, the 99 Robux Ranger Beaver bundle, and current value-pending notes.",
+          meta: ["May 29, 2026", "Week 1 archive"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "Updated",
+          badgeTone: "updated",
           title: "Journey to Summer Camp Week 1 Guide - Bison, Ranger Beaver, and Compass Coins",
-          excerpt: "Open the May 29 guide for Bison, Ranger Beaver, Beaver Bob's van activity, Compass Coin spending, bug fixes, and value status.",
-          meta: ["May 29", "Live guide"]
+          excerpt: "Open the May 29 guide for Bison, Ranger Beaver, Beaver Bob's van activity, Compass Coin spending, and the Week 1 archive context.",
+          meta: ["May 29", "Week 1 archive"]
         }
       }
     },
@@ -252,7 +274,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Summer Camp Week 1 guide &#8594;"
+      labelHtml: "Read the Journey Through Waves guide &#8594;"
     },
     hub: {
       href: updates[0].href,

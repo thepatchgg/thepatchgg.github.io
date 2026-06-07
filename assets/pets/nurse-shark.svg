@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Nurse Shark placeholder art</title>
+  <desc id="desc">A local placeholder illustration for the Adopt Me Nurse Shark page.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08213a"/>
+      <stop offset="100%" stop-color="#16557d"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d8f2ff"/>
+      <stop offset="100%" stop-color="#8fd2ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="48" fill="url(#bg)"/>
+  <circle cx="96" cy="112" r="32" fill="#7fd6ff" opacity="0.18"/>
+  <circle cx="402" cy="132" r="18" fill="#7fd6ff" opacity="0.22"/>
+  <circle cx="430" cy="96" r="10" fill="#7fd6ff" opacity="0.18"/>
+  <path d="M74 278c44-76 128-122 218-122 53 0 101 12 145 34l39-31c7-6 18-1 18 8v87c0 9-11 14-18 8l-35-28c-32 46-82 83-145 103-73 23-161 13-222-25-24-15-26-52 0-34z" fill="url(#body)"/>
+  <path d="M243 164l42-49c8-9 23-6 27 6l12 36z" fill="#b9e9ff"/>
+  <path d="M165 301c29 15 63 23 99 23 72 0 138-31 182-83l17 13c7 6 18 1 18-8v-39c-70 89-184 135-296 120z" fill="#72bfdf" opacity="0.8"/>
+  <circle cx="175" cy="233" r="8" fill="#0c2437"/>
+  <path d="M136 265c19 14 43 23 69 24 23 1 46-4 67-14" fill="none" stroke="#0c2437" stroke-linecap="round" stroke-width="9"/>
+  <text x="256" y="418" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="38" font-weight="700" fill="#f6fdff">Nurse Shark</text>
+  <text x="256" y="456" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="20" fill="#b9e9ff">Journey Through Waves</text>
+</svg>

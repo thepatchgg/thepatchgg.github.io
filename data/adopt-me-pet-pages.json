@@ -67019,6 +67019,99 @@
                                 }
                  },
                  {
+                     "slug":  "nurse-shark",
+                     "name":  "Nurse Shark",
+                     "rarityCode":  "r",
+                     "rarity":  "Rare",
+                     "image":  "/assets/pets/nurse-shark.svg",
+                     "source":  "catalog",
+                     "benchmark":  false,
+                     "segment":  "Current update",
+                     "demand":  "Watching",
+                     "trend":  "Market forming",
+                     "values":  {
+
+                                },
+                     "notes":  "Official June 5, 2026 Journey Through Waves pet. The Patch is keeping the page live now while tracker-backed trade numbers are still pending.",
+                     "pageLabel":  "Current guide",
+                     "supportLabel":  "Value pending",
+                     "supportTone":  "High",
+                     "pageUrl":  "/pets/nurse-shark.html",
+                     "compareSlugs":  [
+                                          "shark",
+                                          "hammerhead-shark",
+                                          "leopard-shark"
+                                      ],
+                     "origin":  {
+                                    "audited":  true,
+                                    "sources":  [
+                                                    {
+                                                        "sourceName":  "Journey Through Waves",
+                                                        "sourceType":  "Event shop pet",
+                                                        "status":  "current",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "Jun 5, 2026",
+                                                        "releaseYear":  "2026",
+                                                        "retired":  "",
+                                                        "cost":  "7,000 Compass Coins",
+                                                        "petRarity":  "Rare",
+                                                        "chanceText":  "",
+                                                        "rarityBand":  "",
+                                                        "eventContext":  "Journey to Summer Camp Week 2",
+                                                        "notes":  "Water-route Journey to Summer Camp pet tied to the Journey Through Waves river-cleanup activity.",
+                                                        "sortKey":  202606
+                                                    }
+                                                ],
+                                    "sourceCount":  1,
+                                    "firstSource":  {
+                                                        "sourceName":  "Journey Through Waves",
+                                                        "sourceType":  "Event shop pet",
+                                                        "status":  "current",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "Jun 5, 2026",
+                                                        "releaseYear":  "2026",
+                                                        "retired":  "",
+                                                        "cost":  "7,000 Compass Coins",
+                                                        "petRarity":  "Rare",
+                                                        "chanceText":  "",
+                                                        "rarityBand":  "",
+                                                        "eventContext":  "Journey to Summer Camp Week 2",
+                                                        "notes":  "Water-route Journey to Summer Camp pet tied to the Journey Through Waves river-cleanup activity.",
+                                                        "sortKey":  202606
+                                                    },
+                                    "currentSources":  [
+                                                           {
+                                                               "sourceName":  "Journey Through Waves",
+                                                               "sourceType":  "Event shop pet",
+                                                               "status":  "current",
+                                                               "statusLabel":  "Currently available",
+                                                               "released":  "Jun 5, 2026",
+                                                               "releaseYear":  "2026",
+                                                               "retired":  "",
+                                                               "cost":  "7,000 Compass Coins",
+                                                               "petRarity":  "Rare",
+                                                               "chanceText":  "",
+                                                               "rarityBand":  "",
+                                                               "eventContext":  "Journey to Summer Camp Week 2",
+                                                               "notes":  "Water-route Journey to Summer Camp pet tied to the Journey Through Waves river-cleanup activity.",
+                                                               "sortKey":  202606
+                                                           }
+                                                       ],
+                                    "currentSourceLabels":  [
+                                                                "Journey Through Waves"
+                                                            ],
+                                    "sourceLabels":  [
+                                                         "Journey Through Waves"
+                                                     ],
+                                    "eventLabels":  [
+                                                        "Journey to Summer Camp Week 2"
+                                                    ],
+                                    "releaseYears":  [
+                                                         "2026"
+                                                     ]
+                                }
+                 },
+                 {
                      "slug":  "scoob",
                      "name":  "Scoob",
                      "rarityCode":  "event",
@@ -67102,11 +67195,11 @@
                                 }
                  }
              ],
-    "generatedAt":  "2026-05-30",
+    "generatedAt":  "2026-06-05",
     "counts":  {
                    "benchmark":  101,
                    "referenceLane":  0,
-                   "currentGuide":  632
+                   "currentGuide":  633
                },
-    "count":  733
+    "count":  734
 }

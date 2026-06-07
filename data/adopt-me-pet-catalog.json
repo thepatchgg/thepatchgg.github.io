@@ -1,5 +1,5 @@
 ﻿{
-    "updatedAt":  "2026-05-29",
+    "updatedAt":  "2026-06-05",
     "entries":  [
                     {
                         "slug":  "2021-uplift-butterfly",
@@ -5126,6 +5126,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "nurse-shark",
+                        "name":  "Nurse Shark",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/nurse-shark.svg",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "zebra",
                         "name":  "Zebra",
                         "rarity":  "r",
@@ -5169,8 +5176,8 @@
                     }
                 ],
     "counts":  {
-                   "total":  738,
-                   "verifiedRarity":  738,
+                   "total":  739,
+                   "verifiedRarity":  739,
                    "review":  0,
                    "benchmark":  18
                }

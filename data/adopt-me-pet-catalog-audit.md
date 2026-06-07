@@ -1,14 +1,14 @@
 # Pet Catalog Audit
 
-- Date: 2026-05-29
-- Tracker pet rows parsed: 733
-- Catalog entries: 738
-- Entries with verified rarity: 738
+- Date: 2026-06-05
+- Tracker pet rows parsed: 735
+- Catalog entries: 739
+- Entries with verified rarity: 739
 - Entries still marked for review: 0
 
 ## Notes
 
-- Rarity labels were synced from the cached public Adopt Me Values pet index where possible, with Bison and Ranger Beaver verified against the official May 29 Journey to Summer Camp Week 1 notes.
+- Rarity labels were synced from the fresh public Adopt Me Values pet index where possible, with Nurse Shark added from the June 5 Journey Through Waves release wave.
 - Benchmark pets fall back to the shared Patch benchmark dataset if the tracker alias does not match directly.
 
 ## Remaining Review Entries
