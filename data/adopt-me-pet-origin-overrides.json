@@ -1,5 +1,5 @@
 ﻿{
-    "updatedAt":  "2026-05-29",
+    "updatedAt":  "2026-06-05",
     "source":  "Curated Adopt Me Wiki pet-origin overrides from the main Pets index and select pet pages.",
     "pets":  [
                  {
@@ -7863,6 +7863,21 @@
                                          "petRarity":  "Ultra-Rare",
                                          "eventContext":  "Winter Holiday (2020)",
                                          "notes":  "Limited winter pet sold in the Snow Castle during the 2020 holiday event."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "nurse-shark",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Journey Through Waves",
+                                         "sourceType":  "Event shop pet",
+                                         "status":  "current",
+                                         "released":  "Jun 5, 2026",
+                                         "cost":  "7,000 Compass Coins",
+                                         "petRarity":  "Rare",
+                                         "eventContext":  "Journey to Summer Camp Week 2",
+                                         "notes":  "Water-route Journey to Summer Camp pet tied to the Journey Through Waves river-cleanup activity."
                                      }
                                  ]
                  },
