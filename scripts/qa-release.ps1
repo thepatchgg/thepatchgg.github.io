@@ -8,7 +8,7 @@ function Get-RepoRelativePath([string]$FullName) {
 
 function Test-QAExcludedPath([string]$FullName) {
   $relativePath = Get-RepoRelativePath $FullName
-  return $relativePath -eq "data/adoptmevalues-values-page.html" -or $relativePath.StartsWith("_publish_tmp/")
+  return $relativePath -eq "data/adoptmevalues-values-page.html" -or $relativePath.StartsWith("_publish_tmp/") -or $relativePath.StartsWith("_publish_sync/")
 }
 
 $corePages = @(
