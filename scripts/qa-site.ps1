@@ -6,7 +6,11 @@ function Get-RepoRelativePath([string]$FullName) {
 
 function Test-QAExcludedPath([string]$FullName) {
   $relativePath = Get-RepoRelativePath $FullName
-  return $relativePath -eq "data/adoptmevalues-values-page.html" -or $relativePath.StartsWith("_publish_tmp/") -or $relativePath.StartsWith("_publish_sync/")
+  return $relativePath -eq "data/adoptmevalues-values-page.html" -or
+    $relativePath -eq "_main_publish/data/adoptmevalues-values-page.html" -or
+    $relativePath.StartsWith("_publish_tmp/") -or
+    $relativePath.StartsWith("_publish_sync/") -or
+    $relativePath.StartsWith("_main_publish/")
 }
 
 $htmlFiles = Get-ChildItem -Path $repoRoot -Recurse -Filter *.html |

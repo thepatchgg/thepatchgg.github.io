@@ -66840,16 +66840,21 @@
                      "image":  "/assets/pets/bison.png",
                      "source":  "catalog",
                      "benchmark":  false,
-                     "segment":  "Current update",
+                     "segment":  "Entry tier",
                      "demand":  "Watching",
-                     "trend":  "Market forming",
+                     "trend":  "Current lane",
                      "values":  {
-
+                                   "default":  0.6,
+                                   "noPotion":  0.15,
+                                   "neon":  1.5,
+                                   "neonNoPotion":  0.95,
+                                   "mega":  6,
+                                   "megaNoPotion":  4
                                 },
-                     "notes":  "Official May 29, 2026 Journey to Summer Camp Week 1 pet. The Patch is keeping the page live now while tracker-backed trade numbers are still pending.",
+                     "notes":  "Tracker-backed Bison lanes were audited against the cached public Adopt Me Values feed on June 9, 2026, after the Week 1 shop window ended.",
                      "pageLabel":  "Current guide",
-                     "supportLabel":  "Value pending",
-                     "supportTone":  "High",
+                     "supportLabel":  "Entry tier",
+                     "supportTone":  "Current guide",
                      "pageUrl":  "/pets/bison.html",
                      "compareSlugs":  [
                                           "buffalo",
@@ -66862,17 +66867,17 @@
                                                     {
                                                         "sourceName":  "Journey to Summer Camp Week 1",
                                                         "sourceType":  "Event shop pet",
-                                                        "status":  "current",
-                                                        "statusLabel":  "Currently available",
+                                                        "status":  "retired",
+                                                        "statusLabel":  "Retired",
                                                         "released":  "May 29, 2026",
                                                         "releaseYear":  "2026",
-                                                        "retired":  "",
+                                                        "retired":  "Jun 5, 2026",
                                                         "cost":  "6,850 Compass Coins",
                                                         "petRarity":  "Rare",
                                                         "chanceText":  "",
                                                         "rarityBand":  "",
                                                         "eventContext":  "Journey to Summer Camp Week 1",
-                                                        "notes":  "Rare Compass Coins pet sold from Beaver Bob's Journey to Summer Camp Week 1 shop. Official notes say it leaves after one week.",
+                                                        "notes":  "Rare Compass Coins pet sold from Beaver Bob's Journey to Summer Camp Week 1 shop. Official notes say it left after one week, so it is now trade-only.",
                                                         "sortKey":  202605
                                                     }
                                                 ],
@@ -66880,39 +66885,22 @@
                                     "firstSource":  {
                                                         "sourceName":  "Journey to Summer Camp Week 1",
                                                         "sourceType":  "Event shop pet",
-                                                        "status":  "current",
-                                                        "statusLabel":  "Currently available",
+                                                        "status":  "retired",
+                                                        "statusLabel":  "Retired",
                                                         "released":  "May 29, 2026",
                                                         "releaseYear":  "2026",
-                                                        "retired":  "",
+                                                        "retired":  "Jun 5, 2026",
                                                         "cost":  "6,850 Compass Coins",
                                                         "petRarity":  "Rare",
                                                         "chanceText":  "",
                                                         "rarityBand":  "",
                                                         "eventContext":  "Journey to Summer Camp Week 1",
-                                                        "notes":  "Rare Compass Coins pet sold from Beaver Bob's Journey to Summer Camp Week 1 shop. Official notes say it leaves after one week.",
+                                                        "notes":  "Rare Compass Coins pet sold from Beaver Bob's Journey to Summer Camp Week 1 shop. Official notes say it left after one week, so it is now trade-only.",
                                                         "sortKey":  202605
                                                     },
                                     "currentSources":  [
-                                                           {
-                                                               "sourceName":  "Journey to Summer Camp Week 1",
-                                                               "sourceType":  "Event shop pet",
-                                                               "status":  "current",
-                                                               "statusLabel":  "Currently available",
-                                                               "released":  "May 29, 2026",
-                                                               "releaseYear":  "2026",
-                                                               "retired":  "",
-                                                               "cost":  "6,850 Compass Coins",
-                                                               "petRarity":  "Rare",
-                                                               "chanceText":  "",
-                                                               "rarityBand":  "",
-                                                               "eventContext":  "Journey to Summer Camp Week 1",
-                                                               "notes":  "Rare Compass Coins pet sold from Beaver Bob's Journey to Summer Camp Week 1 shop. Official notes say it leaves after one week.",
-                                                               "sortKey":  202605
-                                                           }
                                                        ],
                                     "currentSourceLabels":  [
-                                                                "Journey to Summer Camp Week 1"
                                                             ],
                                     "sourceLabels":  [
                                                          "Journey to Summer Camp Week 1"
@@ -66933,16 +66921,21 @@
                      "image":  "/assets/pets/ranger-beaver.png",
                      "source":  "catalog",
                      "benchmark":  false,
-                     "segment":  "Current update",
+                     "segment":  "Entry tier",
                      "demand":  "Watching",
-                     "trend":  "Market forming",
+                     "trend":  "Current lane",
                      "values":  {
-
+                                   "default":  1.2,
+                                   "noPotion":  0.7,
+                                   "neon":  4.25,
+                                   "neonNoPotion":  3.5,
+                                   "mega":  18,
+                                   "megaNoPotion":  15
                                 },
-                     "notes":  "Official May 29, 2026 Beaver Bob Bundle pet. The Patch has the page and origin trail live now while tracker-backed trade numbers are still pending.",
+                     "notes":  "Tracker-backed Ranger Beaver lanes were audited against the cached public Adopt Me Values feed on June 9, 2026 while the Beaver Bob Bundle was still live.",
                      "pageLabel":  "Current guide",
-                     "supportLabel":  "Value pending",
-                     "supportTone":  "High",
+                     "supportLabel":  "Entry tier",
+                     "supportTone":  "Current guide",
                      "pageUrl":  "/pets/ranger-beaver.html",
                      "compareSlugs":  [
                                           "beaver",
@@ -67195,7 +67188,7 @@
                                 }
                  }
              ],
-    "generatedAt":  "2026-06-05",
+    "generatedAt":  "2026-06-09",
     "counts":  {
                    "benchmark":  101,
                    "referenceLane":  0,
