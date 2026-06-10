@@ -1,7 +1,7 @@
 {
-    "updatedAt":  "2026-06-07",
+    "updatedAt":  "2026-06-09",
     "notes":  "Bulk calculator override audit generated from the public Adopt Me Values values index source, with manual resolutions for edge-case pets. Benchmark pets remain on The Patch\u0027s shared benchmark layer.",
-    "trackerMatchedCount":  619,
+    "trackerMatchedCount":  621,
     "manualResolvedCount":  11,
     "remainingUnmatchedCount":  0,
     "pets":  [
@@ -16404,6 +16404,58 @@
                                                  "fly":  16.3,
                                                  "ride":  15.4,
                                                  "flyRide":  17.4
+                                             }
+                                }
+                 },
+                 {
+                     "slug":  "bison",
+                     "name":  "Bison",
+                     "sourceUrl":  "https://adoptmevalues.app/values/bison",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  0.15,
+                                                    "fly":  0.35,
+                                                    "ride":  0.35,
+                                                    "flyRide":  0.6
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  0.95,
+                                                 "fly":  1.23,
+                                                 "ride":  1.23,
+                                                 "flyRide":  1.5
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  4,
+                                                 "fly":  5,
+                                                 "ride":  5,
+                                                 "flyRide":  6
+                                             }
+                                }
+                 },
+                 {
+                     "slug":  "ranger-beaver",
+                     "name":  "Ranger Beaver",
+                     "sourceUrl":  "https://adoptmevalues.app/values/ranger-beaver",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  0.7,
+                                                    "fly":  0.92,
+                                                    "ride":  0.92,
+                                                    "flyRide":  1.2
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  3.5,
+                                                 "fly":  3.88,
+                                                 "ride":  3.88,
+                                                 "flyRide":  4.25
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  15,
+                                                 "fly":  16.9,
+                                                 "ride":  16,
+                                                 "flyRide":  18
                                              }
                                 }
                  }

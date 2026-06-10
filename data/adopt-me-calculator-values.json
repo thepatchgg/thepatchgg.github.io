@@ -1,6 +1,6 @@
 ﻿{
-    "updatedAt":  "2026-05-27",
-    "count":  731,
+    "updatedAt":  "2026-06-09",
+    "count":  733,
     "notes":  "Legacy long-tail calculator defaults. Benchmark entries in adopt-me-values.json override these values in the live tool.",
     "pets":  [
                  {
@@ -5119,6 +5119,20 @@
                      "rarity":  "l",
                      "image":  "/assets/pets/dark-choco-bunny.png",
                      "legacyValue":  0.1
+                 },
+                 {
+                     "slug":  "bison",
+                     "name":  "Bison",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/bison.png",
+                     "legacyValue":  0.6
+                 },
+                 {
+                     "slug":  "ranger-beaver",
+                     "name":  "Ranger Beaver",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/ranger-beaver.png",
+                     "legacyValue":  1.2
                  }
              ]
 }
