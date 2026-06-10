@@ -1,17 +1,17 @@
 # Value Audit Summary
 
-- Date: 2026-06-07
-- Source refresh: cached fallback
+- Date: 2026-06-10
+- Source refresh: fresh
 - Mode: production refresh
 - Scope: Adopt Me trade calculator long-tail pet values
 - Reference source: adoptmevalues.app values index
-- Local calculator coverage: 731 pets
+- Local calculator coverage: 733 pets
 - Benchmark/editorial pets currently handled outside the override layer: 101
-- Comparable non-benchmark pet coverage in this run: 630
-- Non-benchmark pets matched to public tracker feed: 619
-- Non-benchmark pets manually resolved: 11
+- Comparable non-benchmark pet coverage in this run: 632
+- Non-benchmark pets matched to public tracker feed: 623
+- Non-benchmark pets manually resolved: 9
 - Non-benchmark pets still unmatched: 0
-- Current production comparable non-benchmark coverage: 630
+- Current production comparable non-benchmark coverage: 632
 
 ## What Changed
 
@@ -28,13 +28,13 @@ These benchmark pets still deserve human review before any editorial benchmark c
 | Pet | Patch default | Tracker FR | Delta % |
 | --- | ---: | ---: | ---: |
 | Siamese Cat | 19 | 28 | -32.1% |
-| Werewolf | 9.75 | 12.75 | -23.5% |
+| Werewolf | 9.75 | 13.25 | -26.4% |
+| Candicorn | 5.7 | 7.25 | -21.4% |
+| Shadow Dragon | 477 | 575 | -17% |
 | Goose | 28 | 33.5 | -16.4% |
-| Shadow Dragon | 477 | 546 | -12.6% |
-| Bat Dragon | 794 | 872 | -8.9% |
-| Candicorn | 5.7 | 6.25 | -8.8% |
+| Field Mouse | 7.75 | 7 | 10.7% |
+| Bat Dragon | 794 | 880 | -9.8% |
 | Black-Chested Pheasant | 8 | 8.75 | -8.6% |
-| Black Panther | 1.85 | 2 | -7.5% |
 
 ## Recommendation
 

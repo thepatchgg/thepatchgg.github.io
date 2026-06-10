@@ -66844,14 +66844,14 @@
                      "demand":  "Watching",
                      "trend":  "Current lane",
                      "values":  {
-                                   "default":  0.6,
-                                   "noPotion":  0.15,
-                                   "neon":  1.5,
-                                   "neonNoPotion":  0.95,
-                                   "mega":  6,
-                                   "megaNoPotion":  4
+                                   "default":  0.57,
+                                   "noPotion":  0.12,
+                                   "neon":  1.35,
+                                   "neonNoPotion":  0.8,
+                                   "mega":  5.25,
+                                   "megaNoPotion":  3.4
                                 },
-                     "notes":  "Tracker-backed Bison lanes were audited against the cached public Adopt Me Values feed on June 9, 2026, after the Week 1 shop window ended.",
+                     "notes":  "Tracker-backed Bison lanes were audited against the fresh public Adopt Me Values feed on June 10, 2026, after the Week 1 shop window ended.",
                      "pageLabel":  "Current guide",
                      "supportLabel":  "Entry tier",
                      "supportTone":  "Current guide",
@@ -66932,7 +66932,7 @@
                                    "mega":  18,
                                    "megaNoPotion":  15
                                 },
-                     "notes":  "Tracker-backed Ranger Beaver lanes were audited against the cached public Adopt Me Values feed on June 9, 2026 while the Beaver Bob Bundle was still live.",
+                     "notes":  "Tracker-backed Ranger Beaver lanes were audited against the fresh public Adopt Me Values feed on June 10, 2026 while the Beaver Bob Bundle was still live.",
                      "pageLabel":  "Current guide",
                      "supportLabel":  "Entry tier",
                      "supportTone":  "Current guide",
