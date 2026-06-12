@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-journey-through-skies-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Journey Through Skies",
+          badgeLabel: "Today",
+          badgeTone: "new",
+          title: "Journey Through Skies guide &mdash; Pilot Gull, airship feathers, and Sheepdog Ducky",
+          excerpt: "The June 12 update adds Pilot Gull for 6,900 Compass Coins, the airship feather activity, three flight pet wear items, and a June 13 Sheepdog Ducky Admin Abuse debut.",
+          meta: ["June 12, 2026", "Live guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "Today",
+          badgeTone: "new",
+          title: "Journey Through Skies Guide - Pilot Gull, feathers, and Sheepdog Ducky",
+          excerpt: "Open the live June 12 guide for Pilot Gull, the airship activity, Compass Coin prices, flight pet wear, Sheepdog Ducky timing, and value-status notes.",
+          meta: ["June 12", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-journey-to-summer-camp-week-1-guide.html",
       featured: true,
       contexts: {
@@ -252,7 +274,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Summer Camp Week 1 guide &#8594;"
+      labelHtml: "Read the Journey Through Skies guide &#8594;"
     },
     hub: {
       href: updates[0].href,
