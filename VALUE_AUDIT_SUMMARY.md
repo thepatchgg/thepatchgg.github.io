@@ -17,18 +17,14 @@
 
 - The calculator override layer was refreshed from the latest available tracker source.
 - Tracker-backed lanes now update the broad long-tail value catalog.
-- After manual review, the editorial benchmark layer was aligned to the same June 17 tracker lanes for matched benchmark pets.
+- After manual review, the editorial benchmark layer was aligned to the same June 17 tracker lanes for all matched benchmark pets.
 - Manual edge-case mappings remain in place for pets that do not map cleanly to the public tracker feed.
 - Coverage should be judged against the current non-benchmark split, not older override totals from before the benchmark library expanded.
 - The detailed calculator audit lives in data/adopt-me-calculator-audit-report.md.
 
 ## Benchmark Review Queue
 
-These benchmark pets still deserve human review before any editorial benchmark change:
-
-| Pet | Patch default | Tracker FR | Delta % |
-| --- | ---: | ---: | ---: |
-| Hedgehog | 59.5 | 60.5 | -1.7% |
+No benchmark divergence rows were produced in the latest audit.
 
 ## Recommendation
 

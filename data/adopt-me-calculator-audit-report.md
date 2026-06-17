@@ -10,9 +10,7 @@
 
 ## Benchmark Divergence
 
-| Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Hedgehog | 59.5 | 60.5 | -1.7% | 58 | 59 |
+No benchmark divergence rows were produced in the latest audit.
 
 ## Manual Edge-Case Resolutions
 
