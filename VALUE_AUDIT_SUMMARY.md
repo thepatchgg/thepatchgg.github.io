@@ -17,7 +17,6 @@
 
 - The calculator override layer was refreshed from the latest available tracker source.
 - Tracker-backed lanes now update the broad long-tail value catalog.
-- After manual review, the editorial benchmark layer was aligned to the same June 17 tracker lanes for all matched benchmark pets.
 - Manual edge-case mappings remain in place for pets that do not map cleanly to the public tracker feed.
 - Coverage should be judged against the current non-benchmark split, not older override totals from before the benchmark library expanded.
 - The detailed calculator audit lives in data/adopt-me-calculator-audit-report.md.
@@ -28,8 +27,8 @@ No benchmark divergence rows were produced in the latest audit.
 
 ## Recommendation
 
-- Do not auto-update benchmark pets from this workflow without review.
-- Cross-check benchmark and spotlight pets against a second market reference before changing any high-stakes value file when sources disagree materially.
+- Publish benchmark pet changes only when the benchmark sync and divergence guardrails pass.
+- Cross-check benchmark and spotlight pets against a second market reference when sources disagree materially.
 - If audit-only mode was used, review the candidate files in data/value-sync-staging before publishing.
-- Only publish calculator override changes after QA passes and the conflict queue looks acceptable.
+- Only publish calculator override changes after QA passes and the conflict queue is clear.
 - Keep the current hybrid model: editorial anchors in the benchmark layer, tracker-backed long tail in the calculator override layer.

@@ -181,7 +181,11 @@ function Get-StatusLabel([string]$Status) {
 }
 
 function Get-EventContext([object]$SourceEntry) {
-  $candidates = @([string]$SourceEntry.cost, [string]$SourceEntry.notes, [string]$SourceEntry.name)
+  $candidates = @(
+    [string](Get-PropertyValue $SourceEntry "cost"),
+    [string](Get-PropertyValue $SourceEntry "notes"),
+    [string](Get-PropertyValue $SourceEntry "name")
+  )
   foreach ($candidate in $candidates) {
     if ([string]::IsNullOrWhiteSpace($candidate)) { continue }
     $match = [regex]::Match($candidate, "\(([^)]*(event|festival|lab|countdown|solution)[^)]*)\)", [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
@@ -195,8 +199,11 @@ function Get-EventContext([object]$SourceEntry) {
 
 function Get-PropertyValue($Object, [string]$Name) {
   if ($null -eq $Object) { return $null }
-  $property = $Object.PSObject.Properties[$Name]
-  if ($property) { return $property.Value }
+  foreach ($property in $Object.PSObject.Properties) {
+    if ($property.Name -eq $Name) {
+      return $property.Value
+    }
+  }
   return $null
 }
 
@@ -512,17 +519,17 @@ foreach ($egg in $eggs) {
       statusLabel = Get-StatusLabel ([string]$egg.status)
       released = [string]$egg.released
       releaseYear = Get-ReleaseYear ([string]$egg.released)
-      retired = [string](Get-CoalescedValue @($egg.retired))
-      cost = [string](Get-CoalescedValue @($egg.cost))
+      retired = [string](Get-CoalescedValue @((Get-PropertyValue $egg "retired")))
+      cost = [string](Get-CoalescedValue @((Get-PropertyValue $egg "cost")))
       petRarity = $petRarity
-      chanceText = [string](Get-CoalescedValue @($petOriginEntry.chance))
-      rarityBand = if (-not [string]::IsNullOrWhiteSpace([string]$petOriginEntry.chance)) {
-        "Exact hatch chance: $($petOriginEntry.chance)"
+      chanceText = [string](Get-CoalescedValue @((Get-PropertyValue $petOriginEntry "chance")))
+      rarityBand = if (-not [string]::IsNullOrWhiteSpace([string](Get-PropertyValue $petOriginEntry "chance"))) {
+        "Exact hatch chance: $(Get-PropertyValue $petOriginEntry "chance")"
       } else {
         Get-PetRarityBand -SourceEntry $egg -PetRarity $petRarity -TotalPetsInSource $totalPetsInSource
       }
       eventContext = Get-EventContext $egg
-      notes = [string](Get-CoalescedValue @($egg.notes))
+      notes = [string](Get-CoalescedValue @((Get-PropertyValue $egg "notes")))
       sortKey = Get-DateSortKey ([string]$egg.released)
     })
   }
@@ -589,20 +596,20 @@ foreach ($pet in $allPets) {
   if ($manualOriginIndex.ContainsKey($pet.slug)) {
     foreach ($entry in @($manualOriginIndex[$pet.slug].sources)) {
       $originEntries.Add([pscustomobject]@{
-        sourceName = [string](Get-CoalescedValue @($entry.sourceName))
-        sourceType = [string](Get-CoalescedValue @($entry.sourceType, "Special source"))
-        status = [string](Get-CoalescedValue @($entry.status, "retired"))
-        statusLabel = Get-StatusLabel ([string](Get-CoalescedValue @($entry.status, "retired")))
-        released = [string](Get-CoalescedValue @($entry.released))
-        releaseYear = [string](Get-CoalescedValue @($entry.releaseYear, (Get-ReleaseYear ([string](Get-CoalescedValue @($entry.released))))))
-        retired = [string](Get-CoalescedValue @($entry.retired))
-        cost = [string](Get-CoalescedValue @($entry.cost))
-        petRarity = [string](Get-CoalescedValue @($entry.petRarity))
-        chanceText = [string](Get-CoalescedValue @($entry.chanceText))
-        rarityBand = [string](Get-CoalescedValue @($entry.rarityBand))
-        eventContext = [string](Get-CoalescedValue @($entry.eventContext))
-        notes = [string](Get-CoalescedValue @($entry.notes))
-        sortKey = if ($entry.PSObject.Properties["sortKey"]) { [int]$entry.sortKey } else { Get-DateSortKey ([string](Get-CoalescedValue @($entry.released))) }
+        sourceName = [string](Get-CoalescedValue @((Get-PropertyValue $entry "sourceName")))
+        sourceType = [string](Get-CoalescedValue @((Get-PropertyValue $entry "sourceType"), "Special source"))
+        status = [string](Get-CoalescedValue @((Get-PropertyValue $entry "status"), "retired"))
+        statusLabel = Get-StatusLabel ([string](Get-CoalescedValue @((Get-PropertyValue $entry "status"), "retired")))
+        released = [string](Get-CoalescedValue @((Get-PropertyValue $entry "released")))
+        releaseYear = [string](Get-CoalescedValue @((Get-PropertyValue $entry "releaseYear"), (Get-ReleaseYear ([string](Get-CoalescedValue @((Get-PropertyValue $entry "released")))))))
+        retired = [string](Get-CoalescedValue @((Get-PropertyValue $entry "retired")))
+        cost = [string](Get-CoalescedValue @((Get-PropertyValue $entry "cost")))
+        petRarity = [string](Get-CoalescedValue @((Get-PropertyValue $entry "petRarity")))
+        chanceText = [string](Get-CoalescedValue @((Get-PropertyValue $entry "chanceText")))
+        rarityBand = [string](Get-CoalescedValue @((Get-PropertyValue $entry "rarityBand")))
+        eventContext = [string](Get-CoalescedValue @((Get-PropertyValue $entry "eventContext")))
+        notes = [string](Get-CoalescedValue @((Get-PropertyValue $entry "notes")))
+        sortKey = if ($null -ne (Get-PropertyValue $entry "sortKey")) { [int](Get-PropertyValue $entry "sortKey") } else { Get-DateSortKey ([string](Get-CoalescedValue @((Get-PropertyValue $entry "released")))) }
       })
     }
   } elseif ($petOrigins.ContainsKey($pet.slug)) {
