@@ -1,6 +1,6 @@
 # Value Audit Summary
 
-- Date: 2026-06-10
+- Date: 2026-06-17
 - Source refresh: fresh
 - Mode: production refresh
 - Scope: Adopt Me trade calculator long-tail pet values
@@ -27,14 +27,14 @@ These benchmark pets still deserve human review before any editorial benchmark c
 
 | Pet | Patch default | Tracker FR | Delta % |
 | --- | ---: | ---: | ---: |
-| Siamese Cat | 19 | 28 | -32.1% |
-| Werewolf | 9.75 | 13.25 | -26.4% |
-| Candicorn | 5.7 | 7.25 | -21.4% |
+| Werewolf | 9.75 | 20 | -51.2% |
+| Candicorn | 5.7 | 11 | -48.2% |
+| Undead Jousting Horse | 21 | 34 | -38.2% |
+| Siamese Cat | 19 | 25 | -24% |
+| Goose | 28 | 34.25 | -18.2% |
+| Orchid Butterfly | 59 | 72 | -18.1% |
 | Shadow Dragon | 477 | 575 | -17% |
-| Goose | 28 | 33.5 | -16.4% |
-| Field Mouse | 7.75 | 7 | 10.7% |
-| Bat Dragon | 794 | 880 | -9.8% |
-| Black-Chested Pheasant | 8 | 8.75 | -8.6% |
+| Giraffe | 333 | 389 | -14.4% |
 
 ## Recommendation
 
