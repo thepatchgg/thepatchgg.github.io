@@ -1,7 +1,7 @@
 # Pet Catalog Audit
 
-- Date: 2026-06-20
-- Tracker pet rows parsed: 740
+- Date: 2026-06-21
+- Tracker pet rows parsed: 742
 - Catalog entries: 739
 - Entries with verified rarity: 739
 - Entries still marked for review: 0
