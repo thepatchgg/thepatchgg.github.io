@@ -346,6 +346,10 @@ foreach ($entry in $catalog.entries) { $catalogIndex[$entry.slug] = $entry }
 $allPets = New-Object System.Collections.Generic.List[object]
 
 foreach ($legacyPet in $legacy.pets) {
+  if ($legacyPet.PSObject.Properties.Name -contains "marketStatus" -and [string]$legacyPet.marketStatus -eq "forming") {
+    continue
+  }
+
   $catalogEntry = $catalogIndex[$legacyPet.slug]
   $benchmarkPet = $benchmarkIndex[$legacyPet.slug]
   $overridePet = $overrideIndex[$legacyPet.slug]

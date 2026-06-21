@@ -1,6 +1,6 @@
-﻿{
-    "updatedAt":  "2026-06-09",
-    "count":  733,
+{
+    "updatedAt":  "2026-06-21",
+    "count":  738,
     "notes":  "Legacy long-tail calculator defaults. Benchmark entries in adopt-me-values.json override these values in the live tool.",
     "pets":  [
                  {
@@ -5133,6 +5133,47 @@
                      "rarity":  "r",
                      "image":  "/assets/pets/ranger-beaver.png",
                      "legacyValue":  1.2
+                 },
+                 {
+                     "slug":  "solaris",
+                     "name":  "Solaris",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/solaris.png",
+                     "legacyValue":  11
+                 },
+                 {
+                     "slug":  "aestus",
+                     "name":  "Aestus",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/aestus.png",
+                     "legacyValue":  11
+                 },
+                 {
+                     "slug":  "rainbow-trout",
+                     "name":  "Rainbow Trout",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/rainbow-trout.png",
+                     "legacyValue":  0,
+                     "marketStatus":  "forming",
+                     "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
+                 },
+                 {
+                     "slug":  "tealwood-monster",
+                     "name":  "Tealwood Monster",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/tealwood-monster.png",
+                     "legacyValue":  0,
+                     "marketStatus":  "forming",
+                     "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
+                 },
+                 {
+                     "slug":  "clubtail-dragonfly",
+                     "name":  "Clubtail Dragonfly",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/clubtail-dragonfly.png",
+                     "legacyValue":  0,
+                     "marketStatus":  "forming",
+                     "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
                  }
              ]
 }

@@ -5173,11 +5173,46 @@
                         "rarity":  "ur",
                         "image":  "/assets/pets/zombie-wolf.png",
                         "benchmark":  false
+                    },
+                    {
+                        "slug":  "rainbow-trout",
+                        "name":  "Rainbow Trout",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/rainbow-trout.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "tealwood-monster",
+                        "name":  "Tealwood Monster",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/tealwood-monster.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "clubtail-dragonfly",
+                        "name":  "Clubtail Dragonfly",
+                        "rarity":  "u",
+                        "image":  "/assets/pets/clubtail-dragonfly.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "solaris",
+                        "name":  "Solaris",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/solaris.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "aestus",
+                        "name":  "Aestus",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/aestus.png",
+                        "benchmark":  false
                     }
                 ],
     "counts":  {
-                   "total":  739,
-                   "verifiedRarity":  739,
+                   "total":  744,
+                   "verifiedRarity":  744,
                    "review":  0,
                    "benchmark":  18
                }

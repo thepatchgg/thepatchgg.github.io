@@ -105,6 +105,7 @@ $slugAliases = @{
 $manualRarity = @{
   "burtaur" = "c"
   "chocolate-guinea-pig" = "ur"
+  "clubtail-dragonfly" = "u"
   "dark-choco-bunny" = "l"
   "dylan" = "u"
   "mfr-sandwich" = "c"
@@ -113,9 +114,11 @@ $manualRarity = @{
   "pistachio" = "u"
   "practice-dog" = "c"
   "pumpkin-pet" = "event"
+  "rainbow-trout" = "ur"
   "red-guinea-pig" = "l"
   "river" = "u"
   "scoob" = "event"
+  "tealwood-monster" = "l"
   "white-choco-bunny" = "ur"
 }
 

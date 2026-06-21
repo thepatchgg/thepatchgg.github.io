@@ -9,8 +9,8 @@
           badgeLabel: "Today",
           badgeTone: "new",
           title: "Summer Camp guide &mdash; fishing, Karp bait, Rainbow Trout, and skydiving",
-          excerpt: "The June 19 update opens Summer Camp with fishing, Karp turn-ins, Rainbow Trout, Tealwood Monster, Clubtail Dragonfly, Solaris, Aestus, skydiving, admin voting, and Acorn rewards.",
-          meta: ["June 19, 2026", "Live guide"]
+          excerpt: "The June 20 update opens Summer Camp with fishing, Karp turn-ins, Rainbow Trout, Tealwood Monster, Clubtail Dragonfly, Solaris, Aestus, skydiving, admin voting, and Acorn rewards.",
+          meta: ["June 20, 2026", "Live guide"]
         },
         hub: {
           tag: "Weekly Update",
@@ -18,7 +18,7 @@
           badgeTone: "new",
           title: "Summer Camp Guide - fishing, Karp bait, new pets, and Acorn rewards",
           excerpt: "Open the live Summer Camp guide for Rainbow Trout, Tealwood Monster, Clubtail Dragonfly, Solaris, Aestus, fishing rods, Karp bait, skydiving rewards, and value-status notes.",
-          meta: ["June 19", "Live guide"]
+          meta: ["June 20", "Live guide"]
         }
       }
     },

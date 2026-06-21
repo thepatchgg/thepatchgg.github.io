@@ -1,8 +1,9 @@
 {
     "updatedAt":  "2026-06-21",
     "notes":  "Bulk calculator override audit generated from the public Adopt Me Values values index source, with manual resolutions for edge-case pets. Benchmark pets remain on The Patch\u0027s shared benchmark layer.",
-    "trackerMatchedCount":  623,
+    "trackerMatchedCount":  625,
     "manualResolvedCount":  9,
+    "marketFormingCount":  3,
     "remainingUnmatchedCount":  0,
     "pets":  [
                  {
@@ -132,6 +133,32 @@
                                                  "fly":  2.5,
                                                  "ride":  2.5,
                                                  "flyRide":  3.25
+                                             }
+                                }
+                 },
+                 {
+                     "slug":  "aestus",
+                     "name":  "Aestus",
+                     "sourceUrl":  "https://adoptmevalues.app/values/aestus",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  10,
+                                                    "fly":  10.45,
+                                                    "ride":  10.4,
+                                                    "flyRide":  11
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  45,
+                                                 "fly":  46,
+                                                 "ride":  46,
+                                                 "flyRide":  47
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  207,
+                                                 "fly":  208.9,
+                                                 "ride":  208,
+                                                 "flyRide":  210
                                              }
                                 }
                  },
@@ -13980,6 +14007,32 @@
                                                  "fly":  5.95,
                                                  "ride":  5.95,
                                                  "flyRide":  7
+                                             }
+                                }
+                 },
+                 {
+                     "slug":  "solaris",
+                     "name":  "Solaris",
+                     "sourceUrl":  "https://adoptmevalues.app/values/solaris",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  10,
+                                                    "fly":  10.45,
+                                                    "ride":  10.4,
+                                                    "flyRide":  11
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  45,
+                                                 "fly":  46,
+                                                 "ride":  46,
+                                                 "flyRide":  47
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  207,
+                                                 "fly":  208.9,
+                                                 "ride":  208,
+                                                 "flyRide":  210
                                              }
                                 }
                  },

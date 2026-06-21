@@ -80,6 +80,7 @@ img{display:block}
 .slot-img{width:46px;height:46px;object-fit:contain;flex-shrink:0}
 .slot-name{font-size:.56rem;font-weight:600;color:var(--text);text-align:center;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.2}
 .slot-val{font-size:.62rem;color:var(--accent);font-weight:700;line-height:1}
+.slot-val.pending{color:var(--text-muted);font-size:.56rem;text-align:center;line-height:1.15}
 .slot-toggles{display:flex;flex-direction:column;gap:2px;width:100%}
 .tog-row{display:flex;gap:2px;justify-content:center}
 .tog{padding:1px 3px;border-radius:4px;border:1px solid var(--border);font-size:.5rem;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .1s;white-space:nowrap;line-height:1.4}
@@ -128,9 +129,12 @@ img{display:block}
 .picker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:12px 14px}
 .pet-tile{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:8px 4px 6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .12s}
 .pet-tile:hover{border-color:var(--accent);background:rgba(200,255,87,.06);transform:translateY(-1px)}
+.pet-tile.pending{cursor:not-allowed;opacity:.78}
+.pet-tile.pending:hover{border-color:var(--border);background:var(--surface2);transform:none}
 .pet-tile img{width:52px;height:52px;object-fit:contain;border-radius:6px}
 .pt-name{font-size:.58rem;font-weight:600;text-align:center;color:var(--text);line-height:1.2;width:100%}
 .pt-rar{font-size:.52rem;padding:1px 6px;border-radius:10px}
+.pt-status{font-size:.5rem;color:var(--text-muted);line-height:1;text-align:center}
 .rLegendary{color:#ffd700;background:rgba(255,215,0,.12)}
 .rUltraRare{color:#b39ddb;background:rgba(179,157,219,.12)}
 .rRare{color:#4dd0e1;background:rgba(77,208,225,.12)}
@@ -195,8 +199,8 @@ img{display:block}
 
 <div class="status-card">
   <strong>Coverage:</strong> this calculator includes <span id="coverage-count">700+</span> pets.
-  High-traffic pets have their latest value lanes, while <span id="tracker-audit-count">623</span> additional pets are supported with current reference values.
-  Another <span id="manual-audit-count">9</span> edge-case pets are filled in manually, leaving <span id="audit-unmatched">0</span> unmatched.
+  High-traffic pets have their latest value lanes, while <span id="tracker-audit-count">625</span> additional pets are supported with current reference values.
+  Another <span id="manual-audit-count">9</span> edge-case pets are filled in manually, with 3 market-forming pets waiting on tracker rows and <span id="audit-unmatched">0</span> unmatched.
 </div>
 
 <div class="status-card audit-mode" id="audit-mode-card" hidden>
@@ -365,6 +369,7 @@ function resolveOverrideValue(pet, entry){
 function resolveValue(entry){
   var pet = entry.pet;
   if (!pet || !pet.values) return 0;
+  if (pet.marketStatus === "forming") return 0;
   if (pet.source === "override") {
     return resolveOverrideValue(pet, entry);
   }
@@ -423,6 +428,8 @@ function mergeCatalog(benchmarkPayload, legacyPayload, overridePayload) {
           name: legacyPet.name,
           rarity: normalizeRarity(legacyPet.rarity),
           image: legacyPet.image || slugImage(legacyPet.slug),
+          marketStatus: legacyPet.marketStatus || "",
+          marketNote: legacyPet.marketNote || "",
           source: "legacy",
           values: { default: legacyPet.legacyValue }
         };
@@ -495,38 +502,45 @@ function renderSlots(side) {
 
         var vEl = document.createElement("div");
         vEl.className = "slot-val";
-        vEl.textContent = fmt(resolveValue(entry)) + " pts";
+        if (entry.pet.marketStatus === "forming") {
+          vEl.className += " pending";
+          vEl.textContent = "Values forming";
+        } else {
+          vEl.textContent = fmt(resolveValue(entry)) + " pts";
+        }
         slot.appendChild(vEl);
 
-        var toggles = document.createElement("div");
-        toggles.className = "slot-toggles";
+        if (entry.pet.marketStatus !== "forming") {
+          var toggles = document.createElement("div");
+          toggles.className = "slot-toggles";
 
-        var sRow = document.createElement("div");
-        sRow.className = "tog-row";
-        for (var si = 0; si < STAGE_OPTS.length; si++) {
-          (function(sIdx){
-            var b = document.createElement("button");
-            b.className = "tog" + (entry.stage === STAGE_OPTS[sIdx] ? " sel" : "");
-            b.textContent = STAGE_OPTS[sIdx].label;
-            b.onclick = function(e){ e.stopPropagation(); setStage(side, idx, sIdx); };
-            sRow.appendChild(b);
-          })(si);
-        }
-        toggles.appendChild(sRow);
+          var sRow = document.createElement("div");
+          sRow.className = "tog-row";
+          for (var si = 0; si < STAGE_OPTS.length; si++) {
+            (function(sIdx){
+              var b = document.createElement("button");
+              b.className = "tog" + (entry.stage === STAGE_OPTS[sIdx] ? " sel" : "");
+              b.textContent = STAGE_OPTS[sIdx].label;
+              b.onclick = function(e){ e.stopPropagation(); setStage(side, idx, sIdx); };
+              sRow.appendChild(b);
+            })(si);
+          }
+          toggles.appendChild(sRow);
 
-        var pRow = document.createElement("div");
-        pRow.className = "tog-row";
-        for (var pi = 0; pi < POTION_OPTS.length; pi++) {
-          (function(pIdx){
-            var b = document.createElement("button");
-            b.className = "tog" + (entry.potion === POTION_OPTS[pIdx] ? " sel" : "");
-            b.textContent = POTION_OPTS[pIdx].label;
-            b.onclick = function(e){ e.stopPropagation(); setPotion(side, idx, pIdx); };
-            pRow.appendChild(b);
-          })(pi);
+          var pRow = document.createElement("div");
+          pRow.className = "tog-row";
+          for (var pi = 0; pi < POTION_OPTS.length; pi++) {
+            (function(pIdx){
+              var b = document.createElement("button");
+              b.className = "tog" + (entry.potion === POTION_OPTS[pIdx] ? " sel" : "");
+              b.textContent = POTION_OPTS[pIdx].label;
+              b.onclick = function(e){ e.stopPropagation(); setPotion(side, idx, pIdx); };
+              pRow.appendChild(b);
+            })(pi);
+          }
+          toggles.appendChild(pRow);
+          slot.appendChild(toggles);
         }
-        toggles.appendChild(pRow);
-        slot.appendChild(toggles);
       }
 
       grid.appendChild(slot);
@@ -590,8 +604,12 @@ function renderPickerGrid() {
 
   pets.forEach(function(p){
     var tile = document.createElement("div");
-    tile.className = "pet-tile";
-    tile.onclick = function(){ selectPet(p); };
+    tile.className = "pet-tile" + (p.marketStatus === "forming" ? " pending" : "");
+    if (p.marketStatus === "forming") {
+      tile.title = p.marketNote || "Tracker-backed values are still forming.";
+    } else {
+      tile.onclick = function(){ selectPet(p); };
+    }
 
     var img = document.createElement("img");
     img.src = petImage(p);
@@ -611,6 +629,13 @@ function renderPickerGrid() {
     rar.className = "pt-rar r" + prettyRarity(p.rarity);
     rar.textContent = p.rarity;
     tile.appendChild(rar);
+
+    if (p.marketStatus === "forming") {
+      var status = document.createElement("div");
+      status.className = "pt-status";
+      status.textContent = "Values forming";
+      tile.appendChild(status);
+    }
 
     grid.appendChild(tile);
   });

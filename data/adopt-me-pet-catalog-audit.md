@@ -2,8 +2,8 @@
 
 - Date: 2026-06-21
 - Tracker pet rows parsed: 742
-- Catalog entries: 739
-- Entries with verified rarity: 739
+- Catalog entries: 744
+- Entries with verified rarity: 744
 - Entries still marked for review: 0
 
 ## Notes

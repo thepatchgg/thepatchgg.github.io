@@ -126,6 +126,9 @@ $summary += "- Benchmark/editorial pets currently handled outside the override l
 $summary += "- Comparable non-benchmark pet coverage in this run: $($overridePayload.pets.Count)"
 $summary += "- Non-benchmark pets matched to public tracker feed: $($overridePayload.trackerMatchedCount)"
 $summary += "- Non-benchmark pets manually resolved: $($overridePayload.manualResolvedCount)"
+if ($overridePayload.PSObject.Properties.Name -contains "marketFormingCount") {
+  $summary += "- Market-forming pets pending tracker values: $($overridePayload.marketFormingCount)"
+}
 $summary += "- Non-benchmark pets still unmatched: $($overridePayload.remainingUnmatchedCount)"
 if ($null -ne $productionComparableCoverage) {
   $summary += "- Current production comparable non-benchmark coverage: $productionComparableCoverage"
@@ -178,4 +181,5 @@ if (-not $SkipQa) {
   $qaReleaseStatus = "passed"
 }
 
-Write-Output ("source_status={0} tracker_matched={1} manual_resolved={2} unmatched={3} qa_site={4} qa_release={5}" -f $sourceStatus, $overridePayload.trackerMatchedCount, $overridePayload.manualResolvedCount, $overridePayload.remainingUnmatchedCount, $qaSiteStatus, $qaReleaseStatus)
+$marketFormingOutput = if ($overridePayload.PSObject.Properties.Name -contains "marketFormingCount") { $overridePayload.marketFormingCount } else { 0 }
+Write-Output ("source_status={0} tracker_matched={1} manual_resolved={2} market_forming={3} unmatched={4} qa_site={5} qa_release={6}" -f $sourceStatus, $overridePayload.trackerMatchedCount, $overridePayload.manualResolvedCount, $marketFormingOutput, $overridePayload.remainingUnmatchedCount, $qaSiteStatus, $qaReleaseStatus)
