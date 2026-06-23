@@ -1,18 +1,18 @@
 # Value Audit Summary
 
-- Date: 2026-06-22
+- Date: 2026-06-23
 - Source refresh: fresh
 - Mode: production refresh
 - Scope: Adopt Me trade calculator long-tail pet values
 - Reference source: adoptmevalues.app values index
 - Local calculator coverage: 738 pets
 - Benchmark/editorial pets currently handled outside the override layer: 101
-- Comparable non-benchmark pet coverage in this run: 634
-- Non-benchmark pets matched to public tracker feed: 625
+- Comparable non-benchmark pet coverage in this run: 637
+- Non-benchmark pets matched to public tracker feed: 628
 - Non-benchmark pets manually resolved: 9
-- Market-forming pets pending tracker values: 3
+- Market-forming pets pending tracker values: 0
 - Non-benchmark pets still unmatched: 0
-- Current production comparable non-benchmark coverage: 634
+- Current production comparable non-benchmark coverage: 637
 
 ## What Changed
 
