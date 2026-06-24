@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-06-23",
+    "updatedAt":  "2026-06-24",
     "notes":  "Bulk calculator override audit generated from the public Adopt Me Values values index source, with manual resolutions for edge-case pets. Benchmark pets remain on The Patch\u0027s shared benchmark layer.",
     "trackerMatchedCount":  628,
     "manualResolvedCount":  9,
@@ -143,22 +143,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  7,
-                                                    "fly":  7.65,
-                                                    "ride":  7.6,
-                                                    "flyRide":  8.5
+                                                    "noPotion":  6.5,
+                                                    "fly":  7.15,
+                                                    "ride":  7.1,
+                                                    "flyRide":  8
                                                 },
                                     "neon":  {
-                                                 "noPotion":  31,
-                                                 "fly":  32,
-                                                 "ride":  32,
-                                                 "flyRide":  33
+                                                 "noPotion":  30,
+                                                 "fly":  31,
+                                                 "ride":  31,
+                                                 "flyRide":  32
                                              },
                                     "mega":  {
-                                                 "noPotion":  137,
-                                                 "fly":  138.9,
-                                                 "ride":  138,
-                                                 "flyRide":  140
+                                                 "noPotion":  132,
+                                                 "fly":  133.9,
+                                                 "ride":  133,
+                                                 "flyRide":  135
                                              }
                                 }
                  },
@@ -1287,22 +1287,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  0.08,
-                                                    "fly":  0.28,
-                                                    "ride":  0.28,
-                                                    "flyRide":  0.53
+                                                    "noPotion":  0.03,
+                                                    "fly":  0.23,
+                                                    "ride":  0.23,
+                                                    "flyRide":  0.48
                                                 },
                                     "neon":  {
-                                                 "noPotion":  0.6,
-                                                 "fly":  0.88,
-                                                 "ride":  0.88,
-                                                 "flyRide":  1.15
+                                                 "noPotion":  0.35,
+                                                 "fly":  0.63,
+                                                 "ride":  0.63,
+                                                 "flyRide":  0.9
                                              },
                                     "mega":  {
-                                                 "noPotion":  2.6,
-                                                 "fly":  3.43,
-                                                 "ride":  3.43,
-                                                 "flyRide":  4.25
+                                                 "noPotion":  1.5,
+                                                 "fly":  2.25,
+                                                 "ride":  2.25,
+                                                 "flyRide":  3
                                              }
                                 }
                  },
@@ -2693,22 +2693,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  2.5,
-                                                    "fly":  2.75,
-                                                    "ride":  2.75,
-                                                    "flyRide":  3.1
+                                                    "noPotion":  3,
+                                                    "fly":  3.25,
+                                                    "ride":  3.25,
+                                                    "flyRide":  3.6
                                                 },
                                     "neon":  {
-                                                 "noPotion":  11,
-                                                 "fly":  12,
-                                                 "ride":  12,
-                                                 "flyRide":  13
+                                                 "noPotion":  12,
+                                                 "fly":  13,
+                                                 "ride":  13,
+                                                 "flyRide":  14
                                              },
                                     "mega":  {
-                                                 "noPotion":  52,
-                                                 "fly":  53.9,
-                                                 "ride":  53,
-                                                 "flyRide":  55
+                                                 "noPotion":  57,
+                                                 "fly":  58.9,
+                                                 "ride":  58,
+                                                 "flyRide":  60
                                              }
                                 }
                  },
@@ -4461,22 +4461,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  0.72,
-                                                    "fly":  0.94,
-                                                    "ride":  0.94,
-                                                    "flyRide":  1.22
+                                                    "noPotion":  0.77,
+                                                    "fly":  0.99,
+                                                    "ride":  0.99,
+                                                    "flyRide":  1.27
                                                 },
                                     "neon":  {
-                                                 "noPotion":  3.6,
-                                                 "fly":  3.98,
-                                                 "ride":  3.98,
-                                                 "flyRide":  4.35
+                                                 "noPotion":  3.75,
+                                                 "fly":  4.18,
+                                                 "ride":  4.18,
+                                                 "flyRide":  4.6
                                              },
                                     "mega":  {
-                                                 "noPotion":  15.4,
-                                                 "fly":  17.3,
-                                                 "ride":  16.4,
-                                                 "flyRide":  18.4
+                                                 "noPotion":  16.4,
+                                                 "fly":  18.3,
+                                                 "ride":  17.4,
+                                                 "flyRide":  19.4
                                              }
                                 }
                  },
@@ -7165,22 +7165,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  3.75,
-                                                    "fly":  4.1,
-                                                    "ride":  4.05,
-                                                    "flyRide":  4.5
+                                                    "noPotion":  4,
+                                                    "fly":  4.35,
+                                                    "ride":  4.3,
+                                                    "flyRide":  4.75
                                                 },
                                     "neon":  {
-                                                 "noPotion":  15.5,
-                                                 "fly":  16.5,
-                                                 "ride":  16.5,
-                                                 "flyRide":  17.5
+                                                 "noPotion":  16,
+                                                 "fly":  17,
+                                                 "ride":  17,
+                                                 "flyRide":  18
                                              },
                                     "mega":  {
-                                                 "noPotion":  69,
-                                                 "fly":  70.9,
-                                                 "ride":  70,
-                                                 "flyRide":  72
+                                                 "noPotion":  71,
+                                                 "fly":  72.9,
+                                                 "ride":  72,
+                                                 "flyRide":  74
                                              }
                                 }
                  },
@@ -7737,22 +7737,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  2.35,
-                                                    "fly":  2.65,
-                                                    "ride":  2.65,
-                                                    "flyRide":  3.05
+                                                    "noPotion":  2.5,
+                                                    "fly":  2.8,
+                                                    "ride":  2.8,
+                                                    "flyRide":  3.2
                                                 },
                                     "neon":  {
-                                                 "noPotion":  10.75,
-                                                 "fly":  11.7,
-                                                 "ride":  11.7,
-                                                 "flyRide":  12.5
+                                                 "noPotion":  11.25,
+                                                 "fly":  12.2,
+                                                 "ride":  12.2,
+                                                 "flyRide":  13
                                              },
                                     "mega":  {
-                                                 "noPotion":  49,
-                                                 "fly":  50.9,
-                                                 "ride":  50,
-                                                 "flyRide":  52
+                                                 "noPotion":  51,
+                                                 "fly":  52.9,
+                                                 "ride":  52,
+                                                 "flyRide":  54
                                              }
                                 }
                  },
@@ -9873,16 +9873,16 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  6.25,
-                                                    "fly":  6.65,
-                                                    "ride":  6.65,
-                                                    "flyRide":  7.25
+                                                    "noPotion":  6.75,
+                                                    "fly":  7.15,
+                                                    "ride":  7.15,
+                                                    "flyRide":  7.75
                                                 },
                                     "neon":  {
-                                                 "noPotion":  21.5,
-                                                 "fly":  22.25,
-                                                 "ride":  22.25,
-                                                 "flyRide":  23
+                                                 "noPotion":  22.5,
+                                                 "fly":  23.25,
+                                                 "ride":  23.25,
+                                                 "flyRide":  24
                                              },
                                     "mega":  {
                                                  "noPotion":  60,
@@ -10107,10 +10107,10 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  5.5,
-                                                    "fly":  5.8,
-                                                    "ride":  5.8,
-                                                    "flyRide":  6.25
+                                                    "noPotion":  5.75,
+                                                    "fly":  6.05,
+                                                    "ride":  6.05,
+                                                    "flyRide":  6.5
                                                 },
                                     "neon":  {
                                                  "noPotion":  23.25,
@@ -10889,22 +10889,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  6.25,
-                                                    "fly":  6.65,
-                                                    "ride":  6.6,
-                                                    "flyRide":  7.1
+                                                    "noPotion":  6.75,
+                                                    "fly":  7.15,
+                                                    "ride":  7.1,
+                                                    "flyRide":  7.6
                                                 },
                                     "neon":  {
-                                                 "noPotion":  26.25,
-                                                 "fly":  27.2,
-                                                 "ride":  27.2,
-                                                 "flyRide":  28
+                                                 "noPotion":  27.25,
+                                                 "fly":  28.2,
+                                                 "ride":  28.2,
+                                                 "flyRide":  29
                                              },
                                     "mega":  {
-                                                 "noPotion":  115,
-                                                 "fly":  112.9,
-                                                 "ride":  112,
-                                                 "flyRide":  114
+                                                 "noPotion":  121,
+                                                 "fly":  118.9,
+                                                 "ride":  118,
+                                                 "flyRide":  120
                                              }
                                 }
                  },
@@ -11031,10 +11031,10 @@
                                                  "flyRide":  25
                                              },
                                     "mega":  {
-                                                 "noPotion":  109,
-                                                 "fly":  102.9,
-                                                 "ride":  102,
-                                                 "flyRide":  104
+                                                 "noPotion":  111,
+                                                 "fly":  104.9,
+                                                 "ride":  104,
+                                                 "flyRide":  106
                                              }
                                 }
                  },
@@ -11883,22 +11883,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  2.75,
-                                                    "fly":  3.1,
-                                                    "ride":  3.05,
-                                                    "flyRide":  3.5
+                                                    "noPotion":  0.95,
+                                                    "fly":  1.3,
+                                                    "ride":  1.25,
+                                                    "flyRide":  1.7
                                                 },
                                     "neon":  {
-                                                 "noPotion":  12,
-                                                 "fly":  13,
-                                                 "ride":  13,
-                                                 "flyRide":  14
+                                                 "noPotion":  4,
+                                                 "fly":  5,
+                                                 "ride":  5,
+                                                 "flyRide":  6
                                              },
                                     "mega":  {
-                                                 "noPotion":  55,
-                                                 "fly":  56.9,
-                                                 "ride":  56,
-                                                 "flyRide":  58
+                                                 "noPotion":  18,
+                                                 "fly":  19.9,
+                                                 "ride":  19,
+                                                 "flyRide":  21
                                              }
                                 }
                  },
@@ -12143,22 +12143,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  0.96,
-                                                    "fly":  1.18,
-                                                    "ride":  1.18,
-                                                    "flyRide":  1.46
+                                                    "noPotion":  0.98,
+                                                    "fly":  1.2,
+                                                    "ride":  1.2,
+                                                    "flyRide":  1.48
                                                 },
                                     "neon":  {
-                                                 "noPotion":  4.6,
-                                                 "fly":  5.1,
-                                                 "ride":  5.1,
-                                                 "flyRide":  5.6
+                                                 "noPotion":  4.7,
+                                                 "fly":  5.2,
+                                                 "ride":  5.2,
+                                                 "flyRide":  5.7
                                              },
                                     "mega":  {
-                                                 "noPotion":  20.4,
-                                                 "fly":  22.3,
-                                                 "ride":  21.4,
-                                                 "flyRide":  23.4
+                                                 "noPotion":  20.8,
+                                                 "fly":  22.7,
+                                                 "ride":  21.8,
+                                                 "flyRide":  23.8
                                              }
                                 }
                  },
@@ -12689,22 +12689,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  5.25,
-                                                    "fly":  5.55,
-                                                    "ride":  5.55,
-                                                    "flyRide":  5.95
+                                                    "noPotion":  6,
+                                                    "fly":  6.3,
+                                                    "ride":  6.3,
+                                                    "flyRide":  6.7
                                                 },
                                     "neon":  {
-                                                 "noPotion":  22.25,
-                                                 "fly":  23.2,
-                                                 "ride":  23.2,
-                                                 "flyRide":  24
+                                                 "noPotion":  25.25,
+                                                 "fly":  26.2,
+                                                 "ride":  26.2,
+                                                 "flyRide":  27
                                              },
                                     "mega":  {
-                                                 "noPotion":  97,
-                                                 "fly":  98.9,
-                                                 "ride":  98,
-                                                 "flyRide":  100
+                                                 "noPotion":  112,
+                                                 "fly":  113.9,
+                                                 "ride":  113,
+                                                 "flyRide":  115
                                              }
                                 }
                  },
@@ -14069,22 +14069,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  7,
-                                                    "fly":  7.65,
-                                                    "ride":  7.6,
-                                                    "flyRide":  8.5
+                                                    "noPotion":  6.5,
+                                                    "fly":  7.15,
+                                                    "ride":  7.1,
+                                                    "flyRide":  8
                                                 },
                                     "neon":  {
-                                                 "noPotion":  31,
-                                                 "fly":  32,
-                                                 "ride":  32,
-                                                 "flyRide":  33
+                                                 "noPotion":  30,
+                                                 "fly":  31,
+                                                 "ride":  31,
+                                                 "flyRide":  32
                                              },
                                     "mega":  {
-                                                 "noPotion":  137,
-                                                 "fly":  138.9,
-                                                 "ride":  138,
-                                                 "flyRide":  140
+                                                 "noPotion":  131,
+                                                 "fly":  132.9,
+                                                 "ride":  132,
+                                                 "flyRide":  134
                                              }
                                 }
                  },
@@ -14901,22 +14901,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  4,
-                                                    "fly":  4.3,
-                                                    "ride":  4.3,
-                                                    "flyRide":  4.75
+                                                    "noPotion":  1,
+                                                    "fly":  1.3,
+                                                    "ride":  1.3,
+                                                    "flyRide":  1.75
                                                 },
                                     "neon":  {
-                                                 "noPotion":  17,
-                                                 "fly":  18,
-                                                 "ride":  18,
-                                                 "flyRide":  19
+                                                 "noPotion":  4.25,
+                                                 "fly":  5.25,
+                                                 "ride":  5.25,
+                                                 "flyRide":  6.25
                                              },
                                     "mega":  {
-                                                 "noPotion":  75,
-                                                 "fly":  76.9,
-                                                 "ride":  76,
-                                                 "flyRide":  78
+                                                 "noPotion":  19,
+                                                 "fly":  20.9,
+                                                 "ride":  20,
+                                                 "flyRide":  22
                                              }
                                 }
                  },
@@ -15943,22 +15943,22 @@
                      "sourceType":  "tracker",
                      "values":  {
                                     "default":  {
-                                                    "noPotion":  0.96,
-                                                    "fly":  1.18,
-                                                    "ride":  1.18,
-                                                    "flyRide":  1.46
+                                                    "noPotion":  0.98,
+                                                    "fly":  1.2,
+                                                    "ride":  1.2,
+                                                    "flyRide":  1.48
                                                 },
                                     "neon":  {
-                                                 "noPotion":  4.6,
-                                                 "fly":  5.1,
-                                                 "ride":  5.1,
-                                                 "flyRide":  5.6
+                                                 "noPotion":  4.7,
+                                                 "fly":  5.2,
+                                                 "ride":  5.2,
+                                                 "flyRide":  5.7
                                              },
                                     "mega":  {
-                                                 "noPotion":  20.4,
-                                                 "fly":  22.3,
-                                                 "ride":  21.4,
-                                                 "flyRide":  23.4
+                                                 "noPotion":  20.8,
+                                                 "fly":  22.7,
+                                                 "ride":  21.8,
+                                                 "flyRide":  23.8
                                              }
                                 }
                  },
