@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-06-25",
+    "updatedAt":  "2026-06-26",
     "version":  "phase1",
     "methodology":  {
                         "summary":  "The Patch benchmark values are aligned directly to the live Adopt Me Values feed so our benchmark pets match the same public lanes shown at adoptmevalues.app/values.",
@@ -10,7 +10,7 @@
                                         }
                                     ],
                         "notes":  [
-                                      "Benchmark pets mirror the live Adopt Me Values public feed as of 2026-06-25.",
+                                      "Benchmark pets mirror the live Adopt Me Values public feed as of 2026-06-26.",
                                       "No Potion, Fly, Ride, Fly Ride, Neon, and Mega lanes are carried through from the same tracker source.",
                                       "Values can still move quickly, so recheck the source feed before making high-stakes trades."
                                   ]
@@ -24,7 +24,7 @@
                      "demand":  "Elite",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  984,
                                     "fly":  984,
@@ -48,7 +48,7 @@
                      "demand":  "Elite",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  590,
                                     "fly":  592,
@@ -72,7 +72,7 @@
                      "demand":  "Elite",
                      "trend":  "Rising",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  400,
                                     "fly":  400,
@@ -96,7 +96,7 @@
                      "demand":  "Elite",
                      "trend":  "Rising",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  280,
                                     "fly":  280,
@@ -120,7 +120,7 @@
                      "demand":  "Very High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  225,
                                     "fly":  224.5,
@@ -144,7 +144,7 @@
                      "demand":  "Very High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  177,
                                     "fly":  176.5,
@@ -168,7 +168,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  157,
                                     "fly":  156.5,
@@ -192,7 +192,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  104,
                                     "fly":  103.5,
@@ -216,7 +216,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  61,
                                     "fly":  59.9,
@@ -240,7 +240,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  89,
                                     "fly":  87,
@@ -264,7 +264,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  54,
                                     "fly":  52.9,
@@ -288,7 +288,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  44.5,
                                     "fly":  43.35,
@@ -312,7 +312,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  34,
                                     "fly":  32.85,
@@ -336,7 +336,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  25,
                                     "fly":  23.85,
@@ -360,7 +360,7 @@
                      "demand":  "Medium",
                      "trend":  "Falling",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  26.75,
                                     "fly":  25.6,
@@ -384,7 +384,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "High",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  19,
                                     "fly":  17.85,
@@ -408,7 +408,7 @@
                      "demand":  "Medium",
                      "trend":  "Falling",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  1.7,
                                     "fly":  1.25,
@@ -432,7 +432,7 @@
                      "demand":  "Low",
                      "trend":  "Falling",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  0.85,
                                     "fly":  0.45,
@@ -452,7 +452,7 @@
                      "slug":  "frost-fury-pet",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Frost Fury",
                      "rarity":  "Legendary",
@@ -476,7 +476,7 @@
                      "slug":  "candicorn",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Rising",
                      "name":  "Candicorn",
                      "rarity":  "Legendary",
@@ -500,7 +500,7 @@
                      "slug":  "arctic-fox",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Rising",
                      "name":  "Arctic Fox",
                      "rarity":  "Ultra-Rare",
@@ -524,7 +524,7 @@
                      "slug":  "lavender-dragon",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Lavender Dragon",
                      "rarity":  "Legendary",
@@ -548,7 +548,7 @@
                      "slug":  "queen-bee",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Queen Bee",
                      "rarity":  "Legendary",
@@ -572,7 +572,7 @@
                      "slug":  "phoenix-pet",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Phoenix",
                      "rarity":  "Legendary",
@@ -596,7 +596,7 @@
                      "slug":  "dodo",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Dodo",
                      "rarity":  "Legendary",
@@ -620,7 +620,7 @@
                      "slug":  "shark",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Shark",
                      "rarity":  "Legendary",
@@ -644,7 +644,7 @@
                      "slug":  "octopus",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Octopus",
                      "rarity":  "Legendary",
@@ -668,7 +668,7 @@
                      "slug":  "cerberus",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Cerberus",
                      "rarity":  "Legendary",
@@ -692,7 +692,7 @@
                      "slug":  "king-bee",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "King Bee",
                      "rarity":  "Legendary",
@@ -716,7 +716,7 @@
                      "slug":  "capybara",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Rising",
                      "name":  "Capybara",
                      "rarity":  "Uncommon",
@@ -740,7 +740,7 @@
                      "slug":  "chicken",
                      "demand":  "High",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Rising",
                      "name":  "Chicken",
                      "rarity":  "Common",
@@ -764,7 +764,7 @@
                      "slug":  "kitsune",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Kitsune",
                      "rarity":  "Legendary",
@@ -788,7 +788,7 @@
                      "slug":  "alicorn",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Alicorn",
                      "rarity":  "Legendary",
@@ -812,7 +812,7 @@
                      "slug":  "griffin",
                      "demand":  "Low",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Falling",
                      "name":  "Griffin",
                      "rarity":  "Legendary",
@@ -836,7 +836,7 @@
                      "slug":  "horse",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Horse",
                      "rarity":  "Ultra-Rare",
@@ -860,7 +860,7 @@
                      "slug":  "koala",
                      "demand":  "Medium",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "trend":  "Steady",
                      "name":  "Koala",
                      "rarity":  "Ultra-Rare",
@@ -888,7 +888,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  40.5,
                                     "fly":  39.6,
@@ -912,7 +912,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  22,
                                     "fly":  21,
@@ -936,7 +936,7 @@
                      "demand":  "Very High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  21,
                                     "fly":  19.9,
@@ -960,7 +960,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  17.25,
                                     "fly":  16.15,
@@ -984,7 +984,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  17,
                                     "fly":  15.85,
@@ -1008,7 +1008,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  14.5,
                                     "fly":  13.4,
@@ -1032,7 +1032,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  14,
                                     "fly":  12.9,
@@ -1056,7 +1056,7 @@
                      "demand":  "Very High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  12.5,
                                     "fly":  12,
@@ -1080,7 +1080,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  8.5,
                                     "fly":  7.4,
@@ -1104,7 +1104,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  6.75,
                                     "fly":  6.25,
@@ -1128,7 +1128,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  5.1,
                                     "fly":  4.6,
@@ -1152,7 +1152,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  4.85,
                                     "fly":  4.35,
@@ -1176,7 +1176,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  4.6,
                                     "fly":  4.1,
@@ -1200,7 +1200,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  4.75,
                                     "fly":  4.35,
@@ -1224,7 +1224,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  2.55,
                                     "fly":  2.15,
@@ -1248,7 +1248,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  2.1,
                                     "fly":  1.7,
@@ -1272,7 +1272,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  1.95,
                                     "fly":  1.55,
@@ -1296,7 +1296,7 @@
                      "demand":  "Medium",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  2,
                                     "fly":  1.5,
@@ -1320,7 +1320,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  1.6,
                                     "fly":  1.2,
@@ -1344,7 +1344,7 @@
                      "demand":  "Medium",
                      "trend":  "Falling",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  1.45,
                                     "fly":  1.05,
@@ -1368,7 +1368,7 @@
                      "demand":  "Very High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  143,
                                     "fly":  141.9,
@@ -1392,7 +1392,7 @@
                      "demand":  "Very High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  155,
                                     "fly":  153.85,
@@ -1416,7 +1416,7 @@
                      "demand":  "Very High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  122,
                                     "fly":  120.85,
@@ -1440,7 +1440,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  120,
                                     "fly":  118.85,
@@ -1464,7 +1464,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  59,
                                     "fly":  58,
@@ -1488,7 +1488,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  35,
                                     "fly":  34.1,
@@ -1512,7 +1512,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  30,
                                     "fly":  28.85,
@@ -1536,7 +1536,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  24,
                                     "fly":  23.1,
@@ -1560,7 +1560,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  36.5,
                                     "fly":  35.95,
@@ -1584,7 +1584,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  35,
                                     "fly":  34.1,
@@ -1608,7 +1608,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  16.75,
                                     "fly":  16.2,
@@ -1632,7 +1632,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  16.5,
                                     "fly":  15.95,
@@ -1656,7 +1656,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  12.5,
                                     "fly":  11.9,
@@ -1680,7 +1680,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  13,
                                     "fly":  11.85,
@@ -1704,7 +1704,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  41,
                                     "fly":  40.45,
@@ -1728,7 +1728,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  14.75,
                                     "fly":  14.2,
@@ -1752,7 +1752,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  7.5,
                                     "fly":  7.1,
@@ -1776,7 +1776,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  13.5,
                                     "fly":  12.95,
@@ -1800,7 +1800,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  13.5,
                                     "fly":  12.95,
@@ -1824,7 +1824,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  6.75,
                                     "fly":  6.35,
@@ -1848,7 +1848,7 @@
                      "demand":  "Medium",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  1.55,
                                     "fly":  1.15,
@@ -1872,7 +1872,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  116,
                                     "fly":  114.85,
@@ -1896,7 +1896,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  110,
                                     "fly":  108.85,
@@ -1920,7 +1920,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  25.5,
                                     "fly":  24.6,
@@ -1944,7 +1944,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  9.5,
                                     "fly":  9.1,
@@ -1968,7 +1968,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  35.5,
                                     "fly":  34.95,
@@ -1992,7 +1992,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  45,
                                     "fly":  44.45,
@@ -2016,7 +2016,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  15,
                                     "fly":  14.45,
@@ -2040,7 +2040,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  5.2,
                                     "fly":  4.8,
@@ -2064,7 +2064,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  11,
                                     "fly":  10.45,
@@ -2088,7 +2088,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  7.25,
                                     "fly":  6.85,
@@ -2112,7 +2112,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  23.5,
                                     "fly":  22.6,
@@ -2136,7 +2136,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  4.45,
                                     "fly":  4.05,
@@ -2160,7 +2160,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  6.6,
                                     "fly":  6.15,
@@ -2184,7 +2184,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  8.5,
                                     "fly":  8.1,
@@ -2208,7 +2208,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  12.5,
                                     "fly":  11.95,
@@ -2232,7 +2232,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  8,
                                     "fly":  7.6,
@@ -2256,7 +2256,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  31,
                                     "fly":  30.45,
@@ -2280,7 +2280,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  7.35,
                                     "fly":  6.9,
@@ -2304,7 +2304,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  10,
                                     "fly":  9.6,
@@ -2328,7 +2328,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  6.75,
                                     "fly":  6.35,
@@ -2352,7 +2352,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  7,
                                     "fly":  6.6,
@@ -2376,7 +2376,7 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  6.5,
                                     "fly":  6.1,
@@ -2400,7 +2400,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  9,
                                     "fly":  8.6,
@@ -2424,7 +2424,7 @@
                      "demand":  "High",
                      "trend":  "Steady",
                      "confidence":  "Medium",
-                     "notes":  "Revalidated on 2026-06-25 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-06-26 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "values":  {
                                     "default":  6.5,
                                     "fly":  5.4,
