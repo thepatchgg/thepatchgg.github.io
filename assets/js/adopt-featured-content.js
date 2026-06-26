@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-campfire-stories-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Campfire Stories",
+          badgeLabel: "Today",
+          badgeTone: "new",
+          title: "Campfire Stories guide &mdash; Irish Setter, Stygian Owl, River Otter, and Treasure Chests",
+          excerpt: "The June 26 update adds Bone in a Bottle, Setter Treasure Chests, Irish Setter, Stygian Owl, River Otter, Campfire Story Pages, new pet wear, stickers, and release-day value notes.",
+          meta: ["June 26, 2026", "Live guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "Today",
+          badgeTone: "new",
+          title: "Campfire Stories Guide - Irish Setter, Stygian Owl, and River Otter",
+          excerpt: "Open the live June 26 guide for Bone in a Bottle, Setter Treasure Chest rewards, Campfire Story Pages, Irish Setter, Stygian Owl, River Otter, and value-status notes.",
+          meta: ["June 26", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-summer-camp-fishing-guide.html",
       featured: true,
       contexts: {
@@ -318,7 +340,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Summer Camp guide &#8594;"
+      labelHtml: "Read the Campfire Stories guide &#8594;"
     },
     hub: {
       href: updates[0].href,
