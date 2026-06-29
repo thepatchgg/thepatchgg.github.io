@@ -1,6 +1,6 @@
 # New Pet Coverage Audit
 
-- Date: 2026-06-27
+- Date: 2026-06-29
 - Pets checked: Pilot Gull, Sheepdog Ducky
 
 | Pet | Article | Home | Hub | Catalog | Legacy Calc | Benchmark | Override | Pet Page Data | Pet Page | Image |
