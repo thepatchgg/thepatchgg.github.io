@@ -1,9 +1,9 @@
 {
     "updatedAt":  "2026-07-03",
     "notes":  "Bulk calculator override audit generated from the public Adopt Me Values values index source, with manual resolutions for edge-case pets. Benchmark pets remain on The Patch\u0027s shared benchmark layer.",
-    "trackerMatchedCount":  628,
+    "trackerMatchedCount":  631,
     "manualResolvedCount":  9,
-    "marketFormingCount":  0,
+    "marketFormingCount":  5,
     "remainingUnmatchedCount":  0,
     "pets":  [
                  {
@@ -7653,6 +7653,32 @@
                                 }
                  },
                  {
+                     "slug":  "irish-setter",
+                     "name":  "Irish Setter",
+                     "sourceUrl":  "https://adoptmevalues.app/values/irish-setter",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  0.04,
+                                                    "fly":  0.24,
+                                                    "ride":  0.24,
+                                                    "flyRide":  0.49
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  0.35,
+                                                 "fly":  0.63,
+                                                 "ride":  0.63,
+                                                 "flyRide":  0.9
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  1.5,
+                                                 "fly":  2.25,
+                                                 "ride":  2.25,
+                                                 "flyRide":  3
+                                             }
+                                }
+                 },
+                 {
                      "slug":  "island-tarsier",
                      "name":  "Island Tarsier",
                      "sourceUrl":  "https://adoptmevalues.app/values/island-tarsier",
@@ -12371,6 +12397,32 @@
                                 }
                  },
                  {
+                     "slug":  "river-otter",
+                     "name":  "River Otter",
+                     "sourceUrl":  "https://adoptmevalues.app/values/river-otter",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  0.06,
+                                                    "fly":  0.26,
+                                                    "ride":  0.26,
+                                                    "flyRide":  0.51
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  0.5,
+                                                 "fly":  0.78,
+                                                 "ride":  0.78,
+                                                 "flyRide":  1.05
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  2.25,
+                                                 "fly":  3,
+                                                 "ride":  3,
+                                                 "flyRide":  3.75
+                                             }
+                                }
+                 },
+                 {
                      "slug":  "roadrunner",
                      "name":  "Roadrunner",
                      "sourceUrl":  "https://adoptmevalues.app/values/roadrunner",
@@ -14475,6 +14527,32 @@
                                                  "fly":  9.3,
                                                  "ride":  8.4,
                                                  "flyRide":  10.4
+                                             }
+                                }
+                 },
+                 {
+                     "slug":  "stygian-owl",
+                     "name":  "Stygian Owl",
+                     "sourceUrl":  "https://adoptmevalues.app/values/stygian-owl",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  0.13,
+                                                    "fly":  0.33,
+                                                    "ride":  0.33,
+                                                    "flyRide":  0.58
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  0.9,
+                                                 "fly":  1.18,
+                                                 "ride":  1.18,
+                                                 "flyRide":  1.45
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  3.9,
+                                                 "fly":  4.83,
+                                                 "ride":  4.83,
+                                                 "flyRide":  5.75
                                              }
                                 }
                  },

@@ -1,24 +1,46 @@
 (function () {
   const updates = [
     {
-      href: "/articles/adopt-me-campfire-stories-guide.html",
+      href: "/articles/adopt-me-stormy-rings-guide.html",
       featured: true,
       contexts: {
         home: {
-          tag: "Campfire Stories",
+          tag: "Stormy Rings",
           badgeLabel: "Today",
           badgeTone: "new",
-          title: "Campfire Stories guide &mdash; Irish Setter, Stygian Owl, River Otter, and Treasure Chests",
-          excerpt: "The June 26 update adds Bone in a Bottle, Setter Treasure Chests, Irish Setter, Stygian Owl, River Otter, Campfire Story Pages, new pet wear, stickers, and release-day value notes.",
-          meta: ["June 26, 2026", "Live guide"]
+          title: "Stormy Rings guide &mdash; Storm Condor, Oakee Box pets, and Burger Bear",
+          excerpt: "The July 3 update adds Storm Rings, Storm Condor, Oakee Box, Oakee, Oakee Knight, Oakee Wizard, Burger Bear, Ranger Beaver sculptures, pet wear, and release-day value notes.",
+          meta: ["July 3, 2026", "Live guide"]
         },
         hub: {
           tag: "Weekly Update",
           badgeLabel: "Today",
           badgeTone: "new",
+          title: "Stormy Rings Guide - Storm Condor, Oakee Box pets, and Burger Bear",
+          excerpt: "Open the live July 3 guide for the Storm Time Trial, Storm Condor, Oakee Box odds, Oakee pets, Burger Bear, Ranger Beaver sculptures, and value-status notes.",
+          meta: ["July 3", "Live guide"]
+        }
+      }
+    },
+    {
+      href: "/articles/adopt-me-campfire-stories-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Campfire Stories",
+          badgeLabel: "Updated",
+          badgeTone: "updated",
+          title: "Campfire Stories guide &mdash; Irish Setter, Stygian Owl, River Otter, and Treasure Chests",
+          excerpt: "The June 26 update adds Bone in a Bottle, Setter Treasure Chests, Irish Setter, Stygian Owl, River Otter, Campfire Story Pages, new pet wear, stickers, and now-live value lanes.",
+          meta: ["June 26, 2026", "Values updated"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "Updated",
+          badgeTone: "updated",
           title: "Campfire Stories Guide - Irish Setter, Stygian Owl, and River Otter",
-          excerpt: "Open the live June 26 guide for Bone in a Bottle, Setter Treasure Chest rewards, Campfire Story Pages, Irish Setter, Stygian Owl, River Otter, and value-status notes.",
-          meta: ["June 26", "Live guide"]
+          excerpt: "Open the June 26 guide for Bone in a Bottle, Setter Treasure Chest rewards, Campfire Story Pages, Irish Setter, Stygian Owl, River Otter, and refreshed value notes.",
+          meta: ["June 26", "Values updated"]
         }
       }
     },
@@ -340,7 +362,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Campfire Stories guide &#8594;"
+      labelHtml: "Read the Stormy Rings guide &#8594;"
     },
     hub: {
       href: updates[0].href,

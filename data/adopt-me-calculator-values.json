@@ -1,6 +1,6 @@
 {
-    "updatedAt":  "2026-06-21",
-    "count":  738,
+    "updatedAt":  "2026-07-03",
+    "count":  746,
     "notes":  "Legacy long-tail calculator defaults. Benchmark entries in adopt-me-values.json override these values in the live tool.",
     "pets":  [
                  {
@@ -5153,24 +5153,84 @@
                      "name":  "Rainbow Trout",
                      "rarity":  "ur",
                      "image":  "/assets/pets/rainbow-trout.png",
-                     "legacyValue":  0,
-                     "marketStatus":  "forming",
-                     "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
+                     "legacyValue":  0
                  },
                  {
                      "slug":  "tealwood-monster",
                      "name":  "Tealwood Monster",
                      "rarity":  "l",
                      "image":  "/assets/pets/tealwood-monster.png",
-                     "legacyValue":  0,
-                     "marketStatus":  "forming",
-                     "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
+                     "legacyValue":  0
                  },
                  {
                      "slug":  "clubtail-dragonfly",
                      "name":  "Clubtail Dragonfly",
                      "rarity":  "u",
                      "image":  "/assets/pets/clubtail-dragonfly.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "irish-setter",
+                     "name":  "Irish Setter",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/irish-setter.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "stygian-owl",
+                     "name":  "Stygian Owl",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/stygian-owl.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "river-otter",
+                     "name":  "River Otter",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/river-otter.png",
+                     "legacyValue":  0
+                 },
+                 {
+                     "slug":  "storm-condor",
+                     "name":  "Storm Condor",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/storm-condor.png",
+                     "legacyValue":  0,
+                     "marketStatus":  "forming",
+                     "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
+                 },
+                 {
+                     "slug":  "oakee",
+                     "name":  "Oakee",
+                     "rarity":  "u",
+                     "image":  "/assets/pets/oakee.png",
+                     "legacyValue":  0,
+                     "marketStatus":  "forming",
+                     "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
+                 },
+                 {
+                     "slug":  "oakee-knight",
+                     "name":  "Oakee Knight",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/oakee-knight.png",
+                     "legacyValue":  0,
+                     "marketStatus":  "forming",
+                     "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
+                 },
+                 {
+                     "slug":  "oakee-wizard",
+                     "name":  "Oakee Wizard",
+                     "rarity":  "l",
+                     "image":  "/assets/pets/oakee-wizard.png",
+                     "legacyValue":  0,
+                     "marketStatus":  "forming",
+                     "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
+                 },
+                 {
+                     "slug":  "burger-bear",
+                     "name":  "Burger Bear",
+                     "rarity":  "ur",
+                     "image":  "/assets/pets/burger-bear.png",
                      "legacyValue":  0,
                      "marketStatus":  "forming",
                      "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."

@@ -1,17 +1,18 @@
 # Value Audit Summary
 
-- Date: 2026-06-21
+- Date: 2026-07-03
 - Source refresh: fresh
 - Mode: audit-only
 - Scope: Adopt Me trade calculator long-tail pet values
 - Reference source: adoptmevalues.app values index
-- Local calculator coverage: 733 pets
+- Local calculator coverage: 738 pets
 - Benchmark/editorial pets currently handled outside the override layer: 101
-- Comparable non-benchmark pet coverage in this run: 632
-- Non-benchmark pets matched to public tracker feed: 623
+- Comparable non-benchmark pet coverage in this run: 637
+- Non-benchmark pets matched to public tracker feed: 628
 - Non-benchmark pets manually resolved: 9
+- Market-forming pets pending tracker values: 0
 - Non-benchmark pets still unmatched: 0
-- Current production comparable non-benchmark coverage: 632
+- Current production comparable non-benchmark coverage: 637
 
 ## What Changed
 
@@ -23,18 +24,7 @@
 
 ## Benchmark Review Queue
 
-These benchmark pets still deserve human review before any editorial benchmark change:
-
-| Pet | Patch default | Tracker FR | Delta % |
-| --- | ---: | ---: | ---: |
-| Orchid Butterfly | 80 | 104 | -23.1% |
-| Werewolf | 21 | 27 | -22.2% |
-| Frost Unicorn | 10.5 | 12.25 | -14.3% |
-| Undead Jousting Horse | 36 | 41 | -12.2% |
-| Jekyll Hydra | 42 | 45 | -6.7% |
-| Frostbite Bear | 8 | 7.5 | 6.7% |
-| Diamond Butterfly | 51 | 54 | -5.6% |
-| Jellyfish | 9 | 9.5 | -5.3% |
+No benchmark divergence rows were produced in the latest audit.
 
 ## Recommendation
 

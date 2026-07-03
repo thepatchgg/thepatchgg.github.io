@@ -37,6 +37,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "aestus",
+                        "name":  "Aestus",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/aestus.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "african-wild-dog",
                         "name":  "African Wild Dog",
                         "rarity":  "ur",
@@ -394,17 +401,17 @@
                         "benchmark":  false
                     },
                     {
-                        "slug":  "black-chested-pheasant",
-                        "name":  "Black-Chested Pheasant",
-                        "rarity":  "l",
-                        "image":  "/assets/pets/black-chested-pheasant.png",
-                        "benchmark":  false
-                    },
-                    {
                         "slug":  "bison",
                         "name":  "Bison",
                         "rarity":  "r",
                         "image":  "/assets/pets/bison.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "black-chested-pheasant",
+                        "name":  "Black-Chested Pheasant",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/black-chested-pheasant.png",
                         "benchmark":  false
                     },
                     {
@@ -622,6 +629,13 @@
                         "name":  "Bunny Swirl",
                         "rarity":  "ur",
                         "image":  "/assets/pets/bunny-swirl.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "burger-bear",
+                        "name":  "Burger Bear",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/burger-bear.png",
                         "benchmark":  false
                     },
                     {
@@ -930,6 +944,13 @@
                         "name":  "Clownfish",
                         "rarity":  "ur",
                         "image":  "/assets/pets/clownfish.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "clubtail-dragonfly",
+                        "name":  "Clubtail Dragonfly",
+                        "rarity":  "u",
+                        "image":  "/assets/pets/clubtail-dragonfly.png",
                         "benchmark":  false
                     },
                     {
@@ -2438,6 +2459,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "irish-setter",
+                        "name":  "Irish Setter",
+                        "rarity":  "u",
+                        "image":  "/assets/pets/irish-setter.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "irish-water-spaniel",
                         "name":  "Irish Water Spaniel",
                         "rarity":  "ur",
@@ -3215,10 +3243,38 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "nurse-shark",
+                        "name":  "Nurse Shark",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/nurse-shark.svg",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "nutcracker-squirrel",
                         "name":  "Nutcracker Squirrel",
                         "rarity":  "r",
                         "image":  "/assets/pets/nutcracker-squirrel.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "oakee",
+                        "name":  "Oakee",
+                        "rarity":  "u",
+                        "image":  "/assets/pets/oakee.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "oakee-knight",
+                        "name":  "Oakee Knight",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/oakee-knight.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "oakee-wizard",
+                        "name":  "Oakee Wizard",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/oakee-wizard.png",
                         "benchmark":  false
                     },
                     {
@@ -3768,10 +3824,24 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "rainbow-trout",
+                        "name":  "Rainbow Trout",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/rainbow-trout.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "ram",
                         "name":  "Ram",
                         "rarity":  "ur",
                         "image":  "/assets/pets/ram.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "ranger-beaver",
+                        "name":  "Ranger Beaver",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/ranger-beaver.png",
                         "benchmark":  false
                     },
                     {
@@ -3894,17 +3964,17 @@
                         "benchmark":  false
                     },
                     {
-                        "slug":  "ranger-beaver",
-                        "name":  "Ranger Beaver",
-                        "rarity":  "r",
-                        "image":  "/assets/pets/ranger-beaver.png",
-                        "benchmark":  false
-                    },
-                    {
                         "slug":  "river",
                         "name":  "River",
                         "rarity":  "u",
                         "image":  "/assets/pets/river.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "river-otter",
+                        "name":  "River Otter",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/river-otter.png",
                         "benchmark":  false
                     },
                     {
@@ -4426,6 +4496,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "solaris",
+                        "name":  "Solaris",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/solaris.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "space-whale",
                         "name":  "Space Whale",
                         "rarity":  "ur",
@@ -4510,6 +4587,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "storm-condor",
+                        "name":  "Storm Condor",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/storm-condor.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "strawberry-penguin",
                         "name":  "Strawberry Penguin",
                         "rarity":  "l",
@@ -4535,6 +4619,13 @@
                         "name":  "Striped Eggy",
                         "rarity":  "l",
                         "image":  "/assets/pets/striped-eggy.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "stygian-owl",
+                        "name":  "Stygian Owl",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/stygian-owl.png",
                         "benchmark":  false
                     },
                     {
@@ -4654,6 +4745,13 @@
                         "name":  "Tawny Frogmouth",
                         "rarity":  "u",
                         "image":  "/assets/pets/tawny-frogmouth.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "tealwood-monster",
+                        "name":  "Tealwood Monster",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/tealwood-monster.png",
                         "benchmark":  false
                     },
                     {
@@ -5126,13 +5224,6 @@
                         "benchmark":  false
                     },
                     {
-                        "slug":  "nurse-shark",
-                        "name":  "Nurse Shark",
-                        "rarity":  "r",
-                        "image":  "/assets/pets/nurse-shark.svg",
-                        "benchmark":  false
-                    },
-                    {
                         "slug":  "zebra",
                         "name":  "Zebra",
                         "rarity":  "r",
@@ -5173,46 +5264,11 @@
                         "rarity":  "ur",
                         "image":  "/assets/pets/zombie-wolf.png",
                         "benchmark":  false
-                    },
-                    {
-                        "slug":  "rainbow-trout",
-                        "name":  "Rainbow Trout",
-                        "rarity":  "ur",
-                        "image":  "/assets/pets/rainbow-trout.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "tealwood-monster",
-                        "name":  "Tealwood Monster",
-                        "rarity":  "l",
-                        "image":  "/assets/pets/tealwood-monster.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "clubtail-dragonfly",
-                        "name":  "Clubtail Dragonfly",
-                        "rarity":  "u",
-                        "image":  "/assets/pets/clubtail-dragonfly.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "solaris",
-                        "name":  "Solaris",
-                        "rarity":  "l",
-                        "image":  "/assets/pets/solaris.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "aestus",
-                        "name":  "Aestus",
-                        "rarity":  "l",
-                        "image":  "/assets/pets/aestus.png",
-                        "benchmark":  false
                     }
                 ],
     "counts":  {
-                   "total":  744,
-                   "verifiedRarity":  744,
+                   "total":  752,
+                   "verifiedRarity":  752,
                    "review":  0,
                    "benchmark":  18
                }

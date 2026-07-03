@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-06-21",
+    "updatedAt":  "2026-07-03",
     "source":  "Curated Adopt Me Wiki pet-origin overrides from the main Pets index and select pet pages.",
     "pets":  [
                  {
@@ -63,6 +63,21 @@
                                          "chanceText":  "2% from 2D Box",
                                          "eventContext":  "2D Tuesday",
                                          "notes":  "Permanent version obtainable weekly by earning a 2D Box during the 2D Tuesday event and opening it for a 2% chance."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "aestus",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Summer Heat Bundle",
+                                         "sourceType":  "Robux pet",
+                                         "status":  "current",
+                                         "released":  "Jun 20, 2026",
+                                         "cost":  "1,000 Robux solo or included in the 1,500 Robux Summer Heat Bundle",
+                                         "petRarity":  "Legendary",
+                                         "eventContext":  "Summer Camp Week 1",
+                                         "notes":  "Legendary Summer Heat Robux pet released with Solaris during the June 20, 2026 Summer Camp update."
                                      }
                                  ]
                  },
@@ -602,21 +617,6 @@
                                  ]
                  },
                  {
-                     "slug":  "black-chested-pheasant",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Golden Wheat",
-                                         "sourceType":  "Special wheat",
-                                         "status":  "available",
-                                         "released":  "Aug 11, 2022",
-                                         "cost":  "169 Robux",
-                                         "petRarity":  "Legendary",
-                                         "chanceText":  "2.5%",
-                                         "notes":  "Legendary pheasant obtainable from Golden Wheat during the monthly Fall Weather rotation."
-                                     }
-                                 ]
-                 },
-                 {
                      "slug":  "bison",
                      "sources":  [
                                      {
@@ -628,6 +628,21 @@
                                          "petRarity":  "Rare",
                                          "eventContext":  "Journey to Summer Camp Week 1",
                                          "notes":  "Rare Compass Coins pet sold from Beaver Bob\u0027s Journey to Summer Camp Week 1 shop. Official notes say it leaves after one week."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "black-chested-pheasant",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Golden Wheat",
+                                         "sourceType":  "Special wheat",
+                                         "status":  "available",
+                                         "released":  "Aug 11, 2022",
+                                         "cost":  "169 Robux",
+                                         "petRarity":  "Legendary",
+                                         "chanceText":  "2.5%",
+                                         "notes":  "Legendary pheasant obtainable from Golden Wheat during the monthly Fall Weather rotation."
                                      }
                                  ]
                  },
@@ -867,6 +882,21 @@
                                          "petRarity":  "Ultra-Rare",
                                          "eventContext":  "Winter Event (2025)",
                                          "notes":  "Limited winter gamepass pet sold for Robux during week four of the Winter Event (2025)."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "burger-bear",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Burger Bear",
+                                         "sourceType":  "Robux pet",
+                                         "status":  "current",
+                                         "released":  "Jul 3, 2026",
+                                         "cost":  "99 Robux",
+                                         "petRarity":  "Ultra Rare",
+                                         "eventContext":  "Summer Camp Week 3",
+                                         "notes":  "Ultra Rare Burger Bear Robux pet listed at 99 Robux in the official July 3, 2026 notes."
                                      }
                                  ]
                  },
@@ -1381,6 +1411,21 @@
                                          "petRarity":  "Rare",
                                          "eventContext":  "St. Patrick\u0027s Day Update (2025)",
                                          "notes":  "Limited seasonal pet sold for Bucks during the 2025 St. Patrick\u0027s Day update."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "clubtail-dragonfly",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Summer Camp shop",
+                                         "sourceType":  "Event shop pet",
+                                         "status":  "current",
+                                         "released":  "Jun 20, 2026",
+                                         "cost":  "13,000 Acorns",
+                                         "petRarity":  "Uncommon",
+                                         "eventContext":  "Summer Camp Week 1",
+                                         "notes":  "Uncommon Summer Camp pet sold for Acorns during the June 20, 2026 Summer Camp update."
                                      }
                                  ]
                  },
@@ -3849,6 +3894,21 @@
                                  ]
                  },
                  {
+                     "slug":  "irish-setter",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Irish Setter",
+                                         "sourceType":  "Event shop pet",
+                                         "status":  "current",
+                                         "released":  "Jun 26, 2026",
+                                         "cost":  "16,000 Acorns",
+                                         "petRarity":  "Uncommon",
+                                         "eventContext":  "Summer Camp Week 2",
+                                         "notes":  "Uncommon Campfire Stories pet listed at 16,000 Acorns and made available when the Irish Setter receives a Bone in a Bottle."
+                                     }
+                                 ]
+                 },
+                 {
                      "slug":  "irish-water-spaniel",
                      "sources":  [
                                      {
@@ -5166,6 +5226,21 @@
                                  ]
                  },
                  {
+                     "slug":  "nurse-shark",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Journey Through Waves",
+                                         "sourceType":  "Event shop pet",
+                                         "status":  "current",
+                                         "released":  "Jun 5, 2026",
+                                         "cost":  "7,000 Compass Coins",
+                                         "petRarity":  "Rare",
+                                         "eventContext":  "Journey to Summer Camp Week 2",
+                                         "notes":  "Water-route Journey to Summer Camp pet tied to the Journey Through Waves river-cleanup activity."
+                                     }
+                                 ]
+                 },
+                 {
                      "slug":  "nutcracker-squirrel",
                      "sources":  [
                                      {
@@ -5178,6 +5253,54 @@
                                          "petRarity":  "Rare",
                                          "eventContext":  "Winter Festival (2023)",
                                          "notes":  "Limited winter pet sold in the Winter Village during the 2023 Winter Festival."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "oakee",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Oakee Box",
+                                         "sourceType":  "Event box pet",
+                                         "status":  "current",
+                                         "released":  "Jul 3, 2026",
+                                         "cost":  "12,000 Acorns per Oakee Box",
+                                         "petRarity":  "Uncommon",
+                                         "eventContext":  "Summer Camp Week 3",
+                                         "notes":  "Uncommon Oakee Box pet with a 76% official chance from the 12,000 Acorn Oakee Box.",
+                                         "chanceText":  "76% from Oakee Box"
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "oakee-knight",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Oakee Box",
+                                         "sourceType":  "Event box pet",
+                                         "status":  "current",
+                                         "released":  "Jul 3, 2026",
+                                         "cost":  "12,000 Acorns per Oakee Box",
+                                         "petRarity":  "Ultra Rare",
+                                         "eventContext":  "Summer Camp Week 3",
+                                         "notes":  "Ultra Rare Oakee Box pet with a 20% official chance from the 12,000 Acorn Oakee Box.",
+                                         "chanceText":  "20% from Oakee Box"
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "oakee-wizard",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Oakee Box",
+                                         "sourceType":  "Event box pet",
+                                         "status":  "current",
+                                         "released":  "Jul 3, 2026",
+                                         "cost":  "12,000 Acorns per Oakee Box",
+                                         "petRarity":  "Legendary",
+                                         "eventContext":  "Summer Camp Week 3",
+                                         "notes":  "Legendary Oakee Box pet with a 4% official chance from the 12,000 Acorn Oakee Box.",
+                                         "chanceText":  "4% from Oakee Box"
                                      }
                                  ]
                  },
@@ -5919,6 +6042,21 @@
                                  ]
                  },
                  {
+                     "slug":  "rainbow-trout",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Summer Camp Fishing Shop",
+                                         "sourceType":  "Event shop pet",
+                                         "status":  "current",
+                                         "released":  "Jun 20, 2026",
+                                         "cost":  "70,000 Acorns + 1 Rainbow Karp",
+                                         "petRarity":  "Ultra Rare",
+                                         "eventContext":  "Summer Camp Week 1",
+                                         "notes":  "Ultra Rare Summer Camp fishing pet sold in the Fishing Shop during the June 20, 2026 Summer Camp update."
+                                     }
+                                 ]
+                 },
+                 {
                      "slug":  "ram",
                      "sources":  [
                                      {
@@ -5930,6 +6068,21 @@
                                          "petRarity":  "Ultra-Rare",
                                          "eventContext":  "Winter Event (2022)",
                                          "notes":  "Week-four Winter Event pet sold in the Candy Castle for Gingerbread."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "ranger-beaver",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Beaver Bob Bundle",
+                                         "sourceType":  "Robux bundle pet",
+                                         "status":  "current",
+                                         "released":  "May 29, 2026",
+                                         "cost":  "99 Robux bundle",
+                                         "petRarity":  "Rare",
+                                         "eventContext":  "Journey to Summer Camp Week 1",
+                                         "notes":  "Rare pet included in the Beaver Bob Bundle alongside Forest Warden Hat, Ranger Neckerchief, and Hiking Boots. Official notes say the bundle stays available for all three Journey weeks."
                                      }
                                  ]
                  },
@@ -6059,17 +6212,17 @@
                                  ]
                  },
                  {
-                     "slug":  "ranger-beaver",
+                     "slug":  "river-otter",
                      "sources":  [
                                      {
-                                         "sourceName":  "Beaver Bob Bundle",
-                                         "sourceType":  "Robux bundle pet",
+                                         "sourceName":  "Summer Camp shop",
+                                         "sourceType":  "Event shop pet",
                                          "status":  "current",
-                                         "released":  "May 29, 2026",
-                                         "cost":  "99 Robux bundle",
+                                         "released":  "Jun 26, 2026",
+                                         "cost":  "35,000 Acorns",
                                          "petRarity":  "Rare",
-                                         "eventContext":  "Journey to Summer Camp Week 1",
-                                         "notes":  "Rare pet included in the Beaver Bob Bundle alongside Forest Warden Hat, Ranger Neckerchief, and Hiking Boots. Official notes say the bundle stays available for all three Journey weeks."
+                                         "eventContext":  "Summer Camp Week 2",
+                                         "notes":  "Rare Campfire Stories pet sold for Acorns during the June 26, 2026 Summer Camp update."
                                      }
                                  ]
                  },
@@ -6896,6 +7049,21 @@
                                  ]
                  },
                  {
+                     "slug":  "solaris",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Summer Heat Bundle",
+                                         "sourceType":  "Robux pet",
+                                         "status":  "current",
+                                         "released":  "Jun 20, 2026",
+                                         "cost":  "1,000 Robux solo or included in the 1,500 Robux Summer Heat Bundle",
+                                         "petRarity":  "Legendary",
+                                         "eventContext":  "Summer Camp Week 1",
+                                         "notes":  "Legendary Summer Heat Robux pet released with Aestus during the June 20, 2026 Summer Camp update."
+                                     }
+                                 ]
+                 },
+                 {
                      "slug":  "space-whale",
                      "sources":  [
                                      {
@@ -6975,6 +7143,21 @@
                                  ]
                  },
                  {
+                     "slug":  "storm-condor",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Storm Time Trial",
+                                         "sourceType":  "Event challenge pet",
+                                         "status":  "current",
+                                         "released":  "Jul 3, 2026",
+                                         "cost":  "65,000 Acorns",
+                                         "petRarity":  "Ultra Rare",
+                                         "eventContext":  "Summer Camp Week 3",
+                                         "notes":  "Ultra Rare Stormy Rings pet tied to the Storm Time Trial and listed at 65,000 Acorns in the official July 3, 2026 notes."
+                                     }
+                                 ]
+                 },
+                 {
                      "slug":  "strawberry-penguin",
                      "sources":  [
                                      {
@@ -7032,6 +7215,21 @@
                                          "chanceText":  "5% from Easter Eggy Box",
                                          "eventContext":  "Easter Event (2024)",
                                          "notes":  "Limited Easter pet unboxed from Easter Eggy Boxes during the 2024 event."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "stygian-owl",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Grave Dave Campfire Story Pages",
+                                         "sourceType":  "Event collection pet",
+                                         "status":  "current",
+                                         "released":  "Jun 26, 2026",
+                                         "cost":  "13 Campfire Story Pages",
+                                         "petRarity":  "Ultra Rare",
+                                         "eventContext":  "Summer Camp Week 2",
+                                         "notes":  "Ultra Rare Campfire Stories pet obtained by trading 13 Campfire Story Pages from Setter Treasure Chests to Grave Dave at the campsite."
                                      }
                                  ]
                  },
@@ -7192,6 +7390,21 @@
                                          "petRarity":  "Rare",
                                          "eventContext":  "Aussie Zone",
                                          "notes":  "Limited Aussie Zone pet sold next to the Accessory Shop during the January 2024 mini-zone event."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "tealwood-monster",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Tealwood Monster Bait",
+                                         "sourceType":  "Event bait pet",
+                                         "status":  "current",
+                                         "released":  "Jun 20, 2026",
+                                         "cost":  "Tealwood Monster Bait: 75,000 Acorns, 75 Bronze Karp, 35 Silver Karp, 15 Gold Karp",
+                                         "petRarity":  "Legendary",
+                                         "eventContext":  "Summer Camp Week 1",
+                                         "notes":  "Legendary Summer Camp pet caught inside the Fishing Shop after using Tealwood Monster Bait."
                                      }
                                  ]
                  },
@@ -7867,21 +8080,6 @@
                                  ]
                  },
                  {
-                     "slug":  "nurse-shark",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Journey Through Waves",
-                                         "sourceType":  "Event shop pet",
-                                         "status":  "current",
-                                         "released":  "Jun 5, 2026",
-                                         "cost":  "7,000 Compass Coins",
-                                         "petRarity":  "Rare",
-                                         "eventContext":  "Journey to Summer Camp Week 2",
-                                         "notes":  "Water-route Journey to Summer Camp pet tied to the Journey Through Waves river-cleanup activity."
-                                     }
-                                 ]
-                 },
-                 {
                      "slug":  "zombie-buffalo",
                      "sources":  [
                                      {
@@ -7925,81 +8123,6 @@
                                          "chanceText":  "10% from Wolf Box",
                                          "eventContext":  "Halloween Event (2022)",
                                          "notes":  "Limited Halloween pet unboxed from Wolf Boxes in the Halloween Shop."
-                                     }
-                                 ]
-                 },
-                 {
-                     "slug":  "rainbow-trout",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Summer Camp Fishing Shop",
-                                         "sourceType":  "Event shop pet",
-                                         "status":  "current",
-                                         "released":  "Jun 20, 2026",
-                                         "cost":  "70,000 Acorns + 1 Rainbow Karp",
-                                         "petRarity":  "Ultra Rare",
-                                         "eventContext":  "Summer Camp Week 1",
-                                         "notes":  "Ultra Rare Summer Camp fishing pet sold in the Fishing Shop during the June 20, 2026 Summer Camp update."
-                                     }
-                                 ]
-                 },
-                 {
-                     "slug":  "tealwood-monster",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Tealwood Monster Bait",
-                                         "sourceType":  "Event bait pet",
-                                         "status":  "current",
-                                         "released":  "Jun 20, 2026",
-                                         "cost":  "Tealwood Monster Bait: 75,000 Acorns, 75 Bronze Karp, 35 Silver Karp, 15 Gold Karp",
-                                         "petRarity":  "Legendary",
-                                         "eventContext":  "Summer Camp Week 1",
-                                         "notes":  "Legendary Summer Camp pet caught inside the Fishing Shop after using Tealwood Monster Bait."
-                                     }
-                                 ]
-                 },
-                 {
-                     "slug":  "clubtail-dragonfly",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Summer Camp shop",
-                                         "sourceType":  "Event shop pet",
-                                         "status":  "current",
-                                         "released":  "Jun 20, 2026",
-                                         "cost":  "13,000 Acorns",
-                                         "petRarity":  "Uncommon",
-                                         "eventContext":  "Summer Camp Week 1",
-                                         "notes":  "Uncommon Summer Camp pet sold for Acorns during the June 20, 2026 Summer Camp update."
-                                     }
-                                 ]
-                 },
-                 {
-                     "slug":  "solaris",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Summer Heat Bundle",
-                                         "sourceType":  "Robux pet",
-                                         "status":  "current",
-                                         "released":  "Jun 20, 2026",
-                                         "cost":  "1,000 Robux solo or included in the 1,500 Robux Summer Heat Bundle",
-                                         "petRarity":  "Legendary",
-                                         "eventContext":  "Summer Camp Week 1",
-                                         "notes":  "Legendary Summer Heat Robux pet released with Aestus during the June 20, 2026 Summer Camp update."
-                                     }
-                                 ]
-                 },
-                 {
-                     "slug":  "aestus",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Summer Heat Bundle",
-                                         "sourceType":  "Robux pet",
-                                         "status":  "current",
-                                         "released":  "Jun 20, 2026",
-                                         "cost":  "1,000 Robux solo or included in the 1,500 Robux Summer Heat Bundle",
-                                         "petRarity":  "Legendary",
-                                         "eventContext":  "Summer Camp Week 1",
-                                         "notes":  "Legendary Summer Heat Robux pet released with Solaris during the June 20, 2026 Summer Camp update."
                                      }
                                  ]
                  }
