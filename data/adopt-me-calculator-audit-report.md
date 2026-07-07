@@ -1,6 +1,6 @@
 # Calculator Audit Report
 
-- Date: 2026-07-06
+- Date: 2026-07-07
 - Tracker pet rows parsed: 754
 - Local calculator pets: 746
 - Non-benchmark local pets: 640
