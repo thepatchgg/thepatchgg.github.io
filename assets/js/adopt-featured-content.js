@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-ducky-driving-notes-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Ducky Driving Notes",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Ducky Driving Notes guide &mdash; Ruddy Duck, S&apos;mores Raccoon, and Forest Sprite",
+          excerpt: "The July 10 finale adds Ducky Driving, Ruddy Duck, Ruddy Duck Waddler, S&apos;mores Raccoon, Forest Sprite, camp patches, and release-day value notes.",
+          meta: ["July 10, 2026", "Live guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Ducky Driving Notes Guide - Ruddy Duck, S&apos;mores Raccoon, and Forest Sprite",
+          excerpt: "Open the July 10 guide for Ducky Driving, Ruddy Duck, Ruddy Duck Waddler, S&apos;mores Raccoon, Forest Sprite, camp patches, and value-status notes.",
+          meta: ["July 10", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-stormy-rings-guide.html",
       featured: true,
       contexts: {
@@ -362,7 +384,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Stormy Rings guide &#8594;"
+      labelHtml: "Read the Ducky Driving Notes guide &#8594;"
     },
     hub: {
       href: updates[0].href,
