@@ -1,6 +1,6 @@
 # New Pet Coverage Audit
 
-- Date: 2026-07-16
+- Date: 2026-07-17
 - Pets checked: Ruddy Duck, Ruddy Duck Waddler, S'mores Raccoon, Forest Sprite
 
 | Pet | Article | Home | Hub | Catalog | Legacy Calc | Benchmark | Override | Pet Page Data | Pet Page | Image |
