@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-07-16",
+    "updatedAt":  "2026-07-17",
     "entries":  [
                     {
                         "slug":  "2021-uplift-butterfly",
@@ -4511,7 +4511,7 @@
                     },
                     {
                         "slug":  "s-mores-raccoon",
-                        "name":  "S'mores Raccoon",
+                        "name":  "S\u0027mores Raccoon",
                         "rarity":  "ur",
                         "image":  "/assets/pets/s-mores-raccoon.svg",
                         "benchmark":  false
@@ -5288,8 +5288,8 @@
                     }
                 ],
     "counts":  {
-                  "total":  755,
-                  "verifiedRarity":  755,
+                   "total":  755,
+                   "verifiedRarity":  755,
                    "review":  0,
                    "benchmark":  18
                }

@@ -1,7 +1,7 @@
 {
-    "updatedAt":  "2026-07-16",
+    "updatedAt":  "2026-07-17",
     "notes":  "Bulk calculator override audit generated from the public Adopt Me Values values index source, with manual resolutions for edge-case pets. Benchmark pets remain on The Patch\u0027s shared benchmark layer.",
-    "trackerMatchedCount":  636,
+    "trackerMatchedCount":  639,
     "manualResolvedCount":  9,
     "marketFormingCount":  0,
     "remainingUnmatchedCount":  0,
@@ -4893,6 +4893,32 @@
                                                  "fly":  2.05,
                                                  "ride":  2.05,
                                                  "flyRide":  2.8
+                                             }
+                                }
+                 },
+                 {
+                     "slug":  "forest-sprite",
+                     "name":  "Forest Sprite",
+                     "sourceUrl":  "https://adoptmevalues.app/values/forest-sprite",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  0.02,
+                                                    "fly":  0.22,
+                                                    "ride":  0.22,
+                                                    "flyRide":  0.48
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  0.17,
+                                                 "fly":  0.45,
+                                                 "ride":  0.45,
+                                                 "flyRide":  0.72
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  0.8,
+                                                 "fly":  1.55,
+                                                 "ride":  1.55,
+                                                 "flyRide":  2.3
                                              }
                                 }
                  },
@@ -12917,6 +12943,32 @@
                                 }
                  },
                  {
+                     "slug":  "ruddy-duck",
+                     "name":  "Ruddy Duck",
+                     "sourceUrl":  "https://adoptmevalues.app/values/ruddy-duck",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  0.04,
+                                                    "fly":  0.24,
+                                                    "ride":  0.24,
+                                                    "flyRide":  0.49
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  0.3,
+                                                 "fly":  0.58,
+                                                 "ride":  0.58,
+                                                 "flyRide":  0.85
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  1.3,
+                                                 "fly":  2.05,
+                                                 "ride":  2.05,
+                                                 "flyRide":  2.8
+                                             }
+                                }
+                 },
+                 {
                      "slug":  "sabertooth",
                      "name":  "Sabertooth",
                      "sourceUrl":  "https://adoptmevalues.app/values/sabertooth",
@@ -13955,6 +14007,32 @@
                                                  "fly":  3.43,
                                                  "ride":  3.43,
                                                  "flyRide":  4.25
+                                             }
+                                }
+                 },
+                 {
+                     "slug":  "s-mores-raccoon",
+                     "name":  "S\u0027mores Raccoon",
+                     "sourceUrl":  "https://adoptmevalues.app/values/s-mores-raccoon",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  1.7,
+                                                    "fly":  1.95,
+                                                    "ride":  1.95,
+                                                    "flyRide":  2.25
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  8.4,
+                                                 "fly":  8.95,
+                                                 "ride":  8.95,
+                                                 "flyRide":  9.5
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  37,
+                                                 "fly":  38.9,
+                                                 "ride":  38,
+                                                 "flyRide":  40
                                              }
                                 }
                  },
