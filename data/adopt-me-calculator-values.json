@@ -1,6 +1,6 @@
 {
-    "updatedAt":  "2026-07-03",
-    "count":  746,
+    "updatedAt":  "2026-07-17",
+    "count":  749,
     "notes":  "Legacy long-tail calculator defaults. Benchmark entries in adopt-me-values.json override these values in the live tool.",
     "pets":  [
                  {
@@ -5226,14 +5226,41 @@
                      "marketStatus":  "forming",
                      "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
                  },
-                 {
-                     "slug":  "burger-bear",
-                     "name":  "Burger Bear",
-                     "rarity":  "ur",
-                     "image":  "/assets/pets/burger-bear.png",
-                     "legacyValue":  0,
-                     "marketStatus":  "forming",
-                     "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
-                 }
-             ]
+                {
+                    "slug":  "burger-bear",
+                    "name":  "Burger Bear",
+                    "rarity":  "ur",
+                    "image":  "/assets/pets/burger-bear.png",
+                    "legacyValue":  0,
+                    "marketStatus":  "forming",
+                    "marketNote":  "Official Summer Camp pet; tracker-backed trade values are still pending."
+                },
+                {
+                    "slug":  "ruddy-duck",
+                    "name":  "Ruddy Duck",
+                    "rarity":  "r",
+                    "image":  "/assets/pets/ruddy-duck.svg",
+                    "legacyValue":  0,
+                    "marketStatus":  "forming",
+                    "marketNote":  "Official Summer Camp Week 4 pet; tracker-backed trade values are still pending."
+                },
+                {
+                    "slug":  "s-mores-raccoon",
+                    "name":  "S'mores Raccoon",
+                    "rarity":  "ur",
+                    "image":  "/assets/pets/s-mores-raccoon.svg",
+                    "legacyValue":  0,
+                    "marketStatus":  "forming",
+                    "marketNote":  "Official Summer Camp Week 4 Robux pet; tracker-backed trade values are still pending."
+                },
+                {
+                    "slug":  "forest-sprite",
+                    "name":  "Forest Sprite",
+                    "rarity":  "c",
+                    "image":  "/assets/pets/forest-sprite.svg",
+                    "legacyValue":  0,
+                    "marketStatus":  "forming",
+                    "marketNote":  "Official Summer Camp Week 4 pet; tracker-backed trade values are still pending."
+                }
+            ]
 }

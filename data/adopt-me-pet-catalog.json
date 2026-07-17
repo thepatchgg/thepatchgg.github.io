@@ -1612,6 +1612,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "forest-sprite",
+                        "name":  "Forest Sprite",
+                        "rarity":  "c",
+                        "image":  "/assets/pets/forest-sprite.svg",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "frankenfeline",
                         "name":  "Frankenfeline",
                         "rarity":  "c",
@@ -4083,6 +4090,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "ruddy-duck",
+                        "name":  "Ruddy Duck",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/ruddy-duck.svg",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "sabertooth",
                         "name":  "Sabertooth",
                         "rarity":  "ur",
@@ -4493,6 +4507,13 @@
                         "name":  "Snowy Mammoth",
                         "rarity":  "ur",
                         "image":  "/assets/pets/snowy-mammoth.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "s-mores-raccoon",
+                        "name":  "S'mores Raccoon",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/s-mores-raccoon.svg",
                         "benchmark":  false
                     },
                     {
@@ -5267,8 +5288,8 @@
                     }
                 ],
     "counts":  {
-                   "total":  752,
-                   "verifiedRarity":  752,
+                  "total":  755,
+                  "verifiedRarity":  755,
                    "review":  0,
                    "benchmark":  18
                }

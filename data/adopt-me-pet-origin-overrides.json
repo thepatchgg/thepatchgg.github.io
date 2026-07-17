@@ -2299,11 +2299,11 @@
                                      }
                                  ]
                  },
-                 {
-                     "slug":  "fossa",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Jungle Zone stand",
+                {
+                    "slug":  "fossa",
+                    "sources":  [
+                                    {
+                                        "sourceName":  "Jungle Zone stand",
                                          "sourceType":  "Event shop pet",
                                          "status":  "retired",
                                          "released":  "Aug 3, 2023",
@@ -2311,14 +2311,29 @@
                                          "petRarity":  "Uncommon",
                                          "eventContext":  "Jungle Zone",
                                          "notes":  "Limited Jungle Zone pet sold for Bucks during the August 2023 zone update."
-                                     }
-                                 ]
-                 },
-                 {
-                     "slug":  "frankenfeline",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Lab building / Dia de los Muertos wagon",
+                                    }
+                                ]
+                },
+                {
+                    "slug":  "forest-sprite",
+                    "sources":  [
+                                    {
+                                        "sourceName":  "Summer Camp shop",
+                                        "sourceType":  "Event shop pet",
+                                        "status":  "current",
+                                        "released":  "Jul 10, 2026",
+                                        "cost":  "3,700 Acorns",
+                                        "petRarity":  "Common",
+                                        "eventContext":  "Summer Camp Week 4",
+                                        "notes":  "Common Summer Camp finale pet listed at 3,700 Acorns in the official July 10, 2026 Ducky Driving Notes."
+                                    }
+                                ]
+                },
+                {
+                    "slug":  "frankenfeline",
+                    "sources":  [
+                                    {
+                                        "sourceName":  "Lab building / Dia de los Muertos wagon",
                                          "sourceType":  "Event shop pet",
                                          "status":  "retired",
                                          "released":  "Oct 4, 2024",
@@ -6369,11 +6384,11 @@
                                      }
                                  ]
                  },
-                 {
-                     "slug":  "rubber-ducky",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Rubber Ducky Box",
+                {
+                    "slug":  "rubber-ducky",
+                    "sources":  [
+                                    {
+                                        "sourceName":  "Rubber Ducky Box",
                                          "sourceType":  "Event box",
                                          "status":  "limited",
                                          "released":  "May 22, 2026",
@@ -6381,14 +6396,29 @@
                                          "petRarity":  "Common",
                                          "eventContext":  "Stormy Ducky Drama",
                                          "notes":  "Common pull from the Rubber Ducky Box during Stormy Ducky Drama."
-                                     }
-                                 ]
-                 },
-                 {
-                     "slug":  "sakura-spirit",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Cherry Blossom Festival shop",
+                                    }
+                                ]
+                },
+                {
+                    "slug":  "ruddy-duck",
+                    "sources":  [
+                                    {
+                                        "sourceName":  "Ducky Driving shop",
+                                        "sourceType":  "Event shop pet",
+                                        "status":  "current",
+                                        "released":  "Jul 10, 2026",
+                                        "cost":  "29,000 Acorns",
+                                        "petRarity":  "Rare",
+                                        "eventContext":  "Summer Camp Week 4",
+                                        "notes":  "Rare Summer Camp finale pet listed at 29,000 Acorns in the official July 10, 2026 Ducky Driving Notes."
+                                    }
+                                ]
+                },
+                {
+                    "slug":  "sakura-spirit",
+                    "sources":  [
+                                    {
+                                        "sourceName":  "Cherry Blossom Festival shop",
                                          "sourceType":  "Event gamepass",
                                          "status":  "retired",
                                          "released":  "Apr 4, 2025",
@@ -7032,11 +7062,11 @@
                                      }
                                  ]
                  },
-                 {
-                     "slug":  "snowy-mammoth",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Box Lure / Cozy Home Lure",
+                {
+                    "slug":  "snowy-mammoth",
+                    "sources":  [
+                                    {
+                                        "sourceName":  "Box Lure / Cozy Home Lure",
                                          "sourceType":  "Lure bait pet",
                                          "status":  "retired",
                                          "released":  "Mar 21, 2025",
@@ -7045,14 +7075,29 @@
                                          "chanceText":  "0.5% from Ice Soup Bait",
                                          "eventContext":  "Ice Dimension Event (2025)",
                                          "notes":  "Limited event pet obtained by placing Ice Soup Bait into a Box Lure or Cozy Home Lure."
-                                     }
-                                 ]
-                 },
-                 {
-                     "slug":  "solaris",
-                     "sources":  [
-                                     {
-                                         "sourceName":  "Summer Heat Bundle",
+                                    }
+                                ]
+                },
+                {
+                    "slug":  "s-mores-raccoon",
+                    "sources":  [
+                                    {
+                                        "sourceName":  "Summer Camp shop",
+                                        "sourceType":  "Robux pet",
+                                        "status":  "current",
+                                        "released":  "Jul 10, 2026",
+                                        "cost":  "150 Robux",
+                                        "petRarity":  "Ultra Rare",
+                                        "eventContext":  "Summer Camp Week 4",
+                                        "notes":  "Ultra Rare Summer Camp finale Robux pet listed at 150 Robux in the official July 10, 2026 Ducky Driving Notes."
+                                    }
+                                ]
+                },
+                {
+                    "slug":  "solaris",
+                    "sources":  [
+                                    {
+                                        "sourceName":  "Summer Heat Bundle",
                                          "sourceType":  "Robux pet",
                                          "status":  "current",
                                          "released":  "Jun 20, 2026",

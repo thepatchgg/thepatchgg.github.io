@@ -8,16 +8,16 @@
           tag: "Ducky Driving Notes",
           badgeLabel: "New",
           badgeTone: "new",
-          title: "Ducky Driving Notes guide &mdash; Ruddy Duck, S&apos;mores Raccoon, and Forest Sprite",
-          excerpt: "The July 10 finale adds Ducky Driving, Ruddy Duck, Ruddy Duck Waddler, S&apos;mores Raccoon, Forest Sprite, camp patches, and release-day value notes.",
+          title: "Ducky Driving Notes guide &mdash; Ruddy Duck, S'mores Raccoon, and Forest Sprite",
+          excerpt: "The July 10 finale adds Ducky Driving, Ruddy Duck, Ruddy Duck Waddler, S'mores Raccoon, Forest Sprite, camp patches, and release-day value notes.",
           meta: ["July 10, 2026", "Live guide"]
         },
         hub: {
           tag: "Weekly Update",
           badgeLabel: "New",
           badgeTone: "new",
-          title: "Ducky Driving Notes Guide - Ruddy Duck, S&apos;mores Raccoon, and Forest Sprite",
-          excerpt: "Open the July 10 guide for Ducky Driving, Ruddy Duck, Ruddy Duck Waddler, S&apos;mores Raccoon, Forest Sprite, camp patches, and value-status notes.",
+          title: "Ducky Driving Notes Guide - Ruddy Duck, S'mores Raccoon, and Forest Sprite",
+          excerpt: "Open the July 10 guide for Ducky Driving, Ruddy Duck, Ruddy Duck Waddler, S'mores Raccoon, Forest Sprite, camp patches, and value-status notes.",
           meta: ["July 10", "Live guide"]
         }
       }

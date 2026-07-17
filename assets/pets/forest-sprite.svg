@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Forest Sprite placeholder art</title>
+  <desc id="desc">A local placeholder illustration for the Adopt Me Forest Sprite page.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2a1a"/>
+      <stop offset="100%" stop-color="#2c6b42"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d8ffd8"/>
+      <stop offset="100%" stop-color="#88d57b"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="52" fill="url(#bg)"/>
+  <circle cx="126" cy="110" r="34" fill="#8de4a1" opacity=".16"/>
+  <circle cx="410" cy="126" r="18" fill="#8de4a1" opacity=".22"/>
+  <path d="M256 112c50 0 92 41 92 92v32c0 71-47 127-92 127s-92-56-92-127v-32c0-51 42-92 92-92Z" fill="url(#body)"/>
+  <path d="M216 152 184 108l58 20ZM296 152l32-44-58 20Z" fill="#6fbd68"/>
+  <path d="M176 248c-32 6-57 27-72 60 34 7 69-1 93-23 13-12 22-24 26-42-16-1-31 1-47 5ZM336 248c32 6 57 27 72 60-34 7-69-1-93-23-13-12-22-24-26-42 16-1 31 1 47 5Z" fill="#78ca71"/>
+  <circle cx="224" cy="220" r="10" fill="#153222"/>
+  <circle cx="288" cy="220" r="10" fill="#153222"/>
+  <path d="M226 270c20 14 40 14 60 0" fill="none" stroke="#153222" stroke-linecap="round" stroke-width="10"/>
+  <path d="M256 184c-24 12-41 34-47 62 22-11 43-11 47-11s25 0 47 11c-6-28-23-50-47-62Z" fill="#bff3b4" opacity=".92"/>
+  <text x="256" y="418" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="36" font-weight="700" fill="#f3fff2">Forest Sprite</text>
+  <text x="256" y="454" text-anchor="middle" font-family="Trebuchet MS, Arial, sans-serif" font-size="20" fill="#b9efba">Summer Camp Week 4</text>
+</svg>
