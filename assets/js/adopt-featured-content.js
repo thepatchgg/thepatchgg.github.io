@@ -1,24 +1,24 @@
 (function () {
   const updates = [
     {
-      href: "/articles/adopt-me-ducky-driving-notes-guide.html",
+      href: "/articles/adopt-me-bonus-acorn-weekend-notes-guide.html",
       featured: true,
       contexts: {
         home: {
-          tag: "Ducky Driving Notes",
+          tag: "Bonus Acorn Weekend",
           badgeLabel: "New",
           badgeTone: "new",
-          title: "Ducky Driving Notes guide &mdash; Ruddy Duck, S'mores Raccoon, and Forest Sprite",
-          excerpt: "The July 10 finale adds Ducky Driving, Ruddy Duck, Ruddy Duck Waddler, S'mores Raccoon, Forest Sprite, camp patches, and release-day value notes.",
-          meta: ["July 10, 2026", "Live guide"]
+          title: "Bonus Acorn Weekend Notes guide &mdash; 1.2X Acorns, Summer Wagon timing, and final camp spending",
+          excerpt: "The July 17 update adds 1.2X Acorns for the last Summer Camp weekend, the July 20 Summer Wagon, converted summer items, and the final buying window before July 24.",
+          meta: ["July 17, 2026", "Live guide"]
         },
         hub: {
-          tag: "Weekly Update",
+          tag: "Weekend Update",
           badgeLabel: "New",
           badgeTone: "new",
-          title: "Ducky Driving Notes Guide - Ruddy Duck, S'mores Raccoon, and Forest Sprite",
-          excerpt: "Open the July 10 guide for Ducky Driving, Ruddy Duck, Ruddy Duck Waddler, S'mores Raccoon, Forest Sprite, camp patches, and value-status notes.",
-          meta: ["July 10", "Live guide"]
+          title: "Bonus Acorn Weekend Notes Guide - 1.2X Acorns and Summer Wagon timing",
+          excerpt: "Open the July 17 guide for 1.2X Acorns, the July 20 Summer Wagon, temporary item conversion, and the last Summer Camp spend plan.",
+          meta: ["July 17", "Live guide"]
         }
       }
     },
@@ -384,7 +384,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Ducky Driving Notes guide &#8594;"
+      labelHtml: "Read the Bonus Acorn Weekend Notes guide &#8594;"
     },
     hub: {
       href: updates[0].href,
