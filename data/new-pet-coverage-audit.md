@@ -1,6 +1,6 @@
 # New Pet Coverage Audit
 
-- Date: 2026-07-25
+- Date: 2026-07-26
 - Pets checked: Sunflower Friend, Violet Friend
 
 | Pet | Article | Home | Hub | Catalog | Legacy Calc | Benchmark | Override | Pet Page Data | Pet Page | Image |
