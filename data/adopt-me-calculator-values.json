@@ -2874,6 +2874,13 @@
                      "legacyValue":  1
                  },
                  {
+                     "slug":  "sunflower-friend",
+                     "name":  "Sunflower Friend",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/sunflower-friend.png",
+                     "legacyValue":  0.3
+                 },
+                 {
                      "slug":  "sunrise-duckling",
                      "name":  "Sunrise Duckling",
                      "rarity":  "l",
@@ -2991,6 +2998,13 @@
                      "rarity":  "l",
                      "image":  "/assets/pets/violet-butterfly.png",
                      "legacyValue":  1
+                 },
+                 {
+                     "slug":  "violet-friend",
+                     "name":  "Violet Friend",
+                     "rarity":  "r",
+                     "image":  "/assets/pets/violet-friend.png",
+                     "legacyValue":  0.35
                  },
                  {
                      "slug":  "volcanic-rhino",

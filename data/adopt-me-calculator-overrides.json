@@ -14194,6 +14194,32 @@
                                 }
                  },
                  {
+                     "slug":  "sunflower-friend",
+                     "name":  "Sunflower Friend",
+                     "sourceUrl":  "https://www.adoptmevalues.app/values/sunflower-friend",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  0.3,
+                                                    "fly":  0.5,
+                                                    "ride":  0.5,
+                                                    "flyRide":  0.75
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  1.65,
+                                                 "fly":  1.5,
+                                                 "ride":  1.5,
+                                                 "flyRide":  2.25
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  7.25,
+                                                 "fly":  8.65,
+                                                 "ride":  8.25,
+                                                 "flyRide":  9.75
+                                             }
+                                }
+                 },
+                 {
                      "slug":  "sunrise-duckling",
                      "name":  "Sunrise Duckling",
                      "sourceUrl":  "https://adoptmevalues.app/values/sunrise-duckling",
@@ -15204,6 +15230,32 @@
                                                  "fly":  28.9,
                                                  "ride":  28,
                                                  "flyRide":  30
+                                             }
+                                }
+                 },
+                 {
+                     "slug":  "violet-friend",
+                     "name":  "Violet Friend",
+                     "sourceUrl":  "https://www.adoptmevalues.app/values/violet-friend",
+                     "sourceType":  "tracker",
+                     "values":  {
+                                    "default":  {
+                                                    "noPotion":  0.35,
+                                                    "fly":  0.55,
+                                                    "ride":  0.55,
+                                                    "flyRide":  0.8
+                                                },
+                                    "neon":  {
+                                                 "noPotion":  1.9,
+                                                 "fly":  1.75,
+                                                 "ride":  1.75,
+                                                 "flyRide":  2.5
+                                             },
+                                    "mega":  {
+                                                 "noPotion":  8.25,
+                                                 "fly":  9.9,
+                                                 "ride":  9.25,
+                                                 "flyRide":  11
                                              }
                                 }
                  },

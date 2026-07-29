@@ -4573,6 +4573,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "sunflower-friend",
+                        "name":  "Sunflower Friend",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/sunflower-friend.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "sunrise-duckling",
                         "name":  "Sunrise Duckling",
                         "rarity":  "l",
@@ -4899,6 +4906,13 @@
                         "name":  "Violet Butterfly",
                         "rarity":  "l",
                         "image":  "/assets/pets/violet-butterfly.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "violet-friend",
+                        "name":  "Violet Friend",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/violet-friend.png",
                         "benchmark":  false
                     },
                     {

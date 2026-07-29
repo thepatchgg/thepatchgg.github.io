@@ -7115,6 +7115,21 @@
                                  ]
                  },
                  {
+                     "slug":  "sunflower-friend",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Bee Pass Notes",
+                                         "sourceType":  "Pass reward",
+                                         "status":  "current",
+                                         "released":  "Jul 24, 2026",
+                                         "cost":  "Bee Pass level 8",
+                                         "petRarity":  "Rare",
+                                         "eventContext":  "Pollinator Season (2026)",
+                                         "notes":  "Official Bee Pass reward at level 8 during the July 24 Bee Pass Notes update."
+                                     }
+                                 ]
+                 },
+                 {
                      "slug":  "super-saru",
                      "sources":  [
                                      {
@@ -7528,6 +7543,21 @@
                                          "chanceText":  "37.5% from Goldenrod Flower",
                                          "eventContext":  "Butterfly Sanctuary return (2025)",
                                          "notes":  "Legendary butterfly obtained with a Goldenrod Flower during the 2025 Butterfly Sanctuary return."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "violet-friend",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Bee Pass Notes",
+                                         "sourceType":  "Pass reward",
+                                         "status":  "current",
+                                         "released":  "Jul 24, 2026",
+                                         "cost":  "Bee Pass level 13",
+                                         "petRarity":  "Rare",
+                                         "eventContext":  "Pollinator Season (2026)",
+                                         "notes":  "Official Bee Pass reward at level 13 during the July 24 Bee Pass Notes update."
                                      }
                                  ]
                  },
