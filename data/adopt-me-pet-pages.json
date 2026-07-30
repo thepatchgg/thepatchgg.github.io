@@ -25,7 +25,7 @@
                                     "megaRide":  7331.2,
                                     "megaNoPotion":  7855.4
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Elite demand",
                      "supportTone":  "Steady",
@@ -115,7 +115,7 @@
                                     "megaRide":  3990,
                                     "megaNoPotion":  5535
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Elite demand",
                      "supportTone":  "Steady",
@@ -205,7 +205,7 @@
                                     "megaRide":  3460.8,
                                     "megaNoPotion":  5100
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Elite demand",
                      "supportTone":  "Rising",
@@ -289,13 +289,13 @@
                                     "neon":  543,
                                     "neonFly":  549,
                                     "neonRide":  549,
-                                    "neonNoPotion":  700,
-                                    "mega":  1600,
-                                    "megaFly":  1904,
-                                    "megaRide":  2048,
-                                    "megaNoPotion":  2800
+                                    "neonNoPotion":  704.5,
+                                    "mega":  1610,
+                                    "megaFly":  1914,
+                                    "megaRide":  2058,
+                                    "megaNoPotion":  2818
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Elite demand",
                      "supportTone":  "Rising",
@@ -385,7 +385,7 @@
                                     "megaRide":  2279.6,
                                     "megaNoPotion":  2628
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Very High demand",
                      "supportTone":  "Steady",
@@ -475,7 +475,7 @@
                                     "megaRide":  1162.8,
                                     "megaNoPotion":  1984
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Very High demand",
                      "supportTone":  "Steady",
@@ -552,20 +552,20 @@
                      "demand":  "Very High",
                      "trend":  "Rising",
                      "values":  {
-                                    "default":  175,
-                                    "fly":  173.85,
-                                    "ride":  173,
-                                    "noPotion":  174,
-                                    "neon":  695,
-                                    "neonFly":  694,
-                                    "neonRide":  694,
-                                    "neonNoPotion":  700,
-                                    "mega":  2767,
-                                    "megaFly":  2765.9,
-                                    "megaRide":  2765,
-                                    "megaNoPotion":  2854
+                                    "default":  177,
+                                    "fly":  175.85,
+                                    "ride":  175,
+                                    "noPotion":  176,
+                                    "neon":  702,
+                                    "neonFly":  701,
+                                    "neonRide":  701,
+                                    "neonNoPotion":  707,
+                                    "mega":  2800,
+                                    "megaFly":  2798.9,
+                                    "megaRide":  2798,
+                                    "megaNoPotion":  2888
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Very High demand",
                      "supportTone":  "Rising",
@@ -690,7 +690,7 @@
                                     "megaRide":  1484.8,
                                     "megaNoPotion":  1922
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -780,7 +780,7 @@
                                     "megaRide":  1938,
                                     "megaNoPotion":  2102
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Very High demand",
                      "supportTone":  "Rising",
@@ -865,12 +865,12 @@
                                     "neonFly":  520,
                                     "neonRide":  520,
                                     "neonNoPotion":  536,
-                                    "mega":  1908,
-                                    "megaFly":  1906.9,
-                                    "megaRide":  1906,
-                                    "megaNoPotion":  1983
+                                    "mega":  1920,
+                                    "megaFly":  1918.9,
+                                    "megaRide":  1918,
+                                    "megaNoPotion":  1995
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Very High demand",
                      "supportTone":  "Rising",
@@ -947,20 +947,20 @@
                      "demand":  "High",
                      "trend":  "Rising",
                      "values":  {
-                                    "default":  139,
-                                    "fly":  137,
-                                    "ride":  137,
-                                    "noPotion":  137,
-                                    "neon":  545,
-                                    "neonFly":  544,
-                                    "neonRide":  544,
-                                    "neonNoPotion":  553,
-                                    "mega":  1881,
-                                    "megaFly":  1879.9,
-                                    "megaRide":  1879,
-                                    "megaNoPotion":  2018
+                                    "default":  141,
+                                    "fly":  139,
+                                    "ride":  139,
+                                    "noPotion":  139,
+                                    "neon":  555,
+                                    "neonFly":  554,
+                                    "neonRide":  554,
+                                    "neonNoPotion":  563,
+                                    "mega":  1950,
+                                    "megaFly":  1948.9,
+                                    "megaRide":  1948,
+                                    "megaNoPotion":  2089
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -1050,7 +1050,7 @@
                                     "megaRide":  1103,
                                     "megaNoPotion":  1149
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -1140,7 +1140,7 @@
                                     "megaRide":  1588,
                                     "megaNoPotion":  1628
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -1230,7 +1230,7 @@
                                     "megaRide":  796.4,
                                     "megaNoPotion":  1072
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -1311,16 +1311,16 @@
                                     "fly":  102.85,
                                     "ride":  102,
                                     "noPotion":  102,
-                                    "neon":  345,
-                                    "neonFly":  344,
-                                    "neonRide":  344,
-                                    "neonNoPotion":  345,
-                                    "mega":  1370,
-                                    "megaFly":  1368.9,
-                                    "megaRide":  1368,
-                                    "megaNoPotion":  1380
+                                    "neon":  350,
+                                    "neonFly":  349,
+                                    "neonRide":  349,
+                                    "neonNoPotion":  350,
+                                    "mega":  1400,
+                                    "megaFly":  1398.9,
+                                    "megaRide":  1398,
+                                    "megaNoPotion":  1410
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -1410,7 +1410,7 @@
                                     "megaRide":  995,
                                     "megaNoPotion":  1049.5
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -1491,16 +1491,16 @@
                                     "fly":  61,
                                     "ride":  61,
                                     "noPotion":  61,
-                                    "neon":  216,
-                                    "neonFly":  215,
-                                    "neonRide":  215,
-                                    "neonNoPotion":  231,
-                                    "mega":  865,
-                                    "megaFly":  863.9,
-                                    "megaRide":  863,
-                                    "megaNoPotion":  956.5
+                                    "neon":  223,
+                                    "neonFly":  222,
+                                    "neonRide":  222,
+                                    "neonNoPotion":  238,
+                                    "mega":  890,
+                                    "megaFly":  888.9,
+                                    "megaRide":  888,
+                                    "megaNoPotion":  981.5
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -1590,7 +1590,7 @@
                                     "megaRide":  788,
                                     "megaNoPotion":  836.75
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -1680,7 +1680,7 @@
                                     "megaRide":  763,
                                     "megaNoPotion":  795
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -1765,12 +1765,12 @@
                                     "neonFly":  169,
                                     "neonRide":  169,
                                     "neonNoPotion":  168,
-                                    "mega":  655,
-                                    "megaFly":  653.9,
-                                    "megaRide":  653,
-                                    "megaNoPotion":  685
+                                    "mega":  660,
+                                    "megaFly":  658.9,
+                                    "megaRide":  658,
+                                    "megaNoPotion":  690
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -1860,7 +1860,7 @@
                                     "megaRide":  360,
                                     "megaNoPotion":  552.5
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -1950,7 +1950,7 @@
                                     "megaRide":  421,
                                     "megaNoPotion":  433
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -2040,7 +2040,7 @@
                                     "megaRide":  436,
                                     "megaNoPotion":  445
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -2130,7 +2130,7 @@
                                     "megaRide":  318,
                                     "megaNoPotion":  318
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -2220,7 +2220,7 @@
                                     "megaRide":  566,
                                     "megaNoPotion":  588
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -2310,7 +2310,7 @@
                                     "megaRide":  216,
                                     "megaNoPotion":  248
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -2391,16 +2391,16 @@
                                     "fly":  31.35,
                                     "ride":  31,
                                     "noPotion":  30.5,
-                                    "neon":  101,
-                                    "neonFly":  100,
-                                    "neonRide":  100,
-                                    "neonNoPotion":  101,
-                                    "mega":  404,
-                                    "megaFly":  402.9,
-                                    "megaRide":  402,
-                                    "megaNoPotion":  417
+                                    "neon":  103,
+                                    "neonFly":  102,
+                                    "neonRide":  102,
+                                    "neonNoPotion":  103,
+                                    "mega":  411,
+                                    "megaFly":  409.9,
+                                    "megaRide":  409,
+                                    "megaNoPotion":  424
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -2481,16 +2481,16 @@
                                     "fly":  28.35,
                                     "ride":  28,
                                     "noPotion":  27.5,
-                                    "neon":  113,
-                                    "neonFly":  112,
-                                    "neonRide":  112,
-                                    "neonNoPotion":  113,
-                                    "mega":  450,
-                                    "megaFly":  448.9,
-                                    "megaRide":  448,
-                                    "megaNoPotion":  463
+                                    "neon":  117,
+                                    "neonFly":  116,
+                                    "neonRide":  116,
+                                    "neonNoPotion":  117,
+                                    "mega":  467,
+                                    "megaFly":  465.9,
+                                    "megaRide":  465,
+                                    "megaNoPotion":  480
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Falling",
@@ -2580,7 +2580,7 @@
                                     "megaRide":  318,
                                     "megaNoPotion":  327
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -2670,7 +2670,7 @@
                                     "megaRide":  447,
                                     "megaNoPotion":  1109
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -2755,12 +2755,12 @@
                                     "neonFly":  81,
                                     "neonRide":  81,
                                     "neonNoPotion":  80,
-                                    "mega":  305,
-                                    "megaFly":  303.9,
-                                    "megaRide":  303,
-                                    "megaNoPotion":  310
+                                    "mega":  312,
+                                    "megaFly":  310.9,
+                                    "megaRide":  310,
+                                    "megaNoPotion":  317
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -2850,7 +2850,7 @@
                                     "megaRide":  378,
                                     "megaNoPotion":  395
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -2940,7 +2940,7 @@
                                     "megaRide":  218,
                                     "megaNoPotion":  218
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -3030,7 +3030,7 @@
                                     "megaRide":  123,
                                     "megaNoPotion":  218.75
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -3120,7 +3120,7 @@
                                     "megaRide":  263,
                                     "megaNoPotion":  270
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -3294,7 +3294,7 @@
                                     "megaRide":  140,
                                     "megaNoPotion":  139
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -3384,7 +3384,7 @@
                                     "megaRide":  300,
                                     "megaNoPotion":  327
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Very High demand",
                      "supportTone":  "Rising",
@@ -3474,7 +3474,7 @@
                                     "megaRide":  316,
                                     "megaNoPotion":  321
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -3564,7 +3564,7 @@
                                     "megaRide":  290,
                                     "megaNoPotion":  297
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -3630,111 +3630,6 @@
                                 }
                  },
                  {
-                     "slug":  "frostbite-bear",
-                     "name":  "Frostbite Bear",
-                     "rarityCode":  "l",
-                     "rarity":  "Legendary",
-                     "image":  "/assets/pets/frostbite-bear.png",
-                     "source":  "benchmark",
-                     "benchmark":  true,
-                     "segment":  "Mid tier",
-                     "demand":  "High",
-                     "trend":  "Rising",
-                     "values":  {
-                                    "default":  19,
-                                    "fly":  18.45,
-                                    "ride":  18.4,
-                                    "noPotion":  18,
-                                    "neon":  75,
-                                    "neonFly":  74,
-                                    "neonRide":  74,
-                                    "neonNoPotion":  73,
-                                    "mega":  300,
-                                    "megaFly":  298.9,
-                                    "megaRide":  298,
-                                    "megaNoPotion":  297
-                                },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
-                     "pageLabel":  "Benchmark anchor",
-                     "supportLabel":  "High demand",
-                     "supportTone":  "Rising",
-                     "marketStatus":  "",
-                     "pageUrl":  "/pets/frostbite-bear.html",
-                     "compareSlugs":  [
-                                          "winged-tiger",
-                                          "siamese-cat",
-                                          "dragonfruit-fox-pet"
-                                      ],
-                     "origin":  {
-                                    "audited":  true,
-                                    "sources":  [
-                                                    {
-                                                        "sourceName":  "Ice Soup Bait",
-                                                        "sourceType":  "Lure bait",
-                                                        "status":  "available",
-                                                        "statusLabel":  "Currently available",
-                                                        "released":  "Mar 21, 2025",
-                                                        "releaseYear":  "2025",
-                                                        "retired":  "",
-                                                        "cost":  "Free",
-                                                        "petRarity":  "Legendary",
-                                                        "chanceText":  "0.01%",
-                                                        "rarityBand":  "",
-                                                        "eventContext":  "Ice Dimension Event (2025)",
-                                                        "notes":  "Legendary lure reward tied to the Ice Dimension event bait set.",
-                                                        "sortKey":  202503
-                                                    }
-                                                ],
-                                    "sourceCount":  1,
-                                    "firstSource":  {
-                                                        "sourceName":  "Ice Soup Bait",
-                                                        "sourceType":  "Lure bait",
-                                                        "status":  "available",
-                                                        "statusLabel":  "Currently available",
-                                                        "released":  "Mar 21, 2025",
-                                                        "releaseYear":  "2025",
-                                                        "retired":  "",
-                                                        "cost":  "Free",
-                                                        "petRarity":  "Legendary",
-                                                        "chanceText":  "0.01%",
-                                                        "rarityBand":  "",
-                                                        "eventContext":  "Ice Dimension Event (2025)",
-                                                        "notes":  "Legendary lure reward tied to the Ice Dimension event bait set.",
-                                                        "sortKey":  202503
-                                                    },
-                                    "currentSources":  [
-                                                           {
-                                                               "sourceName":  "Ice Soup Bait",
-                                                               "sourceType":  "Lure bait",
-                                                               "status":  "available",
-                                                               "statusLabel":  "Currently available",
-                                                               "released":  "Mar 21, 2025",
-                                                               "releaseYear":  "2025",
-                                                               "retired":  "",
-                                                               "cost":  "Free",
-                                                               "petRarity":  "Legendary",
-                                                               "chanceText":  "0.01%",
-                                                               "rarityBand":  "",
-                                                               "eventContext":  "Ice Dimension Event (2025)",
-                                                               "notes":  "Legendary lure reward tied to the Ice Dimension event bait set.",
-                                                               "sortKey":  202503
-                                                           }
-                                                       ],
-                                    "currentSourceLabels":  [
-                                                                "Ice Soup Bait"
-                                                            ],
-                                    "sourceLabels":  [
-                                                         "Ice Soup Bait"
-                                                     ],
-                                    "eventLabels":  [
-                                                        "Ice Dimension Event (2025)"
-                                                    ],
-                                    "releaseYears":  [
-                                                         "2025"
-                                                     ]
-                                }
-                 },
-                 {
                      "slug":  "kangaroo",
                      "name":  "Kangaroo",
                      "rarityCode":  "l",
@@ -3759,7 +3654,7 @@
                                     "megaRide":  98,
                                     "megaNoPotion":  125
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -3849,7 +3744,7 @@
                                     "megaRide":  244,
                                     "megaNoPotion":  251
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -3934,12 +3829,12 @@
                                     "neonFly":  68,
                                     "neonRide":  68,
                                     "neonNoPotion":  67,
-                                    "mega":  269,
-                                    "megaFly":  267.9,
-                                    "megaRide":  267,
-                                    "megaNoPotion":  267
+                                    "mega":  272,
+                                    "megaFly":  270.9,
+                                    "megaRide":  270,
+                                    "megaNoPotion":  270
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -4005,6 +3900,111 @@
                                 }
                  },
                  {
+                     "slug":  "frostbite-bear",
+                     "name":  "Frostbite Bear",
+                     "rarityCode":  "l",
+                     "rarity":  "Legendary",
+                     "image":  "/assets/pets/frostbite-bear.png",
+                     "source":  "benchmark",
+                     "benchmark":  true,
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Rising",
+                     "values":  {
+                                    "default":  17.5,
+                                    "fly":  16.95,
+                                    "ride":  16.9,
+                                    "noPotion":  16.5,
+                                    "neon":  69,
+                                    "neonFly":  68,
+                                    "neonRide":  68,
+                                    "neonNoPotion":  67,
+                                    "mega":  282,
+                                    "megaFly":  280.9,
+                                    "megaRide":  280,
+                                    "megaNoPotion":  279
+                                },
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "pageLabel":  "Benchmark anchor",
+                     "supportLabel":  "High demand",
+                     "supportTone":  "Rising",
+                     "marketStatus":  "",
+                     "pageUrl":  "/pets/frostbite-bear.html",
+                     "compareSlugs":  [
+                                          "winged-tiger",
+                                          "siamese-cat",
+                                          "dragonfruit-fox-pet"
+                                      ],
+                     "origin":  {
+                                    "audited":  true,
+                                    "sources":  [
+                                                    {
+                                                        "sourceName":  "Ice Soup Bait",
+                                                        "sourceType":  "Lure bait",
+                                                        "status":  "available",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "Mar 21, 2025",
+                                                        "releaseYear":  "2025",
+                                                        "retired":  "",
+                                                        "cost":  "Free",
+                                                        "petRarity":  "Legendary",
+                                                        "chanceText":  "0.01%",
+                                                        "rarityBand":  "",
+                                                        "eventContext":  "Ice Dimension Event (2025)",
+                                                        "notes":  "Legendary lure reward tied to the Ice Dimension event bait set.",
+                                                        "sortKey":  202503
+                                                    }
+                                                ],
+                                    "sourceCount":  1,
+                                    "firstSource":  {
+                                                        "sourceName":  "Ice Soup Bait",
+                                                        "sourceType":  "Lure bait",
+                                                        "status":  "available",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "Mar 21, 2025",
+                                                        "releaseYear":  "2025",
+                                                        "retired":  "",
+                                                        "cost":  "Free",
+                                                        "petRarity":  "Legendary",
+                                                        "chanceText":  "0.01%",
+                                                        "rarityBand":  "",
+                                                        "eventContext":  "Ice Dimension Event (2025)",
+                                                        "notes":  "Legendary lure reward tied to the Ice Dimension event bait set.",
+                                                        "sortKey":  202503
+                                                    },
+                                    "currentSources":  [
+                                                           {
+                                                               "sourceName":  "Ice Soup Bait",
+                                                               "sourceType":  "Lure bait",
+                                                               "status":  "available",
+                                                               "statusLabel":  "Currently available",
+                                                               "released":  "Mar 21, 2025",
+                                                               "releaseYear":  "2025",
+                                                               "retired":  "",
+                                                               "cost":  "Free",
+                                                               "petRarity":  "Legendary",
+                                                               "chanceText":  "0.01%",
+                                                               "rarityBand":  "",
+                                                               "eventContext":  "Ice Dimension Event (2025)",
+                                                               "notes":  "Legendary lure reward tied to the Ice Dimension event bait set.",
+                                                               "sortKey":  202503
+                                                           }
+                                                       ],
+                                    "currentSourceLabels":  [
+                                                                "Ice Soup Bait"
+                                                            ],
+                                    "sourceLabels":  [
+                                                         "Ice Soup Bait"
+                                                     ],
+                                    "eventLabels":  [
+                                                        "Ice Dimension Event (2025)"
+                                                    ],
+                                    "releaseYears":  [
+                                                         "2025"
+                                                     ]
+                                }
+                 },
+                 {
                      "slug":  "elephant",
                      "name":  "Elephant",
                      "rarityCode":  "r",
@@ -4029,7 +4029,7 @@
                                     "megaRide":  188,
                                     "megaNoPotion":  200
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -4114,12 +4114,12 @@
                                     "neonFly":  51,
                                     "neonRide":  51,
                                     "neonNoPotion":  69,
-                                    "mega":  194,
-                                    "megaFly":  192.9,
-                                    "megaRide":  192,
+                                    "mega":  196,
+                                    "megaFly":  194.9,
+                                    "megaRide":  194,
                                     "megaNoPotion":  293
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -4209,7 +4209,7 @@
                                     "megaRide":  164,
                                     "megaNoPotion":  169
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -4299,7 +4299,7 @@
                                     "megaRide":  166,
                                     "megaNoPotion":  184
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -4380,16 +4380,16 @@
                                     "fly":  13.4,
                                     "ride":  13.25,
                                     "noPotion":  13,
-                                    "neon":  47,
-                                    "neonFly":  46,
-                                    "neonRide":  46,
-                                    "neonNoPotion":  46,
-                                    "mega":  184,
-                                    "megaFly":  182.9,
-                                    "megaRide":  182,
-                                    "megaNoPotion":  200
+                                    "neon":  48,
+                                    "neonFly":  47,
+                                    "neonRide":  47,
+                                    "neonNoPotion":  47,
+                                    "mega":  188,
+                                    "megaFly":  186.9,
+                                    "megaRide":  186,
+                                    "megaNoPotion":  204
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -4479,7 +4479,7 @@
                                     "megaRide":  218,
                                     "megaNoPotion":  225
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -4545,6 +4545,105 @@
                                 }
                  },
                  {
+                     "slug":  "moonbeam-peacock",
+                     "name":  "Moonbeam Peacock",
+                     "rarityCode":  "l",
+                     "rarity":  "Legendary",
+                     "image":  "/assets/pets/moonbeam-peacock.png",
+                     "source":  "override",
+                     "benchmark":  false,
+                     "segment":  "Mid tier",
+                     "demand":  "Reference",
+                     "trend":  "Current lane",
+                     "values":  {
+                                    "default":  13.75,
+                                    "noPotion":  12.75,
+                                    "neon":  56,
+                                    "neonNoPotion":  54,
+                                    "mega":  236,
+                                    "megaNoPotion":  233
+                                },
+                     "notes":  "This page follows the same broad value lane used by the site\u0027s calculator for current long-tail trade checks.",
+                     "pageLabel":  "Current guide",
+                     "supportLabel":  "Mid tier",
+                     "supportTone":  "Current guide",
+                     "marketStatus":  "",
+                     "pageUrl":  "/pets/moonbeam-peacock.html",
+                     "compareSlugs":  [
+                                          "shark-puppy",
+                                          "frost-unicorn",
+                                          "winged-tiger"
+                                      ],
+                     "origin":  {
+                                    "audited":  true,
+                                    "sources":  [
+                                                    {
+                                                        "sourceName":  "Golden Dandelion",
+                                                        "sourceType":  "Robux treat",
+                                                        "status":  "current",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "May 1, 2026",
+                                                        "releaseYear":  "2026",
+                                                        "retired":  "",
+                                                        "cost":  "195 Robux per pull",
+                                                        "petRarity":  "Legendary",
+                                                        "chanceText":  "",
+                                                        "rarityBand":  "",
+                                                        "eventContext":  "Salon Revamp (2026)",
+                                                        "notes":  "Chase pet outcome from the Golden Dandelion treat introduced with the Salon Revamp. Official drop chance 2.5%.",
+                                                        "sortKey":  202605
+                                                    }
+                                                ],
+                                    "sourceCount":  1,
+                                    "firstSource":  {
+                                                        "sourceName":  "Golden Dandelion",
+                                                        "sourceType":  "Robux treat",
+                                                        "status":  "current",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "May 1, 2026",
+                                                        "releaseYear":  "2026",
+                                                        "retired":  "",
+                                                        "cost":  "195 Robux per pull",
+                                                        "petRarity":  "Legendary",
+                                                        "chanceText":  "",
+                                                        "rarityBand":  "",
+                                                        "eventContext":  "Salon Revamp (2026)",
+                                                        "notes":  "Chase pet outcome from the Golden Dandelion treat introduced with the Salon Revamp. Official drop chance 2.5%.",
+                                                        "sortKey":  202605
+                                                    },
+                                    "currentSources":  [
+                                                           {
+                                                               "sourceName":  "Golden Dandelion",
+                                                               "sourceType":  "Robux treat",
+                                                               "status":  "current",
+                                                               "statusLabel":  "Currently available",
+                                                               "released":  "May 1, 2026",
+                                                               "releaseYear":  "2026",
+                                                               "retired":  "",
+                                                               "cost":  "195 Robux per pull",
+                                                               "petRarity":  "Legendary",
+                                                               "chanceText":  "",
+                                                               "rarityBand":  "",
+                                                               "eventContext":  "Salon Revamp (2026)",
+                                                               "notes":  "Chase pet outcome from the Golden Dandelion treat introduced with the Salon Revamp. Official drop chance 2.5%.",
+                                                               "sortKey":  202605
+                                                           }
+                                                       ],
+                                    "currentSourceLabels":  [
+                                                                "Golden Dandelion"
+                                                            ],
+                                    "sourceLabels":  [
+                                                         "Golden Dandelion"
+                                                     ],
+                                    "eventLabels":  [
+                                                        "Salon Revamp (2026)"
+                                                    ],
+                                    "releaseYears":  [
+                                                         "2026"
+                                                     ]
+                                }
+                 },
+                 {
                      "slug":  "shark-puppy",
                      "name":  "Shark Puppy",
                      "rarityCode":  "l",
@@ -4564,12 +4663,12 @@
                                     "neonFly":  46,
                                     "neonRide":  46,
                                     "neonNoPotion":  45,
-                                    "mega":  165,
-                                    "megaFly":  163.9,
-                                    "megaRide":  163,
-                                    "megaNoPotion":  170
+                                    "mega":  159,
+                                    "megaFly":  157.9,
+                                    "megaRide":  157,
+                                    "megaNoPotion":  164
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -4659,7 +4758,7 @@
                                     "megaRide":  180,
                                     "megaNoPotion":  197
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Very High demand",
                      "supportTone":  "Rising",
@@ -4725,105 +4824,6 @@
                                 }
                  },
                  {
-                     "slug":  "moonbeam-peacock",
-                     "name":  "Moonbeam Peacock",
-                     "rarityCode":  "l",
-                     "rarity":  "Legendary",
-                     "image":  "/assets/pets/moonbeam-peacock.png",
-                     "source":  "override",
-                     "benchmark":  false,
-                     "segment":  "Mid tier",
-                     "demand":  "Reference",
-                     "trend":  "Current lane",
-                     "values":  {
-                                    "default":  13,
-                                    "noPotion":  12,
-                                    "neon":  54,
-                                    "neonNoPotion":  52,
-                                    "mega":  228,
-                                    "megaNoPotion":  225
-                                },
-                     "notes":  "This page follows the same broad value lane used by the site\u0027s calculator for current long-tail trade checks.",
-                     "pageLabel":  "Current guide",
-                     "supportLabel":  "Mid tier",
-                     "supportTone":  "Current guide",
-                     "marketStatus":  "",
-                     "pageUrl":  "/pets/moonbeam-peacock.html",
-                     "compareSlugs":  [
-                                          "winged-tiger",
-                                          "shark-puppy",
-                                          "black-chested-pheasant"
-                                      ],
-                     "origin":  {
-                                    "audited":  true,
-                                    "sources":  [
-                                                    {
-                                                        "sourceName":  "Golden Dandelion",
-                                                        "sourceType":  "Robux treat",
-                                                        "status":  "current",
-                                                        "statusLabel":  "Currently available",
-                                                        "released":  "May 1, 2026",
-                                                        "releaseYear":  "2026",
-                                                        "retired":  "",
-                                                        "cost":  "195 Robux per pull",
-                                                        "petRarity":  "Legendary",
-                                                        "chanceText":  "",
-                                                        "rarityBand":  "",
-                                                        "eventContext":  "Salon Revamp (2026)",
-                                                        "notes":  "Chase pet outcome from the Golden Dandelion treat introduced with the Salon Revamp. Official drop chance 2.5%.",
-                                                        "sortKey":  202605
-                                                    }
-                                                ],
-                                    "sourceCount":  1,
-                                    "firstSource":  {
-                                                        "sourceName":  "Golden Dandelion",
-                                                        "sourceType":  "Robux treat",
-                                                        "status":  "current",
-                                                        "statusLabel":  "Currently available",
-                                                        "released":  "May 1, 2026",
-                                                        "releaseYear":  "2026",
-                                                        "retired":  "",
-                                                        "cost":  "195 Robux per pull",
-                                                        "petRarity":  "Legendary",
-                                                        "chanceText":  "",
-                                                        "rarityBand":  "",
-                                                        "eventContext":  "Salon Revamp (2026)",
-                                                        "notes":  "Chase pet outcome from the Golden Dandelion treat introduced with the Salon Revamp. Official drop chance 2.5%.",
-                                                        "sortKey":  202605
-                                                    },
-                                    "currentSources":  [
-                                                           {
-                                                               "sourceName":  "Golden Dandelion",
-                                                               "sourceType":  "Robux treat",
-                                                               "status":  "current",
-                                                               "statusLabel":  "Currently available",
-                                                               "released":  "May 1, 2026",
-                                                               "releaseYear":  "2026",
-                                                               "retired":  "",
-                                                               "cost":  "195 Robux per pull",
-                                                               "petRarity":  "Legendary",
-                                                               "chanceText":  "",
-                                                               "rarityBand":  "",
-                                                               "eventContext":  "Salon Revamp (2026)",
-                                                               "notes":  "Chase pet outcome from the Golden Dandelion treat introduced with the Salon Revamp. Official drop chance 2.5%.",
-                                                               "sortKey":  202605
-                                                           }
-                                                       ],
-                                    "currentSourceLabels":  [
-                                                                "Golden Dandelion"
-                                                            ],
-                                    "sourceLabels":  [
-                                                         "Golden Dandelion"
-                                                     ],
-                                    "eventLabels":  [
-                                                        "Salon Revamp (2026)"
-                                                    ],
-                                    "releaseYears":  [
-                                                         "2026"
-                                                     ]
-                                }
-                 },
-                 {
                      "slug":  "winged-tiger",
                      "name":  "Winged Tiger",
                      "rarityCode":  "l",
@@ -4848,7 +4848,7 @@
                                     "megaRide":  208,
                                     "megaNoPotion":  215
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -4938,7 +4938,7 @@
                                     "megaRide":  178,
                                     "megaNoPotion":  178
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -5028,7 +5028,7 @@
                                     "megaRide":  198,
                                     "megaNoPotion":  205
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -5218,9 +5218,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/royal-mistletroll.html",
                      "compareSlugs":  [
-                                          "pirate-ghost-capuchin-monkey-pet",
+                                          "black-chested-pheasant",
                                           "emperor-gorilla-pet",
-                                          "black-chested-pheasant"
+                                          "pirate-ghost-capuchin-monkey-pet"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -5303,8 +5303,8 @@
                      "pageUrl":  "/pets/pirate-ghost-capuchin-monkey-pet.html",
                      "compareSlugs":  [
                                           "royal-mistletroll",
-                                          "black-chested-pheasant",
-                                          "emperor-gorilla-pet"
+                                          "emperor-gorilla-pet",
+                                          "black-chested-pheasant"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -5385,7 +5385,7 @@
                                     "megaRide":  97,
                                     "megaNoPotion":  96
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -5492,8 +5492,8 @@
                      "pageUrl":  "/pets/zombie-buffalo.html",
                      "compareSlugs":  [
                                           "bald-eagle",
-                                          "sea-slug",
-                                          "jellyfish"
+                                          "jellyfish",
+                                          "sea-slug"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -5575,8 +5575,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/bald-eagle.html",
                      "compareSlugs":  [
-                                          "jellyfish",
                                           "sea-slug",
+                                          "jellyfish",
                                           "zombie-buffalo"
                                       ],
                      "origin":  {
@@ -5658,7 +5658,7 @@
                                     "megaRide":  160,
                                     "megaNoPotion":  160
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -5749,8 +5749,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/munchkin-cat.html",
                      "compareSlugs":  [
-                                          "bald-eagle",
                                           "jellyfish",
+                                          "bald-eagle",
                                           "sea-slug"
                                       ],
                      "origin":  {
@@ -5833,8 +5833,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/sea-slug.html",
                      "compareSlugs":  [
-                                          "bald-eagle",
                                           "jellyfish",
+                                          "bald-eagle",
                                           "zombie-buffalo"
                                       ],
                      "origin":  {
@@ -5892,6 +5892,145 @@
                                 }
                  },
                  {
+                     "slug":  "silverback-gorilla",
+                     "name":  "Silverback Gorilla",
+                     "rarityCode":  "l",
+                     "rarity":  "Legendary",
+                     "image":  "/assets/pets/silverback-gorilla.png",
+                     "source":  "benchmark",
+                     "benchmark":  true,
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "values":  {
+                                    "default":  10.2,
+                                    "fly":  9.8,
+                                    "ride":  9.8,
+                                    "noPotion":  9.5,
+                                    "neon":  41,
+                                    "neonFly":  40.2,
+                                    "neonRide":  40.2,
+                                    "neonNoPotion":  39.25,
+                                    "mega":  174,
+                                    "megaFly":  172.9,
+                                    "megaRide":  172,
+                                    "megaNoPotion":  171
+                                },
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "pageLabel":  "Benchmark anchor",
+                     "supportLabel":  "High demand",
+                     "supportTone":  "Steady",
+                     "marketStatus":  "",
+                     "pageUrl":  "/pets/silverback-gorilla.html",
+                     "compareSlugs":  [
+                                          "winged-tiger",
+                                          "frostbite-bear",
+                                          "dragonfruit-fox-pet"
+                                      ],
+                     "origin":  {
+                                    "audited":  true,
+                                    "sources":  [
+                                                    {
+                                                        "sourceName":  "Basic Egg",
+                                                        "sourceType":  "Egg",
+                                                        "status":  "available",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "Sep 2025",
+                                                        "releaseYear":  "2025",
+                                                        "retired":  "",
+                                                        "cost":  "400 Tickets",
+                                                        "petRarity":  "Legendary",
+                                                        "chanceText":  "0.01%",
+                                                        "rarityBand":  "Exact hatch chance: 0.01%",
+                                                        "eventContext":  null,
+                                                        "notes":  "Current ticket-stall rotation reviewed April 10, 2026.",
+                                                        "sortKey":  202509
+                                                    },
+                                                    {
+                                                        "sourceName":  "Crystal Egg",
+                                                        "sourceType":  "Egg",
+                                                        "status":  "available",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "Sep 2025",
+                                                        "releaseYear":  "2025",
+                                                        "retired":  "",
+                                                        "cost":  "4,000 Tickets",
+                                                        "petRarity":  "Legendary",
+                                                        "chanceText":  "0.1%",
+                                                        "rarityBand":  "Exact hatch chance: 0.1%",
+                                                        "eventContext":  null,
+                                                        "notes":  "Current ticket-stall rotation reviewed April 10, 2026.",
+                                                        "sortKey":  202509
+                                                    }
+                                                ],
+                                    "sourceCount":  2,
+                                    "firstSource":  {
+                                                        "sourceName":  "Basic Egg",
+                                                        "sourceType":  "Egg",
+                                                        "status":  "available",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "Sep 2025",
+                                                        "releaseYear":  "2025",
+                                                        "retired":  "",
+                                                        "cost":  "400 Tickets",
+                                                        "petRarity":  "Legendary",
+                                                        "chanceText":  "0.01%",
+                                                        "rarityBand":  "Exact hatch chance: 0.01%",
+                                                        "eventContext":  null,
+                                                        "notes":  "Current ticket-stall rotation reviewed April 10, 2026.",
+                                                        "sortKey":  202509
+                                                    },
+                                    "currentSources":  [
+                                                           {
+                                                               "sourceName":  "Basic Egg",
+                                                               "sourceType":  "Egg",
+                                                               "status":  "available",
+                                                               "statusLabel":  "Currently available",
+                                                               "released":  "Sep 2025",
+                                                               "releaseYear":  "2025",
+                                                               "retired":  "",
+                                                               "cost":  "400 Tickets",
+                                                               "petRarity":  "Legendary",
+                                                               "chanceText":  "0.01%",
+                                                               "rarityBand":  "Exact hatch chance: 0.01%",
+                                                               "eventContext":  null,
+                                                               "notes":  "Current ticket-stall rotation reviewed April 10, 2026.",
+                                                               "sortKey":  202509
+                                                           },
+                                                           {
+                                                               "sourceName":  "Crystal Egg",
+                                                               "sourceType":  "Egg",
+                                                               "status":  "available",
+                                                               "statusLabel":  "Currently available",
+                                                               "released":  "Sep 2025",
+                                                               "releaseYear":  "2025",
+                                                               "retired":  "",
+                                                               "cost":  "4,000 Tickets",
+                                                               "petRarity":  "Legendary",
+                                                               "chanceText":  "0.1%",
+                                                               "rarityBand":  "Exact hatch chance: 0.1%",
+                                                               "eventContext":  null,
+                                                               "notes":  "Current ticket-stall rotation reviewed April 10, 2026.",
+                                                               "sortKey":  202509
+                                                           }
+                                                       ],
+                                    "currentSourceLabels":  [
+                                                                "Basic Egg",
+                                                                "Crystal Egg"
+                                                            ],
+                                    "sourceLabels":  [
+                                                         "Basic Egg",
+                                                         "Crystal Egg"
+                                                     ],
+                                    "eventLabels":  [
+
+                                                    ],
+                                    "releaseYears":  [
+                                                         "2025"
+                                                     ]
+                                }
+                 },
+                 {
                      "slug":  "mechapup",
                      "name":  "Mechapup",
                      "rarityCode":  "l",
@@ -5903,12 +6042,12 @@
                      "demand":  "Reference",
                      "trend":  "Current lane",
                      "values":  {
-                                    "default":  9.25,
-                                    "noPotion":  8.5,
-                                    "neon":  37,
-                                    "neonNoPotion":  35.25,
-                                    "mega":  152,
-                                    "megaNoPotion":  157
+                                    "default":  10,
+                                    "noPotion":  9.25,
+                                    "neon":  39,
+                                    "neonNoPotion":  37.25,
+                                    "mega":  164,
+                                    "megaNoPotion":  169
                                 },
                      "notes":  "This page follows the same broad value lane used by the site\u0027s calculator for current long-tail trade checks.",
                      "pageLabel":  "Current guide",
@@ -5917,9 +6056,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/mechapup.html",
                      "compareSlugs":  [
-                                          "vampire-dragon",
-                                          "sugar-axolotl",
-                                          "ti-de-nadal"
+                                          "silverback-gorilla",
+                                          "candicorn",
+                                          "vampire-dragon"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -6000,7 +6139,7 @@
                                     "megaRide":  140,
                                     "megaNoPotion":  147
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -6090,7 +6229,7 @@
                                     "megaRide":  83,
                                     "megaNoPotion":  90
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -6183,7 +6322,7 @@
                      "compareSlugs":  [
                                           "ti-de-nadal",
                                           "vampire-dragon",
-                                          "mechapup"
+                                          "lion-cub"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -6267,7 +6406,7 @@
                      "compareSlugs":  [
                                           "sugar-axolotl",
                                           "vampire-dragon",
-                                          "mechapup"
+                                          "lion-cub"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -6348,7 +6487,7 @@
                                     "megaRide":  132,
                                     "megaNoPotion":  132
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -6438,7 +6577,7 @@
                                     "megaRide":  130,
                                     "megaNoPotion":  132
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -6612,7 +6751,7 @@
                                     "megaRide":  80,
                                     "megaNoPotion":  85
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -6702,7 +6841,7 @@
                                     "megaRide":  88,
                                     "megaNoPotion":  95
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -6795,7 +6934,7 @@
                      "compareSlugs":  [
                                           "arctic-fox",
                                           "goat",
-                                          "irish-water-spaniel"
+                                          "many-mackerel"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -6852,145 +6991,6 @@
                                 }
                  },
                  {
-                     "slug":  "silverback-gorilla",
-                     "name":  "Silverback Gorilla",
-                     "rarityCode":  "l",
-                     "rarity":  "Legendary",
-                     "image":  "/assets/pets/silverback-gorilla.png",
-                     "source":  "benchmark",
-                     "benchmark":  true,
-                     "segment":  "Mid tier",
-                     "demand":  "High",
-                     "trend":  "Steady",
-                     "values":  {
-                                    "default":  7.45,
-                                    "fly":  7.05,
-                                    "ride":  7.05,
-                                    "noPotion":  6.75,
-                                    "neon":  31,
-                                    "neonFly":  30.2,
-                                    "neonRide":  30.2,
-                                    "neonNoPotion":  29.25,
-                                    "mega":  130,
-                                    "megaFly":  128.9,
-                                    "megaRide":  128,
-                                    "megaNoPotion":  127
-                                },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
-                     "pageLabel":  "Benchmark anchor",
-                     "supportLabel":  "High demand",
-                     "supportTone":  "Steady",
-                     "marketStatus":  "",
-                     "pageUrl":  "/pets/silverback-gorilla.html",
-                     "compareSlugs":  [
-                                          "winged-tiger",
-                                          "frostbite-bear",
-                                          "dragonfruit-fox-pet"
-                                      ],
-                     "origin":  {
-                                    "audited":  true,
-                                    "sources":  [
-                                                    {
-                                                        "sourceName":  "Basic Egg",
-                                                        "sourceType":  "Egg",
-                                                        "status":  "available",
-                                                        "statusLabel":  "Currently available",
-                                                        "released":  "Sep 2025",
-                                                        "releaseYear":  "2025",
-                                                        "retired":  "",
-                                                        "cost":  "400 Tickets",
-                                                        "petRarity":  "Legendary",
-                                                        "chanceText":  "0.01%",
-                                                        "rarityBand":  "Exact hatch chance: 0.01%",
-                                                        "eventContext":  null,
-                                                        "notes":  "Current ticket-stall rotation reviewed April 10, 2026.",
-                                                        "sortKey":  202509
-                                                    },
-                                                    {
-                                                        "sourceName":  "Crystal Egg",
-                                                        "sourceType":  "Egg",
-                                                        "status":  "available",
-                                                        "statusLabel":  "Currently available",
-                                                        "released":  "Sep 2025",
-                                                        "releaseYear":  "2025",
-                                                        "retired":  "",
-                                                        "cost":  "4,000 Tickets",
-                                                        "petRarity":  "Legendary",
-                                                        "chanceText":  "0.1%",
-                                                        "rarityBand":  "Exact hatch chance: 0.1%",
-                                                        "eventContext":  null,
-                                                        "notes":  "Current ticket-stall rotation reviewed April 10, 2026.",
-                                                        "sortKey":  202509
-                                                    }
-                                                ],
-                                    "sourceCount":  2,
-                                    "firstSource":  {
-                                                        "sourceName":  "Basic Egg",
-                                                        "sourceType":  "Egg",
-                                                        "status":  "available",
-                                                        "statusLabel":  "Currently available",
-                                                        "released":  "Sep 2025",
-                                                        "releaseYear":  "2025",
-                                                        "retired":  "",
-                                                        "cost":  "400 Tickets",
-                                                        "petRarity":  "Legendary",
-                                                        "chanceText":  "0.01%",
-                                                        "rarityBand":  "Exact hatch chance: 0.01%",
-                                                        "eventContext":  null,
-                                                        "notes":  "Current ticket-stall rotation reviewed April 10, 2026.",
-                                                        "sortKey":  202509
-                                                    },
-                                    "currentSources":  [
-                                                           {
-                                                               "sourceName":  "Basic Egg",
-                                                               "sourceType":  "Egg",
-                                                               "status":  "available",
-                                                               "statusLabel":  "Currently available",
-                                                               "released":  "Sep 2025",
-                                                               "releaseYear":  "2025",
-                                                               "retired":  "",
-                                                               "cost":  "400 Tickets",
-                                                               "petRarity":  "Legendary",
-                                                               "chanceText":  "0.01%",
-                                                               "rarityBand":  "Exact hatch chance: 0.01%",
-                                                               "eventContext":  null,
-                                                               "notes":  "Current ticket-stall rotation reviewed April 10, 2026.",
-                                                               "sortKey":  202509
-                                                           },
-                                                           {
-                                                               "sourceName":  "Crystal Egg",
-                                                               "sourceType":  "Egg",
-                                                               "status":  "available",
-                                                               "statusLabel":  "Currently available",
-                                                               "released":  "Sep 2025",
-                                                               "releaseYear":  "2025",
-                                                               "retired":  "",
-                                                               "cost":  "4,000 Tickets",
-                                                               "petRarity":  "Legendary",
-                                                               "chanceText":  "0.1%",
-                                                               "rarityBand":  "Exact hatch chance: 0.1%",
-                                                               "eventContext":  null,
-                                                               "notes":  "Current ticket-stall rotation reviewed April 10, 2026.",
-                                                               "sortKey":  202509
-                                                           }
-                                                       ],
-                                    "currentSourceLabels":  [
-                                                                "Basic Egg",
-                                                                "Crystal Egg"
-                                                            ],
-                                    "sourceLabels":  [
-                                                         "Basic Egg",
-                                                         "Crystal Egg"
-                                                     ],
-                                    "eventLabels":  [
-
-                                                    ],
-                                    "releaseYears":  [
-                                                         "2025"
-                                                     ]
-                                }
-                 },
-                 {
                      "slug":  "goat",
                      "name":  "Goat",
                      "rarityCode":  "ur",
@@ -7015,7 +7015,7 @@
                                     "megaRide":  118,
                                     "megaNoPotion":  118
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -7108,7 +7108,7 @@
                      "compareSlugs":  [
                                           "phantom-dragon",
                                           "velocirooster",
-                                          "silverback-gorilla"
+                                          "cupid-dragon"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -7189,7 +7189,7 @@
                                     "megaRide":  118,
                                     "megaNoPotion":  117
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -7363,7 +7363,7 @@
                                     "megaRide":  106,
                                     "megaNoPotion":  108
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -7453,7 +7453,7 @@
                                     "megaRide":  104,
                                     "megaNoPotion":  109
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -7545,8 +7545,8 @@
                      "pageUrl":  "/pets/giant-anteater.html",
                      "compareSlugs":  [
                                           "shrew",
-                                          "ring-tailed-lemur",
-                                          "phantom-dragon"
+                                          "phantom-dragon",
+                                          "ring-tailed-lemur"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -7627,7 +7627,7 @@
                                     "megaRide":  83,
                                     "megaNoPotion":  90
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -7720,7 +7720,7 @@
                      "compareSlugs":  [
                                           "sakura-spirit",
                                           "giant-anteater",
-                                          "field-mouse"
+                                          "frost-fury-pet"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -7801,7 +7801,7 @@
                                     "megaRide":  98,
                                     "megaNoPotion":  97
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -7891,7 +7891,7 @@
                                     "megaRide":  54,
                                     "megaNoPotion":  59
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -7957,96 +7957,6 @@
                                 }
                  },
                  {
-                     "slug":  "owlbear",
-                     "name":  "Owlbear",
-                     "rarityCode":  "l",
-                     "rarity":  "Legendary",
-                     "image":  "/assets/pets/owlbear.png",
-                     "source":  "benchmark",
-                     "benchmark":  true,
-                     "segment":  "Mid tier",
-                     "demand":  "High",
-                     "trend":  "Steady",
-                     "values":  {
-                                    "default":  5.75,
-                                    "fly":  5.35,
-                                    "ride":  5.3,
-                                    "noPotion":  5,
-                                    "neon":  23,
-                                    "neonFly":  22,
-                                    "neonRide":  22,
-                                    "neonNoPotion":  21,
-                                    "mega":  94,
-                                    "megaFly":  92.9,
-                                    "megaRide":  92,
-                                    "megaNoPotion":  91
-                                },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
-                     "pageLabel":  "Benchmark anchor",
-                     "supportLabel":  "High demand",
-                     "supportTone":  "Steady",
-                     "marketStatus":  "",
-                     "pageUrl":  "/pets/owlbear.html",
-                     "compareSlugs":  [
-                                          "shark-puppy",
-                                          "black-chested-pheasant",
-                                          "lion-cub"
-                                      ],
-                     "origin":  {
-                                    "audited":  true,
-                                    "sources":  [
-                                                    {
-                                                        "sourceName":  "Danger Egg",
-                                                        "sourceType":  "Egg",
-                                                        "status":  "retired",
-                                                        "statusLabel":  "Retired",
-                                                        "released":  "Jun 2023",
-                                                        "releaseYear":  "2023",
-                                                        "retired":  "Aug 2023",
-                                                        "cost":  "750 Bucks",
-                                                        "petRarity":  "Legendary",
-                                                        "chanceText":  "",
-                                                        "rarityBand":  null,
-                                                        "eventContext":  null,
-                                                        "notes":  "",
-                                                        "sortKey":  202306
-                                                    }
-                                                ],
-                                    "sourceCount":  1,
-                                    "firstSource":  {
-                                                        "sourceName":  "Danger Egg",
-                                                        "sourceType":  "Egg",
-                                                        "status":  "retired",
-                                                        "statusLabel":  "Retired",
-                                                        "released":  "Jun 2023",
-                                                        "releaseYear":  "2023",
-                                                        "retired":  "Aug 2023",
-                                                        "cost":  "750 Bucks",
-                                                        "petRarity":  "Legendary",
-                                                        "chanceText":  "",
-                                                        "rarityBand":  null,
-                                                        "eventContext":  null,
-                                                        "notes":  "",
-                                                        "sortKey":  202306
-                                                    },
-                                    "currentSources":  [
-
-                                                       ],
-                                    "currentSourceLabels":  [
-
-                                                            ],
-                                    "sourceLabels":  [
-                                                         "Danger Egg"
-                                                     ],
-                                    "eventLabels":  [
-
-                                                    ],
-                                    "releaseYears":  [
-                                                         "2023"
-                                                     ]
-                                }
-                 },
-                 {
                      "slug":  "papa-moose",
                      "name":  "Papa Moose",
                      "rarityCode":  "l",
@@ -8071,7 +7981,7 @@
                                     "megaRide":  94,
                                     "megaNoPotion":  93
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -8177,9 +8087,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/sakura-spirit.html",
                      "compareSlugs":  [
-                                          "solaris",
                                           "aestus",
-                                          "owlbear"
+                                          "solaris",
+                                          "papa-moose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -8232,6 +8142,96 @@
                                                     ],
                                     "releaseYears":  [
                                                          "2025"
+                                                     ]
+                                }
+                 },
+                 {
+                     "slug":  "owlbear",
+                     "name":  "Owlbear",
+                     "rarityCode":  "l",
+                     "rarity":  "Legendary",
+                     "image":  "/assets/pets/owlbear.png",
+                     "source":  "benchmark",
+                     "benchmark":  true,
+                     "segment":  "Mid tier",
+                     "demand":  "High",
+                     "trend":  "Steady",
+                     "values":  {
+                                    "default":  5.5,
+                                    "fly":  5.1,
+                                    "ride":  5.05,
+                                    "noPotion":  4.75,
+                                    "neon":  21.5,
+                                    "neonFly":  20.5,
+                                    "neonRide":  20.5,
+                                    "neonNoPotion":  19.5,
+                                    "mega":  88,
+                                    "megaFly":  86.9,
+                                    "megaRide":  86,
+                                    "megaNoPotion":  85
+                                },
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "pageLabel":  "Benchmark anchor",
+                     "supportLabel":  "High demand",
+                     "supportTone":  "Steady",
+                     "marketStatus":  "",
+                     "pageUrl":  "/pets/owlbear.html",
+                     "compareSlugs":  [
+                                          "shark-puppy",
+                                          "black-chested-pheasant",
+                                          "lion-cub"
+                                      ],
+                     "origin":  {
+                                    "audited":  true,
+                                    "sources":  [
+                                                    {
+                                                        "sourceName":  "Danger Egg",
+                                                        "sourceType":  "Egg",
+                                                        "status":  "retired",
+                                                        "statusLabel":  "Retired",
+                                                        "released":  "Jun 2023",
+                                                        "releaseYear":  "2023",
+                                                        "retired":  "Aug 2023",
+                                                        "cost":  "750 Bucks",
+                                                        "petRarity":  "Legendary",
+                                                        "chanceText":  "",
+                                                        "rarityBand":  null,
+                                                        "eventContext":  null,
+                                                        "notes":  "",
+                                                        "sortKey":  202306
+                                                    }
+                                                ],
+                                    "sourceCount":  1,
+                                    "firstSource":  {
+                                                        "sourceName":  "Danger Egg",
+                                                        "sourceType":  "Egg",
+                                                        "status":  "retired",
+                                                        "statusLabel":  "Retired",
+                                                        "released":  "Jun 2023",
+                                                        "releaseYear":  "2023",
+                                                        "retired":  "Aug 2023",
+                                                        "cost":  "750 Bucks",
+                                                        "petRarity":  "Legendary",
+                                                        "chanceText":  "",
+                                                        "rarityBand":  null,
+                                                        "eventContext":  null,
+                                                        "notes":  "",
+                                                        "sortKey":  202306
+                                                    },
+                                    "currentSources":  [
+
+                                                       ],
+                                    "currentSourceLabels":  [
+
+                                                            ],
+                                    "sourceLabels":  [
+                                                         "Danger Egg"
+                                                     ],
+                                    "eventLabels":  [
+
+                                                    ],
+                                    "releaseYears":  [
+                                                         "2023"
                                                      ]
                                 }
                  },
@@ -8445,8 +8445,8 @@
                      "pageUrl":  "/pets/ring-tailed-lemur.html",
                      "compareSlugs":  [
                                           "hyena",
-                                          "solaris",
-                                          "brown-bear"
+                                          "brown-bear",
+                                          "solaris"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -8626,7 +8626,7 @@
                                     "megaRide":  74,
                                     "megaNoPotion":  81
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -8968,7 +8968,7 @@
                                     "megaRide":  78,
                                     "megaNoPotion":  87
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -9061,7 +9061,7 @@
                      "compareSlugs":  [
                                           "caelum-cervi",
                                           "lava-dragon",
-                                          "fallow-deer"
+                                          "jousting-horse"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -9160,7 +9160,7 @@
                      "compareSlugs":  [
                                           "strawberry-penguin",
                                           "lava-dragon",
-                                          "jousting-horse"
+                                          "fallow-deer"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -9241,7 +9241,7 @@
                                     "megaRide":  68,
                                     "megaNoPotion":  70
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -9334,7 +9334,7 @@
                      "compareSlugs":  [
                                           "tri-horned-treehopper",
                                           "christmas-pudding-pup",
-                                          "groundhog"
+                                          "happy-clam"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -9418,7 +9418,7 @@
                      "compareSlugs":  [
                                           "honey-badger",
                                           "christmas-pudding-pup",
-                                          "groundhog"
+                                          "happy-clam"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -9502,7 +9502,7 @@
                      "compareSlugs":  [
                                           "jousting-horse",
                                           "halloween-white-ghost-dragon",
-                                          "aurora-fox"
+                                          "caelum-cervi"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -9586,7 +9586,7 @@
                      "compareSlugs":  [
                                           "fallow-deer",
                                           "halloween-white-ghost-dragon",
-                                          "aurora-fox"
+                                          "caelum-cervi"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -9835,7 +9835,7 @@
                                     "megaRide":  64,
                                     "megaNoPotion":  66
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -9928,7 +9928,7 @@
                      "compareSlugs":  [
                                           "midnight-dragon",
                                           "halloween-white-ghost-dragon",
-                                          "pineapple-owl"
+                                          "fallow-deer"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -10012,7 +10012,7 @@
                      "compareSlugs":  [
                                           "aurora-fox",
                                           "halloween-white-ghost-dragon",
-                                          "pineapple-owl"
+                                          "fallow-deer"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -10179,8 +10179,8 @@
                      "pageUrl":  "/pets/diamond-amazon.html",
                      "compareSlugs":  [
                                           "pineapple-owl",
-                                          "glacier-kitsune",
-                                          "aurora-fox"
+                                          "aurora-fox",
+                                          "glacier-kitsune"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -10278,8 +10278,8 @@
                      "pageUrl":  "/pets/pineapple-owl.html",
                      "compareSlugs":  [
                                           "diamond-amazon",
-                                          "glacier-kitsune",
-                                          "aurora-fox"
+                                          "aurora-fox",
+                                          "glacier-kitsune"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -10377,8 +10377,8 @@
                      "pageUrl":  "/pets/glacier-kitsune.html",
                      "compareSlugs":  [
                                           "arctic-dusk-dragon",
-                                          "pineapple-owl",
-                                          "diamond-amazon"
+                                          "diamond-amazon",
+                                          "pineapple-owl"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -10461,8 +10461,8 @@
                      "pageUrl":  "/pets/arctic-dusk-dragon.html",
                      "compareSlugs":  [
                                           "glacier-kitsune",
-                                          "dancing-dragon",
-                                          "giant-gold-scarab"
+                                          "giant-gold-scarab",
+                                          "dancing-dragon"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -10798,7 +10798,7 @@
                      "compareSlugs":  [
                                           "giant-gold-scarab",
                                           "arctic-dusk-dragon",
-                                          "glormy-leo"
+                                          "diamond-albatross"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -10882,7 +10882,7 @@
                      "compareSlugs":  [
                                           "dancing-dragon",
                                           "arctic-dusk-dragon",
-                                          "glormy-leo"
+                                          "diamond-albatross"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -11077,7 +11077,7 @@
                                     "megaRide":  56,
                                     "megaNoPotion":  55
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -11300,7 +11300,7 @@
                                     "megaRide":  52,
                                     "megaNoPotion":  51
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -12309,7 +12309,7 @@
                                     "megaRide":  42,
                                     "megaNoPotion":  41
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Steady",
@@ -13185,7 +13185,7 @@
                                     "megaRide":  40,
                                     "megaNoPotion":  39
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -14565,7 +14565,7 @@
                                     "megaRide":  27,
                                     "megaNoPotion":  27
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -14655,7 +14655,7 @@
                                     "megaRide":  35,
                                     "megaNoPotion":  34
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -15180,7 +15180,7 @@
                                     "megaRide":  25,
                                     "megaNoPotion":  25
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Rising",
@@ -15270,7 +15270,7 @@
                                     "megaRide":  28,
                                     "megaNoPotion":  28
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "High demand",
                      "supportTone":  "Rising",
@@ -15360,7 +15360,7 @@
                                     "megaRide":  25,
                                     "megaNoPotion":  25
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -15618,7 +15618,7 @@
                                     "megaRide":  31,
                                     "megaNoPotion":  30
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -16563,7 +16563,7 @@
                                     "megaRide":  26.45,
                                     "megaNoPotion":  25.45
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -16821,7 +16821,7 @@
                                     "megaRide":  26.45,
                                     "megaNoPotion":  25.45
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -16911,7 +16911,7 @@
                                     "megaRide":  26.45,
                                     "megaNoPotion":  25.45
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -17772,7 +17772,7 @@
                                     "megaRide":  13,
                                     "megaNoPotion":  12
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Falling",
@@ -17961,7 +17961,7 @@
                                     "megaRide":  23.35,
                                     "megaNoPotion":  22.35
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -18051,7 +18051,7 @@
                                     "megaRide":  23.35,
                                     "megaNoPotion":  22.35
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -18690,7 +18690,7 @@
                                     "megaRide":  21.8,
                                     "megaNoPotion":  20.8
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -20057,7 +20057,7 @@
                                     "megaRide":  18.8,
                                     "megaNoPotion":  17.8
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Falling",
@@ -23086,7 +23086,7 @@
                                     "megaRide":  13.6,
                                     "megaNoPotion":  12.6
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -23527,7 +23527,7 @@
                                     "megaRide":  13,
                                     "megaNoPotion":  12
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -25544,7 +25544,7 @@
                                     "megaRide":  10.45,
                                     "megaNoPotion":  9.45
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Low demand",
                      "supportTone":  "Falling",
@@ -28672,7 +28672,7 @@
                                     "megaRide":  11.65,
                                     "megaNoPotion":  10.65
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -30611,7 +30611,7 @@
                                     "megaRide":  4.5,
                                     "megaNoPotion":  3.5
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Low demand",
                      "supportTone":  "Falling",
@@ -31571,7 +31571,7 @@
                                     "megaRide":  3.75,
                                     "megaNoPotion":  2.75
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -35270,7 +35270,7 @@
                                     "megaRide":  8,
                                     "megaNoPotion":  7
                                 },
-                     "notes":  "Revalidated on 2026-07-29 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+                     "notes":  "Revalidated on 2026-07-30 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
                      "pageLabel":  "Benchmark anchor",
                      "supportLabel":  "Medium demand",
                      "supportTone":  "Steady",
@@ -69477,7 +69477,7 @@
                                 }
                  }
              ],
-    "generatedAt":  "2026-07-29",
+    "generatedAt":  "2026-07-30",
     "counts":  {
                    "benchmark":  101,
                    "referenceLane":  0,
