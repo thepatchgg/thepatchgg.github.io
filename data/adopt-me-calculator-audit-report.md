@@ -1,15 +1,20 @@
 # Calculator Audit Report
+
 - Date: 2026-07-31
-- Tracker pet rows parsed: 764
+- Tracker pet rows parsed: 762
 - Local calculator pets: 751
-- Non-benchmark local pets: 650
+- Non-benchmark local pets: 642
 - Non-benchmark pets matched to tracker feed: 641
 - Non-benchmark pets manually resolved: 9
 - Market-forming pets pending tracker values: 0
 - Non-benchmark pets still unmatched: 0
+
 ## Benchmark Divergence
+
 No benchmark divergence rows were produced in the latest audit.
+
 ## Manual Edge-Case Resolutions
+
 - Burtaur: nonTradable (Official April Fools 2025 temporary pet.)
 - Dylan: manualTradable (Wrapped Doll pet using current AMTV base value.)
 - Malayan Tapir: manualTradable (Mapped to Malaysian Tapir on AMTV.)
@@ -22,5 +27,7 @@ No benchmark divergence rows were produced in the latest audit.
 - River: manualTradable (Wrapped Doll pet using current AMTV base value.)
 - Scoob: nonTradable (Temporary Scoob event pet that could not be traded.)
 - Weevil Pet: manualTradable (Mapped to Weevil on AMTV.)
+
 ## Unmatched Local Pets
+
 All non-benchmark local pets were resolved through either the tracker feed or documented manual mappings.
