@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-07-30",
+    "updatedAt":  "2026-07-31",
     "entries":  [
                     {
                         "slug":  "2021-uplift-butterfly",
@@ -1605,17 +1605,17 @@
                         "benchmark":  false
                     },
                     {
-                        "slug":  "fossa",
-                        "name":  "Fossa",
-                        "rarity":  "u",
-                        "image":  "/assets/pets/fossa.png",
-                        "benchmark":  false
-                    },
-                    {
                         "slug":  "forest-sprite",
                         "name":  "Forest Sprite",
                         "rarity":  "c",
                         "image":  "/assets/pets/forest-sprite.svg",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "fossa",
+                        "name":  "Fossa",
+                        "rarity":  "u",
+                        "image":  "/assets/pets/fossa.png",
                         "benchmark":  false
                     },
                     {
@@ -4433,6 +4433,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "s-mores-raccoon",
+                        "name":  "S\u0027mores Raccoon",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/s-mores-raccoon.svg",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "sneak-weasel",
                         "name":  "Sneak Weasel",
                         "rarity":  "r",
@@ -4507,13 +4514,6 @@
                         "name":  "Snowy Mammoth",
                         "rarity":  "ur",
                         "image":  "/assets/pets/snowy-mammoth.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "s-mores-raccoon",
-                        "name":  "S\u0027mores Raccoon",
-                        "rarity":  "ur",
-                        "image":  "/assets/pets/s-mores-raccoon.svg",
                         "benchmark":  false
                     },
                     {
@@ -4675,6 +4675,13 @@
                         "name":  "Summer Walrus",
                         "rarity":  "r",
                         "image":  "/assets/pets/summer-walrus.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "sunflower-friend",
+                        "name":  "Sunflower Friend",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/sunflower-friend.svg",
                         "benchmark":  false
                     },
                     {
@@ -5021,6 +5028,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "violet-friend",
+                        "name":  "Violet Friend",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/violet-friend.svg",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "volcanic-rhino",
                         "name":  "Volcanic Rhino",
                         "rarity":  "l",
@@ -5288,8 +5302,8 @@
                     }
                 ],
     "counts":  {
-                   "total":  755,
-                   "verifiedRarity":  755,
+                   "total":  757,
+                   "verifiedRarity":  757,
                    "review":  0,
                    "benchmark":  18
                }

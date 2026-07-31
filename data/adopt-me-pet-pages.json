@@ -5491,9 +5491,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/zombie-buffalo.html",
                      "compareSlugs":  [
+                                          "sea-slug",
                                           "bald-eagle",
-                                          "jellyfish",
-                                          "sea-slug"
+                                          "jellyfish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -8445,8 +8445,8 @@
                      "pageUrl":  "/pets/ring-tailed-lemur.html",
                      "compareSlugs":  [
                                           "hyena",
-                                          "brown-bear",
-                                          "solaris"
+                                          "solaris",
+                                          "aestus"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -8802,8 +8802,8 @@
                      "pageUrl":  "/pets/groundhog.html",
                      "compareSlugs":  [
                                           "happy-clam",
-                                          "tri-horned-treehopper",
-                                          "honey-badger"
+                                          "honey-badger",
+                                          "tri-horned-treehopper"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -8886,8 +8886,8 @@
                      "pageUrl":  "/pets/happy-clam.html",
                      "compareSlugs":  [
                                           "groundhog",
-                                          "tri-horned-treehopper",
-                                          "honey-badger"
+                                          "honey-badger",
+                                          "tri-horned-treehopper"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -10095,8 +10095,8 @@
                      "pageUrl":  "/pets/glacier-moth.html",
                      "compareSlugs":  [
                                           "christmas-pudding-pup",
-                                          "honey-badger",
-                                          "purple-butterfly"
+                                          "purple-butterfly",
+                                          "tri-horned-treehopper"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -10545,8 +10545,8 @@
                      "pageUrl":  "/pets/hare.html",
                      "compareSlugs":  [
                                           "arctic-dusk-dragon",
-                                          "purple-butterfly",
-                                          "alley-cat"
+                                          "alley-cat",
+                                          "glacier-kitsune"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -11925,8 +11925,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/slime.html",
                      "compareSlugs":  [
-                                          "ice-cream-hermit-crab",
                                           "turkey",
+                                          "ice-cream-hermit-crab",
                                           "llama"
                                       ],
                      "origin":  {
@@ -12486,7 +12486,7 @@
                      "compareSlugs":  [
                                           "swan",
                                           "mule",
-                                          "corn-doggo"
+                                          "flaming-fox"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -12570,7 +12570,7 @@
                      "compareSlugs":  [
                                           "husky",
                                           "mule",
-                                          "corn-doggo"
+                                          "flaming-fox"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -12654,7 +12654,7 @@
                      "compareSlugs":  [
                                           "peahen",
                                           "diamond-hamster",
-                                          "hero-gibbon"
+                                          "glormy-hound"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -12738,7 +12738,7 @@
                      "compareSlugs":  [
                                           "peahen",
                                           "corn-doggo",
-                                          "hero-gibbon"
+                                          "glormy-hound"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -12921,7 +12921,7 @@
                      "compareSlugs":  [
                                           "diamond-hamster",
                                           "corn-doggo",
-                                          "hero-gibbon"
+                                          "glormy-hound"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -14482,8 +14482,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/mule.html",
                      "compareSlugs":  [
-                                          "swan",
                                           "husky",
+                                          "swan",
                                           "rhino"
                                       ],
                      "origin":  {
@@ -14761,9 +14761,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/frost-phoenix.html",
                      "compareSlugs":  [
-                                          "ninja-monkey-pet",
+                                          "naughty-mistletroll",
                                           "scorching-kaijunior",
-                                          "naughty-mistletroll"
+                                          "ninja-monkey-pet"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -14845,9 +14845,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/naughty-mistletroll.html",
                      "compareSlugs":  [
-                                          "ninja-monkey-pet",
+                                          "frost-phoenix",
                                           "scorching-kaijunior",
-                                          "frost-phoenix"
+                                          "ninja-monkey-pet"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -14929,9 +14929,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/ninja-monkey-pet.html",
                      "compareSlugs":  [
-                                          "naughty-mistletroll",
+                                          "frost-phoenix",
                                           "scorching-kaijunior",
-                                          "frost-phoenix"
+                                          "naughty-mistletroll"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -15013,9 +15013,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/scorching-kaijunior.html",
                      "compareSlugs":  [
-                                          "naughty-mistletroll",
+                                          "frost-phoenix",
                                           "ninja-monkey-pet",
-                                          "frost-phoenix"
+                                          "naughty-mistletroll"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -15536,8 +15536,8 @@
                      "pageUrl":  "/pets/green-butterfly.html",
                      "compareSlugs":  [
                                           "skele-rex",
-                                          "rainbow-dragon",
-                                          "prismatic-butterfly"
+                                          "prismatic-butterfly",
+                                          "rainbow-dragon"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -18409,8 +18409,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/zombie-wolf.html",
                      "compareSlugs":  [
-                                          "white-sand-dollar",
                                           "red-sand-dollar",
+                                          "white-sand-dollar",
                                           "german-shepherd"
                                       ],
                      "origin":  {
@@ -19134,8 +19134,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/gargoyle.html",
                      "compareSlugs":  [
-                                          "golden-walrus",
                                           "volcanic-rhino",
+                                          "golden-walrus",
                                           "royal-capuchin-monkey"
                                       ],
                      "origin":  {
@@ -19218,8 +19218,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/golden-walrus.html",
                      "compareSlugs":  [
-                                          "gargoyle",
                                           "volcanic-rhino",
+                                          "gargoyle",
                                           "royal-capuchin-monkey"
                                       ],
                      "origin":  {
@@ -19302,8 +19302,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/volcanic-rhino.html",
                      "compareSlugs":  [
-                                          "gargoyle",
                                           "golden-walrus",
+                                          "gargoyle",
                                           "royal-capuchin-monkey"
                                       ],
                      "origin":  {
@@ -19472,7 +19472,7 @@
                      "compareSlugs":  [
                                           "puffer-fish",
                                           "chef-gorilla-pet",
-                                          "white-sand-dollar"
+                                          "red-sand-dollar"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -19555,8 +19555,8 @@
                      "pageUrl":  "/pets/naga-dragon.html",
                      "compareSlugs":  [
                                           "princess-capuchin-monkey-pet",
-                                          "volcanic-rhino",
-                                          "gargoyle"
+                                          "golden-walrus",
+                                          "volcanic-rhino"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -19639,8 +19639,8 @@
                      "pageUrl":  "/pets/princess-capuchin-monkey-pet.html",
                      "compareSlugs":  [
                                           "naga-dragon",
-                                          "volcanic-rhino",
-                                          "gargoyle"
+                                          "golden-walrus",
+                                          "volcanic-rhino"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -20331,7 +20331,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/chameleon.html",
                      "compareSlugs":  [
-                                          "mushroom-friend-pet",
+                                          "sunrise-duckling",
                                           "squid",
                                           "golden-ladybug"
                                       ],
@@ -20430,7 +20430,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/cuddly-candle.html",
                      "compareSlugs":  [
-                                          "mushroom-friend-pet",
+                                          "sunrise-duckling",
                                           "squid",
                                           "golden-ladybug"
                                       ],
@@ -20529,7 +20529,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/golden-ladybug.html",
                      "compareSlugs":  [
-                                          "mushroom-friend-pet",
+                                          "sunrise-duckling",
                                           "squid",
                                           "cuddly-candle"
                                       ],
@@ -20613,7 +20613,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/mushroom-friend-pet.html",
                      "compareSlugs":  [
-                                          "golden-ladybug",
+                                          "sunrise-duckling",
                                           "squid",
                                           "cuddly-candle"
                                       ],
@@ -20781,7 +20781,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/squid.html",
                      "compareSlugs":  [
-                                          "golden-ladybug",
+                                          "sunrise-duckling",
                                           "mushroom-friend-pet",
                                           "cuddly-candle"
                                       ],
@@ -20880,7 +20880,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/sunrise-duckling.html",
                      "compareSlugs":  [
-                                          "golden-ladybug",
+                                          "squid",
                                           "mushroom-friend-pet",
                                           "cuddly-candle"
                                       ],
@@ -20964,8 +20964,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/toy-monkey-pet.html",
                      "compareSlugs":  [
-                                          "black-springer-spaniel",
                                           "brown-springer-spaniel",
+                                          "black-springer-spaniel",
                                           "mini-schnauzer"
                                       ],
                      "origin":  {
@@ -22103,7 +22103,7 @@
                      "compareSlugs":  [
                                           "panda",
                                           "mini-schnauzer",
-                                          "black-springer-spaniel"
+                                          "brown-springer-spaniel"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -22185,9 +22185,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/baku.html",
                      "compareSlugs":  [
+                                          "hippogriff",
                                           "dimorphodon",
-                                          "fleur-de-ice",
-                                          "chocolate-chow-chow"
+                                          "hawk"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -22269,9 +22269,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/black-chow-chow.html",
                      "compareSlugs":  [
+                                          "hippogriff",
                                           "dimorphodon",
-                                          "fleur-de-ice",
-                                          "chocolate-chow-chow"
+                                          "hawk"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -22368,9 +22368,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/chocolate-chow-chow.html",
                      "compareSlugs":  [
+                                          "hippogriff",
                                           "dimorphodon",
-                                          "fleur-de-ice",
-                                          "black-chow-chow"
+                                          "hawk"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -22467,9 +22467,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/dimorphodon.html",
                      "compareSlugs":  [
+                                          "hippogriff",
                                           "chocolate-chow-chow",
-                                          "fleur-de-ice",
-                                          "black-chow-chow"
+                                          "hawk"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -22551,9 +22551,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/fleur-de-ice.html",
                      "compareSlugs":  [
+                                          "hippogriff",
                                           "chocolate-chow-chow",
-                                          "dimorphodon",
-                                          "black-chow-chow"
+                                          "hawk"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -22719,9 +22719,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/hawk.html",
                      "compareSlugs":  [
+                                          "hippogriff",
                                           "chocolate-chow-chow",
-                                          "dimorphodon",
-                                          "black-chow-chow"
+                                          "fleur-de-ice"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -22803,9 +22803,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/hippogriff.html",
                      "compareSlugs":  [
+                                          "hawk",
                                           "chocolate-chow-chow",
-                                          "dimorphodon",
-                                          "black-chow-chow"
+                                          "fleur-de-ice"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -23360,8 +23360,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/chimera.html",
                      "compareSlugs":  [
-                                          "maneki-neko",
                                           "kitsune",
+                                          "maneki-neko",
                                           "ice-moth-dragon"
                                       ],
                      "origin":  {
@@ -23444,8 +23444,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/ice-moth-dragon.html",
                      "compareSlugs":  [
-                                          "maneki-neko",
                                           "kitsune",
+                                          "maneki-neko",
                                           "chimera"
                                       ],
                      "origin":  {
@@ -23618,8 +23618,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/maneki-neko.html",
                      "compareSlugs":  [
-                                          "kitsune",
                                           "ice-moth-dragon",
+                                          "kitsune",
                                           "chimera"
                                       ],
                      "origin":  {
@@ -23703,8 +23703,8 @@
                      "pageUrl":  "/pets/moon-rabbit.html",
                      "compareSlugs":  [
                                           "lynx",
-                                          "ghost-dog",
-                                          "ranger-beaver"
+                                          "ranger-beaver",
+                                          "ghost-dog"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -23955,8 +23955,8 @@
                      "pageUrl":  "/pets/golden-albatross.html",
                      "compareSlugs":  [
                                           "strawberry-shortcake-ducky",
-                                          "mecha-meow",
-                                          "cobra"
+                                          "cobra",
+                                          "robo-dog"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -24054,8 +24054,8 @@
                      "pageUrl":  "/pets/strawberry-shortcake-ducky.html",
                      "compareSlugs":  [
                                           "golden-albatross",
-                                          "mecha-meow",
-                                          "cobra"
+                                          "cobra",
+                                          "robo-dog"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -24572,9 +24572,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/halloween-golden-mummy-cat.html",
                      "compareSlugs":  [
-                                          "mecha-meow",
-                                          "kitty-bat",
-                                          "robo-dog"
+                                          "cobra",
+                                          "robo-dog",
+                                          "mecha-meow"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -24657,8 +24657,8 @@
                      "pageUrl":  "/pets/seabed-creeper.html",
                      "compareSlugs":  [
                                           "snowball-pet",
-                                          "pretty-pony",
-                                          "business-monkey-pet"
+                                          "business-monkey-pet",
+                                          "pretty-pony"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -24994,7 +24994,7 @@
                      "compareSlugs":  [
                                           "scarecrow-crow",
                                           "super-saru",
-                                          "priceless-shrimp"
+                                          "kitty-bat"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -25077,8 +25077,8 @@
                      "pageUrl":  "/pets/business-monkey-pet.html",
                      "compareSlugs":  [
                                           "snowball-pet",
-                                          "wooly-rhino",
-                                          "seabed-creeper"
+                                          "seabed-creeper",
+                                          "wooly-rhino"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -25162,7 +25162,7 @@
                      "compareSlugs":  [
                                           "blue-betta-fish",
                                           "super-saru",
-                                          "priceless-shrimp"
+                                          "kitty-bat"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -25245,8 +25245,8 @@
                      "pageUrl":  "/pets/super-saru.html",
                      "compareSlugs":  [
                                           "blue-betta-fish",
-                                          "emberlight",
-                                          "scarecrow-crow"
+                                          "scarecrow-crow",
+                                          "emberlight"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -25328,9 +25328,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/emberlight.html",
                      "compareSlugs":  [
-                                          "super-saru",
                                           "griffin",
-                                          "frostclaw-pet"
+                                          "super-saru",
+                                          "scarecrow-crow"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -26155,8 +26155,8 @@
                      "pageUrl":  "/pets/berry-cool-cube.html",
                      "compareSlugs":  [
                                           "lunar-moon-bear",
-                                          "villain-gibbon",
-                                          "evil-chick"
+                                          "coconut-friend",
+                                          "villain-gibbon"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -26239,8 +26239,8 @@
                      "pageUrl":  "/pets/lunar-moon-bear.html",
                      "compareSlugs":  [
                                           "berry-cool-cube",
-                                          "villain-gibbon",
-                                          "evil-chick"
+                                          "coconut-friend",
+                                          "villain-gibbon"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -26323,8 +26323,8 @@
                      "pageUrl":  "/pets/evil-chick.html",
                      "compareSlugs":  [
                                           "villain-gibbon",
-                                          "sunglider",
-                                          "berry-cool-cube"
+                                          "berry-cool-cube",
+                                          "lunar-moon-bear"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -26407,8 +26407,8 @@
                      "pageUrl":  "/pets/villain-gibbon.html",
                      "compareSlugs":  [
                                           "evil-chick",
-                                          "sunglider",
-                                          "berry-cool-cube"
+                                          "berry-cool-cube",
+                                          "lunar-moon-bear"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -26490,9 +26490,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/sunglider.html",
                      "compareSlugs":  [
-                                          "dimension-drifter",
                                           "evil-chick",
-                                          "villain-gibbon"
+                                          "villain-gibbon",
+                                          "dimension-drifter"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -26592,8 +26592,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/dimension-drifter.html",
                      "compareSlugs":  [
-                                          "primal-kaijunior",
                                           "sunglider",
+                                          "primal-kaijunior",
                                           "kraken"
                                       ],
                      "origin":  {
@@ -26695,8 +26695,8 @@
                      "pageUrl":  "/pets/kraken.html",
                      "compareSlugs":  [
                                           "primal-kaijunior",
-                                          "slimingo",
-                                          "dimension-drifter"
+                                          "glormy-dolphin",
+                                          "slimingo"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -26779,8 +26779,8 @@
                      "pageUrl":  "/pets/primal-kaijunior.html",
                      "compareSlugs":  [
                                           "kraken",
-                                          "slimingo",
-                                          "dimension-drifter"
+                                          "glormy-dolphin",
+                                          "slimingo"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -27115,8 +27115,8 @@
                      "pageUrl":  "/pets/rosy-maple-moth-pet.html",
                      "compareSlugs":  [
                                           "striped-eggy",
-                                          "glormy-dolphin",
-                                          "slimingo"
+                                          "slimingo",
+                                          "glormy-dolphin"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -27199,8 +27199,8 @@
                      "pageUrl":  "/pets/striped-eggy.html",
                      "compareSlugs":  [
                                           "rosy-maple-moth-pet",
-                                          "angus-bull",
-                                          "fire-mare"
+                                          "fire-mare",
+                                          "angus-bull"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -27452,7 +27452,7 @@
                      "compareSlugs":  [
                                           "shadow-dragon-ducky",
                                           "headless-horse",
-                                          "royal-palace-spaniel"
+                                          "frostbite-cub"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -28239,7 +28239,7 @@
                      "pageUrl":  "/pets/frostbite-cub.html",
                      "compareSlugs":  [
                                           "royal-palace-spaniel",
-                                          "blue-ringed-octopus",
+                                          "horse",
                                           "headless-horse"
                                       ],
                      "origin":  {
@@ -28323,7 +28323,7 @@
                      "pageUrl":  "/pets/royal-palace-spaniel.html",
                      "compareSlugs":  [
                                           "frostbite-cub",
-                                          "blue-ringed-octopus",
+                                          "horse",
                                           "headless-horse"
                                       ],
                      "origin":  {
@@ -28506,8 +28506,8 @@
                      "pageUrl":  "/pets/blue-ringed-octopus.html",
                      "compareSlugs":  [
                                           "horse",
-                                          "royal-palace-spaniel",
-                                          "pupcake"
+                                          "frostbite-cub",
+                                          "royal-palace-spaniel"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -29183,9 +29183,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/pupcake.html",
                      "compareSlugs":  [
+                                          "golden-jaguar",
                                           "horse",
-                                          "blue-ringed-octopus",
-                                          "golden-jaguar"
+                                          "blue-ringed-octopus"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -29435,9 +29435,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/golden-jaguar.html",
                      "compareSlugs":  [
+                                          "pupcake",
                                           "red-squirrel",
-                                          "bunny-swirl",
-                                          "pupcake"
+                                          "bunny-swirl"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -29520,8 +29520,8 @@
                      "pageUrl":  "/pets/bunny-swirl.html",
                      "compareSlugs":  [
                                           "red-squirrel",
-                                          "space-whale",
-                                          "golden-jaguar"
+                                          "golden-jaguar",
+                                          "space-whale"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -29856,8 +29856,8 @@
                      "pageUrl":  "/pets/red-squirrel.html",
                      "compareSlugs":  [
                                           "bunny-swirl",
-                                          "space-whale",
-                                          "golden-jaguar"
+                                          "golden-jaguar",
+                                          "space-whale"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -31320,8 +31320,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/shiver-wolf.html",
                      "compareSlugs":  [
-                                          "tasmanian-devil",
                                           "chipmunk",
+                                          "tasmanian-devil",
                                           "musk-ox"
                                       ],
                      "origin":  {
@@ -32333,8 +32333,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/highland-cow.html",
                      "compareSlugs":  [
-                                          "toasty-red-panda",
                                           "flower-power-duckling",
+                                          "toasty-red-panda",
                                           "evil-basilisk"
                                       ],
                      "origin":  {
@@ -32417,8 +32417,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/hippo.html",
                      "compareSlugs":  [
+                                          "gecko",
                                           "tarsier",
-                                          "chipmunk",
                                           "tasmanian-devil"
                                       ],
                      "origin":  {
@@ -33326,7 +33326,7 @@
                      "compareSlugs":  [
                                           "tarsier",
                                           "hippo",
-                                          "chipmunk"
+                                          "castle-hermit-crab"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -33410,7 +33410,7 @@
                      "compareSlugs":  [
                                           "gecko",
                                           "hippo",
-                                          "chipmunk"
+                                          "castle-hermit-crab"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -33576,8 +33576,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/evil-basilisk.html",
                      "compareSlugs":  [
-                                          "flower-power-duckling",
                                           "toasty-red-panda",
+                                          "flower-power-duckling",
                                           "giant-blue-scarab"
                                       ],
                      "origin":  {
@@ -33661,8 +33661,8 @@
                      "pageUrl":  "/pets/therapy-dog.html",
                      "compareSlugs":  [
                                           "eggnog-dog",
-                                          "wolf",
-                                          "canadian-goose"
+                                          "canadian-goose",
+                                          "wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -33746,7 +33746,7 @@
                      "compareSlugs":  [
                                           "tarsier",
                                           "gecko",
-                                          "cow-calf"
+                                          "moonlight-moth"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -33914,7 +33914,7 @@
                      "compareSlugs":  [
                                           "scarecrow-cat",
                                           "pumpkin-friend",
-                                          "rooster"
+                                          "st-bernard"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -34013,7 +34013,7 @@
                      "compareSlugs":  [
                                           "giant-blue-scarab",
                                           "pumpkin-friend",
-                                          "rooster"
+                                          "st-bernard"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -34095,8 +34095,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/burning-bunny.html",
                      "compareSlugs":  [
-                                          "rooster",
                                           "pumpkin-friend",
+                                          "rooster",
                                           "st-bernard"
                                       ],
                      "origin":  {
@@ -34181,7 +34181,7 @@
                      "compareSlugs":  [
                                           "moonlight-moth",
                                           "leopard-cat",
-                                          "castle-hermit-crab"
+                                          "koi-carp"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -34265,7 +34265,7 @@
                      "compareSlugs":  [
                                           "cow-calf",
                                           "leopard-cat",
-                                          "castle-hermit-crab"
+                                          "koi-carp"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -34347,9 +34347,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/mr-whiskerpips.html",
                      "compareSlugs":  [
-                                          "st-bernard",
-                                          "pumpkin-friend",
-                                          "rooster"
+                                          "burning-bunny",
+                                          "rooster",
+                                          "st-bernard"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -34431,9 +34431,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/pumpkin-friend.html",
                      "compareSlugs":  [
-                                          "st-bernard",
-                                          "mr-whiskerpips",
-                                          "rooster"
+                                          "burning-bunny",
+                                          "rooster",
+                                          "st-bernard"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -34515,9 +34515,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/rooster.html",
                      "compareSlugs":  [
-                                          "st-bernard",
-                                          "mr-whiskerpips",
-                                          "pumpkin-friend"
+                                          "burning-bunny",
+                                          "pumpkin-friend",
+                                          "st-bernard"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -34599,9 +34599,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/st-bernard.html",
                      "compareSlugs":  [
-                                          "rooster",
-                                          "mr-whiskerpips",
-                                          "pumpkin-friend"
+                                          "burning-bunny",
+                                          "pumpkin-friend",
+                                          "rooster"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -34768,8 +34768,8 @@
                      "pageUrl":  "/pets/evil-chickatrice.html",
                      "compareSlugs":  [
                                           "preppy-capuchin-monkey-pet",
-                                          "merry-mistletroll",
-                                          "rooster"
+                                          "frog",
+                                          "pumpkin-friend"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -34852,8 +34852,8 @@
                      "pageUrl":  "/pets/leopard-cat.html",
                      "compareSlugs":  [
                                           "koi-carp",
-                                          "moonlight-moth",
-                                          "cow-calf"
+                                          "cow-calf",
+                                          "moonlight-moth"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -34936,8 +34936,8 @@
                      "pageUrl":  "/pets/preppy-capuchin-monkey-pet.html",
                      "compareSlugs":  [
                                           "evil-chickatrice",
-                                          "merry-mistletroll",
-                                          "rooster"
+                                          "frog",
+                                          "pumpkin-friend"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -35019,9 +35019,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/frog.html",
                      "compareSlugs":  [
-                                          "koala",
+                                          "kage-crow",
                                           "merry-mistletroll",
-                                          "kage-crow"
+                                          "inmate-capuchin-monkey-pet"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -35103,9 +35103,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/inmate-capuchin-monkey-pet.html",
                      "compareSlugs":  [
-                                          "koala",
+                                          "kage-crow",
                                           "merry-mistletroll",
-                                          "kage-crow"
+                                          "frog"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -35187,9 +35187,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/kage-crow.html",
                      "compareSlugs":  [
-                                          "koala",
+                                          "inmate-capuchin-monkey-pet",
                                           "merry-mistletroll",
-                                          "inmate-capuchin-monkey-pet"
+                                          "frog"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -35362,7 +35362,7 @@
                      "pageUrl":  "/pets/koi-carp.html",
                      "compareSlugs":  [
                                           "leopard-cat",
-                                          "cow-calf",
+                                          "moonlight-moth",
                                           "goldfish"
                                       ],
                      "origin":  {
@@ -35445,9 +35445,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/merry-mistletroll.html",
                      "compareSlugs":  [
-                                          "kage-crow",
+                                          "inmate-capuchin-monkey-pet",
                                           "koala",
-                                          "inmate-capuchin-monkey-pet"
+                                          "frog"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -35531,7 +35531,7 @@
                      "compareSlugs":  [
                                           "peregrine-falcon",
                                           "manta-ray",
-                                          "mirai-moth"
+                                          "peachick"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -35615,7 +35615,7 @@
                      "compareSlugs":  [
                                           "peregrine-falcon",
                                           "candy-cane-snail",
-                                          "mirai-moth"
+                                          "peachick"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -35699,7 +35699,7 @@
                      "compareSlugs":  [
                                           "manta-ray",
                                           "candy-cane-snail",
-                                          "mirai-moth"
+                                          "peachick"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -35783,7 +35783,7 @@
                      "compareSlugs":  [
                                           "peachick",
                                           "mirai-moth",
-                                          "halloween-white-skeleton-dog"
+                                          "partridge"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -35866,8 +35866,8 @@
                      "pageUrl":  "/pets/goldfish.html",
                      "compareSlugs":  [
                                           "longhorn-cow",
-                                          "cassowary",
-                                          "koi-carp"
+                                          "summer-walrus",
+                                          "cassowary"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -35951,7 +35951,7 @@
                      "compareSlugs":  [
                                           "peachick",
                                           "albino-bat",
-                                          "halloween-white-skeleton-dog"
+                                          "partridge"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -36035,7 +36035,7 @@
                      "compareSlugs":  [
                                           "mirai-moth",
                                           "albino-bat",
-                                          "halloween-white-skeleton-dog"
+                                          "partridge"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -36216,9 +36216,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/glyptodon.html",
                      "compareSlugs":  [
-                                          "dylan",
-                                          "lobster",
-                                          "pistachio"
+                                          "pistachio",
+                                          "river",
+                                          "lobster"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -36722,7 +36722,7 @@
                      "compareSlugs":  [
                                           "vermilion-butterfly",
                                           "nightmare-owl",
-                                          "clownfish"
+                                          "indian-flying-fox"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -36890,7 +36890,7 @@
                      "compareSlugs":  [
                                           "vermilion-butterfly",
                                           "king-penguin",
-                                          "clownfish"
+                                          "indian-flying-fox"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -37058,7 +37058,7 @@
                      "compareSlugs":  [
                                           "nightmare-owl",
                                           "king-penguin",
-                                          "clownfish"
+                                          "indian-flying-fox"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -37308,9 +37308,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/halloween-evil-dachshund.html",
                      "compareSlugs":  [
-                                          "mecha-r4bbit",
                                           "cassowary",
-                                          "summer-walrus"
+                                          "summer-walrus",
+                                          "mecha-r4bbit"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -37576,7 +37576,7 @@
                      "pageUrl":  "/pets/brown-chested-pheasant.html",
                      "compareSlugs":  [
                                           "momma-moose",
-                                          "green-amazon",
+                                          "water-moon-bear",
                                           "seagull"
                                       ],
                      "origin":  {
@@ -37843,7 +37843,7 @@
                      "pageUrl":  "/pets/green-amazon.html",
                      "compareSlugs":  [
                                           "momma-moose",
-                                          "brown-chested-pheasant",
+                                          "water-moon-bear",
                                           "seagull"
                                       ],
                      "origin":  {
@@ -37941,9 +37941,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/lobster.html",
                      "compareSlugs":  [
-                                          "dylan",
                                           "pistachio",
-                                          "river"
+                                          "river",
+                                          "dylan"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -38026,8 +38026,8 @@
                      "pageUrl":  "/pets/momma-moose.html",
                      "compareSlugs":  [
                                           "green-amazon",
-                                          "brown-chested-pheasant",
-                                          "water-moon-bear"
+                                          "water-moon-bear",
+                                          "seagull"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -38124,9 +38124,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/pistachio.html",
                      "compareSlugs":  [
+                                          "lobster",
                                           "dylan",
-                                          "river",
-                                          "lobster"
+                                          "river"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -38209,7 +38209,7 @@
                      "pageUrl":  "/pets/pudding-cat.html",
                      "compareSlugs":  [
                                           "halloween-evil-dachshund",
-                                          "cassowary",
+                                          "mecha-r4bbit",
                                           "summer-walrus"
                                       ],
                      "origin":  {
@@ -38376,9 +38376,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/seagull.html",
                      "compareSlugs":  [
-                                          "momma-moose",
                                           "green-amazon",
-                                          "brown-chested-pheasant"
+                                          "water-moon-bear",
+                                          "momma-moose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -38460,9 +38460,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/water-moon-bear.html",
                      "compareSlugs":  [
-                                          "momma-moose",
                                           "green-amazon",
-                                          "brown-chested-pheasant"
+                                          "seagull",
+                                          "momma-moose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -38544,8 +38544,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/albatross.html",
                      "compareSlugs":  [
+                                          "giant-black-scarab",
                                           "fanghorn-tortoise",
-                                          "wildfire-hawk",
                                           "rice-cake-rabbit"
                                       ],
                      "origin":  {
@@ -38643,8 +38643,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/fanghorn-tortoise.html",
                      "compareSlugs":  [
+                                          "giant-black-scarab",
                                           "albatross",
-                                          "wildfire-hawk",
                                           "rice-cake-rabbit"
                                       ],
                      "origin":  {
@@ -38727,8 +38727,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/giant-black-scarab.html",
                      "compareSlugs":  [
+                                          "fanghorn-tortoise",
                                           "albatross",
-                                          "wildfire-hawk",
                                           "rice-cake-rabbit"
                                       ],
                      "origin":  {
@@ -38826,8 +38826,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/rice-cake-rabbit.html",
                      "compareSlugs":  [
+                                          "fanghorn-tortoise",
                                           "albatross",
-                                          "wildfire-hawk",
                                           "giant-black-scarab"
                                       ],
                      "origin":  {
@@ -38910,8 +38910,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/tanuki.html",
                      "compareSlugs":  [
+                                          "pistachio",
                                           "lobster",
-                                          "dylan",
                                           "raccoon"
                                       ],
                      "origin":  {
@@ -38994,9 +38994,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/wildfire-hawk.html",
                      "compareSlugs":  [
+                                          "fanghorn-tortoise",
                                           "albatross",
-                                          "rice-cake-rabbit",
-                                          "fanghorn-tortoise"
+                                          "giant-black-scarab"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -39078,7 +39078,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/bauble-buddies.html",
                      "compareSlugs":  [
-                                          "shetland-pony-white",
+                                          "snowball-pug",
                                           "sprout-snail",
                                           "ringmaster-gibbon-pet"
                                       ],
@@ -39163,8 +39163,8 @@
                      "pageUrl":  "/pets/kappakid.html",
                      "compareSlugs":  [
                                           "subzero-scorpion",
-                                          "ibex",
-                                          "sweetheart-rat"
+                                          "sweetheart-rat",
+                                          "ibex"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -39247,8 +39247,8 @@
                      "pageUrl":  "/pets/raccoon.html",
                      "compareSlugs":  [
                                           "tanuki",
-                                          "pistachio",
-                                          "river"
+                                          "2021-uplift-butterfly",
+                                          "pistachio"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -39330,7 +39330,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/ringmaster-gibbon-pet.html",
                      "compareSlugs":  [
-                                          "shetland-pony-white",
+                                          "snowball-pug",
                                           "sprout-snail",
                                           "bauble-buddies"
                                       ],
@@ -39414,7 +39414,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/seafoam-butterfly.html",
                      "compareSlugs":  [
-                                          "shetland-pony-white",
+                                          "snowball-pug",
                                           "sprout-snail",
                                           "bauble-buddies"
                                       ],
@@ -39498,7 +39498,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/shetland-pony-white.html",
                      "compareSlugs":  [
-                                          "seafoam-butterfly",
+                                          "snowball-pug",
                                           "sprout-snail",
                                           "bauble-buddies"
                                       ],
@@ -39582,7 +39582,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/snowball-pug.html",
                      "compareSlugs":  [
-                                          "seafoam-butterfly",
+                                          "shetland-pony-white",
                                           "sprout-snail",
                                           "bauble-buddies"
                                       ],
@@ -39666,7 +39666,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/sprout-snail.html",
                      "compareSlugs":  [
-                                          "seafoam-butterfly",
+                                          "shetland-pony-white",
                                           "snowball-pug",
                                           "bauble-buddies"
                                       ],
@@ -39751,8 +39751,8 @@
                      "pageUrl":  "/pets/subzero-scorpion.html",
                      "compareSlugs":  [
                                           "kappakid",
-                                          "ibex",
-                                          "love-bird"
+                                          "sweetheart-rat",
+                                          "ibex"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -39834,9 +39834,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/elasmosaurus.html",
                      "compareSlugs":  [
-                                          "magma-moose",
-                                          "hummingbird",
-                                          "firefighter-gibbon"
+                                          "officer-gibbon",
+                                          "praying-mantis-pet",
+                                          "magma-moose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -39918,9 +39918,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/firefighter-gibbon.html",
                      "compareSlugs":  [
-                                          "magma-moose",
-                                          "hummingbird",
-                                          "elasmosaurus"
+                                          "officer-gibbon",
+                                          "praying-mantis-pet",
+                                          "magma-moose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -40002,9 +40002,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/hummingbird.html",
                      "compareSlugs":  [
-                                          "magma-moose",
-                                          "firefighter-gibbon",
-                                          "elasmosaurus"
+                                          "officer-gibbon",
+                                          "praying-mantis-pet",
+                                          "magma-moose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -40101,9 +40101,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/ibex.html",
                      "compareSlugs":  [
-                                          "love-bird",
                                           "sweetheart-rat",
-                                          "ostrich"
+                                          "love-bird",
+                                          "rat"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -40185,9 +40185,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/love-bird.html",
                      "compareSlugs":  [
-                                          "ibex",
                                           "sweetheart-rat",
-                                          "ostrich"
+                                          "ibex",
+                                          "rat"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -40269,9 +40269,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/magma-moose.html",
                      "compareSlugs":  [
-                                          "hummingbird",
-                                          "firefighter-gibbon",
-                                          "elasmosaurus"
+                                          "officer-gibbon",
+                                          "praying-mantis-pet",
+                                          "magma-snail"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -40353,9 +40353,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/magma-snail.html",
                      "compareSlugs":  [
-                                          "hummingbird",
-                                          "firefighter-gibbon",
-                                          "elasmosaurus"
+                                          "officer-gibbon",
+                                          "praying-mantis-pet",
+                                          "magma-moose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -40437,9 +40437,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/officer-gibbon.html",
                      "compareSlugs":  [
-                                          "hummingbird",
-                                          "firefighter-gibbon",
-                                          "elasmosaurus"
+                                          "magma-snail",
+                                          "praying-mantis-pet",
+                                          "magma-moose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -40521,9 +40521,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/praying-mantis-pet.html",
                      "compareSlugs":  [
-                                          "hummingbird",
-                                          "firefighter-gibbon",
-                                          "elasmosaurus"
+                                          "magma-snail",
+                                          "officer-gibbon",
+                                          "magma-moose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -40605,9 +40605,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/sweetheart-rat.html",
                      "compareSlugs":  [
-                                          "ibex",
                                           "love-bird",
-                                          "red-fox"
+                                          "ibex",
+                                          "rat"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -40689,9 +40689,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/winter-doe.html",
                      "compareSlugs":  [
-                                          "hummingbird",
-                                          "firefighter-gibbon",
-                                          "elasmosaurus"
+                                          "magma-snail",
+                                          "officer-gibbon",
+                                          "magma-moose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -40773,9 +40773,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/2021-uplift-butterfly.html",
                      "compareSlugs":  [
+                                          "2022-uplift-butterfly",
                                           "raccoon",
-                                          "ermine",
-                                          "2022-uplift-butterfly"
+                                          "ermine"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -40941,9 +40941,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/feesh.html",
                      "compareSlugs":  [
+                                          "rat",
                                           "ostrich",
-                                          "toy-poodle",
-                                          "rat"
+                                          "red-fox"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -41027,7 +41027,7 @@
                      "compareSlugs":  [
                                           "sloth",
                                           "snowy-mammoth",
-                                          "icy-porcupine"
+                                          "pink-betta-fish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -41126,7 +41126,7 @@
                      "compareSlugs":  [
                                           "sloth",
                                           "snowy-mammoth",
-                                          "icy-porcupine"
+                                          "pink-betta-fish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -41210,7 +41210,7 @@
                      "compareSlugs":  [
                                           "sloth",
                                           "snowy-mammoth",
-                                          "ghostly-cat"
+                                          "pink-betta-fish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -41292,9 +41292,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/ostrich.html",
                      "compareSlugs":  [
+                                          "rat",
                                           "feesh",
-                                          "toy-poodle",
-                                          "rat"
+                                          "red-fox"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -41378,7 +41378,7 @@
                      "compareSlugs":  [
                                           "sloth",
                                           "snowy-mammoth",
-                                          "ghostly-cat"
+                                          "frozen-penguin"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -41460,9 +41460,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/rat.html",
                      "compareSlugs":  [
+                                          "ostrich",
                                           "feesh",
-                                          "toy-poodle",
-                                          "ostrich"
+                                          "red-fox"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -41544,9 +41544,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/red-fox.html",
                      "compareSlugs":  [
+                                          "ostrich",
                                           "feesh",
-                                          "toy-poodle",
-                                          "ostrich"
+                                          "rat"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -41630,7 +41630,7 @@
                      "compareSlugs":  [
                                           "pink-betta-fish",
                                           "snowy-mammoth",
-                                          "ghostly-cat"
+                                          "frozen-penguin"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -41729,7 +41729,7 @@
                      "compareSlugs":  [
                                           "pink-betta-fish",
                                           "sloth",
-                                          "ghostly-cat"
+                                          "frozen-penguin"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -41811,9 +41811,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/toy-poodle.html",
                      "compareSlugs":  [
+                                          "ostrich",
                                           "feesh",
-                                          "red-fox",
-                                          "ostrich"
+                                          "rat"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -41895,7 +41895,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/bird-of-paradise.html",
                      "compareSlugs":  [
-                                          "singularity-pisces",
+                                          "violet-friend",
                                           "sasquatch",
                                           "punk-pony"
                                       ],
@@ -41979,9 +41979,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/black-kite.html",
                      "compareSlugs":  [
-                                          "ghost-chick",
-                                          "choco-penguin",
-                                          "komodo-dragon"
+                                          "maine-coon",
+                                          "komodo-dragon",
+                                          "wyvern"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -42063,9 +42063,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/choco-penguin.html",
                      "compareSlugs":  [
-                                          "ghost-chick",
-                                          "black-kite",
-                                          "komodo-dragon"
+                                          "maine-coon",
+                                          "komodo-dragon",
+                                          "wyvern"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -42162,9 +42162,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/ghost-chick.html",
                      "compareSlugs":  [
-                                          "choco-penguin",
-                                          "black-kite",
-                                          "komodo-dragon"
+                                          "maine-coon",
+                                          "komodo-dragon",
+                                          "wyvern"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -42246,9 +42246,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/komodo-dragon.html",
                      "compareSlugs":  [
-                                          "choco-penguin",
-                                          "black-kite",
-                                          "ghost-chick"
+                                          "maine-coon",
+                                          "ghost-chick",
+                                          "wyvern"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -42330,9 +42330,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/maine-coon.html",
                      "compareSlugs":  [
-                                          "choco-penguin",
-                                          "black-kite",
-                                          "ghost-chick"
+                                          "komodo-dragon",
+                                          "ghost-chick",
+                                          "wyvern"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -42414,7 +42414,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/punk-pony.html",
                      "compareSlugs":  [
-                                          "singularity-pisces",
+                                          "violet-friend",
                                           "sasquatch",
                                           "bird-of-paradise"
                                       ],
@@ -42498,9 +42498,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/puptune.html",
                      "compareSlugs":  [
-                                          "choco-penguin",
-                                          "black-kite",
-                                          "ghost-chick"
+                                          "komodo-dragon",
+                                          "ghost-chick",
+                                          "wyvern"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -42600,7 +42600,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/sasquatch.html",
                      "compareSlugs":  [
-                                          "singularity-pisces",
+                                          "violet-friend",
                                           "punk-pony",
                                           "bird-of-paradise"
                                       ],
@@ -42684,7 +42684,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/singularity-pisces.html",
                      "compareSlugs":  [
-                                          "sasquatch",
+                                          "violet-friend",
                                           "punk-pony",
                                           "bird-of-paradise"
                                       ],
@@ -42743,6 +42743,60 @@
                                 }
                  },
                  {
+                     "slug":  "violet-friend",
+                     "name":  "Violet Friend",
+                     "rarityCode":  "r",
+                     "rarity":  "Rare",
+                     "image":  "/assets/pets/violet-friend.svg",
+                     "source":  "override",
+                     "benchmark":  false,
+                     "segment":  "Entry tier",
+                     "demand":  "Reference",
+                     "trend":  "Current lane",
+                     "values":  {
+                                    "default":  0.62,
+                                    "noPotion":  0.17,
+                                    "neon":  1.6,
+                                    "neonNoPotion":  1.05,
+                                    "mega":  6.5,
+                                    "megaNoPotion":  4.5
+                                },
+                     "notes":  "This page follows the same broad value lane used by the site\u0027s calculator for current long-tail trade checks.",
+                     "pageLabel":  "Current guide",
+                     "supportLabel":  "Entry tier",
+                     "supportTone":  "Current guide",
+                     "marketStatus":  "",
+                     "pageUrl":  "/pets/violet-friend.html",
+                     "compareSlugs":  [
+                                          "singularity-pisces",
+                                          "punk-pony",
+                                          "bird-of-paradise"
+                                      ],
+                     "origin":  {
+                                    "audited":  false,
+                                    "sources":  [
+
+                                                ],
+                                    "sourceCount":  0,
+                                    "firstSource":  null,
+                                    "currentSources":  [
+
+                                                       ],
+                                    "currentSourceLabels":  [
+
+                                                            ],
+                                    "sourceLabels":  [
+
+                                                     ],
+                                    "eventLabels":  [
+
+                                                    ],
+                                    "releaseYears":  [
+
+                                                     ]
+                                }
+                 },
+                 {
                      "slug":  "wyvern",
                      "name":  "Wyvern",
                      "rarityCode":  "ur",
@@ -42768,9 +42822,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/wyvern.html",
                      "compareSlugs":  [
-                                          "choco-penguin",
-                                          "black-kite",
-                                          "ghost-chick"
+                                          "komodo-dragon",
+                                          "ghost-chick",
+                                          "puptune"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -42854,7 +42908,7 @@
                      "compareSlugs":  [
                                           "ermine",
                                           "old-king-coal",
-                                          "birthday-butterfly-2024"
+                                          "eel"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -42936,9 +42990,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/deinonychus.html",
                      "compareSlugs":  [
-                                          "sabertooth",
+                                          "tan-chow-chow",
                                           "skunk-pet",
-                                          "tan-chow-chow"
+                                          "sabertooth"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -43022,7 +43076,7 @@
                      "compareSlugs":  [
                                           "2022-uplift-butterfly",
                                           "old-king-coal",
-                                          "birthday-butterfly-2024"
+                                          "eel"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -43104,9 +43158,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/sabertooth.html",
                      "compareSlugs":  [
-                                          "deinonychus",
+                                          "tan-chow-chow",
                                           "skunk-pet",
-                                          "tan-chow-chow"
+                                          "deinonychus"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -43190,7 +43244,7 @@
                      "compareSlugs":  [
                                           "starhopper",
                                           "undead-elk",
-                                          "steppe-lion"
+                                          "singularity-pisces"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -43272,9 +43326,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/skunk-pet.html",
                      "compareSlugs":  [
-                                          "deinonychus",
+                                          "tan-chow-chow",
                                           "sabertooth",
-                                          "tan-chow-chow"
+                                          "deinonychus"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -43358,7 +43412,7 @@
                      "compareSlugs":  [
                                           "singularity-beetle",
                                           "undead-elk",
-                                          "steppe-lion"
+                                          "singularity-pisces"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -43440,9 +43494,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/tan-chow-chow.html",
                      "compareSlugs":  [
-                                          "deinonychus",
+                                          "skunk-pet",
                                           "sabertooth",
-                                          "skunk-pet"
+                                          "deinonychus"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -43541,7 +43595,7 @@
                      "compareSlugs":  [
                                           "singularity-beetle",
                                           "starhopper",
-                                          "steppe-lion"
+                                          "singularity-pisces"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -43623,9 +43677,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/bloodhound.html",
                      "compareSlugs":  [
-                                          "nutcracker-squirrel",
+                                          "clover-cow",
                                           "steppe-lion",
-                                          "clover-cow"
+                                          "nutcracker-squirrel"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -43791,9 +43845,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/clementine-owl.html",
                      "compareSlugs":  [
-                                          "roadrunner",
-                                          "mrs-whiskerpips",
-                                          "scarlet-butterfly"
+                                          "deathstalker-scorpion",
+                                          "dire-wolf",
+                                          "gingerbread-mouse"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -43891,8 +43945,8 @@
                      "pageUrl":  "/pets/clover-cow.html",
                      "compareSlugs":  [
                                           "bloodhound",
-                                          "nutcracker-squirrel",
-                                          "steppe-lion"
+                                          "steppe-lion",
+                                          "nutcracker-squirrel"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -43975,8 +44029,8 @@
                      "pageUrl":  "/pets/deathstalker-scorpion.html",
                      "compareSlugs":  [
                                           "roadrunner",
-                                          "mrs-whiskerpips",
-                                          "scarlet-butterfly"
+                                          "dire-wolf",
+                                          "gingerbread-mouse"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -44076,8 +44130,8 @@
                      "pageUrl":  "/pets/dire-wolf.html",
                      "compareSlugs":  [
                                           "roadrunner",
-                                          "mrs-whiskerpips",
-                                          "scarlet-butterfly"
+                                          "deathstalker-scorpion",
+                                          "gingerbread-mouse"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -44160,8 +44214,8 @@
                      "pageUrl":  "/pets/gingerbread-mouse.html",
                      "compareSlugs":  [
                                           "roadrunner",
-                                          "mrs-whiskerpips",
-                                          "scarlet-butterfly"
+                                          "deathstalker-scorpion",
+                                          "dire-wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -44244,8 +44298,8 @@
                      "pageUrl":  "/pets/grave-owl.html",
                      "compareSlugs":  [
                                           "roadrunner",
-                                          "mrs-whiskerpips",
-                                          "scarlet-butterfly"
+                                          "deathstalker-scorpion",
+                                          "dire-wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -44328,8 +44382,8 @@
                      "pageUrl":  "/pets/hydra.html",
                      "compareSlugs":  [
                                           "roadrunner",
-                                          "mrs-whiskerpips",
-                                          "scarlet-butterfly"
+                                          "deathstalker-scorpion",
+                                          "dire-wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -44412,8 +44466,8 @@
                      "pageUrl":  "/pets/ladybug.html",
                      "compareSlugs":  [
                                           "roadrunner",
-                                          "mrs-whiskerpips",
-                                          "scarlet-butterfly"
+                                          "deathstalker-scorpion",
+                                          "dire-wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -44496,8 +44550,8 @@
                      "pageUrl":  "/pets/lammergeier.html",
                      "compareSlugs":  [
                                           "roadrunner",
-                                          "mrs-whiskerpips",
-                                          "scarlet-butterfly"
+                                          "deathstalker-scorpion",
+                                          "dire-wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -44580,8 +44634,8 @@
                      "pageUrl":  "/pets/mrs-whiskerpips.html",
                      "compareSlugs":  [
                                           "roadrunner",
-                                          "lammergeier",
-                                          "scarlet-butterfly"
+                                          "deathstalker-scorpion",
+                                          "dire-wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -44832,8 +44886,8 @@
                      "pageUrl":  "/pets/ornate-horned-frog.html",
                      "compareSlugs":  [
                                           "roadrunner",
-                                          "lammergeier",
-                                          "scarlet-butterfly"
+                                          "deathstalker-scorpion",
+                                          "dire-wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -44916,8 +44970,8 @@
                      "pageUrl":  "/pets/roadrunner.html",
                      "compareSlugs":  [
                                           "ornate-horned-frog",
-                                          "lammergeier",
-                                          "scarlet-butterfly"
+                                          "deathstalker-scorpion",
+                                          "dire-wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -45017,8 +45071,8 @@
                      "pageUrl":  "/pets/scarlet-butterfly.html",
                      "compareSlugs":  [
                                           "ornate-horned-frog",
-                                          "lammergeier",
-                                          "roadrunner"
+                                          "deathstalker-scorpion",
+                                          "dire-wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -45159,6 +45213,60 @@
                                 }
                  },
                  {
+                     "slug":  "sunflower-friend",
+                     "name":  "Sunflower Friend",
+                     "rarityCode":  "r",
+                     "rarity":  "Rare",
+                     "image":  "/assets/pets/sunflower-friend.svg",
+                     "source":  "override",
+                     "benchmark":  false,
+                     "segment":  "Entry tier",
+                     "demand":  "Reference",
+                     "trend":  "Current lane",
+                     "values":  {
+                                    "default":  0.6,
+                                    "noPotion":  0.15,
+                                    "neon":  1.5,
+                                    "neonNoPotion":  0.95,
+                                    "mega":  6,
+                                    "megaNoPotion":  4
+                                },
+                     "notes":  "This page follows the same broad value lane used by the site\u0027s calculator for current long-tail trade checks.",
+                     "pageLabel":  "Current guide",
+                     "supportLabel":  "Entry tier",
+                     "supportTone":  "Current guide",
+                     "marketStatus":  "",
+                     "pageUrl":  "/pets/sunflower-friend.html",
+                     "compareSlugs":  [
+                                          "bloodhound",
+                                          "nutcracker-squirrel",
+                                          "clover-cow"
+                                      ],
+                     "origin":  {
+                                    "audited":  false,
+                                    "sources":  [
+
+                                                ],
+                                    "sourceCount":  0,
+                                    "firstSource":  null,
+                                    "currentSources":  [
+
+                                                       ],
+                                    "currentSourceLabels":  [
+
+                                                            ],
+                                    "sourceLabels":  [
+
+                                                     ],
+                                    "eventLabels":  [
+
+                                                    ],
+                                    "releaseYears":  [
+
+                                                     ]
+                                }
+                 },
+                 {
                      "slug":  "vulture",
                      "name":  "Vulture",
                      "rarityCode":  "ur",
@@ -45185,8 +45293,8 @@
                      "pageUrl":  "/pets/vulture.html",
                      "compareSlugs":  [
                                           "ornate-horned-frog",
-                                          "lammergeier",
-                                          "roadrunner"
+                                          "deathstalker-scorpion",
+                                          "dire-wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -45285,9 +45393,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/basilisk.html",
                      "compareSlugs":  [
+                                          "nebula-snake",
                                           "prism-snake",
-                                          "blossom-snake",
-                                          "nebula-snake"
+                                          "blossom-snake"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -45370,8 +45478,8 @@
                      "pageUrl":  "/pets/birthday-butterfly-2024.html",
                      "compareSlugs":  [
                                           "snow-leopard",
-                                          "crab",
-                                          "eel"
+                                          "eel",
+                                          "crab"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -45453,9 +45561,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/blossom-snake.html",
                      "compareSlugs":  [
+                                          "nebula-snake",
                                           "prism-snake",
-                                          "basilisk",
-                                          "nebula-snake"
+                                          "basilisk"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -45537,9 +45645,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/chilling-spider.html",
                      "compareSlugs":  [
-                                          "gumball-caterpillar",
-                                          "toxic-kaijunior",
-                                          "orca"
+                                          "pomeranian",
+                                          "red-crowned-crane",
+                                          "cold-cube"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -45621,9 +45729,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/cold-cube.html",
                      "compareSlugs":  [
-                                          "gumball-caterpillar",
-                                          "toxic-kaijunior",
-                                          "orca"
+                                          "pomeranian",
+                                          "red-crowned-crane",
+                                          "chilling-spider"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -45705,9 +45813,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/crab.html",
                      "compareSlugs":  [
-                                          "birthday-butterfly-2024",
+                                          "eel",
                                           "snow-leopard",
-                                          "eel"
+                                          "birthday-butterfly-2024"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -45789,9 +45897,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/eel.html",
                      "compareSlugs":  [
-                                          "birthday-butterfly-2024",
+                                          "crab",
                                           "snow-leopard",
-                                          "crab"
+                                          "birthday-butterfly-2024"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -45873,9 +45981,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/gumball-caterpillar.html",
                      "compareSlugs":  [
-                                          "toxic-kaijunior",
-                                          "cold-cube",
-                                          "orca"
+                                          "pomeranian",
+                                          "red-crowned-crane",
+                                          "chilling-spider"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -45957,9 +46065,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/nebula-snake.html",
                      "compareSlugs":  [
+                                          "blossom-snake",
                                           "prism-snake",
-                                          "basilisk",
-                                          "blossom-snake"
+                                          "basilisk"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -46041,9 +46149,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/orca.html",
                      "compareSlugs":  [
-                                          "toxic-kaijunior",
-                                          "cold-cube",
-                                          "gumball-caterpillar"
+                                          "pomeranian",
+                                          "red-crowned-crane",
+                                          "chilling-spider"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -46174,9 +46282,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/pomeranian.html",
                      "compareSlugs":  [
-                                          "toxic-kaijunior",
-                                          "cold-cube",
-                                          "gumball-caterpillar"
+                                          "orca",
+                                          "red-crowned-crane",
+                                          "chilling-spider"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -46307,9 +46415,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/prism-snake.html",
                      "compareSlugs":  [
+                                          "blossom-snake",
                                           "nebula-snake",
-                                          "basilisk",
-                                          "blossom-snake"
+                                          "basilisk"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -46391,9 +46499,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/red-crowned-crane.html",
                      "compareSlugs":  [
-                                          "toxic-kaijunior",
-                                          "cold-cube",
-                                          "gumball-caterpillar"
+                                          "orca",
+                                          "pomeranian",
+                                          "chilling-spider"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -46475,9 +46583,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/snow-leopard.html",
                      "compareSlugs":  [
-                                          "birthday-butterfly-2024",
+                                          "crab",
                                           "eel",
-                                          "crab"
+                                          "birthday-butterfly-2024"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -46559,9 +46667,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/spider-crab.html",
                      "compareSlugs":  [
-                                          "toxic-kaijunior",
-                                          "cold-cube",
-                                          "gumball-caterpillar"
+                                          "orca",
+                                          "pomeranian",
+                                          "chilling-spider"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -46643,9 +46751,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/toxic-kaijunior.html",
                      "compareSlugs":  [
-                                          "spider-crab",
-                                          "cold-cube",
-                                          "gumball-caterpillar"
+                                          "orca",
+                                          "pomeranian",
+                                          "chilling-spider"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -46727,9 +46835,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/trapdoor-snail.html",
                      "compareSlugs":  [
-                                          "spider-crab",
-                                          "cold-cube",
-                                          "gumball-caterpillar"
+                                          "orca",
+                                          "pomeranian",
+                                          "chilling-spider"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -46811,9 +46919,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/ankylosaurus.html",
                      "compareSlugs":  [
-                                          "pterodactyl",
-                                          "dilophosaurus",
-                                          "the-black-dog"
+                                          "halloween-white-mummy-cat",
+                                          "the-black-dog",
+                                          "dilophosaurus"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -46896,8 +47004,8 @@
                      "pageUrl":  "/pets/cozy-mistletroll.html",
                      "compareSlugs":  [
                                           "kelp-hunter",
-                                          "salamander",
-                                          "pine-marten"
+                                          "skelebat",
+                                          "salamander"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -46979,9 +47087,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/cute-a-cabra.html",
                      "compareSlugs":  [
-                                          "snowman",
                                           "dolphin",
-                                          "stegosaurus"
+                                          "snowman",
+                                          "chickatrice"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47063,9 +47171,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/dilophosaurus.html",
                      "compareSlugs":  [
-                                          "pterodactyl",
-                                          "ankylosaurus",
-                                          "the-black-dog"
+                                          "halloween-white-mummy-cat",
+                                          "the-black-dog",
+                                          "ankylosaurus"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47147,9 +47255,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/dolphin.html",
                      "compareSlugs":  [
-                                          "snowman",
                                           "cute-a-cabra",
-                                          "stegosaurus"
+                                          "snowman",
+                                          "chickatrice"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47231,9 +47339,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/halloween-white-mummy-cat.html",
                      "compareSlugs":  [
-                                          "pterodactyl",
-                                          "ankylosaurus",
-                                          "the-black-dog"
+                                          "dilophosaurus",
+                                          "the-black-dog",
+                                          "ankylosaurus"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47315,9 +47423,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/kelp-hunter.html",
                      "compareSlugs":  [
-                                          "cozy-mistletroll",
+                                          "pine-marten",
                                           "salamander",
-                                          "pine-marten"
+                                          "skelebat"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47399,9 +47507,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/marabou-stork.html",
                      "compareSlugs":  [
-                                          "pterodactyl",
-                                          "ankylosaurus",
-                                          "the-black-dog"
+                                          "dilophosaurus",
+                                          "the-black-dog",
+                                          "ankylosaurus"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47483,9 +47591,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/narwhal.html",
                      "compareSlugs":  [
-                                          "pterodactyl",
-                                          "ankylosaurus",
-                                          "the-black-dog"
+                                          "dilophosaurus",
+                                          "the-black-dog",
+                                          "ankylosaurus"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47567,9 +47675,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/pine-marten.html",
                      "compareSlugs":  [
-                                          "cozy-mistletroll",
+                                          "kelp-hunter",
                                           "salamander",
-                                          "kelp-hunter"
+                                          "skelebat"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47652,8 +47760,8 @@
                      "pageUrl":  "/pets/pterodactyl.html",
                      "compareSlugs":  [
                                           "dilophosaurus",
-                                          "ankylosaurus",
-                                          "the-black-dog"
+                                          "the-black-dog",
+                                          "ankylosaurus"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47736,8 +47844,8 @@
                      "pageUrl":  "/pets/robin.html",
                      "compareSlugs":  [
                                           "brachiosaurus",
-                                          "dugong",
-                                          "cockroach"
+                                          "cockroach",
+                                          "dugong"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47819,9 +47927,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/salamander.html",
                      "compareSlugs":  [
-                                          "cozy-mistletroll",
+                                          "kelp-hunter",
                                           "pine-marten",
-                                          "kelp-hunter"
+                                          "skelebat"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47903,9 +48011,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/skelebat.html",
                      "compareSlugs":  [
-                                          "cozy-mistletroll",
+                                          "kelp-hunter",
                                           "pine-marten",
-                                          "kelp-hunter"
+                                          "salamander"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -47987,8 +48095,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/snowman.html",
                      "compareSlugs":  [
-                                          "dolphin",
                                           "cute-a-cabra",
+                                          "dolphin",
                                           "stegosaurus"
                                       ],
                      "origin":  {
@@ -48071,8 +48179,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/the-black-dog.html",
                      "compareSlugs":  [
+                                          "halloween-white-mummy-cat",
                                           "dilophosaurus",
-                                          "pterodactyl",
                                           "ankylosaurus"
                                       ],
                      "origin":  {
@@ -48156,7 +48264,7 @@
                      "pageUrl":  "/pets/australian-kelpie.html",
                      "compareSlugs":  [
                                           "emperor-shrimp",
-                                          "dj-snooze",
+                                          "monkey",
                                           "woolly-mammoth"
                                       ],
                      "origin":  {
@@ -48491,9 +48599,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/dj-snooze.html",
                      "compareSlugs":  [
-                                          "emperor-shrimp",
-                                          "australian-kelpie",
-                                          "woolly-mammoth"
+                                          "woolly-mammoth",
+                                          "monkey",
+                                          "emperor-shrimp"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -48575,9 +48683,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/emperor-shrimp.html",
                      "compareSlugs":  [
-                                          "dj-snooze",
-                                          "australian-kelpie",
-                                          "woolly-mammoth"
+                                          "woolly-mammoth",
+                                          "monkey",
+                                          "dj-snooze"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -48659,9 +48767,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/floral-eggy.html",
                      "compareSlugs":  [
+                                          "ginger-cat",
                                           "lionfish",
-                                          "starfish",
-                                          "ginger-cat"
+                                          "starfish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -48743,9 +48851,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/ginger-cat.html",
                      "compareSlugs":  [
+                                          "floral-eggy",
                                           "lionfish",
-                                          "starfish",
-                                          "floral-eggy"
+                                          "starfish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -48960,9 +49068,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/lionfish.html",
                      "compareSlugs":  [
+                                          "floral-eggy",
                                           "ginger-cat",
-                                          "starfish",
-                                          "floral-eggy"
+                                          "starfish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -49044,8 +49152,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/monkey.html",
                      "compareSlugs":  [
+                                          "emperor-shrimp",
                                           "dj-snooze",
-                                          "australian-kelpie",
                                           "woolly-mammoth"
                                       ],
                      "origin":  {
@@ -49128,9 +49236,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/starfish.html",
                      "compareSlugs":  [
-                                          "lionfish",
+                                          "floral-eggy",
                                           "ginger-cat",
-                                          "floral-eggy"
+                                          "lionfish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -49345,9 +49453,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/toucan.html",
                      "compareSlugs":  [
+                                          "floral-eggy",
                                           "ginger-cat",
-                                          "lionfish",
-                                          "starfish"
+                                          "lionfish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -49647,7 +49755,7 @@
                      "pageUrl":  "/pets/woolly-mammoth.html",
                      "compareSlugs":  [
                                           "emperor-shrimp",
-                                          "australian-kelpie",
+                                          "monkey",
                                           "dj-snooze"
                                       ],
                      "origin":  {
@@ -49731,8 +49839,8 @@
                      "pageUrl":  "/pets/2025-birthday-butterfly.html",
                      "compareSlugs":  [
                                           "birthday-butterfly-2023",
-                                          "chickatrice",
-                                          "hammerhead-shark"
+                                          "bat",
+                                          "warthog"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -49815,8 +49923,8 @@
                      "pageUrl":  "/pets/birthday-butterfly-2023.html",
                      "compareSlugs":  [
                                           "2025-birthday-butterfly",
-                                          "chickatrice",
-                                          "hammerhead-shark"
+                                          "bat",
+                                          "warthog"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -49900,7 +50008,7 @@
                      "compareSlugs":  [
                                           "dugong",
                                           "brachiosaurus",
-                                          "liger"
+                                          "mongoose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -49984,7 +50092,7 @@
                      "compareSlugs":  [
                                           "cockroach",
                                           "brachiosaurus",
-                                          "liger"
+                                          "mongoose"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -50067,8 +50175,8 @@
                      "pageUrl":  "/pets/eggnog-hare.html",
                      "compareSlugs":  [
                                           "emu",
-                                          "sea-angel",
-                                          "seahorse"
+                                          "seahorse",
+                                          "sea-angel"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -50151,8 +50259,8 @@
                      "pageUrl":  "/pets/emu.html",
                      "compareSlugs":  [
                                           "eggnog-hare",
-                                          "sea-angel",
-                                          "seahorse"
+                                          "seahorse",
+                                          "sea-angel"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -50234,9 +50342,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/lunar-white-tiger.html",
                      "compareSlugs":  [
-                                          "toucan",
                                           "starfish",
-                                          "lionfish"
+                                          "lionfish",
+                                          "ginger-cat"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -50319,8 +50427,8 @@
                      "pageUrl":  "/pets/sea-angel.html",
                      "compareSlugs":  [
                                           "eggnog-hare",
-                                          "emu",
-                                          "seahorse"
+                                          "seahorse",
+                                          "emu"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -50403,8 +50511,8 @@
                      "pageUrl":  "/pets/seahorse.html",
                      "compareSlugs":  [
                                           "eggnog-hare",
-                                          "emu",
-                                          "sea-angel"
+                                          "sea-angel",
+                                          "emu"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -50486,9 +50594,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/arctic-hare.html",
                      "compareSlugs":  [
+                                          "rock",
                                           "halloween-black-mummy-cat",
-                                          "fossa",
-                                          "halloween-blue-scorpion"
+                                          "fossa"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -50571,8 +50679,8 @@
                      "pageUrl":  "/pets/black-moon-bear.html",
                      "compareSlugs":  [
                                           "samoyed",
-                                          "ghost-wolf",
-                                          "merhorse"
+                                          "merhorse",
+                                          "ghost-wolf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -50654,9 +50762,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/fossa.html",
                      "compareSlugs":  [
-                                          "halloween-blue-scorpion",
                                           "rock",
-                                          "halloween-black-mummy-cat"
+                                          "halloween-black-mummy-cat",
+                                          "arctic-hare"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -50739,8 +50847,8 @@
                      "pageUrl":  "/pets/ghost-wolf.html",
                      "compareSlugs":  [
                                           "samoyed",
-                                          "black-moon-bear",
-                                          "merhorse"
+                                          "merhorse",
+                                          "black-moon-bear"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -50822,9 +50930,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/halloween-black-mummy-cat.html",
                      "compareSlugs":  [
-                                          "halloween-blue-scorpion",
                                           "rock",
-                                          "fossa"
+                                          "fossa",
+                                          "arctic-hare"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -50906,9 +51014,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/halloween-blue-scorpion.html",
                      "compareSlugs":  [
-                                          "halloween-black-mummy-cat",
                                           "rock",
-                                          "fossa"
+                                          "fossa",
+                                          "arctic-hare"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -51076,7 +51184,7 @@
                      "compareSlugs":  [
                                           "starmite",
                                           "onza",
-                                          "waffle-wyrm"
+                                          "angus-calf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -51159,8 +51267,8 @@
                      "pageUrl":  "/pets/merhorse.html",
                      "compareSlugs":  [
                                           "samoyed",
-                                          "black-moon-bear",
-                                          "ghost-wolf"
+                                          "ghost-wolf",
+                                          "black-moon-bear"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -51328,7 +51436,7 @@
                      "compareSlugs":  [
                                           "starmite",
                                           "lunar-ox",
-                                          "waffle-wyrm"
+                                          "angus-calf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -51428,7 +51536,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/rock.html",
                      "compareSlugs":  [
-                                          "halloween-black-mummy-cat",
+                                          "halloween-blue-scorpion",
                                           "fossa",
                                           "arctic-hare"
                                       ],
@@ -51512,9 +51620,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/samoyed.html",
                      "compareSlugs":  [
-                                          "scarecrow-horse",
-                                          "black-moon-bear",
-                                          "yellow-butterfly"
+                                          "merhorse",
+                                          "ghost-wolf",
+                                          "black-moon-bear"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -51596,9 +51704,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/scarecrow-horse.html",
                      "compareSlugs":  [
-                                          "samoyed",
-                                          "black-moon-bear",
-                                          "yellow-butterfly"
+                                          "merhorse",
+                                          "ghost-wolf",
+                                          "black-moon-bear"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -51682,7 +51790,7 @@
                      "compareSlugs":  [
                                           "onza",
                                           "lunar-ox",
-                                          "waffle-wyrm"
+                                          "angus-calf"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -51782,9 +51890,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/yellow-butterfly.html",
                      "compareSlugs":  [
-                                          "samoyed",
+                                          "ghost-wolf",
                                           "black-moon-bear",
-                                          "scarecrow-horse"
+                                          "merhorse"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -51950,7 +52058,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/dingo.html",
                      "compareSlugs":  [
-                                          "hermit-crab",
+                                          "slug",
                                           "kirin",
                                           "mistletroll"
                                       ],
@@ -52034,7 +52142,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/frogspawn.html",
                      "compareSlugs":  [
-                                          "hermit-crab",
+                                          "slug",
                                           "kirin",
                                           "mistletroll"
                                       ],
@@ -52202,7 +52310,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/hermit-crab.html",
                      "compareSlugs":  [
-                                          "frogspawn",
+                                          "slug",
                                           "kirin",
                                           "mistletroll"
                                       ],
@@ -52538,7 +52646,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/kirin.html",
                      "compareSlugs":  [
-                                          "frogspawn",
+                                          "slug",
                                           "hermit-crab",
                                           "mistletroll"
                                       ],
@@ -52622,7 +52730,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/mistletroll.html",
                      "compareSlugs":  [
-                                          "frogspawn",
+                                          "slug",
                                           "hermit-crab",
                                           "kirin"
                                       ],
@@ -52790,7 +52898,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/slug.html",
                      "compareSlugs":  [
-                                          "frogspawn",
+                                          "mistletroll",
                                           "hermit-crab",
                                           "kirin"
                                       ],
@@ -53595,9 +53703,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/capuchin-monkey.html",
                      "compareSlugs":  [
-                                          "kelp-raider",
+                                          "tarantula",
                                           "oryx",
-                                          "thorny-devil"
+                                          "kelp-raider"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -54117,9 +54225,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/kelp-raider.html",
                      "compareSlugs":  [
-                                          "capuchin-monkey",
+                                          "tarantula",
                                           "oryx",
-                                          "thorny-devil"
+                                          "capuchin-monkey"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -54201,9 +54309,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/oryx.html",
                      "compareSlugs":  [
-                                          "capuchin-monkey",
+                                          "tarantula",
                                           "kelp-raider",
-                                          "thorny-devil"
+                                          "capuchin-monkey"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -54806,9 +54914,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/tarantula.html",
                      "compareSlugs":  [
-                                          "capuchin-monkey",
+                                          "oryx",
                                           "kelp-raider",
-                                          "thorny-devil"
+                                          "capuchin-monkey"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -54890,9 +54998,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/thorny-devil.html",
                      "compareSlugs":  [
-                                          "capuchin-monkey",
+                                          "oryx",
                                           "kelp-raider",
-                                          "tarantula"
+                                          "capuchin-monkey"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -55159,9 +55267,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/zombie-chick.html",
                      "compareSlugs":  [
-                                          "capuchin-monkey",
+                                          "oryx",
                                           "kelp-raider",
-                                          "tarantula"
+                                          "capuchin-monkey"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -55243,9 +55351,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/angler-fish.html",
                      "compareSlugs":  [
-                                          "rock-pigeon",
                                           "tawny-frogmouth",
-                                          "yellow-lipped-sea-krait"
+                                          "yellow-lipped-sea-krait",
+                                          "banded-palm-civet"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -55327,9 +55435,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/banded-palm-civet.html",
                      "compareSlugs":  [
-                                          "rock-pigeon",
                                           "tawny-frogmouth",
-                                          "yellow-lipped-sea-krait"
+                                          "yellow-lipped-sea-krait",
+                                          "angler-fish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -55579,9 +55687,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/borhyaena-gigantica.html",
                      "compareSlugs":  [
-                                          "rock-pigeon",
                                           "tawny-frogmouth",
-                                          "yellow-lipped-sea-krait"
+                                          "yellow-lipped-sea-krait",
+                                          "angler-fish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -55663,9 +55771,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/gila-monster.html",
                      "compareSlugs":  [
-                                          "rock-pigeon",
                                           "tawny-frogmouth",
-                                          "yellow-lipped-sea-krait"
+                                          "yellow-lipped-sea-krait",
+                                          "angler-fish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -55764,9 +55872,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/grinmoire.html",
                      "compareSlugs":  [
-                                          "persian-cat",
+                                          "ehecatl",
                                           "rainbow-trout",
-                                          "ehecatl"
+                                          "fire-foal"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -55981,9 +56089,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/moonpine.html",
                      "compareSlugs":  [
-                                          "tree-sasquatch",
                                           "wren",
-                                          "zeopod"
+                                          "zeopod",
+                                          "tree-sasquatch"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -56083,9 +56191,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/rattlesnake.html",
                      "compareSlugs":  [
-                                          "rock-pigeon",
                                           "tawny-frogmouth",
-                                          "yellow-lipped-sea-krait"
+                                          "yellow-lipped-sea-krait",
+                                          "angler-fish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -56184,9 +56292,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/rock-pigeon.html",
                      "compareSlugs":  [
-                                          "rattlesnake",
                                           "tawny-frogmouth",
-                                          "yellow-lipped-sea-krait"
+                                          "yellow-lipped-sea-krait",
+                                          "angler-fish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -56352,9 +56460,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/shetland-pony-dark-brown.html",
                      "compareSlugs":  [
-                                          "tree-sasquatch",
                                           "wren",
-                                          "zeopod"
+                                          "zeopod",
+                                          "tree-sasquatch"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -56436,9 +56544,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/tawny-frogmouth.html",
                      "compareSlugs":  [
-                                          "rattlesnake",
                                           "rock-pigeon",
-                                          "yellow-lipped-sea-krait"
+                                          "yellow-lipped-sea-krait",
+                                          "angler-fish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -56520,9 +56628,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/tree-sasquatch.html",
                      "compareSlugs":  [
-                                          "shetland-pony-dark-brown",
                                           "wren",
-                                          "zeopod"
+                                          "zeopod",
+                                          "shetland-pony-dark-brown"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -56688,9 +56796,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/wren.html",
                      "compareSlugs":  [
-                                          "shetland-pony-dark-brown",
                                           "tree-sasquatch",
-                                          "zeopod"
+                                          "zeopod",
+                                          "shetland-pony-dark-brown"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -56772,9 +56880,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/yellow-lipped-sea-krait.html",
                      "compareSlugs":  [
-                                          "rattlesnake",
                                           "rock-pigeon",
-                                          "tawny-frogmouth"
+                                          "tawny-frogmouth",
+                                          "angler-fish"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -56856,9 +56964,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/zeopod.html",
                      "compareSlugs":  [
-                                          "shetland-pony-dark-brown",
                                           "tree-sasquatch",
-                                          "wren"
+                                          "wren",
+                                          "shetland-pony-dark-brown"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -57126,8 +57234,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/blue-jay-pet.html",
                      "compareSlugs":  [
+                                          "orange-betta-fish",
                                           "ox",
-                                          "dotted-eggy",
                                           "lunar-tiger"
                                       ],
                      "origin":  {
@@ -57294,8 +57402,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/dotted-eggy.html",
                      "compareSlugs":  [
+                                          "orange-betta-fish",
                                           "ox",
-                                          "blue-jay-pet",
                                           "lunar-tiger"
                                       ],
                      "origin":  {
@@ -57763,9 +57871,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/lunar-tiger.html",
                      "compareSlugs":  [
+                                          "orange-betta-fish",
                                           "ox",
-                                          "blue-jay-pet",
-                                          "dotted-eggy"
+                                          "blue-jay-pet"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -57931,9 +58039,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/orange-betta-fish.html",
                      "compareSlugs":  [
+                                          "lunar-tiger",
                                           "ox",
-                                          "blue-jay-pet",
-                                          "lunar-tiger"
+                                          "dotted-eggy"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -58015,9 +58123,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/ox.html",
                      "compareSlugs":  [
+                                          "lunar-tiger",
                                           "orange-betta-fish",
-                                          "blue-jay-pet",
-                                          "lunar-tiger"
+                                          "dotted-eggy"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -58636,9 +58744,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/amber-butterfly.html",
                      "compareSlugs":  [
-                                          "cherub-chipmunk",
                                           "gorilla",
-                                          "river-otter"
+                                          "river-otter",
+                                          "cherub-chipmunk"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -59105,9 +59213,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/cherub-chipmunk.html",
                      "compareSlugs":  [
-                                          "amber-butterfly",
                                           "gorilla",
-                                          "river-otter"
+                                          "river-otter",
+                                          "amber-butterfly"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -59273,9 +59381,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/gorilla.html",
                      "compareSlugs":  [
-                                          "amber-butterfly",
                                           "cherub-chipmunk",
-                                          "river-otter"
+                                          "river-otter",
+                                          "amber-butterfly"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -59910,8 +60018,8 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/river-otter.html",
                      "compareSlugs":  [
-                                          "gorilla",
                                           "cherub-chipmunk",
+                                          "gorilla",
                                           "amber-butterfly"
                                       ],
                      "origin":  {
@@ -60916,8 +61024,8 @@
                      "pageUrl":  "/pets/humbug.html",
                      "compareSlugs":  [
                                           "patchy-bear",
-                                          "clubtail-dragonfly",
-                                          "tree-frog"
+                                          "muskrat",
+                                          "clubtail-dragonfly"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -61133,8 +61241,8 @@
                      "pageUrl":  "/pets/patchy-bear.html",
                      "compareSlugs":  [
                                           "humbug",
-                                          "clubtail-dragonfly",
-                                          "tree-frog"
+                                          "muskrat",
+                                          "clubtail-dragonfly"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -62339,7 +62447,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/angus-cow.html",
                      "compareSlugs":  [
-                                          "mexican-wolf",
+                                          "black-rhino",
                                           "milk-choco-bunny",
                                           "rabbit"
                                       ],
@@ -62942,7 +63050,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/clubtail-dragonfly.html",
                      "compareSlugs":  [
-                                          "tree-frog",
+                                          "cocoadile",
                                           "irish-setter",
                                           "muskrat"
                                       ],
@@ -63041,7 +63149,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/cocoadile.html",
                      "compareSlugs":  [
-                                          "tree-frog",
+                                          "clubtail-dragonfly",
                                           "irish-setter",
                                           "muskrat"
                                       ],
@@ -63392,7 +63500,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/irish-setter.html",
                      "compareSlugs":  [
-                                          "tree-frog",
+                                          "clubtail-dragonfly",
                                           "cocoadile",
                                           "muskrat"
                                       ],
@@ -63911,7 +64019,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/muskrat.html",
                      "compareSlugs":  [
-                                          "tree-frog",
+                                          "clubtail-dragonfly",
                                           "cocoadile",
                                           "irish-setter"
                                       ],
@@ -64109,7 +64217,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/tree-frog.html",
                      "compareSlugs":  [
-                                          "muskrat",
+                                          "clubtail-dragonfly",
                                           "cocoadile",
                                           "irish-setter"
                                       ],
@@ -64211,9 +64319,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/beaver.html",
                      "compareSlugs":  [
-                                          "zebra",
+                                          "parakeet",
                                           "orangutan",
-                                          "snow-puma"
+                                          "zebra"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -64310,9 +64418,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/black-tiger.html",
                      "compareSlugs":  [
-                                          "kakapo",
                                           "poodle",
-                                          "shih-tzu"
+                                          "shih-tzu",
+                                          "mahi-mahi"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -64444,9 +64552,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/kakapo.html",
                      "compareSlugs":  [
-                                          "black-tiger",
                                           "poodle",
-                                          "shih-tzu"
+                                          "shih-tzu",
+                                          "mahi-mahi"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -64578,9 +64686,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/mahi-mahi.html",
                      "compareSlugs":  [
-                                          "black-tiger",
                                           "poodle",
-                                          "shih-tzu"
+                                          "shih-tzu",
+                                          "kakapo"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -64677,9 +64785,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/orangutan.html",
                      "compareSlugs":  [
-                                          "zebra",
+                                          "parakeet",
                                           "beaver",
-                                          "snow-puma"
+                                          "zebra"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -64913,9 +65021,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/parakeet.html",
                      "compareSlugs":  [
-                                          "zebra",
+                                          "orangutan",
                                           "beaver",
-                                          "snow-puma"
+                                          "zebra"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -65150,8 +65258,8 @@
                      "pageUrl":  "/pets/poodle.html",
                      "compareSlugs":  [
                                           "black-tiger",
-                                          "mahi-mahi",
-                                          "shih-tzu"
+                                          "shih-tzu",
+                                          "kakapo"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -65352,8 +65460,8 @@
                      "pageUrl":  "/pets/shih-tzu.html",
                      "compareSlugs":  [
                                           "black-tiger",
-                                          "mahi-mahi",
-                                          "poodle"
+                                          "poodle",
+                                          "kakapo"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -65450,9 +65558,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/snow-puma.html",
                      "compareSlugs":  [
-                                          "zebra",
+                                          "orangutan",
                                           "beaver",
-                                          "parakeet"
+                                          "zebra"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -65549,9 +65657,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/zebra.html",
                      "compareSlugs":  [
-                                          "snow-puma",
+                                          "orangutan",
                                           "beaver",
-                                          "parakeet"
+                                          "snow-puma"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -65785,7 +65893,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/ant.html",
                      "compareSlugs":  [
-                                          "galapagos-sea-lion",
+                                          "jiggly-jerboa",
                                           "dog",
                                           "cat"
                                       ],
@@ -65987,7 +66095,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/buffalo.html",
                      "compareSlugs":  [
-                                          "galapagos-sea-lion",
+                                          "jiggly-jerboa",
                                           "dog",
                                           "cat"
                                       ],
@@ -66086,7 +66194,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/california-condor.html",
                      "compareSlugs":  [
-                                          "galapagos-sea-lion",
+                                          "jiggly-jerboa",
                                           "dog",
                                           "cat"
                                       ],
@@ -66220,9 +66328,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/camel.html",
                      "compareSlugs":  [
-                                          "fennec-fox",
-                                          "donkey",
-                                          "chocolate-labrador"
+                                          "chocolate-labrador",
+                                          "snow-cat",
+                                          "puma"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -66422,7 +66530,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/cat.html",
                      "compareSlugs":  [
-                                          "galapagos-sea-lion",
+                                          "jiggly-jerboa",
                                           "dog",
                                           "california-condor"
                                       ],
@@ -66556,9 +66664,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/chocolate-labrador.html",
                      "compareSlugs":  [
-                                          "fennec-fox",
-                                          "donkey",
-                                          "camel"
+                                          "camel",
+                                          "snow-cat",
+                                          "puma"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -66655,7 +66763,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/dog.html",
                      "compareSlugs":  [
-                                          "galapagos-sea-lion",
+                                          "jiggly-jerboa",
                                           "cat",
                                           "california-condor"
                                       ],
@@ -66789,9 +66897,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/donkey.html",
                      "compareSlugs":  [
-                                          "fennec-fox",
-                                          "chocolate-labrador",
-                                          "camel"
+                                          "camel",
+                                          "snow-cat",
+                                          "puma"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -66991,9 +67099,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/fennec-fox.html",
                      "compareSlugs":  [
-                                          "donkey",
-                                          "chocolate-labrador",
-                                          "camel"
+                                          "camel",
+                                          "snow-cat",
+                                          "puma"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -67090,9 +67198,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/galapagos-sea-lion.html",
                      "compareSlugs":  [
-                                          "dog",
-                                          "cat",
-                                          "california-condor"
+                                          "california-condor",
+                                          "rubber-ducky",
+                                          "tegu"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -67224,9 +67332,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/jiggly-jerboa.html",
                      "compareSlugs":  [
-                                          "dog",
-                                          "cat",
-                                          "california-condor"
+                                          "california-condor",
+                                          "rubber-ducky",
+                                          "tegu"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -67308,9 +67416,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/mouse.html",
                      "compareSlugs":  [
-                                          "dog",
-                                          "cat",
-                                          "california-condor"
+                                          "california-condor",
+                                          "rubber-ducky",
+                                          "tegu"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -67510,9 +67618,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/otter.html",
                      "compareSlugs":  [
-                                          "dog",
-                                          "cat",
-                                          "california-condor"
+                                          "california-condor",
+                                          "rubber-ducky",
+                                          "tegu"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -67609,9 +67717,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/puma.html",
                      "compareSlugs":  [
-                                          "donkey",
-                                          "chocolate-labrador",
-                                          "camel"
+                                          "camel",
+                                          "snow-cat",
+                                          "fennec-fox"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -67708,9 +67816,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/rubber-ducky.html",
                      "compareSlugs":  [
-                                          "dog",
+                                          "california-condor",
                                           "cat",
-                                          "california-condor"
+                                          "tegu"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -67792,9 +67900,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/snow-cat.html",
                      "compareSlugs":  [
-                                          "donkey",
-                                          "chocolate-labrador",
-                                          "camel"
+                                          "camel",
+                                          "puma",
+                                          "fennec-fox"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -67891,7 +67999,7 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/tegu.html",
                      "compareSlugs":  [
-                                          "dog",
+                                          "rubber-ducky",
                                           "cat",
                                           "california-condor"
                                       ],
@@ -68059,9 +68167,9 @@
                      "marketStatus":  "",
                      "pageUrl":  "/pets/weevil-pet.html",
                      "compareSlugs":  [
-                                          "beaver",
                                           "snow-puma",
-                                          "zebra"
+                                          "zebra",
+                                          "parakeet"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -68144,8 +68252,8 @@
                      "pageUrl":  "/pets/mole-pet.html",
                      "compareSlugs":  [
                                           "pet-rock",
-                                          "snow-cat",
-                                          "puma"
+                                          "chocolate-labrador",
+                                          "camel"
                                       ],
                      "origin":  {
                                     "audited":  true,
@@ -69477,11 +69585,11 @@
                                 }
                  }
              ],
-    "generatedAt":  "2026-07-30",
+    "generatedAt":  "2026-07-31",
     "counts":  {
                    "benchmark":  101,
                    "referenceLane":  0,
-                   "currentGuide":  640
+                   "currentGuide":  642
                },
-    "count":  749
+    "count":  751
 }

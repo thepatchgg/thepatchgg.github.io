@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-07-03",
+    "updatedAt":  "2026-07-31",
     "source":  "Curated Adopt Me Wiki pet-origin overrides from the main Pets index and select pet pages.",
     "pets":  [
                  {
@@ -8152,6 +8152,36 @@
                                          "chanceText":  "70% from Halloween Chick Box",
                                          "eventContext":  "Halloween Event (2024)",
                                          "notes":  "Limited Halloween pet obtained by opening Halloween Chick Boxes during week three of the 2024 event."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "sunflower-friend",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Bee Pass",
+                                         "sourceType":  "Event pass pet",
+                                         "status":  "current",
+                                         "released":  "Jul 24, 2026",
+                                         "cost":  "Level 8 reward",
+                                         "petRarity":  "Rare",
+                                         "eventContext":  "Pollinator Season / Bee Pass (2026)",
+                                         "notes":  "Rare Bee Pass reward unlocked at Level 8 by earning bouquet XP during Pollinator Season."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "violet-friend",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Bee Pass",
+                                         "sourceType":  "Event pass pet",
+                                         "status":  "current",
+                                         "released":  "Jul 24, 2026",
+                                         "cost":  "Level 13 reward",
+                                         "petRarity":  "Rare",
+                                         "eventContext":  "Pollinator Season / Bee Pass (2026)",
+                                         "notes":  "Rare Bee Pass reward unlocked at Level 13 by earning bouquet XP during Pollinator Season."
                                      }
                                  ]
                  },
