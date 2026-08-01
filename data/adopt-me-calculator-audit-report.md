@@ -3,7 +3,7 @@
 - Date: 2026-07-31
 - Tracker pet rows parsed: 762
 - Local calculator pets: 751
-- Non-benchmark local pets: 642
+- Non-benchmark local pets: 650
 - Non-benchmark pets matched to tracker feed: 641
 - Non-benchmark pets manually resolved: 9
 - Market-forming pets pending tracker values: 0
@@ -31,3 +31,4 @@ No benchmark divergence rows were produced in the latest audit.
 ## Unmatched Local Pets
 
 All non-benchmark local pets were resolved through either the tracker feed or documented manual mappings.
+

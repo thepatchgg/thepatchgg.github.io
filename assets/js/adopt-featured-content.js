@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-trading-hub-notes-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Trading Hub",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Trading Hub Notes guide &mdash; Trading Phone unlocks, listings, and Bee Pass extension",
+          excerpt: "The July 31 update adds the Trading Hub, cross-server listings, inventory locks, 100 Buck listing costs, and one more week of Bee Pass.",
+          meta: ["July 31, 2026", "Live guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Trading Hub Notes Guide - Trading Phone unlocks and listing rules",
+          excerpt: "Open the July 31 guide for the Trading Phone unlock path, listing costs, trade locks, offer guardrails, and the Bee Pass extension.",
+          meta: ["July 31", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-bee-pass-notes-guide.html",
       featured: true,
       contexts: {
@@ -406,7 +428,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Bee Pass Notes guide &#8594;"
+      labelHtml: "Read the Trading Hub Notes guide &#8594;"
     },
     hub: {
       href: updates[0].href,
