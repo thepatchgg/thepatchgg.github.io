@@ -1,6 +1,6 @@
 # Value Audit Summary
 
-- Date: 2026-08-01
+- Date: 2026-08-02
 - Source refresh: fresh
 - Mode: production refresh
 - Scope: Adopt Me trade calculator long-tail pet values
