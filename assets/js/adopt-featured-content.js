@@ -1,24 +1,24 @@
 (function () {
   const updates = [
     {
-      href: "/articles/adopt-me-bee-pass-notes-guide.html",
+      href: "/articles/adopt-me-trading-hub-notes-guide.html",
       featured: true,
       contexts: {
         home: {
-          tag: "Bee Pass",
+          tag: "Trading Hub",
           badgeLabel: "New",
           badgeTone: "new",
-          title: "Bee Pass Notes guide &mdash; Queen Bee, Sunflower Friend, Violet Friend, and Beehive House",
-          excerpt: "The July 24 update moves Queen Bee into Pollinator Season, adds Sunflower Friend and Violet Friend to the Bee Pass, and brings in a Beehive House for 5,450 Bucks.",
-          meta: ["July 24, 2026", "Live guide"]
+          title: "Trading Hub Notes guide &mdash; Trading Phone, Robo Todd, and Robo Rob",
+          excerpt: "The July 31 update adds a Trading Phone, a new Trading Hub, Robo Todd listing boards, Robo Rob search, and keeps Bee Pass in game for another week.",
+          meta: ["July 31, 2026", "Live guide"]
         },
         hub: {
           tag: "Weekly Update",
           badgeLabel: "New",
           badgeTone: "new",
-          title: "Bee Pass Notes Guide - Queen Bee, Sunflower Friend, and Violet Friend",
-          excerpt: "Open the July 24 guide for Pollinator Season, flower seed costs, Bee Pass rewards, Sunflower Friend, Violet Friend, and the Beehive House.",
-          meta: ["July 24", "Live guide"]
+          title: "Trading Hub Notes Guide - Trading Phone, Robo Todd, and Robo Rob",
+          excerpt: "Open the July 31 guide for the Trading Phone unlock path, cross-server listing boards, search tools, and Bee Pass carryover details.",
+          meta: ["July 31", "Live guide"]
         }
       }
     },
@@ -318,7 +318,7 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Bee Pass Notes guide &#8594;"
+      labelHtml: "Read the Trading Hub Notes guide &#8594;"
     },
     hub: {
       href: updates[0].href,
