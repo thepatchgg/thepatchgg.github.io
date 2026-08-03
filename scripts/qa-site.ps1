@@ -1,20 +1,7 @@
 $repoRoot = Split-Path -Parent $PSScriptRoot
 
-function Get-RepoRelativePath([string]$FullName) {
-  return $FullName.Substring($repoRoot.Length + 1) -replace "\\", "/"
-}
-
-function Test-QAExcludedPath([string]$FullName) {
-  $relativePath = Get-RepoRelativePath $FullName
-  return $relativePath -eq "data/adoptmevalues-values-page.html" -or
-    $relativePath -eq "_main_publish/data/adoptmevalues-values-page.html" -or
-    $relativePath.StartsWith("_publish_tmp/") -or
-    $relativePath.StartsWith("_publish_sync/") -or
-    $relativePath.StartsWith("_main_publish/")
-}
-
 $htmlFiles = Get-ChildItem -Path $repoRoot -Recurse -Filter *.html |
-  Where-Object { -not (Test-QAExcludedPath $_.FullName) } |
+  Where-Object { $_.FullName -notlike (Join-Path $repoRoot 'data\*') } |
   Sort-Object FullName
 $issues = New-Object System.Collections.Generic.List[string]
 

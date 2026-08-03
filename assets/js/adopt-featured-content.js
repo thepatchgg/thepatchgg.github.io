@@ -8,39 +8,17 @@
           tag: "Trading Hub",
           badgeLabel: "New",
           badgeTone: "new",
-          title: "Trading Hub Notes guide &mdash; Trading Phone unlocks, listings, and Bee Pass extension",
-          excerpt: "The July 31 update adds the Trading Hub, cross-server listings, inventory locks, 100 Buck listing costs, and one more week of Bee Pass.",
+          title: "Trading Hub Notes guide &mdash; Trading Phone, Robo Todd, and Robo Rob",
+          excerpt: "The July 31 update adds a Trading Phone, a new Trading Hub, Robo Todd listing boards, Robo Rob search, and keeps Bee Pass in game for another week.",
           meta: ["July 31, 2026", "Live guide"]
         },
         hub: {
           tag: "Weekly Update",
           badgeLabel: "New",
           badgeTone: "new",
-          title: "Trading Hub Notes Guide - Trading Phone unlocks and listing rules",
-          excerpt: "Open the July 31 guide for the Trading Phone unlock path, listing costs, trade locks, offer guardrails, and the Bee Pass extension.",
+          title: "Trading Hub Notes Guide - Trading Phone, Robo Todd, and Robo Rob",
+          excerpt: "Open the July 31 guide for the Trading Phone unlock path, cross-server listing boards, search tools, and Bee Pass carryover details.",
           meta: ["July 31", "Live guide"]
-        }
-      }
-    },
-    {
-      href: "/articles/adopt-me-bee-pass-notes-guide.html",
-      featured: true,
-      contexts: {
-        home: {
-          tag: "Bee Pass",
-          badgeLabel: "New",
-          badgeTone: "new",
-          title: "Bee Pass Notes guide &mdash; Queen Bee, Sunflower Friend, Violet Friend, and Beehive House",
-          excerpt: "The July 24 update moves Queen Bee into Pollinator Season, adds Sunflower Friend and Violet Friend to the Bee Pass, and brings in a Beehive House for 5,450 Bucks.",
-          meta: ["July 24, 2026", "Live guide"]
-        },
-        hub: {
-          tag: "Weekly Update",
-          badgeLabel: "New",
-          badgeTone: "new",
-          title: "Bee Pass Notes Guide - Queen Bee, Sunflower Friend, and Violet Friend",
-          excerpt: "Open the July 24 guide for Pollinator Season, flower seed costs, Bee Pass rewards, Sunflower Friend, Violet Friend, and the Beehive House.",
-          meta: ["July 24", "Live guide"]
         }
       }
     },
@@ -67,112 +45,24 @@
       }
     },
     {
-      href: "/articles/adopt-me-stormy-rings-guide.html",
-      featured: true,
-      contexts: {
-        home: {
-          tag: "Stormy Rings",
-          badgeLabel: "Today",
-          badgeTone: "new",
-          title: "Stormy Rings guide &mdash; Storm Condor, Oakee Box pets, and Burger Bear",
-          excerpt: "The July 3 update adds Storm Rings, Storm Condor, Oakee Box, Oakee, Oakee Knight, Oakee Wizard, Burger Bear, Ranger Beaver sculptures, pet wear, and release-day value notes.",
-          meta: ["July 3, 2026", "Live guide"]
-        },
-        hub: {
-          tag: "Weekly Update",
-          badgeLabel: "Today",
-          badgeTone: "new",
-          title: "Stormy Rings Guide - Storm Condor, Oakee Box pets, and Burger Bear",
-          excerpt: "Open the live July 3 guide for the Storm Time Trial, Storm Condor, Oakee Box odds, Oakee pets, Burger Bear, Ranger Beaver sculptures, and value-status notes.",
-          meta: ["July 3", "Live guide"]
-        }
-      }
-    },
-    {
-      href: "/articles/adopt-me-campfire-stories-guide.html",
-      featured: true,
-      contexts: {
-        home: {
-          tag: "Campfire Stories",
-          badgeLabel: "Updated",
-          badgeTone: "updated",
-          title: "Campfire Stories guide &mdash; Irish Setter, Stygian Owl, River Otter, and Treasure Chests",
-          excerpt: "The June 26 update adds Bone in a Bottle, Setter Treasure Chests, Irish Setter, Stygian Owl, River Otter, Campfire Story Pages, new pet wear, stickers, and now-live value lanes.",
-          meta: ["June 26, 2026", "Values updated"]
-        },
-        hub: {
-          tag: "Weekly Update",
-          badgeLabel: "Updated",
-          badgeTone: "updated",
-          title: "Campfire Stories Guide - Irish Setter, Stygian Owl, and River Otter",
-          excerpt: "Open the June 26 guide for Bone in a Bottle, Setter Treasure Chest rewards, Campfire Story Pages, Irish Setter, Stygian Owl, River Otter, and refreshed value notes.",
-          meta: ["June 26", "Values updated"]
-        }
-      }
-    },
-    {
-      href: "/articles/adopt-me-summer-camp-fishing-guide.html",
-      featured: true,
-      contexts: {
-        home: {
-          tag: "Summer Camp",
-          badgeLabel: "Today",
-          badgeTone: "new",
-          title: "Summer Camp guide &mdash; fishing, Karp bait, Rainbow Trout, and skydiving",
-          excerpt: "The June 20 update opens Summer Camp with fishing, Karp turn-ins, Rainbow Trout, Tealwood Monster, Clubtail Dragonfly, Solaris, Aestus, skydiving, admin voting, and Acorn rewards.",
-          meta: ["June 20, 2026", "Live guide"]
-        },
-        hub: {
-          tag: "Weekly Update",
-          badgeLabel: "Today",
-          badgeTone: "new",
-          title: "Summer Camp Guide - fishing, Karp bait, new pets, and Acorn rewards",
-          excerpt: "Open the live Summer Camp guide for Rainbow Trout, Tealwood Monster, Clubtail Dragonfly, Solaris, Aestus, fishing rods, Karp bait, skydiving rewards, and value-status notes.",
-          meta: ["June 20", "Live guide"]
-        }
-      }
-    },
-    {
       href: "/articles/adopt-me-journey-through-skies-guide.html",
       featured: true,
       contexts: {
         home: {
           tag: "Journey Through Skies",
-          badgeLabel: "Updated",
-          badgeTone: "updated",
+          badgeLabel: "Today",
+          badgeTone: "new",
           title: "Journey Through Skies guide &mdash; Pilot Gull, airship feathers, and Sheepdog Ducky",
           excerpt: "The June 12 update adds Pilot Gull for 6,900 Compass Coins, the airship feather activity, three flight pet wear items, and a June 13 Sheepdog Ducky Admin Abuse debut.",
           meta: ["June 12, 2026", "Live guide"]
         },
         hub: {
           tag: "Weekly Update",
-          badgeLabel: "Updated",
-          badgeTone: "updated",
+          badgeLabel: "Today",
+          badgeTone: "new",
           title: "Journey Through Skies Guide - Pilot Gull, feathers, and Sheepdog Ducky",
           excerpt: "Open the live June 12 guide for Pilot Gull, the airship activity, Compass Coin prices, flight pet wear, Sheepdog Ducky timing, and value-status notes.",
           meta: ["June 12", "Live guide"]
-        }
-      }
-    },
-    {
-      href: "/articles/adopt-me-journey-through-waves-guide.html",
-      featured: true,
-      contexts: {
-        home: {
-          tag: "Journey Through Waves",
-          badgeLabel: "New",
-          badgeTone: "new",
-          title: "Journey Through Waves guide &mdash; Nurse Shark, river cleanup, and Week 2 value status",
-          excerpt: "The June 5 update sends Journey to Summer Camp onto the water route, introduces Nurse Shark, and keeps live values pending until tracker-backed rows appear.",
-          meta: ["June 5, 2026", "Live guide"]
-        },
-        hub: {
-          tag: "Weekly Update",
-          badgeLabel: "New",
-          badgeTone: "new",
-          title: "Journey Through Waves Guide - Nurse Shark and the water-route cleanup loop",
-          excerpt: "Open the June 5 guide for Nurse Shark, the river-cleanup loop, Journey to Summer Camp's second leg, and current value status.",
-          meta: ["June 5", "Live guide"]
         }
       }
     },
@@ -182,19 +72,19 @@
       contexts: {
         home: {
           tag: "Journey to Summer Camp",
-          badgeLabel: "Updated",
-          badgeTone: "updated",
+          badgeLabel: "New",
+          badgeTone: "new",
           title: "Journey to Summer Camp Week 1 guide &mdash; Bison, Ranger Beaver, and Compass Coins",
-          excerpt: "The May 29 update adds Beaver Bob's van activity, Compass Coins, the one-week Rare Bison, the 99 Robux Ranger Beaver bundle, and current value-pending notes.",
-          meta: ["May 29, 2026", "Week 1 archive"]
+          excerpt: "The May 29 update adds Beaver Bob's van activity, Compass Coins, the one-week Rare Bison, the 99 Robux Ranger Beaver bundle, and market-forming value notes.",
+          meta: ["May 29, 2026", "Live guide"]
         },
         hub: {
           tag: "Weekly Update",
-          badgeLabel: "Updated",
-          badgeTone: "updated",
+          badgeLabel: "New",
+          badgeTone: "new",
           title: "Journey to Summer Camp Week 1 Guide - Bison, Ranger Beaver, and Compass Coins",
-          excerpt: "Open the May 29 guide for Bison, Ranger Beaver, Beaver Bob's van activity, Compass Coin spending, and the Week 1 archive context.",
-          meta: ["May 29", "Week 1 archive"]
+          excerpt: "Open the May 29 guide for Bison, Ranger Beaver, Beaver Bob's van activity, Compass Coin spending, bug fixes, and value status.",
+          meta: ["May 29", "Live guide"]
         }
       }
     },

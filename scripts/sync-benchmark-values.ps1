@@ -30,9 +30,10 @@ function Round-Value([double]$Value) {
   return [math]::Round($Value, 2)
 }
 
-function Read-TrackerRowsFromContent([string]$Raw, [int]$MinimumRows = 600) {
+function Read-TrackerRows([string]$Path) {
+  $raw = Get-Content -LiteralPath (Resolve-RepoPath $Path) -Raw
   $rowPattern = '\\\"id\\\":\\\"(?<id>\d+)\\\".*?\\\"name\\\":\\\"(?<name>.*?)\\\".*?\\\"rarity\\\":\\\"(?<rarity>.*?)\\\".*?\\\"type\\\":\\\"(?<type>.*?)\\\".*?\\\"rvalue\\\":(?<rvalue>[0-9.]+).*?\\\"rvalueFly\\\":(?<rvalueFly>[0-9.]+).*?\\\"rvalueRide\\\":(?<rvalueRide>[0-9.]+).*?\\\"rvalueFlyRide\\\":(?<rvalueFlyRide>[0-9.]+).*?\\\"rvalueNoPotion\\\":(?<rvalueNoPotion>[0-9.]+).*?\\\"nvalue\\\":(?<nvalue>[0-9.]+).*?\\\"nvalueFly\\\":(?<nvalueFly>[0-9.]+).*?\\\"nvalueRide\\\":(?<nvalueRide>[0-9.]+).*?\\\"nvalueFlyRide\\\":(?<nvalueFlyRide>[0-9.]+).*?\\\"nvalueNoPotion\\\":(?<nvalueNoPotion>[0-9.]+).*?\\\"mvalue\\\":(?<mvalue>[0-9.]+).*?\\\"mvalueFly\\\":(?<mvalueFly>[0-9.]+).*?\\\"mvalueRide\\\":(?<mvalueRide>[0-9.]+).*?\\\"mvalueFlyRide\\\":(?<mvalueFlyRide>[0-9.]+).*?\\\"mvalueNoPotion\\\":(?<mvalueNoPotion>[0-9.]+)'
-  $matches = [regex]::Matches($Raw, $rowPattern, [System.Text.RegularExpressions.RegexOptions]::Singleline)
+  $matches = [regex]::Matches($raw, $rowPattern, [System.Text.RegularExpressions.RegexOptions]::Singleline)
   $rows = @{}
 
   foreach ($match in $matches) {
@@ -62,61 +63,11 @@ function Read-TrackerRowsFromContent([string]$Raw, [int]$MinimumRows = 600) {
     }
   }
 
-  if ($rows.Count -lt $MinimumRows) {
+  if ($rows.Count -lt 600) {
     throw "Tracker parse coverage dropped too low: $($rows.Count) pet rows"
   }
 
   return $rows
-}
-
-function Read-TrackerRows([string]$Path) {
-  $raw = Get-Content -LiteralPath (Resolve-RepoPath $Path) -Raw
-  return Read-TrackerRowsFromContent -Raw $raw -MinimumRows 600
-}
-
-function Get-TrackerDetailRow([string]$Slug) {
-  $curl = Get-Command curl.exe -ErrorAction SilentlyContinue
-  if (-not $curl) {
-    throw "curl.exe is required to fetch benchmark detail fallback pages."
-  }
-
-  $urlSlug = $Slug -replace "-pet$", ""
-  $url = "https://www.adoptmevalues.app/values/$urlSlug"
-  $tempPath = [System.IO.Path]::GetTempFileName()
-
-  try {
-    & $curl.Source `
-      --silent `
-      --show-error `
-      --fail `
-      --location `
-      --max-time 60 `
-      --compressed `
-      --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" `
-      --output $tempPath `
-      $url
-
-    if ($LASTEXITCODE -ne 0) {
-      throw "curl exited with code $LASTEXITCODE for $url"
-    }
-
-    $raw = Get-Content -LiteralPath $tempPath -Raw
-    $rows = Read-TrackerRowsFromContent -Raw $raw -MinimumRows 1
-    $slugKey = Normalize-Key $Slug
-    if ($rows.ContainsKey($slugKey)) {
-      return $rows[$slugKey]
-    }
-
-    foreach ($key in $rows.Keys) {
-      return $rows[$key]
-    }
-
-    throw "No pet row found on detail fallback: $url"
-  } finally {
-    if (Test-Path -LiteralPath $tempPath) {
-      Remove-Item -LiteralPath $tempPath -Force
-    }
-  }
 }
 
 $benchmarkPath = Resolve-RepoPath $BenchmarkData
@@ -158,12 +109,8 @@ foreach ($pet in $benchmark.pets) {
   }
 
   if (-not $tracker) {
-    try {
-      $tracker = Get-TrackerDetailRow -Slug $pet.slug
-    } catch {
-      $missing.Add(("{0} ({1})" -f $pet.name, $_.Exception.Message))
-      continue
-    }
+    $missing.Add($pet.name)
+    continue
   }
 
   $pet.values.default = Round-Value $tracker.rvalueFlyRide

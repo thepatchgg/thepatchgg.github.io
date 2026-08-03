@@ -177,8 +177,6 @@
       "Benchmark anchor": "tone-strong",
       "Current guide": "tone-high",
       "Reference lane": "tone-medium",
-      "Market forming": "tone-rising",
-      "Values pending": "tone-rising",
       Rising: "tone-rising",
       Steady: "tone-steady",
       Falling: "tone-falling",
@@ -199,8 +197,6 @@
     function buildCard(pet, recentMode) {
       const pageTone = toneMap[pet.pageLabel] || "tone-medium";
       const supportTone = toneMap[pet.supportTone] || toneMap[pet.pageLabel] || "tone-medium";
-      const isMarketForming = pet.marketStatus === "forming";
-      const valueLabel = isMarketForming ? "Values pending" : window.ThePatchValues.formatValue(pet.values.default);
       return `
         <article class="card ${recentMode ? "recent-card" : "benchmark-card"}">
           <div class="toolbar">
@@ -216,7 +212,7 @@
           </div>
           <p>${pet.notes}</p>
           <div class="card-actions">
-            <span class="value-tag">${valueLabel}</span>
+            <span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span>
             <a class="pill-link" href="/pets/${pet.slug}.html">Open pet page</a>
           </div>
         </article>
@@ -237,11 +233,7 @@
           }
           return true;
         })
-        .sort((left, right) => {
-          const leftValue = left.marketStatus === "forming" ? -1 : (Number.isFinite(left.values && left.values.default) ? left.values.default : -1);
-          const rightValue = right.marketStatus === "forming" ? -1 : (Number.isFinite(right.values && right.values.default) ? right.values.default : -1);
-          return rightValue - leftValue;
-        });
+        .sort((left, right) => right.values.default - left.values.default);
     }
 
     function renderRecentPets() {

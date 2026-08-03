@@ -1,5 +1,5 @@
-{
-    "updatedAt":  "2026-08-02",
+﻿{
+    "updatedAt":  "2026-05-29",
     "entries":  [
                     {
                         "slug":  "2021-uplift-butterfly",
@@ -34,13 +34,6 @@
                         "name":  "Abyssinian Cat",
                         "rarity":  "r",
                         "image":  "/assets/pets/abyssinian-cat.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "aestus",
-                        "name":  "Aestus",
-                        "rarity":  "l",
-                        "image":  "/assets/pets/aestus.png",
                         "benchmark":  false
                     },
                     {
@@ -401,17 +394,17 @@
                         "benchmark":  false
                     },
                     {
-                        "slug":  "bison",
-                        "name":  "Bison",
-                        "rarity":  "r",
-                        "image":  "/assets/pets/bison.png",
-                        "benchmark":  false
-                    },
-                    {
                         "slug":  "black-chested-pheasant",
                         "name":  "Black-Chested Pheasant",
                         "rarity":  "l",
                         "image":  "/assets/pets/black-chested-pheasant.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "bison",
+                        "name":  "Bison",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/bison.png",
                         "benchmark":  false
                     },
                     {
@@ -629,13 +622,6 @@
                         "name":  "Bunny Swirl",
                         "rarity":  "ur",
                         "image":  "/assets/pets/bunny-swirl.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "burger-bear",
-                        "name":  "Burger Bear",
-                        "rarity":  "ur",
-                        "image":  "/assets/pets/burger-bear.png",
                         "benchmark":  false
                     },
                     {
@@ -944,13 +930,6 @@
                         "name":  "Clownfish",
                         "rarity":  "ur",
                         "image":  "/assets/pets/clownfish.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "clubtail-dragonfly",
-                        "name":  "Clubtail Dragonfly",
-                        "rarity":  "u",
-                        "image":  "/assets/pets/clubtail-dragonfly.png",
                         "benchmark":  false
                     },
                     {
@@ -1602,13 +1581,6 @@
                         "name":  "Flying Fish",
                         "rarity":  "c",
                         "image":  "/assets/pets/flying-fish.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "forest-sprite",
-                        "name":  "Forest Sprite",
-                        "rarity":  "c",
-                        "image":  "/assets/pets/forest-sprite.svg",
                         "benchmark":  false
                     },
                     {
@@ -2466,13 +2438,6 @@
                         "benchmark":  false
                     },
                     {
-                        "slug":  "irish-setter",
-                        "name":  "Irish Setter",
-                        "rarity":  "u",
-                        "image":  "/assets/pets/irish-setter.png",
-                        "benchmark":  false
-                    },
-                    {
                         "slug":  "irish-water-spaniel",
                         "name":  "Irish Water Spaniel",
                         "rarity":  "ur",
@@ -3250,38 +3215,10 @@
                         "benchmark":  false
                     },
                     {
-                        "slug":  "nurse-shark",
-                        "name":  "Nurse Shark",
-                        "rarity":  "r",
-                        "image":  "/assets/pets/nurse-shark.svg",
-                        "benchmark":  false
-                    },
-                    {
                         "slug":  "nutcracker-squirrel",
                         "name":  "Nutcracker Squirrel",
                         "rarity":  "r",
                         "image":  "/assets/pets/nutcracker-squirrel.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "oakee",
-                        "name":  "Oakee",
-                        "rarity":  "u",
-                        "image":  "/assets/pets/oakee.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "oakee-knight",
-                        "name":  "Oakee Knight",
-                        "rarity":  "ur",
-                        "image":  "/assets/pets/oakee-knight.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "oakee-wizard",
-                        "name":  "Oakee Wizard",
-                        "rarity":  "l",
-                        "image":  "/assets/pets/oakee-wizard.png",
                         "benchmark":  false
                     },
                     {
@@ -3831,24 +3768,10 @@
                         "benchmark":  false
                     },
                     {
-                        "slug":  "rainbow-trout",
-                        "name":  "Rainbow Trout",
-                        "rarity":  "ur",
-                        "image":  "/assets/pets/rainbow-trout.png",
-                        "benchmark":  false
-                    },
-                    {
                         "slug":  "ram",
                         "name":  "Ram",
                         "rarity":  "ur",
                         "image":  "/assets/pets/ram.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "ranger-beaver",
-                        "name":  "Ranger Beaver",
-                        "rarity":  "r",
-                        "image":  "/assets/pets/ranger-beaver.png",
                         "benchmark":  false
                     },
                     {
@@ -3971,17 +3894,17 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "ranger-beaver",
+                        "name":  "Ranger Beaver",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/ranger-beaver.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "river",
                         "name":  "River",
                         "rarity":  "u",
                         "image":  "/assets/pets/river.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "river-otter",
-                        "name":  "River Otter",
-                        "rarity":  "r",
-                        "image":  "/assets/pets/river-otter.png",
                         "benchmark":  false
                     },
                     {
@@ -4087,13 +4010,6 @@
                         "name":  "Rubber Ducky",
                         "rarity":  "c",
                         "image":  "/assets/pets/rubber-ducky.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "ruddy-duck",
-                        "name":  "Ruddy Duck",
-                        "rarity":  "r",
-                        "image":  "/assets/pets/ruddy-duck.svg",
                         "benchmark":  false
                     },
                     {
@@ -4433,13 +4349,6 @@
                         "benchmark":  false
                     },
                     {
-                        "slug":  "s-mores-raccoon",
-                        "name":  "S\u0027mores Raccoon",
-                        "rarity":  "ur",
-                        "image":  "/assets/pets/s-mores-raccoon.svg",
-                        "benchmark":  false
-                    },
-                    {
                         "slug":  "sneak-weasel",
                         "name":  "Sneak Weasel",
                         "rarity":  "r",
@@ -4514,13 +4423,6 @@
                         "name":  "Snowy Mammoth",
                         "rarity":  "ur",
                         "image":  "/assets/pets/snowy-mammoth.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "solaris",
-                        "name":  "Solaris",
-                        "rarity":  "l",
-                        "image":  "/assets/pets/solaris.png",
                         "benchmark":  false
                     },
                     {
@@ -4608,13 +4510,6 @@
                         "benchmark":  false
                     },
                     {
-                        "slug":  "storm-condor",
-                        "name":  "Storm Condor",
-                        "rarity":  "ur",
-                        "image":  "/assets/pets/storm-condor.png",
-                        "benchmark":  false
-                    },
-                    {
                         "slug":  "strawberry-penguin",
                         "name":  "Strawberry Penguin",
                         "rarity":  "l",
@@ -4640,13 +4535,6 @@
                         "name":  "Striped Eggy",
                         "rarity":  "l",
                         "image":  "/assets/pets/striped-eggy.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "stygian-owl",
-                        "name":  "Stygian Owl",
-                        "rarity":  "ur",
-                        "image":  "/assets/pets/stygian-owl.png",
                         "benchmark":  false
                     },
                     {
@@ -4678,17 +4566,17 @@
                         "benchmark":  false
                     },
                     {
-                        "slug":  "sunflower-friend",
-                        "name":  "Sunflower Friend",
-                        "rarity":  "r",
-                        "image":  "/assets/pets/sunflower-friend.svg",
-                        "benchmark":  false
-                    },
-                    {
                         "slug":  "sunglider",
                         "name":  "Sunglider",
                         "rarity":  "l",
                         "image":  "/assets/pets/sunglider.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "sunflower-friend",
+                        "name":  "Sunflower Friend",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/sunflower-friend.png",
                         "benchmark":  false
                     },
                     {
@@ -4773,13 +4661,6 @@
                         "name":  "Tawny Frogmouth",
                         "rarity":  "u",
                         "image":  "/assets/pets/tawny-frogmouth.png",
-                        "benchmark":  false
-                    },
-                    {
-                        "slug":  "tealwood-monster",
-                        "name":  "Tealwood Monster",
-                        "rarity":  "l",
-                        "image":  "/assets/pets/tealwood-monster.png",
                         "benchmark":  false
                     },
                     {
@@ -5031,7 +4912,7 @@
                         "slug":  "violet-friend",
                         "name":  "Violet Friend",
                         "rarity":  "r",
-                        "image":  "/assets/pets/violet-friend.svg",
+                        "image":  "/assets/pets/violet-friend.png",
                         "benchmark":  false
                     },
                     {
@@ -5302,8 +5183,8 @@
                     }
                 ],
     "counts":  {
-                   "total":  757,
-                   "verifiedRarity":  757,
+                   "total":  738,
+                   "verifiedRarity":  738,
                    "review":  0,
                    "benchmark":  18
                }

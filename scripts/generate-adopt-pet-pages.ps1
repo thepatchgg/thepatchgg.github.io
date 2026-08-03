@@ -24,14 +24,6 @@ function Get-CoalescedValue {
   return $null
 }
 
-function Has-Property($Object, [string]$Name) {
-  return ($null -ne $Object -and $Object.PSObject.Properties.Name -contains $Name)
-}
-
-function Test-MarketForming($Object) {
-  return ((Has-Property $Object "marketStatus") -and [string]$Object.marketStatus -eq "forming")
-}
-
 function HtmlEncode([string]$Value) {
   return [System.Net.WebUtility]::HtmlEncode([string]$Value)
 }
@@ -189,11 +181,7 @@ function Get-StatusLabel([string]$Status) {
 }
 
 function Get-EventContext([object]$SourceEntry) {
-  $candidates = @(
-    [string](Get-PropertyValue $SourceEntry "cost"),
-    [string](Get-PropertyValue $SourceEntry "notes"),
-    [string](Get-PropertyValue $SourceEntry "name")
-  )
+  $candidates = @([string]$SourceEntry.cost, [string]$SourceEntry.notes, [string]$SourceEntry.name)
   foreach ($candidate in $candidates) {
     if ([string]::IsNullOrWhiteSpace($candidate)) { continue }
     $match = [regex]::Match($candidate, "\(([^)]*(event|festival|lab|countdown|solution)[^)]*)\)", [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
@@ -207,11 +195,8 @@ function Get-EventContext([object]$SourceEntry) {
 
 function Get-PropertyValue($Object, [string]$Name) {
   if ($null -eq $Object) { return $null }
-  foreach ($property in $Object.PSObject.Properties) {
-    if ($property.Name -eq $Name) {
-      return $property.Value
-    }
-  }
+  $property = $Object.PSObject.Properties[$Name]
+  if ($property) { return $property.Value }
   return $null
 }
 
@@ -309,8 +294,6 @@ $toneClass = @{
   "Benchmark anchor" = "tone-strong"
   "Current guide" = "tone-high"
   "Reference lane" = "tone-medium"
-  "Market forming" = "tone-rising"
-  "Values pending" = "tone-rising"
 }
 
 $variantLabels = @{
@@ -356,47 +339,11 @@ foreach ($entry in $catalog.entries) { $catalogIndex[$entry.slug] = $entry }
 $allPets = New-Object System.Collections.Generic.List[object]
 
 foreach ($legacyPet in $legacy.pets) {
-  $isMarketForming = Test-MarketForming $legacyPet
   $catalogEntry = $catalogIndex[$legacyPet.slug]
   $benchmarkPet = $benchmarkIndex[$legacyPet.slug]
   $overridePet = $overrideIndex[$legacyPet.slug]
 
-  if ($isMarketForming) {
-    $rarityCode = Normalize-RarityCode ([string](Get-CoalescedValue @($catalogEntry.rarity, $legacyPet.rarity)))
-    $marketNote = [string](Get-CoalescedValue @((Get-PropertyValue $legacyPet "marketNote"), "Officially released pet with trade values still forming. The Patch is waiting for reliable tracker-backed trade rows before publishing numeric values."))
-    $record = [pscustomobject]@{
-      slug = $legacyPet.slug
-      name = $legacyPet.name
-      rarityCode = $rarityCode
-      rarity = Get-RarityLabel $rarityCode
-      image = [string](Get-CoalescedValue @($catalogEntry.image, $legacyPet.image, "/assets/pets/$($legacyPet.slug).png"))
-      source = "market-forming"
-      benchmark = $false
-      segment = "Market forming"
-      demand = "Release-day"
-      trend = "Watching"
-      confidence = "Pending tracker"
-      values = [ordered]@{
-        default = 0
-        fly = 0
-        ride = 0
-        noPotion = 0
-        neon = 0
-        neonFly = 0
-        neonRide = 0
-        neonNoPotion = 0
-        mega = 0
-        megaFly = 0
-        megaRide = 0
-        megaNoPotion = 0
-      }
-      notes = $marketNote
-      pageLabel = "Market forming"
-      supportLabel = "Values pending"
-      supportTone = "Values pending"
-      marketStatus = "forming"
-    }
-  } elseif ($benchmarkPet) {
+  if ($benchmarkPet) {
     $rarityCode = Normalize-RarityCode ([string](Get-CoalescedValue @($catalogEntry.rarity, $benchmarkPet.rarity)))
     $record = [pscustomobject]@{
       slug = $benchmarkPet.slug
@@ -428,7 +375,6 @@ foreach ($legacyPet in $legacy.pets) {
       pageLabel = "Benchmark anchor"
       supportLabel = "$($benchmarkPet.demand) demand"
       supportTone = $benchmarkPet.trend
-      marketStatus = ""
     }
   } elseif ($overridePet) {
     $vals = Convert-OverrideValues $overridePet.values
@@ -450,7 +396,6 @@ foreach ($legacyPet in $legacy.pets) {
       pageLabel = "Current guide"
       supportLabel = Get-Segment([double]$vals.default)
       supportTone = "Current guide"
-      marketStatus = ""
     }
   } else {
     $legacyValue = [double]$legacyPet.legacyValue
@@ -479,7 +424,6 @@ foreach ($legacyPet in $legacy.pets) {
       pageLabel = "Reference lane"
       supportLabel = Get-Segment($legacyValue)
       supportTone = "Reference lane"
-      marketStatus = ""
     }
   }
 
@@ -488,7 +432,7 @@ foreach ($legacyPet in $legacy.pets) {
 
 $allPets = @(
   $allPets |
-  Sort-Object @{ Expression = { if (Test-MarketForming $_) { -1 } else { [double]$_.values.default } }; Descending = $true }, @{ Expression = { $_.name } }
+  Sort-Object @{ Expression = { [double]$_.values.default }; Descending = $true }, @{ Expression = { $_.name } }
 )
 
 $petIndex = @{}
@@ -568,17 +512,17 @@ foreach ($egg in $eggs) {
       statusLabel = Get-StatusLabel ([string]$egg.status)
       released = [string]$egg.released
       releaseYear = Get-ReleaseYear ([string]$egg.released)
-      retired = [string](Get-CoalescedValue @((Get-PropertyValue $egg "retired")))
-      cost = [string](Get-CoalescedValue @((Get-PropertyValue $egg "cost")))
+      retired = [string](Get-CoalescedValue @($egg.retired))
+      cost = [string](Get-CoalescedValue @($egg.cost))
       petRarity = $petRarity
-      chanceText = [string](Get-CoalescedValue @((Get-PropertyValue $petOriginEntry "chance")))
-      rarityBand = if (-not [string]::IsNullOrWhiteSpace([string](Get-PropertyValue $petOriginEntry "chance"))) {
-        "Exact hatch chance: $(Get-PropertyValue $petOriginEntry "chance")"
+      chanceText = [string](Get-CoalescedValue @($petOriginEntry.chance))
+      rarityBand = if (-not [string]::IsNullOrWhiteSpace([string]$petOriginEntry.chance)) {
+        "Exact hatch chance: $($petOriginEntry.chance)"
       } else {
         Get-PetRarityBand -SourceEntry $egg -PetRarity $petRarity -TotalPetsInSource $totalPetsInSource
       }
       eventContext = Get-EventContext $egg
-      notes = [string](Get-CoalescedValue @((Get-PropertyValue $egg "notes")))
+      notes = [string](Get-CoalescedValue @($egg.notes))
       sortKey = Get-DateSortKey ([string]$egg.released)
     })
   }
@@ -587,20 +531,10 @@ foreach ($egg in $eggs) {
 $generatedPets = New-Object System.Collections.Generic.List[object]
 
 foreach ($pet in $allPets) {
-  $isMarketForming = Test-MarketForming $pet
   $profileProperty = $profiles.PSObject.Properties[$pet.slug]
   $profile = if ($profileProperty) { $profileProperty.Value } else { $null }
 
-  if ($isMarketForming) {
-    $compareSlugs = @(
-      "irish-setter",
-      "stygian-owl",
-      "river-otter",
-      "rainbow-trout",
-      "tealwood-monster",
-      "clubtail-dragonfly"
-    ) | Where-Object { $_ -ne $pet.slug -and $petIndex.ContainsKey($_) } | Select-Object -First 3
-  } elseif ($profile -and $profile.compareWith) {
+  if ($profile -and $profile.compareWith) {
     $compareSlugs = @($profile.compareWith)
   } else {
     $compareSlugs = @(
@@ -620,16 +554,7 @@ foreach ($pet in $allPets) {
   $relatedPets = @($compareSlugs | ForEach-Object { $petIndex[$_] } | Where-Object { $_ })
   $relatedLabel = Join-Names @($relatedPets | ForEach-Object { $_.name })
 
-  if ($isMarketForming) {
-    $profile = [pscustomobject]@{
-      summary = "$($pet.name) is a newly released Adopt Me pet with official catalog coverage on The Patch, but numeric trade values are still pending while the market forms."
-      origin = "The official source details for $($pet.name) are live here now. Trade values are intentionally held back until reliable tracker-backed rows appear."
-      liquidity = "Release-day trading can swing hard for $($pet.name), especially while players are still learning supply, cost, and pull odds."
-      tradeTip = "Use the official cost and rarity first, then compare against recent event pets before making a high-value offer. Do not treat early chat offers as a stable price."
-      watchReason = "Watch this page if you want the tracker-backed value lane as soon as it is safe to publish."
-      compareWith = $compareSlugs
-    }
-  } elseif (-not $profile) {
+  if (-not $profile) {
     $profile = [pscustomobject]@{
       summary = if ($pet.source -eq "benchmark") {
         "$($pet.name) is one of the clearer comparison anchors in the $($pet.segment.ToLowerInvariant()) range because traders keep using it as a practical checkpoint."
@@ -664,20 +589,20 @@ foreach ($pet in $allPets) {
   if ($manualOriginIndex.ContainsKey($pet.slug)) {
     foreach ($entry in @($manualOriginIndex[$pet.slug].sources)) {
       $originEntries.Add([pscustomobject]@{
-        sourceName = [string](Get-CoalescedValue @((Get-PropertyValue $entry "sourceName")))
-        sourceType = [string](Get-CoalescedValue @((Get-PropertyValue $entry "sourceType"), "Special source"))
-        status = [string](Get-CoalescedValue @((Get-PropertyValue $entry "status"), "retired"))
-        statusLabel = Get-StatusLabel ([string](Get-CoalescedValue @((Get-PropertyValue $entry "status"), "retired")))
-        released = [string](Get-CoalescedValue @((Get-PropertyValue $entry "released")))
-        releaseYear = [string](Get-CoalescedValue @((Get-PropertyValue $entry "releaseYear"), (Get-ReleaseYear ([string](Get-CoalescedValue @((Get-PropertyValue $entry "released")))))))
-        retired = [string](Get-CoalescedValue @((Get-PropertyValue $entry "retired")))
-        cost = [string](Get-CoalescedValue @((Get-PropertyValue $entry "cost")))
-        petRarity = [string](Get-CoalescedValue @((Get-PropertyValue $entry "petRarity")))
-        chanceText = [string](Get-CoalescedValue @((Get-PropertyValue $entry "chanceText")))
-        rarityBand = [string](Get-CoalescedValue @((Get-PropertyValue $entry "rarityBand")))
-        eventContext = [string](Get-CoalescedValue @((Get-PropertyValue $entry "eventContext")))
-        notes = [string](Get-CoalescedValue @((Get-PropertyValue $entry "notes")))
-        sortKey = if ($null -ne (Get-PropertyValue $entry "sortKey")) { [int](Get-PropertyValue $entry "sortKey") } else { Get-DateSortKey ([string](Get-CoalescedValue @((Get-PropertyValue $entry "released")))) }
+        sourceName = [string](Get-CoalescedValue @($entry.sourceName))
+        sourceType = [string](Get-CoalescedValue @($entry.sourceType, "Special source"))
+        status = [string](Get-CoalescedValue @($entry.status, "retired"))
+        statusLabel = Get-StatusLabel ([string](Get-CoalescedValue @($entry.status, "retired")))
+        released = [string](Get-CoalescedValue @($entry.released))
+        releaseYear = [string](Get-CoalescedValue @($entry.releaseYear, (Get-ReleaseYear ([string](Get-CoalescedValue @($entry.released))))))
+        retired = [string](Get-CoalescedValue @($entry.retired))
+        cost = [string](Get-CoalescedValue @($entry.cost))
+        petRarity = [string](Get-CoalescedValue @($entry.petRarity))
+        chanceText = [string](Get-CoalescedValue @($entry.chanceText))
+        rarityBand = [string](Get-CoalescedValue @($entry.rarityBand))
+        eventContext = [string](Get-CoalescedValue @($entry.eventContext))
+        notes = [string](Get-CoalescedValue @($entry.notes))
+        sortKey = if ($entry.PSObject.Properties["sortKey"]) { [int]$entry.sortKey } else { Get-DateSortKey ([string](Get-CoalescedValue @($entry.released))) }
       })
     }
   } elseif ($petOrigins.ContainsKey($pet.slug)) {
@@ -717,19 +642,15 @@ foreach ($pet in $allPets) {
   $faqItems = @(
     [pscustomobject]@{
       question = "How should I use this $($pet.name) page?"
-      answer = if ($isMarketForming) {
-        "$($pet.name) should be treated as an official-origin and watchlist page for now. The Patch is not publishing a numeric value until tracker-backed market data is reliable."
-      } elseif ($pet.benchmark) {
+      answer = if ($pet.benchmark) {
         "$($pet.name) works best as a benchmark anchor for $($pet.segment.ToLowerInvariant()) trades, especially when you want a cleaner read on nearby pets before you overpay."
       } else {
         "$($pet.name) works best as a current reference page for everyday trades in the $($pet.segment.ToLowerInvariant()) range, using the same broad value lane the site calculator relies on."
       }
     },
     [pscustomobject]@{
-      question = if ($isMarketForming) { "Why are $($pet.name) values pending?" } else { "Why does no-potion $($pet.name) look different from the default lane?" }
-      answer = if ($isMarketForming) {
-        "$($pet.name) is still too new for a stable calculator lane. Release-day trades can be noisy, so the value stays market-forming until public tracker rows are reliable."
-      } elseif ([double]$pet.values.noPotion -gt [double]$pet.values.default) {
+      question = "Why does no-potion $($pet.name) look different from the default lane?"
+      answer = if ([double]$pet.values.noPotion -gt [double]$pet.values.default) {
         "Right now, no-potion $($pet.name) sits at $(Format-Value([double]$pet.values.noPotion)) versus $(Format-Value([double]$pet.values.default)) for the default version, so collectors are paying about $(Format-Value([double][math]::Abs([double]$pet.values.noPotion - [double]$pet.values.default))) more for the cleaner lane."
       } elseif ([double]$pet.values.noPotion -lt [double]$pet.values.default) {
         "Right now, no-potion $($pet.name) sits at $(Format-Value([double]$pet.values.noPotion)) versus $(Format-Value([double]$pet.values.default)) for the default version, so the cleaner copy is slightly softer by about $(Format-Value([double][math]::Abs([double]$pet.values.noPotion - [double]$pet.values.default))) in this lane."
@@ -739,11 +660,7 @@ foreach ($pet in $allPets) {
     },
     [pscustomobject]@{
       question = "Which pets should I compare with $($pet.name)?"
-      answer = if ($isMarketForming) {
-        "The safest sanity checks right now are recent event pets with tracker-backed rows: $relatedLabel. Use those only as context, not as a confirmed $($pet.name) price."
-      } else {
-        "The fastest sanity checks right now are $relatedLabel. Those pages sit close enough to $($pet.name) that they help you keep offers grounded before you move ahead."
-      }
+      answer = "The fastest sanity checks right now are $relatedLabel. Those pages sit close enough to $($pet.name) that they help you keep offers grounded before you move ahead."
     }
   )
   if ($originSummary.audited) {
@@ -814,18 +731,10 @@ foreach ($pet in $allPets) {
   }
 
   $variantKeys = if ($pet.benchmark) { $benchmarkVariantKeys } else { $referenceVariantKeys }
-  $variantRows = if ($isMarketForming) {
-    foreach ($label in @("No Potion", "Fly Ride", "Neon Fly Ride", "Mega Fly Ride")) {
-@"
-                <li><span>$label</span><span class="value-tag">Pending</span></li>
-"@
-    }
-  } else {
-    foreach ($key in $variantKeys) {
+  $variantRows = foreach ($key in $variantKeys) {
 @"
                 <li><span>$($variantLabels[$key])</span><span class="value-tag">$(Format-Value([double]$pet.values.$key))</span></li>
 "@
-    }
   }
 
   $heroMetricRows = if ($pet.benchmark) {
@@ -834,18 +743,6 @@ foreach ($pet in $allPets) {
             <li><span>$($variantLabels[$key])</span><span class="value-tag">$(Format-Value([double]$pet.values.$key))</span></li>
 "@
     }
-  } elseif ($isMarketForming) {
-    @(
-@"
-            <li><span>Value status</span><span class="value-tag">Market forming</span></li>
-"@,
-@"
-            <li><span>Calculator lane</span><span class="value-tag">Listed pending</span></li>
-"@,
-@"
-            <li><span>Trade values</span><span class="value-tag">Awaiting tracker</span></li>
-"@
-    )
   } else {
     foreach ($key in @("default", "noPotion", "neon")) {
 @"
@@ -938,16 +835,8 @@ foreach ($pet in $allPets) {
     $originIntro = "This page already has current value lanes. The extra release and source details will appear here once the audited origin pass is complete for this pet."
   }
 
-  $title = if ($isMarketForming) {
-    "{0} Value Status in Adopt Me 2026 | The Patch" -f $pet.name
-  } else {
-    "{0} Value in Adopt Me 2026 | Trade Guide | The Patch" -f $pet.name
-  }
-  $description = if ($isMarketForming) {
-    "Check {0} value status in Adopt Me with official origin details, market-forming notes, and links to established calculator lanes." -f $pet.name
-  } else {
-    "Check current {0} value in Adopt Me with no-potion lanes, compare pages, and the next best links into calculators and guides." -f $pet.name
-  }
+  $title = "{0} Value in Adopt Me 2026 | Trade Guide | The Patch" -f $pet.name
+  $description = "Check current {0} value in Adopt Me with no-potion lanes, compare pages, and the next best links into calculators and guides." -f $pet.name
   $canonical = "https://thepatchgg.github.io/pets/{0}.html" -f $pet.slug
   $schema = @(
     [pscustomobject]@{
@@ -1000,23 +889,6 @@ foreach ($pet in $allPets) {
 
   $pageTone = Get-CoalescedValue @($toneClass[$pet.pageLabel], "tone-medium")
   $supportTone = Get-CoalescedValue @($toneClass[$pet.supportTone], "tone-medium")
-  $heroValueTag = if ($isMarketForming) { "Values pending" } else { Format-Value([double]$pet.values.default) }
-  $variantHeading = if ($isMarketForming) { "Value status" } else { "Variant values" }
-  $variantCopy = if ($isMarketForming) {
-    "Numeric lanes stay pending until reliable tracker data appears. This keeps release-day hype from becoming fake precision."
-  } else {
-    "The Patch treats potions and neon status as real market lanes, not flat multipliers."
-  }
-  $compareIntro = if ($isMarketForming) {
-    "Use these established event pages as sanity checks while $($pet.name) is still forming a real market lane."
-  } else {
-    "These pages sit closest to $($pet.name) in real trade conversations and give useful sanity checks before overpaying."
-  }
-  $faqIntro = if ($isMarketForming) {
-    "These quick answers cover why values are pending, how to use this page, and where the official origin data comes from."
-  } else {
-    "These quick answers cover value lanes, nearby compare pages, and how to use this guide."
-  }
 
   $html = @"
 <!DOCTYPE html>
@@ -1097,7 +969,7 @@ foreach ($pet in $allPets) {
           <div class="catalog-meta">
             <span class="tone $pageTone">$(HtmlEncode $pet.pageLabel)</span>
             <span class="tone $supportTone">$(HtmlEncode $pet.supportLabel)</span>
-            <span class="value-tag">$(HtmlEncode $heroValueTag)</span>
+            <span class="value-tag">$(Format-Value([double]$pet.values.default))</span>
           </div>
           <ul class="mini-list detail-kpis">
 $($heroMetricRows -join "`n")
@@ -1127,8 +999,8 @@ $($heroMetricRows -join "`n")
         </section>
         <aside class="tool-card stack detail-sidebar">
           <div>
-            <h2>$(HtmlEncode $variantHeading)</h2>
-            <p class="micro-copy">$(HtmlEncode $variantCopy)</p>
+            <h2>Variant values</h2>
+            <p class="micro-copy">The Patch treats potions and neon status as real market lanes, not flat multipliers.</p>
           </div>
           <ul class="mini-list variant-list">
 $($variantRows -join "`r`n")
@@ -1179,7 +1051,7 @@ $($originSnapshotRows -join "`r`n")
         <div class="section-head">
           <div>
             <h2>Compare with nearby pet pages</h2>
-            <p class="intro-copy">$(HtmlEncode $compareIntro)</p>
+            <p class="intro-copy">These pages sit closest to $(HtmlEncode $pet.name) in real trade conversations and give useful sanity checks before overpaying.</p>
           </div>
         </div>
         <div class="card-grid">
@@ -1207,7 +1079,7 @@ $($nextReadCards -join "`r`n")
         <div class="section-head">
           <div>
             <h2>$(HtmlEncode $pet.name) FAQ</h2>
-            <p class="intro-copy">$(HtmlEncode $faqIntro)</p>
+            <p class="intro-copy">These quick answers cover value lanes, nearby compare pages, and how to use this guide.</p>
           </div>
           <div class="section-actions">
             <a class="pill-link" href="/pets/">Pet library</a>
@@ -1261,7 +1133,6 @@ $($faqMarkup -join "`r`n")
     pageLabel = $pet.pageLabel
     supportLabel = $pet.supportLabel
     supportTone = $pet.supportTone
-    marketStatus = $pet.marketStatus
     pageUrl = "/pets/$($pet.slug).html"
     compareSlugs = $compareSlugs
     origin = $originSummary

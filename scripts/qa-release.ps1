@@ -2,19 +2,6 @@ $repoRoot = Split-Path -Parent $PSScriptRoot
 
 $issues = New-Object System.Collections.Generic.List[string]
 
-function Get-RepoRelativePath([string]$FullName) {
-  return $FullName.Substring($repoRoot.Length + 1) -replace "\\", "/"
-}
-
-function Test-QAExcludedPath([string]$FullName) {
-  $relativePath = Get-RepoRelativePath $FullName
-  return $relativePath -eq "data/adoptmevalues-values-page.html" -or
-    $relativePath -eq "_main_publish/data/adoptmevalues-values-page.html" -or
-    $relativePath.StartsWith("_publish_tmp/") -or
-    $relativePath.StartsWith("_publish_sync/") -or
-    $relativePath.StartsWith("_main_publish/")
-}
-
 $corePages = @(
   "index.html",
   "adopt-me.html",
@@ -255,12 +242,12 @@ if ($catalogData.counts.review -gt 25) {
 $scanFiles = Get-ChildItem -Path $repoRoot -Recurse -Include *.html,*.js,*.ps1,*.md,*.xml
 $badEncodingPattern = ([char]0x00E2).ToString() + "|" + ([char]0x00C2).ToString()
 foreach ($file in $scanFiles) {
-  if (Test-QAExcludedPath $file.FullName) {
+  $content = Get-Content -Raw -Path $file.FullName
+  $relativePath = $file.FullName.Substring($repoRoot.Length + 1) -replace "\\", "/"
+
+  if ($relativePath -eq "data/adoptmevalues-values-page.html") {
     continue
   }
-
-  $content = Get-Content -Raw -Path $file.FullName
-  $relativePath = Get-RepoRelativePath $file.FullName
 
   if ($content -match $badEncodingPattern) {
     $issues.Add("Encoding artifact detected in $relativePath")
@@ -290,12 +277,12 @@ foreach ($page in ($corePages + $samplePetPages)) {
 
 $htmlFiles = Get-ChildItem -Path $repoRoot -Recurse -Filter *.html
 foreach ($file in $htmlFiles) {
-  if (Test-QAExcludedPath $file.FullName) {
+  $content = Get-Content -Raw -Path $file.FullName
+  $relativePath = $file.FullName.Substring($repoRoot.Length + 1) -replace "\\", "/"
+
+  if ($relativePath -eq "data/adoptmevalues-values-page.html") {
     continue
   }
-
-  $content = Get-Content -Raw -Path $file.FullName
-  $relativePath = Get-RepoRelativePath $file.FullName
 
   if ($content -notmatch "/assets/js/patch-ribbon\.js") {
     $issues.Add("Menu ribbon normalizer missing in $relativePath")

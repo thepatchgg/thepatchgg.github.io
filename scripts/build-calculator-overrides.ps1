@@ -146,7 +146,6 @@ $unmatched = New-Object System.Collections.Generic.List[string]
 $benchmarkComparisons = New-Object System.Collections.Generic.List[object]
 $trackerMatchedCount = 0
 $manualResolvedCount = 0
-$marketFormingCount = 0
 
 foreach ($pet in $legacy.pets) {
   $trackerItem = $null
@@ -165,12 +164,6 @@ foreach ($pet in $legacy.pets) {
   }
 
   if (-not $trackerItem) {
-    $marketStatus = if ($pet.PSObject.Properties.Name -contains "marketStatus") { [string]$pet.marketStatus } else { "" }
-    if ($marketStatus -eq "forming") {
-      $marketFormingCount++
-      continue
-    }
-
     if ($manualIndex.ContainsKey($pet.slug)) {
       $manualPet = $manualIndex[$pet.slug]
       $baseValue = [double]$manualPet.baseValue
@@ -243,16 +236,12 @@ $payload = [ordered]@{
   notes = "Bulk calculator override audit generated from the public Adopt Me Values values index source, with manual resolutions for edge-case pets. Benchmark pets remain on The Patch's shared benchmark layer."
   trackerMatchedCount = $trackerMatchedCount
   manualResolvedCount = $manualResolvedCount
-  marketFormingCount = $marketFormingCount
   remainingUnmatchedCount = $unmatched.Count
   pets = @($overridePets)
 }
 $payload | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath (Resolve-RepoPath $OutJson)
 
-$nonBenchmarkCount = @($legacy.pets | Where-Object {
-  -not $benchmarkIndex.ContainsKey($_.slug) -and
-  (-not ($_.PSObject.Properties.Name -contains "marketStatus") -or [string]$_.marketStatus -ne "forming")
-}).Count
+$nonBenchmarkCount = @($legacy.pets | Where-Object { -not $benchmarkIndex.ContainsKey($_.slug) }).Count
 $matchedCount = $overridePets.Count
 $unmatchedCount = $unmatched.Count
 $benchmarkDiffs = @($benchmarkComparisons | ForEach-Object {
@@ -276,7 +265,6 @@ $report += "- Local calculator pets: $($legacy.pets.Count)"
 $report += "- Non-benchmark local pets: $nonBenchmarkCount"
 $report += "- Non-benchmark pets matched to tracker feed: $trackerMatchedCount"
 $report += "- Non-benchmark pets manually resolved: $manualResolvedCount"
-$report += "- Market-forming pets pending tracker values: $marketFormingCount"
 $report += "- Non-benchmark pets still unmatched: $unmatchedCount"
 $report += ""
 $report += "## Benchmark Divergence"
