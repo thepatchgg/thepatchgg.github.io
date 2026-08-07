@@ -1,17 +1,17 @@
 # Value Audit Summary
 
-- Date: 2026-05-16
+- Date: 2026-08-07
 - Source refresh: fresh
 - Mode: production refresh
 - Scope: Adopt Me trade calculator long-tail pet values
 - Reference source: adoptmevalues.app values index
-- Local calculator coverage: 719 pets
+- Local calculator coverage: 735 pets
 - Benchmark/editorial pets currently handled outside the override layer: 101
-- Comparable non-benchmark pet coverage in this run: 618
-- Non-benchmark pets matched to public tracker feed: 609
+- Comparable non-benchmark pet coverage in this run: 634
+- Non-benchmark pets matched to public tracker feed: 625
 - Non-benchmark pets manually resolved: 9
 - Non-benchmark pets still unmatched: 0
-- Current production comparable non-benchmark coverage: 618
+- Current production comparable non-benchmark coverage: 634
 
 ## What Changed
 
@@ -27,14 +27,14 @@ These benchmark pets still deserve human review before any editorial benchmark c
 
 | Pet | Patch default | Tracker FR | Delta % |
 | --- | ---: | ---: | ---: |
-| Mini Pig | 31 | 38.5 | -19.5% |
-| Hot Doggo | 27.5 | 34 | -19.1% |
-| Shark Puppy | 11 | 13.25 | -17% |
-| Haetae | 127 | 109 | 16.5% |
-| Bush Elephant | 10.5 | 12.5 | -16% |
-| Velocirooster | 10 | 8.75 | 14.3% |
-| Unicorn | 1.9 | 1.7 | 11.8% |
-| Jekyll Hydra | 40 | 36 | 11.1% |
+| Undead Jousting Horse | 21 | 58.5 | -64.1% |
+| Werewolf | 9.75 | 24 | -59.4% |
+| Sugar Glider | 13.25 | 27 | -50.9% |
+| Cerberus | 1.6 | 3.2 | -50% |
+| Frostbite Bear | 8.25 | 16.5 | -50% |
+| Candicorn | 5.7 | 10.5 | -45.7% |
+| Blazing Lion | 81 | 147 | -44.9% |
+| Orchid Butterfly | 59 | 105 | -43.8% |
 
 ## Recommendation
 

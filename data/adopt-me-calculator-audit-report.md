@@ -1,43 +1,42 @@
 # Calculator Audit Report
 
-- Date: 2026-06-02
-- Tracker pet rows parsed: 728
-- Local calculator pets: 719
-- Non-benchmark local pets: 619
-- Non-benchmark pets matched to tracker feed: 609
-- Non-benchmark pets manually resolved: 10
-- New-pet production overlay rows: 1
+- Date: 2026-08-07
+- Tracker pet rows parsed: 762
+- Local calculator pets: 735
+- Non-benchmark local pets: 634
+- Non-benchmark pets matched to tracker feed: 625
+- Non-benchmark pets manually resolved: 9
 - Non-benchmark pets still unmatched: 0
 
 ## Benchmark Divergence
 
 | Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Siamese Cat | 12.5 | 16.5 | -24.2% | 11.5 | 15.5 |
-| Hot Doggo | 27.5 | 35.5 | -22.5% | 26.5 | 34.5 |
-| Mini Pig | 31 | 40 | -22.5% | 29.5 | 38.5 |
-| Velocirooster | 10 | 8.5 | 17.6% | 9 | 7.75 |
-| Balloon Unicorn | 125 | 151 | -17.2% | 123 | 149 |
-| Goose | 20.75 | 25 | -17% | 19.25 | 23.5 |
-| Haetae | 127 | 109 | 16.5% | 125 | 107 |
-| Bush Elephant | 10.5 | 12.5 | -16% | 9.5 | 11.5 |
-| Shark Puppy | 11 | 13 | -15.4% | 10 | 12 |
-| Unicorn | 1.9 | 1.65 | 15.2% | 1.2 | 0.95 |
-| Alpaca | 12 | 13.75 | -12.7% | 11 | 12.75 |
-| African Wild Dog | 115 | 130 | -11.5% | 113 | 128 |
-| Jekyll Hydra | 40 | 36.5 | 9.6% | 39 | 35.5 |
-| Frostbite Bear | 9 | 8.25 | 9.1% | 8.25 | 7.5 |
-| Werewolf | 8.25 | 9 | -8.3% | 7.5 | 8.25 |
-| Papa Moose | 7.5 | 7 | 7.1% | 6.75 | 6.25 |
-| Cryptid | 99 | 106 | -6.6% | 97 | 104 |
-| Field Mouse | 8.25 | 7.75 | 6.5% | 7.5 | 7 |
-| Dragon | 1 | 0.94 | 6.4% | 0.3 | 0.24 |
-| Alicorn | 1 | 0.94 | 6.4% | 0.3 | 0.24 |
-| Undead Jousting Horse | 19 | 20.25 | -6.2% | 18 | 19.25 |
-| Golden Penguin | 2.7 | 2.55 | 5.9% | 2 | 1.85 |
-| Dragonfruit Fox | 4.95 | 4.7 | 5.3% | 4.25 | 4 |
-| Blazing Lion | 77 | 81 | -4.9% | 75 | 79 |
-| Bat Dragon | 722 | 758 | -4.7% | 735 | 771 |
+| Undead Jousting Horse | 21 | 58.5 | -64.1% | 20 | 57.5 |
+| Werewolf | 9.75 | 24 | -59.4% | 9 | 23 |
+| Sugar Glider | 13.25 | 27 | -50.9% | 12.25 | 26 |
+| Cerberus | 1.6 | 3.2 | -50% | 0.9 | 2.5 |
+| Frostbite Bear | 8.25 | 16.5 | -50% | 7.5 | 15.5 |
+| Candicorn | 5.7 | 10.5 | -45.7% | 5 | 9.5 |
+| Blazing Lion | 81 | 147 | -44.9% | 79 | 145 |
+| Orchid Butterfly | 59 | 105 | -43.8% | 57 | 103 |
+| Giant Panda | 117 | 193 | -39.4% | 115 | 192 |
+| Silverback Gorilla | 5.45 | 9 | -39.4% | 4.75 | 8 |
+| Dragonfruit Fox | 4.7 | 3.45 | 36.2% | 4 | 2.75 |
+| Jekyll Hydra | 36.5 | 57 | -36% | 35.5 | 56 |
+| Black-Chested Pheasant | 8 | 12.5 | -36% | 7.25 | 11.5 |
+| Bush Elephant | 12.5 | 19 | -34.2% | 11.5 | 18 |
+| Monkey King | 21.75 | 31.25 | -30.4% | 21.25 | 63 |
+| Field Mouse | 7.75 | 6 | 29.2% | 7 | 5.25 |
+| Shadow Dragon | 477 | 670 | -28.8% | 596.25 | 838 |
+| Owlbear | 7 | 5.5 | 27.3% | 6.25 | 4.75 |
+| Giraffe | 333 | 455 | -26.8% | 345 | 468 |
+| Alpaca | 13.75 | 18.75 | -26.7% | 12.75 | 17.75 |
+| Frost Unicorn | 10.5 | 14 | -25% | 9.5 | 13 |
+| Goose | 28 | 36.5 | -23.3% | 26.5 | 35 |
+| Cryptid | 106 | 133.5 | -20.6% | 104 | 131.5 |
+| Jellyfish | 8.25 | 10.25 | -19.5% | 7.5 | 9.5 |
+| Diamond Butterfly | 51 | 62.5 | -18.4% | 50 | 61.5 |
 
 ## Manual Edge-Case Resolutions
 
@@ -53,7 +52,6 @@
 - River: manualTradable (Wrapped Doll pet using current AMTV base value.)
 - Scoob: nonTradable (Temporary Scoob event pet that could not be traded.)
 - Weevil Pet: manualTradable (Mapped to Weevil on AMTV.)
-- Bison: newPetProjection (Small production overlay for June 2, 2026; reviewed early values are 0.3 no potion, 0.75 fly ride, and 2.25 neon fly ride.)
 
 ## Unmatched Local Pets
 

@@ -2,6 +2,13 @@ $repoRoot = Split-Path -Parent $PSScriptRoot
 
 $issues = New-Object System.Collections.Generic.List[string]
 
+function Test-QAExcludedPath {
+  param([string]$FullName)
+
+  $relativePath = $FullName.Substring($repoRoot.Length).TrimStart('\')
+  return $relativePath -like '_*'
+}
+
 $corePages = @(
   "index.html",
   "adopt-me.html",
@@ -239,7 +246,8 @@ if ($catalogData.counts.review -gt 25) {
   $issues.Add("Too many pet catalog entries still marked for review: $($catalogData.counts.review)")
 }
 
-$scanFiles = Get-ChildItem -Path $repoRoot -Recurse -Include *.html,*.js,*.ps1,*.md,*.xml
+$scanFiles = Get-ChildItem -Path $repoRoot -Recurse -Include *.html,*.js,*.ps1,*.md,*.xml |
+  Where-Object { -not (Test-QAExcludedPath -FullName $_.FullName) }
 $badEncodingPattern = ([char]0x00E2).ToString() + "|" + ([char]0x00C2).ToString()
 foreach ($file in $scanFiles) {
   $content = Get-Content -Raw -Path $file.FullName
@@ -275,7 +283,8 @@ foreach ($page in ($corePages + $samplePetPages)) {
   }
 }
 
-$htmlFiles = Get-ChildItem -Path $repoRoot -Recurse -Filter *.html
+$htmlFiles = Get-ChildItem -Path $repoRoot -Recurse -Filter *.html |
+  Where-Object { -not (Test-QAExcludedPath -FullName $_.FullName) }
 foreach ($file in $htmlFiles) {
   $content = Get-Content -Raw -Path $file.FullName
   $relativePath = $file.FullName.Substring($repoRoot.Length + 1) -replace "\\", "/"

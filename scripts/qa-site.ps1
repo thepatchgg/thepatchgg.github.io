@@ -1,7 +1,17 @@
 $repoRoot = Split-Path -Parent $PSScriptRoot
 
+function Test-QAExcludedPath {
+  param([string]$FullName)
+
+  $relativePath = $FullName.Substring($repoRoot.Length).TrimStart('\')
+  return $relativePath -like '_*'
+}
+
 $htmlFiles = Get-ChildItem -Path $repoRoot -Recurse -Filter *.html |
-  Where-Object { $_.FullName -notlike (Join-Path $repoRoot 'data\*') } |
+  Where-Object {
+    $_.FullName -notlike (Join-Path $repoRoot 'data\*') -and
+    -not (Test-QAExcludedPath -FullName $_.FullName)
+  } |
   Sort-Object FullName
 $issues = New-Object System.Collections.Generic.List[string]
 

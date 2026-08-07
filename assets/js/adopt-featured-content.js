@@ -23,24 +23,24 @@
       }
     },
     {
-      href: "/articles/adopt-me-bonus-acorn-weekend-notes-guide.html",
+      href: "/articles/adopt-me-bee-pass-notes-guide.html",
       featured: true,
       contexts: {
         home: {
-          tag: "Bonus Acorn Weekend",
-          badgeLabel: "New",
-          badgeTone: "new",
-          title: "Bonus Acorn Weekend Notes guide &mdash; 1.2X Acorns, Summer Wagon timing, and final camp spending",
-          excerpt: "The July 17 update adds 1.2X Acorns for the last Summer Camp weekend, the July 20 Summer Wagon, converted summer items, and the final buying window before July 24.",
-          meta: ["July 17, 2026", "Live guide"]
+          tag: "Bee Pass",
+          badgeLabel: "Updated",
+          badgeTone: "updated",
+          title: "Bee Pass Notes guide &mdash; Sunflower Friend, Violet Friend, seed costs, and the extra week",
+          excerpt: "The July 24 update stays live for another week after Trading Hub Notes, with Sunflower Friend and Violet Friend still active in the current pass loop.",
+          meta: ["July 24, 2026", "Updated guide"]
         },
         hub: {
-          tag: "Weekend Update",
-          badgeLabel: "New",
-          badgeTone: "new",
-          title: "Bonus Acorn Weekend Notes Guide - 1.2X Acorns and Summer Wagon timing",
-          excerpt: "Open the July 17 guide for 1.2X Acorns, the July 20 Summer Wagon, temporary item conversion, and the last Summer Camp spend plan.",
-          meta: ["July 17", "Live guide"]
+          tag: "Previous Update",
+          badgeLabel: "Updated",
+          badgeTone: "updated",
+          title: "Bee Pass Notes Guide - Sunflower Friend, Violet Friend, bouquet XP, and the extra week",
+          excerpt: "Open the July 24 guide for flower seed prices, Bee Pass rewards, the Beehive House, and the official extra-week note.",
+          meta: ["July 24", "Updated guide"]
         }
       }
     },
