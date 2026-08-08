@@ -333,12 +333,12 @@
 
     function getValueForEntry(entry) {
       const page = getPageForEntry(entry);
-      return page ? page.values.default : null;
+      return page && page.values && typeof page.values.default === "number" ? page.values.default : null;
     }
 
     function getValueBadgeForEntry(entry) {
       const page = getPageForEntry(entry);
-      if (!page || typeof page.values.default !== "number") return "";
+      if (!page || !page.values || typeof page.values.default !== "number") return "";
       return `FR ${window.ThePatchValues.formatValue(page.values.default)}`;
     }
 

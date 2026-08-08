@@ -281,6 +281,11 @@ $originOverrides = if (Test-Path -LiteralPath $originOverridesPath) {
 } else {
   @()
 }
+$existingPetPages = if (Test-Path -LiteralPath $petPagesDataPath) {
+  Get-Content -Raw -Path $petPagesDataPath | ConvertFrom-Json
+} else {
+  $null
+}
 
 $toneClass = @{
   "Elite" = "tone-elite"
@@ -1139,6 +1144,14 @@ $($faqMarkup -join "`r`n")
   })
 }
 
+if ($existingPetPages) {
+  foreach ($pendingPet in @($existingPetPages.pets | Where-Object { $_.source -eq "official-pending" })) {
+    if (-not (@($generatedPets | Where-Object { $_.slug -eq $pendingPet.slug }).Count)) {
+      $generatedPets.Add($pendingPet)
+    }
+  }
+}
+
 $benchmarkCount = ($generatedPets | Where-Object { $_.benchmark -eq $true } | Measure-Object).Count
 $currentGuideCount = ($generatedPets | Where-Object { $_.pageLabel -eq "Current guide" } | Measure-Object).Count
 $referenceLaneCount = ($generatedPets | Where-Object { $_.pageLabel -eq "Reference lane" } | Measure-Object).Count
@@ -1172,6 +1185,11 @@ $urlset = $sitemap.urlset
 
 Add-SitemapUrl -Sitemap $sitemap -Parent $urlset -Loc "https://thepatchgg.github.io/pets/" -LastMod $today -ChangeFreq "weekly" -Priority "0.8"
 foreach ($pet in $generatedPets) {
-  Add-SitemapUrl -Sitemap $sitemap -Parent $urlset -Loc ("https://thepatchgg.github.io/pets/{0}.html" -f $pet.slug) -LastMod $today -ChangeFreq "weekly" -Priority (Get-SitemapPriority([double]$pet.values.default))
+  $priority = if ($pet.values -and $null -ne $pet.values.default) {
+    Get-SitemapPriority([double]$pet.values.default)
+  } else {
+    "0.5"
+  }
+  Add-SitemapUrl -Sitemap $sitemap -Parent $urlset -Loc ("https://thepatchgg.github.io/pets/{0}.html" -f $pet.slug) -LastMod $today -ChangeFreq "weekly" -Priority $priority
 }
 [System.IO.File]::WriteAllText($sitemapPath, $sitemap.OuterXml, $utf8NoBom)
