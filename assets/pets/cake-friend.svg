@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Cake Friend artwork pending</title>
+  <desc id="desc">A colorful birthday placeholder indicating that standalone official pet art is pending.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8edcf1"/>
+      <stop offset="1" stop-color="#f29bbb"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="72" fill="url(#bg)"/>
+  <path d="M133 240h246v105c0 31-25 56-56 56H189c-31 0-56-25-56-56Z" fill="#fff1cf" stroke="#27304a" stroke-width="9"/>
+  <path d="M133 240h246l-20-47H153Z" fill="#f28caa" stroke="#27304a" stroke-width="9"/>
+  <path d="M170 193c8-34 29-51 54-30 20-35 49-30 63 3 28-27 59-9 56 27" fill="none" stroke="#fff1cf" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="205" cy="277" r="12" fill="#27304a"/>
+  <circle cx="307" cy="277" r="12" fill="#27304a"/>
+  <path d="M234 304c15 16 29 16 44 0" fill="none" stroke="#27304a" stroke-width="8" stroke-linecap="round"/>
+  <text x="256" y="437" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#27304a">Cake Friend</text>
+  <text x="256" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#27304a">Official standalone art pending</text>
+</svg>

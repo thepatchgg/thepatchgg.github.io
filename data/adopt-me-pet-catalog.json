@@ -23,6 +23,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "2026-birthday-butterfly",
+                        "name":  "2026 Birthday Butterfly",
+                        "rarity":  "u",
+                        "image":  "/assets/pets/2026-birthday-butterfly.svg",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "2d-kitty",
                         "name":  "2D Kitty",
                         "rarity":  "l",
@@ -671,6 +678,13 @@
                         "name":  "Caelum Cervi",
                         "rarity":  "l",
                         "image":  "/assets/pets/caelum-cervi.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "cake-friend",
+                        "name":  "Cake Friend",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/cake-friend.svg",
                         "benchmark":  false
                     },
                     {
@@ -5183,10 +5197,9 @@
                     }
                 ],
     "counts":  {
-                   "total":  740,
-                   "verifiedRarity":  740,
+                   "total":  742,
+                   "verifiedRarity":  742,
                    "review":  0,
                    "benchmark":  18
                }
 }
-

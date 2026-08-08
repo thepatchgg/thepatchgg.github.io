@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">2026 Birthday Butterfly artwork pending</title>
+  <desc id="desc">A colorful birthday placeholder indicating that standalone official pet art is pending.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd66b"/>
+      <stop offset="1" stop-color="#f58ab8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="72" fill="url(#bg)"/>
+  <circle cx="256" cy="215" r="76" fill="#fff6d5" opacity=".95"/>
+  <path d="M256 205c-52-110-165-83-129-5 18 39 75 48 129 5Zm0 0c52-110 165-83 129-5-18 39-75 48-129 5Z" fill="#7c5ce5" opacity=".9"/>
+  <path d="M256 205c-52 110-165 83-129 5 18-39 75-48 129-5Zm0 0c52 110 165 83 129 5-18-39-75-48-129-5Z" fill="#39c6bd" opacity=".9"/>
+  <circle cx="256" cy="205" r="18" fill="#27304a"/>
+  <text x="256" y="352" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#27304a">2026 Birthday Butterfly</text>
+  <text x="256" y="389" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#27304a">Official standalone art pending</text>
+</svg>

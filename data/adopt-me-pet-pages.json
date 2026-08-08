@@ -66212,6 +66212,188 @@
                                                          "2020"
                                                      ]
                                 }
+                 },
+                 {
+                     "slug":  "2026-birthday-butterfly",
+                     "name":  "2026 Birthday Butterfly",
+                     "rarityCode":  "u",
+                     "rarity":  "Uncommon",
+                     "image":  "/assets/pets/2026-birthday-butterfly.svg",
+                     "source":  "official-pending",
+                     "benchmark":  false,
+                     "segment":  "Market forming",
+                     "demand":  "Unpriced",
+                     "trend":  "Pending",
+                     "confidence":  "Official release only",
+                     "values":  null,
+                     "notes":  "Officially released on Aug 7, 2026. The market is still forming, so no live value is published. Standalone official pet art is pending.",
+                     "pageLabel":  "Market forming",
+                     "supportLabel":  "No live value",
+                     "supportTone":  "Pending",
+                     "pageUrl":  "/pets/2026-birthday-butterfly.html",
+                     "compareSlugs":  [
+                                          "2025-birthday-butterfly",
+                                          "birthday-butterfly-2024"
+                                      ],
+                     "origin":  {
+                                    "audited":  true,
+                                    "sources":  [
+                                                    {
+                                                        "sourceName":  "Birthday Party event shop",
+                                                        "sourceType":  "Event shop pet",
+                                                        "status":  "current",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "Aug 7, 2026",
+                                                        "releaseYear":  "2026",
+                                                        "retired":  "",
+                                                        "cost":  "1,500 Bucks",
+                                                        "petRarity":  "Uncommon",
+                                                        "chanceText":  "",
+                                                        "rarityBand":  "",
+                                                        "eventContext":  "Adopt Me 9th birthday event",
+                                                        "notes":  "Official 9th Birthday Party Notes. No end date was published.",
+                                                        "sortKey":  202608
+                                                    }
+                                                ],
+                                    "sourceCount":  1,
+                                    "firstSource":  {
+                                                        "sourceName":  "Birthday Party event shop",
+                                                        "sourceType":  "Event shop pet",
+                                                        "status":  "current",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "Aug 7, 2026",
+                                                        "releaseYear":  "2026",
+                                                        "retired":  "",
+                                                        "cost":  "1,500 Bucks",
+                                                        "petRarity":  "Uncommon",
+                                                        "chanceText":  "",
+                                                        "rarityBand":  "",
+                                                        "eventContext":  "Adopt Me 9th birthday event",
+                                                        "notes":  "Official 9th Birthday Party Notes. No end date was published.",
+                                                        "sortKey":  202608
+                                                    },
+                                    "currentSources":  [
+                                                           {
+                                                               "sourceName":  "Birthday Party event shop",
+                                                               "sourceType":  "Event shop pet",
+                                                               "status":  "current",
+                                                               "statusLabel":  "Currently available",
+                                                               "released":  "Aug 7, 2026",
+                                                               "releaseYear":  "2026",
+                                                               "retired":  "",
+                                                               "cost":  "1,500 Bucks",
+                                                               "petRarity":  "Uncommon",
+                                                               "chanceText":  "",
+                                                               "rarityBand":  "",
+                                                               "eventContext":  "Adopt Me 9th birthday event",
+                                                               "notes":  "Official 9th Birthday Party Notes. No end date was published.",
+                                                               "sortKey":  202608
+                                                           }
+                                                       ],
+                                    "currentSourceLabels":  [
+                                                                "Birthday Party event shop"
+                                                            ],
+                                    "sourceLabels":  [
+                                                         "Birthday Party event shop"
+                                                     ],
+                                    "eventLabels":  [
+                                                        "Adopt Me 9th birthday event"
+                                                    ],
+                                    "releaseYears":  [
+                                                         "2026"
+                                                     ]
+                                }
+                 },
+                 {
+                     "slug":  "cake-friend",
+                     "name":  "Cake Friend",
+                     "rarityCode":  "ur",
+                     "rarity":  "Ultra-Rare",
+                     "image":  "/assets/pets/cake-friend.svg",
+                     "source":  "official-pending",
+                     "benchmark":  false,
+                     "segment":  "Market forming",
+                     "demand":  "Unpriced",
+                     "trend":  "Pending",
+                     "confidence":  "Official release only",
+                     "values":  null,
+                     "notes":  "Officially released on Aug 7, 2026 for 99 Robux. The market is still forming, so no live value is published. Standalone official pet art is pending.",
+                     "pageLabel":  "Market forming",
+                     "supportLabel":  "No live value",
+                     "supportTone":  "Pending",
+                     "pageUrl":  "/pets/cake-friend.html",
+                     "compareSlugs":  [
+                                          "2025-birthday-butterfly",
+                                          "silverback-gorilla"
+                                      ],
+                     "origin":  {
+                                    "audited":  true,
+                                    "sources":  [
+                                                    {
+                                                        "sourceName":  "Birthday Party premium purchase",
+                                                        "sourceType":  "Premium event pet",
+                                                        "status":  "current",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "Aug 7, 2026",
+                                                        "releaseYear":  "2026",
+                                                        "retired":  "",
+                                                        "cost":  "99 Robux",
+                                                        "petRarity":  "Ultra-Rare",
+                                                        "chanceText":  "",
+                                                        "rarityBand":  "",
+                                                        "eventContext":  "Adopt Me 9th birthday event",
+                                                        "notes":  "Official 9th Birthday Party Notes. No end date was published.",
+                                                        "sortKey":  202608
+                                                    }
+                                                ],
+                                    "sourceCount":  1,
+                                    "firstSource":  {
+                                                        "sourceName":  "Birthday Party premium purchase",
+                                                        "sourceType":  "Premium event pet",
+                                                        "status":  "current",
+                                                        "statusLabel":  "Currently available",
+                                                        "released":  "Aug 7, 2026",
+                                                        "releaseYear":  "2026",
+                                                        "retired":  "",
+                                                        "cost":  "99 Robux",
+                                                        "petRarity":  "Ultra-Rare",
+                                                        "chanceText":  "",
+                                                        "rarityBand":  "",
+                                                        "eventContext":  "Adopt Me 9th birthday event",
+                                                        "notes":  "Official 9th Birthday Party Notes. No end date was published.",
+                                                        "sortKey":  202608
+                                                    },
+                                    "currentSources":  [
+                                                           {
+                                                               "sourceName":  "Birthday Party premium purchase",
+                                                               "sourceType":  "Premium event pet",
+                                                               "status":  "current",
+                                                               "statusLabel":  "Currently available",
+                                                               "released":  "Aug 7, 2026",
+                                                               "releaseYear":  "2026",
+                                                               "retired":  "",
+                                                               "cost":  "99 Robux",
+                                                               "petRarity":  "Ultra-Rare",
+                                                               "chanceText":  "",
+                                                               "rarityBand":  "",
+                                                               "eventContext":  "Adopt Me 9th birthday event",
+                                                               "notes":  "Official 9th Birthday Party Notes. No end date was published.",
+                                                               "sortKey":  202608
+                                                           }
+                                                       ],
+                                    "currentSourceLabels":  [
+                                                                "Birthday Party premium purchase"
+                                                            ],
+                                    "sourceLabels":  [
+                                                         "Birthday Party premium purchase"
+                                                     ],
+                                    "eventLabels":  [
+                                                        "Adopt Me 9th birthday event"
+                                                    ],
+                                    "releaseYears":  [
+                                                         "2026"
+                                                     ]
+                                }
                  }
              ],
     "generatedAt":  "2026-07-29",
@@ -66220,5 +66402,5 @@
                    "referenceLane":  0,
                    "currentGuide":  621
                },
-    "count":  722
+    "count":  724
 }

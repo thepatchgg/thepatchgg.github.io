@@ -7942,6 +7942,36 @@
                                          "notes":  "Limited Halloween pet unboxed from Wolf Boxes in the Halloween Shop."
                                      }
                                  ]
+                 },
+                 {
+                     "slug":  "2026-birthday-butterfly",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Birthday Party event shop",
+                                         "sourceType":  "Event shop pet",
+                                         "status":  "current",
+                                         "released":  "Aug 7, 2026",
+                                         "cost":  "1,500 Bucks",
+                                         "petRarity":  "Uncommon",
+                                         "eventContext":  "Adopt Me 9th birthday event",
+                                         "notes":  "The official 9th Birthday Party Notes list this pet as a current birthday purchase. No end date was published."
+                                     }
+                                 ]
+                 },
+                 {
+                     "slug":  "cake-friend",
+                     "sources":  [
+                                     {
+                                         "sourceName":  "Birthday Party premium purchase",
+                                         "sourceType":  "Premium event pet",
+                                         "status":  "current",
+                                         "released":  "Aug 7, 2026",
+                                         "cost":  "99 Robux",
+                                         "petRarity":  "Ultra-Rare",
+                                         "eventContext":  "Adopt Me 9th birthday event",
+                                         "notes":  "The official 9th Birthday Party Notes list this pet as a current 99 Robux birthday purchase. No end date was published."
+                                     }
+                                 ]
                  }
              ]
 }
