@@ -1,24 +1,24 @@
 (function () {
   const updates = [
     {
-      href: "/articles/adopt-me-trading-hub-notes-guide.html",
+      href: "/articles/adopt-me-9th-birthday-party-notes-guide.html",
       featured: true,
       contexts: {
         home: {
-          tag: "Trading Hub",
+          tag: "Birthday Party",
           badgeLabel: "New",
           badgeTone: "new",
-          title: "Trading Hub Notes guide &mdash; Trading Phone, Robo Todd, and Robo Rob",
-          excerpt: "The July 31 update adds a Trading Phone, a new Trading Hub, Robo Todd listing boards, Robo Rob search, and keeps Bee Pass in game for another week.",
-          meta: ["July 31, 2026", "Live guide"]
+          title: "9th Birthday Party Notes guide &mdash; 2026 Birthday Butterfly, Cake Friend, and Silverback Gorilla",
+          excerpt: "The August 7 update adds the 2026 Birthday Butterfly, Cake Friend, birthday pet wear, Silverback Gorilla ticket exchange access, and Trading Hub improvements.",
+          meta: ["August 7, 2026", "Live guide"]
         },
         hub: {
-          tag: "Weekly Update",
+          tag: "Birthday Update",
           badgeLabel: "New",
           badgeTone: "new",
-          title: "Trading Hub Notes Guide - Trading Phone, Robo Todd, and Robo Rob",
-          excerpt: "Open the July 31 guide for the Trading Phone unlock path, cross-server listing boards, search tools, and Bee Pass carryover details.",
-          meta: ["July 31", "Live guide"]
+          title: "9th Birthday Party Notes Guide - 2026 Birthday Butterfly, Cake Friend, and Silverback Gorilla",
+          excerpt: "Open the August 7 guide for the birthday pet lineup, Silverback Gorilla ticket exchange access, birthday pet wear, and Trading Hub fixes.",
+          meta: ["August 7", "Live guide"]
         }
       }
     },
@@ -318,11 +318,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Trading Hub Notes guide &#8594;"
+      labelHtml: "Read the 9th Birthday Party Notes guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open latest update tile &#8594;"
+      labelHtml: "Open 9th Birthday Party Notes guide &#8594;"
     }
   };
 
