@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-stray-case-notes-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Stray Case Notes",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Stray Case Notes guide &mdash; Chihuahua, Tuxedo Cat, and Trading Hub fixes",
+          excerpt: "The August 14 update adds Chihuahua, Tuxedo Cat, a daily Mysterious Stranger task, new pet wear, and Trading Hub cleanup.",
+          meta: ["August 14, 2026", "Live guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Stray Case Notes Guide - Chihuahua, Tuxedo Cat, and Trading Hub fixes",
+          excerpt: "Open the August 14 guide for the daily fork delivery task, both new pets, the pet wear list, and the Trading Hub cleanup pass.",
+          meta: ["August 14", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-9th-birthday-party-notes-guide.html",
       featured: true,
       contexts: {
@@ -318,11 +340,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the 9th Birthday Party Notes guide &#8594;"
+      labelHtml: "Read the Stray Case Notes guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open 9th Birthday Party Notes guide &#8594;"
+      labelHtml: "Open Stray Case Notes guide &#8594;"
     }
   };
 
