@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-backpack-storage-releaser-refresh-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Backpack Storage",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Backpack Storage guide &mdash; Kiwi Kiwi, Strawberry Tortle, and Storage Tabs",
+          excerpt: "The August 21 update adds Backpack Storage, up to 25 Storage Tabs, trading storage access, and two new Legendary Releaser pets.",
+          meta: ["August 21, 2026", "Live guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Backpack Storage Guide - Kiwi Kiwi, Strawberry Tortle, and Storage Tabs",
+          excerpt: "Open the August 21 guide for Backpack Storage, Storage Tabs, trading storage access, and the two new Legendary Releaser pets.",
+          meta: ["August 21", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-stray-case-notes-guide.html",
       featured: true,
       contexts: {
@@ -340,11 +362,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Stray Case Notes guide &#8594;"
+      labelHtml: "Read the Backpack Storage guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open Stray Case Notes guide &#8594;"
+      labelHtml: "Open Backpack Storage guide &#8594;"
     }
   };
 
