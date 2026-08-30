@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-fairytale-egg-update-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Fairytale Egg",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Fairytale Egg guide &mdash; all 10 pets, exact odds, and hatch chances",
+          excerpt: "Meet Pinkypillar, Ms. Muffet, Budgie Witch, Princess Mare, Clumpty, Granny Wolf, Little Lamb, Crimson Cape, Huntsman Robin, and Three Blind Mice.",
+          meta: ["August 29, 2026", "Live egg guide"]
+        },
+        hub: {
+          tag: "New Egg",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Fairytale Egg Guide - all 10 pets, odds, and value status",
+          excerpt: "Meet Pinkypillar, Ms. Muffet, Budgie Witch, Princess Mare, Clumpty, Granny Wolf, Little Lamb, Crimson Cape, Huntsman Robin, and Three Blind Mice.",
+          meta: ["August 29", "Live rotation"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-backpack-storage-releaser-refresh-guide.html",
       featured: true,
       contexts: {
@@ -362,11 +384,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Backpack Storage guide &#8594;"
+      labelHtml: "Read the Fairytale Egg guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open Backpack Storage guide &#8594;"
+      labelHtml: "Open Fairytale Egg guide &#8594;"
     }
   };
 

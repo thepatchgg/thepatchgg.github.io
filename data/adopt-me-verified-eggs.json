@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-09",
+  "updatedAt": "2026-08-30",
   "source": "Curated The Patch egg dataset focused on verified benchmark-relevant hatches and major egg metadata.",
   "notes": [
     "This file intentionally tracks verified benchmark-relevant hatches instead of claiming every hatchable pet in every historical egg.",
@@ -195,10 +195,21 @@
       "id": "endangered",
       "name": "Endangered Egg",
       "cost": "750 Bucks",
-      "status": "available",
+      "status": "retired",
       "released": "Feb 2026",
+      "retired": "Aug 2026",
       "img": "c/ce/Endangered_Egg.png",
-      "notes": "Current live egg. No verified benchmark pets are currently tracked from the Endangered Egg in the shared value ladder.",
+      "notes": "Retired Gumball Machine egg. No verified benchmark pets are currently tracked from the Endangered Egg in the shared value ladder.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "fairytale",
+      "name": "Fairytale Egg",
+      "cost": "750 Bucks",
+      "status": "available",
+      "released": "Aug 2026",
+      "img": "a/a1/Fairytale_Egg.png",
+      "notes": "Current live Gumball Machine egg. All ten hatches are covered as official-pending pets while their trade values form.",
       "benchmarkPets": []
     },
     {

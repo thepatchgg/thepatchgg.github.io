@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-05-29",
+    "updatedAt":  "2026-08-30",
     "entries":  [
                     {
                         "slug":  "2021-uplift-butterfly",
@@ -5189,6 +5189,76 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "pinkypillar",
+                        "name":  "Pinkypillar",
+                        "rarity":  "c",
+                        "image":  "/assets/pets/pinkypillar.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "ms-muffet",
+                        "name":  "Ms. Muffet",
+                        "rarity":  "c",
+                        "image":  "/assets/pets/ms-muffet.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "budgie-witch",
+                        "name":  "Budgie Witch",
+                        "rarity":  "u",
+                        "image":  "/assets/pets/budgie-witch.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "princess-mare",
+                        "name":  "Princess Mare",
+                        "rarity":  "u",
+                        "image":  "/assets/pets/princess-mare.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "clumpty",
+                        "name":  "Clumpty",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/clumpty.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "granny-wolf",
+                        "name":  "Granny Wolf",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/granny-wolf.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "little-lamb",
+                        "name":  "Little Lamb",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/little-lamb.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "crimson-cape",
+                        "name":  "Crimson Cape",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/crimson-cape.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "huntsman-robin",
+                        "name":  "Huntsman Robin",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/huntsman-robin.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "three-blind-mice",
+                        "name":  "Three Blind Mice",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/three-blind-mice.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "zombie-wolf",
                         "name":  "Zombie Wolf",
                         "rarity":  "ur",
@@ -5197,8 +5267,8 @@
                     }
                 ],
     "counts":  {
-                   "total":  742,
-                   "verifiedRarity":  742,
+                   "total":  752,
+                   "verifiedRarity":  752,
                    "review":  0,
                    "benchmark":  18
                }

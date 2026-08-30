@@ -1,5 +1,5 @@
 ﻿{
-    "updatedAt":  "2026-05-29",
+    "updatedAt":  "2026-08-30",
     "source":  "Curated Adopt Me Wiki pet-origin overrides from the main Pets index and select pet pages.",
     "pets":  [
                  {
@@ -7942,6 +7942,46 @@
                                          "notes":  "Limited Halloween pet unboxed from Wolf Boxes in the Halloween Shop."
                                      }
                                  ]
+                 },
+                 {
+                     "slug":  "pinkypillar",
+                     "sources":  [{"sourceName":"Fairytale Egg","sourceType":"Gumball Machine egg","status":"current","released":"Aug 29, 2026","cost":"750 Bucks","petRarity":"Common","chanceText":"17.5% from Fairytale Egg","eventContext":"Fairytale Egg rotation","notes":"Official Fairytale Egg release pet."}]
+                 },
+                 {
+                     "slug":  "ms-muffet",
+                     "sources":  [{"sourceName":"Fairytale Egg","sourceType":"Gumball Machine egg","status":"current","released":"Aug 29, 2026","cost":"750 Bucks","petRarity":"Common","chanceText":"17.5% from Fairytale Egg","eventContext":"Fairytale Egg rotation","notes":"Official Fairytale Egg release pet."}]
+                 },
+                 {
+                     "slug":  "budgie-witch",
+                     "sources":  [{"sourceName":"Fairytale Egg","sourceType":"Gumball Machine egg","status":"current","released":"Aug 29, 2026","cost":"750 Bucks","petRarity":"Uncommon","chanceText":"15% from Fairytale Egg","eventContext":"Fairytale Egg rotation","notes":"Official Fairytale Egg release pet."}]
+                 },
+                 {
+                     "slug":  "princess-mare",
+                     "sources":  [{"sourceName":"Fairytale Egg","sourceType":"Gumball Machine egg","status":"current","released":"Aug 29, 2026","cost":"750 Bucks","petRarity":"Uncommon","chanceText":"15% from Fairytale Egg","eventContext":"Fairytale Egg rotation","notes":"Official Fairytale Egg release pet."}]
+                 },
+                 {
+                     "slug":  "clumpty",
+                     "sources":  [{"sourceName":"Fairytale Egg","sourceType":"Gumball Machine egg","status":"current","released":"Aug 29, 2026","cost":"750 Bucks","petRarity":"Rare","chanceText":"10% from Fairytale Egg","eventContext":"Fairytale Egg rotation","notes":"Official Fairytale Egg release pet."}]
+                 },
+                 {
+                     "slug":  "granny-wolf",
+                     "sources":  [{"sourceName":"Fairytale Egg","sourceType":"Gumball Machine egg","status":"current","released":"Aug 29, 2026","cost":"750 Bucks","petRarity":"Rare","chanceText":"10% from Fairytale Egg","eventContext":"Fairytale Egg rotation","notes":"Official Fairytale Egg release pet."}]
+                 },
+                 {
+                     "slug":  "little-lamb",
+                     "sources":  [{"sourceName":"Fairytale Egg","sourceType":"Gumball Machine egg","status":"current","released":"Aug 29, 2026","cost":"750 Bucks","petRarity":"Ultra-Rare","chanceText":"6% from Fairytale Egg","eventContext":"Fairytale Egg rotation","notes":"Official Fairytale Egg release pet."}]
+                 },
+                 {
+                     "slug":  "crimson-cape",
+                     "sources":  [{"sourceName":"Fairytale Egg","sourceType":"Gumball Machine egg","status":"current","released":"Aug 29, 2026","cost":"750 Bucks","petRarity":"Ultra-Rare","chanceText":"6% from Fairytale Egg","eventContext":"Fairytale Egg rotation","notes":"Official Fairytale Egg release pet."}]
+                 },
+                 {
+                     "slug":  "huntsman-robin",
+                     "sources":  [{"sourceName":"Fairytale Egg","sourceType":"Gumball Machine egg","status":"current","released":"Aug 29, 2026","cost":"750 Bucks","petRarity":"Legendary","chanceText":"1.5% from Fairytale Egg","eventContext":"Fairytale Egg rotation","notes":"Official Fairytale Egg release pet."}]
+                 },
+                 {
+                     "slug":  "three-blind-mice",
+                     "sources":  [{"sourceName":"Fairytale Egg","sourceType":"Gumball Machine egg","status":"current","released":"Aug 29, 2026","cost":"750 Bucks","petRarity":"Legendary","chanceText":"1.5% from Fairytale Egg","eventContext":"Fairytale Egg rotation","notes":"Official Fairytale Egg release pet."}]
                  },
                  {
                      "slug":  "2026-birthday-butterfly",

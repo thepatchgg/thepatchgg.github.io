@@ -16,6 +16,7 @@
     "desert",
     "easter-2020",
     "endangered",
+    "fairytale",
     "farm",
     "fossil",
     "fool",
@@ -78,6 +79,7 @@
     aztec: { shell: "#efb15e", accent: "#2c8c65", detail: "#6c3317", glow: "#ffe8ba" },
     "royal-aztec": { shell: "#f3c66d", accent: "#f2df8d", detail: "#6c3317", glow: "#fff0be" },
     endangered: { shell: "#7db89b", accent: "#2f7f66", detail: "#1f463e", glow: "#dff6eb" },
+    fairytale: { shell: "#f5a8d7", accent: "#8f68d8", detail: "#4d356f", glow: "#ffe2f4" },
     basic: { shell: "#f6f7fb", accent: "#58b7e7", detail: "#38506b", glow: "#eef9ff" },
     crystal: { shell: "#8ddaff", accent: "#c0f3ff", detail: "#2c5f8c", glow: "#e7fdff" }
   };
@@ -117,6 +119,7 @@
     aztec: "aztec",
     "royal-aztec": "royal-aztec",
     endangered: "paw",
+    fairytale: "royal",
     basic: "ticket",
     crystal: "crystal"
   };
@@ -560,7 +563,7 @@
 
   function localEggAssetUrl(egg) {
     return egg && egg.id && LOCAL_EXACT_EGG_IDS.has(egg.id)
-      ? `/assets/eggs/${egg.id}.webp`
+      ? `/assets/eggs/${egg.id}.${egg.id === "fairytale" ? "png" : "webp"}`
       : "";
   }
 

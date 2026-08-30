@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-16",
+  "updatedAt": "2026-08-30",
   "source": "Merged audited egg dataset for pet origin details and egg guides.",
   "eggs": [
     {
@@ -1014,10 +1014,11 @@
     {
       "id": "endangered",
       "name": "Endangered Egg",
-      "cost": "750 Robux",
-      "type": "robux",
-      "status": "available",
+      "cost": "750 Bucks",
+      "type": "bucks",
+      "status": "retired",
       "released": "Feb 2026",
+      "retired": "Aug 2026",
       "img": "c/ce/Endangered_Egg.png",
       "chances": {
         "Common": "35%",
@@ -1078,6 +1079,41 @@
           "Legendary"
         ]
       ]
+    },
+    {
+      "id": "fairytale",
+      "name": "Fairytale Egg",
+      "cost": "750 Bucks",
+      "type": "bucks",
+      "status": "available",
+      "released": "Aug 2026",
+      "img": "a/a1/Fairytale_Egg.png",
+      "chances": {
+        "Common": "35%",
+        "Uncommon": "30%",
+        "Rare": "20%",
+        "Ultra-Rare": "12%",
+        "Legendary": "3%"
+      },
+      "pets": [
+        ["Pinkypillar", "d/d8/Pinkypillar.png", "Common", "17.5%"],
+        ["Ms. Muffet", "6/6d/Ms._Muffet.png", "Common", "17.5%"],
+        ["Budgie Witch", "4/45/Budgie_Witch.png", "Uncommon", "15%"],
+        ["Princess Mare", "3/38/Princess_Mare.png", "Uncommon", "15%"],
+        ["Clumpty", "e/e8/Clumpty.png", "Rare", "10%"],
+        ["Granny Wolf", "d/dd/Granny_Wolf.png", "Rare", "10%"],
+        ["Little Lamb", "9/91/Little_Lamb.png", "Ultra-Rare", "6%"],
+        ["Crimson Cape", "3/37/Crimson_Cape.png", "Ultra-Rare", "6%"],
+        ["Huntsman Robin", "9/9f/Huntsman_Robin.png", "Legendary", "1.5%"],
+        ["Three Blind Mice", "4/4c/Three_Blind_Mice.png", "Legendary", "1.5%"]
+      ],
+      "rarityChances": {
+        "Common": "35%",
+        "Uncommon": "30%",
+        "Rare": "20%",
+        "Ultra-Rare": "12%",
+        "Legendary": "3%"
+      }
     },
     {
       "id": "farm",

@@ -66394,13 +66394,353 @@
                                                          "2026"
                                                      ]
                                 }
+                 },
+                 {
+                     "slug": "pinkypillar",
+                     "name": "Pinkypillar",
+                     "rarityCode": "c",
+                     "rarity": "Common",
+                     "image": "/assets/pets/pinkypillar.png",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Fairytale Egg pet released Aug 29, 2026. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/pinkypillar.html",
+                     "compareSlugs": [
+                         "ms-muffet"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Fairytale Egg"
+                         ],
+                         "eventLabels": [
+                             "Fairytale Egg rotation"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "ms-muffet",
+                     "name": "Ms. Muffet",
+                     "rarityCode": "c",
+                     "rarity": "Common",
+                     "image": "/assets/pets/ms-muffet.png",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Fairytale Egg pet released Aug 29, 2026. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/ms-muffet.html",
+                     "compareSlugs": [
+                         "pinkypillar"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Fairytale Egg"
+                         ],
+                         "eventLabels": [
+                             "Fairytale Egg rotation"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "budgie-witch",
+                     "name": "Budgie Witch",
+                     "rarityCode": "u",
+                     "rarity": "Uncommon",
+                     "image": "/assets/pets/budgie-witch.png",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Fairytale Egg pet released Aug 29, 2026. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/budgie-witch.html",
+                     "compareSlugs": [
+                         "princess-mare"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Fairytale Egg"
+                         ],
+                         "eventLabels": [
+                             "Fairytale Egg rotation"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "princess-mare",
+                     "name": "Princess Mare",
+                     "rarityCode": "u",
+                     "rarity": "Uncommon",
+                     "image": "/assets/pets/princess-mare.png",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Fairytale Egg pet released Aug 29, 2026. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/princess-mare.html",
+                     "compareSlugs": [
+                         "budgie-witch"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Fairytale Egg"
+                         ],
+                         "eventLabels": [
+                             "Fairytale Egg rotation"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "clumpty",
+                     "name": "Clumpty",
+                     "rarityCode": "r",
+                     "rarity": "Rare",
+                     "image": "/assets/pets/clumpty.png",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Fairytale Egg pet released Aug 29, 2026. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/clumpty.html",
+                     "compareSlugs": [
+                         "granny-wolf"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Fairytale Egg"
+                         ],
+                         "eventLabels": [
+                             "Fairytale Egg rotation"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "granny-wolf",
+                     "name": "Granny Wolf",
+                     "rarityCode": "r",
+                     "rarity": "Rare",
+                     "image": "/assets/pets/granny-wolf.png",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Fairytale Egg pet released Aug 29, 2026. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/granny-wolf.html",
+                     "compareSlugs": [
+                         "clumpty"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Fairytale Egg"
+                         ],
+                         "eventLabels": [
+                             "Fairytale Egg rotation"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "little-lamb",
+                     "name": "Little Lamb",
+                     "rarityCode": "ur",
+                     "rarity": "Ultra-Rare",
+                     "image": "/assets/pets/little-lamb.png",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Fairytale Egg pet released Aug 29, 2026. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/little-lamb.html",
+                     "compareSlugs": [
+                         "crimson-cape"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Fairytale Egg"
+                         ],
+                         "eventLabels": [
+                             "Fairytale Egg rotation"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "crimson-cape",
+                     "name": "Crimson Cape",
+                     "rarityCode": "ur",
+                     "rarity": "Ultra-Rare",
+                     "image": "/assets/pets/crimson-cape.png",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Fairytale Egg pet released Aug 29, 2026. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/crimson-cape.html",
+                     "compareSlugs": [
+                         "little-lamb"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Fairytale Egg"
+                         ],
+                         "eventLabels": [
+                             "Fairytale Egg rotation"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "huntsman-robin",
+                     "name": "Huntsman Robin",
+                     "rarityCode": "l",
+                     "rarity": "Legendary",
+                     "image": "/assets/pets/huntsman-robin.png",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Fairytale Egg pet released Aug 29, 2026. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/huntsman-robin.html",
+                     "compareSlugs": [
+                         "three-blind-mice"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Fairytale Egg"
+                         ],
+                         "eventLabels": [
+                             "Fairytale Egg rotation"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "three-blind-mice",
+                     "name": "Three Blind Mice",
+                     "rarityCode": "l",
+                     "rarity": "Legendary",
+                     "image": "/assets/pets/three-blind-mice.png",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Fairytale Egg pet released Aug 29, 2026. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/three-blind-mice.html",
+                     "compareSlugs": [
+                         "huntsman-robin"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Fairytale Egg"
+                         ],
+                         "eventLabels": [
+                             "Fairytale Egg rotation"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
                  }
              ],
-    "generatedAt":  "2026-07-29",
+    "generatedAt":  "2026-08-30",
     "counts":  {
                    "benchmark":  101,
                    "referenceLane":  0,
                    "currentGuide":  621
                },
-    "count":  724
+    "count":  734
 }

@@ -128,6 +128,8 @@ img{display:block}
 .picker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:12px 14px}
 .pet-tile{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:8px 4px 6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;transition:all .12s}
 .pet-tile:hover{border-color:var(--accent);background:rgba(200,255,87,.06);transform:translateY(-1px)}
+.pet-tile.pending{border-color:rgba(244,201,93,.35);background:rgba(244,201,93,.06)}
+.pt-pending{font-size:.58rem;font-weight:800;color:#f4c95d;text-transform:uppercase;letter-spacing:.04em}
 .pet-tile img{width:52px;height:52px;object-fit:contain;border-radius:6px}
 .pt-name{font-size:.58rem;font-weight:600;text-align:center;color:var(--text);line-height:1.2;width:100%}
 .pt-rar{font-size:.52rem;padding:1px 6px;border-radius:10px}
@@ -189,7 +191,7 @@ img{display:block}
 
 <div class="page-hero">
   <h1>&#128014; Adopt Me Trade Calculator</h1>
-  <p class="hero-note">&#128197; Updated August 7, 2026</p>
+  <p class="hero-note">&#128197; Updated August 30, 2026</p>
   <p>Classic slot-based calculator feel, a 700+ pet picker, full potion toggles, and local pet images that keep the trade view easy to use.</p>
 </div>
 
@@ -197,6 +199,7 @@ img{display:block}
   <strong>Coverage:</strong> this calculator includes <span id="coverage-count">700+</span> pets.
   High-traffic pets have their latest value lanes, while <span id="tracker-audit-count">625</span> additional pets are supported with current reference values.
   Another <span id="manual-audit-count">9</span> edge-case pets are filled in manually, leaving <span id="audit-unmatched">0</span> unmatched.
+  The 10 Fairytale Egg pets are searchable with a clear value-pending state until reliable market evidence supports live numbers.
 </div>
 
 <div class="status-card audit-mode" id="audit-mode-card" hidden>
@@ -276,6 +279,7 @@ var IMAGE_FALLBACK = "/favicon.svg";
 var LEGACY_DATA_PATH = "/data/adopt-me-calculator-values.json";
 var OVERRIDE_DATA_PATH = "/data/adopt-me-calculator-overrides.json";
 var NEW_PET_OVERRIDE_DATA_PATH = "/data/adopt-me-new-pet-overrides.json";
+var PENDING_PET_DATA_PATH = "/data/adopt-me-pet-pages.json";
 var CANDIDATE_OVERRIDE_DATA_PATH = "/data/value-sync-staging/adopt-me-calculator-overrides.candidate.json";
 var urlParams = new URLSearchParams(window.location.search);
 var USE_CANDIDATE_VALUES = urlParams.get("candidateValues") === "1";
@@ -303,6 +307,7 @@ var state = {
   legacyPayload: null,
   overridePayload: null,
   newPetOverridePayload: null,
+  pendingPetPayload: null,
   pets: [],
   givePets: newArr(),
   recvPets: newArr(),
@@ -396,6 +401,12 @@ function loadNewPetOverrideCatalog() {
     return response.json();
   });
 }
+function loadPendingPetCatalog() {
+  return fetch(PENDING_PET_DATA_PATH, { cache: "no-store" }).then(function(response){
+    if (!response.ok) throw new Error("Unable to load pending pet catalog: " + response.status);
+    return response.json();
+  });
+}
 function showAuditModeBanner() {
   if (!USE_CANDIDATE_VALUES) return;
   var card = document.getElementById("audit-mode-card");
@@ -414,7 +425,7 @@ function overridePetToCatalogPet(overridePet, legacyPet) {
     values: { default: (overridePet.values.default && overridePet.values.default.noPotion) || (legacyPet && legacyPet.legacyValue) || 0 }
   };
 }
-function mergeCatalog(benchmarkPayload, legacyPayload, overridePayload, newPetOverridePayload) {
+function mergeCatalog(benchmarkPayload, legacyPayload, overridePayload, newPetOverridePayload, pendingPetPayload) {
   var merged = [];
   var seen = {};
   var benchmarkIndex = benchmarkPayload.petIndex || {};
@@ -460,6 +471,19 @@ function mergeCatalog(benchmarkPayload, legacyPayload, overridePayload, newPetOv
       image: slugImage(benchmarkPet.slug),
       source: "benchmark"
     }));
+  });
+
+  (pendingPetPayload.pets || []).forEach(function(pendingPet){
+    if (pendingPet.source !== "official-pending" || seen[pendingPet.slug]) return;
+    seen[pendingPet.slug] = true;
+    merged.push({
+      slug: pendingPet.slug,
+      name: pendingPet.name,
+      rarity: normalizeRarity(pendingPet.rarityCode || pendingPet.rarity),
+      image: pendingPet.image || slugImage(pendingPet.slug),
+      source: "official-pending",
+      values: null
+    });
   });
 
   merged.sort(function(a, b){
@@ -518,8 +542,13 @@ function renderSlots(side) {
 
         var vEl = document.createElement("div");
         vEl.className = "slot-val";
-        vEl.textContent = fmt(resolveValue(entry)) + " pts";
+        vEl.textContent = entry.pet.source === "official-pending" ? "Value pending" : fmt(resolveValue(entry)) + " pts";
         slot.appendChild(vEl);
+
+        if (entry.pet.source === "official-pending") {
+          grid.appendChild(slot);
+          return;
+        }
 
         var toggles = document.createElement("div");
         toggles.className = "slot-toggles";
@@ -613,7 +642,7 @@ function renderPickerGrid() {
 
   pets.forEach(function(p){
     var tile = document.createElement("div");
-    tile.className = "pet-tile";
+    tile.className = "pet-tile" + (p.source === "official-pending" ? " pending" : "");
     tile.onclick = function(){ selectPet(p); };
 
     var img = document.createElement("img");
@@ -634,6 +663,13 @@ function renderPickerGrid() {
     rar.className = "pt-rar r" + prettyRarity(p.rarity);
     rar.textContent = p.rarity;
     tile.appendChild(rar);
+
+    if (p.source === "official-pending") {
+      var pending = document.createElement("div");
+      pending.className = "pt-pending";
+      pending.textContent = "Value pending";
+      tile.appendChild(pending);
+    }
 
     grid.appendChild(tile);
   });
@@ -706,6 +742,19 @@ function classifyVerdict(diff, baseline) {
 }
 
 function updateVerdict() {
+  var hasPending = state.givePets.concat(state.recvPets).some(function(entry){
+    return entry && entry.pet && entry.pet.source === "official-pending";
+  });
+  if (hasPending) {
+    var pendingLabel = document.getElementById("v-label");
+    pendingLabel.className = "verdict-label vFAIR";
+    pendingLabel.textContent = "VALUE PENDING";
+    document.getElementById("v-pts").textContent = "New-pet market forming";
+    document.getElementById("v-give").textContent = "Give: pending pet included";
+    document.getElementById("v-recv").textContent = "Recv: no verdict yet";
+    document.getElementById("v-bar").style.width = "0";
+    return;
+  }
   var gT = totalVal(state.givePets), rT = totalVal(state.recvPets);
   var diff = rT - gT;
   var baseline = Math.max(gT, rT);
@@ -755,13 +804,15 @@ function bootCalculator() {
     window.ThePatchValues.loadAdoptValues(),
     loadLegacyCatalog(),
     loadOverrideCatalog(),
-    loadNewPetOverrideCatalog()
+    loadNewPetOverrideCatalog(),
+    loadPendingPetCatalog()
   ]).then(function(results){
     state.payload = results[0];
     state.legacyPayload = results[1];
     state.overridePayload = results[2];
     state.newPetOverridePayload = results[3];
-    state.pets = mergeCatalog(state.payload, state.legacyPayload, state.overridePayload, state.newPetOverridePayload);
+    state.pendingPetPayload = results[4];
+    state.pets = mergeCatalog(state.payload, state.legacyPayload, state.overridePayload, state.newPetOverridePayload, state.pendingPetPayload);
     document.getElementById("coverage-count").textContent = state.pets.length;
     document.getElementById("tracker-audit-count").textContent = state.overridePayload.trackerMatchedCount || 0;
     document.getElementById("manual-audit-count").textContent = (state.overridePayload.manualResolvedCount || 0) + (state.newPetOverridePayload.manualResolvedCount || 0);
