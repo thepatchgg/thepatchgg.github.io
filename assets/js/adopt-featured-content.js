@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-fairytale-castle-notes-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Fairytale Castle",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Fairytale Castle update &mdash; Ballet Swan, prices, and Trading Hub changes",
+          excerpt: "Meet the Legendary Ballet Swan, tour the 8,000-Bucks castle and furniture prices, and review every confirmed fix.",
+          meta: ["September 4, 2026", "Live update guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Fairytale Castle Notes - Ballet Swan, house prices, and improvements",
+          excerpt: "Ballet Swan costs 600 Robux, the castle costs 8,000 Bucks, and Trading Hub listings now accept item offers.",
+          meta: ["September 4", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-fairytale-egg-update-guide.html",
       featured: true,
       contexts: {
@@ -384,11 +406,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Fairytale Egg guide &#8594;"
+      labelHtml: "Read the Fairytale Castle guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open Fairytale Egg guide &#8594;"
+      labelHtml: "Open Fairytale Castle guide &#8594;"
     }
   };
 

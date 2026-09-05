@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-08-30",
+    "updatedAt":  "2026-09-05",
     "entries":  [
                     {
                         "slug":  "2021-uplift-butterfly",
@@ -5259,6 +5259,13 @@
                         "benchmark":  false
                     },
                     {
+                        "slug":  "ballet-swan",
+                        "name":  "Ballet Swan",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/ballet-swan.png",
+                        "benchmark":  false
+                    },
+                    {
                         "slug":  "zombie-wolf",
                         "name":  "Zombie Wolf",
                         "rarity":  "ur",
@@ -5267,8 +5274,8 @@
                     }
                 ],
     "counts":  {
-                   "total":  752,
-                   "verifiedRarity":  752,
+                   "total":  753,
+                   "verifiedRarity":  753,
                    "review":  0,
                    "benchmark":  18
                }

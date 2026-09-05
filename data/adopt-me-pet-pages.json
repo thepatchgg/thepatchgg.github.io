@@ -66734,13 +66734,47 @@
                              "2026"
                          ]
                      }
+                 },
+                 {
+                     "slug": "ballet-swan",
+                     "name": "Ballet Swan",
+                     "rarityCode": "l",
+                     "rarity": "Legendary",
+                     "image": "/assets/pets/ballet-swan.png",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Fairytale Castle pet released Sep 4, 2026 for 600 Robux. No live value is published while the launch market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/ballet-swan.html",
+                     "compareSlugs": [
+                         "swan"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Fairytale Castle premium purchase"
+                         ],
+                         "eventLabels": [
+                             "Fairytale Castle update"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
                  }
              ],
-    "generatedAt":  "2026-08-30",
+    "generatedAt":  "2026-09-05",
     "counts":  {
                    "benchmark":  101,
                    "referenceLane":  0,
                    "currentGuide":  621
                },
-    "count":  734
+    "count":  735
 }

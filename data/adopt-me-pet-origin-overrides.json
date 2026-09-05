@@ -1,5 +1,5 @@
 ﻿{
-    "updatedAt":  "2026-08-30",
+    "updatedAt":  "2026-09-05",
     "source":  "Curated Adopt Me Wiki pet-origin overrides from the main Pets index and select pet pages.",
     "pets":  [
                  {
@@ -7982,6 +7982,10 @@
                  {
                      "slug":  "three-blind-mice",
                      "sources":  [{"sourceName":"Fairytale Egg","sourceType":"Gumball Machine egg","status":"current","released":"Aug 29, 2026","cost":"750 Bucks","petRarity":"Legendary","chanceText":"1.5% from Fairytale Egg","eventContext":"Fairytale Egg rotation","notes":"Official Fairytale Egg release pet."}]
+                 },
+                 {
+                     "slug":  "ballet-swan",
+                     "sources":  [{"sourceName":"Fairytale Castle premium purchase","sourceType":"Premium pet","status":"current","released":"Sep 4, 2026","cost":"600 Robux","petRarity":"Legendary","chanceText":"Direct purchase","eventContext":"Fairytale Castle update","notes":"Official Fairytale Castle Notes release pet. No end date was published."}]
                  },
                  {
                      "slug":  "2026-birthday-butterfly",
