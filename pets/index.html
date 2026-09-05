@@ -173,6 +173,7 @@
   <script src="/assets/js/adopt-analytics.js"></script>
   <script>
     const PET_PAGE_DATA_PATH = "/data/adopt-me-pet-pages.json";
+    const NEW_PET_VALUE_PATH = "/data/adopt-me-new-pet-overrides.json";
     const toneMap = {
       "Benchmark anchor": "tone-strong",
       "Current guide": "tone-high",
@@ -194,6 +195,23 @@
       segment: "all"
     };
 
+    function flattenOverrideValues(matrix) {
+      return {
+        default: matrix.default.flyRide,
+        fly: matrix.default.fly,
+        ride: matrix.default.ride,
+        noPotion: matrix.default.noPotion,
+        neon: matrix.neon.flyRide,
+        neonFly: matrix.neon.fly,
+        neonRide: matrix.neon.ride,
+        neonNoPotion: matrix.neon.noPotion,
+        mega: matrix.mega.flyRide,
+        megaFly: matrix.mega.fly,
+        megaRide: matrix.mega.ride,
+        megaNoPotion: matrix.mega.noPotion
+      };
+    }
+
     function buildCard(pet, recentMode) {
       const pageTone = toneMap[pet.pageLabel] || "tone-medium";
       const supportTone = toneMap[pet.supportTone] || toneMap[pet.pageLabel] || "tone-medium";
@@ -212,7 +230,7 @@
           </div>
           <p>${pet.notes}</p>
           <div class="card-actions">
-            <span class="value-tag">${window.ThePatchValues.formatValue(pet.values.default)}</span>
+            <span class="value-tag">${pet.values ? window.ThePatchValues.formatValue(pet.values.default) : "Value pending"}</span>
             <a class="pill-link" href="/pets/${pet.slug}.html">Open pet page</a>
           </div>
         </article>
@@ -233,7 +251,7 @@
           }
           return true;
         })
-        .sort((left, right) => right.values.default - left.values.default);
+        .sort((left, right) => (right.values?.default || 0) - (left.values?.default || 0));
     }
 
     function renderRecentPets() {
@@ -279,11 +297,33 @@
 
     async function bootLibrary() {
       try {
-        const response = await fetch(PET_PAGE_DATA_PATH, { cache: "no-store" });
-        if (!response.ok) {
+        const [response, newPetResponse] = await Promise.all([
+          fetch(PET_PAGE_DATA_PATH, { cache: "no-store" }),
+          fetch(NEW_PET_VALUE_PATH, { cache: "no-store" })
+        ]);
+        if (!response.ok || !newPetResponse.ok) {
           throw new Error("pet page data unavailable");
         }
         libraryState.payload = await response.json();
+        const newPetPayload = await newPetResponse.json();
+        const newPetIndex = Object.fromEntries((newPetPayload.pets || []).map((pet) => [pet.slug, pet]));
+        let promotedCount = 0;
+        libraryState.payload.pets.forEach((pet) => {
+          const estimate = newPetIndex[pet.slug];
+          if (!estimate || pet.source !== "official-pending") return;
+          pet.source = "new-pet-projection";
+          pet.segment = "Launch estimate";
+          pet.demand = "Early market";
+          pet.trend = "Volatile";
+          pet.confidence = "Dated tracker estimate";
+          pet.values = flattenOverrideValues(estimate.values);
+          pet.notes = estimate.sourceNote;
+          pet.pageLabel = "Current guide";
+          pet.supportLabel = "Launch value";
+          pet.supportTone = "Medium";
+          promotedCount += 1;
+        });
+        libraryState.payload.counts.currentGuide += promotedCount;
         libraryState.petIndex = Object.fromEntries(libraryState.payload.pets.map((pet) => [pet.slug, pet]));
         renderRecentPets();
         renderLibrary();

@@ -45,6 +45,7 @@ $catalogPath = Resolve-RepoPath "data/adopt-me-pet-catalog.json"
 $benchmarkPath = Resolve-RepoPath "data/adopt-me-values.json"
 $legacyPath = Resolve-RepoPath "data/adopt-me-calculator-values.json"
 $overridesPath = Resolve-RepoPath "data/adopt-me-calculator-overrides.json"
+$newPetOverridesPath = Resolve-RepoPath "data/adopt-me-new-pet-overrides.json"
 $petPagesPath = Resolve-RepoPath "data/adopt-me-pet-pages.json"
 $indexPath = Resolve-RepoPath "index.html"
 $hubPath = Resolve-RepoPath "adopt-me.html"
@@ -58,6 +59,7 @@ $catalog = Get-Content -Raw -LiteralPath $catalogPath | ConvertFrom-Json
 $benchmark = Get-Content -Raw -LiteralPath $benchmarkPath | ConvertFrom-Json
 $legacy = Get-Content -Raw -LiteralPath $legacyPath | ConvertFrom-Json
 $overrides = Get-Content -Raw -LiteralPath $overridesPath | ConvertFrom-Json
+$newPetOverrides = if (Test-Path -LiteralPath $newPetOverridesPath) { Get-Content -Raw -LiteralPath $newPetOverridesPath | ConvertFrom-Json } else { [pscustomobject]@{ pets = @() } }
 $petPages = Get-Content -Raw -LiteralPath $petPagesPath | ConvertFrom-Json
 
 $indexContent = Get-Content -Raw -LiteralPath $indexPath
@@ -76,6 +78,7 @@ foreach ($petName in $PetNames) {
   $legacyEntry = Find-BySlugOrName $legacy.pets $slug $petName
   $benchmarkEntry = Find-BySlugOrName $benchmark.pets $slug $petName
   $overrideEntry = Find-BySlugOrName $overrides.pets $slug $petName
+  $newPetOverrideEntry = Find-BySlugOrName $newPetOverrides.pets $slug $petName
   $pageEntry = Find-BySlugOrName $petPages.pets $slug $petName
 
   $petPagePath = Join-Path $petsDir "$slug.html"
@@ -109,7 +112,7 @@ foreach ($petName in $PetNames) {
     Catalog = $null -ne $catalogEntry
     LegacyCalculator = $null -ne $legacyEntry
     BenchmarkLayer = $null -ne $benchmarkEntry
-    OverrideLayer = $null -ne $overrideEntry
+    OverrideLayer = ($null -ne $overrideEntry) -or ($null -ne $newPetOverrideEntry)
     PetPageData = $null -ne $pageEntry
     PetPage = $petPageExists
     ImageAsset = $imageExists

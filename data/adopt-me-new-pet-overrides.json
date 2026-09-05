@@ -1,35 +1,56 @@
 {
-  "updatedAt": "2026-06-02",
-  "notes": "Small production overlay for newly released Adopt Me pets that need calculator coverage before the next full generated value sync. Keep entries conservative and remove them once the generated override or benchmark layer owns the pet.",
-  "manualResolvedCount": 1,
+  "updatedAt": "2026-09-05",
+  "notes": "Production overlay for newly released Adopt Me pets. Fairytale Egg and Ballet Swan lanes are dated launch-market estimates from current Elvebredd tables reviewed through JaeJaeValues on September 5, 2026; keep them out of the benchmark layer until the market stabilizes.",
+  "manualResolvedCount": 12,
   "pets": [
     {
-      "slug": "bison",
-      "name": "Bison",
-      "rarity": "r",
-      "image": "/assets/pets/bison.png",
-      "sourceType": "new-pet-projection",
+      "slug": "bison", "name": "Bison", "rarity": "r", "image": "/assets/pets/bison.png", "sourceType": "new-pet-projection",
       "sourceNote": "Early June 2, 2026 projection from reviewed Elvebredd values and current marketplace listing checks; keep out of benchmark layer until normal tracker sync confirms.",
-      "values": {
-        "default": {
-          "noPotion": 0.3,
-          "fly": 0.5,
-          "ride": 0.5,
-          "flyRide": 0.75
-        },
-        "neon": {
-          "noPotion": 1.7,
-          "fly": 1.98,
-          "ride": 1.98,
-          "flyRide": 2.25
-        },
-        "mega": {
-          "noPotion": 7.5,
-          "fly": 8.4,
-          "ride": 8.4,
-          "flyRide": 9.8
-        }
-      }
+      "values": { "default": { "noPotion": 0.3, "fly": 0.5, "ride": 0.5, "flyRide": 0.75 }, "neon": { "noPotion": 1.7, "fly": 1.98, "ride": 1.98, "flyRide": 2.25 }, "mega": { "noPotion": 7.5, "fly": 8.4, "ride": 8.4, "flyRide": 9.8 } }
+    },
+    {
+      "slug": "pinkypillar", "name": "Pinkypillar", "rarity": "c", "image": "/assets/pets/pinkypillar.png", "sourceType": "new-pet-projection", "sourceUrl": "https://jaejaevalues.com/pets/pinkypillar", "sourceNote": "Launch-market estimate reviewed September 5, 2026 from current Elvebredd variant lanes; values remain volatile.",
+      "values": { "default": { "noPotion": 0.012, "fly": 0.21, "ride": 0.21, "flyRide": 0.46 }, "neon": { "noPotion": 0.055, "fly": 0.33, "ride": 0.33, "flyRide": 0.6 }, "mega": { "noPotion": 0.25, "fly": 0.98, "ride": 0.98, "flyRide": 1.7 } }
+    },
+    {
+      "slug": "ms-muffet", "name": "Ms. Muffet", "rarity": "c", "image": "/assets/pets/ms-muffet.png", "sourceType": "new-pet-projection", "sourceUrl": "https://jaejaevalues.com/pets/ms-muffet", "sourceNote": "Launch-market estimate reviewed September 5, 2026 from current Elvebredd variant lanes; values remain volatile.",
+      "values": { "default": { "noPotion": 0.012, "fly": 0.21, "ride": 0.21, "flyRide": 0.46 }, "neon": { "noPotion": 0.055, "fly": 0.33, "ride": 0.33, "flyRide": 0.6 }, "mega": { "noPotion": 0.25, "fly": 0.98, "ride": 0.98, "flyRide": 1.7 } }
+    },
+    {
+      "slug": "budgie-witch", "name": "Budgie Witch", "rarity": "u", "image": "/assets/pets/budgie-witch.png", "sourceType": "new-pet-projection", "sourceUrl": "https://jaejaevalues.com/pets/budgie-witch", "sourceNote": "Launch-market estimate reviewed September 5, 2026 from current Elvebredd variant lanes; values remain volatile.",
+      "values": { "default": { "noPotion": 0.02, "fly": 0.22, "ride": 0.22, "flyRide": 0.47 }, "neon": { "noPotion": 0.2, "fly": 0.48, "ride": 0.48, "flyRide": 0.75 }, "mega": { "noPotion": 0.9, "fly": 1.65, "ride": 1.65, "flyRide": 2.4 } }
+    },
+    {
+      "slug": "princess-mare", "name": "Princess Mare", "rarity": "u", "image": "/assets/pets/princess-mare.png", "sourceType": "new-pet-projection", "sourceUrl": "https://jaejaevalues.com/pets/princess-mare", "sourceNote": "Launch-market estimate reviewed September 5, 2026 from current Elvebredd variant lanes; values remain volatile.",
+      "values": { "default": { "noPotion": 0.02, "fly": 0.22, "ride": 0.22, "flyRide": 0.47 }, "neon": { "noPotion": 0.2, "fly": 0.48, "ride": 0.48, "flyRide": 0.75 }, "mega": { "noPotion": 0.9, "fly": 1.65, "ride": 1.65, "flyRide": 2.4 } }
+    },
+    {
+      "slug": "clumpty", "name": "Clumpty", "rarity": "r", "image": "/assets/pets/clumpty.png", "sourceType": "new-pet-projection", "sourceUrl": "https://jaejaevalues.com/pets/clumpty", "sourceNote": "Launch-market estimate reviewed September 5, 2026 from current Elvebredd variant lanes; values remain volatile.",
+      "values": { "default": { "noPotion": 0.04, "fly": 0.24, "ride": 0.24, "flyRide": 0.49 }, "neon": { "noPotion": 0.25, "fly": 0.53, "ride": 0.53, "flyRide": 0.8 }, "mega": { "noPotion": 1.1, "fly": 1.85, "ride": 1.85, "flyRide": 2.6 } }
+    },
+    {
+      "slug": "granny-wolf", "name": "Granny Wolf", "rarity": "r", "image": "/assets/pets/granny-wolf.png", "sourceType": "new-pet-projection", "sourceUrl": "https://jaejaevalues.com/pets/granny-wolf", "sourceNote": "Launch-market estimate reviewed September 5, 2026 from current Elvebredd variant lanes; values remain volatile.",
+      "values": { "default": { "noPotion": 0.038, "fly": 0.23, "ride": 0.23, "flyRide": 0.49 }, "neon": { "noPotion": 0.24, "fly": 0.51, "ride": 0.51, "flyRide": 0.79 }, "mega": { "noPotion": 1.05, "fly": 1.8, "ride": 1.8, "flyRide": 2.55 } }
+    },
+    {
+      "slug": "little-lamb", "name": "Little Lamb", "rarity": "ur", "image": "/assets/pets/little-lamb.png", "sourceType": "new-pet-projection", "sourceUrl": "https://jaejaevalues.com/pets/little-lamb", "sourceNote": "Launch-market estimate reviewed September 5, 2026 from current Elvebredd variant lanes; values remain volatile.",
+      "values": { "default": { "noPotion": 0.11, "fly": 0.31, "ride": 0.31, "flyRide": 0.56 }, "neon": { "noPotion": 0.75, "fly": 1.03, "ride": 1.03, "flyRide": 1.3 }, "mega": { "noPotion": 3.25, "fly": 4.13, "ride": 4.13, "flyRide": 5 } }
+    },
+    {
+      "slug": "crimson-cape", "name": "Crimson Cape", "rarity": "ur", "image": "/assets/pets/crimson-cape.png", "sourceType": "new-pet-projection", "sourceUrl": "https://jaejaevalues.com/pets/crimson-cape", "sourceNote": "Launch-market estimate reviewed September 5, 2026 from current Elvebredd variant lanes; values remain volatile.",
+      "values": { "default": { "noPotion": 0.07, "fly": 0.27, "ride": 0.27, "flyRide": 0.52 }, "neon": { "noPotion": 0.55, "fly": 0.83, "ride": 0.83, "flyRide": 1.1 }, "mega": { "noPotion": 2.35, "fly": 3.18, "ride": 3.18, "flyRide": 4 } }
+    },
+    {
+      "slug": "huntsman-robin", "name": "Huntsman Robin", "rarity": "l", "image": "/assets/pets/huntsman-robin.png", "sourceType": "new-pet-projection", "sourceUrl": "https://jaejaevalues.com/pets/huntsman-robin", "sourceNote": "Launch-market estimate reviewed September 5, 2026 from current Elvebredd variant lanes; values remain volatile.",
+      "values": { "default": { "noPotion": 0.31, "fly": 0.61, "ride": 0.61, "flyRide": 1.01 }, "neon": { "noPotion": 1.5, "fly": 1.75, "ride": 1.75, "flyRide": 2.55 }, "mega": { "noPotion": 7, "fly": 8.9, "ride": 8, "flyRide": 10 } }
+    },
+    {
+      "slug": "three-blind-mice", "name": "Three Blind Mice", "rarity": "l", "image": "/assets/pets/three-blind-mice.png", "sourceType": "new-pet-projection", "sourceUrl": "https://jaejaevalues.com/pets/three-blind-mice", "sourceNote": "Launch-market estimate reviewed September 5, 2026 from current Elvebredd variant lanes; values remain volatile.",
+      "values": { "default": { "noPotion": 0.5, "fly": 0.8, "ride": 0.8, "flyRide": 1.2 }, "neon": { "noPotion": 2.4, "fly": 2.7, "ride": 2.7, "flyRide": 3.5 }, "mega": { "noPotion": 10.7, "fly": 12.6, "ride": 11.7, "flyRide": 13.7 } }
+    },
+    {
+      "slug": "ballet-swan", "name": "Ballet Swan", "rarity": "l", "image": "/assets/pets/ballet-swan.png", "sourceType": "new-pet-projection", "sourceUrl": "https://jaejaevalues.com/pets/ballet-swan", "sourceNote": "Launch-market estimate reviewed September 5, 2026 from current Elvebredd variant lanes; only one day of history was available.",
+      "values": { "default": { "noPotion": 7, "fly": 7.35, "ride": 7.3, "flyRide": 7.75 }, "neon": { "noPotion": 30.3, "fly": 31.2, "ride": 31.2, "flyRide": 32 }, "mega": { "noPotion": 137, "fly": 139, "ride": 138, "flyRide": 140 } }
     }
   ]
 }
