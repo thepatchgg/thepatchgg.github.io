@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-new-star-rewards-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Star Rewards",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "New Star Rewards &mdash; Gemstone Egg, Amethyst Penguin, and every reward",
+          excerpt: "The September 11 update refreshes daily Star Rewards with the 28-Star Gemstone Egg, a 0.05% Amethyst Penguin chase, and the Royal Fairytale Egg.",
+          meta: ["September 11, 2026", "Live update guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "New Star Rewards - Gemstone Egg odds and Amethyst Penguin",
+          excerpt: "See every Star price, the official Gemstone Egg pool and odds, Royal Fairytale Egg rarity chances, and the reward-transition rules.",
+          meta: ["September 11", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-fairytale-castle-notes-guide.html",
       featured: true,
       contexts: {
@@ -406,11 +428,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Fairytale Castle guide &#8594;"
+      labelHtml: "Read the New Star Rewards guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open Fairytale Castle guide &#8594;"
+      labelHtml: "Open New Star Rewards guide &#8594;"
     }
   };
 

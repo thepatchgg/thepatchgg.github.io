@@ -66768,13 +66768,47 @@
                              "2026"
                          ]
                      }
+                 },
+                 {
+                     "slug": "amethyst-penguin",
+                     "name": "Amethyst Penguin",
+                     "rarityCode": "l",
+                     "rarity": "Legendary",
+                     "image": "/assets/pets/amethyst-penguin.webp",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Gemstone Egg chase pet released Sep 11, 2026 at a published 0.05% hatch chance. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/amethyst-penguin.html",
+                     "compareSlugs": [
+                         "diamond-unicorn"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Gemstone Egg"
+                         ],
+                         "eventLabels": [
+                             "New Star Rewards update"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
                  }
              ],
-    "generatedAt":  "2026-09-05",
+    "generatedAt":  "2026-09-11",
     "counts":  {
                    "benchmark":  101,
                    "referenceLane":  0,
                    "currentGuide":  621
                },
-    "count":  735
+    "count":  736
 }

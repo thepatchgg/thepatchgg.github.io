@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-09-05",
+    "updatedAt":  "2026-09-11",
     "entries":  [
                     {
                         "slug":  "2021-uplift-butterfly",
@@ -111,6 +111,13 @@
                         "name":  "Amber Butterfly",
                         "rarity":  "r",
                         "image":  "/assets/pets/amber-butterfly.png",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "amethyst-penguin",
+                        "name":  "Amethyst Penguin",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/amethyst-penguin.webp",
                         "benchmark":  false
                     },
                     {
@@ -5274,8 +5281,8 @@
                     }
                 ],
     "counts":  {
-                   "total":  753,
-                   "verifiedRarity":  753,
+                   "total":  754,
+                   "verifiedRarity":  754,
                    "review":  0,
                    "benchmark":  18
                }
