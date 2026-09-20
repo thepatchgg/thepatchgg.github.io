@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Adopt Me Egg Guide 2026: Gemstone Egg, Pets &amp; Odds | The Patch</title>
-<meta name="description" content="Browse current Adopt Me eggs including the new Gemstone Egg, official rarity odds, hatch pools, pull rates, and retired egg history.">
+<title>Adopt Me Egg Guide 2026: Throwback Egg, Pets &amp; Odds | The Patch</title>
+<meta name="description" content="Browse current Adopt Me eggs including the new Throwback Egg, official rarity odds, hatch pools, pull rates, and retired egg history.">
 <meta name="robots" content="max-image-preview:large">
 <meta name="theme-color" content="#08111f">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Adopt Me Egg Guide 2026: Gemstone Egg, Pets &amp; Odds | The Patch">
-<meta property="og:description" content="See the new Gemstone Egg, every major Adopt Me egg, full hatch lists, and official rarity odds on one page.">
+<meta property="og:title" content="Adopt Me Egg Guide 2026: Throwback Egg, Pets &amp; Odds | The Patch">
+<meta property="og:description" content="See the new Throwback Egg, every major Adopt Me egg, full hatch lists, and official rarity odds on one page.">
 <meta property="og:url" content="https://thepatchgg.github.io/articles/adopt-me-egg-guide.html">
 <meta property="og:site_name" content="The Patch">
-<meta property="og:image" content="https://thepatchgg.github.io/assets/new-star-rewards-hero.webp">
-<meta property="og:image:alt" content="Amethyst Penguin and Gemstone Egg featured in The Patch Adopt Me egg guide">
+<meta property="og:image" content="https://thepatchgg.github.io/assets/cat-cafe-notes-hero.webp">
+<meta property="og:image:alt" content="Cat Cafe pets featured in The Patch Adopt Me egg guide">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Adopt Me Egg Guide 2026: Gemstone Egg, Pets &amp; Odds">
-<meta name="twitter:description" content="See the new Gemstone Egg, major Adopt Me hatch pools, and official rarity odds.">
-<meta name="twitter:image" content="https://thepatchgg.github.io/assets/new-star-rewards-hero.webp">
-<meta name="twitter:image:alt" content="Amethyst Penguin and Gemstone Egg featured in The Patch Adopt Me egg guide">
+<meta name="twitter:title" content="Adopt Me Egg Guide 2026: Throwback Egg, Pets &amp; Odds">
+<meta name="twitter:description" content="See the new Throwback Egg, major Adopt Me hatch pools, and official rarity odds.">
+<meta name="twitter:image" content="https://thepatchgg.github.io/assets/cat-cafe-notes-hero.webp">
+<meta name="twitter:image:alt" content="Cat Cafe pets featured in The Patch Adopt Me egg guide">
 <link rel="canonical" href="https://thepatchgg.github.io/articles/adopt-me-egg-guide.html">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="/site.webmanifest">
@@ -139,7 +139,7 @@
   <div class="egg-hero-grid">
     <section class="egg-card-shell">
       <div class="egg-badge">Egg Guide</div>
-      <h1>Every major Adopt Me egg, now including the Gemstone Egg.</h1>
+      <h1>Every major Adopt Me egg, now including the Throwback Egg.</h1>
       <p>Browse current and retired eggs, see official hatch pools and rarity odds, and keep unpublished individual rates clearly marked instead of guessed.</p>
       <div class="egg-meta-row">
         <span class="egg-pill" id="egg-total-chip">Loading eggs</span>
@@ -188,6 +188,7 @@
         <a href="/articles/adopt-me-crystal-egg-guide.html" class="egg-pill" style="text-decoration:none">Crystal Egg</a>
         <a href="/articles/adopt-me-fairytale-egg-guide.html" class="egg-pill available" style="text-decoration:none">Fairytale Egg</a>
         <a href="/articles/adopt-me-new-star-rewards-guide.html#gemstone-egg" class="egg-pill available" style="text-decoration:none">Gemstone Egg</a>
+        <a href="/articles/adopt-me-cat-cafe-notes-guide.html#throwback-egg" class="egg-pill available" style="text-decoration:none">Throwback Egg</a>
         <a href="/articles/adopt-me-endangered-egg-guide.html" class="egg-pill" style="text-decoration:none">Endangered Egg</a>
         <a href="/articles/adopt-me-aztec-egg-guide.html" class="egg-pill" style="text-decoration:none">Aztec Egg</a>
         <a href="/articles/adopt-me-royal-aztec-egg-guide.html" class="egg-pill" style="text-decoration:none">Royal Aztec Egg</a>
@@ -253,16 +254,18 @@ const EGG_GUIDE_ORDER = [
   "starter", "blue", "pink", "cracked", "pet", "royal", "retired", "safari", "jungle", "farm", "christmas",
   "aussie", "golden", "diamond", "easter-2020", "fossil", "ocean", "mythic", "woodland", "zodiac-minion",
   "japan", "southeast-asia", "fool", "danger", "wrapped-doll", "urban", "christmas-future", "royal-desert",
-  "desert", "garden", "moon", "royal-moon", "aztec", "royal-aztec", "endangered", "fairytale", "basic", "crystal", "gemstone"
+  "desert", "garden", "moon", "royal-moon", "aztec", "royal-aztec", "endangered", "fairytale", "basic", "crystal", "gemstone", "throwback"
 ];
-const RARITY_ORDER = ["Common", "Uncommon", "Rare", "Ultra-Rare", "Legendary"];
+const RARITY_ORDER = ["Common", "Uncommon", "Rare", "Ultra-Rare", "Legendary", "Unpublished"];
 const PET_OVERRIDES = {
   mole: { catalogName: "Mole Pet", slug: "mole-pet", image: "/assets/pets/mole-pet.png" },
   weevil: { catalogName: "Weevil Pet", slug: "weevil-pet", image: "/assets/pets/weevil-pet.png" },
   prayingmantis: { catalogName: "Praying Mantis Pet", slug: "praying-mantis-pet", image: "/assets/pets/praying-mantis-pet.png" },
   milkchoccybunny: { slug: "milk-choco-bunny", image: "/assets/pets/milk-choco-bunny.png" },
   whitechoccybunny: { slug: "white-choco-bunny", image: "/assets/pets/white-choco-bunny.png" },
-  darkchoccybunny: { slug: "dark-choco-bunny", image: "/assets/pets/dark-choco-bunny.png" }
+  darkchoccybunny: { slug: "dark-choco-bunny", image: "/assets/pets/dark-choco-bunny.png" },
+  bluecat: { slug: "blue-cat", image: "/assets/pets/blue-cat.webp" },
+  pinkdog: { slug: "pink-dog", image: "/assets/pets/pink-dog.webp" }
 };
 
 function normalizeName(value) {

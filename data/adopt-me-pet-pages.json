@@ -66802,13 +66802,150 @@
                              "2026"
                          ]
                      }
+                 },
+                 {
+                     "slug": "cattuccino",
+                     "name": "Cattuccino",
+                     "rarityCode": "r",
+                     "rarity": "Rare",
+                     "image": "/assets/pets/cattuccino.webp",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Cat Cafe pet released Sep 18, 2026 with an 87.50% chance from the 75 Robux Kitty Biscuit. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/cattuccino.html",
+                     "compareSlugs": [
+                         "cat"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Kitty Biscuit"
+                         ],
+                         "eventLabels": [
+                             "Cat Cafe update"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "catte",
+                     "name": "Catte",
+                     "rarityCode": "ur",
+                     "rarity": "Ultra-Rare",
+                     "image": "/assets/pets/catte.webp",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Cat Cafe pet released Sep 18, 2026 with a 10% chance from the 75 Robux Kitty Biscuit. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/catte.html",
+                     "compareSlugs": [
+                         "alley-cat"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Kitty Biscuit"
+                         ],
+                         "eventLabels": [
+                             "Cat Cafe update"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "matcha-cat",
+                     "name": "Matcha Cat",
+                     "rarityCode": "l",
+                     "rarity": "Legendary",
+                     "image": "/assets/pets/matcha-cat.webp",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Cat Cafe pet released Sep 18, 2026 with a 2.50% chance from the 75 Robux Kitty Biscuit. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/matcha-cat.html",
+                     "compareSlugs": [
+                         "mecha-meow"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Kitty Biscuit"
+                         ],
+                         "eventLabels": [
+                             "Cat Cafe update"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
+                 },
+                 {
+                     "slug": "pain-au-chat",
+                     "name": "Pain au Chat",
+                     "rarityCode": "ur",
+                     "rarity": "Ultra-Rare",
+                     "image": "/assets/pets/pain-au-chat.webp",
+                     "source": "official-pending",
+                     "benchmark": false,
+                     "segment": "Market forming",
+                     "demand": "Unpriced",
+                     "trend": "Pending",
+                     "confidence": "Official release only",
+                     "values": null,
+                     "notes": "Official Releaser Stand pet released Sep 18, 2026 from Basic and Crystal ticket eggs. Adopt Me did not publish its individual pull rate. No live value is published while the market forms.",
+                     "pageLabel": "Market forming",
+                     "supportLabel": "No live value",
+                     "supportTone": "Pending",
+                     "pageUrl": "/pets/pain-au-chat.html",
+                     "compareSlugs": [
+                         "catte"
+                     ],
+                     "origin": {
+                         "audited": true,
+                         "sourceLabels": [
+                             "Basic Egg",
+                             "Crystal Egg"
+                         ],
+                         "eventLabels": [
+                             "Cat Cafe update"
+                         ],
+                         "releaseYears": [
+                             "2026"
+                         ]
+                     }
                  }
              ],
-    "generatedAt":  "2026-09-11",
+    "generatedAt":  "2026-09-18",
     "counts":  {
                    "benchmark":  101,
                    "referenceLane":  0,
-                   "currentGuide":  621
+                   "currentGuide":  625
                },
-    "count":  736
+    "count":  740
 }

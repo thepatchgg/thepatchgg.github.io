@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-cat-cafe-notes-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Cat Cafe",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Cat Cafe &mdash; four new cats, exact biscuit odds, and Throwback Egg",
+          excerpt: "The September 18 update adds the 75 Robux Kitty Biscuit, Cattuccino, Catte, Matcha Cat, Pain au Chat, and a 400 Bucks anniversary egg.",
+          meta: ["September 18, 2026", "Live update guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Cat Cafe Notes - new pets, Kitty Biscuit odds, and Throwback Egg",
+          excerpt: "See every confirmed Cat Cafe pet and chance, how Pain au Chat works, and what can hatch from the Roblox anniversary egg.",
+          meta: ["September 18", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-new-star-rewards-guide.html",
       featured: true,
       contexts: {
@@ -428,11 +450,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the New Star Rewards guide &#8594;"
+      labelHtml: "Read the Cat Cafe guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open New Star Rewards guide &#8594;"
+      labelHtml: "Open Cat Cafe guide &#8594;"
     }
   };
 

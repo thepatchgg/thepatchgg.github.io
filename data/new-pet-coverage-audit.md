@@ -1,14 +1,26 @@
 # New Pet Coverage Audit
 
-- Date: 2026-09-11
-- Pets checked: Amethyst Penguin
+- Date: 2026-09-20
+- Pets checked: Cattuccino, Catte, Matcha Cat, Pain au Chat
 
 | Pet | Article | Home | Hub | Catalog | Legacy Calc | Benchmark | Override | Pet Page Data | Pet Page | Image |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Amethyst Penguin | Yes | Yes | Yes | Yes | No | No | No | Yes | Yes | Yes |
+| Cattuccino | Yes | Yes | Yes | Yes | No | No | No | Yes | Yes | Yes |
+| Catte | Yes | Yes | Yes | Yes | No | No | No | Yes | Yes | Yes |
+| Matcha Cat | Yes | Yes | Yes | Yes | No | No | No | Yes | Yes | Yes |
+| Pain au Chat | Yes | Yes | Yes | Yes | No | No | No | Yes | Yes | Yes |
 
 ## Notes
 
-- **Amethyst Penguin**
-  - Article hits: adopt-me-egg-guide.html, adopt-me-new-star-rewards-guide.html
+- **Cattuccino**
+  - Article hits: adopt-me-cat-cafe-notes-guide.html
+  - Missing: legacy calculator dataset, benchmark layer, override layer
+- **Catte**
+  - Article hits: adopt-me-cat-cafe-notes-guide.html
+  - Missing: legacy calculator dataset, benchmark layer, override layer
+- **Matcha Cat**
+  - Article hits: adopt-me-cat-cafe-notes-guide.html
+  - Missing: legacy calculator dataset, benchmark layer, override layer
+- **Pain au Chat**
+  - Article hits: adopt-me-cat-cafe-notes-guide.html
   - Missing: legacy calculator dataset, benchmark layer, override layer

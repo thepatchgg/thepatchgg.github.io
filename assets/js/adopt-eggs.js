@@ -18,6 +18,7 @@
     "endangered",
     "fairytale",
     "gemstone",
+    "throwback",
     "farm",
     "fossil",
     "fool",
@@ -82,6 +83,7 @@
     endangered: { shell: "#7db89b", accent: "#2f7f66", detail: "#1f463e", glow: "#dff6eb" },
     fairytale: { shell: "#f5a8d7", accent: "#8f68d8", detail: "#4d356f", glow: "#ffe2f4" },
     gemstone: { shell: "#d7e9ff", accent: "#a679ff", detail: "#643c9d", glow: "#f4eaff" },
+    throwback: { shell: "#f6a7e8", accent: "#22bfe8", detail: "#7b3470", glow: "#e8fbff" },
     basic: { shell: "#f6f7fb", accent: "#58b7e7", detail: "#38506b", glow: "#eef9ff" },
     crystal: { shell: "#8ddaff", accent: "#c0f3ff", detail: "#2c5f8c", glow: "#e7fdff" }
   };
@@ -123,6 +125,7 @@
     endangered: "paw",
     fairytale: "royal",
     gemstone: "gem",
+    throwback: "band",
     basic: "ticket",
     crystal: "crystal"
   };

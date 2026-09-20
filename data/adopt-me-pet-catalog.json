@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-09-11",
+    "updatedAt":  "2026-09-18",
     "entries":  [
                     {
                         "slug":  "2021-uplift-butterfly",
@@ -5278,11 +5278,39 @@
                         "rarity":  "ur",
                         "image":  "/assets/pets/zombie-wolf.png",
                         "benchmark":  false
+                    },
+                    {
+                        "slug":  "cattuccino",
+                        "name":  "Cattuccino",
+                        "rarity":  "r",
+                        "image":  "/assets/pets/cattuccino.webp",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "catte",
+                        "name":  "Catte",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/catte.webp",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "matcha-cat",
+                        "name":  "Matcha Cat",
+                        "rarity":  "l",
+                        "image":  "/assets/pets/matcha-cat.webp",
+                        "benchmark":  false
+                    },
+                    {
+                        "slug":  "pain-au-chat",
+                        "name":  "Pain au Chat",
+                        "rarity":  "ur",
+                        "image":  "/assets/pets/pain-au-chat.webp",
+                        "benchmark":  false
                     }
                 ],
     "counts":  {
-                   "total":  754,
-                   "verifiedRarity":  754,
+                   "total":  758,
+                   "verifiedRarity":  758,
                    "review":  0,
                    "benchmark":  18
                }
