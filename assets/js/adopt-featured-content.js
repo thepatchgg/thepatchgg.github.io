@@ -1,6 +1,28 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-monster-mansion-notes-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Monster Mansion",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Monster Mansion &mdash; house price, spooky furniture, and bug fixes",
+          excerpt: "The September 25 update adds the 13,000 Bucks Monster Mansion, ten spooky furniture pieces, and a round of profile, trading, and Family fixes.",
+          meta: ["September 25, 2026", "Live update guide"]
+        },
+        hub: {
+          tag: "Weekly Update",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Monster Mansion Notes - house, furniture prices, and fixes",
+          excerpt: "See the official 13,000 Bucks house price, every furniture cost, and the storage, profile, wishlist, and Family fixes.",
+          meta: ["September 25", "Live guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-cat-cafe-notes-guide.html",
       featured: true,
       contexts: {
@@ -450,11 +472,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Cat Cafe guide &#8594;"
+      labelHtml: "Read the Monster Mansion guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open Cat Cafe guide &#8594;"
+      labelHtml: "Open Monster Mansion guide &#8594;"
     }
   };
 
