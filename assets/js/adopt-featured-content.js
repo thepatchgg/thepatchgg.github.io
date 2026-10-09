@@ -1,6 +1,50 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-halloween-hauntlet-returns-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Halloween: Hauntlet Returns",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Hauntlet Returns &mdash; Bolt, Skelicorn, and Poltergeist Box odds",
+          excerpt: "Plan the October 9 drop: Bolt, Skelicorn, Bubblegeist, Bobageist, Caramelgeist, and a team route through Hauntlet 2.",
+          meta: ["October 9, 2026", "Halloween guide"]
+        },
+        hub: {
+          tag: "Halloween Week 2",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Hauntlet Returns - pets, Candy Corn costs, and box chances",
+          excerpt: "Meet Bolt, Skelicorn, Bubblegeist, Bobageist, and Caramelgeist, then plan your Hauntlet 2 run.",
+          meta: ["October 9", "Halloween guide"]
+        }
+      }
+    },
+    {
+      href: "/articles/adopt-me-halloween-ghost-gallery-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Halloween: Ghost Gallery",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Ghost Gallery &mdash; Rusty Keys, the Crypt, and Halloween pets",
+          excerpt: "Catch up on the October 3 release: Jumpscare, Mummy Spider, Jacobin Pigeon, Jester Dragon, and Candy Corn spending.",
+          meta: ["October 3, 2026", "Halloween guide"]
+        },
+        hub: {
+          tag: "Halloween Opening",
+          badgeLabel: "New",
+          badgeTone: "new",
+          title: "Ghost Gallery - opening pets, Rusty Keys, and the Crypt",
+          excerpt: "Find Jumpscare, Mummy Spider, Jacobin Pigeon, and Jester Dragon, and plan your Crypt progression.",
+          meta: ["October 3", "Halloween guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-monster-mansion-notes-guide.html",
       featured: true,
       contexts: {
@@ -472,11 +516,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Monster Mansion guide &#8594;"
+      labelHtml: "Read the Hauntlet Returns guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open Monster Mansion guide &#8594;"
+      labelHtml: "Open Hauntlet Returns guide &#8594;"
     }
   };
 
