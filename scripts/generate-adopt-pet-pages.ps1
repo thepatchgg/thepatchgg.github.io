@@ -343,7 +343,17 @@ foreach ($entry in $catalog.entries) { $catalogIndex[$entry.slug] = $entry }
 
 $allPets = New-Object System.Collections.Generic.List[object]
 
-foreach ($legacyPet in $legacy.pets) {
+$pagePets = @($legacy.pets)
+$pageSlugs = @{}
+foreach ($pet in $pagePets) { $pageSlugs[$pet.slug] = $true }
+foreach ($pet in $overrides.pets) {
+  if (-not $pageSlugs.ContainsKey($pet.slug)) {
+    $pagePets += $pet
+    $pageSlugs[$pet.slug] = $true
+  }
+}
+
+foreach ($legacyPet in $pagePets) {
   $catalogEntry = $catalogIndex[$legacyPet.slug]
   $benchmarkPet = $benchmarkIndex[$legacyPet.slug]
   $overridePet = $overrideIndex[$legacyPet.slug]

@@ -23,6 +23,14 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Test tracker data decoder
+        shell: pwsh
+        run: powershell -ExecutionPolicy Bypass -File .\scripts\test-packed-tracker-source.ps1
+
+      - name: Test calculator catalog coverage
+        shell: pwsh
+        run: node .\scripts\test-calculator-catalog.cjs
+
       - name: Run site QA
         shell: pwsh
         run: |

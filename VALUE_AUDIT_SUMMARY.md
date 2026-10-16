@@ -1,14 +1,14 @@
 # Value Audit Summary
 
-- Date: 2026-08-07
+- Date: 2026-10-16
 - Source refresh: fresh
-- Mode: production refresh
+- Mode: reviewed publication approved by the user on October 16, 2026
 - Scope: Adopt Me trade calculator long-tail pet values
 - Reference source: adoptmevalues.app values index
-- Local calculator coverage: 735 pets
+- Legacy calculator catalog: 722 pets
 - Benchmark/editorial pets currently handled outside the override layer: 101
-- Comparable non-benchmark pet coverage in this run: 634
-- Non-benchmark pets matched to public tracker feed: 625
+- Comparable non-benchmark pet coverage in this run: 645
+- Non-benchmark pets matched to public tracker feed: 636
 - Non-benchmark pets manually resolved: 9
 - Non-benchmark pets still unmatched: 0
 - Current production comparable non-benchmark coverage: 634
@@ -27,14 +27,14 @@ These benchmark pets still deserve human review before any editorial benchmark c
 
 | Pet | Patch default | Tracker FR | Delta % |
 | --- | ---: | ---: | ---: |
-| Undead Jousting Horse | 21 | 58.5 | -64.1% |
-| Werewolf | 9.75 | 24 | -59.4% |
-| Sugar Glider | 13.25 | 27 | -50.9% |
-| Cerberus | 1.6 | 3.2 | -50% |
-| Frostbite Bear | 8.25 | 16.5 | -50% |
-| Candicorn | 5.7 | 10.5 | -45.7% |
-| Blazing Lion | 81 | 147 | -44.9% |
-| Orchid Butterfly | 59 | 105 | -43.8% |
+| Undead Jousting Horse | 19 | 90 | -78.9% |
+| Werewolf | 8.25 | 36 | -77.1% |
+| Frostbite Bear | 9 | 35 | -74.3% |
+| Cerberus | 1.6 | 5.45 | -70.6% |
+| Silverback Gorilla | 5.45 | 16.25 | -66.5% |
+| Blazing Lion | 77 | 201 | -61.7% |
+| Fairy Bat Dragon | 12.5 | 32.5 | -61.5% |
+| Black-Chested Pheasant | 8 | 18.5 | -56.8% |
 
 ## Recommendation
 

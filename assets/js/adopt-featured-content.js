@@ -1,6 +1,24 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-halloween-stitches-spotlight-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Halloween: Stitches' Spotlight", badgeLabel: "New", badgeTone: "new",
+          title: "Stitches' Spotlight &mdash; Copycat, Boohoo, Shoebill, and Candy Corn costs",
+          excerpt: "Meet the four October 16 pets, plan your Candy Corn spending, and learn how to escape Stitches' spotlight.",
+          meta: ["October 16, 2026", "Halloween guide"]
+        },
+        hub: {
+          tag: "Halloween Week 3", badgeLabel: "New", badgeTone: "new",
+          title: "Stitches' Spotlight - four new pets and the Carnival minigame",
+          excerpt: "Stitches, Copycat, Boohoo, and Shoebill: confirmed costs, Hotel tasks, and launch value status.",
+          meta: ["October 16", "Halloween guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-halloween-hauntlet-returns-guide.html",
       featured: true,
       contexts: {
@@ -516,11 +534,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Hauntlet Returns guide &#8594;"
+      labelHtml: "Read the Stitches' Spotlight guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open Hauntlet Returns guide &#8594;"
+      labelHtml: "Open Stitches' Spotlight guide &#8594;"
     }
   };
 

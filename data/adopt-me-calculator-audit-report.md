@@ -1,10 +1,10 @@
 # Calculator Audit Report
 
-- Date: 2026-08-07
-- Tracker pet rows parsed: 762
-- Local calculator pets: 735
-- Non-benchmark local pets: 634
-- Non-benchmark pets matched to tracker feed: 625
+- Date: 2026-10-16
+- Tracker pet rows parsed: 795
+- Local calculator pets considered: 746
+- Non-benchmark local pets: 645
+- Non-benchmark pets matched to tracker feed: 636
 - Non-benchmark pets manually resolved: 9
 - Non-benchmark pets still unmatched: 0
 
@@ -12,31 +12,31 @@
 
 | Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Undead Jousting Horse | 21 | 58.5 | -64.1% | 20 | 57.5 |
-| Werewolf | 9.75 | 24 | -59.4% | 9 | 23 |
-| Sugar Glider | 13.25 | 27 | -50.9% | 12.25 | 26 |
-| Cerberus | 1.6 | 3.2 | -50% | 0.9 | 2.5 |
-| Frostbite Bear | 8.25 | 16.5 | -50% | 7.5 | 15.5 |
-| Candicorn | 5.7 | 10.5 | -45.7% | 5 | 9.5 |
-| Blazing Lion | 81 | 147 | -44.9% | 79 | 145 |
-| Orchid Butterfly | 59 | 105 | -43.8% | 57 | 103 |
-| Giant Panda | 117 | 193 | -39.4% | 115 | 192 |
-| Silverback Gorilla | 5.45 | 9 | -39.4% | 4.75 | 8 |
-| Dragonfruit Fox | 4.7 | 3.45 | 36.2% | 4 | 2.75 |
-| Jekyll Hydra | 36.5 | 57 | -36% | 35.5 | 56 |
-| Black-Chested Pheasant | 8 | 12.5 | -36% | 7.25 | 11.5 |
-| Bush Elephant | 12.5 | 19 | -34.2% | 11.5 | 18 |
-| Monkey King | 21.75 | 31.25 | -30.4% | 21.25 | 63 |
-| Field Mouse | 7.75 | 6 | 29.2% | 7 | 5.25 |
-| Shadow Dragon | 477 | 670 | -28.8% | 596.25 | 838 |
-| Owlbear | 7 | 5.5 | 27.3% | 6.25 | 4.75 |
-| Giraffe | 333 | 455 | -26.8% | 345 | 468 |
-| Alpaca | 13.75 | 18.75 | -26.7% | 12.75 | 17.75 |
-| Frost Unicorn | 10.5 | 14 | -25% | 9.5 | 13 |
-| Goose | 28 | 36.5 | -23.3% | 26.5 | 35 |
-| Cryptid | 106 | 133.5 | -20.6% | 104 | 131.5 |
-| Jellyfish | 8.25 | 10.25 | -19.5% | 7.5 | 9.5 |
-| Diamond Butterfly | 51 | 62.5 | -18.4% | 50 | 61.5 |
+| Undead Jousting Horse | 19 | 90 | -78.9% | 18 | 89 |
+| Werewolf | 8.25 | 36 | -77.1% | 7.5 | 35 |
+| Frostbite Bear | 9 | 35 | -74.3% | 8.25 | 33.5 |
+| Cerberus | 1.6 | 5.45 | -70.6% | 0.9 | 4.75 |
+| Silverback Gorilla | 5.45 | 16.25 | -66.5% | 4.75 | 15.25 |
+| Blazing Lion | 77 | 201 | -61.7% | 75 | 202 |
+| Fairy Bat Dragon | 12.5 | 32.5 | -61.5% | 10.75 | 30.5 |
+| Black-Chested Pheasant | 8 | 18.5 | -56.8% | 7.25 | 17.5 |
+| Bush Elephant | 10.5 | 24 | -56.2% | 9.5 | 23 |
+| Frost Unicorn | 10.25 | 22.5 | -54.4% | 9.25 | 21.5 |
+| Sugar Glider | 13.5 | 29 | -53.4% | 12.5 | 28 |
+| Candicorn | 6.45 | 13.75 | -53.1% | 5.75 | 12.75 |
+| Orchid Butterfly | 59 | 124 | -52.4% | 57 | 122 |
+| Vampire Dragon | 7.35 | 15.25 | -51.8% | 6.5 | 14.25 |
+| Alpaca | 12 | 23.75 | -49.5% | 11 | 22.75 |
+| Siamese Cat | 12.5 | 24.5 | -49% | 11.5 | 22.75 |
+| Giant Panda | 114 | 220 | -48.2% | 112 | 219 |
+| Goose | 20.75 | 39.5 | -47.5% | 19.25 | 38 |
+| Chocolate Chip Bat Dragon | 25.25 | 47.5 | -46.8% | 23.25 | 45.5 |
+| Jekyll Hydra | 40 | 75 | -46.7% | 39 | 74 |
+| Monkey King | 21.5 | 38.5 | -44.2% | 21 | 66 |
+| Strawberry Shortcake Bat Dragon | 28 | 48.5 | -42.3% | 26 | 46.5 |
+| Queen Bee | 2.2 | 3.7 | -40.5% | 1.5 | 3 |
+| Dragonfruit Fox | 4.95 | 3.55 | 39.4% | 4.25 | 2.85 |
+| Peppermint Penguin | 22.75 | 37 | -38.5% | 21.25 | 35 |
 
 ## Manual Edge-Case Resolutions
 

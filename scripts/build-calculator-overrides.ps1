@@ -103,6 +103,11 @@ foreach ($match in $matches) {
   })
 }
 
+if ($trackerItems.Count -eq 0) {
+  $packedItems = & (Join-Path $PSScriptRoot 'read-packed-tracker-source.ps1') -SourceHtml (Resolve-RepoPath $SourceHtml)
+  foreach ($item in $packedItems) { $trackerItems.Add($item) }
+}
+
 if ($trackerItems.Count -lt 600) {
   throw "Tracker parse coverage dropped too low: $($trackerItems.Count) pet rows"
 }
@@ -118,6 +123,37 @@ foreach ($item in $trackerItems) {
 $legacy = Get-Content -LiteralPath (Resolve-RepoPath $LegacyCatalog) -Raw | ConvertFrom-Json
 $benchmark = Get-Content -LiteralPath (Resolve-RepoPath $BenchmarkData) -Raw | ConvertFrom-Json
 $manual = Get-Content -LiteralPath (Resolve-RepoPath $ManualMappings) -Raw | ConvertFrom-Json
+# Include live override-only pets added after the legacy catalog was frozen.
+# Refresh them from the same tracker rather than silently dropping coverage.
+$syncPets = @($legacy.pets)
+$syncSlugs = @{}
+foreach ($pet in $syncPets) { $syncSlugs[$pet.slug] = $true }
+$launchPath = Resolve-RepoPath 'data/adopt-me-new-pet-overrides.json'
+if (Test-Path -LiteralPath $launchPath) {
+  $launchPayload = Get-Content -LiteralPath $launchPath -Raw | ConvertFrom-Json
+  foreach ($pet in $launchPayload.pets) {
+    if (-not $syncSlugs.ContainsKey($pet.slug)) {
+      $syncPets += $pet
+      $syncSlugs[$pet.slug] = $true
+    }
+  }
+}
+$catalogIndex = @{}
+$catalogPath = Resolve-RepoPath 'data/adopt-me-pet-catalog.json'
+if (Test-Path -LiteralPath $catalogPath) {
+  $catalogPayload = Get-Content -LiteralPath $catalogPath -Raw | ConvertFrom-Json
+  foreach ($pet in $catalogPayload.entries) { $catalogIndex[$pet.slug] = $pet }
+}
+$productionPath = Resolve-RepoPath 'data/adopt-me-calculator-overrides.json'
+if (Test-Path -LiteralPath $productionPath) {
+  $production = Get-Content -LiteralPath $productionPath -Raw | ConvertFrom-Json
+  foreach ($pet in $production.pets) {
+    if (-not $syncSlugs.ContainsKey($pet.slug)) {
+      $syncPets += $pet
+      $syncSlugs[$pet.slug] = $true
+    }
+  }
+}
 $benchmarkIndex = @{}
 foreach ($pet in $benchmark.pets) {
   $benchmarkIndex[$pet.slug] = $pet
@@ -147,7 +183,7 @@ $benchmarkComparisons = New-Object System.Collections.Generic.List[object]
 $trackerMatchedCount = 0
 $manualResolvedCount = 0
 
-foreach ($pet in $legacy.pets) {
+foreach ($pet in $syncPets) {
   $trackerItem = $null
   $candidates = New-Object System.Collections.Generic.List[string]
   $candidates.Add((Normalize-Key $pet.name))
@@ -218,6 +254,8 @@ foreach ($pet in $legacy.pets) {
   $overridePets.Add([pscustomobject]@{
     slug = $pet.slug
     name = $pet.name
+    rarity = $(if ($catalogIndex.ContainsKey($pet.slug)) { $catalogIndex[$pet.slug].rarity } else { $trackerItem.rarity })
+    image = $(if ($catalogIndex.ContainsKey($pet.slug)) { $catalogIndex[$pet.slug].image } else { "/assets/pets/$($pet.slug).png" })
     sourceUrl = "https://adoptmevalues.app/values/$($pet.slug -replace '-pet$','')"
     sourceType = "tracker"
     values = [ordered]@{
@@ -241,7 +279,7 @@ $payload = [ordered]@{
 }
 $payload | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath (Resolve-RepoPath $OutJson)
 
-$nonBenchmarkCount = @($legacy.pets | Where-Object { -not $benchmarkIndex.ContainsKey($_.slug) }).Count
+$nonBenchmarkCount = @($syncPets | Where-Object { -not $benchmarkIndex.ContainsKey($_.slug) }).Count
 $matchedCount = $overridePets.Count
 $unmatchedCount = $unmatched.Count
 $benchmarkDiffs = @($benchmarkComparisons | ForEach-Object {
@@ -261,7 +299,7 @@ $report += "# Calculator Audit Report"
 $report += ""
 $report += "- Date: $(Get-Date -Format 'yyyy-MM-dd')"
 $report += "- Tracker pet rows parsed: $($trackerItems.Count)"
-$report += "- Local calculator pets: $($legacy.pets.Count)"
+$report += "- Local calculator pets considered: $($syncPets.Count)"
 $report += "- Non-benchmark local pets: $nonBenchmarkCount"
 $report += "- Non-benchmark pets matched to tracker feed: $trackerMatchedCount"
 $report += "- Non-benchmark pets manually resolved: $manualResolvedCount"

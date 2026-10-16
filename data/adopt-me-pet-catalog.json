@@ -1,6 +1,10 @@
 {
-    "updatedAt":  "2026-09-18",
+    "updatedAt":  "2026-10-16",
     "entries":  [
+{"slug":"stitches","name":"Stitches","rarity":"ur","image":"/assets/pets/stitches.png","benchmark":false},
+{"slug":"copycat","name":"Copycat","rarity":"l","image":"/assets/pets/copycat.png","benchmark":false},
+{"slug":"shoebill","name":"Shoebill","rarity":"u","image":"/assets/pets/shoebill.png","benchmark":false},
+{"slug":"boohoo","name":"Boohoo","rarity":"r","image":"/assets/pets/boohoo.png","benchmark":false},
                     {
                         "slug":  "2021-uplift-butterfly",
                         "name":  "2021 Uplift Butterfly",
@@ -5309,8 +5313,8 @@
                     }
                 ],
     "counts":  {
-                   "total":  758,
-                   "verifiedRarity":  758,
+                   "total":  762,
+                   "verifiedRarity":  762,
                    "review":  0,
                    "benchmark":  18
                }

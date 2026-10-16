@@ -1,12 +1,13 @@
 # Pet Catalog Audit
 
-- Date: 2026-09-18
+- Date: 2026-10-16
 - Tracker pet rows parsed: 718
-- Catalog entries: 758
-- Entries with verified rarity: 758
+- Catalog entries: 762
+- Entries with verified rarity: 762
 - Entries still marked for review: 0
 
 ## Notes
+- Stitches, Copycat, Shoebill, and Boohoo were added from official October 16 notes and artwork. Their trade values remain pending.
 
 - Rarity labels were synced from the cached public Adopt Me Values pet index where possible, with the May 2026 release pets reviewed manually.
 - Sunflower Friend and Violet Friend are now included in the catalog alongside the Bee Pass Notes update coverage.
