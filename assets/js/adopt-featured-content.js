@@ -1,6 +1,24 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-halloween-where-bear-returns-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Halloween: Where Bear? Returns", badgeLabel: "New", badgeTone: "new",
+          title: "Where Bear? Returns &mdash; Count Slothula, Stray Cat Dragon, and final-week costs",
+          excerpt: "Plan the October 23 drop: the returning Where Bear? minigame, Count Slothula, Stray Cat Dragon, and Candy Corn priorities.",
+          meta: ["October 23, 2026", "Halloween guide"]
+        },
+        hub: {
+          tag: "Halloween Final Week", badgeLabel: "New", badgeTone: "new",
+          title: "Where Bear? Returns - Count Slothula, Stray Cat Dragon, and Candy Corn costs",
+          excerpt: "Get the confirmed pet costs, the Crypt transformation steps, and a clear Where Bear? minigame rundown.",
+          meta: ["October 23", "Halloween guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-halloween-stitches-spotlight-guide.html",
       featured: true,
       contexts: {
