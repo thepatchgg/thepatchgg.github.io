@@ -1,12 +1,13 @@
 # Pet Catalog Audit
 
-- Date: 2026-10-16
+- Date: 2026-11-02
 - Tracker pet rows parsed: 718
-- Catalog entries: 762
-- Entries with verified rarity: 762
+- Catalog entries: 767
+- Entries with verified rarity: 767
 - Entries still marked for review: 0
 
 ## Notes
+- Bolt, Count Slothula, Jester Dragon, Mummy Spider, and Stray Cat Dragon have official rarity, local artwork, and pending-value pet pages. November 2 Wagon changes are covered in the final-weekend guide. No numeric values were assigned.
 - Stitches, Copycat, Shoebill, and Boohoo were added from official October 16 notes and artwork. Their trade values remain pending.
 
 - Rarity labels were synced from the cached public Adopt Me Values pet index where possible, with the May 2026 release pets reviewed manually.

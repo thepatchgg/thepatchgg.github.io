@@ -1,5 +1,10 @@
 {
     "pets":  [
+{"slug":"bolt","name":"Bolt","rarityCode":"u","rarity":"Uncommon","image":"/assets/pets/bolt.png","source":"official-pending","benchmark":false,"segment":"Market forming","demand":"Unpriced","trend":"Pending","confidence":"Official release only","values":null,"notes":"Originally sold for 10,000 Candy Corn at the Hotel. Check the Halloween Wagon selection after the November 2 transition. Trade value pending.","pageLabel":"Market forming","supportLabel":"No live value","supportTone":"Pending","pageUrl":"/pets/bolt.html","compareSlugs":["stitches"],"origin":{"audited":true,"sourceLabels":["the Hotel bellhop during Halloween"],"eventLabels":["Halloween 2026"],"releaseYears":["2026"]}},
+{"slug":"count-slothula","name":"Count Slothula","rarityCode":"ur","rarity":"Ultra-Rare","image":"/assets/pets/count-slothula.png","source":"official-pending","benchmark":false,"segment":"Market forming","demand":"Unpriced","trend":"Pending","confidence":"Official release only","values":null,"notes":"Released in the Haunted Manor for 99 Robux. The official October 30 notes say Count Slothula moves into the Pet Shop when the Halloween Wagon arrives on November 2; the regular Sloth leaves instead. Check the in-game Pet Shop price. Trade value pending.","pageLabel":"Market forming","supportLabel":"No live value","supportTone":"Pending","pageUrl":"/pets/count-slothula.html","compareSlugs":["stitches"],"origin":{"audited":true,"sourceLabels":["the Haunted Manor during Halloween"],"eventLabels":["Halloween 2026"],"releaseYears":["2026"]}},
+{"slug":"jester-dragon","name":"Jester Dragon","rarityCode":"l","rarity":"Legendary","image":"/assets/pets/jester-dragon.png","source":"official-pending","benchmark":false,"segment":"Market forming","demand":"Unpriced","trend":"Pending","confidence":"Official release only","values":null,"notes":"The official Ghost Gallery notes list Jester Dragon for 1,000 Robux at the Carnival. Check current in-game availability after the Halloween transition. Trade value pending.","pageLabel":"Market forming","supportLabel":"No live value","supportTone":"Pending","pageUrl":"/pets/jester-dragon.html","compareSlugs":["stitches"],"origin":{"audited":true,"sourceLabels":["the Carnival during Halloween"],"eventLabels":["Halloween 2026"],"releaseYears":["2026"]}},
+{"slug":"mummy-spider","name":"Mummy Spider","rarityCode":"r","rarity":"Rare","image":"/assets/pets/mummy-spider.png","source":"official-pending","benchmark":false,"segment":"Market forming","demand":"Unpriced","trend":"Pending","confidence":"Official release only","values":null,"notes":"During Halloween, unlock graves with Rusty Keys and progress through four Crypt levels to earn Mummy Spider. The official October 30 notes exclude Mummy Spider from the November 2 Halloween Wagon. After the activity leaves, do not expect the Wagon to provide another reward route. Trade value pending.","pageLabel":"Market forming","supportLabel":"No live value","supportTone":"Pending","pageUrl":"/pets/mummy-spider.html","compareSlugs":["stitches"],"origin":{"audited":true,"sourceLabels":["four levels of the Crypt"],"eventLabels":["Halloween 2026"],"releaseYears":["2026"]}},
+{"slug":"stray-cat-dragon","name":"Stray Cat Dragon","rarityCode":"l","rarity":"Legendary","image":"/assets/pets/stray-cat-dragon.png","source":"official-pending","benchmark":false,"segment":"Market forming","demand":"Unpriced","trend":"Pending","confidence":"Official release only","values":null,"notes":"Feed the stray cat Polymorphing Cat Food from the Crypt to reveal Stray Cat Dragon, originally priced at 120,000 Candy Corn. Check the Wagon selection and current in-game price after November 2. Trade value pending.","pageLabel":"Market forming","supportLabel":"No live value","supportTone":"Pending","pageUrl":"/pets/stray-cat-dragon.html","compareSlugs":["stitches"],"origin":{"audited":true,"sourceLabels":["the stray cat transformation during Halloween"],"eventLabels":["Halloween 2026"],"releaseYears":["2026"]}},
                  {
                      "slug":  "bat-dragon",
                      "name":  "Bat Dragon",
@@ -68713,11 +68718,11 @@
                                 }
                  }
              ],
-    "generatedAt":  "2026-10-16",
+    "generatedAt":  "2026-11-02",
     "counts":  {
                    "benchmark":  101,
                    "referenceLane":  0,
                    "currentGuide":  645
                },
-    "count":  757
+    "count":  762
 }

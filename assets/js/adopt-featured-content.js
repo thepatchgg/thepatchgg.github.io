@@ -1,6 +1,24 @@
 (function () {
   const updates = [
     {
+      href: "/articles/adopt-me-halloween-final-1-2x-weekend-notes-guide.html",
+      featured: true,
+      contexts: {
+        home: {
+          tag: "Halloween Wagon", badgeLabel: "Updated", badgeTone: "updated",
+          title: "Halloween Wagon &mdash; November 2 timing, exclusions, and Count Slothula",
+          excerpt: "Check the Wagon transition, Mummy Spider and Pro Ghost Blaster exclusions, and Count Slothula's move to the Pet Shop.",
+          meta: ["November 2, 2026", "Wagon guide"]
+        },
+        hub: {
+          tag: "Halloween Wagon", badgeLabel: "Updated", badgeTone: "updated",
+          title: "Final 1.2x Weekend Notes - Halloween Wagon and what leaves",
+          excerpt: "Plan Candy Corn spending and check Bolt, Stitches, Jester Dragon, Count Slothula, and the November 2 changes.",
+          meta: ["November 2", "Wagon guide"]
+        }
+      }
+    },
+    {
       href: "/articles/adopt-me-halloween-where-bear-returns-guide.html",
       featured: true,
       contexts: {
@@ -552,11 +570,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Stitches' Spotlight guide &#8594;"
+      labelHtml: "Read the Halloween Wagon guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open Stitches' Spotlight guide &#8594;"
+      labelHtml: "Open Halloween Wagon guide &#8594;"
     }
   };
 

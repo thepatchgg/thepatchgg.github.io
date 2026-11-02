@@ -1,6 +1,11 @@
 {
-    "updatedAt":  "2026-10-16",
+    "updatedAt":  "2026-11-02",
     "entries":  [
+{"slug":"bolt","name":"Bolt","rarity":"u","image":"/assets/pets/bolt.png","benchmark":false},
+{"slug":"count-slothula","name":"Count Slothula","rarity":"ur","image":"/assets/pets/count-slothula.png","benchmark":false},
+{"slug":"jester-dragon","name":"Jester Dragon","rarity":"l","image":"/assets/pets/jester-dragon.png","benchmark":false},
+{"slug":"mummy-spider","name":"Mummy Spider","rarity":"r","image":"/assets/pets/mummy-spider.png","benchmark":false},
+{"slug":"stray-cat-dragon","name":"Stray Cat Dragon","rarity":"l","image":"/assets/pets/stray-cat-dragon.png","benchmark":false},
 {"slug":"stitches","name":"Stitches","rarity":"ur","image":"/assets/pets/stitches.png","benchmark":false},
 {"slug":"copycat","name":"Copycat","rarity":"l","image":"/assets/pets/copycat.png","benchmark":false},
 {"slug":"shoebill","name":"Shoebill","rarity":"u","image":"/assets/pets/shoebill.png","benchmark":false},
@@ -5313,8 +5318,8 @@
                     }
                 ],
     "counts":  {
-                   "total":  762,
-                   "verifiedRarity":  762,
+                   "total":  767,
+                   "verifiedRarity":  767,
                    "review":  0,
                    "benchmark":  18
                }
