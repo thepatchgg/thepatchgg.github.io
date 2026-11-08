@@ -317,7 +317,7 @@
       Object.entries(rarityBuckets).forEach(([rarity, bucket]) => {
         const rarityChance = window.ThePatchEggs.parseChance(rarityChances[rarity]);
         const petsWithoutExplicitChance = bucket.filter((pet) => window.ThePatchEggs.parseChance(pet.chance) === null);
-        const perPetChance = petsWithoutExplicitChance.length && rarityChance !== null ? rarityChance / petsWithoutExplicitChance.length : 0;
+        const perPetChance = egg.chanceMode === "variable" ? null : (petsWithoutExplicitChance.length && rarityChance !== null ? rarityChance / petsWithoutExplicitChance.length : 0);
 
         bucket.forEach((pet) => {
           const benchmark = valuesPayload.petIndex[pet.slug];
@@ -326,6 +326,7 @@
           }
           const explicitChance = window.ThePatchEggs.parseChance(pet.chance);
           const finalChance = explicitChance === null ? perPetChance : explicitChance;
+          if (finalChance === null) return;
           benchmarkPets.push({
             name: benchmark.name,
             slug: benchmark.slug,

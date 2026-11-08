@@ -1,5 +1,33 @@
 (function () {
   const updates = [
+{
+  "href": "/articles/adopt-me-lightning-dimension-guide.html",
+  "featured": true,
+  "contexts": {
+    "home": {
+      "tag": "Lightning Dimension",
+      "badgeLabel": "New",
+      "badgeTone": "new",
+      "title": "Lightning Dimension &mdash; four pets, bait costs, and lure chances",
+      "excerpt": "Thunderfisher, Electric Hornet, Haetyphoon, and Flash Weasel: choose your bait, collect Lightning Bottles, and check the two-hour lure rewards.",
+      "meta": [
+        "November 6, 2026",
+        "Update guide"
+      ]
+    },
+    "hub": {
+      "tag": "Lightning Dimension",
+      "badgeLabel": "New",
+      "badgeTone": "new",
+      "title": "Lightning Dimension &mdash; four pets, bait costs, and lure chances",
+      "excerpt": "Thunderfisher, Electric Hornet, Haetyphoon, and Flash Weasel: choose your bait, collect Lightning Bottles, and check the two-hour lure rewards.",
+      "meta": [
+        "November 6, 2026",
+        "Update guide"
+      ]
+    }
+  }
+},
     {
       href: "/articles/adopt-me-halloween-final-1-2x-weekend-notes-guide.html",
       featured: true,
@@ -570,11 +598,11 @@
   const heroCtas = {
     home: {
       href: updates[0].href,
-      labelHtml: "Read the Halloween Wagon guide &#8594;"
+      labelHtml: "Read the Lightning Dimension guide &#8594;"
     },
     hub: {
       href: updates[0].href,
-      labelHtml: "Open Halloween Wagon guide &#8594;"
+      labelHtml: "Open Lightning Dimension guide &#8594;"
     }
   };
 

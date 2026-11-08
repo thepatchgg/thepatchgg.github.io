@@ -36,7 +36,7 @@ const example = overrides.pets.find(pet => !benchmark.petIndex[pet.slug]);
 const staleLaunch = { pets: [{ ...example, values: { default: { noPotion: 999999 } } }] };
 const staleMerged = context.mergeCatalog(benchmark, legacy, overrides, staleLaunch, pages);
 assert.deepEqual(staleMerged.find(pet => pet.slug === example.slug).matrix, example.values);
-for (const slug of ["stitches", "copycat", "shoebill", "boohoo"]) {
+for (const slug of ["thunderfisher", "electric-hornet", "haetyphoon", "flash-weasel"]) {
   const selected = bySlug.get(slug);
   assert.equal(selected.source, "official-pending", slug + " remains unpriced");
   assert.equal(selected.values, null);

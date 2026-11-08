@@ -1,0 +1,609 @@
+{
+  "reviewedAt": "2026-11-08",
+  "officialPost": "https://www.playadopt.me/news/lightning-dimension-notes",
+  "article": "/articles/adopt-me-lightning-dimension-guide.html",
+  "promotedPets": [
+    "bolt",
+    "count-slothula",
+    "jester-dragon",
+    "mummy-spider",
+    "stray-cat-dragon",
+    "stitches",
+    "copycat",
+    "shoebill",
+    "boohoo",
+    "2026-birthday-butterfly",
+    "cake-friend",
+    "amethyst-penguin",
+    "cattuccino",
+    "catte",
+    "matcha-cat",
+    "pain-au-chat"
+  ],
+  "benchmarkReviewed": [
+    {
+      "slug": "bat-dragon",
+      "before": 722,
+      "after": 1001,
+      "noPotion": 1013,
+      "secondaryUrl": "https://elvebredd.com/pets/bat-dragon"
+    },
+    {
+      "slug": "shadow-dragon",
+      "before": 454,
+      "after": 677,
+      "noPotion": 846,
+      "secondaryUrl": "https://elvebredd.com/pets/shadow-dragon"
+    },
+    {
+      "slug": "unicorn",
+      "before": 1.9,
+      "after": 1.6,
+      "noPotion": 0.75,
+      "secondaryUrl": "https://elvebredd.com/pets/unicorn"
+    },
+    {
+      "slug": "silverback-gorilla",
+      "before": 5.45,
+      "after": 7.5,
+      "noPotion": 6.5,
+      "secondaryUrl": "https://elvebredd.com/pets/silverback-gorilla"
+    },
+    {
+      "slug": "dragonfruit-fox-pet",
+      "before": 4.95,
+      "after": 3.2,
+      "noPotion": 2.5,
+      "secondaryUrl": "https://elvebredd.com/pets/dragonfruit-fox"
+    },
+    {
+      "slug": "giraffe",
+      "before": 315,
+      "after": 463,
+      "secondary": 463,
+      "secondaryVariant": "flyRide",
+      "secondaryUrl": "https://elvebredd.com/pets/giraffe?variant=111"
+    },
+    {
+      "slug": "frost-dragon",
+      "before": 248,
+      "after": 316,
+      "secondary": 316,
+      "secondaryVariant": "flyRide",
+      "secondaryUrl": "https://elvebredd.com/pets/frost-dragon?variant=111"
+    },
+    {
+      "slug": "owl",
+      "before": 205,
+      "after": 243.5,
+      "secondary": 243.5,
+      "secondaryVariant": "flyRide",
+      "secondaryUrl": "https://elvebredd.com/pets/owl?variant=111"
+    },
+    {
+      "slug": "parrot",
+      "before": 162,
+      "after": 195.5,
+      "secondary": 195.5,
+      "secondaryVariant": "flyRide",
+      "secondaryUrl": "https://elvebredd.com/pets/parrot?variant=111"
+    },
+    {
+      "slug": "crow",
+      "before": 142,
+      "after": 178,
+      "secondary": 178,
+      "secondaryVariant": "flyRide",
+      "secondaryUrl": "https://elvebredd.com/pets/crow?variant=111"
+    },
+    {
+      "slug": "evil-unicorn",
+      "before": 100,
+      "after": 117,
+      "secondary": 117,
+      "secondaryVariant": "flyRide",
+      "secondaryUrl": "https://elvebredd.com/pets/evil-unicorn?variant=111"
+    },
+    {
+      "slug": "blazing-lion",
+      "before": 77,
+      "after": 171,
+      "secondary": 171,
+      "secondaryVariant": "flyRide",
+      "secondaryUrl": "https://elvebredd.com/pets/blazing-lion?variant=111"
+    },
+    {
+      "slug": "cow",
+      "before": 32.5,
+      "after": 39.5,
+      "secondary": 37,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/cow"
+    },
+    {
+      "slug": "turtle",
+      "before": 25,
+      "after": 27.75,
+      "secondary": 25.25,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/turtle"
+    },
+    {
+      "slug": "chocolate-chip-bat-dragon",
+      "before": 25.25,
+      "after": 62.5,
+      "secondary": 60.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/chocolate-chip-bat-dragon"
+    },
+    {
+      "slug": "candicorn",
+      "before": 6.45,
+      "after": 21.5,
+      "secondary": 20.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/candicorn"
+    },
+    {
+      "slug": "arctic-fox",
+      "before": 7.5,
+      "after": 10,
+      "secondary": 8.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/arctic-fox"
+    },
+    {
+      "slug": "cerberus",
+      "before": 1.6,
+      "after": 2.2,
+      "secondary": 1.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/cerberus"
+    },
+    {
+      "slug": "alicorn",
+      "before": 1,
+      "after": 0.8099999999999999,
+      "secondary": 0.11,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/alicorn"
+    },
+    {
+      "slug": "elephant",
+      "before": 17.25,
+      "after": 18,
+      "secondary": 16.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/elephant"
+    },
+    {
+      "slug": "crocodile",
+      "before": 14.5,
+      "after": 15,
+      "secondary": 13.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/crocodile"
+    },
+    {
+      "slug": "pig",
+      "before": 8,
+      "after": 11.25,
+      "secondary": 9.75,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/pig"
+    },
+    {
+      "slug": "hyena",
+      "before": 5,
+      "after": 5.1,
+      "secondary": 4.25,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/hyena"
+    },
+    {
+      "slug": "polar-bear",
+      "before": 4.5,
+      "after": 5.35,
+      "secondary": 4.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/polar-bear"
+    },
+    {
+      "slug": "skele-rex",
+      "before": 1.95,
+      "after": 1.7,
+      "secondary": 1,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/skele-rex"
+    },
+    {
+      "slug": "snow-owl",
+      "before": 1.45,
+      "after": 1.45,
+      "secondary": 0.75,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/snow-owl"
+    },
+    {
+      "slug": "strawberry-shortcake-bat-dragon",
+      "before": 28,
+      "after": 63.5,
+      "secondary": 61.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/strawberry-shortcake-bat-dragon"
+    },
+    {
+      "slug": "peppermint-penguin",
+      "before": 22.75,
+      "after": 38.5,
+      "secondary": 36.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/peppermint-penguin"
+    },
+    {
+      "slug": "goose",
+      "before": 20.75,
+      "after": 40,
+      "secondary": 38.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/goose"
+    },
+    {
+      "slug": "frost-unicorn",
+      "before": 10.25,
+      "after": 26,
+      "secondary": 25,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/frost-unicorn"
+    },
+    {
+      "slug": "goat",
+      "before": 7.75,
+      "after": 7.75,
+      "secondary": 7,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/goat"
+    },
+    {
+      "slug": "cactus-friend",
+      "before": 1.55,
+      "after": 1.55,
+      "secondary": 0.85,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/cactus-friend"
+    },
+    {
+      "slug": "cryptid",
+      "before": 99,
+      "after": 143,
+      "secondary": 141,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/cryptid"
+    },
+    {
+      "slug": "cabbit",
+      "before": 25.5,
+      "after": 31.5,
+      "secondary": 29.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/cabbit"
+    },
+    {
+      "slug": "frostbite-bear",
+      "before": 9,
+      "after": 41,
+      "secondary": 39.5,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/frostbite-bear"
+    },
+    {
+      "slug": "werewolf",
+      "before": 8.25,
+      "after": 26,
+      "secondary": 25,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/werewolf"
+    },
+    {
+      "slug": "vampire-dragon",
+      "before": 7.35,
+      "after": 13,
+      "secondary": 12,
+      "secondaryVariant": "noPotion",
+      "secondaryUrl": "https://elvebredd.com/pets/vampire-dragon"
+    }
+  ],
+  "benchmarkReviewRemaining": 64,
+  "newPetMarketConflicts": [
+    {
+      "slug": "thunderfisher",
+      "adoptMeValuesNoPotion": 0.5,
+      "elvebreddNoPotion": 0.7,
+      "decision": "pending; sources disagree"
+    },
+    {
+      "slug": "electric-hornet",
+      "adoptMeValuesNoPotion": 1.2,
+      "elvebreddNoPotion": 1.7,
+      "decision": "pending; sources disagree"
+    },
+    {
+      "slug": "haetyphoon",
+      "adoptMeValuesNoPotion": 70,
+      "elvebreddNoPotion": 148,
+      "decision": "pending; sources disagree"
+    },
+    {
+      "slug": "flash-weasel",
+      "adoptMeValuesNoPotion": 55,
+      "elvebreddNoPotion": 77,
+      "decision": "pending; sources disagree"
+    }
+  ],
+  "eggs": 41,
+  "newEggInLatestUpdate": false,
+  "sourceFetchedAt": "2026-11-08",
+  "benchmarkReviewQueue": [
+    {
+      "slug": "hedgehog",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "dalmatian",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "arctic-reindeer",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "kangaroo",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "dragon",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "frost-fury-pet",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "lavender-dragon",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "queen-bee",
+      "reason": "Sources disagree"
+    },
+    {
+      "slug": "phoenix-pet",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "dodo",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "shark",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "octopus",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "king-bee",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "capybara",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "chicken",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "kitsune",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "griffin",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "horse",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "koala",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "mini-pig",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "monkey-king-pet",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "flamingo",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "albino-monkey",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "lion",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "blue-dog",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "pink-cat",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "brown-bear",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "platypus",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "golden-penguin",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "rhino",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "black-panther",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "t-rex",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "african-wild-dog",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "balloon-unicorn",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "giant-panda",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "orchid-butterfly",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "diamond-butterfly",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "pelican",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "hot-doggo",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "caterpillar",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "candyfloss-chick",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "border-collie",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "fairy-bat-dragon",
+      "reason": "Sources disagree"
+    },
+    {
+      "slug": "undead-jousting-horse",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "alpaca",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "bush-elephant",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "field-mouse",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "haetae",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "velocirooster",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "mermicorn",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "jekyll-hydra",
+      "reason": "Sources disagree"
+    },
+    {
+      "slug": "sugar-glider",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "winged-tiger",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "siamese-cat",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "cupid-dragon",
+      "reason": "Sources disagree"
+    },
+    {
+      "slug": "lion-cub",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "shark-puppy",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "irish-water-spaniel",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "jellyfish",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "sheeeeep",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "owlbear",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "papa-moose",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "black-chested-pheasant",
+      "reason": "Second public source unavailable"
+    },
+    {
+      "slug": "shrew",
+      "reason": "Second public source unavailable"
+    }
+  ],
+  "eggReviewLimitations": [
+    "Basic and Crystal pools remain dated April 10 snapshots; current in-game changes could not be verified from official public pages.",
+    "Throwback Egg original release pool is documented; current shop availability is not confirmed.",
+    "Royal Fairytale rarity odds use the official September 11 notes; independent pages disagree, so no individual odds are inferred."
+  ]
+}
