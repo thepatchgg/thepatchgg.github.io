@@ -1,3 +1,4 @@
 .headless-browser/
 qa-screenshots/
 .preview-server.json
+_release-evidence/

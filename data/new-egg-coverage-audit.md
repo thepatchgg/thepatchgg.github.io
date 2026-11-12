@@ -1,6 +1,6 @@
 # New Egg Coverage Audit
 
-- Date: 2026-11-08
+- Date: 2026-11-12
 - Main egg records: 41
 - Verified egg records: 41
 - Shared egg IDs: 41

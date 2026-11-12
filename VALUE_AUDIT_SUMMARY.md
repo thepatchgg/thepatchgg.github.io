@@ -1,17 +1,17 @@
 # Value Audit Summary
 
-- Date: 2026-11-08
-- Source refresh: fresh snapshot fetched November 8, 2026; reused during release checks
-- Mode: reviewed production release
+- Date: 2026-11-12
+- Source refresh: cached
+- Mode: production refresh
 - Scope: Adopt Me trade calculator long-tail pet values
 - Reference source: adoptmevalues.app values index
 - Legacy calculator catalog: 738 pets
 - Benchmark/editorial pets currently handled outside the override layer: 101
-- Comparable non-benchmark pet coverage in this run: 661
-- Non-benchmark pets matched to public tracker feed: 652
+- Comparable non-benchmark pet coverage in this run: 664
+- Non-benchmark pets matched to public tracker feed: 655
 - Non-benchmark pets manually resolved: 9
 - Non-benchmark pets still unmatched: 0
-- Current production comparable non-benchmark coverage: 645
+- Current production comparable non-benchmark coverage: 664
 
 ## What Changed
 
@@ -27,14 +27,14 @@ These benchmark pets still deserve human review before any editorial benchmark c
 
 | Pet | Patch default | Tracker FR | Delta % |
 | --- | ---: | ---: | ---: |
-| Frostbite Bear | 9 | 41 | -78% |
-| Candicorn | 6.45 | 21.5 | -70% |
-| Werewolf | 8.25 | 26 | -68.3% |
 | Velocirooster | 10 | 6 | 66.7% |
-| Fairy Bat Dragon | 12.5 | 33.5 | -62.7% |
-| Undead Jousting Horse | 19 | 50 | -62% |
-| Frost Unicorn | 10.25 | 26 | -60.6% |
-| Chocolate Chip Bat Dragon | 25.25 | 62.5 | -59.6% |
+| Orchid Butterfly | 59 | 119 | -50.4% |
+| Bush Elephant | 10.5 | 21 | -50% |
+| Alpaca | 12 | 24 | -50% |
+| Siamese Cat | 12.5 | 24.5 | -49% |
+| Monkey King | 21.5 | 39 | -44.9% |
+| Giant Panda | 114 | 200 | -43% |
+| Winged Tiger | 10.5 | 17 | -38.2% |
 
 ## Recommendation
 
@@ -43,10 +43,3 @@ These benchmark pets still deserve human review before any editorial benchmark c
 - If audit-only mode was used, review the candidate files in data/value-sync-staging before publishing.
 - Only publish calculator override changes after QA passes and the conflict queue looks acceptable.
 - Keep the current hybrid model: editorial anchors in the benchmark layer, tracker-backed long tail in the calculator override layer.
-
-## Independent benchmark review
-
-- 37 anchors updated after a matching second-source check.
-- 64 retain earlier values because a second check was unavailable or disagreed.
-- Four Lightning Dimension pets remain value-pending because sources disagree.
-- Full decisions and source links: data/lightning-release-review.json.

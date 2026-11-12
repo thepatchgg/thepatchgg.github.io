@@ -2,6 +2,8 @@
   "updatedAt": "2026-11-08",
   "source": "Curated Adopt Me Wiki pet-origin overrides from the main Pets index and select pet pages.",
   "pets": [
+    {"slug":"blue-cat","sources":[{"sourceName":"Throwback Egg","sourceType":"Event egg","status":"availability-unconfirmed","released":"Sep 2026","petRarity":"Uncommon","eventContext":"Roblox 20th anniversary","notes":"Introduced in the official Cat Cafe update as one of two Throwback Egg pets. Rarity is supported by the pet references. Individual hatch odds and current shop availability are unconfirmed."}]},
+    {"slug":"pink-dog","sources":[{"sourceName":"Throwback Egg","sourceType":"Event egg","status":"availability-unconfirmed","released":"Sep 2026","petRarity":"Uncommon","eventContext":"Roblox 20th anniversary","notes":"Introduced in the official Cat Cafe update as one of two Throwback Egg pets. Rarity follows the current tracker catalog. Individual hatch odds and current shop availability are unconfirmed."}]},
     {
       "slug": "2021-uplift-butterfly",
       "sources": [

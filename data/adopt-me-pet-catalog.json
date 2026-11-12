@@ -1,6 +1,8 @@
 {
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-12",
   "entries": [
+    {"slug":"blue-cat","name":"Blue Cat","rarity":"u","image":"/assets/pets/blue-cat.webp","benchmark":false},
+    {"slug":"pink-dog","name":"Pink Dog","rarity":"u","image":"/assets/pets/pink-dog.webp","benchmark":false},
     {
       "slug": "2021-uplift-butterfly",
       "name": "2021 Uplift Butterfly",
@@ -5400,8 +5402,8 @@
     }
   ],
   "counts": {
-    "total": 771,
-    "verifiedRarity": 771,
+    "total": 773,
+    "verifiedRarity": 773,
     "review": 0,
     "benchmark": 18
   }

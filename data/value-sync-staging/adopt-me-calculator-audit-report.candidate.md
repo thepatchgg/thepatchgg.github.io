@@ -1,10 +1,10 @@
 # Calculator Audit Report
 
-- Date: 2026-11-08
+- Date: 2026-11-12
 - Tracker pet rows parsed: 806
-- Local calculator pets considered: 762
-- Non-benchmark local pets: 661
-- Non-benchmark pets matched to tracker feed: 652
+- Local calculator pets considered: 763
+- Non-benchmark local pets: 662
+- Non-benchmark pets matched to tracker feed: 653
 - Non-benchmark pets manually resolved: 9
 - Non-benchmark pets still unmatched: 0
 
@@ -13,30 +13,30 @@
 | Pet | Patch default | Tracker FR | Delta % | Patch no-pot | Tracker no-pot |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Velocirooster | 10 | 6 | 66.7% | 9 | 5.25 |
-| Fairy Bat Dragon | 12.5 | 33.5 | -62.7% | 10.75 | 31.5 |
-| Undead Jousting Horse | 19 | 50 | -62% | 18 | 49 |
-| Sugar Glider | 13.5 | 30 | -55% | 12.5 | 29 |
 | Orchid Butterfly | 59 | 119 | -50.4% | 57 | 117 |
-| Alpaca | 12 | 24 | -50% | 11 | 23 |
 | Bush Elephant | 10.5 | 21 | -50% | 9.5 | 20 |
+| Alpaca | 12 | 24 | -50% | 11 | 23 |
 | Siamese Cat | 12.5 | 24.5 | -49% | 11.5 | 22.75 |
 | Monkey King | 21.5 | 39 | -44.9% | 21 | 67 |
-| Giant Panda | 114 | 204 | -44.1% | 112 | 203 |
-| Dalmatian | 49.5 | 80 | -38.1% | 48 | 78.5 |
-| Field Mouse | 8.25 | 6 | 37.5% | 7.5 | 5.25 |
-| Winged Tiger | 10.5 | 16.75 | -37.3% | 9.5 | 15.75 |
-| Arctic Reindeer | 44 | 70 | -37.1% | 42.5 | 70.5 |
-| Hedgehog | 59 | 93 | -36.6% | 57.5 | 91.5 |
-| Queen Bee | 2.2 | 3.45 | -36.2% | 1.5 | 2.75 |
+| Giant Panda | 114 | 200 | -43% | 112 | 199 |
+| Winged Tiger | 10.5 | 17 | -38.2% | 9.5 | 16 |
+| Hedgehog | 59 | 95 | -37.9% | 57.5 | 93.5 |
 | Black-Chested Pheasant | 8 | 12.5 | -36% | 7.25 | 11.5 |
 | Pink Cat | 6.75 | 10 | -32.5% | 6 | 9 |
 | Hot Doggo | 27.5 | 40.5 | -32.1% | 26.5 | 39.5 |
+| Border Collie | 11 | 16 | -31.2% | 10 | 15 |
+| Mini Pig | 31 | 44.5 | -30.3% | 29.5 | 43 |
 | Owlbear | 7 | 5.4 | 29.6% | 6.25 | 4.65 |
-| Mini Pig | 31 | 44 | -29.5% | 29.5 | 42.5 |
-| Cupid Dragon | 6.85 | 9.5 | -27.9% | 6 | 8.5 |
 | African Wild Dog | 115 | 158 | -27.2% | 113 | 156 |
 | Candyfloss Chick | 16.25 | 22 | -26.1% | 15.25 | 21 |
 | Balloon Unicorn | 125 | 168 | -25.6% | 123 | 166 |
+| Queen Bee | 2.2 | 2.95 | -25.4% | 1.5 | 2.25 |
+| Jellyfish | 8.25 | 11 | -25% | 7.5 | 10 |
+| Diamond Butterfly | 51 | 67 | -23.9% | 50 | 67 |
+| Field Mouse | 8.25 | 6.75 | 22.2% | 7.5 | 6 |
+| Dragon | 1 | 0.84 | 19% | 0.3 | 0.14 |
+| Shrew | 6.5 | 8 | -18.8% | 5 | 6.5 |
+| Shark Puppy | 11 | 13.5 | -18.5% | 10 | 12.5 |
 
 ## Manual Edge-Case Resolutions
 

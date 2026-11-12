@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-12",
   "notes": "Bulk calculator override audit generated from the public Adopt Me Values values index source, with manual resolutions for edge-case pets. Benchmark pets remain on The Patch's shared benchmark layer.",
-  "trackerMatchedCount": 652,
+  "trackerMatchedCount": 655,
   "manualResolvedCount": 9,
   "remainingUnmatchedCount": 0,
   "pets": [
@@ -160,16 +160,16 @@
           "flyRide": 0.49
         },
         "neon": {
-          "noPotion": 0.4,
-          "fly": 0.68,
-          "ride": 0.68,
-          "flyRide": 0.95
+          "noPotion": 0.3,
+          "fly": 0.58,
+          "ride": 0.58,
+          "flyRide": 0.85
         },
         "mega": {
-          "noPotion": 1.75,
-          "fly": 2.5,
-          "ride": 2.5,
-          "flyRide": 3.25
+          "noPotion": 1.3,
+          "fly": 2.05,
+          "ride": 2.05,
+          "flyRide": 2.8
         }
       }
     },
@@ -350,22 +350,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 144.0,
-          "fly": 145.0,
-          "ride": 145.0,
-          "flyRide": 146.0
+          "noPotion": 138.0,
+          "fly": 139.0,
+          "ride": 139.0,
+          "flyRide": 140.0
         },
         "neon": {
-          "noPotion": 588.0,
-          "fly": 589.0,
-          "ride": 589.0,
-          "flyRide": 590.0
+          "noPotion": 564.0,
+          "fly": 565.0,
+          "ride": 565.0,
+          "flyRide": 566.0
         },
         "mega": {
-          "noPotion": 2397.0,
-          "fly": 2398.9,
-          "ride": 2398.0,
-          "flyRide": 2400.0
+          "noPotion": 2301.0,
+          "fly": 2302.9,
+          "ride": 2302.0,
+          "flyRide": 2304.0
         }
       }
     },
@@ -462,22 +462,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.29,
-          "fly": 0.59,
-          "ride": 0.59,
-          "flyRide": 0.99
+          "noPotion": 0.28,
+          "fly": 0.58,
+          "ride": 0.58,
+          "flyRide": 0.98
         },
         "neon": {
-          "noPotion": 1.35,
-          "fly": 1.65,
-          "ride": 1.65,
-          "flyRide": 2.45
+          "noPotion": 1.3,
+          "fly": 1.6,
+          "ride": 1.6,
+          "flyRide": 2.4
         },
         "mega": {
-          "noPotion": 6.65,
-          "fly": 8.55,
-          "ride": 7.65,
-          "flyRide": 9.65
+          "noPotion": 6.5,
+          "fly": 8.4,
+          "ride": 7.5,
+          "flyRide": 9.5
         }
       }
     },
@@ -602,22 +602,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.78,
-          "fly": 1.08,
-          "ride": 1.08,
-          "flyRide": 1.48
+          "noPotion": 0.77,
+          "fly": 1.07,
+          "ride": 1.07,
+          "flyRide": 1.47
         },
         "neon": {
-          "noPotion": 3.75,
-          "fly": 4.66,
-          "ride": 4.66,
-          "flyRide": 5.46
+          "noPotion": 3.7,
+          "fly": 4.59,
+          "ride": 4.59,
+          "flyRide": 5.39
         },
         "mega": {
-          "noPotion": 18.7,
-          "fly": 20.6,
-          "ride": 19.7,
-          "flyRide": 21.7
+          "noPotion": 18.4,
+          "fly": 20.3,
+          "ride": 19.4,
+          "flyRide": 21.4
         }
       }
     },
@@ -630,22 +630,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 8.5,
-          "fly": 8.95,
-          "ride": 8.9,
-          "flyRide": 9.5
+          "noPotion": 6.75,
+          "fly": 7.2,
+          "ride": 7.15,
+          "flyRide": 7.75
         },
         "neon": {
-          "noPotion": 35.25,
-          "fly": 36.2,
-          "ride": 36.2,
-          "flyRide": 37.0
+          "noPotion": 28.25,
+          "fly": 29.2,
+          "ride": 29.2,
+          "flyRide": 30.0
         },
         "mega": {
-          "noPotion": 145.0,
-          "fly": 146.9,
-          "ride": 146.0,
-          "flyRide": 148.0
+          "noPotion": 117.0,
+          "fly": 118.9,
+          "ride": 118.0,
+          "flyRide": 120.0
         }
       }
     },
@@ -804,16 +804,16 @@
           "flyRide": 12.0
         },
         "neon": {
-          "noPotion": 43.25,
-          "fly": 44.2,
-          "ride": 44.2,
-          "flyRide": 45.0
+          "noPotion": 42.25,
+          "fly": 43.2,
+          "ride": 43.2,
+          "flyRide": 44.0
         },
         "mega": {
-          "noPotion": 179.0,
-          "fly": 180.9,
-          "ride": 180.0,
-          "flyRide": 182.0
+          "noPotion": 175.0,
+          "fly": 176.9,
+          "ride": 176.0,
+          "flyRide": 178.0
         }
       }
     },
@@ -1490,6 +1490,34 @@
       }
     },
     {
+      "slug": "black-footed-ferret",
+      "name": "Black-Footed Ferret",
+      "rarity": "ur",
+      "image": "/assets/pets/black-footed-ferret.png",
+      "sourceUrl": "https://adoptmevalues.app/values/black-footed-ferret",
+      "sourceType": "tracker",
+      "values": {
+        "default": {
+          "noPotion": 0.04,
+          "fly": 0.24,
+          "ride": 0.24,
+          "flyRide": 0.49
+        },
+        "neon": {
+          "noPotion": 0.26,
+          "fly": 0.54,
+          "ride": 0.54,
+          "flyRide": 0.81
+        },
+        "mega": {
+          "noPotion": 1.15,
+          "fly": 1.9,
+          "ride": 1.9,
+          "flyRide": 2.65
+        }
+      }
+    },
+    {
       "slug": "black-kite",
       "name": "Black Kite",
       "rarity": "ur",
@@ -1611,21 +1639,21 @@
       "values": {
         "default": {
           "noPotion": 0.03,
-          "fly": 0.23,
-          "ride": 0.23,
+          "fly": 0.22,
+          "ride": 0.22,
           "flyRide": 0.48
         },
         "neon": {
-          "noPotion": 0.2,
-          "fly": 0.48,
-          "ride": 0.48,
-          "flyRide": 0.75
+          "noPotion": 0.19,
+          "fly": 0.46,
+          "ride": 0.46,
+          "flyRide": 0.74
         },
         "mega": {
-          "noPotion": 0.9,
-          "fly": 1.65,
-          "ride": 1.65,
-          "flyRide": 2.4
+          "noPotion": 0.85,
+          "fly": 1.6,
+          "ride": 1.6,
+          "flyRide": 2.35
         }
       }
     },
@@ -1710,34 +1738,6 @@
           "fly": 23.9,
           "ride": 23.0,
           "flyRide": 25.0
-        }
-      }
-    },
-    {
-      "slug": "black-footed-ferret",
-      "name": "Black-Footed Ferret",
-      "rarity": "ur",
-      "image": "/assets/pets/black-footed-ferret.png",
-      "sourceUrl": "https://adoptmevalues.app/values/black-footed-ferret",
-      "sourceType": "tracker",
-      "values": {
-        "default": {
-          "noPotion": 0.04,
-          "fly": 0.24,
-          "ride": 0.24,
-          "flyRide": 0.5
-        },
-        "neon": {
-          "noPotion": 0.27,
-          "fly": 0.55,
-          "ride": 0.55,
-          "flyRide": 0.82
-        },
-        "mega": {
-          "noPotion": 1.2,
-          "fly": 1.95,
-          "ride": 1.95,
-          "flyRide": 2.7
         }
       }
     },
@@ -1850,6 +1850,34 @@
           "fly": 1.85,
           "ride": 1.85,
           "flyRide": 2.6
+        }
+      }
+    },
+    {
+      "slug": "blue-cat",
+      "name": "Blue Cat",
+      "rarity": "u",
+      "image": "/assets/pets/blue-cat.webp",
+      "sourceUrl": "https://www.adoptmevalues.app/values/blue-cat",
+      "sourceType": "tracker",
+      "values": {
+        "default": {
+          "noPotion": 0.03,
+          "fly": 0.23,
+          "ride": 0.23,
+          "flyRide": 0.48
+        },
+        "neon": {
+          "noPotion": 0.2,
+          "fly": 0.48,
+          "ride": 0.48,
+          "flyRide": 0.75
+        },
+        "mega": {
+          "noPotion": 0.9,
+          "fly": 1.65,
+          "ride": 1.65,
+          "flyRide": 2.4
         }
       }
     },
@@ -1974,22 +2002,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.02,
+          "noPotion": 0.03,
           "fly": 0.22,
           "ride": 0.22,
           "flyRide": 0.48
         },
         "neon": {
-          "noPotion": 0.17,
-          "fly": 0.45,
-          "ride": 0.45,
-          "flyRide": 0.72
+          "noPotion": 0.19,
+          "fly": 0.46,
+          "ride": 0.46,
+          "flyRide": 0.74
         },
         "mega": {
-          "noPotion": 0.8,
-          "fly": 1.55,
-          "ride": 1.55,
-          "flyRide": 2.3
+          "noPotion": 0.85,
+          "fly": 1.6,
+          "ride": 1.6,
+          "flyRide": 2.35
         }
       }
     },
@@ -2002,22 +2030,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.04,
-          "fly": 0.24,
-          "ride": 0.24,
-          "flyRide": 0.49
+          "noPotion": 0.05,
+          "fly": 0.25,
+          "ride": 0.25,
+          "flyRide": 0.5
         },
         "neon": {
-          "noPotion": 0.3,
-          "fly": 0.58,
-          "ride": 0.58,
-          "flyRide": 0.85
+          "noPotion": 0.35,
+          "fly": 0.63,
+          "ride": 0.63,
+          "flyRide": 0.9
         },
         "mega": {
-          "noPotion": 1.3,
-          "fly": 2.05,
-          "ride": 2.05,
-          "flyRide": 2.8
+          "noPotion": 1.5,
+          "fly": 2.25,
+          "ride": 2.25,
+          "flyRide": 3.0
         }
       }
     },
@@ -2078,34 +2106,6 @@
       }
     },
     {
-      "slug": "brown-springer-spaniel",
-      "name": "Brown Springer Spaniel",
-      "rarity": "ur",
-      "image": "/assets/pets/brown-springer-spaniel.png",
-      "sourceUrl": "https://adoptmevalues.app/values/brown-springer-spaniel",
-      "sourceType": "tracker",
-      "values": {
-        "default": {
-          "noPotion": 0.86,
-          "fly": 1.08,
-          "ride": 1.08,
-          "flyRide": 1.36
-        },
-        "neon": {
-          "noPotion": 4.1,
-          "fly": 4.6,
-          "ride": 4.6,
-          "flyRide": 5.1
-        },
-        "mega": {
-          "noPotion": 18.4,
-          "fly": 20.3,
-          "ride": 19.4,
-          "flyRide": 21.4
-        }
-      }
-    },
-    {
       "slug": "brown-chested-pheasant",
       "name": "Brown-Chested Pheasant",
       "rarity": "ur",
@@ -2130,6 +2130,34 @@
           "fly": 6.9,
           "ride": 6.75,
           "flyRide": 8.0
+        }
+      }
+    },
+    {
+      "slug": "brown-springer-spaniel",
+      "name": "Brown Springer Spaniel",
+      "rarity": "ur",
+      "image": "/assets/pets/brown-springer-spaniel.png",
+      "sourceUrl": "https://adoptmevalues.app/values/brown-springer-spaniel",
+      "sourceType": "tracker",
+      "values": {
+        "default": {
+          "noPotion": 0.86,
+          "fly": 1.08,
+          "ride": 1.08,
+          "flyRide": 1.36
+        },
+        "neon": {
+          "noPotion": 4.1,
+          "fly": 4.6,
+          "ride": 4.6,
+          "flyRide": 5.1
+        },
+        "mega": {
+          "noPotion": 18.4,
+          "fly": 20.3,
+          "ride": 19.4,
+          "flyRide": 21.4
         }
       }
     },
@@ -2226,22 +2254,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.03,
+          "noPotion": 0.02,
           "fly": 0.22,
           "ride": 0.22,
           "flyRide": 0.48
         },
         "neon": {
-          "noPotion": 0.19,
-          "fly": 0.46,
-          "ride": 0.46,
-          "flyRide": 0.74
+          "noPotion": 0.17,
+          "fly": 0.45,
+          "ride": 0.45,
+          "flyRide": 0.72
         },
         "mega": {
-          "noPotion": 0.75,
-          "fly": 1.5,
-          "ride": 1.5,
-          "flyRide": 2.25
+          "noPotion": 0.7,
+          "fly": 1.45,
+          "ride": 1.45,
+          "flyRide": 2.2
         }
       }
     },
@@ -2394,22 +2422,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.59,
-          "fly": 0.81,
-          "ride": 0.81,
-          "flyRide": 1.09
+          "noPotion": 0.58,
+          "fly": 0.8,
+          "ride": 0.8,
+          "flyRide": 1.08
         },
         "neon": {
-          "noPotion": 3.0,
-          "fly": 3.0,
-          "ride": 3.0,
-          "flyRide": 3.75
+          "noPotion": 2.95,
+          "fly": 3.33,
+          "ride": 3.33,
+          "flyRide": 3.7
         },
         "mega": {
-          "noPotion": 13.0,
-          "fly": 14.9,
-          "ride": 14.0,
-          "flyRide": 16.0
+          "noPotion": 12.8,
+          "fly": 14.7,
+          "ride": 13.8,
+          "flyRide": 15.8
         }
       }
     },
@@ -2982,22 +3010,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.5,
-          "fly": 0.8,
-          "ride": 0.8,
-          "flyRide": 1.2
+          "noPotion": 0.49,
+          "fly": 0.79,
+          "ride": 0.79,
+          "flyRide": 1.19
         },
         "neon": {
           "noPotion": 2.25,
-          "fly": 2.7,
-          "ride": 2.7,
-          "flyRide": 3.5
+          "fly": 2.65,
+          "ride": 2.65,
+          "flyRide": 3.45
         },
         "mega": {
-          "noPotion": 10.65,
-          "fly": 12.55,
-          "ride": 11.65,
-          "flyRide": 13.65
+          "noPotion": 10.45,
+          "fly": 12.35,
+          "ride": 11.45,
+          "flyRide": 13.45
         }
       }
     },
@@ -3122,22 +3150,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 9.5,
-          "fly": 9.95,
-          "ride": 9.9,
-          "flyRide": 10.5
+          "noPotion": 7.75,
+          "fly": 8.2,
+          "ride": 8.15,
+          "flyRide": 8.75
         },
         "neon": {
-          "noPotion": 38.0,
-          "fly": 39.0,
-          "ride": 39.0,
-          "flyRide": 40.0
+          "noPotion": 31.0,
+          "fly": 32.0,
+          "ride": 32.0,
+          "flyRide": 33.0
         },
         "mega": {
-          "noPotion": 157.0,
-          "fly": 158.9,
-          "ride": 158.0,
-          "flyRide": 160.0
+          "noPotion": 129.0,
+          "fly": 130.9,
+          "ride": 130.0,
+          "flyRide": 132.0
         }
       }
     },
@@ -3157,8 +3185,8 @@
         },
         "neon": {
           "noPotion": 0.85,
-          "fly": 1.2,
-          "ride": 1.2,
+          "fly": 1.1,
+          "ride": 1.1,
           "flyRide": 1.9
         },
         "mega": {
@@ -3458,22 +3486,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 9.0,
-          "fly": 9.45,
-          "ride": 9.4,
-          "flyRide": 10.0
+          "noPotion": 9.5,
+          "fly": 9.95,
+          "ride": 9.9,
+          "flyRide": 10.5
         },
         "neon": {
-          "noPotion": 38.25,
-          "fly": 39.2,
-          "ride": 39.2,
-          "flyRide": 40.0
+          "noPotion": 40.25,
+          "fly": 41.2,
+          "ride": 41.2,
+          "flyRide": 42.0
         },
         "mega": {
-          "noPotion": 167.0,
-          "fly": 168.9,
-          "ride": 168.0,
-          "flyRide": 170.0
+          "noPotion": 163.0,
+          "fly": 164.9,
+          "ride": 164.0,
+          "flyRide": 166.0
         }
       }
     },
@@ -3542,22 +3570,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 1.08,
-          "fly": 1.33,
-          "ride": 1.33,
-          "flyRide": 1.63
+          "noPotion": 0.85,
+          "fly": 1.07,
+          "ride": 1.07,
+          "flyRide": 1.35
         },
         "neon": {
-          "noPotion": 5.15,
-          "fly": 5.7,
-          "ride": 5.7,
-          "flyRide": 6.25
+          "noPotion": 4.05,
+          "fly": 4.55,
+          "ride": 4.55,
+          "flyRide": 5.05
         },
         "mega": {
-          "noPotion": 23.0,
-          "fly": 24.9,
-          "ride": 24.0,
-          "flyRide": 26.0
+          "noPotion": 18.2,
+          "fly": 20.1,
+          "ride": 19.2,
+          "flyRide": 21.2
         }
       }
     },
@@ -3683,21 +3711,21 @@
       "values": {
         "default": {
           "noPotion": 0.05,
-          "fly": 0.25,
-          "ride": 0.25,
+          "fly": 0.24,
+          "ride": 0.24,
           "flyRide": 0.5
         },
         "neon": {
-          "noPotion": 0.3,
-          "fly": 0.58,
-          "ride": 0.58,
-          "flyRide": 0.85
+          "noPotion": 0.29,
+          "fly": 0.56,
+          "ride": 0.56,
+          "flyRide": 0.84
         },
         "mega": {
-          "noPotion": 1.3,
-          "fly": 2.05,
-          "ride": 2.05,
-          "flyRide": 2.8
+          "noPotion": 1.25,
+          "fly": 2.0,
+          "ride": 2.0,
+          "flyRide": 2.75
         }
       }
     },
@@ -3710,22 +3738,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.52,
-          "fly": 0.82,
-          "ride": 0.82,
-          "flyRide": 1.23
+          "noPotion": 0.5,
+          "fly": 0.8,
+          "ride": 0.8,
+          "flyRide": 1.2
         },
         "neon": {
-          "noPotion": 2.4,
-          "fly": 2.88,
-          "ride": 2.88,
-          "flyRide": 3.68
+          "noPotion": 2.25,
+          "fly": 2.7,
+          "ride": 2.7,
+          "flyRide": 3.5
         },
         "mega": {
-          "noPotion": 11.3,
-          "fly": 13.2,
-          "ride": 12.3,
-          "flyRide": 14.3
+          "noPotion": 10.65,
+          "fly": 12.55,
+          "ride": 11.65,
+          "flyRide": 13.65
         }
       }
     },
@@ -3738,22 +3766,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.7,
-          "fly": 1.0,
-          "ride": 1.0,
-          "flyRide": 1.4
+          "noPotion": 0.68,
+          "fly": 0.98,
+          "ride": 0.98,
+          "flyRide": 1.38
         },
         "neon": {
-          "noPotion": 3.4,
-          "fly": 4.1,
-          "ride": 4.1,
-          "flyRide": 4.9
+          "noPotion": 3.3,
+          "fly": 3.96,
+          "ride": 3.96,
+          "flyRide": 4.76
         },
         "mega": {
-          "noPotion": 16.3,
-          "fly": 18.2,
-          "ride": 17.3,
-          "flyRide": 19.3
+          "noPotion": 15.75,
+          "fly": 17.65,
+          "ride": 16.75,
+          "flyRide": 18.75
         }
       }
     },
@@ -4025,8 +4053,8 @@
         },
         "neon": {
           "noPotion": 0.9,
-          "fly": 1.25,
-          "ride": 1.25,
+          "fly": 1.15,
+          "ride": 1.15,
           "flyRide": 1.95
         },
         "mega": {
@@ -4186,22 +4214,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.6,
-          "fly": 0.9,
-          "ride": 0.9,
-          "flyRide": 1.3
+          "noPotion": 0.5,
+          "fly": 0.8,
+          "ride": 0.8,
+          "flyRide": 1.2
         },
         "neon": {
-          "noPotion": 2.7,
-          "fly": 3.4,
-          "ride": 3.4,
-          "flyRide": 4.2
+          "noPotion": 2.25,
+          "fly": 2.7,
+          "ride": 2.7,
+          "flyRide": 3.5
         },
         "mega": {
-          "noPotion": 13.45,
-          "fly": 15.35,
-          "ride": 14.45,
-          "flyRide": 16.45
+          "noPotion": 10.65,
+          "fly": 12.55,
+          "ride": 11.65,
+          "flyRide": 13.65
         }
       }
     },
@@ -4578,22 +4606,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.22,
-          "fly": 0.52,
-          "ride": 0.52,
-          "flyRide": 0.92
+          "noPotion": 0.21,
+          "fly": 0.51,
+          "ride": 0.51,
+          "flyRide": 0.91
         },
         "neon": {
-          "noPotion": 1.0,
-          "fly": 1.5,
-          "ride": 1.5,
-          "flyRide": 2.1
+          "noPotion": 0.95,
+          "fly": 1.45,
+          "ride": 1.45,
+          "flyRide": 2.05
         },
         "mega": {
-          "noPotion": 5.4,
-          "fly": 7.3,
-          "ride": 6.4,
-          "flyRide": 8.4
+          "noPotion": 5.25,
+          "fly": 7.15,
+          "ride": 6.25,
+          "flyRide": 8.25
         }
       }
     },
@@ -4802,22 +4830,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.08,
-          "fly": 0.28,
-          "ride": 0.28,
-          "flyRide": 0.53
+          "noPotion": 0.07,
+          "fly": 0.27,
+          "ride": 0.27,
+          "flyRide": 0.52
         },
         "neon": {
-          "noPotion": 0.6,
-          "fly": 0.88,
-          "ride": 0.88,
-          "flyRide": 1.15
+          "noPotion": 0.55,
+          "fly": 0.83,
+          "ride": 0.83,
+          "flyRide": 1.1
         },
         "mega": {
-          "noPotion": 2.6,
-          "fly": 3.43,
-          "ride": 3.43,
-          "flyRide": 4.25
+          "noPotion": 2.35,
+          "fly": 3.18,
+          "ride": 3.18,
+          "flyRide": 4.0
         }
       }
     },
@@ -4886,22 +4914,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 10.75,
-          "fly": 11.1,
-          "ride": 11.05,
-          "flyRide": 11.5
+          "noPotion": 11.25,
+          "fly": 11.6,
+          "ride": 11.55,
+          "flyRide": 12.0
         },
         "neon": {
-          "noPotion": 46.0,
-          "fly": 45.0,
-          "ride": 45.0,
-          "flyRide": 46.0
+          "noPotion": 48.0,
+          "fly": 47.0,
+          "ride": 47.0,
+          "flyRide": 48.0
         },
         "mega": {
-          "noPotion": 201.0,
-          "fly": 184.9,
-          "ride": 184.0,
-          "flyRide": 186.0
+          "noPotion": 209.0,
+          "fly": 192.9,
+          "ride": 192.0,
+          "flyRide": 194.0
         }
       }
     },
@@ -5054,22 +5082,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.38,
-          "fly": 0.68,
-          "ride": 0.68,
-          "flyRide": 1.08
+          "noPotion": 0.37,
+          "fly": 0.67,
+          "ride": 0.67,
+          "flyRide": 1.07
         },
         "neon": {
-          "noPotion": 1.75,
-          "fly": 2.1,
-          "ride": 2.1,
-          "flyRide": 2.9
+          "noPotion": 1.7,
+          "fly": 2.05,
+          "ride": 2.05,
+          "flyRide": 2.85
         },
         "mega": {
-          "noPotion": 8.3,
-          "fly": 10.2,
-          "ride": 9.3,
-          "flyRide": 11.3
+          "noPotion": 8.15,
+          "fly": 10.05,
+          "ride": 9.15,
+          "flyRide": 11.15
         }
       }
     },
@@ -5250,22 +5278,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.06,
-          "fly": 0.26,
-          "ride": 0.26,
-          "flyRide": 0.51
+          "noPotion": 0.05,
+          "fly": 0.25,
+          "ride": 0.25,
+          "flyRide": 0.5
         },
         "neon": {
-          "noPotion": 0.5,
-          "fly": 0.78,
-          "ride": 0.78,
-          "flyRide": 1.05
+          "noPotion": 0.45,
+          "fly": 0.73,
+          "ride": 0.73,
+          "flyRide": 1.0
         },
         "mega": {
-          "noPotion": 2.25,
-          "fly": 3.0,
-          "ride": 3.0,
-          "flyRide": 3.75
+          "noPotion": 2.0,
+          "fly": 2.75,
+          "ride": 2.75,
+          "flyRide": 3.5
         }
       }
     },
@@ -5278,22 +5306,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.3,
-          "fly": 0.6,
-          "ride": 0.6,
-          "flyRide": 1.0
+          "noPotion": 0.29,
+          "fly": 0.59,
+          "ride": 0.59,
+          "flyRide": 0.99
         },
         "neon": {
           "noPotion": 1.35,
-          "fly": 1.7,
-          "ride": 1.7,
-          "flyRide": 2.5
+          "fly": 1.65,
+          "ride": 1.65,
+          "flyRide": 2.45
         },
         "mega": {
-          "noPotion": 6.85,
-          "fly": 8.75,
-          "ride": 7.85,
-          "flyRide": 9.85
+          "noPotion": 6.65,
+          "fly": 8.55,
+          "ride": 7.65,
+          "flyRide": 9.65
         }
       }
     },
@@ -6454,22 +6482,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 7.75,
-          "fly": 8.1,
-          "ride": 8.05,
-          "flyRide": 8.5
+          "noPotion": 6.25,
+          "fly": 6.6,
+          "ride": 6.55,
+          "flyRide": 7.0
         },
         "neon": {
-          "noPotion": 32.0,
-          "fly": 33.0,
-          "ride": 33.0,
-          "flyRide": 34.0
+          "noPotion": 26.0,
+          "fly": 27.0,
+          "ride": 27.0,
+          "flyRide": 28.0
         },
         "mega": {
-          "noPotion": 133.0,
-          "fly": 134.9,
-          "ride": 134.0,
-          "flyRide": 136.0
+          "noPotion": 109.0,
+          "fly": 110.9,
+          "ride": 110.0,
+          "flyRide": 112.0
         }
       }
     },
@@ -6482,22 +6510,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.19,
-          "fly": 0.49,
-          "ride": 0.49,
-          "flyRide": 0.89
+          "noPotion": 0.18,
+          "fly": 0.48,
+          "ride": 0.48,
+          "flyRide": 0.88
         },
         "neon": {
-          "noPotion": 0.9,
-          "fly": 1.25,
-          "ride": 1.25,
-          "flyRide": 1.95
+          "noPotion": 0.85,
+          "fly": 1.1,
+          "ride": 1.1,
+          "flyRide": 1.9
         },
         "mega": {
-          "noPotion": 4.5,
-          "fly": 6.4,
-          "ride": 5.5,
-          "flyRide": 7.5
+          "noPotion": 4.25,
+          "fly": 6.15,
+          "ride": 5.25,
+          "flyRide": 7.25
         }
       }
     },
@@ -6510,22 +6538,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.33,
-          "fly": 0.63,
-          "ride": 0.63,
-          "flyRide": 1.03
+          "noPotion": 0.31,
+          "fly": 0.61,
+          "ride": 0.61,
+          "flyRide": 1.01
         },
         "neon": {
-          "noPotion": 1.5,
-          "fly": 1.95,
-          "ride": 1.95,
-          "flyRide": 2.65
+          "noPotion": 1.4,
+          "fly": 1.85,
+          "ride": 1.85,
+          "flyRide": 2.55
         },
         "mega": {
-          "noPotion": 7.4,
-          "fly": 9.3,
-          "ride": 8.4,
-          "flyRide": 10.4
+          "noPotion": 7.0,
+          "fly": 8.9,
+          "ride": 8.0,
+          "flyRide": 10.0
         }
       }
     },
@@ -6965,8 +6993,8 @@
         },
         "neon": {
           "noPotion": 0.9,
-          "fly": 1.45,
-          "ride": 1.45,
+          "fly": 1.2,
+          "ride": 1.2,
           "flyRide": 2.0
         },
         "mega": {
@@ -6986,22 +7014,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.18,
-          "fly": 0.48,
-          "ride": 0.48,
-          "flyRide": 0.88
+          "noPotion": 0.19,
+          "fly": 0.49,
+          "ride": 0.49,
+          "flyRide": 0.89
         },
         "neon": {
-          "noPotion": 0.85,
-          "fly": 1.1,
-          "ride": 1.1,
-          "flyRide": 1.9
+          "noPotion": 0.9,
+          "fly": 1.15,
+          "ride": 1.15,
+          "flyRide": 1.95
         },
         "mega": {
-          "noPotion": 4.25,
-          "fly": 6.15,
-          "ride": 5.25,
-          "flyRide": 7.25
+          "noPotion": 4.5,
+          "fly": 6.4,
+          "ride": 5.5,
+          "flyRide": 7.5
         }
       }
     },
@@ -7294,22 +7322,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 29.5,
-          "fly": 29.95,
-          "ride": 29.9,
-          "flyRide": 30.5
+          "noPotion": 29.0,
+          "fly": 29.45,
+          "ride": 29.4,
+          "flyRide": 30.0
         },
         "neon": {
-          "noPotion": 70.0,
-          "fly": 71.0,
-          "ride": 71.0,
-          "flyRide": 72.0
+          "noPotion": 69.0,
+          "fly": 70.0,
+          "ride": 70.0,
+          "flyRide": 71.0
         },
         "mega": {
-          "noPotion": 252.0,
-          "fly": 242.9,
-          "ride": 242.0,
-          "flyRide": 244.0
+          "noPotion": 248.0,
+          "fly": 238.9,
+          "ride": 238.0,
+          "flyRide": 240.0
         }
       }
     },
@@ -7322,22 +7350,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.06,
-          "fly": 0.26,
-          "ride": 0.26,
-          "flyRide": 0.51
+          "noPotion": 0.05,
+          "fly": 0.25,
+          "ride": 0.25,
+          "flyRide": 0.5
         },
         "neon": {
-          "noPotion": 0.52,
-          "fly": 0.8,
-          "ride": 0.8,
-          "flyRide": 1.07
+          "noPotion": 0.3,
+          "fly": 0.58,
+          "ride": 0.58,
+          "flyRide": 0.85
         },
         "mega": {
-          "noPotion": 2.35,
-          "fly": 3.1,
-          "ride": 3.1,
-          "flyRide": 3.85
+          "noPotion": 1.3,
+          "fly": 2.05,
+          "ride": 2.05,
+          "flyRide": 2.8
         }
       }
     },
@@ -7478,6 +7506,34 @@
           "fly": 1.65,
           "ride": 1.65,
           "flyRide": 2.4
+        }
+      }
+    },
+    {
+      "slug": "haetyphoon",
+      "name": "Haetyphoon",
+      "rarity": "l",
+      "image": "/assets/pets/haetyphoon.png",
+      "sourceUrl": "https://adoptmevalues.app/values/haetyphoon",
+      "sourceType": "tracker",
+      "values": {
+        "default": {
+          "noPotion": 22.0,
+          "fly": 22.45,
+          "ride": 22.4,
+          "flyRide": 23.0
+        },
+        "neon": {
+          "noPotion": 93.0,
+          "fly": 94.0,
+          "ride": 94.0,
+          "flyRide": 95.0
+        },
+        "mega": {
+          "noPotion": 397.0,
+          "fly": 398.9,
+          "ride": 398.0,
+          "flyRide": 400.0
         }
       }
     },
@@ -7826,22 +7882,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 1.22,
-          "fly": 1.47,
-          "ride": 1.47,
-          "flyRide": 1.77
+          "noPotion": 1.24,
+          "fly": 1.49,
+          "ride": 1.49,
+          "flyRide": 1.79
         },
         "neon": {
-          "noPotion": 5.8,
-          "fly": 6.35,
-          "ride": 6.35,
-          "flyRide": 6.9
+          "noPotion": 5.9,
+          "fly": 6.45,
+          "ride": 6.45,
+          "flyRide": 7.0
         },
         "mega": {
-          "noPotion": 25.6,
-          "fly": 27.5,
-          "ride": 26.6,
-          "flyRide": 28.6
+          "noPotion": 26.0,
+          "fly": 27.9,
+          "ride": 27.0,
+          "flyRide": 29.0
         }
       }
     },
@@ -8162,22 +8218,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.15,
-          "fly": 0.45,
-          "ride": 0.45,
-          "flyRide": 0.85
+          "noPotion": 0.12,
+          "fly": 0.42,
+          "ride": 0.42,
+          "flyRide": 0.82
         },
         "neon": {
-          "noPotion": 0.75,
-          "fly": 0.95,
-          "ride": 0.95,
-          "flyRide": 1.75
+          "noPotion": 0.54,
+          "fly": 0.9,
+          "ride": 0.9,
+          "flyRide": 1.6
         },
         "mega": {
-          "noPotion": 3.25,
-          "fly": 5.15,
-          "ride": 4.25,
-          "flyRide": 6.25
+          "noPotion": 2.5,
+          "fly": 4.4,
+          "ride": 3.5,
+          "flyRide": 5.5
         }
       }
     },
@@ -8190,22 +8246,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 2.75,
-          "fly": 3.05,
-          "ride": 3.05,
-          "flyRide": 3.45
+          "noPotion": 2.25,
+          "fly": 2.55,
+          "ride": 2.55,
+          "flyRide": 2.95
         },
         "neon": {
-          "noPotion": 12.5,
-          "fly": 13.25,
-          "ride": 13.25,
-          "flyRide": 14.0
+          "noPotion": 10.5,
+          "fly": 11.25,
+          "ride": 11.25,
+          "flyRide": 12.0
         },
         "mega": {
-          "noPotion": 55.0,
-          "fly": 56.9,
-          "ride": 56.0,
-          "flyRide": 58.0
+          "noPotion": 47.0,
+          "fly": 48.9,
+          "ride": 48.0,
+          "flyRide": 50.0
         }
       }
     },
@@ -8672,16 +8728,16 @@
           "flyRide": 9.5
         },
         "neon": {
-          "noPotion": 34.5,
-          "fly": 36.0,
-          "ride": 35.5,
-          "flyRide": 37.0
+          "noPotion": 33.5,
+          "fly": 35.0,
+          "ride": 34.5,
+          "flyRide": 36.0
         },
         "mega": {
-          "noPotion": 151.0,
-          "fly": 152.9,
-          "ride": 152.0,
-          "flyRide": 154.0
+          "noPotion": 147.0,
+          "fly": 148.9,
+          "ride": 148.0,
+          "flyRide": 150.0
         }
       }
     },
@@ -9114,13 +9170,13 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.57,
-          "fly": 0.88,
-          "ride": 0.88,
-          "flyRide": 1.27
+          "noPotion": 0.6,
+          "fly": 0.9,
+          "ride": 0.9,
+          "flyRide": 1.3
         },
         "neon": {
-          "noPotion": 2.6,
+          "noPotion": 2.7,
           "fly": 3.0,
           "ride": 3.0,
           "flyRide": 3.8
@@ -9366,22 +9422,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 5.25,
-          "fly": 5.6,
-          "ride": 5.55,
-          "flyRide": 6.0
+          "noPotion": 3.75,
+          "fly": 4.1,
+          "ride": 4.05,
+          "flyRide": 4.5
         },
         "neon": {
-          "noPotion": 22.25,
-          "fly": 23.2,
-          "ride": 23.2,
-          "flyRide": 24.0
+          "noPotion": 16.25,
+          "fly": 17.2,
+          "ride": 17.2,
+          "flyRide": 18.0
         },
         "mega": {
-          "noPotion": 97.0,
-          "fly": 98.9,
-          "ride": 98.0,
-          "flyRide": 100.0
+          "noPotion": 73.0,
+          "fly": 74.9,
+          "ride": 74.0,
+          "flyRide": 76.0
         }
       }
     },
@@ -9591,21 +9647,21 @@
       "values": {
         "default": {
           "noPotion": 0.06,
-          "fly": 0.26,
-          "ride": 0.26,
-          "flyRide": 0.51
+          "fly": 0.25,
+          "ride": 0.25,
+          "flyRide": 0.5
         },
         "neon": {
-          "noPotion": 0.35,
-          "fly": 0.63,
-          "ride": 0.63,
-          "flyRide": 0.9
+          "noPotion": 0.32,
+          "fly": 0.6,
+          "ride": 0.6,
+          "flyRide": 0.88
         },
         "mega": {
-          "noPotion": 1.5,
-          "fly": 2.25,
-          "ride": 2.25,
-          "flyRide": 3.0
+          "noPotion": 1.4,
+          "fly": 2.15,
+          "ride": 2.15,
+          "flyRide": 2.9
         }
       }
     },
@@ -9730,22 +9786,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.28,
-          "fly": 0.58,
-          "ride": 0.58,
-          "flyRide": 0.98
+          "noPotion": 0.27,
+          "fly": 0.57,
+          "ride": 0.57,
+          "flyRide": 0.97
         },
         "neon": {
-          "noPotion": 1.3,
-          "fly": 1.7,
-          "ride": 1.7,
-          "flyRide": 2.4
+          "noPotion": 1.25,
+          "fly": 1.65,
+          "ride": 1.65,
+          "flyRide": 2.35
         },
         "mega": {
-          "noPotion": 6.5,
-          "fly": 8.4,
-          "ride": 7.5,
-          "flyRide": 9.5
+          "noPotion": 6.3,
+          "fly": 8.2,
+          "ride": 7.3,
+          "flyRide": 9.3
         }
       }
     },
@@ -10430,22 +10486,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.25,
-          "fly": 0.55,
-          "ride": 0.55,
-          "flyRide": 0.95
+          "noPotion": 0.24,
+          "fly": 0.54,
+          "ride": 0.54,
+          "flyRide": 0.94
         },
         "neon": {
-          "noPotion": 1.15,
-          "fly": 1.65,
-          "ride": 1.65,
-          "flyRide": 2.25
+          "noPotion": 1.1,
+          "fly": 1.6,
+          "ride": 1.6,
+          "flyRide": 2.2
         },
         "mega": {
-          "noPotion": 5.95,
-          "fly": 7.85,
-          "ride": 6.95,
-          "flyRide": 8.95
+          "noPotion": 5.75,
+          "fly": 7.65,
+          "ride": 6.75,
+          "flyRide": 8.75
         }
       }
     },
@@ -10459,21 +10515,21 @@
       "values": {
         "default": {
           "noPotion": 0.03,
-          "fly": 0.23,
-          "ride": 0.23,
+          "fly": 0.22,
+          "ride": 0.22,
           "flyRide": 0.48
         },
         "neon": {
-          "noPotion": 0.2,
-          "fly": 0.48,
-          "ride": 0.48,
-          "flyRide": 0.75
+          "noPotion": 0.19,
+          "fly": 0.46,
+          "ride": 0.46,
+          "flyRide": 0.74
         },
         "mega": {
-          "noPotion": 0.9,
-          "fly": 1.65,
-          "ride": 1.65,
-          "flyRide": 2.4
+          "noPotion": 0.85,
+          "fly": 1.6,
+          "ride": 1.6,
+          "flyRide": 2.35
         }
       }
     },
@@ -10542,22 +10598,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.89,
-          "fly": 1.11,
-          "ride": 1.11,
-          "flyRide": 1.39
+          "noPotion": 0.9,
+          "fly": 1.12,
+          "ride": 1.12,
+          "flyRide": 1.4
         },
         "neon": {
-          "noPotion": 4.25,
-          "fly": 4.75,
-          "ride": 4.75,
-          "flyRide": 5.25
+          "noPotion": 4.3,
+          "fly": 4.8,
+          "ride": 4.8,
+          "flyRide": 5.3
         },
         "mega": {
-          "noPotion": 19.0,
-          "fly": 20.9,
-          "ride": 20.0,
-          "flyRide": 22.0
+          "noPotion": 19.2,
+          "fly": 21.1,
+          "ride": 20.2,
+          "flyRide": 22.2
         }
       }
     },
@@ -11500,16 +11556,16 @@
           "flyRide": 0.49
         },
         "neon": {
-          "noPotion": 0.4,
-          "fly": 0.68,
-          "ride": 0.68,
-          "flyRide": 0.95
+          "noPotion": 0.3,
+          "fly": 0.58,
+          "ride": 0.58,
+          "flyRide": 0.85
         },
         "mega": {
-          "noPotion": 1.75,
-          "fly": 2.5,
-          "ride": 2.5,
-          "flyRide": 3.25
+          "noPotion": 1.3,
+          "fly": 2.05,
+          "ride": 2.05,
+          "flyRide": 2.8
         }
       }
     },
@@ -11917,19 +11973,19 @@
           "noPotion": 0.04,
           "fly": 0.24,
           "ride": 0.24,
-          "flyRide": 0.5
+          "flyRide": 0.49
         },
         "neon": {
-          "noPotion": 0.27,
-          "fly": 0.55,
-          "ride": 0.55,
-          "flyRide": 0.82
+          "noPotion": 0.26,
+          "fly": 0.54,
+          "ride": 0.54,
+          "flyRide": 0.81
         },
         "mega": {
-          "noPotion": 1.2,
-          "fly": 1.95,
-          "ride": 1.95,
-          "flyRide": 2.7
+          "noPotion": 1.15,
+          "fly": 1.9,
+          "ride": 1.9,
+          "flyRide": 2.65
         }
       }
     },
@@ -12026,22 +12082,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.78,
-          "fly": 1.08,
-          "ride": 1.08,
-          "flyRide": 1.48
+          "noPotion": 0.77,
+          "fly": 1.07,
+          "ride": 1.07,
+          "flyRide": 1.47
         },
         "neon": {
-          "noPotion": 3.75,
-          "fly": 4.66,
-          "ride": 4.66,
-          "flyRide": 5.46
+          "noPotion": 3.7,
+          "fly": 4.59,
+          "ride": 4.59,
+          "flyRide": 5.39
         },
         "mega": {
-          "noPotion": 18.7,
-          "fly": 20.6,
-          "ride": 19.7,
-          "flyRide": 21.7
+          "noPotion": 18.4,
+          "fly": 20.3,
+          "ride": 19.4,
+          "flyRide": 21.4
         }
       }
     },
@@ -12350,6 +12406,34 @@
           "fly": 5.95,
           "ride": 5.95,
           "flyRide": 7.0
+        }
+      }
+    },
+    {
+      "slug": "pink-dog",
+      "name": "Pink Dog",
+      "rarity": "u",
+      "image": "/assets/pets/pink-dog.webp",
+      "sourceUrl": "https://www.adoptmevalues.app/values/pink-dog",
+      "sourceType": "tracker",
+      "values": {
+        "default": {
+          "noPotion": 0.03,
+          "fly": 0.23,
+          "ride": 0.23,
+          "flyRide": 0.48
+        },
+        "neon": {
+          "noPotion": 0.2,
+          "fly": 0.48,
+          "ride": 0.48,
+          "flyRide": 0.75
+        },
+        "mega": {
+          "noPotion": 0.9,
+          "fly": 1.65,
+          "ride": 1.65,
+          "flyRide": 2.4
         }
       }
     },
@@ -13237,8 +13321,8 @@
         },
         "neon": {
           "noPotion": 0.77,
-          "fly": 1.25,
-          "ride": 1.25,
+          "fly": 1.15,
+          "ride": 1.15,
           "flyRide": 1.85
         },
         "mega": {
@@ -13289,19 +13373,19 @@
           "noPotion": 0.02,
           "fly": 0.22,
           "ride": 0.22,
-          "flyRide": 0.48
+          "flyRide": 0.47
         },
         "neon": {
-          "noPotion": 0.17,
-          "fly": 0.45,
-          "ride": 0.45,
-          "flyRide": 0.72
+          "noPotion": 0.16,
+          "fly": 0.44,
+          "ride": 0.44,
+          "flyRide": 0.71
         },
         "mega": {
-          "noPotion": 0.7,
-          "fly": 1.45,
-          "ride": 1.45,
-          "flyRide": 2.2
+          "noPotion": 0.65,
+          "fly": 1.4,
+          "ride": 1.4,
+          "flyRide": 2.15
         }
       }
     },
@@ -14210,22 +14294,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 35.5,
-          "fly": 35.95,
-          "ride": 35.9,
-          "flyRide": 36.5
+          "noPotion": 32.0,
+          "fly": 32.45,
+          "ride": 32.4,
+          "flyRide": 33.0
         },
         "neon": {
-          "noPotion": 143.0,
-          "fly": 144.0,
-          "ride": 144.0,
-          "flyRide": 145.0
+          "noPotion": 123.0,
+          "fly": 124.0,
+          "ride": 124.0,
+          "flyRide": 125.0
         },
         "mega": {
-          "noPotion": 595.0,
-          "fly": 588.9,
-          "ride": 588.0,
-          "flyRide": 590.0
+          "noPotion": 505.0,
+          "fly": 498.9,
+          "ride": 498.0,
+          "flyRide": 500.0
         }
       }
     },
@@ -14350,22 +14434,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 8.75,
-          "fly": 9.2,
-          "ride": 9.15,
-          "flyRide": 9.75
+          "noPotion": 10.0,
+          "fly": 10.45,
+          "ride": 10.4,
+          "flyRide": 11.0
         },
         "neon": {
-          "noPotion": 37.25,
-          "fly": 38.2,
-          "ride": 38.2,
-          "flyRide": 39.0
+          "noPotion": 42.25,
+          "fly": 43.2,
+          "ride": 43.2,
+          "flyRide": 44.0
         },
         "mega": {
-          "noPotion": 155.0,
-          "fly": 156.9,
-          "ride": 156.0,
-          "flyRide": 158.0
+          "noPotion": 175.0,
+          "fly": 176.9,
+          "ride": 176.0,
+          "flyRide": 178.0
         }
       }
     },
@@ -14574,22 +14658,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.47,
-          "fly": 0.77,
-          "ride": 0.77,
-          "flyRide": 1.17
+          "noPotion": 0.44,
+          "fly": 0.74,
+          "ride": 0.74,
+          "flyRide": 1.14
         },
         "neon": {
-          "noPotion": 2.15,
-          "fly": 2.55,
-          "ride": 2.55,
-          "flyRide": 3.35
+          "noPotion": 2.0,
+          "fly": 2.4,
+          "ride": 2.4,
+          "flyRide": 3.2
         },
         "mega": {
-          "noPotion": 10.05,
-          "fly": 11.95,
-          "ride": 11.05,
-          "flyRide": 13.05
+          "noPotion": 9.45,
+          "fly": 11.35,
+          "ride": 10.45,
+          "flyRide": 12.45
         }
       }
     },
@@ -15140,16 +15224,16 @@
           "flyRide": 0.47
         },
         "neon": {
-          "noPotion": 0.15,
-          "fly": 0.43,
-          "ride": 0.43,
-          "flyRide": 0.7
+          "noPotion": 0.16,
+          "fly": 0.44,
+          "ride": 0.44,
+          "flyRide": 0.71
         },
         "mega": {
-          "noPotion": 0.7,
-          "fly": 1.45,
-          "ride": 1.45,
-          "flyRide": 2.2
+          "noPotion": 0.75,
+          "fly": 1.5,
+          "ride": 1.5,
+          "flyRide": 2.25
         }
       }
     },
@@ -15554,22 +15638,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 3.75,
-          "fly": 4.1,
-          "ride": 4.05,
-          "flyRide": 4.5
+          "noPotion": 3.0,
+          "fly": 3.35,
+          "ride": 3.3,
+          "flyRide": 3.75
         },
         "neon": {
-          "noPotion": 15.9,
-          "fly": 16.45,
-          "ride": 16.45,
-          "flyRide": 17.0
+          "noPotion": 12.9,
+          "fly": 13.45,
+          "ride": 13.45,
+          "flyRide": 14.0
         },
         "mega": {
-          "noPotion": 67.0,
-          "fly": 68.9,
-          "ride": 68.0,
-          "flyRide": 70.0
+          "noPotion": 53.0,
+          "fly": 54.9,
+          "ride": 54.0,
+          "flyRide": 56.0
         }
       }
     },
@@ -15834,22 +15918,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.65,
-          "fly": 0.95,
-          "ride": 0.95,
-          "flyRide": 1.35
+          "noPotion": 0.63,
+          "fly": 0.93,
+          "ride": 0.93,
+          "flyRide": 1.33
         },
         "neon": {
-          "noPotion": 2.95,
-          "fly": 3.75,
-          "ride": 3.75,
-          "flyRide": 4.55
+          "noPotion": 2.85,
+          "fly": 3.61,
+          "ride": 3.61,
+          "flyRide": 4.41
         },
         "mega": {
-          "noPotion": 14.85,
-          "fly": 16.75,
-          "ride": 15.85,
-          "flyRide": 17.85
+          "noPotion": 14.3,
+          "fly": 16.2,
+          "ride": 15.3,
+          "flyRide": 17.3
         }
       }
     },
@@ -16114,22 +16198,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.34,
-          "fly": 0.64,
-          "ride": 0.64,
-          "flyRide": 1.04
+          "noPotion": 0.33,
+          "fly": 0.63,
+          "ride": 0.63,
+          "flyRide": 1.03
         },
         "neon": {
-          "noPotion": 1.55,
-          "fly": 2.0,
-          "ride": 2.0,
-          "flyRide": 2.7
+          "noPotion": 1.5,
+          "fly": 1.95,
+          "ride": 1.95,
+          "flyRide": 2.65
         },
         "mega": {
-          "noPotion": 7.55,
-          "fly": 9.45,
-          "ride": 8.55,
-          "flyRide": 10.55
+          "noPotion": 7.4,
+          "fly": 9.3,
+          "ride": 8.4,
+          "flyRide": 10.4
         }
       }
     },
@@ -16142,22 +16226,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.19,
-          "fly": 0.49,
-          "ride": 0.49,
-          "flyRide": 0.89
+          "noPotion": 0.16,
+          "fly": 0.46,
+          "ride": 0.46,
+          "flyRide": 0.86
         },
         "neon": {
-          "noPotion": 0.95,
-          "fly": 1.15,
-          "ride": 1.15,
-          "flyRide": 1.95
+          "noPotion": 0.72,
+          "fly": 1.1,
+          "ride": 1.1,
+          "flyRide": 1.8
         },
         "mega": {
-          "noPotion": 4.5,
-          "fly": 6.4,
-          "ride": 5.5,
-          "flyRide": 7.5
+          "noPotion": 3.5,
+          "fly": 5.4,
+          "ride": 4.5,
+          "flyRide": 6.5
         }
       }
     },
@@ -16170,22 +16254,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.31,
-          "fly": 0.61,
-          "ride": 0.61,
-          "flyRide": 1.01
+          "noPotion": 0.3,
+          "fly": 0.6,
+          "ride": 0.6,
+          "flyRide": 1.0
         },
         "neon": {
-          "noPotion": 1.4,
-          "fly": 1.75,
-          "ride": 1.75,
-          "flyRide": 2.55
+          "noPotion": 1.35,
+          "fly": 1.7,
+          "ride": 1.7,
+          "flyRide": 2.5
         },
         "mega": {
-          "noPotion": 7.0,
-          "fly": 8.9,
-          "ride": 8.0,
-          "flyRide": 10.0
+          "noPotion": 6.85,
+          "fly": 8.75,
+          "ride": 7.85,
+          "flyRide": 9.85
         }
       }
     },
@@ -16709,8 +16793,8 @@
         },
         "neon": {
           "noPotion": 0.77,
-          "fly": 1.25,
-          "ride": 1.25,
+          "fly": 1.15,
+          "ride": 1.15,
           "flyRide": 1.85
         },
         "mega": {
@@ -16814,22 +16898,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 0.2,
-          "fly": 0.5,
-          "ride": 0.5,
-          "flyRide": 0.9
+          "noPotion": 0.14,
+          "fly": 0.44,
+          "ride": 0.44,
+          "flyRide": 0.84
         },
         "neon": {
-          "noPotion": 1.0,
-          "fly": 1.2,
-          "ride": 1.2,
-          "flyRide": 2.0
+          "noPotion": 0.63,
+          "fly": 1.0,
+          "ride": 1.0,
+          "flyRide": 1.7
         },
         "mega": {
-          "noPotion": 4.75,
-          "fly": 6.65,
-          "ride": 5.75,
-          "flyRide": 7.75
+          "noPotion": 3.0,
+          "fly": 4.9,
+          "ride": 4.0,
+          "flyRide": 6.0
         }
       }
     },
@@ -16842,22 +16926,22 @@
       "sourceType": "tracker",
       "values": {
         "default": {
-          "noPotion": 26.0,
-          "fly": 26.45,
-          "ride": 26.4,
-          "flyRide": 27.0
+          "noPotion": 25.5,
+          "fly": 25.95,
+          "ride": 25.9,
+          "flyRide": 26.5
         },
         "neon": {
-          "noPotion": 102.0,
-          "fly": 103.0,
-          "ride": 103.0,
-          "flyRide": 104.0
+          "noPotion": 100.0,
+          "fly": 101.0,
+          "ride": 101.0,
+          "flyRide": 102.0
         },
         "mega": {
-          "noPotion": 425.0,
-          "fly": 418.9,
-          "ride": 418.0,
-          "flyRide": 420.0
+          "noPotion": 417.0,
+          "fly": 410.9,
+          "ride": 410.0,
+          "flyRide": 412.0
         }
       }
     },

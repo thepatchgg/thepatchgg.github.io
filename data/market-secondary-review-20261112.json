@@ -1,0 +1,308 @@
+{
+  "reviewedAt": "2026-11-12",
+  "source": "Elvebredd public pet pages",
+  "attemptedBenchmarkPets": 101,
+  "newPets": "Four Lightning Dimension pets checked against their public pages on November 12, 2026",
+  "evidence": [
+    {"url":"https://elvebredd.com/pets/blue-cat","value":0.03,"variant":"noPotion","checkedAt":"2026-11-12"},
+    {"url":"https://elvebredd.com/pets/pink-dog","value":0.03,"variant":"noPotion","checkedAt":"2026-11-12"},
+{"url":"https://elvebredd.com/pets/thunderfisher","value":0.3,"variant":"noPotion","checkedAt":"2026-11-12"},
+{"url":"https://elvebredd.com/pets/electric-hornet","value":0.7,"variant":"noPotion","checkedAt":"2026-11-12"},
+{"url":"https://elvebredd.com/pets/haetyphoon","value":22,"variant":"noPotion","checkedAt":"2026-11-12"},
+{"url":"https://elvebredd.com/pets/flash-weasel","value":30,"variant":"noPotion","checkedAt":"2026-11-12"},
+    {
+      "url": "https://elvebredd.com/pets/bat-dragon",
+      "value": 1013,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/shadow-dragon",
+      "value": 846,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/evil-unicorn",
+      "value": 117,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/hedgehog",
+      "value": 93,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/dalmatian",
+      "value": 80.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/arctic-reindeer",
+      "value": 74,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/cow",
+      "value": 37.25,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/turtle",
+      "value": 25.25,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/chocolate-chip-bat-dragon",
+      "value": 64.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/unicorn",
+      "value": 0.75,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/candicorn",
+      "value": 20.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/arctic-fox",
+      "value": 8.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/lavender-dragon",
+      "value": 2.25,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/queen-bee",
+      "value": 2.85,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/cerberus",
+      "value": 1.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/alicorn",
+      "value": 0.11,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/elephant",
+      "value": 16.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/crocodile",
+      "value": 13.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/pig",
+      "value": 9.75,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/hyena",
+      "value": 4.25,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/brown-bear",
+      "value": 4,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/polar-bear",
+      "value": 4,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/skele-rex",
+      "value": 1,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/snow-owl",
+      "value": 0.75,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/strawberry-shortcake-bat-dragon",
+      "value": 65.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/peppermint-penguin",
+      "value": 36.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/goose",
+      "value": 38.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/border-collie",
+      "value": 14.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/fairy-bat-dragon",
+      "value": 32,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/undead-jousting-horse",
+      "value": 48,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/frost-unicorn",
+      "value": 24.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/goat",
+      "value": 7,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/cactus-friend",
+      "value": 0.85,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/cryptid",
+      "value": 138,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/cabbit",
+      "value": 30,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/jekyll-hydra",
+      "value": 44,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/sugar-glider",
+      "value": 29,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/silverback-gorilla",
+      "value": 9,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/frostbite-bear",
+      "value": 32.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/dragonfruit-fox",
+      "value": 2.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/cupid-dragon",
+      "value": 9,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/werewolf",
+      "value": 24.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/vampire-dragon",
+      "value": 11.5,
+      "variant": "noPotion",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/giraffe?variant=111",
+      "value": 463,
+      "variant": "flyRide",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/frost-dragon?variant=111",
+      "value": 316,
+      "variant": "flyRide",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/owl?variant=111",
+      "value": 243.5,
+      "variant": "flyRide",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/parrot?variant=111",
+      "value": 195.5,
+      "variant": "flyRide",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/crow?variant=111",
+      "value": 178,
+      "variant": "flyRide",
+      "checkedAt": "2026-11-12"
+    },
+    {
+      "url": "https://elvebredd.com/pets/blazing-lion?variant=111",
+      "value": 171,
+      "variant": "flyRide",
+      "checkedAt": "2026-11-12"
+    }
+  ]
+}

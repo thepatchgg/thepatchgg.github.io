@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-12",
   "version": "phase1",
   "methodology": {
     "summary": "The Patch combines reviewed benchmark anchors with tracker-backed calculator lanes. Per-pet review dates identify the anchors checked most recently.",
@@ -14,8 +14,8 @@
       }
     ],
     "notes": [
-      "37 benchmark anchors were reviewed on November 8, 2026. 64 anchors retain earlier values because an independent check was unavailable or disagreed.",
-      "Reviewed pets use Adopt Me Values variant lanes. The supporting independent check matches the same Fly Ride or No Potion variant.",
+      "43 benchmark anchors were reviewed on November 12, 2026. 58 anchors retain their earlier dated values because sources disagree or an independent check was unavailable.",
+      "Reviewed pets use Adopt Me Values variant lanes. The independent check matches the same Fly Ride or No Potion variant.",
       "Values can move quickly. New pets stay pending where sources materially disagree."
     ]
   },
@@ -28,22 +28,22 @@
       "demand": "Elite",
       "trend": "Steady",
       "confidence": "High",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the Fly Ride reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 1001,
-        "fly": 1001,
-        "ride": 1001,
-        "noPotion": 1013,
-        "neon": 2310,
+        "default": 1001.0,
+        "fly": 1001.0,
+        "ride": 1001.0,
+        "noPotion": 1013.0,
+        "neon": 2310.0,
         "neonFly": 2373.2,
         "neonRide": 2373.2,
-        "neonNoPotion": 2483,
-        "mega": 6550,
+        "neonNoPotion": 2483.0,
+        "mega": 6550.0,
         "megaFly": 6613.2,
         "megaRide": 6644.8,
-        "megaNoPotion": 7369
+        "megaNoPotion": 7369.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "shadow-dragon",
@@ -53,22 +53,22 @@
       "demand": "Elite",
       "trend": "Steady",
       "confidence": "High",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the Fly Ride reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 677,
-        "fly": 680,
-        "ride": 683,
-        "noPotion": 846,
-        "neon": 1347,
+        "default": 677.0,
+        "fly": 680.0,
+        "ride": 683.0,
+        "noPotion": 846.0,
+        "neon": 1347.0,
         "neonFly": 1473.4,
         "neonRide": 1536.6,
-        "neonNoPotion": 2021,
-        "mega": 3310,
-        "megaFly": 3626,
-        "megaRide": 3773,
-        "megaNoPotion": 5296
+        "neonNoPotion": 2021.0,
+        "mega": 3310.0,
+        "megaFly": 3626.0,
+        "megaRide": 3773.0,
+        "megaNoPotion": 5296.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "giraffe",
@@ -78,22 +78,22 @@
       "demand": "Elite",
       "trend": "Rising",
       "confidence": "High",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the Fly Ride reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the flyRide reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 463,
-        "fly": 463,
-        "ride": 463,
-        "noPotion": 475,
-        "neon": 918,
-        "neonFly": 926,
-        "neonRide": 926,
-        "neonNoPotion": 1116,
-        "mega": 2880,
+        "default": 463.0,
+        "fly": 463.0,
+        "ride": 463.0,
+        "noPotion": 475.0,
+        "neon": 918.0,
+        "neonFly": 926.0,
+        "neonRide": 926.0,
+        "neonNoPotion": 1116.0,
+        "mega": 2880.0,
         "megaFly": 2974.8,
         "megaRide": 2943.2,
-        "megaNoPotion": 4464
+        "megaNoPotion": 4464.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "frost-dragon",
@@ -103,22 +103,22 @@
       "demand": "Elite",
       "trend": "Rising",
       "confidence": "High",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the Fly Ride reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the flyRide reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 316,
-        "fly": 316,
-        "ride": 316,
-        "noPotion": 328,
-        "neon": 552,
-        "neonFly": 558,
-        "neonRide": 558,
-        "neonNoPotion": 639,
-        "mega": 1420,
-        "megaFly": 1736,
-        "megaRide": 1883,
-        "megaNoPotion": 2556
+        "default": 316.0,
+        "fly": 316.0,
+        "ride": 316.0,
+        "noPotion": 328.0,
+        "neon": 552.0,
+        "neonFly": 558.0,
+        "neonRide": 558.0,
+        "neonNoPotion": 666.0,
+        "mega": 1480.0,
+        "megaFly": 1796.0,
+        "megaRide": 1943.0,
+        "megaNoPotion": 2664.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "owl",
@@ -128,22 +128,22 @@
       "demand": "Very High",
       "trend": "Steady",
       "confidence": "High",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the Fly Ride reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the flyRide reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 243.5,
-        "fly": 243,
-        "ride": 243,
+        "fly": 243.0,
+        "ride": 243.0,
         "noPotion": 246.5,
-        "neon": 600,
-        "neonFly": 604,
-        "neonRide": 604,
-        "neonNoPotion": 645,
-        "mega": 1825,
+        "neon": 600.0,
+        "neonFly": 604.0,
+        "neonRide": 604.0,
+        "neonNoPotion": 645.0,
+        "mega": 1825.0,
         "megaFly": 1963.9,
         "megaRide": 1917.6,
-        "megaNoPotion": 2281
+        "megaNoPotion": 2281.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "parrot",
@@ -153,22 +153,22 @@
       "demand": "Very High",
       "trend": "Steady",
       "confidence": "High",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the Fly Ride reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the flyRide reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 195.5,
-        "fly": 195,
-        "ride": 195,
+        "fly": 195.0,
+        "ride": 195.0,
         "noPotion": 197.5,
-        "neon": 395,
-        "neonFly": 397,
-        "neonRide": 397,
+        "neon": 395.0,
+        "neonFly": 397.0,
+        "neonRide": 397.0,
         "neonNoPotion": 483.5,
-        "mega": 1018,
+        "mega": 1018.0,
         "megaFly": 1112.8,
         "megaRide": 1081.2,
-        "megaNoPotion": 1934
+        "megaNoPotion": 1934.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "crow",
@@ -178,22 +178,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "High",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the Fly Ride reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the flyRide reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 178,
+        "default": 178.0,
         "fly": 177.5,
         "ride": 177.5,
-        "noPotion": 179,
-        "neon": 401,
-        "neonFly": 403,
-        "neonRide": 403,
-        "neonNoPotion": 427,
-        "mega": 1220,
+        "noPotion": 179.0,
+        "neon": 401.0,
+        "neonFly": 403.0,
+        "neonRide": 403.0,
+        "neonNoPotion": 427.0,
+        "mega": 1220.0,
         "megaFly": 1314.8,
         "megaRide": 1283.2,
-        "megaNoPotion": 1708
+        "megaNoPotion": 1708.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "evil-unicorn",
@@ -203,22 +203,22 @@
       "demand": "High",
       "trend": "Steady",
       "confidence": "High",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the Fly Ride reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 117,
+        "default": 117.0,
         "fly": 116.5,
         "ride": 116.5,
-        "noPotion": 117,
-        "neon": 212,
-        "neonFly": 214,
-        "neonRide": 214,
-        "neonNoPotion": 273,
-        "mega": 780,
+        "noPotion": 117.0,
+        "neon": 212.0,
+        "neonFly": 214.0,
+        "neonRide": 214.0,
+        "neonNoPotion": 273.0,
+        "mega": 780.0,
         "megaFly": 843.2,
         "megaRide": 811.6,
-        "megaNoPotion": 1092
+        "megaNoPotion": 1092.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "hedgehog",
@@ -252,22 +252,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the Fly Ride reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the flyRide reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 171,
+        "default": 171.0,
         "fly": 169.85,
-        "ride": 169,
-        "noPotion": 172,
-        "neon": 580,
-        "neonFly": 579,
-        "neonRide": 579,
-        "neonNoPotion": 588,
-        "mega": 2220,
-        "megaFly": 2218.9,
-        "megaRide": 2218,
-        "megaNoPotion": 2392
+        "ride": 169.0,
+        "noPotion": 172.0,
+        "neon": 585.0,
+        "neonFly": 584.0,
+        "neonRide": 584.0,
+        "neonNoPotion": 593.0,
+        "mega": 2240.0,
+        "megaFly": 2238.9,
+        "megaRide": 2238.0,
+        "megaNoPotion": 2412.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "dalmatian",
@@ -277,21 +277,22 @@
       "demand": "High",
       "trend": "Steady",
       "confidence": "High",
-      "notes": "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 49.5,
-        "fly": 48.35,
-        "ride": 48.25,
-        "noPotion": 48,
-        "neon": 140,
-        "neonFly": 139.5,
-        "neonRide": 139.5,
-        "neonNoPotion": 146,
-        "mega": 510,
-        "megaFly": 518,
-        "megaRide": 518,
-        "megaNoPotion": 540
-      }
+        "default": 82.0,
+        "fly": 80.9,
+        "ride": 80.75,
+        "noPotion": 80.5,
+        "neon": 234.0,
+        "neonFly": 233.5,
+        "neonRide": 233.5,
+        "neonNoPotion": 244.0,
+        "mega": 870.0,
+        "megaFly": 878.0,
+        "megaRide": 878.0,
+        "megaNoPotion": 950.5
+      },
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "arctic-reindeer",
@@ -301,21 +302,22 @@
       "demand": "High",
       "trend": "Steady",
       "confidence": "High",
-      "notes": "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 44,
-        "fly": 42.85,
-        "ride": 42.75,
-        "noPotion": 42.5,
-        "neon": 93,
-        "neonFly": 93,
-        "neonRide": 93,
-        "neonNoPotion": 114.25,
-        "mega": 314,
-        "megaFly": 324,
-        "megaRide": 324,
-        "megaNoPotion": 485.56
-      }
+        "default": 73.5,
+        "fly": 72.35,
+        "ride": 72.25,
+        "noPotion": 74.0,
+        "neon": 146.0,
+        "neonFly": 146.0,
+        "neonRide": 146.0,
+        "neonNoPotion": 195.0,
+        "mega": 490.0,
+        "megaFly": 500.0,
+        "megaRide": 500.0,
+        "megaNoPotion": 819.0
+      },
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "cow",
@@ -325,22 +327,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "High",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 39.5,
-        "fly": 38.35,
-        "ride": 37.6,
-        "noPotion": 37,
-        "neon": 82,
-        "neonFly": 81,
-        "neonRide": 81,
-        "neonNoPotion": 81,
-        "mega": 222,
+        "default": 39.75,
+        "fly": 38.6,
+        "ride": 37.85,
+        "noPotion": 37.25,
+        "neon": 83.0,
+        "neonFly": 82.0,
+        "neonRide": 82.0,
+        "neonNoPotion": 82.0,
+        "mega": 222.0,
         "megaFly": 220.9,
-        "megaRide": 220,
-        "megaNoPotion": 252
+        "megaRide": 220.0,
+        "megaNoPotion": 252.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "turtle",
@@ -350,22 +352,22 @@
       "demand": "High",
       "trend": "Steady",
       "confidence": "High",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 27.75,
         "fly": 26.6,
         "ride": 25.85,
         "noPotion": 25.25,
-        "neon": 55,
-        "neonFly": 54,
-        "neonRide": 54,
+        "neon": 55.0,
+        "neonFly": 54.0,
+        "neonRide": 54.0,
         "neonNoPotion": 55.5,
-        "mega": 123,
+        "mega": 123.0,
         "megaFly": 121.9,
-        "megaRide": 121,
+        "megaRide": 121.0,
         "megaNoPotion": 215.25
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "chocolate-chip-bat-dragon",
@@ -375,22 +377,22 @@
       "demand": "Medium",
       "trend": "Falling",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 62.5,
-        "fly": 61.35,
-        "ride": 61,
-        "noPotion": 60.5,
-        "neon": 165,
-        "neonFly": 164,
-        "neonRide": 164,
-        "neonNoPotion": 165,
-        "mega": 590,
-        "megaFly": 588.9,
-        "megaRide": 588,
-        "megaNoPotion": 603
+        "default": 66.5,
+        "fly": 65.35,
+        "ride": 65.0,
+        "noPotion": 64.5,
+        "neon": 168.0,
+        "neonFly": 167.0,
+        "neonRide": 167.0,
+        "neonNoPotion": 168.0,
+        "mega": 570.0,
+        "megaFly": 568.9,
+        "megaRide": 568.0,
+        "megaNoPotion": 583.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "kangaroo",
@@ -424,22 +426,22 @@
       "demand": "Medium",
       "trend": "Falling",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 1.6,
         "fly": 1.15,
         "ride": 1.1,
         "noPotion": 0.75,
-        "neon": 5,
+        "neon": 5.0,
         "neonFly": 4.2,
         "neonRide": 4.2,
-        "neonNoPotion": 3,
-        "mega": 15,
+        "neonNoPotion": 3.0,
+        "mega": 15.0,
         "megaFly": 13.9,
-        "megaRide": 13,
-        "megaNoPotion": 12
+        "megaRide": 13.0,
+        "megaNoPotion": 12.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "dragon",
@@ -493,7 +495,7 @@
       "slug": "candicorn",
       "demand": "High",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "trend": "Rising",
       "name": "Candicorn",
       "rarity": "Legendary",
@@ -503,65 +505,66 @@
         "fly": 20.95,
         "ride": 20.9,
         "noPotion": 20.5,
-        "neon": 55,
-        "neonFly": 54.2,
-        "neonRide": 54.2,
-        "neonNoPotion": 53.25,
-        "mega": 154,
-        "megaFly": 152.9,
-        "megaRide": 152,
-        "megaNoPotion": 151
+        "neon": 56.0,
+        "neonFly": 55.2,
+        "neonRide": 55.2,
+        "neonNoPotion": 54.25,
+        "mega": 170.0,
+        "megaFly": 168.9,
+        "megaRide": 168.0,
+        "megaNoPotion": 167.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "arctic-fox",
       "demand": "High",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "trend": "Rising",
       "name": "Arctic Fox",
       "rarity": "Ultra-Rare",
       "segment": "Mid tier",
       "values": {
-        "default": 10,
+        "default": 10.0,
         "fly": 8.9,
         "ride": 8.75,
         "noPotion": 8.5,
-        "neon": 33,
-        "neonFly": 32,
-        "neonRide": 32,
-        "neonNoPotion": 32,
-        "mega": 126,
-        "megaFly": 124.9,
-        "megaRide": 124,
-        "megaNoPotion": 129
+        "neon": 31.0,
+        "neonFly": 30.0,
+        "neonRide": 30.0,
+        "neonNoPotion": 30.0,
+        "mega": 110.0,
+        "megaFly": 108.9,
+        "megaRide": 108.0,
+        "megaNoPotion": 113.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "lavender-dragon",
       "demand": "High",
       "confidence": "Medium",
-      "notes": "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "trend": "Steady",
       "name": "Lavender Dragon",
       "rarity": "Legendary",
       "segment": "Lower mid tier",
       "values": {
-        "default": 2.7,
-        "fly": 2.3,
-        "ride": 2.3,
-        "noPotion": 2,
-        "neon": 11,
-        "neonFly": 10.2,
-        "neonRide": 10.2,
-        "neonNoPotion": 9.25,
-        "mega": 46,
-        "megaFly": 44.85,
-        "megaRide": 44,
-        "megaNoPotion": 43
-      }
+        "default": 2.95,
+        "fly": 2.55,
+        "ride": 2.55,
+        "noPotion": 2.25,
+        "neon": 11.5,
+        "neonFly": 10.7,
+        "neonRide": 10.7,
+        "neonNoPotion": 9.75,
+        "mega": 47.0,
+        "megaFly": 45.9,
+        "megaRide": 45.0,
+        "megaNoPotion": 48.0
+      },
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "queen-bee",
@@ -687,7 +690,7 @@
       "slug": "cerberus",
       "demand": "Medium",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "trend": "Steady",
       "name": "Cerberus",
       "rarity": "Legendary",
@@ -701,12 +704,12 @@
         "neonFly": 7.7,
         "neonRide": 7.7,
         "neonNoPotion": 6.75,
-        "mega": 34,
+        "mega": 34.0,
         "megaFly": 32.9,
-        "megaRide": 32,
-        "megaNoPotion": 31
+        "megaRide": 32.0,
+        "megaNoPotion": 31.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "king-bee",
@@ -808,26 +811,26 @@
       "slug": "alicorn",
       "demand": "Medium",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "trend": "Steady",
       "name": "Alicorn",
       "rarity": "Legendary",
       "segment": "Entry tier",
       "values": {
-        "default": 0.8099999999999999,
+        "default": 0.81,
         "fly": 0.41,
         "ride": 0.41,
         "noPotion": 0.11,
         "neon": 1.55,
-        "neonFly": 0.8500000000000001,
-        "neonRide": 0.8500000000000001,
+        "neonFly": 0.85,
+        "neonRide": 0.85,
         "neonNoPotion": 0.5,
         "mega": 5.25,
         "megaFly": 4.15,
         "megaRide": 3.25,
         "megaNoPotion": 2.25
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "griffin",
@@ -981,22 +984,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 18,
+        "default": 18.0,
         "fly": 16.9,
         "ride": 16.75,
         "noPotion": 16.5,
-        "neon": 53,
-        "neonFly": 52,
-        "neonRide": 52,
-        "neonNoPotion": 52,
-        "mega": 190,
+        "neon": 53.0,
+        "neonFly": 52.0,
+        "neonRide": 52.0,
+        "neonNoPotion": 52.0,
+        "mega": 190.0,
         "megaFly": 188.9,
-        "megaRide": 188,
-        "megaNoPotion": 200
+        "megaRide": 188.0,
+        "megaNoPotion": 200.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "albino-monkey",
@@ -1030,22 +1033,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 15,
+        "default": 15.0,
         "fly": 13.9,
         "ride": 13.75,
         "noPotion": 13.5,
-        "neon": 44,
-        "neonFly": 43,
-        "neonRide": 43,
-        "neonNoPotion": 43,
-        "mega": 168,
+        "neon": 44.0,
+        "neonFly": 43.0,
+        "neonRide": 43.0,
+        "neonNoPotion": 43.0,
+        "mega": 168.0,
         "megaFly": 166.9,
-        "megaRide": 166,
-        "megaNoPotion": 184
+        "megaRide": 166.0,
+        "megaNoPotion": 184.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "lion",
@@ -1103,22 +1106,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 11.25,
         "fly": 10.15,
-        "ride": 10,
+        "ride": 10.0,
         "noPotion": 9.75,
-        "neon": 24,
-        "neonFly": 23,
-        "neonRide": 23,
-        "neonNoPotion": 23,
-        "mega": 85,
+        "neon": 24.0,
+        "neonFly": 23.0,
+        "neonRide": 23.0,
+        "neonNoPotion": 23.0,
+        "mega": 85.0,
         "megaFly": 83.9,
-        "megaRide": 83,
-        "megaNoPotion": 90
+        "megaRide": 83.0,
+        "megaNoPotion": 90.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "pink-cat",
@@ -1152,22 +1155,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 5.1,
         "fly": 4.6,
         "ride": 4.55,
         "noPotion": 4.25,
-        "neon": 19,
-        "neonFly": 18,
-        "neonRide": 18,
+        "neon": 19.0,
+        "neonFly": 18.0,
+        "neonRide": 18.0,
         "neonNoPotion": 17.5,
-        "mega": 74,
+        "mega": 74.0,
         "megaFly": 72.9,
-        "megaRide": 72,
-        "megaNoPotion": 79
+        "megaRide": 72.0,
+        "megaNoPotion": 79.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "brown-bear",
@@ -1177,21 +1180,22 @@
       "demand": "Medium",
       "trend": "Steady",
       "confidence": "Medium",
-      "notes": "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 4.75,
+        "default": 4.85,
         "fly": 4.35,
         "ride": 4.3,
-        "noPotion": 4,
-        "neon": 18,
+        "noPotion": 4.0,
+        "neon": 18.0,
         "neonFly": 17.25,
         "neonRide": 17.25,
-        "neonNoPotion": 17,
-        "mega": 72,
-        "megaFly": 70.85,
-        "megaRide": 70,
-        "megaNoPotion": 72
-      }
+        "neonNoPotion": 17.0,
+        "mega": 66.0,
+        "megaFly": 64.9,
+        "megaRide": 64.0,
+        "megaNoPotion": 66.0
+      },
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "polar-bear",
@@ -1201,22 +1205,22 @@
       "demand": "Medium",
       "trend": "Steady",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 5.35,
-        "fly": 4.85,
-        "ride": 4.8,
-        "noPotion": 4.5,
-        "neon": 20,
-        "neonFly": 19.25,
-        "neonRide": 19.25,
-        "neonNoPotion": 19,
-        "mega": 78,
-        "megaFly": 76.9,
-        "megaRide": 76,
-        "megaNoPotion": 78
+        "default": 4.85,
+        "fly": 4.35,
+        "ride": 4.3,
+        "noPotion": 4.0,
+        "neon": 18.0,
+        "neonFly": 17.25,
+        "neonRide": 17.25,
+        "neonNoPotion": 17.0,
+        "mega": 70.0,
+        "megaFly": 68.9,
+        "megaRide": 68.0,
+        "megaNoPotion": 70.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "platypus",
@@ -1298,13 +1302,13 @@
       "demand": "Medium",
       "trend": "Steady",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 1.7,
         "fly": 1.3,
         "ride": 1.3,
-        "noPotion": 1,
-        "neon": 7,
+        "noPotion": 1.0,
+        "neon": 7.0,
         "neonFly": 6.2,
         "neonRide": 6.2,
         "neonNoPotion": 5.25,
@@ -1313,7 +1317,7 @@
         "megaRide": 26.5,
         "megaNoPotion": 25.5
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "black-panther",
@@ -1371,7 +1375,7 @@
       "demand": "Medium",
       "trend": "Falling",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 1.45,
         "fly": 1.05,
@@ -1386,7 +1390,7 @@
         "megaRide": 18.8,
         "megaNoPotion": 17.8
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "african-wild-dog",
@@ -1540,22 +1544,22 @@
       "demand": "High",
       "trend": "Steady",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 63.5,
-        "fly": 62.35,
-        "ride": 62,
-        "noPotion": 61.5,
-        "neon": 151,
-        "neonFly": 150,
-        "neonRide": 150,
-        "neonNoPotion": 151,
-        "mega": 530,
-        "megaFly": 528.9,
-        "megaRide": 528,
-        "megaNoPotion": 543
+        "default": 67.5,
+        "fly": 66.35,
+        "ride": 66.0,
+        "noPotion": 65.5,
+        "neon": 154.0,
+        "neonFly": 153.0,
+        "neonRide": 153.0,
+        "neonNoPotion": 154.0,
+        "mega": 510.0,
+        "megaFly": 508.9,
+        "megaRide": 508.0,
+        "megaNoPotion": 523.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "peppermint-penguin",
@@ -1565,22 +1569,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 38.5,
         "fly": 37.35,
-        "ride": 37,
+        "ride": 37.0,
         "noPotion": 36.5,
-        "neon": 140,
-        "neonFly": 139,
-        "neonRide": 139,
-        "neonNoPotion": 138,
-        "mega": 525,
-        "megaFly": 523.9,
-        "megaRide": 523,
-        "megaNoPotion": 540
+        "neon": 140.0,
+        "neonFly": 139.0,
+        "neonRide": 139.0,
+        "neonNoPotion": 138.0,
+        "mega": 500.0,
+        "megaFly": 498.9,
+        "megaRide": 498.0,
+        "megaNoPotion": 515.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "hot-doggo",
@@ -1614,22 +1618,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 40,
+        "default": 40.0,
         "fly": 39.1,
-        "ride": 39,
+        "ride": 39.0,
         "noPotion": 38.5,
-        "neon": 99,
-        "neonFly": 98.25,
-        "neonRide": 98.25,
-        "neonNoPotion": 97.5,
-        "mega": 330,
-        "megaFly": 328.9,
-        "megaRide": 328,
-        "megaNoPotion": 328
+        "neon": 101.0,
+        "neonFly": 100.25,
+        "neonRide": 100.25,
+        "neonNoPotion": 99.5,
+        "mega": 344.0,
+        "megaFly": 342.9,
+        "megaRide": 342.0,
+        "megaNoPotion": 342.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "caterpillar",
@@ -1711,21 +1715,22 @@
       "demand": "High",
       "trend": "Steady",
       "confidence": "Medium",
-      "notes": "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 12.5,
-        "fly": 11.35,
-        "ride": 11.5,
-        "noPotion": 10.75,
-        "neon": 38,
-        "neonFly": 37,
-        "neonRide": 37,
-        "neonNoPotion": 36,
-        "mega": 140,
-        "megaFly": 138.85,
-        "megaRide": 138,
-        "megaNoPotion": 143
-      }
+        "default": 34.0,
+        "fly": 32.85,
+        "ride": 32.5,
+        "noPotion": 32.0,
+        "neon": 95.0,
+        "neonFly": 94.0,
+        "neonRide": 94.0,
+        "neonNoPotion": 93.0,
+        "mega": 290.0,
+        "megaFly": 288.9,
+        "megaRide": 288.0,
+        "megaNoPotion": 293.0
+      },
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "undead-jousting-horse",
@@ -1735,21 +1740,22 @@
       "demand": "High",
       "trend": "Steady",
       "confidence": "Medium",
-      "notes": "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 19,
-        "fly": 18.45,
-        "ride": 18.4,
-        "noPotion": 18,
-        "neon": 70,
-        "neonFly": 69,
-        "neonRide": 69,
-        "neonNoPotion": 68,
-        "mega": 290,
-        "megaFly": 288.85,
-        "megaRide": 288,
-        "megaNoPotion": 300
-      }
+        "default": 49.0,
+        "fly": 48.25,
+        "ride": 48.25,
+        "noPotion": 48.0,
+        "neon": 158.0,
+        "neonFly": 157.0,
+        "neonRide": 157.0,
+        "neonNoPotion": 156.0,
+        "mega": 600.0,
+        "megaFly": 598.9,
+        "megaRide": 598.0,
+        "megaNoPotion": 630.0
+      },
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "frost-unicorn",
@@ -1784,22 +1790,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 7.75,
         "fly": 7.35,
         "ride": 7.3,
-        "noPotion": 7,
-        "neon": 31,
-        "neonFly": 30,
-        "neonRide": 30,
-        "neonNoPotion": 29,
-        "mega": 126,
+        "noPotion": 7.0,
+        "neon": 31.0,
+        "neonFly": 30.0,
+        "neonRide": 30.0,
+        "neonNoPotion": 29.0,
+        "mega": 126.0,
         "megaFly": 124.9,
-        "megaRide": 124,
-        "megaNoPotion": 124
+        "megaRide": 124.0,
+        "megaNoPotion": 124.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "alpaca",
@@ -1881,7 +1887,7 @@
       "demand": "Medium",
       "trend": "Steady",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 1.55,
         "fly": 1.15,
@@ -1890,13 +1896,13 @@
         "neon": 5.95,
         "neonFly": 5.15,
         "neonRide": 5.15,
-        "neonNoPotion": 4.100000000000001,
+        "neonNoPotion": 4.1,
         "mega": 23.8,
         "megaFly": 22.7,
         "megaRide": 21.8,
         "megaNoPotion": 20.8
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "cryptid",
@@ -1955,22 +1961,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 31.5,
-        "fly": 30.35,
-        "ride": 30,
-        "noPotion": 29.5,
-        "neon": 84,
-        "neonFly": 83,
-        "neonRide": 83,
-        "neonNoPotion": 82,
-        "mega": 334,
-        "megaFly": 332.9,
-        "megaRide": 332,
-        "megaNoPotion": 332
+        "default": 32.0,
+        "fly": 30.85,
+        "ride": 30.5,
+        "noPotion": 30.0,
+        "neon": 88.0,
+        "neonFly": 87.0,
+        "neonRide": 87.0,
+        "neonNoPotion": 86.0,
+        "mega": 350.0,
+        "megaFly": 348.9,
+        "megaRide": 348.0,
+        "megaNoPotion": 348.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "velocirooster",
@@ -2028,21 +2034,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 40,
-        "fly": 39.45,
-        "ride": 39.4,
-        "noPotion": 39,
-        "neon": 107,
-        "neonFly": 106,
-        "neonRide": 106,
-        "neonNoPotion": 105,
-        "mega": 316,
-        "megaFly": 314.85,
-        "megaRide": 314,
-        "megaNoPotion": 321
-      }
+        "default": 45.0,
+        "fly": 44.25,
+        "ride": 44.25,
+        "noPotion": 44.0,
+        "neon": 144.0,
+        "neonFly": 143.0,
+        "neonRide": 143.0,
+        "neonNoPotion": 142.0,
+        "mega": 550.0,
+        "megaFly": 548.9,
+        "megaRide": 548.0,
+        "megaNoPotion": 580.0
+      },
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "sugar-glider",
@@ -2052,21 +2059,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 13.5,
-        "fly": 12.95,
-        "ride": 12.9,
-        "noPotion": 12.5,
-        "neon": 54,
-        "neonFly": 53,
-        "neonRide": 53,
-        "neonNoPotion": 52,
-        "mega": 220,
-        "megaFly": 218.85,
-        "megaRide": 218,
-        "megaNoPotion": 225
-      }
+        "default": 30.0,
+        "fly": 29.45,
+        "ride": 29.4,
+        "noPotion": 29.0,
+        "neon": 86.0,
+        "neonFly": 85.0,
+        "neonRide": 85.0,
+        "neonNoPotion": 84.0,
+        "mega": 340.0,
+        "megaFly": 338.9,
+        "megaRide": 338.0,
+        "megaNoPotion": 345.0
+      },
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "silverback-gorilla",
@@ -2076,22 +2084,22 @@
       "demand": "High",
       "trend": "Steady",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 7.5,
-        "fly": 6.95,
-        "ride": 6.9,
-        "noPotion": 6.5,
-        "neon": 30,
-        "neonFly": 29,
-        "neonRide": 29,
-        "neonNoPotion": 28,
-        "mega": 124,
-        "megaFly": 122.9,
-        "megaRide": 122,
-        "megaNoPotion": 121
+        "default": 10.0,
+        "fly": 9.45,
+        "ride": 9.4,
+        "noPotion": 9.0,
+        "neon": 40.0,
+        "neonFly": 39.0,
+        "neonRide": 39.0,
+        "neonNoPotion": 38.0,
+        "mega": 162.0,
+        "megaFly": 160.9,
+        "megaRide": 160.0,
+        "megaNoPotion": 159.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "winged-tiger",
@@ -2125,22 +2133,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 41,
-        "fly": 40,
-        "ride": 40,
-        "noPotion": 39.5,
-        "neon": 160,
-        "neonFly": 159,
-        "neonRide": 159,
-        "neonNoPotion": 158,
-        "mega": 590,
-        "megaFly": 588.9,
-        "megaRide": 588,
-        "megaNoPotion": 587
+        "default": 34.0,
+        "fly": 33.0,
+        "ride": 33.0,
+        "noPotion": 32.5,
+        "neon": 115.0,
+        "neonFly": 114.0,
+        "neonRide": 114.0,
+        "neonNoPotion": 113.0,
+        "mega": 400.0,
+        "megaFly": 398.9,
+        "megaRide": 398.0,
+        "megaNoPotion": 397.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "siamese-cat",
@@ -2174,22 +2182,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
         "default": 3.2,
         "fly": 2.8,
         "ride": 2.8,
         "noPotion": 2.5,
-        "neon": 13,
+        "neon": 13.0,
         "neonFly": 12.2,
         "neonRide": 12.2,
         "neonNoPotion": 11.25,
-        "mega": 54,
+        "mega": 54.0,
         "megaFly": 52.9,
-        "megaRide": 52,
-        "megaNoPotion": 51
+        "megaRide": 52.0,
+        "megaNoPotion": 51.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "cupid-dragon",
@@ -2199,21 +2207,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Revalidated on 2026-05-09 against the live Adopt Me Values feed so this benchmark anchor matches the public tracker lanes used by the calculator.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 6.85,
-        "fly": 6.4,
-        "ride": 6.35,
-        "noPotion": 6,
-        "neon": 27,
-        "neonFly": 26,
-        "neonRide": 26,
-        "neonNoPotion": 25,
-        "mega": 112,
-        "megaFly": 110.85,
-        "megaRide": 110,
-        "megaNoPotion": 117
-      }
+        "default": 10.0,
+        "fly": 9.45,
+        "ride": 9.4,
+        "noPotion": 9.0,
+        "neon": 39.0,
+        "neonFly": 38.0,
+        "neonRide": 38.0,
+        "neonNoPotion": 37.0,
+        "mega": 158.0,
+        "megaFly": 156.9,
+        "megaRide": 156.0,
+        "megaNoPotion": 161.0
+      },
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "lion-cub",
@@ -2295,22 +2304,22 @@
       "demand": "High",
       "trend": "Rising",
       "confidence": "Medium",
-      "notes": "Reviewed November 8, 2026 using Adopt Me Values; the No Potion reference was cross-checked against Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
+      "notes": "Reviewed November 12, 2026 using Adopt Me Values; the noPotion reference matches Elvebredd. Other variant lanes follow Adopt Me Values. Values can change.",
       "values": {
-        "default": 26,
-        "fly": 25.45,
-        "ride": 25.4,
-        "noPotion": 25,
-        "neon": 66,
-        "neonFly": 65,
-        "neonRide": 65,
-        "neonNoPotion": 64,
-        "mega": 205,
-        "megaFly": 203.9,
-        "megaRide": 203,
-        "megaNoPotion": 213
+        "default": 25.5,
+        "fly": 24.95,
+        "ride": 24.9,
+        "noPotion": 24.5,
+        "neon": 65.0,
+        "neonFly": 64.0,
+        "neonRide": 64.0,
+        "neonNoPotion": 63.0,
+        "mega": 202.0,
+        "megaFly": 200.9,
+        "megaRide": 200.0,
+        "megaNoPotion": 210.0
       },
-      "reviewedAt": "2026-11-08"
+      "reviewedAt": "2026-11-12"
     },
     {
       "slug": "vampire-dragon",
