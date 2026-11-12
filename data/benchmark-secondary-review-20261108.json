@@ -1,0 +1,358 @@
+{
+  "reviewedAt": "2026-11-08",
+  "source": "Elvebredd live public pet pages",
+  "evidence": [
+    {
+      "slug": "bat-dragon",
+      "name": "Bat Dragon",
+      "url": "https://elvebredd.com/pets/bat-dragon?variant=111",
+      "primary": 1001,
+      "secondary": 1001,
+      "variant": "flyRide"
+    },
+    {
+      "slug": "shadow-dragon",
+      "name": "Shadow Dragon",
+      "url": "https://elvebredd.com/pets/shadow-dragon?variant=111",
+      "primary": 677,
+      "secondary": 677,
+      "variant": "flyRide"
+    },
+    {
+      "slug": "giraffe",
+      "name": "Giraffe",
+      "url": "https://elvebredd.com/pets/giraffe?variant=111",
+      "primary": 463,
+      "secondary": 463,
+      "variant": "flyRide"
+    },
+    {
+      "slug": "frost-dragon",
+      "name": "Frost Dragon",
+      "url": "https://elvebredd.com/pets/frost-dragon?variant=111",
+      "primary": 316,
+      "secondary": 316,
+      "variant": "flyRide"
+    },
+    {
+      "slug": "owl",
+      "name": "Owl",
+      "url": "https://elvebredd.com/pets/owl?variant=111",
+      "primary": 243.5,
+      "secondary": 243.5,
+      "variant": "flyRide"
+    },
+    {
+      "slug": "parrot",
+      "name": "Parrot",
+      "url": "https://elvebredd.com/pets/parrot?variant=111",
+      "primary": 195.5,
+      "secondary": 195.5,
+      "variant": "flyRide"
+    },
+    {
+      "slug": "crow",
+      "name": "Crow",
+      "url": "https://elvebredd.com/pets/crow?variant=111",
+      "primary": 178,
+      "secondary": 178,
+      "variant": "flyRide"
+    },
+    {
+      "slug": "evil-unicorn",
+      "name": "Evil Unicorn",
+      "url": "https://elvebredd.com/pets/evil-unicorn?variant=111",
+      "primary": 117,
+      "secondary": 117,
+      "variant": "flyRide"
+    },
+    {
+      "slug": "blazing-lion",
+      "name": "Blazing Lion",
+      "url": "https://elvebredd.com/pets/blazing-lion?variant=111",
+      "primary": 171,
+      "secondary": 171,
+      "variant": "flyRide"
+    },
+    {
+      "slug": "bat-dragon",
+      "name": "Bat Dragon",
+      "url": "https://elvebredd.com/pets/bat-dragon",
+      "primary": 1001,
+      "secondary": 1013,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "shadow-dragon",
+      "name": "Shadow Dragon",
+      "url": "https://elvebredd.com/pets/shadow-dragon",
+      "primary": 677,
+      "secondary": 846,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "evil-unicorn",
+      "name": "Evil Unicorn",
+      "url": "https://elvebredd.com/pets/evil-unicorn",
+      "primary": 117,
+      "secondary": 117,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "cow",
+      "name": "Cow",
+      "url": "https://elvebredd.com/pets/cow",
+      "primary": 39.5,
+      "secondary": 37,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "turtle",
+      "name": "Turtle",
+      "url": "https://elvebredd.com/pets/turtle",
+      "primary": 27.75,
+      "secondary": 25.25,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "chocolate-chip-bat-dragon",
+      "name": "Chocolate Chip Bat Dragon",
+      "url": "https://elvebredd.com/pets/chocolate-chip-bat-dragon",
+      "primary": 62.5,
+      "secondary": 60.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "unicorn",
+      "name": "Unicorn",
+      "url": "https://elvebredd.com/pets/unicorn",
+      "primary": 1.6,
+      "secondary": 0.75,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "candicorn",
+      "name": "Candicorn",
+      "url": "https://elvebredd.com/pets/candicorn",
+      "primary": 21.5,
+      "secondary": 20.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "arctic-fox",
+      "name": "Arctic Fox",
+      "url": "https://elvebredd.com/pets/arctic-fox",
+      "primary": 10,
+      "secondary": 8.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "queen-bee",
+      "name": "Queen Bee",
+      "url": "https://elvebredd.com/pets/queen-bee",
+      "primary": 3.45,
+      "secondary": 2.85,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "cerberus",
+      "name": "Cerberus",
+      "url": "https://elvebredd.com/pets/cerberus",
+      "primary": 2.2,
+      "secondary": 1.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "alicorn",
+      "name": "Alicorn",
+      "url": "https://elvebredd.com/pets/alicorn",
+      "primary": 0.8099999999999999,
+      "secondary": 0.11,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "elephant",
+      "name": "Elephant",
+      "url": "https://elvebredd.com/pets/elephant",
+      "primary": 18,
+      "secondary": 16.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "crocodile",
+      "name": "Crocodile",
+      "url": "https://elvebredd.com/pets/crocodile",
+      "primary": 15,
+      "secondary": 13.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "pig",
+      "name": "Pig",
+      "url": "https://elvebredd.com/pets/pig",
+      "primary": 11.25,
+      "secondary": 9.75,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "hyena",
+      "name": "Hyena",
+      "url": "https://elvebredd.com/pets/hyena",
+      "primary": 5.1,
+      "secondary": 4.25,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "polar-bear",
+      "name": "Polar Bear",
+      "url": "https://elvebredd.com/pets/polar-bear",
+      "primary": 5.35,
+      "secondary": 4.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "skele-rex",
+      "name": "Skele-Rex",
+      "url": "https://elvebredd.com/pets/skele-rex",
+      "primary": 1.7,
+      "secondary": 1,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "snow-owl",
+      "name": "Snow Owl",
+      "url": "https://elvebredd.com/pets/snow-owl",
+      "primary": 1.45,
+      "secondary": 0.75,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "strawberry-shortcake-bat-dragon",
+      "name": "Strawberry Shortcake Bat Dragon",
+      "url": "https://elvebredd.com/pets/strawberry-shortcake-bat-dragon",
+      "primary": 63.5,
+      "secondary": 61.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "peppermint-penguin",
+      "name": "Peppermint Penguin",
+      "url": "https://elvebredd.com/pets/peppermint-penguin",
+      "primary": 38.5,
+      "secondary": 36.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "goose",
+      "name": "Goose",
+      "url": "https://elvebredd.com/pets/goose",
+      "primary": 40,
+      "secondary": 38.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "fairy-bat-dragon",
+      "name": "Fairy Bat Dragon",
+      "url": "https://elvebredd.com/pets/fairy-bat-dragon",
+      "primary": 33.5,
+      "secondary": 31,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "frost-unicorn",
+      "name": "Frost Unicorn",
+      "url": "https://elvebredd.com/pets/frost-unicorn",
+      "primary": 26,
+      "secondary": 25,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "goat",
+      "name": "Goat",
+      "url": "https://elvebredd.com/pets/goat",
+      "primary": 7.75,
+      "secondary": 7,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "cactus-friend",
+      "name": "Cactus Friend",
+      "url": "https://elvebredd.com/pets/cactus-friend",
+      "primary": 1.55,
+      "secondary": 0.85,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "cryptid",
+      "name": "Cryptid",
+      "url": "https://elvebredd.com/pets/cryptid",
+      "primary": 143,
+      "secondary": 141,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "cabbit",
+      "name": "Cabbit",
+      "url": "https://elvebredd.com/pets/cabbit",
+      "primary": 31.5,
+      "secondary": 29.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "jekyll-hydra",
+      "name": "Jekyll Hydra",
+      "url": "https://elvebredd.com/pets/jekyll-hydra",
+      "primary": 46,
+      "secondary": 44,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "silverback-gorilla",
+      "name": "Silverback Gorilla",
+      "url": "https://elvebredd.com/pets/silverback-gorilla",
+      "primary": 7.5,
+      "secondary": 6.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "frostbite-bear",
+      "name": "Frostbite Bear",
+      "url": "https://elvebredd.com/pets/frostbite-bear",
+      "primary": 41,
+      "secondary": 39.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "dragonfruit-fox-pet",
+      "name": "Dragonfruit Fox",
+      "url": "https://elvebredd.com/pets/dragonfruit-fox",
+      "primary": 3.2,
+      "secondary": 2.5,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "cupid-dragon",
+      "name": "Cupid Dragon",
+      "url": "https://elvebredd.com/pets/cupid-dragon",
+      "primary": 9.5,
+      "secondary": 8,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "werewolf",
+      "name": "Werewolf",
+      "url": "https://elvebredd.com/pets/werewolf",
+      "primary": 26,
+      "secondary": 25,
+      "variant": "noPotion"
+    },
+    {
+      "slug": "vampire-dragon",
+      "name": "Vampire Dragon",
+      "url": "https://elvebredd.com/pets/vampire-dragon",
+      "primary": 13,
+      "secondary": 12,
+      "variant": "noPotion"
+    }
+  ]
+}

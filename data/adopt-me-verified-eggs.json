@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30",
+  "updatedAt": "2026-11-08",
   "source": "Curated The Patch egg dataset focused on verified benchmark-relevant hatches and major egg metadata.",
   "notes": [
     "This file intentionally tracks verified benchmark-relevant hatches instead of claiming every hatchable pet in every historical egg.",
@@ -45,8 +45,18 @@
       "img": "b/b5/Retired_Egg_inventory.png",
       "notes": "The Retired Egg is the modern home for several older nursery pets, including the familiar Dragon and Unicorn benchmark anchors.",
       "benchmarkPets": [
-        { "slug": "dragon", "name": "Dragon", "rarity": "Legendary", "chance": 0.015 },
-        { "slug": "unicorn", "name": "Unicorn", "rarity": "Legendary", "chance": 0.015 }
+        {
+          "slug": "dragon",
+          "name": "Dragon",
+          "rarity": "Legendary",
+          "chance": 0.015
+        },
+        {
+          "slug": "unicorn",
+          "name": "Unicorn",
+          "rarity": "Legendary",
+          "chance": 0.015
+        }
       ]
     },
     {
@@ -54,12 +64,17 @@
       "name": "Safari Egg",
       "cost": "750 Bucks",
       "status": "retired",
-      "released": "Aug 2019",
-      "retired": "Sep 2019",
+      "released": "Jul 2019",
+      "retired": "Aug 2019",
       "img": "9/9a/Safari_Egg.png",
       "notes": "The Safari Egg matters most today because it introduced Giraffe, one of the strongest benchmark pets on the site.",
       "benchmarkPets": [
-        { "slug": "giraffe", "name": "Giraffe", "rarity": "Legendary", "chance": 0.03 }
+        {
+          "slug": "giraffe",
+          "name": "Giraffe",
+          "rarity": "Legendary",
+          "chance": 0.03
+        }
       ]
     },
     {
@@ -67,12 +82,17 @@
       "name": "Jungle Egg",
       "cost": "750 Bucks",
       "status": "retired",
-      "released": "Sep 2019",
+      "released": "Aug 2019",
       "retired": "Nov 2019",
       "img": "c/c9/Jungle_Egg.png",
       "notes": "The Jungle Egg is the key source for Parrot, which keeps it relevant in high-tier trading conversations.",
       "benchmarkPets": [
-        { "slug": "parrot", "name": "Parrot", "rarity": "Legendary", "chance": 0.03 }
+        {
+          "slug": "parrot",
+          "name": "Parrot",
+          "rarity": "Legendary",
+          "chance": 0.03
+        }
       ]
     },
     {
@@ -85,8 +105,18 @@
       "img": "0/06/FarmEgg.png",
       "notes": "The Farm Egg still matters because it introduced Crow and Owl, two upper-tier benchmark pets. Cow also comes from this egg, but it is not included in the calculator until its exact benchmark hatch chance is re-verified.",
       "benchmarkPets": [
-        { "slug": "crow", "name": "Crow", "rarity": "Legendary", "chance": 0.015 },
-        { "slug": "owl", "name": "Owl", "rarity": "Legendary", "chance": 0.015 }
+        {
+          "slug": "crow",
+          "name": "Crow",
+          "rarity": "Legendary",
+          "chance": 0.015
+        },
+        {
+          "slug": "owl",
+          "name": "Owl",
+          "rarity": "Legendary",
+          "chance": 0.015
+        }
       ]
     },
     {
@@ -99,8 +129,18 @@
       "img": "1/16/Aussie_Egg.png",
       "notes": "The Aussie Egg is one of the most practical old eggs for benchmark trading because Turtle and Kangaroo both remain active mid-tier anchors.",
       "benchmarkPets": [
-        { "slug": "kangaroo", "name": "Kangaroo", "rarity": "Legendary", "chance": 0.015 },
-        { "slug": "turtle", "name": "Turtle", "rarity": "Legendary", "chance": 0.015 }
+        {
+          "slug": "kangaroo",
+          "name": "Kangaroo",
+          "rarity": "Legendary",
+          "chance": 0.015
+        },
+        {
+          "slug": "turtle",
+          "name": "Turtle",
+          "rarity": "Legendary",
+          "chance": 0.015
+        }
       ]
     },
     {
@@ -128,7 +168,7 @@
     {
       "id": "mythic",
       "name": "Mythic Egg",
-      "cost": "750 Bucks",
+      "cost": "750 Robux",
       "status": "retired",
       "released": "Aug 2021",
       "retired": "Mar 2022",
@@ -141,8 +181,8 @@
       "name": "Japan Egg",
       "cost": "750 Bucks",
       "status": "retired",
-      "released": "Mar 2022",
-      "retired": "Jun 2022",
+      "released": "Sep 2022",
+      "retired": "Mar 2023",
       "img": "2/25/Japan_Egg.png",
       "notes": "No verified benchmark pets are currently tracked from the Japan Egg in the shared value ladder.",
       "benchmarkPets": []
@@ -150,7 +190,7 @@
     {
       "id": "desert",
       "name": "Desert Egg",
-      "cost": "750 Bucks",
+      "cost": "750 Robux",
       "status": "retired",
       "released": "Jan 2024",
       "retired": "May 2024",
@@ -161,7 +201,7 @@
     {
       "id": "garden",
       "name": "Garden Egg",
-      "cost": "750 Bucks",
+      "cost": "750 Robux",
       "status": "retired",
       "released": "May 2024",
       "retired": "Jan 2025",
@@ -172,7 +212,7 @@
     {
       "id": "moon",
       "name": "Moon Egg",
-      "cost": "750 Bucks",
+      "cost": "750 Robux",
       "status": "retired",
       "released": "Feb 2025",
       "retired": "Aug 2025",
@@ -183,7 +223,7 @@
     {
       "id": "aztec",
       "name": "Aztec Egg",
-      "cost": "750 Bucks",
+      "cost": "750 Robux",
       "status": "retired",
       "released": "Aug 2025",
       "retired": "Feb 2026",
@@ -209,7 +249,7 @@
       "status": "available",
       "released": "Aug 2026",
       "img": "a/a1/Fairytale_Egg.png",
-      "notes": "Current live Gumball Machine egg. All ten hatches are covered as official-pending pets while their trade values form.",
+      "notes": "Current Gumball Machine egg released August 29, 2026. Takes five tasks to hatch; a four-egg bundle is also available for 99 Robux.",
       "benchmarkPets": []
     },
     {
@@ -219,7 +259,7 @@
       "status": "available",
       "released": "Sep 2025",
       "img": "f/fa/Basic_Egg.png",
-      "notes": "No verified benchmark pets are currently tracked from the Basic Egg in the shared value ladder.",
+      "notes": "Ticket-stall hatch pool snapshot reviewed April 10, 2026. Confirm the current in-game pool and odds before spending; November 2026 pet eligibility has not been independently verified.",
       "benchmarkPets": []
     },
     {
@@ -229,7 +269,217 @@
       "status": "available",
       "released": "Sep 2025",
       "img": "6/6d/Crystal_Egg.png",
-      "notes": "No verified benchmark pets are currently tracked from the Crystal Egg in the shared value ladder.",
+      "notes": "Ticket-stall hatch pool snapshot reviewed April 10, 2026. Confirm the current in-game pool and odds before spending; November 2026 pet eligibility has not been independently verified.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "woodland",
+      "name": "Woodland Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Mar 2022",
+      "img": "2/22/Woodland_Egg.png",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "royal-fairytale",
+      "name": "Royal Fairytale Egg",
+      "cost": "14 Stars",
+      "status": "available",
+      "released": "Sep 11, 2026",
+      "img": "/assets/eggs/royal-fairytale.webp",
+      "notes": "Official September 11 Star Rewards egg. Rarity odds are published; individual pet odds are not specified in those notes.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "starter",
+      "name": "Starter Egg",
+      "cost": "Free",
+      "status": "available",
+      "released": "Jun 2019",
+      "img": "/assets/eggs/starter.webp",
+      "notes": "Starter Egg rewards use two hatch pools: Cat or Dog, then Ant or Mouse from later Guide eggs.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "blue",
+      "name": "Blue Egg",
+      "cost": "100 Bucks (event quest)",
+      "status": "retired",
+      "released": "Jun 2019",
+      "img": "/assets/eggs/blue.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "pink",
+      "name": "Pink Egg",
+      "cost": "100 Bucks (Pet Countdown event)",
+      "status": "retired",
+      "released": "Jun 2019",
+      "img": "/assets/eggs/pink.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "christmas",
+      "name": "Christmas Egg",
+      "cost": "1,440 Gingerbread or 4,300 Gingerbread",
+      "status": "retired",
+      "released": "Dec 2019",
+      "img": "/assets/eggs/christmas.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "golden",
+      "name": "Golden Egg",
+      "cost": "660 Stars (former reward)",
+      "status": "retired",
+      "released": "Mar 2020",
+      "img": "/assets/eggs/golden.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "diamond",
+      "name": "Diamond Egg",
+      "cost": "660 Stars (former reward)",
+      "status": "retired",
+      "released": "Mar 2020",
+      "img": "/assets/eggs/diamond.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "easter-2020",
+      "name": "Easter 2020 Egg",
+      "cost": "Free (Easter 2020 event)",
+      "status": "retired",
+      "released": "Apr 2020",
+      "img": "/assets/eggs/easter-2020.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "southeast-asia",
+      "name": "Southeast Asia Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Mar 2023",
+      "img": "/assets/eggs/southeast-asia.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "fool",
+      "name": "Fool Egg",
+      "cost": "1,000 Bucks",
+      "status": "retired",
+      "released": "Apr 2023",
+      "img": "/assets/eggs/fool.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "danger",
+      "name": "Danger Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Jun 2023",
+      "img": "/assets/eggs/danger.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "wrapped-doll",
+      "name": "Wrapped Doll",
+      "cost": "900 Bucks",
+      "status": "retired",
+      "released": "Jul 2023",
+      "img": "/assets/eggs/wrapped-doll.webp",
+      "notes": "Acts like an egg-style doll container for River, Dylan, and Pistachio.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "urban",
+      "name": "Urban Egg",
+      "cost": "750 Bucks",
+      "status": "retired",
+      "released": "Aug 2023",
+      "img": "/assets/eggs/urban.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "christmas-future",
+      "name": "Christmas Future Egg",
+      "cost": "Free (Winter Festival 2023)",
+      "status": "retired",
+      "released": "Dec 2023",
+      "img": "/assets/eggs/christmas-future.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "royal-desert",
+      "name": "Royal Desert Egg",
+      "cost": "Free (Sphinx's Solution event)",
+      "status": "retired",
+      "released": "Jan 2024",
+      "img": "/assets/eggs/royal-desert.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "royal-moon",
+      "name": "Royal Moon Egg",
+      "cost": "18 Moon Beams",
+      "status": "retired",
+      "released": "Feb 2025",
+      "img": "/assets/eggs/royal-moon.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "royal-aztec",
+      "name": "Royal Aztec Egg",
+      "cost": "15 Golden Aztec Skulls",
+      "status": "retired",
+      "released": "Aug 2025",
+      "img": "/assets/eggs/royal-aztec.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "gemstone",
+      "name": "Gemstone Egg",
+      "cost": "28 Stars",
+      "status": "available",
+      "released": "Sep 2026",
+      "img": "/assets/eggs/gemstone.webp",
+      "notes": "Current Star Rewards egg released September 11, 2026. Adopt Me published the 0.05% Amethyst Penguin chance, but did not publish individual rates for the other ten pets.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "throwback",
+      "name": "Throwback Egg",
+      "cost": "400 Bucks",
+      "status": "available",
+      "released": "Sep 2026",
+      "img": "/assets/eggs/throwback.webp",
+      "notes": "Roblox 20th anniversary egg sold by Eggburt. Adopt Me confirmed Blue Cat and Pink Dog as the two outcomes but did not publish their rarities or individual odds.",
+      "benchmarkPets": []
+    },
+    {
+      "id": "zodiac-minion",
+      "name": "Zodiac Minion Egg",
+      "cost": "Free (Gru's Lab event)",
+      "status": "retired",
+      "released": "Jun 2022",
+      "img": "/assets/eggs/zodiac-minion.webp",
+      "notes": "Full pool is in the egg guide; this subset does not infer benchmark hatch probabilities.",
       "benchmarkPets": []
     }
   ]

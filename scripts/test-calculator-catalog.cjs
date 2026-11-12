@@ -36,7 +36,7 @@ const example = overrides.pets.find(pet => !benchmark.petIndex[pet.slug]);
 const staleLaunch = { pets: [{ ...example, values: { default: { noPotion: 999999 } } }] };
 const staleMerged = context.mergeCatalog(benchmark, legacy, overrides, staleLaunch, pages);
 assert.deepEqual(staleMerged.find(pet => pet.slug === example.slug).matrix, example.values);
-for (const slug of ["stitches", "copycat", "shoebill", "boohoo"]) {
+for (const slug of ["thunderfisher", "electric-hornet", "flash-weasel"]) {
   const selected = bySlug.get(slug);
   assert.equal(selected.source, "official-pending", slug + " remains unpriced");
   assert.equal(selected.values, null);
@@ -48,6 +48,8 @@ for (const slug of ["stitches", "copycat", "shoebill", "boohoo"]) {
   const pageHtml = fs.readFileSync(path.join(root, page.pageUrl.slice(1)), "utf8");
   assert(pageHtml.includes(entry.image), "Pet HTML and JSON artwork must agree");
 }
+assert.equal(bySlug.get("haetyphoon").matrix.default.noPotion, 22);
+assert.equal(bySlug.get("haetyphoon").matrix.default.flyRide, 23);
 assert.equal(overrides.remainingUnmatchedCount, 0);
 assert.equal(overrides.pets.length, overrides.trackerMatchedCount + overrides.manualResolvedCount);
 console.log("Calculator catalog tests passed: all published overrides selectable, page values aligned, stale projections rejected, new pets pending.");

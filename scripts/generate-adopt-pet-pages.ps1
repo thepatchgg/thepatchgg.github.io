@@ -1130,7 +1130,16 @@ $($faqMarkup -join "`r`n")
 </html>
 "@
 
-  Set-Content -Path (Join-Path $petsDir ("{0}.html" -f $pet.slug)) -Value $html -Encoding UTF8
+  $pageWritePath = Join-Path $petsDir ("{0}.html" -f $pet.slug)
+  for ($writeAttempt = 0; $writeAttempt -lt 4; $writeAttempt++) {
+    try {
+      Set-Content -LiteralPath $pageWritePath -Value $html -Encoding UTF8 -ErrorAction Stop
+      break
+    } catch [System.IO.IOException] {
+      if ($writeAttempt -eq 3) { throw }
+      Start-Sleep -Milliseconds 250
+    }
+  }
 
   $generatedPets.Add([pscustomobject]@{
     slug = $pet.slug

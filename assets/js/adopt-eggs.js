@@ -17,6 +17,7 @@
     "easter-2020",
     "endangered",
     "fairytale",
+    "royal-fairytale",
     "gemstone",
     "throwback",
     "farm",
@@ -135,7 +136,7 @@
   }
 
   function parseChance(value) {
-    if (value === null || value === undefined || value === "" || /varies/i.test(String(value))) {
+    if (value === null || value === undefined || value === "" || /varies|unpublished|not published/i.test(String(value))) {
       return null;
     }
 
@@ -143,7 +144,8 @@
       return value;
     }
 
-    return parsePercent(value);
+    const parsed = parsePercent(value);
+    return Number.isFinite(parsed) ? parsed : null;
   }
 
   function parseCost(costText) {
@@ -525,7 +527,7 @@
       }
 
       const petsWithoutExplicitChance = pets.filter((pet) => parseChance(pet.chance) === null);
-      const perPetChance = petsWithoutExplicitChance.length ? rarityChance / petsWithoutExplicitChance.length : 0;
+      const perPetChance = egg.chanceMode === "variable" ? null : (petsWithoutExplicitChance.length ? rarityChance / petsWithoutExplicitChance.length : 0);
 
       pets.forEach((pet) => {
         const slug = pet.slug || slugifyPetName(pet.name);
@@ -536,6 +538,7 @@
 
         const explicitChance = parseChance(pet.chance);
         const finalChance = explicitChance === null ? perPetChance : explicitChance;
+        if (finalChance === null) return;
 
         benchmarkPets.push({
           name: benchmark.name,
