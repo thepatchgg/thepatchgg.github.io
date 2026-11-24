@@ -1,5 +1,6 @@
 (function () {
   const updates = [
+    { href: "/articles/adopt-me-quality-of-life-improvements-guide.html", featured: true, contexts: { home: { tag: "Quality of Life", badgeLabel: "Latest", badgeTone: "new", title: "Quality of Life Improvements guide &mdash; Pet Paints, building tools, and Trading Hub changes", excerpt: "The November 20 update adds Pet Paints, building controls, profile tools, remote Trading Hub listings, and XP Potion names.", meta: ["November 20, 2026", "Live guide"] }, hub: { tag: "Weekly Update", badgeLabel: "Latest", badgeTone: "new", title: "Quality of Life Improvements Guide", excerpt: "Open the November 20 guide for Pet Paints, Natural Color, building controls, and Trading Hub changes.", meta: ["November 20", "Live guide"] } } },
 {
   "href": "/articles/adopt-me-lightning-dimension-guide.html",
   "featured": true,
